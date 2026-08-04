@@ -1,0 +1,8 @@
+﻿#####  Includes: How Includes Are Written
+
+| An input model may have any number of \*INCLUDE files, which may be (although they usually are not) scattered widely around a disk system. PRIMER reads these and "remembers" what was in each file.<br>
+<br>On file output you can choose to process data read from \*INCLUDE files as follows:<br>
+<br><br>| **Data not written** | Include files are not written at all. |<br>| --- | --- |<br>| **In sub-directory** | Include files are written to the specified sub-directory. This is the default. |<br>| **Merge-&gt;master** | All include files are merged into the master file, meaning that the include structure and membership information is not written (it won't be lost from model in memory) |<br>| **[Select files](select-files-output-method.md#incl_select)** | User selects files they want to write, choosing overwrite/new-file/into sub-directory for each \*INCLUDE file. <br>The details of this procedure are shown below under  [Select Files](select-files-output-method.md#incl_select)  [output method](select-files-output-method.md#incl_select). |<br>| **Master file only** | Only master file written. It will contain references to include files, but the includes files themselves are not output. |<br>| **&gt;&gt;master dir** | All include files are written to the same directory as the master file. | | ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_4.png) |
+| --- | --- |
+
+[Previous](mixing-small-i10-and-large-format-files-within-a-model.md)  |  [Next](where-includes-are-written.md)

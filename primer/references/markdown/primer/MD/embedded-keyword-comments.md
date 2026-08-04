@@ -1,0 +1,31 @@
+﻿###  "Embedded" Keyword Comments
+
+From release 10.0 onwards PRIMER reads, stores, edits and writes out comment lines embedded within keyword data. The following rules are used to define what is meant by "embedded", and also to limit and control which comments are stored. (Note that these are not the same as comments after a  [*COMMENT](comment.md#comment)  [keyword](comment.md#comment))
+
+| Rules for comment storage  <br>PRIMER faces the problem that while it stores keyword data, and knows which include file this occupies, it does not "remember" where (at which line) a particular keyword occurred. In fact it may often re-order the data in a keyword deck when it writes it out. Therefore in order to be stored comments need to be associated with a keyword, and PRIMER takes this a stage further by remembering exactly which line in a keyword each comment is associated with.<br> <br>Consider the following fragment of a keyword deck, which has been artificially separated into sections: |
+| --- |
+
+| These comments are "free-standing", coming after the previous keyword. | $ <br>$ The following parts refer to the seat. <br>$ These were added on 11th May 2011 <br>$ |
+| --- | --- |
+| The comments here are "embedded" within the \*PART definitions | \*PART <br>sill\_swan\_neck <br> $: pid secid mid eosid hgid <br> $ This part used to be steel, but is now aluminium <br>$ This change was made on 2nd January 2010<br><br><br>| 5 | 3 | 5 | 0 | 0 |<br>| --- | --- | --- | --- | --- |<br><br><br>$ This part uses the original steel material<br><br><br>| 6 | 3 | 6 | 0 | 0 |<br>| --- | --- | --- | --- | --- | |
+| These comments are "free-standing" | $ <br>$ Ten further parts were moved to include file "floor.key" <br>$ |
+| The comment here is embedded within the \*SECTION keyword | \*SECTION\_SHELL <br> $ This section has been increased from 1.0 to 1.2mm thickness <br><br>| 1 | 2 | 0.0 | 0 |<br>| --- | --- | --- | --- |<br>| 1.2 | 1.2 | 1.2 | 1.2 | |
+
+There are three sorts of comment lines here:
+
+| "**Embedded**"<br> <br>Shown in **red**<br> <br>Saved by PRIMER | These comments lie between the \*Keyword header and a data line, or between sucessive data lines.<br> <br>PRIMER associates these with the line of data that  ***immediately follows***  the comment, and saves them in that location on that keyword.<br> <br>For example the comments<br> <br><br>>  <br>> " $ This part used to be steel ...<br>>  " <br>> and <br>> " $ This change was made ...<br>>  "<br>>  <br><br> <br>Are both associated with line 1 of Part 5. And the comment<br> <br><br>>  <br>> " $ This part uses the original ...<br>>  "<br>>  <br><br> <br>is associated with line 1 of Part 6. Any number of comments may be associated with any data lines, and they are stored as text strings in the order in which they appear.<br> <br>Comments stay with their definitions so if, for example, Part 5 in this deck was moved to a different include file it would take its embedded comments with it, and they would appear above the relevant data line.<br> <br>If the keyword data is modified so that its data lines are reformatted then comments still associate themselves with line N of the definition, regardless of what that might contain. In other words association with a given line of a definition is "dumb" and is not related in any way to the data that line contains.<br> <br>These comments can be visualised in PRIMER , and modified using the [Text edit](text-edit-editing-keyword-data-externally.md#text_edit_1)capability. |
+| --- | --- |
+| "**Special**"<br> <br>Shown in **blue**<br> <br>Ignored by PRIMER | If a comment line starts with a dollar followed immediately by a colon, " $: ", then PRIMER treats this as a special comment that does not need to be remembered. For example the following line in the above is a special comment:<br> <br><br>>  <br>> "$: pid secid mid eosid hgid"<br>>  <br><br> <br>This syntax is used for data field headers and comment lines such as those listing the items referencing a loadcurve, since these will be regenerated automatically (and may change) each time a new keyword output file is created, so it does not make sense to store them.<br> <br>LS-PREPOST starts "special" comments with the alternative " $# " syntax. By default PRIMER will also treat these lines as special comments, ignoring them in the same way as lines starting " $: ". To change this behaviour set the preference primer\*ignore\_lspp\_comment to false . |
+| "**Free standing**"<br> <br>Shown in **dark green**<br> <br>Ignored by PRIMER | These comments lie after the last data line of the previous keyword, and before the \*Keyword header of the next one.<br> <br>PRIMER ignores these comments since they have no fixed association with a particular keyword.<br> <br>(An exception is made for comments at the top of a keyword deck / include file, which are stored as a property of that file and may be edited.) |
+
+####  Visualising embedded comments
+
+PRIMER allows you to visualise and edit comments in two ways:
+
+| On a scalar editing panel  <br>The Text edit button will be shown in light blue, and hovering the cursor over that button will list comments for that keyword.<br> <br>This example shows the result for Part 5 above. | ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_1_9a.png) |
+| --- | --- |
+| On a Keyword editor row  <br>If the definition on a row contains comments then a light blue **C** will be shown on its row button, and hovering the cursor over that button will list them. | ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_1_9b.png) |
+
+In both cases you can add, remove and edit comments with the external [text editor](text-edit-editing-keyword-data-externally.md#text_edit_1) by using the Text edit button. (In the keyword editor case this is one of the options in the right-click popup menu associated with the row button
+
+[Previous](dealing-with-encrypted-keywords-other-than-airbag-mat-define-curvetable-and-parameter.md)  |  [Next](text-edit-editing-keyword-data-externally.md)

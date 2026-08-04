@@ -1,0 +1,5 @@
+﻿###  Selecting Rows in the Table
+
+Rows can be selected in the table by clicking with the mouse. To select multiple rows use the Ctrl key while clicking and to select a range of rows use the Shift key while clicking. There are also buttons at the top of the table to aid you in selecting and viewing parts in the table. The Clear button clears all current selections. The Sel all button selects all parts currently displayed on the table. Select will bring up an object menu and allow you to select parts using that method (i.e. being able to use various filters to select parts). Show sel will display in the table only those parts currently selected. Show all will bring back and display the original parts on the table.
+
+[Previous](changing-which-columns-are-shown.md)  |  [Next](changing-a-value-in-the-part-table.md)

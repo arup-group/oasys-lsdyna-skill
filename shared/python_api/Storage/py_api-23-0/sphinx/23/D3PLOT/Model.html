@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.D3PLOT.Model class &#8212; Oasys.D3PLOT 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.D3PLOT.Node class" href="Node.html" />
+    <link rel="prev" title="Oasys.D3PLOT.Measure class" href="Measure.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Node.html" title="Oasys.D3PLOT.Node class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Measure.html" title="Oasys.D3PLOT.Measure class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.D3PLOT 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.D3PLOT.Model class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-d3plot-model-class">
+<h1>Oasys.D3PLOT.Model class<a class="headerlink" href="#oasys-d3plot-model-class" title="Link to this heading">¶</a></h1>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Model.filename">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Model.filename" title="Link to this definition">¶</a></dt>
+<dd><p>The model filename</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.number">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.number" title="Link to this definition">¶</a></dt>
+<dd><p>The model number</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.state">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">state</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.state" title="Link to this definition">¶</a></dt>
+<dd><p>The state in the model used for scripting methods. Note that this is <strong>not</strong> the state
+that is displayed for a model in a graphics window.
+This property is only used for some of the scripting methods. Many of the methods in the API depend on which
+state the model is in and setting this property alters that state.
+To set the state used for all the “get” and “put” functions which handle model-related data use this property.
+To change the state that is displayed for a model in a graphics window use the GraphicsWindow
+<a class="reference internal" href="GraphicsWindow.html#GraphicsWindow.state" title="GraphicsWindow.state"><code class="xref py py-attr docutils literal notranslate"><span class="pre">state</span></code></a> property</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.states">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">states</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.states" title="Link to this definition">¶</a></dt>
+<dd><p>The total number of states in the model</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.title">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.title" title="Link to this definition">¶</a></dt>
+<dd><p>The model title</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a file into the first free model in D3PLOT</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – Filename you want to read</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To create a model in D3PLOT for the file /data/test/file.ptf</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="s2">&quot;/data/test/file.ptf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="static-methods">
+<h2>Static methods<a class="headerlink" href="#static-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model.First">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">First</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.First" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model object for the first model in D3PLOT
+(or None if there are no models)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the Model object for the first model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">First</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetFromID">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetFromID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetFromID" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model object for a model ID (or None if model does not exist)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_number</strong> (<em>integer</em>) – number of the model you want the Model object for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the Model object for model number 1</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Highest">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Highest</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Highest" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the highest model number in D3PLOT (or 0 if no models). Also see <a class="reference internal" href="#Model.Total" title="Model.Total"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Total()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Highest model number</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>integer</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the highest model number:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">highest</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Highest</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Last">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Last</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Last" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model object for the last model in D3PLOT
+(or None if there are no models)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the Model object for the last model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Last</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Read">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Read" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a file into D3PLOT</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – Filename you want to read</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To create a model in D3PLOT from the file /data/test/file.ptf</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Read</span><span class="p">(</span><span class="s2">&quot;/data/test/file.ptf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Total">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Total</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Total" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the total number of models in use in D3PLOT. Also see <a class="reference internal" href="#Model.Highest" title="Model.Highest"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Highest()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Total number of models in use</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>integer</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get total number of models:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Total</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="instance-methods">
+<h2>Instance methods<a class="headerlink" href="#instance-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model.ClearFlag">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ClearFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.ClearFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Clears a flag on all of the items in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) to clear</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To clear flag f on all items in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Delete">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Delete" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes a model in D3PLOT
+<br/> <strong>Do not use the Model object after calling this method</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete model m in D3PLOT</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Delete</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GraphicsWindows">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GraphicsWindows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.GraphicsWindows" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the graphics window(s) that the model exists in</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array of <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a> objects</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the graphics windows model m exists in:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GraphicsWindows</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Next">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Next" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the next model (or None if there is not one)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the model after model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">Next</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Previous">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Previous</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Previous" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the previous model (or None if there is not one)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the model before model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">Previous</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.ReadPropertiesFile">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ReadPropertiesFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.ReadPropertiesFile" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a properties file for the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – Filename for the properties file you want to read</p></li>
+<li><p><strong>info</strong> (<em>dict</em>) – <p>Optional. Dictionary containing the information to set. Can be any of:</p>
+<dl class="field-list simple">
+<dt class="field-odd">ignoreElements<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean) Ignore any element properties in the properties file and only process part based entries (default is false)</p>
+</dd>
+<dt class="field-even">preBlank<span class="colon">:</span></dt>
+<dd class="field-even"><p>(boolean) Blank everything in the model before reading the properties file (default is false)</p>
+</dd>
+</dl>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To read the properties file /data/test/my_properties.prp for model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ReadPropertiesFile</span><span class="p">(</span><span class="s2">&quot;/data/test/my_properties.prp&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Reread">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Reread</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Reread" title="Link to this definition">¶</a></dt>
+<dd><p>Rereads the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To reread model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Reread</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Rescan">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Rescan</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Rescan" title="Link to this definition">¶</a></dt>
+<dd><p>Rescans the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To rescan model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Rescan</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Time">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Time" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the analysis time for a particular state in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>state</strong> (<em>integer</em>) – The state you want to get the time for (0 &lt;= state &lt;= <a class="reference internal" href="#Model.states" title="Model.states"><code class="xref py py-attr docutils literal notranslate"><span class="pre">states</span></code></a>)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Analysis time</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the analysis time for state 10 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">Time</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.D3PLOT functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Beam.html">Oasys.D3PLOT.Beam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.D3PLOT.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Component.html">Oasys.D3PLOT.Component class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constant.html">Oasys.D3PLOT.Constant class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Oasys.D3PLOT.Contact class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GraphicsWindow.html">Oasys.D3PLOT.GraphicsWindow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Group.html">Oasys.D3PLOT.Group class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.D3PLOT.Image class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Include.html">Oasys.D3PLOT.Include class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Material.html">Oasys.D3PLOT.Material class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Measure.html">Oasys.D3PLOT.Measure class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.D3PLOT.Model class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.filename"><code class="docutils literal notranslate"><span class="pre">Model.filename</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.number"><code class="docutils literal notranslate"><span class="pre">Model.number</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.state"><code class="docutils literal notranslate"><span class="pre">Model.state</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.states"><code class="docutils literal notranslate"><span class="pre">Model.states</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.title"><code class="docutils literal notranslate"><span class="pre">Model.title</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#constructor">Constructor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model"><code class="docutils literal notranslate"><span class="pre">Model()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#static-methods">Static methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.First"><code class="docutils literal notranslate"><span class="pre">Model.First()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetFromID"><code class="docutils literal notranslate"><span class="pre">Model.GetFromID()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Highest"><code class="docutils literal notranslate"><span class="pre">Model.Highest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Last"><code class="docutils literal notranslate"><span class="pre">Model.Last()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Read"><code class="docutils literal notranslate"><span class="pre">Model.Read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Total"><code class="docutils literal notranslate"><span class="pre">Model.Total()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instance-methods">Instance methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ClearFlag"><code class="docutils literal notranslate"><span class="pre">Model.ClearFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Delete"><code class="docutils literal notranslate"><span class="pre">Model.Delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GraphicsWindows"><code class="docutils literal notranslate"><span class="pre">Model.GraphicsWindows()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Next"><code class="docutils literal notranslate"><span class="pre">Model.Next()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Previous"><code class="docutils literal notranslate"><span class="pre">Model.Previous()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ReadPropertiesFile"><code class="docutils literal notranslate"><span class="pre">Model.ReadPropertiesFile()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Reread"><code class="docutils literal notranslate"><span class="pre">Model.Reread()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Rescan"><code class="docutils literal notranslate"><span class="pre">Model.Rescan()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Time"><code class="docutils literal notranslate"><span class="pre">Model.Time()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Node.html">Oasys.D3PLOT.Node class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.D3PLOT.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Page.html">Oasys.D3PLOT.Page class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part.html">Oasys.D3PLOT.Part class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Segment.html">Oasys.D3PLOT.Segment class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetBeam.html">Oasys.D3PLOT.SetBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetNode.html">Oasys.D3PLOT.SetNode class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetPart.html">Oasys.D3PLOT.SetPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetShell.html">Oasys.D3PLOT.SetShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetSolid.html">Oasys.D3PLOT.SetSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetTshell.html">Oasys.D3PLOT.SetTshell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Shell.html">Oasys.D3PLOT.Shell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solid.html">Oasys.D3PLOT.Solid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tshell.html">Oasys.D3PLOT.Tshell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Type.html">Oasys.D3PLOT.Type class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.D3PLOT.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="View.html">Oasys.D3PLOT.View class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.D3PLOT.Window class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Workflow.html">Oasys.D3PLOT.Workflow class</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Node.html" title="Oasys.D3PLOT.Node class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Measure.html" title="Oasys.D3PLOT.Measure class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.D3PLOT 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.D3PLOT.Model class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+﻿#####  Depenetrate Belt to Belt
+
+| Whether or not contact between adjacent belt paths is considered. Also an optional increase in belt thickness in the early stages of form-finding. | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_1.png) |
+| --- | --- |
+
+| In most regions of the belt there is not likely to be any contact between adjacent segments of belt, but close to the pelvis slipring that may not be the case as this example shows. In these regions it may be necessary to consider belt-to-belt contact during form-finding, but that is not always the case as there are pros and cons to doing this.<br><br><br>![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_2.png)<br><br><br><br><br>| Why you might turn on belt to belt contact during fitting:<br> <ul> <li>The belt paths genuinely overlap in the as-fitted shape, and it is important to avoid initial penetrations at the start of the analysis. </li> </ul> |<br>| --- |<br>| Why you might choose to ignore belt-to-belt contact during fitting:<br> <ul> <li>The initial shape has inter-penetrations (as in the example to the right here), but in the final as-fitted shape the two paths will not overlap. Trying to resolve an initial geometry like this may well cause the contact algorithms to go wrong. <br> <br> </li> <li>Belt-to-belt contact is expensive to compute and slows down fitting. There is no point doing it if it is not needed to achieve the correct end result. </li> </ul> |<br><br> <br>So was it necessary here? This is what happened when this geometry was fitted. |  |
+| --- | --- |
+
+| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_3.png)<br> <br>Result with ***no***belt-to-belt contact, the two paths have<br>pulled through one another because they didn't "see"<br>one another for contact, and have reached a satisfactory<br>final shape | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_4.png)<br><br>Result ***with***belt-to-belt contact. The belt path was<br>badly set up to start with, with the two segments<br>overlapping and penetrating, so it has "got stuck"<br>when trying to sort itself out. |
+| --- | --- |
+
+Clearly this example is contrived: the initial shape is a poorly configured belt path that is simply asking for trouble. However it illustrates the point that belt-to-belt contact may not be necessary in many cases, but where it \*  ***is***  \* necessary you need to make sure that your belt path has no initial penetrations, and also that it will "pull" (ie form-find) to the final position in a sensible way.
+ 
+Here is another example where belt-to-belt contact is definitely required. It is clear that the chest and pelvis sections of belt will lie on top of one another in the final shape as they pass under the seat wing, so belt-to-belt contact cannot be ignored and it has been turned on.
+
+| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_5.png)<br><br>Before fitting: note belt path is well sorted out, with no<br>inter-penetrations and a clear route its final shape. | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_6.png)<br> <br>Final as-fitted belt path |
+| --- | --- |
+
+| Optional initial factor on belt thickness.<br><br><br>![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_8.png)<br><br><br> <br>Normally the thickness used for belt-to-belt contact is the true thickness of the belt, however experience has shown that it is sometimes useful to increase that thickness in the early stages of fitting, since this may give a better result in areas of complicated geometry. Therefore you can define:<br> <br><br>| **Initial factor** | Factor on thickness |<br>| --- | --- |<br>| **Ramp iterations** | The number of fitting iterations over which this reverts linearly back to a factor of 1.0 |<br><br> <br>This can be expressed graphically as follows<br> <br><br> ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_b_to_b_9.png)<br> <br><br><br>If you have problems with the belt sorting itself out in an area of complicated geometry this may provide a solution, it is certainly worth experimenting with. If this factor is not defined it defaults to 1.0, and no thickness scaling takes place. |
+| --- |
+
+[Previous](radial-vectors.md)  |  [Next](initial-depenetration.md)

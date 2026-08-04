@@ -1,0 +1,4 @@
+﻿| Middle Mouse Click: Undoes Previous Actions<br>All the drag and twist operations described above are stored in an "undo stack". In common with other operations in PRIMER a middle mouse click "undoes" previous operations, navigating backwards through that stack one click at a time. So if you drag something to the wrong position just do a middle mouse click to undo it. There is no "redo" function though! | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/middlemouse.png) |
+| --- | --- |
+
+ [Previous](path-visualisation-tab-controlling-what-is-shown-during-advanced-path-editing.md)  |  [Next](right-click-options-at-basic-path-points.md)

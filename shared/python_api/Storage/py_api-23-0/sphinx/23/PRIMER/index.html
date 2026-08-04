@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Python API Oasys.PRIMER documentation &#8212; Oasys.PRIMER 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.PRIMER functions" href="global.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="global.html" title="Oasys.PRIMER functions"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Oasys.PRIMER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python API Oasys.PRIMER documentation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="python-api-oasys-primer-documentation">
+<h1>Python API Oasys.PRIMER documentation<a class="headerlink" href="#python-api-oasys-primer-documentation" title="Link to this heading">¶</a></h1>
+<p>The Oasys.PRIMER package allows Python scripts to control the Oasys LS-DYNA Environment
+software <a class="reference external" href="https://www.oasys-software.com/dyna/software/primer/">PRIMER</a>.</p>
+<p>For full information and examples of the Python API visit: <a class="reference external" href="https://help.oasys-software.com/articles/py_api-22-1">https://help.oasys-software.com/articles/py_api-22-1</a></p>
+<section id="basic-information">
+<h2>Basic Information<a class="headerlink" href="#basic-information" title="Link to this heading">¶</a></h2>
+<p>The module uses gRPC to communicate with the PRIMER executable using the <a class="reference external" href="https://pypi.org/project/Oasys.gRPC/">Oasys.gRPC</a> module.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="connection-methods">
+<h2>Connection methods<a class="headerlink" href="#connection-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py function">
+<dt class="sig sig-object py" id="start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abspath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50051</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">license</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#start" title="Link to this definition">¶</a></dt>
+<dd><p>Start an instance of PRIMER on this machine.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>abspath</strong> (<em>string</em>) – The absolute pathname of the PRIMER executable</p></li>
+<li><p><strong>args</strong> (<em>list</em>) – Optional. Any extra arguments to pass onto PRIMER</p></li>
+<li><p><strong>port</strong> (<em>integer</em>) – Optional. The gRPC port number used to communicate with PRIMER</p></li>
+<li><p><strong>memory</strong> (<em>integer</em>) – Optional. The memory allocated for scripts in PRIMER</p></li>
+<li><p><strong>license</strong> (<em>string</em>) – Optional. The location of the license file or server for PRIMER</p></li>
+<li><p><strong>debug</strong> (<em>boolean</em>) – Optional. Output debugging messages</p></li>
+<li><p><strong>batch</strong> (<em>boolean</em>) – Optional. If PRIMER should be started in batch mode without any main window</p></li>
+<li><p><strong>wait</strong> (<em>integer</em>) – Optional. Time to wait (in seconds) for PRIMER to start <br/> <em>Added in version 21.0.1</em></p></li>
+<li><p><strong>prefix</strong> (<em>string</em>) – Optional. A prefix command used to run PRIMER (e.g. /opt/VirtualGL/bin/vglrun) <br/> <em>Added in version 22.0.2</em></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Connection object used to interact with PRIMER</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Connection</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To start PRIMER (installed at C:\Oasys 22\primer22_x64.exe):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">Oasys.PRIMER</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">abspath</span><span class="o">=</span><span class="s2">&quot;C:</span><span class="se">\\</span><span class="s2">Oasys 22</span><span class="se">\\</span><span class="s2">primer22_x64.exe&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="connect">
+<span class="sig-name descname"><span class="pre">connect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50051</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#connect" title="Link to this definition">¶</a></dt>
+<dd><p>Connect to an instance of PRIMER that is running.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>port</strong> (<em>integer</em>) – Optional. The gRPC port number used to communicate with PRIMER</p></li>
+<li><p><strong>memory</strong> (<em>integer</em>) – Optional. The memory allocated for scripts in PRIMER</p></li>
+<li><p><strong>hostname</strong> (<em>string</em>) – Optional. The hostname of the machine that PRIMER is running on</p></li>
+<li><p><strong>debug</strong> (<em>boolean</em>) – Optional. Output debugging messages</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Connection object used to interact with PRIMER</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Connection</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To connect to an instance of PRIMER that is listening for gRPC messages on port 50051:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">Oasys.PRIMER</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">50051</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="disconnect">
+<span class="sig-name descname"><span class="pre">disconnect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#disconnect" title="Link to this definition">¶</a></dt>
+<dd><p>Disconnect from the instance of PRIMER that we are connected to and leave PRIMER running.</p>
+<p><strong>Example</strong></p>
+<p>To disconnect from PRIMER:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="terminate">
+<span class="sig-name descname"><span class="pre">terminate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#terminate" title="Link to this definition">¶</a></dt>
+<dd><p>Terminate the instance of PRIMER that we are connected to, closing PRIMER.</p>
+<p><strong>Example</strong></p>
+<p>To terminate PRIMER:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">terminate</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="#">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.PRIMER functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Accelerometer.html">Oasys.PRIMER.Accelerometer class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Airbag.html">Oasys.PRIMER.Airbag class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Attached.html">Oasys.PRIMER.Attached class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AxialForceBeam.html">Oasys.PRIMER.AxialForceBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Beam.html">Oasys.PRIMER.Beam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Belt.html">Oasys.PRIMER.Belt class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Box.html">Oasys.PRIMER.Box class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.PRIMER.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comment.html">Oasys.PRIMER.Comment class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConnectionProperties.html">Oasys.PRIMER.ConnectionProperties class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConstructionStages.html">Oasys.PRIMER.ConstructionStages class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Oasys.PRIMER.Contact class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ContactGuidedCable.html">Oasys.PRIMER.ContactGuidedCable class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conx.html">Oasys.PRIMER.Conx class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CoordinateSystem.html">Oasys.PRIMER.CoordinateSystem class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CrossSection.html">Oasys.PRIMER.CrossSection class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Curve.html">Oasys.PRIMER.Curve class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingFrequencyRange.html">Oasys.PRIMER.DampingFrequencyRange class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartMass.html">Oasys.PRIMER.DampingPartMass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartStiffness.html">Oasys.PRIMER.DampingPartStiffness class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartStructural.html">Oasys.PRIMER.DampingPartStructural class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingRelative.html">Oasys.PRIMER.DampingRelative class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DeformableToRigid.html">Oasys.PRIMER.DeformableToRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Discrete.html">Oasys.PRIMER.Discrete class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DiscreteSphere.html">Oasys.PRIMER.DiscreteSphere class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dummy.html">Oasys.PRIMER.Dummy class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ElementDeath.html">Oasys.PRIMER.ElementDeath class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExtraNodes.html">Oasys.PRIMER.ExtraNodes class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqFRF.html">Oasys.PRIMER.FreqFRF class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqSSD.html">Oasys.PRIMER.FreqSSD class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqVibration.html">Oasys.PRIMER.FreqVibration class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeneralizedWeld.html">Oasys.PRIMER.GeneralizedWeld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeometrySurface.html">Oasys.PRIMER.GeometrySurface class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Group.html">Oasys.PRIMER.Group class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HexSpotweldAssembly.html">Oasys.PRIMER.HexSpotweldAssembly class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="History.html">Oasys.PRIMER.History class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hourglass.html">Oasys.PRIMER.Hourglass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DBrep.html">Oasys.PRIMER.IGA1DBrep class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DNurbsUVW.html">Oasys.PRIMER.IGA1DNurbsUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DNurbsXYZ.html">Oasys.PRIMER.IGA1DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DBasisTransformXYZ.html">Oasys.PRIMER.IGA2DBasisTransformXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DBrep.html">Oasys.PRIMER.IGA2DBrep class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DNurbsUVW.html">Oasys.PRIMER.IGA2DNurbsUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DNurbsXYZ.html">Oasys.PRIMER.IGA2DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA3DBasisTransformXYZ.html">Oasys.PRIMER.IGA3DBasisTransformXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA3DNurbsXYZ.html">Oasys.PRIMER.IGA3DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAEdgeUVW.html">Oasys.PRIMER.IGAEdgeUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAEdgeXYZ.html">Oasys.PRIMER.IGAEdgeXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAFaceUVW.html">Oasys.PRIMER.IGAFaceUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAFaceXYZ.html">Oasys.PRIMER.IGAFaceXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAIntegrationShellReduce.html">Oasys.PRIMER.IGAIntegrationShellReduce class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAIntegrationSolidReduce.html">Oasys.PRIMER.IGAIntegrationSolidReduce class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAMass.html">Oasys.PRIMER.IGAMass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAPointUVW.html">Oasys.PRIMER.IGAPointUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAShell.html">Oasys.PRIMER.IGAShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGASolid.html">Oasys.PRIMER.IGASolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAVolumeXYZ.html">Oasys.PRIMER.IGAVolumeXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.PRIMER.Image class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Include.html">Oasys.PRIMER.Include class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntegrationBeam.html">Oasys.PRIMER.IntegrationBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntegrationShell.html">Oasys.PRIMER.IntegrationShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceComponent.html">Oasys.PRIMER.InterfaceComponent class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceLinkingEdge.html">Oasys.PRIMER.InterfaceLinkingEdge class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceSpringback.html">Oasys.PRIMER.InterfaceSpringback class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Interpolation.html">Oasys.PRIMER.Interpolation class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterpolationSpotweld.html">Oasys.PRIMER.InterpolationSpotweld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Joint.html">Oasys.PRIMER.Joint class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="JointStiffness.html">Oasys.PRIMER.JointStiffness class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Linear.html">Oasys.PRIMER.Linear class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBeam.html">Oasys.PRIMER.LoadBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBodyGeneralized.html">Oasys.PRIMER.LoadBodyGeneralized class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadGravity.html">Oasys.PRIMER.LoadGravity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadNode.html">Oasys.PRIMER.LoadNode class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadRemovePart.html">Oasys.PRIMER.LoadRemovePart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadRigidBody.html">Oasys.PRIMER.LoadRigidBody class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadShell.html">Oasys.PRIMER.LoadShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mass.html">Oasys.PRIMER.Mass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MassPart.html">Oasys.PRIMER.MassPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Material.html">Oasys.PRIMER.Material class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mechanism.html">Oasys.PRIMER.Mechanism class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Model.html">Oasys.PRIMER.Model class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphBox.html">Oasys.PRIMER.MorphBox class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphFlow.html">Oasys.PRIMER.MorphFlow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphPoint.html">Oasys.PRIMER.MorphPoint class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodalForceGroup.html">Oasys.PRIMER.NodalForceGroup class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodalRigidBody.html">Oasys.PRIMER.NodalRigidBody class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Node.html">Oasys.PRIMER.Node class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodeSet.html">Oasys.PRIMER.NodeSet class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.PRIMER.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Parameter.html">Oasys.PRIMER.Parameter class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part.html">Oasys.PRIMER.Part class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedAccelerometerRigid.html">Oasys.PRIMER.PrescribedAccelerometerRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedFinalGeometry.html">Oasys.PRIMER.PrescribedFinalGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedMotion.html">Oasys.PRIMER.PrescribedMotion class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedOrientationRigid.html">Oasys.PRIMER.PrescribedOrientationRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pretensioner.html">Oasys.PRIMER.Pretensioner class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ReferenceGeometry.html">Oasys.PRIMER.ReferenceGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Retractor.html">Oasys.PRIMER.Retractor class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RigidBodies.html">Oasys.PRIMER.RigidBodies class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rigidwall.html">Oasys.PRIMER.Rigidwall class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Seatbelt1D.html">Oasys.PRIMER.Seatbelt1D class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Seatbelt2D.html">Oasys.PRIMER.Seatbelt2D class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Section.html">Oasys.PRIMER.Section class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sensor.html">Oasys.PRIMER.Sensor class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorControl.html">Oasys.PRIMER.SensorControl class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorDefine.html">Oasys.PRIMER.SensorDefine class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorSwitch.html">Oasys.PRIMER.SensorSwitch class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Set.html">Oasys.PRIMER.Set class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Shell.html">Oasys.PRIMER.Shell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ShellReferenceGeometry.html">Oasys.PRIMER.ShellReferenceGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slipring.html">Oasys.PRIMER.Slipring class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solid.html">Oasys.PRIMER.Solid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spc.html">Oasys.PRIMER.Spc class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sph.html">Oasys.PRIMER.Sph class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spotweld.html">Oasys.PRIMER.Spotweld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spr2.html">Oasys.PRIMER.Spr2 class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StagedConstructionPart.html">Oasys.PRIMER.StagedConstructionPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainBeam.html">Oasys.PRIMER.StrainBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainShell.html">Oasys.PRIMER.StrainShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainSolid.html">Oasys.PRIMER.StrainSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressBeam.html">Oasys.PRIMER.StressBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressSection.html">Oasys.PRIMER.StressSection class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressShell.html">Oasys.PRIMER.StressShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressSolid.html">Oasys.PRIMER.StressSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Termination.html">Oasys.PRIMER.Termination class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TieBreak.html">Oasys.PRIMER.TieBreak class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html">Oasys.PRIMER.Transformation class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tshell.html">Oasys.PRIMER.Tshell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.PRIMER.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Oasys.PRIMER.Vector class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Velocity.html">Oasys.PRIMER.Velocity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VelocityGeneration.html">Oasys.PRIMER.VelocityGeneration class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="View.html">Oasys.PRIMER.View class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.PRIMER.Window class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Workflow.html">Oasys.PRIMER.Workflow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Xrefs.html">Oasys.PRIMER.Xrefs class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Control.html">Oasys.PRIMER Control dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Damping.html">Oasys.PRIMER Damping dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database.html">Oasys.PRIMER Database dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBody.html">Oasys.PRIMER LoadBody dictionary</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="global.html" title="Oasys.PRIMER functions"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Oasys.PRIMER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python API Oasys.PRIMER documentation</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

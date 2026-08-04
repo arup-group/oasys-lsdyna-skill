@@ -1,0 +1,15 @@
+﻿#####  Fitting Modes
+
+| Pre-configuring settings in this panel.<br><br><br>![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_modes_1.png) |
+| --- |
+
+***Important***  : These different modes do  ***not***  change how belt fitting works, rather they preconfigure various settings in this options panel to defaults that are most likely to be appropriate to the task in hand. You do  ***not***  need to use a particular mode for a particular purpose, use whatever works for you and your particular geometry - don't be afraid to experiment!
+ 
+The currently selected mode is highlighted in green (adult mode in the image above) but changing any of the individual settings to something else will cancel highlighting.
+
+| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_modes_2.png) | **Simple path** mode is intended for the traditional case of "fitting a rubber band around an egg", the typical case of a frontal impact adult dummy. The curvature of each segment of belt path will be simple, so it can be projected forwards and then pulled back onto the dummy structure. This presets the following: <br> <br> <br><br>| Path order | Spline |<br>| --- | --- |<br>| Projection distance | Fixed distance, ie 100% of specified value |<br>| Radial vectors | Local normal, ie based on normal of nearby elements. |<br>| Initial depenetration | Not used |<br>| Belt-to-belt depenetration | Turned on | |
+| --- | --- |
+| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_modes_3.png) | **Complex path** mode is intended for the more difficult case of fitting a belt to complicated geometries such as a child in a booster seat. The curvature of path segments can be complex, and they may be required to fit around obstacles and through gaps in a way that makes "Project forwards and then pull back" simply impossible. This preset the following: <br> <br> <br><br>| Path order | Spline |<br>| --- | --- |<br>| Projection distance | Fixed distance / 10, ie 10% of specified value |<br>| Radial vectors | Path twist, based solely on path shape |<br>| Initial depenetration | Turned on |<br>| Belt-to-belt depenetration | Turned on | |
+| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_modes_4.png) | **General path** mode is intended for the entirely general case where no assumptions can be made about geometry. Fitting a belt between rollers might be one example, but really anything which is not a dummy. This presets the following: <br> <br> <br><br>| Path order | Linear |<br>| --- | --- |<br>| Projection distance | None. No projection of path |<br>| Radial vectors | Path twist, based solely on path shape |<br>| Initial depenetration | Turned off |<br>| Belt-to-belt depenetration | Turned off | |
+
+[Previous](path-visualisation-tab.md)  |  [Next](point-projection.md)

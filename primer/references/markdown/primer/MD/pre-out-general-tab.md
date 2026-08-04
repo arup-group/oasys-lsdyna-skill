@@ -1,0 +1,7 @@
+﻿####  Pre-out: General Tab
+
+| The following table summaries the options available. Click on the link in the first column for a more detailed description of each one.<br><br><br>| [Version](version-tailoring-output-to-a-particular-ls-dyna-version.md#d_version) | Defines the Ansys LS-DYNA version used for output. |<br>| --- | --- |<br>| [(Format)](format-setting-the-file-format.md#pre_format) | Whether output is "small" (traditional), "I10", "long" for large labels, binary, etc. |<br>| [Includes](includes-how-includes-are-written.md#incl_how) | How include files are written. |<br>| [(Machine)](machine-operating-system-dependent-syntax.md#machine) | Native / Unix / Windows determines the syntax used for include file pathnames, also how line endings in text files are written. |<br><br>
+<br>The summary at the bottom, here [ (ASCII keyword file, uncompressed ] shows the current output file type that will be written. The [Compress](pre-out-compress-tab.md#pre_compress) options may change this (e.g. compressed, binary, etc). | ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_2b.png) |
+| --- | --- |
+
+[Previous](ls-dyna-output-pre-output-checks-and-output-options.md)  |  [Next](version-tailoring-output-to-a-particular-ls-dyna-version.md)

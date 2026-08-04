@@ -1,0 +1,12 @@
+﻿###  Declash Labels 
+ 
+This function allows declash of element labels (so shells don't clash with solids, etc), set labels (so node sets don't clash with shell sets, etc) and material labels (so structural materials don't clash with thermal materials). You may want to do this to avoid problems when reading your model into other pre-processors that do not allow label clashes across element types/set types/material types.
+ 
+If any clashes are found the fixing panel will be displayed. The user may select to DECLASH ALL or to address the individual types. Note this also considers clashes between elements and entity types other pre-processors may consider to be elements (an example of this is \*CONSTRAINED\_NODAL\_RIGID\_BODY).
+ 
+![](../Storage/primer-22-1/primer_links/sect_3/images/clashfixpanel.png)
+ 
+####  Label declash option 
+ 
+The Post-renumber label declash option on renumbering panels should be turned on should you wish to avoid label clashes that could cause problems when reading the model into other pre-processors. With this option on, after renumbering PRIMER will declash element labels (so shells don't clash with solids, etc), set labels (so node sets don't clash with shell sets, etc) and material labels (so structural materials don't clash with thermal materials). Note this also considers clashes between elements and entity types other pre-processors may consider to be elements (an example of this is \*CONSTRAINED\_NODAL\_RIGID\_BODY). When turning this option on/off for the first time you will get the option to set a preference to always have this option on. The option can also be turned on through Options-&gt;Program Options-&gt;Renumber-&gt;Avoid label clash . Note that this option applies in contexts other than renumbering. Any action where elements are created and assigned labels will avoid clashes with labels of elements of different types (the same applies for labels between different \*SET types and different \*MAT types). So, by turning the option on in this panel, or the options panel, the option will be on for all renumbering panels and will be used throughout PRIMER when creating entities.
+ [Previous](mat24-lcsslcsr.md)  |  [Next](visualise.md)

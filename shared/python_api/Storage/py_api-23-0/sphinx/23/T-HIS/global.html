@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.THIS functions &#8212; Oasys.THIS 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.THIS.Colour class" href="Colour.html" />
+    <link rel="prev" title="Python API Oasys.THIS documentation" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Colour.html" title="Oasys.THIS.Colour class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Python API Oasys.THIS documentation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.THIS 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.THIS functions</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-this-functions">
+<h1>Oasys.THIS functions<a class="headerlink" href="#oasys-this-functions" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><dl class="py function">
+<dt class="sig sig-object py" id="AllocateFlag">
+<span class="sig-name descname"><span class="pre">AllocateFlag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AllocateFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Allocate a flag for use in the script. See also
+<a class="reference internal" href="#ReturnFlag" title="ReturnFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ReturnFlag()</span></code></a> and
+Once allocated the flag is automatically cleared for all entity types and all the curves currently in T/HIS</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Flag (integer)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To allocate a flag</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">flag</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">AllocateFlag</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ClearFlag">
+<span class="sig-name descname"><span class="pre">ClearFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClearFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Clears a flag on all curves and entity types</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – The flag to return</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To clear flag f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogueInput">
+<span class="sig-name descname"><span class="pre">DialogueInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">command</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogueInput" title="Link to this definition">¶</a></dt>
+<dd><p>Execute one or more lines of command line dialogue input</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>command</strong> (<em>string</em>) – Command to execute (as if it had been typed into the dialogue box)
+This argument can be repeated if required.
+Alternatively a single array argument containing the multiple values can be given</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To mulitply curves 1 and 2 by 10:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">DialogueInput</span><span class="p">(</span><span class="s2">&quot;/op mul #1 10 #&quot;</span><span class="p">,</span> <span class="s2">&quot;/op mul #2 10 #&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note that each call to DialogueInput starts afresh at the top of the T/HIS command line “tree”, so where
+multiple commands need to be given at sub-menu levels they need to be included in a single call</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogueInputNoEcho">
+<span class="sig-name descname"><span class="pre">DialogueInputNoEcho</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">command</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogueInputNoEcho" title="Link to this definition">¶</a></dt>
+<dd><p>Execute one or more lines of command line dialogue input <strong>with no echo of commands to dialogue box</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>command</strong> (<em>string</em>) – Command to execute (as if it had been typed into the dialogue box)
+This argument can be repeated if required.
+Alternatively a single array argument containing the multiple values can be given</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To mulitply curves 1 and 2 by 10:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">DialogueInputNoEcho</span><span class="p">(</span><span class="s2">&quot;/op mul #1 10 #&quot;</span><span class="p">,</span> <span class="s2">&quot;/op mul #2 10 #&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As with DialogueInput above each call starts at the top of the T/HIS command tree structure, so any commands destined for
+sub-menus must all be arguments to a single call</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DisableGraphWindowUpdates">
+<span class="sig-name descname"><span class="pre">DisableGraphWindowUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DisableGraphWindowUpdates" title="Link to this definition">¶</a></dt>
+<dd><p>Disable Graph Window updates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Turn off graph window updates</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">DisableGraphWindowUpdates</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DisableMenuUpdates">
+<span class="sig-name descname"><span class="pre">DisableMenuUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DisableMenuUpdates" title="Link to this definition">¶</a></dt>
+<dd><p>Disable menu system updates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Disable menu system updates</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">DisableMenuUpdates</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EnableGraphWindowUpdates">
+<span class="sig-name descname"><span class="pre">EnableGraphWindowUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnableGraphWindowUpdates" title="Link to this definition">¶</a></dt>
+<dd><p>Enable Graph Window updates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Turn off graph window updates</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">EnableGraphWindowUpdates</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EnableMenuUpdates">
+<span class="sig-name descname"><span class="pre">EnableMenuUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnableMenuUpdates" title="Link to this definition">¶</a></dt>
+<dd><p>Enable menu system updates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Enable menu system updates</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">EnableMenuUpdates</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ErrorMessage">
+<span class="sig-name descname"><span class="pre">ErrorMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ErrorMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Print an error message to the dialogue box <strong>adding a carriage return</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>Any valid javascript type</em>) – The string/item that you want to print</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To print the title of model object m as an error to the dialogue box</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">ErrorMessage</span><span class="p">(</span><span class="s2">&quot;The title is &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Execute">
+<span class="sig-name descname"><span class="pre">Execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Execute" title="Link to this definition">¶</a></dt>
+<dd><p>Execute a program or script outside T/HIS and get the standard output and error streams</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>dict</em>) – <p>Execute data</p>
+<dl class="field-list simple">
+<dt class="field-odd">arguments (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(List of strings) The arguments to pass to program</p>
+</dd>
+<dt class="field-even">program<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) The program you want to run. Note that on Linux this will consider PATH when resolving executable filenames without an absolute path.
+If you want to run something from the current directory and you do not have ‘.’ in your PATH then you will need to write ‘./something’ as the program</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">status<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The exit code from the program/script</p>
+</dd>
+<dt class="field-even">stderr<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) The standard error output from the program/script</p>
+</dd>
+<dt class="field-odd">stdout<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) The standard output from the program/script</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To run script “example.bat” with arguments “foo” and “bar”:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span> <span class="p">{</span> <span class="s2">&quot;program&quot;</span><span class="p">:</span> <span class="s1">&#39;example.bat&#39;</span><span class="p">,</span> <span class="s2">&quot;arguments&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span> <span class="p">]}</span> <span class="p">)</span>
+<span class="n">text</span>   <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="s2">&quot;stdout&quot;</span><span class="p">]</span>
+<span class="n">errors</span> <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="s2">&quot;stderr&quot;</span><span class="p">]</span>
+<span class="n">ecode</span>  <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Exit">
+<span class="sig-name descname"><span class="pre">Exit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">write_hook_interrupt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Exit" title="Link to this definition">¶</a></dt>
+<dd><p>Exit script</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>write_hook_interrupt</strong> (<em>boolean</em>) – Optional. If Exit() is called from a write_hook.js script, the first argument will be processed as in the following:
+If the argument is provided and set to “true”, it is used to interrupt the write out of the model, so that
+the script exits without anything being written out. An argument value of “false” exits the script and allows
+the model to be written out as normal. An example of this function’s use in a Write Hook script can be found at
+$OA_INSTALL/primer_library/scripts/hooks/example_write_hook.js</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Exit with</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Exit</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GetCurrentDirectory">
+<span class="sig-name descname"><span class="pre">GetCurrentDirectory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GetCurrentDirectory" title="Link to this definition">¶</a></dt>
+<dd><p>Get the current working directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String containing current working directory</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the current directory:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cwd</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">GetCurrentDirectory</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GetFtcfVar">
+<span class="sig-name descname"><span class="pre">GetFtcfVar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GetFtcfVar" title="Link to this definition">¶</a></dt>
+<dd><p>Get the value of a FAST-TCF variable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>string</em>) – The FAST-TCF variable name (case independent)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String containing variable value or None if variable does not exist</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the value for FAST-TCF variable Job</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">job_name</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">GetFtcfVar</span><span class="p">(</span><span class="s2">&quot;Job&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GetInstallDirectory">
+<span class="sig-name descname"><span class="pre">GetInstallDirectory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GetInstallDirectory" title="Link to this definition">¶</a></dt>
+<dd><p>Get the directory in which executables are installed. This is the OA_INSTALL environment variable,
+or if that is not set the directory in which the current executable is installed. Returns None if not found</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the install directory:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">install_dir</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">GetInstallDirectory</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GetPreferenceValue">
+<span class="sig-name descname"><span class="pre">GetPreferenceValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">program</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GetPreferenceValue" title="Link to this definition">¶</a></dt>
+<dd><p>Get the Preference value with the given string in the any of
+admin (“OA_ADMIN”) or install (“OA_INSTALL”) or home (“OA_HOME”) directory oa_pref</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>program</strong> (<em>string</em>) – The program name string : Valid values are ‘All’, ‘D3PLOT’, ‘PRIMER’, ‘REPORTER’, ‘SHELL’,
+<br/> ‘T/HIS’</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The preference name string</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>: String containing preference value or None if preference string is not present in any oa_pref. Also if none of the above environment variables are not present, then API simply returns null. While returning preference value, locked preference value in admin and then install oa_pref takes precedence over home oa_pref. If preference is not locked in any of these oa_pref, preference in home directory oa_pref is returned</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the preference value:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pref_list</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">GetPreferenceValue</span><span class="p">(</span><span class="s1">&#39;All&#39;</span><span class="p">,</span> <span class="s2">&quot;font_size&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GetStartInDirectory">
+<span class="sig-name descname"><span class="pre">GetStartInDirectory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GetStartInDirectory" title="Link to this definition">¶</a></dt>
+<dd><p>Get the directory passed to T/HIS by the -start_in command line argument</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String containing start_in directory or None if not set</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the start_in directory:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">start_in</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">GetStartInDirectory</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Getenv">
+<span class="sig-name descname"><span class="pre">Getenv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Getenv" title="Link to this definition">¶</a></dt>
+<dd><p>Get the value of an environment variable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>string</em>) – The environment variable name</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String containing variable value or None if variable does not exist</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the value for environment variable HOME</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">home</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Getenv</span><span class="p">(</span><span class="s2">&quot;HOME&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Message">
+<span class="sig-name descname"><span class="pre">Message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Message" title="Link to this definition">¶</a></dt>
+<dd><p>Print a message to the dialogue box <strong>adding a carriage return</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>Any valid javascript type</em>) – The string/item that you want to print. If ‘r’ is added to the end of the string then
+instead of automatically adding a carriage return in the dialogue box, the next message will overwrite
+the current one. This may be useful for giving feedback to the dialogue box when doing an operation</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To print the title of model object m as a message to the dialogue box</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Message</span><span class="p">(</span><span class="s2">&quot;The title is &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MilliSleep">
+<span class="sig-name descname"><span class="pre">MilliSleep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MilliSleep" title="Link to this definition">¶</a></dt>
+<dd><p>Pause execution of the script for <em>time</em> milliseconds. See also
+<a class="reference internal" href="#Sleep" title="Sleep"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Sleep()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>time</strong> (<em>integer</em>) – Number of milliseconds to pause for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To pause for 500 milliseconds</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">MilliSleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="NumberToString">
+<span class="sig-name descname"><span class="pre">NumberToString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pref_int</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NumberToString" title="Link to this definition">¶</a></dt>
+<dd><p>Formats a number to a string with the specified width</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>number</strong> (<em>integer/float</em>) – The number you want to format</p></li>
+<li><p><strong>width</strong> (<em>integer</em>) – The width of the string you want to format it to (must be less than 80)</p></li>
+<li><p><strong>pref_int</strong> (<em>boolean</em>) – Optional. By default only integer values inside the single precision 32 bit signed integer limit of approximately
++/-2e9 are formatted as integers, all other numeric values are formatted as floats. With this argument set to TRUE then
+integer values up to the mantissa precision of a 64 bit float, approximately +/-9e15, will also be formatted as integers</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String containing the number</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To write the number 1.2345e+6 to a string 10 characters wide</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">NumberToString</span><span class="p">(</span><span class="mf">1.2345e+6</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="OpenManual">
+<span class="sig-name descname"><span class="pre">OpenManual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">program</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#OpenManual" title="Link to this definition">¶</a></dt>
+<dd><p>Open the Oasys manuals at a requested page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>program</strong> (<em>string</em>) – The program manual to open. Can be “primer”, “d3plot” or “this”</p></li>
+<li><p><strong>page</strong> (<em>string</em>) – The page to open in the manual, e.g. “running-this.html”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if successful, False if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To open the T/HIS manual on the running-this.html page</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">OpenManual</span><span class="p">(</span><span class="s2">&quot;this&quot;</span><span class="p">,</span> <span class="s2">&quot;running-this.html&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Plot">
+<span class="sig-name descname"><span class="pre">Plot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Plot" title="Link to this definition">¶</a></dt>
+<dd><p>Updates all the T/HIS graphs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Update all graphs</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Print">
+<span class="sig-name descname"><span class="pre">Print</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Print" title="Link to this definition">¶</a></dt>
+<dd><p>Print a string to stdout. <strong>Note that a carriage return is not added</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>Any valid javascript type</em>) – The string/item that you want to print</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To print string “Hello, world!”</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To print the title of model object m with a carriage return</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;The title is &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">title</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Println">
+<span class="sig-name descname"><span class="pre">Println</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Println" title="Link to this definition">¶</a></dt>
+<dd><p>Print a string to stdout <strong>adding a carriage return</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>Any valid javascript type</em>) – The string/item that you want to print</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To print string “Hello, world!” automatically adding a carriage return</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To print the title of model object m, automatically adding a carriage return</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s2">&quot;The title is &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ReturnFlag">
+<span class="sig-name descname"><span class="pre">ReturnFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ReturnFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Return a flag used in the script. See also
+<a class="reference internal" href="#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag()</span></code></a> and</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – The flag to return</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To return flag f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">ReturnFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="SetCurrentDirectory">
+<span class="sig-name descname"><span class="pre">SetCurrentDirectory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SetCurrentDirectory" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the current working directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>directory_path</strong> (<em>string</em>) – Path to the directory you would like to change into</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if successful, False if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To change into the directory “/data/test” exists</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">SetCurrentDirectory</span><span class="p">(</span><span class="s2">&quot;/data/test&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="SetFtcfVar">
+<span class="sig-name descname"><span class="pre">SetFtcfVar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SetFtcfVar" title="Link to this definition">¶</a></dt>
+<dd><p>Set the value of a FAST-TCF variable. If the variable already exists then it’s value is updated</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>string</em>) – The FAST-TCF variable name (case independent)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String containing variable value or None if variable does not exist</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To create a new FAST-TCF variable called run_number with the value “10”</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">home</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">SetFtcfVar</span><span class="p">(</span><span class="s2">&quot;run_number&quot;</span><span class="p">,</span><span class="s2">&quot;10&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Sleep">
+<span class="sig-name descname"><span class="pre">Sleep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Sleep" title="Link to this definition">¶</a></dt>
+<dd><p>Pause execution of the script for <em>time</em> seconds. See also
+<a class="reference internal" href="#MilliSleep" title="MilliSleep"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MilliSleep()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>time</strong> (<em>integer</em>) – Number of seconds to pause for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To pause for 2 seconds</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="System">
+<span class="sig-name descname"><span class="pre">System</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#System" title="Link to this definition">¶</a></dt>
+<dd><p>Do a system command outside T/HIS. To run an external command and get the output then please use
+<a class="reference internal" href="#Execute" title="Execute"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Execute()</span></code></a> instead</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>Any valid javascript type</em>) – The system command that you want to do</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>integer (probably zero if command successful but is implementation-dependant)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To make the directory “example”</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">System</span><span class="p">(</span><span class="s2">&quot;mkdir example&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Unix">
+<span class="sig-name descname"><span class="pre">Unix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Unix" title="Link to this definition">¶</a></dt>
+<dd><p>Test whether script is running on a Unix/Linux operating system. See also
+<a class="reference internal" href="#Windows" title="Windows"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Windows()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if Unix/Linux, False if not</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To test if the OS is Unix</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">T</span><span class="o">/</span><span class="n">HIS</span><span class="o">.</span><span class="n">Unix</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="UpdateCurveMenu">
+<span class="sig-name descname"><span class="pre">UpdateCurveMenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#UpdateCurveMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the scroll bar in the Curve Manager. Useful if your script has created lots of new curves and you want to update the menu (otherwise, the scroll bar range will only be updated when the script exits)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Update curve slider</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">UpdateCurveMenu</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WarningMessage">
+<span class="sig-name descname"><span class="pre">WarningMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#WarningMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Print a warning message to the dialogue box <strong>adding a carriage return</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>Any valid javascript type</em>) – The string/item that you want to print</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To print the title of model object m as a warning to the dialogue box</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">WarningMessage</span><span class="p">(</span><span class="s2">&quot;The title is &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Windows">
+<span class="sig-name descname"><span class="pre">Windows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Windows" title="Link to this definition">¶</a></dt>
+<dd><p>Test whether script is running on a Windows operating system. See also
+<a class="reference internal" href="#Unix" title="Unix"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Unix()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if Windows, False if not</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To test if the OS is Windows</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">T</span><span class="o">/</span><span class="n">HIS</span><span class="o">.</span><span class="n">Windows</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.THIS functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#AllocateFlag"><code class="docutils literal notranslate"><span class="pre">AllocateFlag()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ClearFlag"><code class="docutils literal notranslate"><span class="pre">ClearFlag()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#DialogueInput"><code class="docutils literal notranslate"><span class="pre">DialogueInput()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#DialogueInputNoEcho"><code class="docutils literal notranslate"><span class="pre">DialogueInputNoEcho()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#DisableGraphWindowUpdates"><code class="docutils literal notranslate"><span class="pre">DisableGraphWindowUpdates()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#DisableMenuUpdates"><code class="docutils literal notranslate"><span class="pre">DisableMenuUpdates()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#EnableGraphWindowUpdates"><code class="docutils literal notranslate"><span class="pre">EnableGraphWindowUpdates()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#EnableMenuUpdates"><code class="docutils literal notranslate"><span class="pre">EnableMenuUpdates()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ErrorMessage"><code class="docutils literal notranslate"><span class="pre">ErrorMessage()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Execute"><code class="docutils literal notranslate"><span class="pre">Execute()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Exit"><code class="docutils literal notranslate"><span class="pre">Exit()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#GetCurrentDirectory"><code class="docutils literal notranslate"><span class="pre">GetCurrentDirectory()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#GetFtcfVar"><code class="docutils literal notranslate"><span class="pre">GetFtcfVar()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#GetInstallDirectory"><code class="docutils literal notranslate"><span class="pre">GetInstallDirectory()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#GetPreferenceValue"><code class="docutils literal notranslate"><span class="pre">GetPreferenceValue()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#GetStartInDirectory"><code class="docutils literal notranslate"><span class="pre">GetStartInDirectory()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Getenv"><code class="docutils literal notranslate"><span class="pre">Getenv()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Message"><code class="docutils literal notranslate"><span class="pre">Message()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#MilliSleep"><code class="docutils literal notranslate"><span class="pre">MilliSleep()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#NumberToString"><code class="docutils literal notranslate"><span class="pre">NumberToString()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#OpenManual"><code class="docutils literal notranslate"><span class="pre">OpenManual()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Plot"><code class="docutils literal notranslate"><span class="pre">Plot()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Print"><code class="docutils literal notranslate"><span class="pre">Print()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Println"><code class="docutils literal notranslate"><span class="pre">Println()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ReturnFlag"><code class="docutils literal notranslate"><span class="pre">ReturnFlag()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#SetCurrentDirectory"><code class="docutils literal notranslate"><span class="pre">SetCurrentDirectory()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#SetFtcfVar"><code class="docutils literal notranslate"><span class="pre">SetFtcfVar()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Sleep"><code class="docutils literal notranslate"><span class="pre">Sleep()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#System"><code class="docutils literal notranslate"><span class="pre">System()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Unix"><code class="docutils literal notranslate"><span class="pre">Unix()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#UpdateCurveMenu"><code class="docutils literal notranslate"><span class="pre">UpdateCurveMenu()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#WarningMessage"><code class="docutils literal notranslate"><span class="pre">WarningMessage()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Windows"><code class="docutils literal notranslate"><span class="pre">Windows()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.THIS.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Component.html">Oasys.THIS.Component class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constant.html">Oasys.THIS.Constant class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Curve.html">Oasys.THIS.Curve class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Datum.html">Oasys.THIS.Datum class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Entity.html">Oasys.THIS.Entity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Graph.html">Oasys.THIS.Graph class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Group.html">Oasys.THIS.Group class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LineStyle.html">Oasys.THIS.LineStyle class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LineWidth.html">Oasys.THIS.LineWidth class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Model.html">Oasys.THIS.Model class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Operate.html">Oasys.THIS.Operate class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.THIS.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Page.html">Oasys.THIS.Page class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Read.html">Oasys.THIS.Read class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Symbol.html">Oasys.THIS.Symbol class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UnitSystem.html">Oasys.THIS.UnitSystem class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Units.html">Oasys.THIS.Units class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.THIS.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.THIS.Window class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Workflow.html">Oasys.THIS.Workflow class</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Colour.html" title="Oasys.THIS.Colour class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Python API Oasys.THIS documentation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.THIS 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.THIS functions</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

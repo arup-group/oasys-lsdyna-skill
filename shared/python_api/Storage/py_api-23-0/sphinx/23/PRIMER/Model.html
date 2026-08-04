@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.PRIMER.Model class &#8212; Oasys.PRIMER 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.PRIMER.MorphBox class" href="MorphBox.html" />
+    <link rel="prev" title="Oasys.PRIMER.Mechanism class" href="Mechanism.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="MorphBox.html" title="Oasys.PRIMER.MorphBox class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Mechanism.html" title="Oasys.PRIMER.Mechanism class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.PRIMER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.PRIMER.Model class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-primer-model-class">
+<h1>Oasys.PRIMER.Model class<a class="headerlink" href="#oasys-primer-model-class" title="Link to this heading">¶</a></h1>
+<section id="constants">
+<span id="model-all-constants"></span><h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
+<section id="compress-mode">
+<span id="model-compress-mode-constants"></span><h3>compress mode<a class="headerlink" href="#compress-mode" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.INDIVIDUAL_GZIP">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">INDIVIDUAL_GZIP</span></span><a class="headerlink" href="#Model.INDIVIDUAL_GZIP" title="Link to this definition">¶</a></dt>
+<dd><p>Each file ‘name.key’ is ‘gzipped’ to become the individual file ‘name.key.gz’</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.INDIVIDUAL_ZIP">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">INDIVIDUAL_ZIP</span></span><a class="headerlink" href="#Model.INDIVIDUAL_ZIP" title="Link to this definition">¶</a></dt>
+<dd><p>Each file ‘name.key’ is ‘zipped’ to become the individual file ‘name.key.zip’</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.KEEP_ORIGINAL">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">KEEP_ORIGINAL</span></span><a class="headerlink" href="#Model.KEEP_ORIGINAL" title="Link to this definition">¶</a></dt>
+<dd><p>Each file ‘name.key’ is written using its original compression: uncompressed, ‘.gz. or ‘.zip’ format</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.PACKAGED_ZIP">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">PACKAGED_ZIP</span></span><a class="headerlink" href="#Model.PACKAGED_ZIP" title="Link to this definition">¶</a></dt>
+<dd><p>Suitable for models with include files where the entire model is packed into a single .zip file,
+preserving its directory structure</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="compress-switch">
+<span id="model-compress-switch-constants"></span><h3>compress switch<a class="headerlink" href="#compress-switch" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.COMPRESS_KEEP">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">COMPRESS_KEEP</span></span><a class="headerlink" href="#Model.COMPRESS_KEEP" title="Link to this definition">¶</a></dt>
+<dd><p>Keeps the keyout compression format same as that of what was read in</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.COMPRESS_OFF">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">COMPRESS_OFF</span></span><a class="headerlink" href="#Model.COMPRESS_OFF" title="Link to this definition">¶</a></dt>
+<dd><p>Switches off compression during keyout</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.COMPRESS_ON">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">COMPRESS_ON</span></span><a class="headerlink" href="#Model.COMPRESS_ON" title="Link to this definition">¶</a></dt>
+<dd><p>Switches on compression during keyout</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="filetype">
+<span id="model-filetype-constants"></span><h3>filetype<a class="headerlink" href="#filetype" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.ABAQUS">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ABAQUS</span></span><a class="headerlink" href="#Model.ABAQUS" title="Link to this definition">¶</a></dt>
+<dd><p>ABAQUS input file</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.IGES">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">IGES</span></span><a class="headerlink" href="#Model.IGES" title="Link to this definition">¶</a></dt>
+<dd><p>IGES 5.3 geometry file</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.LSDYNA">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">LSDYNA</span></span><a class="headerlink" href="#Model.LSDYNA" title="Link to this definition">¶</a></dt>
+<dd><p>Ansys LS-DYNA keyword file</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.NASTRAN">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">NASTRAN</span></span><a class="headerlink" href="#Model.NASTRAN" title="Link to this definition">¶</a></dt>
+<dd><p>NASTRAN bulk data file</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.RADIOSS">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">RADIOSS</span></span><a class="headerlink" href="#Model.RADIOSS" title="Link to this definition">¶</a></dt>
+<dd><p>RADIOSS block format file</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="include-deletion">
+<span id="model-include-deletion-constants"></span><h3>include deletion<a class="headerlink" href="#include-deletion" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.REMOVE_FROM_SETS">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">REMOVE_FROM_SETS</span></span><a class="headerlink" href="#Model.REMOVE_FROM_SETS" title="Link to this definition">¶</a></dt>
+<dd><p>Only deletes items within the include selected but may remove items from sets in other includes</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.REMOVE_INCLUDE_ONLY">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">REMOVE_INCLUDE_ONLY</span></span><a class="headerlink" href="#Model.REMOVE_INCLUDE_ONLY" title="Link to this definition">¶</a></dt>
+<dd><p>Only deletes items within the include selected without removing items from sets in other includes</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.REMOVE_JUNIOR">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">REMOVE_JUNIOR</span></span><a class="headerlink" href="#Model.REMOVE_JUNIOR" title="Link to this definition">¶</a></dt>
+<dd><p>Delete items in other includes if they ‘belong’ to items in this include file but are considered
+to be ‘junior’ in the standard PRIMER hierarchy</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="mass-properties-calculation">
+<span id="model-mass-properties-calculation-constants"></span><h3>mass_properties_calculation<a class="headerlink" href="#mass-properties-calculation" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.CENTRE_AT_COFG">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">CENTRE_AT_COFG</span></span><a class="headerlink" href="#Model.CENTRE_AT_COFG" title="Link to this definition">¶</a></dt>
+<dd><p>Uses the centre at centre of gravity in calculation of inertia properties</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.GLOBAL_AXES">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GLOBAL_AXES</span></span><a class="headerlink" href="#Model.GLOBAL_AXES" title="Link to this definition">¶</a></dt>
+<dd><p>GLOBAL AXES</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.LOCAL_AXES">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">LOCAL_AXES</span></span><a class="headerlink" href="#Model.LOCAL_AXES" title="Link to this definition">¶</a></dt>
+<dd><p>LOCAL AXES</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.PRINCIPAL_AXES">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">PRINCIPAL_AXES</span></span><a class="headerlink" href="#Model.PRINCIPAL_AXES" title="Link to this definition">¶</a></dt>
+<dd><p>PRINCIPAL AXES</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.USER_DEFINED_CENTRE">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">USER_DEFINED_CENTRE</span></span><a class="headerlink" href="#Model.USER_DEFINED_CENTRE" title="Link to this definition">¶</a></dt>
+<dd><p>Uses the user defined centre in calculation of inertia properties</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="merge">
+<span id="model-merge-constants"></span><h3>merge<a class="headerlink" href="#merge" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.DISCARD_PRIMARY_CLASH">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">DISCARD_PRIMARY_CLASH</span></span><a class="headerlink" href="#Model.DISCARD_PRIMARY_CLASH" title="Link to this definition">¶</a></dt>
+<dd><p>Merge option - discard primary items only on clash</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.DISCARD_SECONDARY_CLASH">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">DISCARD_SECONDARY_CLASH</span></span><a class="headerlink" href="#Model.DISCARD_SECONDARY_CLASH" title="Link to this definition">¶</a></dt>
+<dd><p>Merge option - discard secondary items only on clash</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.INCREASE_PRIMARY_ALWAYS">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">INCREASE_PRIMARY_ALWAYS</span></span><a class="headerlink" href="#Model.INCREASE_PRIMARY_ALWAYS" title="Link to this definition">¶</a></dt>
+<dd><p>Merge option - increase primary items always</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.INCREASE_PRIMARY_CLASH">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">INCREASE_PRIMARY_CLASH</span></span><a class="headerlink" href="#Model.INCREASE_PRIMARY_CLASH" title="Link to this definition">¶</a></dt>
+<dd><p>Merge option - increase primary items only on clash</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.INCREASE_SECONDARY_ALWAYS">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">INCREASE_SECONDARY_ALWAYS</span></span><a class="headerlink" href="#Model.INCREASE_SECONDARY_ALWAYS" title="Link to this definition">¶</a></dt>
+<dd><p>Merge option - increase secondary items always</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.INCREASE_SECONDARY_CLASH">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">INCREASE_SECONDARY_CLASH</span></span><a class="headerlink" href="#Model.INCREASE_SECONDARY_CLASH" title="Link to this definition">¶</a></dt>
+<dd><p>Merge option - increase secondary items only on clash</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="renumber">
+<span id="model-renumber-constants"></span><h3>renumber<a class="headerlink" href="#renumber" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.IGNORE_CLASH">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">IGNORE_CLASH</span></span><a class="headerlink" href="#Model.IGNORE_CLASH" title="Link to this definition">¶</a></dt>
+<dd><p>Renumber option - Ignore clashes</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.MOVE_CLASH_UP">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">MOVE_CLASH_UP</span></span><a class="headerlink" href="#Model.MOVE_CLASH_UP" title="Link to this definition">¶</a></dt>
+<dd><p>Renumber option - Move clashing &gt; highest label</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.RENUMBER_TO_FREE">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">RENUMBER_TO_FREE</span></span><a class="headerlink" href="#Model.RENUMBER_TO_FREE" title="Link to this definition">¶</a></dt>
+<dd><p>Renumber option - Renumber to next free label</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.SHIFT_ALL_UP">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">SHIFT_ALL_UP</span></span><a class="headerlink" href="#Model.SHIFT_ALL_UP" title="Link to this definition">¶</a></dt>
+<dd><p>Renumber option - Shift upwards to make space</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="write-hook">
+<span id="model-write-hook-constants"></span><h3>write hook<a class="headerlink" href="#write-hook" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.WRITE_DIALOGUE">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">WRITE_DIALOGUE</span></span><a class="headerlink" href="#Model.WRITE_DIALOGUE" title="Link to this definition">¶</a></dt>
+<dd><p>Flag that triggers the write hook script from the dialogue box</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.WRITE_INCLUDE_TREE">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">WRITE_INCLUDE_TREE</span></span><a class="headerlink" href="#Model.WRITE_INCLUDE_TREE" title="Link to this definition">¶</a></dt>
+<dd><p>Flag that triggers the write hook script from the include file tree</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.WRITE_MODEL">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">WRITE_MODEL</span></span><a class="headerlink" href="#Model.WRITE_MODEL" title="Link to this definition">¶</a></dt>
+<dd><p>Flag that triggers the write hook script from the model tab</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.WRITE_SELECT_INCLUDES">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">WRITE_SELECT_INCLUDES</span></span><a class="headerlink" href="#Model.WRITE_SELECT_INCLUDES" title="Link to this definition">¶</a></dt>
+<dd><p>Flag that triggers the write hook script from the select include files panel</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+<section id="class-properties">
+<h2>Class properties<a class="headerlink" href="#class-properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Model.highest">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">highest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.highest" title="Link to this definition">¶</a></dt>
+<dd><p>The highest model number present in PRIMER</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Model.binary">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Model.binary" title="Link to this definition">¶</a></dt>
+<dd><p>If model is in binary then it will be 1(true) else 0(false)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.comments">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">comments</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.comments" title="Link to this definition">¶</a></dt>
+<dd><p>Comments stored at the top of the primary model file</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.compress">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">compress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Model.compress" title="Link to this definition">¶</a></dt>
+<dd><p>If model is compressed then it will be 1(true) else 0(false)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.compressMode">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">compressMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.compressMode" title="Link to this definition">¶</a></dt>
+<dd><p>This option can be used to know the mode of compression. Can be
+<a class="reference internal" href="#Model.INDIVIDUAL_GZIP" title="Model.INDIVIDUAL_GZIP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.INDIVIDUAL_GZIP</span></code></a> or
+<a class="reference internal" href="#Model.INDIVIDUAL_ZIP" title="Model.INDIVIDUAL_ZIP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.INDIVIDUAL_ZIP</span></code></a> or
+<a class="reference internal" href="#Model.PACKAGED_ZIP" title="Model.PACKAGED_ZIP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.PACKAGED_ZIP</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.control">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">control</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Control</span> <span class="pre">dictionary</span></span><a class="headerlink" href="#Model.control" title="Link to this definition">¶</a></dt>
+<dd><p>Control cards for model. See <a class="reference internal" href="Control.html#control"><span class="std std-ref">Control</span></a> for more details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.damping">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">damping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Damping</span> <span class="pre">dictionary</span></span><a class="headerlink" href="#Model.damping" title="Link to this definition">¶</a></dt>
+<dd><p>Damping cards for model. See <a class="reference internal" href="Damping.html#damping"><span class="std std-ref">Damping</span></a> for more details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.database">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Database</span> <span class="pre">dictionary</span></span><a class="headerlink" href="#Model.database" title="Link to this definition">¶</a></dt>
+<dd><p>Database cards for model. See <a class="reference internal" href="Database.html#database"><span class="std std-ref">Database</span></a> for more details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.fileStartAscii">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">fileStartAscii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Model.fileStartAscii" title="Link to this definition">¶</a></dt>
+<dd><p>If the beginning of the master file (*CONTROL etc) is in ascii then 1(true) else 0(false)(NOTE: If master file is ascii then fileStartAscii won’t be checked and show 0(false))</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.filename">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.filename" title="Link to this definition">¶</a></dt>
+<dd><p>Name of file that model was read from (blank if model created)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.id">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Model.id" title="Link to this definition">¶</a></dt>
+<dd><p>If ID flag set for *KEYWORD card</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.layer">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">layer</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.layer" title="Link to this definition">¶</a></dt>
+<dd><p>The current layer for the model. This is the label of the <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file or 0 for the main file.
+See also <a class="reference internal" href="Include.html#Include.MakeCurrentLayer" title="Include.MakeCurrentLayer"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Include.MakeCurrentLayer()</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.loadBody">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">loadBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">LoadBody</span> <span class="pre">dictionary</span></span><a class="headerlink" href="#Model.loadBody" title="Link to this definition">¶</a></dt>
+<dd><p>LoadBody cards for model. See <a class="reference internal" href="LoadBody.html#loadbody"><span class="std std-ref">LoadBody</span></a> for more details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.masterAscii">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">masterAscii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Model.masterAscii" title="Link to this definition">¶</a></dt>
+<dd><p>If master file is in ascii then 1(true) else 0(false)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.num">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.num" title="Link to this definition">¶</a></dt>
+<dd><p>Model num (for _ID)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.number">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">number</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.number" title="Link to this definition">¶</a></dt>
+<dd><p>Model number</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.path">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.path" title="Link to this definition">¶</a></dt>
+<dd><p>Path that model was read from (blank if model created)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.project">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">project</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.project" title="Link to this definition">¶</a></dt>
+<dd><p>Model project (for _ID)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.readlog">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">readlog</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.readlog" title="Link to this definition">¶</a></dt>
+<dd><p>Full path of the readlog file</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.stage">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">stage</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.stage" title="Link to this definition">¶</a></dt>
+<dd><p>Model stage (for _ID)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.title">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.title" title="Link to this definition">¶</a></dt>
+<dd><p>Model title</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.visible">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">visible</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Model.visible" title="Link to this definition">¶</a></dt>
+<dd><p>Model visibility flag</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>number</strong> (<em>integer</em>) – Optional. Model number to create. If omitted the next free model number will be used</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To create a new model</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>To create model 10</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="static-methods">
+<h2>Static methods<a class="headerlink" href="#static-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model.BlankAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">BlankAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.BlankAll" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks all models</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank all models</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">BlankAll</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.DeleteAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">DeleteAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.DeleteAll" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes all existing models from PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete all models</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">DeleteAll</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.First">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">First</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.First" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model object for the first model in PRIMER
+(or None if there are no models)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the Model object for the first model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">First</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.FirstFreeItemLabel">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">FirstFreeItemLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.FirstFreeItemLabel" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the first free label for an item type in the model.
+Also see <a class="reference internal" href="#Model.LastFreeItemLabel" title="Model.LastFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.LastFreeItemLabel()</span></code></a> and
+<a class="reference internal" href="#Model.NextFreeItemLabel" title="Model.NextFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.NextFreeItemLabel()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> (<em>string</em>) – The type of the item (for a list of types see Appendix I of the
+PRIMER manual)</p></li>
+<li><p><strong>layer</strong> (<em>Include number</em>) – Optional. <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file (0 for the main file) to search for labels in (Equivalent to
+<em>First free in layer</em> in editing panels). If omitted the whole model will be used (Equivalent to
+<em>First free</em> in editing panels)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>integer</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the first free node label in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">FirstFreeItemLabel</span><span class="p">(</span><span class="s2">&quot;NODE&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetAll" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a list of Model objects for all the models in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of Model objects</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To make a list of Model objects for all of the models in PRIMER</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">GetAll</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetFromID">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetFromID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetFromID" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model object for a model ID or None if model does not exist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_number</strong> (<em>integer</em>) – number of the model you want the Model object for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the Model object for model number 1</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Last">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Last</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Last" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model object for the last model in PRIMER
+(or None if there are no models)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the Model object for the last model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Last</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.LastFreeItemLabel">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">LastFreeItemLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.LastFreeItemLabel" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the last free label for an item type in the model.
+Also see <a class="reference internal" href="#Model.FirstFreeItemLabel" title="Model.FirstFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.FirstFreeItemLabel()</span></code></a> and
+<a class="reference internal" href="#Model.NextFreeItemLabel" title="Model.NextFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.NextFreeItemLabel()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> (<em>string</em>) – The type of the item (for a list of types see Appendix I of the
+PRIMER manual)</p></li>
+<li><p><strong>layer</strong> (<em>Include number</em>) – Optional. <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file (0 for the main file) to search for labels in (Equivalent to
+<em>Highest free in layer</em> in editing panels). If omitted the whole model will be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>integer</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the last free node label in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">LastFreeItemLabel</span><span class="p">(</span><span class="s2">&quot;NODE&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Merge">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Merge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">primary_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondary_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option_to_fix_clashes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_nodes_flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Merge" title="Link to this definition">¶</a></dt>
+<dd><p>Merge 2 models together to make a new model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>primary_model</strong> (<em>Model</em>) – Primary <a class="reference internal" href="#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> for merge</p></li>
+<li><p><strong>secondary_model</strong> (<em>Model</em>) – Secondary <a class="reference internal" href="#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> for merge</p></li>
+<li><p><strong>option_to_fix_clashes</strong> (<em>constant</em>) – Optional. Type of fix. Can be <a class="reference internal" href="#Model.INCREASE_SECONDARY_ALWAYS" title="Model.INCREASE_SECONDARY_ALWAYS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.INCREASE_SECONDARY_ALWAYS</span></code></a>,
+<a class="reference internal" href="#Model.INCREASE_SECONDARY_CLASH" title="Model.INCREASE_SECONDARY_CLASH"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.INCREASE_SECONDARY_CLASH</span></code></a>,
+<a class="reference internal" href="#Model.DISCARD_SECONDARY_CLASH" title="Model.DISCARD_SECONDARY_CLASH"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.DISCARD_SECONDARY_CLASH</span></code></a>,
+<a class="reference internal" href="#Model.INCREASE_PRIMARY_ALWAYS" title="Model.INCREASE_PRIMARY_ALWAYS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.INCREASE_PRIMARY_ALWAYS</span></code></a>,
+<a class="reference internal" href="#Model.INCREASE_PRIMARY_CLASH" title="Model.INCREASE_PRIMARY_CLASH"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.INCREASE_PRIMARY_CLASH</span></code></a> or
+<a class="reference internal" href="#Model.DISCARD_PRIMARY_CLASH" title="Model.DISCARD_PRIMARY_CLASH"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.DISCARD_PRIMARY_CLASH</span></code></a></p></li>
+<li><p><strong>merge_nodes_flag</strong> (<em>boolean</em>) – Optional. If this flag is set to true, PRIMER will merge nodes after the model merge</p></li>
+<li><p><strong>dist</strong> (<em>float</em>) – Optional. Nodes closer than dist will be potentially merged</p></li>
+<li><p><strong>label</strong> (<em>integer</em>) – Optional. Label to keep after merge. If &gt; 0 then highest label kept.
+If &lt;= 0 then lowest kept.
+If omitted the lowest label will be kept</p></li>
+<li><p><strong>position</strong> (<em>integer</em>) – Optional. Position to merge at. If &gt; 0 then merged at highest label position.
+If &lt; 0 then merged at lowest label position.
+If 0 then merged at midpoint.
+If omitted the merge will be done at the lowest label</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object (or None if the merge is unsuccessful)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To merge models m1 and m2 together:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Merge</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.NextFreeItemLabel">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">NextFreeItemLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.NextFreeItemLabel" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the next free label for an item type in the model.
+Also see <a class="reference internal" href="#Model.FirstFreeItemLabel" title="Model.FirstFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.FirstFreeItemLabel()</span></code></a> and
+<a class="reference internal" href="#Model.LastFreeItemLabel" title="Model.LastFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.LastFreeItemLabel()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> (<em>string</em>) – The type of the item (for a list of types see Appendix I of the
+PRIMER manual)</p></li>
+<li><p><strong>layer</strong> (<em>Include number</em>) – Optional. <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file (0 for the main file) to search for labels in (Equivalent to
+<em>Highest+1 in layer</em> in editing panels). If omitted the whole model will be used (Equivalent to
+<em>Highest+1</em> in editing panels)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>integer</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the next free node label in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">NextFreeItemLabel</span><span class="p">(</span><span class="s2">&quot;NODE&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Read">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filetype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Read" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a file into the first free model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – Filename you want to read</p></li>
+<li><p><strong>filetype</strong> (<em>constant</em>) – Optional. Filetype you want to read. Can be <a class="reference internal" href="#Model.LSDYNA" title="Model.LSDYNA"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.LSDYNA</span></code></a>,
+<a class="reference internal" href="#Model.ABAQUS" title="Model.ABAQUS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.ABAQUS</span></code></a>,
+<a class="reference internal" href="#Model.NASTRAN" title="Model.NASTRAN"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.NASTRAN</span></code></a>,
+<a class="reference internal" href="#Model.RADIOSS" title="Model.RADIOSS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.RADIOSS</span></code></a> or
+<a class="reference internal" href="#Model.IGES" title="Model.IGES"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.IGES</span></code></a>.
+If omitted the file is assumed to be a DYNA3D file.
+For <a class="reference internal" href="#Model.NASTRAN" title="Model.NASTRAN"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.NASTRAN</span></code></a> there are options that change how the model is read.
+See <a class="reference internal" href="Options.html#options-nastran-properties"><span class="std std-ref">Options</span></a> for details</p></li>
+<li><p><strong>number</strong> (<em>integer</em>) – Optional. Model number to read file into. If omitted the next free model number will be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object (or None if error)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To read the keyword file /data/test/file.key</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Read</span><span class="p">(</span><span class="s2">&quot;/data/test/file.key&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To read the NASTRAN file /data/test/file.dat</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Read</span><span class="p">(</span><span class="s2">&quot;/data/test/file.dat&quot;</span><span class="p">,</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">NASTRAN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To read the keyword file /data/test/file.key into model 10</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Read</span><span class="p">(</span><span class="s2">&quot;/data/test/file.key&quot;</span><span class="p">,</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">LSDYNA</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Select">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Select" title="Link to this definition">¶</a></dt>
+<dd><p>Allows the user to select a model using standard PRIMER object menus.
+If there are no models in memory then Select returns None. If only one model is present
+then the model object is returned. If there is more than one model in memory then an
+object menu is mapped allowing the user to choose a model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prompt</strong> (<em>string</em>) – Text to display as a prompt to the user</p></li>
+<li><p><strong>modal</strong> (<em>boolean</em>) – Optional. If selection is modal (blocks the user from doing anything else in PRIMER
+until this window is dismissed). If omitted the selection will be modal</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object (or None if no models present)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To select a model giving the prompt ‘Select model’:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Select</span><span class="p">(</span><span class="s1">&#39;Select model&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Total">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Total</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Total" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the total number of models</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To find how many models there are in PRIMER:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Total</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.UnblankAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">UnblankAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.UnblankAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks all models</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank all models</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">UnblankAll</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="instance-methods">
+<h2>Instance methods<a class="headerlink" href="#instance-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model.AreaVolumeFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">AreaVolumeFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.AreaVolumeFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the Area/Volume of the selected items.
+<br/>
+Note: The area calculation is based only on shell elements, and the volume calculation is based only on solid elements</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag set on entities you wish to calculate area/volume for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">area<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Area of flagged items</p>
+</dd>
+<dt class="field-even">volume<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) Volume of flagged items</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To calculate the area/volume properties of the items flagged by flag f</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">props</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">AreaVolumeFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">area</span> <span class="o">=</span> <span class="n">props</span><span class="p">[</span><span class="s2">&quot;area&quot;</span><span class="p">]</span>
+<span class="n">volume</span> <span class="o">=</span> <span class="n">props</span><span class="p">[</span><span class="s2">&quot;volume&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Attached">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Attached</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Attached" title="Link to this definition">¶</a></dt>
+<dd><p>Finds attached items to flagged items. The attached items are flagged with the same flag</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on items that you want to find attached to</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If true, the display will be updated to display only the original flagged items and the attached items</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To find items attached to items flagged with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Attached</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Autofix">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Autofix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Autofix" title="Link to this definition">¶</a></dt>
+<dd><p>Autofix option does a model check and autofixes all the fixable errors in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To autofix fixable errors of the model ‘m’</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Autofix</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Blank">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Blank</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Blank" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks a model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank model object m</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Blank</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.BlankFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">BlankFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.BlankFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks all of the flagged items in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on items that you want to blank</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not.
+If omitted redraw is false. If you want to do several (un)blanks and only
+redraw after the last one then use false for all redraws apart from the last one.
+Alternatively you can redraw using <a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank everything in model m flagged with flag f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">BlankFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.CentreOfGravity">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">CentreOfGravity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.CentreOfGravity" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the centre of gravity for a model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list containing the x, y and z coordinates for the CofG</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the centre of gravity for model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cofg</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">CentreOfGravity</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">cofg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">cofg</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">cofg</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Check">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detailed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Check" title="Link to this definition">¶</a></dt>
+<dd><p>Checks a model, writing any errors to file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – Name of file to write errors to</p></li>
+<li><p><strong>detailed</strong> (<em>boolean</em>) – Optional. If set to “true”, detailed error messages are given</p></li>
+<li><p><strong>json</strong> (<em>boolean</em>) – Optional. If set, output in filename will be written in JSON format. If omitted json will be set to false.
+If JSON format is written then detailed will automatically be set.
+Note that when writing JSON format the labels produced can be strings instead of integers in some rare cases.
+If you are writing a script to read a JSON file, it must be able to cope with this.
+Specifically if the item is a character label the label will be a string. For child collect sets the label
+will be a string of the format ‘X_Y’ where X is the parent set label and Y will be the child set number (1, 2, 3 …).
+In this case use <a class="reference internal" href="Set.html#Set.GetCollectChild" title="Set.GetCollectChild"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Set.GetCollectChild()</span></code></a> to get the object</p></li>
+<li><p><strong>include</strong> (<em>boolean</em>) – Optional. If set, error messages will be written in include by include layout.
+This option is not applicable if JSON is set</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check model m, writing detailed errors to file ‘errors.txt’ in include layout:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Check</span><span class="p">(</span><span class="s1">&#39;errors.txt&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">true</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To check a model writing the warnings/errors as JSON to file ‘errors.json’, parse it and write them to
+the dialogue box:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Check</span><span class="p">(</span><span class="s2">&quot;errors.json&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;errors.json&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<span class="n">jsonn</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">o</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">jsonn</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">o</span><span class="p">:</span> <span class="c1">#&quot;error&quot; or &quot;warning&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">o</span><span class="p">[</span><span class="n">e</span><span class="p">]:</span> <span class="c1">#type</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="n">t</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">o</span><span class="p">[</span><span class="n">e</span><span class="p">][</span><span class="n">t</span><span class="p">]:</span> <span class="c1">#message</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="n">m</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="n">e</span><span class="p">][</span><span class="n">t</span><span class="p">][</span><span class="n">m</span><span class="p">])):</span> <span class="c1">#List of objects containing label and include</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">o</span><span class="p">[</span><span class="n">e</span><span class="p">][</span><span class="n">t</span><span class="p">][</span><span class="n">m</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;label&quot;</span><span class="p">],</span> <span class="s2">&quot; (include &quot;</span><span class="p">,</span> <span class="n">o</span><span class="p">[</span><span class="n">e</span><span class="p">][</span><span class="n">t</span><span class="p">][</span><span class="n">m</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;include&quot;</span><span class="p">],</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.ClearFlag">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ClearFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.ClearFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Clears the flagging for a model in PRIMER. See also
+<a class="reference internal" href="#Model.PropagateFlag" title="Model.PropagateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.PropagateFlag()</span></code></a>,
+<a class="reference internal" href="#Model.SetFlag" title="Model.SetFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.SetFlag()</span></code></a>,
+<a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">global.AllocateFlag()</span></code></a> and
+<a class="reference internal" href="global.html#ReturnFlag" title="ReturnFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">global.ReturnFlag()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag to clear</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To clear flag f for everything in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Copy">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Copy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Copy" title="Link to this definition">¶</a></dt>
+<dd><p>Copy model to the next free model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>update</strong> (<em>boolean</em>) – Optional. If the graphics should be updated after the model is copied.
+If omitted update will be set to false</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object for new model</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To copy model m to the next free model in PRIMER</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mnew</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">Copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.CopyFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">CopyFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.CopyFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Copy flagged items in a model to the next free model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on items that you want to copy</p></li>
+<li><p><strong>update</strong> (<em>boolean</em>) – Optional. If the graphics should be updated after the model is copied.
+If omitted update will be set to false</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object for new model</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To copy everything in model m flagged with flag f to the next free model in PRIMER</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mnew</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">CopyFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Delete">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Delete" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes a model in PRIMER
+<br/> <strong>Do not use the Model object after calling this method</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete model m in PRIMER</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Delete</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.DeleteFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">DeleteFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recursive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.DeleteFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes all of the flagged items in the model. Note that this may not actually
+delete all of the items. For example if a node is flagged but the node is used in a shell
+which is not flagged then the node will not be deleted</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on items that you want to delete</p></li>
+<li><p><strong>recursive</strong> (<em>boolean</em>) – Optional. If deletion is recursive (for example, if a shell is deleted with recursion on the shell nodes will be deleted if possible).
+If omitted recursive will be set to true</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete everything in model m flagged with flag f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">DeleteFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.DeleteInclude">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">DeleteInclude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_py_class_include___label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.DeleteInclude" title="Link to this definition">¶</a></dt>
+<dd><p>Tries to delete an include file from the model. Note that this may not actually
+delete the include file. For example if some of the items in the include file are required
+by other things in different includes then the include file will not be deleted</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_py_class_include___label</strong> (<em>integer</em>) – label of include file that you want to delete</p></li>
+<li><p><strong>method</strong> (<em>constant</em>) – Optional. Method for deleting items. Must be <a class="reference internal" href="#Model.REMOVE_FROM_SETS" title="Model.REMOVE_FROM_SETS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.REMOVE_FROM_SETS</span></code></a> (default),
+<a class="reference internal" href="#Model.REMOVE_JUNIOR" title="Model.REMOVE_JUNIOR"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.REMOVE_JUNIOR</span></code></a> or
+<a class="reference internal" href="#Model.REMOVE_INCLUDE_ONLY" title="Model.REMOVE_INCLUDE_ONLY"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.REMOVE_INCLUDE_ONLY</span></code></a>.
+<br/>
+<a class="reference internal" href="#Model.REMOVE_FROM_SETS" title="Model.REMOVE_FROM_SETS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.REMOVE_FROM_SETS</span></code></a> will only delete items within
+the include selected but may remove items from sets in other includes.
+<br/>
+<a class="reference internal" href="#Model.REMOVE_JUNIOR" title="Model.REMOVE_JUNIOR"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.REMOVE_JUNIOR</span></code></a> may delete items in other includes
+- this will happen if they ‘belong’ to items in this include and are considered ‘junior’
+<br/>
+<a class="reference internal" href="#Model.REMOVE_INCLUDE_ONLY" title="Model.REMOVE_INCLUDE_ONLY"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.REMOVE_INCLUDE_ONLY</span></code></a> does the same as
+<a class="reference internal" href="#Model.REMOVE_FROM_SETS" title="Model.REMOVE_FROM_SETS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.REMOVE_FROM_SETS</span></code></a> but will <strong>not</strong> remove
+items from sets in other includes</p></li>
+<li><p><strong>force</strong> (<em>boolean</em>) – Optional. Forcible deletion option (for example, a node is deleted even when it is referenced by a shell
+which is not deleted). This will remove the include file (not just the contents)
+from the model. If this argument is omitted, force will be set to false</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if include successfully deleted, False otherwise</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete include file number 5 in model m removing items from sets in other includes if required:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">DeleteInclude</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.FlagDuplicate">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">FlagDuplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.FlagDuplicate" title="Link to this definition">¶</a></dt>
+<dd><p>Flag all nodes referenced in two different includes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag which will be used to flag the “duplicate” nodes</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To Flag with flag f all the nodes referenced in different includes from model m</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">FlagDuplicate</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Flagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Flagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Flagged" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if the model is flagged or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag to test on the model</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if flagged, False if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if model m has flag f set on it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">Flagged</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetIncludeTransformOffsets">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetIncludeTransformOffsets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetIncludeTransformOffsets" title="Link to this definition">¶</a></dt>
+<dd><p>Looks at all of the items in the model and determines values
+for IDNOFF, IDEOFF, IDPOFF etc that could be used with
+<a class="reference internal" href="#Model.ImportIncludeTransform" title="Model.ImportIncludeTransform"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.ImportIncludeTransform</span></code></a>
+to guarantee that there would not be any clashes with existing items in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">iddoff<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Offset to define id</p>
+</dd>
+<dt class="field-even">ideoff<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Offset to element id</p>
+</dd>
+<dt class="field-odd">idfoff<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Offset to function id</p>
+</dd>
+<dt class="field-even">idmoff<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Offset to material id</p>
+</dd>
+<dt class="field-odd">idnoff<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Offset to node id</p>
+</dd>
+<dt class="field-even">idpoff<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Offset to part id</p>
+</dd>
+<dt class="field-odd">idroff<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Offset to section, hourglass, EOS id</p>
+</dd>
+<dt class="field-even">idsoff<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Offset to set id</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To determine offsets for model m and then import an include transform “test.inc”:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">o</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetIncludeTransformOffsets</span><span class="p">()</span>
+<span class="k">if</span><span class="p">(</span><span class="n">o</span><span class="p">):</span>
+    <span class="n">success</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">ImportIncludeTransform</span><span class="p">(</span><span class="s2">&quot;test.inc&quot;</span><span class="p">,</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;idnoff&quot;</span><span class="p">],</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;ideoff&quot;</span><span class="p">],</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;idpoff&quot;</span><span class="p">],</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;idmoff&quot;</span><span class="p">],</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;idsoff&quot;</span><span class="p">],</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;idfoff&quot;</span><span class="p">],</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;iddoff&quot;</span><span class="p">],</span> <span class="n">o</span><span class="p">[</span><span class="s2">&quot;idroff&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Hide">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Hide</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Hide" title="Link to this definition">¶</a></dt>
+<dd><p>Hides a model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To hide model m in PRIMER</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Hide</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Import">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Import" title="Link to this definition">¶</a></dt>
+<dd><p>Imports a file into model m. The model can already contain items. However, <strong>note that
+if the file cannot be imported because of a label clash or other problem PRIMER may delete the model
+and the script will terminate</strong>. Note prior to v17 of PRIMER imported data would always be imported
+to the master model, irrespective of the current layer. From v17 onwards this has been corrected and
+the current layer is used to determine the destination of imported data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – Filename of the Ansys LS-DYNA keyword file you want to import</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>0: No errors/warnings.
+&gt; 0: This number of errors occurred.
+&lt; 0: Absolute number is the number of warnings that occurred</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To import file “test.key” into model m</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;test.key&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.ImportInclude">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ImportInclude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.ImportInclude" title="Link to this definition">¶</a></dt>
+<dd><p>Imports a keyword file or an Include object from different model as a <strong>new include or into an existing include file</strong> for model m. The labels of any items
+in the imported include contents that clash with existing labels will automatically be renumbered with one exception. The behaviour for *SET_COLLECT
+cards can be controlled with <a class="reference internal" href="Options.html#Options.merge_set_collect" title="Options.merge_set_collect"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Options.merge_set_collect</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> (<em>String OR Include Object</em>) – Can either be a Filename of the Ansys LS-DYNA include file you want to import, OR Include object of another model you want to import</p></li>
+<li><p><strong>target</strong> (<em>Include Object</em>) – Optional. Include file object of current model if the Import has to be done in an existing include.
+<br/>
+If not using this argument the contents of the source will be imported as a new include.
+<br/>
+If using this argument the contents of the source will NOT be imported as a new include, they will be merged with the target include.
+<br/>
+Note: Target cannot be include number 0 (it must be an include file, not the master file)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Include object for include file</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Include</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To import include file “include.key” into model m (include.key will be a new include file in model m):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ImportInclude</span><span class="p">(</span><span class="s2">&quot;include.key&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To import include file “include.key” into existing include number 3 in model m (include.key will be merged with include number 3 of m):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">incl_source</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Include</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">ImportInclude</span><span class="p">(</span><span class="s2">&quot;include.key&quot;</span><span class="p">,</span> <span class="n">incl_source</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To import include number 5 from model m2 into model m1 (include number 5 from m2 will be a new include file in model m1):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">incl_source</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Include</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="n">m2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">m1</span><span class="o">.</span><span class="n">ImportInclude</span><span class="p">(</span><span class="n">incl_source</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To import include number 5 from model m2 into existing include number 3 in model m1 (include number 5 from m2 will be merged with include number 3 in m1):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">incl</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Include</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="n">m2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">incl_target</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Include</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">m1</span><span class="o">.</span><span class="n">ImportInclude</span><span class="p">(</span><span class="n">incl_source</span><span class="p">,</span> <span class="n">incl_target</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.ImportIncludeTransform">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ImportIncludeTransform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idnoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ideoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idpoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idmoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idsoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idfoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iddoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idroff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.ImportIncludeTransform" title="Link to this definition">¶</a></dt>
+<dd><p>Imports a file as an include transform file for model m. The labels of any items
+in the include file will be renumbered by idnoff, ideoff etc</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – Filename of the Ansys LS-DYNA include file you want to import</p></li>
+<li><p><strong>idnoff</strong> (<em>integer</em>) – Offset for nodes in the file</p></li>
+<li><p><strong>ideoff</strong> (<em>integer</em>) – Offset for elements in the file</p></li>
+<li><p><strong>idpoff</strong> (<em>integer</em>) – Offset for parts in the file</p></li>
+<li><p><strong>idmoff</strong> (<em>integer</em>) – Offset for materials in the file</p></li>
+<li><p><strong>idsoff</strong> (<em>integer</em>) – Offset for sets in the file</p></li>
+<li><p><strong>idfoff</strong> (<em>integer</em>) – Offset for functions and tables in the file</p></li>
+<li><p><strong>iddoff</strong> (<em>integer</em>) – Offset for defines in the file</p></li>
+<li><p><strong>idroff</strong> (<em>integer</em>) – Offset for other labels in the file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Include object if successful, None if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Include</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To import include transform file “include.key” into model m using 1000 for all offsets</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ImportIncludeTransform</span><span class="p">(</span><span class="s2">&quot;include.key&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Mass">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Mass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Mass" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the mass for a model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the mass for model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">Mass</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.MassPropCalc">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">MassPropCalc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.MassPropCalc" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the Mass, CoG, and Intertia Tensor of the flagged items
+and returns an object with the above properties. See Properties for
+mass properties calculation under options class to configure inclusion
+of lumped mass, etc</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Calculate mass propetries of flagged items</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">cofgx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) X coordinate of centre of gravity</p>
+</dd>
+<dt class="field-even">cofgy<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) Y coordinate of centre of gravity</p>
+</dd>
+<dt class="field-odd">cofgz<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Z coordinate of centre of gravity</p>
+</dd>
+<dt class="field-even">inerxx<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) XX inertia</p>
+</dd>
+<dt class="field-odd">inerxy<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) XY inertia</p>
+</dd>
+<dt class="field-even">inerxz<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) XZ inertia</p>
+</dd>
+<dt class="field-odd">ineryy<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) YY inertia</p>
+</dd>
+<dt class="field-even">ineryz<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) YZ inertia</p>
+</dd>
+<dt class="field-odd">inerzz<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) ZZ inertia</p>
+</dd>
+<dt class="field-even">mass<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) Mass</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To calculate the mass properties of the items flagged by flag f</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">props</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">MassPropCalc</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.MergeNodes">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">MergeNodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.MergeNodes" title="Link to this definition">¶</a></dt>
+<dd><p>Attempts to merge nodes on items flagged with flag for this model in PRIMER.
+Merging nodes on *AIRBAG_SHELL_REFERENCE_GEOMETRY can be controlled by using
+<a class="reference internal" href="Options.html#Options.node_replace_asrg" title="Options.node_replace_asrg"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Options.node_replace_asrg</span></code></a>.
+Also see <a class="reference internal" href="Node.html#Node.Merge" title="Node.Merge"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.Merge()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on items to merge nodes</p></li>
+<li><p><strong>dist</strong> (<em>float</em>) – Nodes closer than dist will be potentially merged</p></li>
+<li><p><strong>label</strong> (<em>integer</em>) – Optional. Label to keep after merge. If &gt; 0 then highest label kept.
+If &lt;= 0 then lowest kept.
+If omitted the lowest label will be kept</p></li>
+<li><p><strong>position</strong> (<em>integer</em>) – Optional. Position to merge at. If &gt; 0 then merged at highest label position.
+If &lt; 0 then merged at lowest label position.
+If 0 then merged at midpoint.
+If omitted the merge will be done at the lowest label</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of nodes merged</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To (try to) merge nodes on everything in model m flagged with flag f, with a distance of 0.1:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">MergeNodes</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.PopulateInitialVelocities">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">PopulateInitialVelocities</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.PopulateInitialVelocities" title="Link to this definition">¶</a></dt>
+<dd><p>Populate the initial velocity field (nvels) for all nodes of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">PopulateInitialVelocities</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.PropagateFlag">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">PropagateFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.PropagateFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Propagates the flagging for a model in PRIMER. For example if a part in the model is
+flagged, this will flag the elements in the part, the nodes on those elements… See also
+<a class="reference internal" href="#Model.ClearFlag" title="Model.ClearFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.ClearFlag()</span></code></a>,
+<a class="reference internal" href="#Model.SetFlag" title="Model.SetFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.SetFlag()</span></code></a>,
+<a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">global.AllocateFlag()</span></code></a> and
+<a class="reference internal" href="global.html#ReturnFlag" title="ReturnFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">global.ReturnFlag()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag to propagate</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To propagate the flagging in model m for flag f</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">PropagateFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.RenumberAll">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">RenumberAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.RenumberAll" title="Link to this definition">¶</a></dt>
+<dd><p>Renumbers all of the items in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>start</strong> (<em>integer</em>) – Start point for renumbering</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To renumber everything in model m, starting at 1000000:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">RenumberAll</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.RenumberFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">RenumberFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.RenumberFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Renumbers all of the flagged items in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on items that you want to renumber</p></li>
+<li><p><strong>start</strong> (<em>integer</em>) – Start point for renumbering</p></li>
+<li><p><strong>mode</strong> (<em>constant</em>) – Optional. Renumber mode. Can be <a class="reference internal" href="#Model.IGNORE_CLASH" title="Model.IGNORE_CLASH"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.IGNORE_CLASH</span></code></a>,
+<a class="reference internal" href="#Model.MOVE_CLASH_UP" title="Model.MOVE_CLASH_UP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.MOVE_CLASH_UP</span></code></a>,
+<a class="reference internal" href="#Model.SHIFT_ALL_UP" title="Model.SHIFT_ALL_UP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.SHIFT_ALL_UP</span></code></a>, or
+<a class="reference internal" href="#Model.RENUMBER_TO_FREE" title="Model.RENUMBER_TO_FREE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Model.RENUMBER_TO_FREE</span></code></a> (default),</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To renumber everything in model m flagged with flag f, starting at 1000000, using mode MOVE_CLASH_UP:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">RenumberFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">,</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">MOVE_CLASH_UP</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.SetColour">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">SetColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colour</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.SetColour" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the colour of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>colour</strong> (<em>colour from Colour class</em>) – The colour you want to set the model to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the colour of model m to red:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetColour</span><span class="p">(</span><span class="n">Colour</span><span class="o">.</span><span class="n">RED</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetColour</span><span class="p">(</span><span class="n">Colour</span><span class="o">.</span><span class="n">RGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.SetFlag">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">SetFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.SetFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the flagging for a model in PRIMER. See also
+<a class="reference internal" href="#Model.PropagateFlag" title="Model.PropagateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.PropagateFlag()</span></code></a>,
+<a class="reference internal" href="#Model.ClearFlag" title="Model.ClearFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.ClearFlag()</span></code></a>,
+<a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">global.AllocateFlag()</span></code></a> and
+<a class="reference internal" href="global.html#ReturnFlag" title="ReturnFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">global.ReturnFlag()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag to set</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set flag f for everything in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Show">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Show" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To show model m in PRIMER</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Unblank">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Unblank</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Unblank" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks a model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank model m</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Unblank</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.UnblankFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">UnblankFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.UnblankFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks all of the flagged items in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on items that you want to unblank</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not.
+If omitted redraw is false. If you want to do several (un)blanks and only
+redraw after the last one then use false for all redraws apart from the last one.
+Alternatively you can redraw using <a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank everything in model m flagged with flag f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">UnblankFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.UnsketchAll">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">UnsketchAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.UnsketchAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unsketches all of the sketched items in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not after the items are unsketched.
+If omitted redraw is true. If you want to unsketch several things and only
+redraw after the last one then use false for redraw and call
+<a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unsketch all the sketched objects in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">UnsketchAll</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.UpdateGraphics">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">UpdateGraphics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.UpdateGraphics" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the graphics for a model in PRIMER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To update the graphics for model m</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">UpdateGraphics</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.UsesLargeLabels">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">UsesLargeLabels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.UsesLargeLabels" title="Link to this definition">¶</a></dt>
+<dd><p>Checks to see if a model uses large labels</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logical, True if model uses large labels, False otherwise</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if model m uses large labels:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">large</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">UsesLargeLabels</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Write">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Write" title="Link to this definition">¶</a></dt>
+<dd><p>Writes a model in PRIMER to file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – Filename of the Ansys LS-DYNA keyword file you want to write</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – <p>Optional. Options specifying how the file should be written out. If omitted the default values below will be used.
+The properties available are:</p>
+<dl class="field-list simple">
+<dt class="field-odd">binary (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean) If true then the entire output file will be written out in binary, if false then
+the entire file will be written in ascii. If not defined the default is for each file in the
+model to be written in its original format, or if this is a newly created model ascii will
+be used</p>
+</dd>
+<dt class="field-even">compress (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(boolean) If true then the output file will be compressed. If false (default) then
+an uncompressed file will be written</p>
+</dd>
+<dt class="field-odd">compressLevel (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Compression level for .gz and .zip files. Must be in the range 1 to 9 with
+1 being the least compression (fastest speed) to
+9 being the greatest compression (slowest speed)</p>
+</dd>
+<dt class="field-even">compressMode (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) This option can be used to specify the mode of compression. Can be
+<a class="reference internal" href="Include.html#Include.KEEP_ORIGINAL" title="Include.KEEP_ORIGINAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.KEEP_ORIGINAL</span></code></a> or
+<a class="reference internal" href="Include.html#Include.INDIVIDUAL_GZIP" title="Include.INDIVIDUAL_GZIP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.INDIVIDUAL_GZIP</span></code></a> or
+<a class="reference internal" href="Include.html#Include.INDIVIDUAL_ZIP" title="Include.INDIVIDUAL_ZIP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.INDIVIDUAL_ZIP</span></code></a></p>
+</dd>
+<dt class="field-odd">fileStartAscii (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean) Only relevant if binary output format has been selected. If true then the beginning of
+the file (*CONTROL etc) file is written out in ascii. If false (default) then the entire file is
+converted to binary</p>
+</dd>
+<dt class="field-even">i10 (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(boolean) If true then i10 format will be used to write the file. If false (default) then
+the original Ansys LS-DYNA format in which the file was written will be used, or if this is a newly
+created model the smallest format which will contain it will be used. Note that large format
+is only available from version R9 and above. See also the large property</p>
+</dd>
+<dt class="field-odd">kbyExt (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean) If true then a binary format output file will be given the extension .kby, replacing
+the existing extension</p>
+</dd>
+<dt class="field-even">large (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(boolean) If true then large format will be used to write the file. If false (default) then
+the normal Ansys LS-DYNA format will be used. Note that large format is only available from version R7.1
+and above</p>
+</dd>
+<dt class="field-odd">masterAscii (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean) Only relevant if binary output format has been selected. If true then the whole master
+file is written out in ascii. If false (default) then the master file is also converted to binary</p>
+</dd>
+<dt class="field-even">method (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) The method used to write include files. Can be
+<a class="reference internal" href="Include.html#Include.MASTER_ONLY" title="Include.MASTER_ONLY"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.MASTER_ONLY</span></code></a>,
+<a class="reference internal" href="Include.html#Include.MERGE" title="Include.MERGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.MERGE</span></code></a>,
+<a class="reference internal" href="Include.html#Include.NOT_WRITTEN" title="Include.NOT_WRITTEN"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.NOT_WRITTEN</span></code></a>,
+<a class="reference internal" href="Include.html#Include.SUBDIR" title="Include.SUBDIR"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.SUBDIR</span></code></a> (default) or
+<a class="reference internal" href="Include.html#Include.SAME_DIR" title="Include.SAME_DIR"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.SAME_DIR</span></code></a></p>
+</dd>
+<dt class="field-odd">parametersAsValues (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean) If true then the underlying values of any parameters will be written when they are
+used in data fields rather than ‘&amp;name’. If false then ‘&amp;name’ will be written.
+See also <a class="reference internal" href="Options.html#Options.keyout_parameter_values" title="Options.keyout_parameter_values"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Options.keyout_parameter_values</span></code></a></p>
+</dd>
+<dt class="field-even">path (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) The method used to write include paths. Can be
+<a class="reference internal" href="Include.html#Include.ABSOLUTE" title="Include.ABSOLUTE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.ABSOLUTE</span></code></a> (default) or
+<a class="reference internal" href="Include.html#Include.RELATIVE" title="Include.RELATIVE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.RELATIVE</span></code></a></p>
+</dd>
+<dt class="field-odd">separator (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The directory separator used when writing include files. Can be
+<a class="reference internal" href="Include.html#Include.NATIVE" title="Include.NATIVE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.NATIVE</span></code></a> (default),
+<a class="reference internal" href="Include.html#Include.UNIX" title="Include.UNIX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.UNIX</span></code></a> or
+<a class="reference internal" href="Include.html#Include.WINDOWS" title="Include.WINDOWS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Include.WINDOWS</span></code></a></p>
+</dd>
+<dt class="field-even">version (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) The Ansys LS-DYNA version used to write the file. Can be
+“971R5”, “971R4”, “971R3”, “970v6763” etc
+(see the version popup in Model-&gt;Write ‘&gt;&gt;&gt; Ansys LS-DYNA output options’ for a full list).
+See also <a class="reference internal" href="Options.html#Options.dyna_version" title="Options.dyna_version"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Options.dyna_version</span></code></a></p>
+</dd>
+</dl>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To Write model m to file /data/test/file.key as a compressed gzip in version R10.0</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">output_obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;R10.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;compress&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;compressMode&quot;</span><span class="p">:</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">INDIVIDUAL_GZIP</span>
+<span class="p">}</span>
+<span class="n">m</span><span class="o">.</span><span class="n">Write</span><span class="p">(</span><span class="s2">&quot;/data/test/file.key&quot;</span><span class="p">,</span> <span class="n">output_obj</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.PRIMER functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Accelerometer.html">Oasys.PRIMER.Accelerometer class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Airbag.html">Oasys.PRIMER.Airbag class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Attached.html">Oasys.PRIMER.Attached class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AxialForceBeam.html">Oasys.PRIMER.AxialForceBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Beam.html">Oasys.PRIMER.Beam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Belt.html">Oasys.PRIMER.Belt class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Box.html">Oasys.PRIMER.Box class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.PRIMER.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comment.html">Oasys.PRIMER.Comment class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConnectionProperties.html">Oasys.PRIMER.ConnectionProperties class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConstructionStages.html">Oasys.PRIMER.ConstructionStages class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Oasys.PRIMER.Contact class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ContactGuidedCable.html">Oasys.PRIMER.ContactGuidedCable class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conx.html">Oasys.PRIMER.Conx class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CoordinateSystem.html">Oasys.PRIMER.CoordinateSystem class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CrossSection.html">Oasys.PRIMER.CrossSection class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Curve.html">Oasys.PRIMER.Curve class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingFrequencyRange.html">Oasys.PRIMER.DampingFrequencyRange class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartMass.html">Oasys.PRIMER.DampingPartMass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartStiffness.html">Oasys.PRIMER.DampingPartStiffness class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartStructural.html">Oasys.PRIMER.DampingPartStructural class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingRelative.html">Oasys.PRIMER.DampingRelative class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DeformableToRigid.html">Oasys.PRIMER.DeformableToRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Discrete.html">Oasys.PRIMER.Discrete class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DiscreteSphere.html">Oasys.PRIMER.DiscreteSphere class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dummy.html">Oasys.PRIMER.Dummy class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ElementDeath.html">Oasys.PRIMER.ElementDeath class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExtraNodes.html">Oasys.PRIMER.ExtraNodes class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqFRF.html">Oasys.PRIMER.FreqFRF class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqSSD.html">Oasys.PRIMER.FreqSSD class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqVibration.html">Oasys.PRIMER.FreqVibration class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeneralizedWeld.html">Oasys.PRIMER.GeneralizedWeld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeometrySurface.html">Oasys.PRIMER.GeometrySurface class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Group.html">Oasys.PRIMER.Group class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HexSpotweldAssembly.html">Oasys.PRIMER.HexSpotweldAssembly class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="History.html">Oasys.PRIMER.History class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hourglass.html">Oasys.PRIMER.Hourglass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DBrep.html">Oasys.PRIMER.IGA1DBrep class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DNurbsUVW.html">Oasys.PRIMER.IGA1DNurbsUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DNurbsXYZ.html">Oasys.PRIMER.IGA1DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DBasisTransformXYZ.html">Oasys.PRIMER.IGA2DBasisTransformXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DBrep.html">Oasys.PRIMER.IGA2DBrep class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DNurbsUVW.html">Oasys.PRIMER.IGA2DNurbsUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DNurbsXYZ.html">Oasys.PRIMER.IGA2DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA3DBasisTransformXYZ.html">Oasys.PRIMER.IGA3DBasisTransformXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA3DNurbsXYZ.html">Oasys.PRIMER.IGA3DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAEdgeUVW.html">Oasys.PRIMER.IGAEdgeUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAEdgeXYZ.html">Oasys.PRIMER.IGAEdgeXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAFaceUVW.html">Oasys.PRIMER.IGAFaceUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAFaceXYZ.html">Oasys.PRIMER.IGAFaceXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAIntegrationShellReduce.html">Oasys.PRIMER.IGAIntegrationShellReduce class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAIntegrationSolidReduce.html">Oasys.PRIMER.IGAIntegrationSolidReduce class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAMass.html">Oasys.PRIMER.IGAMass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAPointUVW.html">Oasys.PRIMER.IGAPointUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAShell.html">Oasys.PRIMER.IGAShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGASolid.html">Oasys.PRIMER.IGASolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAVolumeXYZ.html">Oasys.PRIMER.IGAVolumeXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.PRIMER.Image class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Include.html">Oasys.PRIMER.Include class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntegrationBeam.html">Oasys.PRIMER.IntegrationBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntegrationShell.html">Oasys.PRIMER.IntegrationShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceComponent.html">Oasys.PRIMER.InterfaceComponent class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceLinkingEdge.html">Oasys.PRIMER.InterfaceLinkingEdge class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceSpringback.html">Oasys.PRIMER.InterfaceSpringback class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Interpolation.html">Oasys.PRIMER.Interpolation class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterpolationSpotweld.html">Oasys.PRIMER.InterpolationSpotweld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Joint.html">Oasys.PRIMER.Joint class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="JointStiffness.html">Oasys.PRIMER.JointStiffness class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Linear.html">Oasys.PRIMER.Linear class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBeam.html">Oasys.PRIMER.LoadBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBodyGeneralized.html">Oasys.PRIMER.LoadBodyGeneralized class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadGravity.html">Oasys.PRIMER.LoadGravity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadNode.html">Oasys.PRIMER.LoadNode class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadRemovePart.html">Oasys.PRIMER.LoadRemovePart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadRigidBody.html">Oasys.PRIMER.LoadRigidBody class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadShell.html">Oasys.PRIMER.LoadShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mass.html">Oasys.PRIMER.Mass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MassPart.html">Oasys.PRIMER.MassPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Material.html">Oasys.PRIMER.Material class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mechanism.html">Oasys.PRIMER.Mechanism class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.PRIMER.Model class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#constants">Constants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#compress-mode">compress mode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.INDIVIDUAL_GZIP"><code class="docutils literal notranslate"><span class="pre">Model.INDIVIDUAL_GZIP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.INDIVIDUAL_ZIP"><code class="docutils literal notranslate"><span class="pre">Model.INDIVIDUAL_ZIP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.KEEP_ORIGINAL"><code class="docutils literal notranslate"><span class="pre">Model.KEEP_ORIGINAL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.PACKAGED_ZIP"><code class="docutils literal notranslate"><span class="pre">Model.PACKAGED_ZIP</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#compress-switch">compress switch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.COMPRESS_KEEP"><code class="docutils literal notranslate"><span class="pre">Model.COMPRESS_KEEP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.COMPRESS_OFF"><code class="docutils literal notranslate"><span class="pre">Model.COMPRESS_OFF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.COMPRESS_ON"><code class="docutils literal notranslate"><span class="pre">Model.COMPRESS_ON</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#filetype">filetype</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.ABAQUS"><code class="docutils literal notranslate"><span class="pre">Model.ABAQUS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.IGES"><code class="docutils literal notranslate"><span class="pre">Model.IGES</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.LSDYNA"><code class="docutils literal notranslate"><span class="pre">Model.LSDYNA</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.NASTRAN"><code class="docutils literal notranslate"><span class="pre">Model.NASTRAN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.RADIOSS"><code class="docutils literal notranslate"><span class="pre">Model.RADIOSS</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#include-deletion">include deletion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.REMOVE_FROM_SETS"><code class="docutils literal notranslate"><span class="pre">Model.REMOVE_FROM_SETS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.REMOVE_INCLUDE_ONLY"><code class="docutils literal notranslate"><span class="pre">Model.REMOVE_INCLUDE_ONLY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.REMOVE_JUNIOR"><code class="docutils literal notranslate"><span class="pre">Model.REMOVE_JUNIOR</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mass-properties-calculation">mass_properties_calculation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.CENTRE_AT_COFG"><code class="docutils literal notranslate"><span class="pre">Model.CENTRE_AT_COFG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.GLOBAL_AXES"><code class="docutils literal notranslate"><span class="pre">Model.GLOBAL_AXES</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.LOCAL_AXES"><code class="docutils literal notranslate"><span class="pre">Model.LOCAL_AXES</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.PRINCIPAL_AXES"><code class="docutils literal notranslate"><span class="pre">Model.PRINCIPAL_AXES</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.USER_DEFINED_CENTRE"><code class="docutils literal notranslate"><span class="pre">Model.USER_DEFINED_CENTRE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#merge">merge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.DISCARD_PRIMARY_CLASH"><code class="docutils literal notranslate"><span class="pre">Model.DISCARD_PRIMARY_CLASH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.DISCARD_SECONDARY_CLASH"><code class="docutils literal notranslate"><span class="pre">Model.DISCARD_SECONDARY_CLASH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.INCREASE_PRIMARY_ALWAYS"><code class="docutils literal notranslate"><span class="pre">Model.INCREASE_PRIMARY_ALWAYS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.INCREASE_PRIMARY_CLASH"><code class="docutils literal notranslate"><span class="pre">Model.INCREASE_PRIMARY_CLASH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.INCREASE_SECONDARY_ALWAYS"><code class="docutils literal notranslate"><span class="pre">Model.INCREASE_SECONDARY_ALWAYS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.INCREASE_SECONDARY_CLASH"><code class="docutils literal notranslate"><span class="pre">Model.INCREASE_SECONDARY_CLASH</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#renumber">renumber</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.IGNORE_CLASH"><code class="docutils literal notranslate"><span class="pre">Model.IGNORE_CLASH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.MOVE_CLASH_UP"><code class="docutils literal notranslate"><span class="pre">Model.MOVE_CLASH_UP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.RENUMBER_TO_FREE"><code class="docutils literal notranslate"><span class="pre">Model.RENUMBER_TO_FREE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.SHIFT_ALL_UP"><code class="docutils literal notranslate"><span class="pre">Model.SHIFT_ALL_UP</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#write-hook">write hook</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Model.WRITE_DIALOGUE"><code class="docutils literal notranslate"><span class="pre">Model.WRITE_DIALOGUE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.WRITE_INCLUDE_TREE"><code class="docutils literal notranslate"><span class="pre">Model.WRITE_INCLUDE_TREE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.WRITE_MODEL"><code class="docutils literal notranslate"><span class="pre">Model.WRITE_MODEL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Model.WRITE_SELECT_INCLUDES"><code class="docutils literal notranslate"><span class="pre">Model.WRITE_SELECT_INCLUDES</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#class-properties">Class properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.highest"><code class="docutils literal notranslate"><span class="pre">Model.highest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.binary"><code class="docutils literal notranslate"><span class="pre">Model.binary</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.comments"><code class="docutils literal notranslate"><span class="pre">Model.comments</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.compress"><code class="docutils literal notranslate"><span class="pre">Model.compress</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.compressMode"><code class="docutils literal notranslate"><span class="pre">Model.compressMode</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.control"><code class="docutils literal notranslate"><span class="pre">Model.control</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.damping"><code class="docutils literal notranslate"><span class="pre">Model.damping</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.database"><code class="docutils literal notranslate"><span class="pre">Model.database</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.fileStartAscii"><code class="docutils literal notranslate"><span class="pre">Model.fileStartAscii</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.filename"><code class="docutils literal notranslate"><span class="pre">Model.filename</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.id"><code class="docutils literal notranslate"><span class="pre">Model.id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.layer"><code class="docutils literal notranslate"><span class="pre">Model.layer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.loadBody"><code class="docutils literal notranslate"><span class="pre">Model.loadBody</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.masterAscii"><code class="docutils literal notranslate"><span class="pre">Model.masterAscii</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.num"><code class="docutils literal notranslate"><span class="pre">Model.num</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.number"><code class="docutils literal notranslate"><span class="pre">Model.number</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.path"><code class="docutils literal notranslate"><span class="pre">Model.path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.project"><code class="docutils literal notranslate"><span class="pre">Model.project</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.readlog"><code class="docutils literal notranslate"><span class="pre">Model.readlog</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.stage"><code class="docutils literal notranslate"><span class="pre">Model.stage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.title"><code class="docutils literal notranslate"><span class="pre">Model.title</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.visible"><code class="docutils literal notranslate"><span class="pre">Model.visible</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#constructor">Constructor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model"><code class="docutils literal notranslate"><span class="pre">Model()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#static-methods">Static methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.BlankAll"><code class="docutils literal notranslate"><span class="pre">Model.BlankAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.DeleteAll"><code class="docutils literal notranslate"><span class="pre">Model.DeleteAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.First"><code class="docutils literal notranslate"><span class="pre">Model.First()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.FirstFreeItemLabel"><code class="docutils literal notranslate"><span class="pre">Model.FirstFreeItemLabel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetAll"><code class="docutils literal notranslate"><span class="pre">Model.GetAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetFromID"><code class="docutils literal notranslate"><span class="pre">Model.GetFromID()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Last"><code class="docutils literal notranslate"><span class="pre">Model.Last()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.LastFreeItemLabel"><code class="docutils literal notranslate"><span class="pre">Model.LastFreeItemLabel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Merge"><code class="docutils literal notranslate"><span class="pre">Model.Merge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.NextFreeItemLabel"><code class="docutils literal notranslate"><span class="pre">Model.NextFreeItemLabel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Read"><code class="docutils literal notranslate"><span class="pre">Model.Read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Select"><code class="docutils literal notranslate"><span class="pre">Model.Select()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Total"><code class="docutils literal notranslate"><span class="pre">Model.Total()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.UnblankAll"><code class="docutils literal notranslate"><span class="pre">Model.UnblankAll()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instance-methods">Instance methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.AreaVolumeFlagged"><code class="docutils literal notranslate"><span class="pre">Model.AreaVolumeFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Attached"><code class="docutils literal notranslate"><span class="pre">Model.Attached()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Autofix"><code class="docutils literal notranslate"><span class="pre">Model.Autofix()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Blank"><code class="docutils literal notranslate"><span class="pre">Model.Blank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.BlankFlagged"><code class="docutils literal notranslate"><span class="pre">Model.BlankFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.CentreOfGravity"><code class="docutils literal notranslate"><span class="pre">Model.CentreOfGravity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Check"><code class="docutils literal notranslate"><span class="pre">Model.Check()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ClearFlag"><code class="docutils literal notranslate"><span class="pre">Model.ClearFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Copy"><code class="docutils literal notranslate"><span class="pre">Model.Copy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.CopyFlagged"><code class="docutils literal notranslate"><span class="pre">Model.CopyFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Delete"><code class="docutils literal notranslate"><span class="pre">Model.Delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.DeleteFlagged"><code class="docutils literal notranslate"><span class="pre">Model.DeleteFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.DeleteInclude"><code class="docutils literal notranslate"><span class="pre">Model.DeleteInclude()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.FlagDuplicate"><code class="docutils literal notranslate"><span class="pre">Model.FlagDuplicate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Flagged"><code class="docutils literal notranslate"><span class="pre">Model.Flagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetIncludeTransformOffsets"><code class="docutils literal notranslate"><span class="pre">Model.GetIncludeTransformOffsets()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Hide"><code class="docutils literal notranslate"><span class="pre">Model.Hide()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Import"><code class="docutils literal notranslate"><span class="pre">Model.Import()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ImportInclude"><code class="docutils literal notranslate"><span class="pre">Model.ImportInclude()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ImportIncludeTransform"><code class="docutils literal notranslate"><span class="pre">Model.ImportIncludeTransform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Mass"><code class="docutils literal notranslate"><span class="pre">Model.Mass()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.MassPropCalc"><code class="docutils literal notranslate"><span class="pre">Model.MassPropCalc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.MergeNodes"><code class="docutils literal notranslate"><span class="pre">Model.MergeNodes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.PopulateInitialVelocities"><code class="docutils literal notranslate"><span class="pre">Model.PopulateInitialVelocities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.PropagateFlag"><code class="docutils literal notranslate"><span class="pre">Model.PropagateFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.RenumberAll"><code class="docutils literal notranslate"><span class="pre">Model.RenumberAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.RenumberFlagged"><code class="docutils literal notranslate"><span class="pre">Model.RenumberFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.SetColour"><code class="docutils literal notranslate"><span class="pre">Model.SetColour()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.SetFlag"><code class="docutils literal notranslate"><span class="pre">Model.SetFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Show"><code class="docutils literal notranslate"><span class="pre">Model.Show()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Unblank"><code class="docutils literal notranslate"><span class="pre">Model.Unblank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.UnblankFlagged"><code class="docutils literal notranslate"><span class="pre">Model.UnblankFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.UnsketchAll"><code class="docutils literal notranslate"><span class="pre">Model.UnsketchAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.UpdateGraphics"><code class="docutils literal notranslate"><span class="pre">Model.UpdateGraphics()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.UsesLargeLabels"><code class="docutils literal notranslate"><span class="pre">Model.UsesLargeLabels()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Write"><code class="docutils literal notranslate"><span class="pre">Model.Write()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MorphBox.html">Oasys.PRIMER.MorphBox class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphFlow.html">Oasys.PRIMER.MorphFlow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphPoint.html">Oasys.PRIMER.MorphPoint class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodalForceGroup.html">Oasys.PRIMER.NodalForceGroup class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodalRigidBody.html">Oasys.PRIMER.NodalRigidBody class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Node.html">Oasys.PRIMER.Node class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodeSet.html">Oasys.PRIMER.NodeSet class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.PRIMER.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Parameter.html">Oasys.PRIMER.Parameter class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part.html">Oasys.PRIMER.Part class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedAccelerometerRigid.html">Oasys.PRIMER.PrescribedAccelerometerRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedFinalGeometry.html">Oasys.PRIMER.PrescribedFinalGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedMotion.html">Oasys.PRIMER.PrescribedMotion class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedOrientationRigid.html">Oasys.PRIMER.PrescribedOrientationRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pretensioner.html">Oasys.PRIMER.Pretensioner class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ReferenceGeometry.html">Oasys.PRIMER.ReferenceGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Retractor.html">Oasys.PRIMER.Retractor class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RigidBodies.html">Oasys.PRIMER.RigidBodies class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rigidwall.html">Oasys.PRIMER.Rigidwall class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Seatbelt1D.html">Oasys.PRIMER.Seatbelt1D class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Seatbelt2D.html">Oasys.PRIMER.Seatbelt2D class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Section.html">Oasys.PRIMER.Section class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sensor.html">Oasys.PRIMER.Sensor class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorControl.html">Oasys.PRIMER.SensorControl class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorDefine.html">Oasys.PRIMER.SensorDefine class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorSwitch.html">Oasys.PRIMER.SensorSwitch class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Set.html">Oasys.PRIMER.Set class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Shell.html">Oasys.PRIMER.Shell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ShellReferenceGeometry.html">Oasys.PRIMER.ShellReferenceGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slipring.html">Oasys.PRIMER.Slipring class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solid.html">Oasys.PRIMER.Solid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spc.html">Oasys.PRIMER.Spc class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sph.html">Oasys.PRIMER.Sph class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spotweld.html">Oasys.PRIMER.Spotweld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spr2.html">Oasys.PRIMER.Spr2 class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StagedConstructionPart.html">Oasys.PRIMER.StagedConstructionPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainBeam.html">Oasys.PRIMER.StrainBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainShell.html">Oasys.PRIMER.StrainShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainSolid.html">Oasys.PRIMER.StrainSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressBeam.html">Oasys.PRIMER.StressBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressSection.html">Oasys.PRIMER.StressSection class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressShell.html">Oasys.PRIMER.StressShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressSolid.html">Oasys.PRIMER.StressSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Termination.html">Oasys.PRIMER.Termination class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TieBreak.html">Oasys.PRIMER.TieBreak class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html">Oasys.PRIMER.Transformation class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tshell.html">Oasys.PRIMER.Tshell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.PRIMER.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Oasys.PRIMER.Vector class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Velocity.html">Oasys.PRIMER.Velocity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VelocityGeneration.html">Oasys.PRIMER.VelocityGeneration class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="View.html">Oasys.PRIMER.View class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.PRIMER.Window class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Workflow.html">Oasys.PRIMER.Workflow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Xrefs.html">Oasys.PRIMER.Xrefs class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Control.html">Oasys.PRIMER Control dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Damping.html">Oasys.PRIMER Damping dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database.html">Oasys.PRIMER Database dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBody.html">Oasys.PRIMER LoadBody dictionary</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="MorphBox.html" title="Oasys.PRIMER.MorphBox class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Mechanism.html" title="Oasys.PRIMER.Mechanism class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.PRIMER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.PRIMER.Model class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.REPORTER.Template class &#8212; Oasys.REPORTER 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.REPORTER.Utils class" href="Utils.html" />
+    <link rel="prev" title="Oasys.REPORTER.Reporter class" href="Reporter.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Utils.html" title="Oasys.REPORTER.Utils class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Reporter.html" title="Oasys.REPORTER.Reporter class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.REPORTER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.REPORTER.Template class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-reporter-template-class">
+<h1>Oasys.REPORTER.Template class<a class="headerlink" href="#oasys-reporter-template-class" title="Link to this heading">¶</a></h1>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Template.filename">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Template.filename" title="Link to this definition">¶</a></dt>
+<dd><p>Filename (without path) of the <a class="reference internal" href="#Template" title="Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">Template</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Template.generating">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">generating</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Template.generating" title="Link to this definition">¶</a></dt>
+<dd><p>true if the entire template is currently being generated</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Template.pages">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">pages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Template.pages" title="Link to this definition">¶</a></dt>
+<dd><p>Number of <a class="reference internal" href="Page.html#Page" title="Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pages</span></code></a> in template</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Template.path">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Template.path" title="Link to this definition">¶</a></dt>
+<dd><p>Absolute path (without filename) of the <a class="reference internal" href="#Template" title="Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">Template</span></code></a>. If the Template is new
+and has not yet been saved, this property will be empty</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Template.readonly">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">readonly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Template.readonly" title="Link to this definition">¶</a></dt>
+<dd><p>true if the template is read-only</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Template.view">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">view</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">constant</span></span><a class="headerlink" href="#Template.view" title="Link to this definition">¶</a></dt>
+<dd><p>Current view type (presentation or design view) for this <a class="reference internal" href="#Template" title="Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">Template</span></code></a>.
+Can be: <a class="reference internal" href="Reporter.html#Reporter.VIEW_DESIGN" title="Reporter.VIEW_DESIGN"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.VIEW_DESIGN</span></code></a> or
+<a class="reference internal" href="Reporter.html#Reporter.VIEW_PRESENTATION" title="Reporter.VIEW_PRESENTATION"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.VIEW_PRESENTATION</span></code></a></p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Template">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Template</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new <a class="reference internal" href="#Template" title="Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">Template</span></code></a>.
+The filename argument is optional. If present it is a file to open</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – Optional. Name of template file to open</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Template object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Template</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To create a new blank Template object</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">template</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">Template</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="static-methods">
+<h2>Static methods<a class="headerlink" href="#static-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Template.GetAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">GetAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.GetAll" title="Link to this definition">¶</a></dt>
+<dd><p>Get all of the open templates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of Template objects or None if no open templates</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get all of the templates open in REPORTER:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">templates</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">Template</span><span class="o">.</span><span class="n">GetAll</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.GetCurrent">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">GetCurrent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.GetCurrent" title="Link to this definition">¶</a></dt>
+<dd><p>Get the currently active template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Template object or None if no active template</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Template</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the current template open in REPORTER:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">current_template</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">Template</span><span class="o">.</span><span class="n">GetCurrent</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="instance-methods">
+<h2>Instance methods<a class="headerlink" href="#instance-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Template.Close">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.Close" title="Link to this definition">¶</a></dt>
+<dd><p>Close a template.
+<br/> <strong>Note that if you call this function for a Template object,
+the Template data will be deleted, so you should not try to use it afterwards!</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>no return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To close template data:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.DeletePage">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">DeletePage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.DeletePage" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes a page from a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> (<em>integer</em>) – The index of the page that you want to delete. Note that indices start at 0</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete the first page of template t:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">DeletePage</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.DeleteTemporaryVariables">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">DeleteTemporaryVariables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.DeleteTemporaryVariables" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes any temporary variables from a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete all the temporary variables from template t:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">DeleteTemporaryVariables</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.EditVariables">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">EditVariables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphabetical</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.EditVariables" title="Link to this definition">¶</a></dt>
+<dd><p>Start a dialog to edit the template variables</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> (<em>string</em>) – Optional. Title for dialog. If omitted, None or an empty string is given then the default title will be
+used</p></li>
+<li><p><strong>message</strong> (<em>string</em>) – Optional. Message to show in dialog. If omitted, None or an empty string is given then the default message will
+be used</p></li>
+<li><p><strong>update</strong> (<em>boolean</em>) – Optional. Whether the variables in the template will be updated with the new values if OK is pressed.
+Setting this to be false allows you to check variable values before updating them from a script.
+If omitted the default is true</p></li>
+<li><p><strong>variables</strong> (<em>list</em>) – Optional. A list of variables to show in the dialog.
+If omitted, None or an empty list, all variables will be shown</p></li>
+<li><p><strong>columns</strong> (<em>constant</em>) – Optional. Columns to show in the dialog (as well as the variable value column).
+Can be a bitwise OR of <a class="reference internal" href="Variable.html#Variable.NAME" title="Variable.NAME"><code class="xref py py-const docutils literal notranslate"><span class="pre">Variable.NAME</span></code></a>,
+<a class="reference internal" href="Variable.html#Variable.TYPE" title="Variable.TYPE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Variable.TYPE</span></code></a>,
+<a class="reference internal" href="Variable.html#Variable.DESCRIPTION" title="Variable.DESCRIPTION"><code class="xref py py-const docutils literal notranslate"><span class="pre">Variable.DESCRIPTION</span></code></a>,
+<a class="reference internal" href="Variable.html#Variable.FORMAT" title="Variable.FORMAT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Variable.FORMAT</span></code></a>,
+<a class="reference internal" href="Variable.html#Variable.PRECISION" title="Variable.PRECISION"><code class="xref py py-const docutils literal notranslate"><span class="pre">Variable.PRECISION</span></code></a> and
+<a class="reference internal" href="Variable.html#Variable.TEMPORARY" title="Variable.TEMPORARY"><code class="xref py py-const docutils literal notranslate"><span class="pre">Variable.TEMPORARY</span></code></a>.
+If omitted columns will be shown for name and description</p></li>
+<li><p><strong>alphabetical</strong> (<em>boolean</em>) – Optional. Whether to sort variables in the table by alphabetical order.
+If false, variables are listed in the order they are passed in the optional variables argument.
+If no variables are passed to the function, all template variables will be shown in alphabetical order.
+If omitted, the default value is true</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing the variable names and values or None if cancel was pressed</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To edit all of the variables in template:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">EditVariables</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>To edit variables TEST and EXAMPLE in template giving a title and a message, returning the edited values but
+<strong>not</strong> updating them in the template:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.ExpandVariablesInString">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">ExpandVariablesInString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.ExpandVariablesInString" title="Link to this definition">¶</a></dt>
+<dd><p>Replaces any variables in a string with their current values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>string</em>) – The string you want to expand variables in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String (string) with variables expanded. If a variable in a string does not exist it is replaced by a blank</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>If the variable FRED in template contains the value “test”, then the following will return “This is a test” in variable value</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.Generate">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Generate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.Generate" title="Link to this definition">¶</a></dt>
+<dd><p>Generate a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>no return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To generate template data:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Generate</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.GetAllPages">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">GetAllPages</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.GetAllPages" title="Link to this definition">¶</a></dt>
+<dd><p>Gets all of the pages from a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of Page objects</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get all of the pages from template t:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pages</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">GetAllPages</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.GetMaster">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">GetMaster</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.GetMaster" title="Link to this definition">¶</a></dt>
+<dd><p>Get the master page from a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Page object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Page</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the master page of template t:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">GetMaster</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.GetPage">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">GetPage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.GetPage" title="Link to this definition">¶</a></dt>
+<dd><p>Get a page from a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> (<em>integer</em>) – The index of the page that you want to get. Note that indices start at 0</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Page object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Page</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the first page of template t:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">GetPage</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.GetVariableDescription">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">GetVariableDescription</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.GetVariableDescription" title="Link to this definition">¶</a></dt>
+<dd><p>Get the description for a variable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>string</em>) – Variable name you want to get description for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Variable description (string) or None if variable does not exist</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get description for variable FRED in template:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">description</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">GetVariableDescription</span><span class="p">(</span><span class="s2">&quot;FRED&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.GetVariableValue">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">GetVariableValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.GetVariableValue" title="Link to this definition">¶</a></dt>
+<dd><p>Get the value for a variable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>string</em>) – Variable name you want to get value for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Variable value (string) or None if variable does not exist</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get value for variable FRED in template:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">GetVariableValue</span><span class="p">(</span><span class="s2">&quot;FRED&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.Html">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.Html" title="Link to this definition">¶</a></dt>
+<dd><p>Save a template as HTML</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – Filename you want to save</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>no return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To save template data as file /data/test/template.html:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Html</span><span class="p">(</span><span class="s2">&quot;/data/test/template.html&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.Pdf">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.Pdf" title="Link to this definition">¶</a></dt>
+<dd><p>Save a template as Adobe Acrobat PDF</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – Filename you want to save</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>no return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To save template data as file /data/test/template.pdf:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Pdf</span><span class="p">(</span><span class="s2">&quot;/data/test/template.pdf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.Pptx">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Pptx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.Pptx" title="Link to this definition">¶</a></dt>
+<dd><p>Save a template as PowerPoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – Filename you want to save</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>no return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To save template data as file /data/test/template.pptx:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Pptx</span><span class="p">(</span><span class="s2">&quot;/data/test/template.pptx&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.Print">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Print</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.Print" title="Link to this definition">¶</a></dt>
+<dd><p>Print template on a printer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>printer</strong> (<em>string</em>) – Printer you want to print to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>no return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To print template data on printer myprinter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Print</span><span class="p">(</span><span class="s2">&quot;myprinter&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.Save">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.Save" title="Link to this definition">¶</a></dt>
+<dd><p>Save a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>no return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To save template data:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Save</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.SaveAs">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">SaveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">readonly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Template.SaveAs" title="Link to this definition">¶</a></dt>
+<dd><p>Save a template/report with a new name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – Filename you want to save. Note if you use the .orr extension the template will be saved as a report
+if generated</p></li>
+<li><p><strong>readonly</strong> (<em>boolean</em>) – Optional. If saved template/report will be readonly or not</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>no return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To save template data as file /data/test/template.opt:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">SaveAs</span><span class="p">(</span><span class="s2">&quot;/data/test/template.opt&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Template.Update">
+<span class="sig-prename descclassname"><span class="pre">Template.</span></span><span class="sig-name descname"><span class="pre">Update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Template.Update" title="Link to this definition">¶</a></dt>
+<dd><p>Update/redraw a template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>no return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To update template data:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Update</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.REPORTER functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.REPORTER.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.REPORTER.Image class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Item.html">Oasys.REPORTER.Item class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.REPORTER.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Page.html">Oasys.REPORTER.Page class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reporter.html">Oasys.REPORTER.Reporter class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.REPORTER.Template class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Template.filename"><code class="docutils literal notranslate"><span class="pre">Template.filename</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.generating"><code class="docutils literal notranslate"><span class="pre">Template.generating</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.pages"><code class="docutils literal notranslate"><span class="pre">Template.pages</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.path"><code class="docutils literal notranslate"><span class="pre">Template.path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.readonly"><code class="docutils literal notranslate"><span class="pre">Template.readonly</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.view"><code class="docutils literal notranslate"><span class="pre">Template.view</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#constructor">Constructor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Template"><code class="docutils literal notranslate"><span class="pre">Template()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#static-methods">Static methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Template.GetAll"><code class="docutils literal notranslate"><span class="pre">Template.GetAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.GetCurrent"><code class="docutils literal notranslate"><span class="pre">Template.GetCurrent()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instance-methods">Instance methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Close"><code class="docutils literal notranslate"><span class="pre">Template.Close()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.DeletePage"><code class="docutils literal notranslate"><span class="pre">Template.DeletePage()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.DeleteTemporaryVariables"><code class="docutils literal notranslate"><span class="pre">Template.DeleteTemporaryVariables()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.EditVariables"><code class="docutils literal notranslate"><span class="pre">Template.EditVariables()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.ExpandVariablesInString"><code class="docutils literal notranslate"><span class="pre">Template.ExpandVariablesInString()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Generate"><code class="docutils literal notranslate"><span class="pre">Template.Generate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.GetAllPages"><code class="docutils literal notranslate"><span class="pre">Template.GetAllPages()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.GetMaster"><code class="docutils literal notranslate"><span class="pre">Template.GetMaster()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.GetPage"><code class="docutils literal notranslate"><span class="pre">Template.GetPage()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.GetVariableDescription"><code class="docutils literal notranslate"><span class="pre">Template.GetVariableDescription()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.GetVariableValue"><code class="docutils literal notranslate"><span class="pre">Template.GetVariableValue()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Html"><code class="docutils literal notranslate"><span class="pre">Template.Html()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Pdf"><code class="docutils literal notranslate"><span class="pre">Template.Pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Pptx"><code class="docutils literal notranslate"><span class="pre">Template.Pptx()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Print"><code class="docutils literal notranslate"><span class="pre">Template.Print()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Save"><code class="docutils literal notranslate"><span class="pre">Template.Save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.SaveAs"><code class="docutils literal notranslate"><span class="pre">Template.SaveAs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Template.Update"><code class="docutils literal notranslate"><span class="pre">Template.Update()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.REPORTER.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variable.html">Oasys.REPORTER.Variable class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.REPORTER.Window class</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Utils.html" title="Oasys.REPORTER.Utils class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Reporter.html" title="Oasys.REPORTER.Reporter class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.REPORTER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.REPORTER.Template class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

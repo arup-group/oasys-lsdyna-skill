@@ -1,0 +1,6 @@
+﻿###  How ATTACHED Inter-reacts with Entity Viewing and Blanking
+
+| **ATTACHED**  has to modify entity drawing and labelling settings (the province of [ENTity Viewing](controlling-entity-visibility-and-labelling.md#Entityvisibility)) and also blanking tables ( [Blank](blanking-controlling-entity-visibility.md#BLANKING)).<br> <br>The entity switches you find attached through will inevitable effect the entity panel. If shells are searched for, and the [entity panel](controlling-entity-visibility-and-labelling.md#Entityvisibility) doesn't have shells displayed, then the attached panel will turn the [entitiy](controlling-entity-visibility-and-labelling.md#Entityvisibility)switch on too.<br> <br>For convenience you can access the relevant panels directly from the  **ATTACHED**  panel, as shown here (they are no different when accessed here as opposed to from the main panel). | **![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_5.gif)** |
+| --- | --- |
+
+[Previous](using-and-updating-the-saved-status.md)  |  [Next](some-limitations-of-attached-mainly-due-to-using-set-xxx.md)

@@ -1,0 +1,4 @@
+﻿Crash Test Setup is a tool designed to streamline the setup of various crash tests according to different regulations. It allows users to quickly configure single or multiple crash test models by defining vehicle and barrier settings, after which the tool will align the barrier to the vehicle. The tool supports generation of various boundary conditions, such as initial velocity cards and contact definitions, ensuring accurate and efficient test preparation. Additionally, Batch Crash Test Setup automates the process for multiple load cases. For detailed instructions, refer to the complete guide under Help &gt; Tutorials &gt; Crash Test Setup Complete Guide.
+
+![](../Storage/primer-22-1/crash-test-setup/crash-test-setup-2025-04-14-5.png)
+[Previous](primer-xml-connection-file.md)  |  [Next](cut-sections.md)

@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.REPORTER.Item class &#8212; Oasys.REPORTER 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.REPORTER.Options class" href="Options.html" />
+    <link rel="prev" title="Oasys.REPORTER.Image class" href="Image.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Options.html" title="Oasys.REPORTER.Options class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Image.html" title="Oasys.REPORTER.Image class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.REPORTER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.REPORTER.Item class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-reporter-item-class">
+<h1>Oasys.REPORTER.Item class<a class="headerlink" href="#oasys-reporter-item-class" title="Link to this heading">¶</a></h1>
+<section id="constants">
+<span id="item-all-constants"></span><h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Item.ARROW">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">ARROW</span></span><a class="headerlink" href="#Item.ARROW" title="Link to this definition">¶</a></dt>
+<dd><p>Arrow item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.AUTO_TABLE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">AUTO_TABLE</span></span><a class="headerlink" href="#Item.AUTO_TABLE" title="Link to this definition">¶</a></dt>
+<dd><p>Automatic table item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.D3PLOT">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">D3PLOT</span></span><a class="headerlink" href="#Item.D3PLOT" title="Link to this definition">¶</a></dt>
+<dd><p>D3PLOT item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.ELLIPSE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">ELLIPSE</span></span><a class="headerlink" href="#Item.ELLIPSE" title="Link to this definition">¶</a></dt>
+<dd><p>Ellipse item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.IMAGE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">IMAGE</span></span><a class="headerlink" href="#Item.IMAGE" title="Link to this definition">¶</a></dt>
+<dd><p>Image item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.IMAGE_FILE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">IMAGE_FILE</span></span><a class="headerlink" href="#Item.IMAGE_FILE" title="Link to this definition">¶</a></dt>
+<dd><p>Image file item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.LIBRARY_IMAGE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">LIBRARY_IMAGE</span></span><a class="headerlink" href="#Item.LIBRARY_IMAGE" title="Link to this definition">¶</a></dt>
+<dd><p>Library image item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.LIBRARY_PROGRAM">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">LIBRARY_PROGRAM</span></span><a class="headerlink" href="#Item.LIBRARY_PROGRAM" title="Link to this definition">¶</a></dt>
+<dd><p>Library program item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.LINE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">LINE</span></span><a class="headerlink" href="#Item.LINE" title="Link to this definition">¶</a></dt>
+<dd><p>Line item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.NOTE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">NOTE</span></span><a class="headerlink" href="#Item.NOTE" title="Link to this definition">¶</a></dt>
+<dd><p>Note item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.PLACEHOLDER">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">PLACEHOLDER</span></span><a class="headerlink" href="#Item.PLACEHOLDER" title="Link to this definition">¶</a></dt>
+<dd><p>Placeholder item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.PRIMER">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">PRIMER</span></span><a class="headerlink" href="#Item.PRIMER" title="Link to this definition">¶</a></dt>
+<dd><p>PRIMER item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.PROGRAM">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">PROGRAM</span></span><a class="headerlink" href="#Item.PROGRAM" title="Link to this definition">¶</a></dt>
+<dd><p>Program item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.RECTANGLE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">RECTANGLE</span></span><a class="headerlink" href="#Item.RECTANGLE" title="Link to this definition">¶</a></dt>
+<dd><p>Rectangle item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.SCRIPT">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SCRIPT</span></span><a class="headerlink" href="#Item.SCRIPT" title="Link to this definition">¶</a></dt>
+<dd><p>Script item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.SCRIPT_FILE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SCRIPT_FILE</span></span><a class="headerlink" href="#Item.SCRIPT_FILE" title="Link to this definition">¶</a></dt>
+<dd><p>Script File item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.TABLE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">TABLE</span></span><a class="headerlink" href="#Item.TABLE" title="Link to this definition">¶</a></dt>
+<dd><p>Table item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.TEXT">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">TEXT</span></span><a class="headerlink" href="#Item.TEXT" title="Link to this definition">¶</a></dt>
+<dd><p>Text item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.TEXTBOX">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">TEXTBOX</span></span><a class="headerlink" href="#Item.TEXTBOX" title="Link to this definition">¶</a></dt>
+<dd><p>Textbox item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.TEXT_FILE">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">TEXT_FILE</span></span><a class="headerlink" href="#Item.TEXT_FILE" title="Link to this definition">¶</a></dt>
+<dd><p>Text file item</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Item.THIS">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">THIS</span></span><a class="headerlink" href="#Item.THIS" title="Link to this definition">¶</a></dt>
+<dd><p>T/HIS item</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Item.active">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">active</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Item.active" title="Link to this definition">¶</a></dt>
+<dd><p>If item is active or not. Inactive items will be skipped during report/page/item generation</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.autotableType">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">autotableType</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">constant</span></span><a class="headerlink" href="#Item.autotableType" title="Link to this definition">¶</a></dt>
+<dd><p>Autotable type (whether the data is sourced from a file or a
+directory). Can be <a class="reference internal" href="Reporter.html#Reporter.AUTO_TABLE_DIRECTORY" title="Reporter.AUTO_TABLE_DIRECTORY"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.AUTO_TABLE_DIRECTORY</span></code></a> or <a class="reference internal" href="Reporter.html#Reporter.AUTO_TABLE_FILE" title="Reporter.AUTO_TABLE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.AUTO_TABLE_FILE</span></code></a>. Valid for item type <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.bottomCrop">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">bottomCrop</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.bottomCrop" title="Link to this definition">¶</a></dt>
+<dd><p>Bottom cropping value. Valid for item types
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a> and
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.bottomMargin">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">bottomMargin</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.bottomMargin" title="Link to this definition">¶</a></dt>
+<dd><p>Bottom margin width. Valid for item types
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.columns">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.columns" title="Link to this definition">¶</a></dt>
+<dd><p>The number of columns in the table. Valid for item types
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.conditions">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">conditions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.conditions" title="Link to this definition">¶</a></dt>
+<dd><p>The number of conditions assigned to the item. Valid for item types
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a> and
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.embed">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">embed</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Item.embed" title="Link to this definition">¶</a></dt>
+<dd><p>If image is embedded or not. Valid for item types
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.file">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">file</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.file" title="Link to this definition">¶</a></dt>
+<dd><p>File or directory for item. Valid for item types:
+<br/>
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.SCRIPT_FILE" title="Item.SCRIPT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.SCRIPT_FILE</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>
+<br/>
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.filetype">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">filetype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.filetype" title="Link to this definition">¶</a></dt>
+<dd><p>Output file type. Read-only but can be updated by changing the file extension on the item property
+“file”. Valid for item types <a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a> <a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a> and <a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.fillColour">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">fillColour</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Colour</span> <span class="pre">object</span></span><a class="headerlink" href="#Item.fillColour" title="Link to this definition">¶</a></dt>
+<dd><p>Colour of fill for the item.
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.RECTANGLE" title="Item.RECTANGLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.RECTANGLE</span></code></a>,
+<a class="reference internal" href="#Item.ELLIPSE" title="Item.ELLIPSE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ELLIPSE</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a> and
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.fontName">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">fontName</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.fontName" title="Link to this definition">¶</a></dt>
+<dd><p>Font for the item e.g. “Courier”. Can be any font accessible by REPORTER.
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a> and
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.fontSize">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">fontSize</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.fontSize" title="Link to this definition">¶</a></dt>
+<dd><p>Font size for the item (6 &lt;= fontSize &lt;= 72).
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a> and
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.fontStyle">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">fontStyle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">constant</span></span><a class="headerlink" href="#Item.fontStyle" title="Link to this definition">¶</a></dt>
+<dd><p>Font style for the item. Can be a combination of
+<a class="reference internal" href="Reporter.html#Reporter.TEXT_NORMAL" title="Reporter.TEXT_NORMAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.TEXT_NORMAL</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.TEXT_BOLD" title="Reporter.TEXT_BOLD"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.TEXT_BOLD</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.TEXT_ITALIC" title="Reporter.TEXT_ITALIC"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.TEXT_ITALIC</span></code></a> or
+<a class="reference internal" href="Reporter.html#Reporter.TEXT_UNDERLINE" title="Reporter.TEXT_UNDERLINE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.TEXT_UNDERLINE</span></code></a>
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a> and
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.generatedRowHeight">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">generatedRowHeight</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.generatedRowHeight" title="Link to this definition">¶</a></dt>
+<dd><p>The height of each generated row in an Autotable. Valid for item type
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.generating">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">generating</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Item.generating" title="Link to this definition">¶</a></dt>
+<dd><p>true if the item is currently being generated</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.headerHeight">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">headerHeight</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.headerHeight" title="Link to this definition">¶</a></dt>
+<dd><p>The height of the header in an Autotable. Valid for item type
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.height">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">height</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.height" title="Link to this definition">¶</a></dt>
+<dd><p>Height for “rectangular” items (absolute difference between y and y2). Note that depending on
+what your object reference corner preference is set to, changing this property will result in different
+behaviour</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.job">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">job</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.job" title="Link to this definition">¶</a></dt>
+<dd><p>Input job file. Valid for item types
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a> and
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.justify">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">justify</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">constant</span></span><a class="headerlink" href="#Item.justify" title="Link to this definition">¶</a></dt>
+<dd><p>Text justification for the item. Can be
+<a class="reference internal" href="Reporter.html#Reporter.JUSTIFY_CENTRE" title="Reporter.JUSTIFY_CENTRE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.JUSTIFY_CENTRE</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.JUSTIFY_LEFT" title="Reporter.JUSTIFY_LEFT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.JUSTIFY_LEFT</span></code></a> or
+<a class="reference internal" href="Reporter.html#Reporter.JUSTIFY_RIGHT" title="Reporter.JUSTIFY_RIGHT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.JUSTIFY_RIGHT</span></code></a> combined with
+<a class="reference internal" href="Reporter.html#Reporter.JUSTIFY_TOP" title="Reporter.JUSTIFY_TOP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.JUSTIFY_TOP</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.JUSTIFY_MIDDLE" title="Reporter.JUSTIFY_MIDDLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.JUSTIFY_MIDDLE</span></code></a> or
+<a class="reference internal" href="Reporter.html#Reporter.JUSTIFY_BOTTOM" title="Reporter.JUSTIFY_BOTTOM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.JUSTIFY_BOTTOM</span></code></a>
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a> and
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.leftCrop">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">leftCrop</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.leftCrop" title="Link to this definition">¶</a></dt>
+<dd><p>Left cropping value. Valid for item types
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a> and
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.leftMargin">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">leftMargin</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.leftMargin" title="Link to this definition">¶</a></dt>
+<dd><p>Left margin width. Valid for item types
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.lineColour">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">lineColour</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Colour</span> <span class="pre">object</span></span><a class="headerlink" href="#Item.lineColour" title="Link to this definition">¶</a></dt>
+<dd><p>Colour of outline for the item.
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.LINE" title="Item.LINE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.LINE</span></code></a>,
+<a class="reference internal" href="#Item.ARROW" title="Item.ARROW"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ARROW</span></code></a>,
+<a class="reference internal" href="#Item.RECTANGLE" title="Item.RECTANGLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.RECTANGLE</span></code></a>,
+<a class="reference internal" href="#Item.ELLIPSE" title="Item.ELLIPSE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ELLIPSE</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a>,
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>,
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.lineStyle">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">lineStyle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">constant</span></span><a class="headerlink" href="#Item.lineStyle" title="Link to this definition">¶</a></dt>
+<dd><p>Style of outline for the item. Can be
+<a class="reference internal" href="Reporter.html#Reporter.LINE_NONE" title="Reporter.LINE_NONE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.LINE_NONE</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.LINE_SOLID" title="Reporter.LINE_SOLID"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.LINE_SOLID</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.LINE_DASH" title="Reporter.LINE_DASH"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.LINE_DASH</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.LINE_DOT" title="Reporter.LINE_DOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.LINE_DOT</span></code></a>,
+<a class="reference internal" href="Reporter.html#Reporter.LINE_DASH_DOT" title="Reporter.LINE_DASH_DOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.LINE_DASH_DOT</span></code></a> or
+<a class="reference internal" href="Reporter.html#Reporter.LINE_DASH_DOT_DOT" title="Reporter.LINE_DASH_DOT_DOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.LINE_DASH_DOT_DOT</span></code></a>
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.LINE" title="Item.LINE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.LINE</span></code></a>,
+<a class="reference internal" href="#Item.ARROW" title="Item.ARROW"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ARROW</span></code></a>,
+<a class="reference internal" href="#Item.RECTANGLE" title="Item.RECTANGLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.RECTANGLE</span></code></a>,
+<a class="reference internal" href="#Item.ELLIPSE" title="Item.ELLIPSE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ELLIPSE</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a>,
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a> and
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.lineWidth">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">lineWidth</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.lineWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Width of outline for the item in mm.
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.LINE" title="Item.LINE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.LINE</span></code></a>,
+<a class="reference internal" href="#Item.ARROW" title="Item.ARROW"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ARROW</span></code></a>,
+<a class="reference internal" href="#Item.RECTANGLE" title="Item.RECTANGLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.RECTANGLE</span></code></a>,
+<a class="reference internal" href="#Item.ELLIPSE" title="Item.ELLIPSE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ELLIPSE</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a>,
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>,
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.name">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.name" title="Link to this definition">¶</a></dt>
+<dd><p>Name of the <a class="reference internal" href="#Item" title="Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.resolution">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">resolution</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.resolution" title="Link to this definition">¶</a></dt>
+<dd><p>Image resolution. Larger values yield a smaller image representation on screen. Valid for item type
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.rightCrop">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">rightCrop</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.rightCrop" title="Link to this definition">¶</a></dt>
+<dd><p>Right cropping value. Valid for item types
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a> and
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.rightMargin">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">rightMargin</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.rightMargin" title="Link to this definition">¶</a></dt>
+<dd><p>Right margin width. Valid for item types
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.rows">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.rows" title="Link to this definition">¶</a></dt>
+<dd><p>The number of rows in the table. Valid for item type
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.saveCSV">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">saveCSV</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#Item.saveCSV" title="Link to this definition">¶</a></dt>
+<dd><p>Whether or not a CSV file of the table contents is written when the item is generated. Valid for item
+types <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.saveCSVFilename">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">saveCSVFilename</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.saveCSVFilename" title="Link to this definition">¶</a></dt>
+<dd><p>The path and filename of the CSV file written when the item is generated. Valid for item types
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.saveXlsx">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">saveXlsx</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#Item.saveXlsx" title="Link to this definition">¶</a></dt>
+<dd><p>Whether or not a Excel file of the table contents is written when the item is generated. Valid for item
+types <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.saveXlsxFilename">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">saveXlsxFilename</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.saveXlsxFilename" title="Link to this definition">¶</a></dt>
+<dd><p>The path and filename of the Excel file written when the item is generated. Valid for item types
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.script">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">script</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.script" title="Link to this definition">¶</a></dt>
+<dd><p>The script source text for the item.
+<br/>
+Only valid for item type <a class="reference internal" href="#Item.SCRIPT" title="Item.SCRIPT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.SCRIPT</span></code></a>.
+For <a class="reference internal" href="#Item.SCRIPT_FILE" title="Item.SCRIPT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.SCRIPT_FILE</span></code></a>, use the <em>file</em> property</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.text">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">text</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Item.text" title="Link to this definition">¶</a></dt>
+<dd><p>The text for the item.
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a> and
+<a class="reference internal" href="#Item.SCRIPT" title="Item.SCRIPT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.SCRIPT</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.textColour">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">textColour</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Colour</span> <span class="pre">object</span></span><a class="headerlink" href="#Item.textColour" title="Link to this definition">¶</a></dt>
+<dd><p>Colour of text for the item.
+<br/>
+Valid for item types
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a> and
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.topCrop">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">topCrop</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Item.topCrop" title="Link to this definition">¶</a></dt>
+<dd><p>Top cropping value. Valid for item types
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a> and
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.topMargin">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">topMargin</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.topMargin" title="Link to this definition">¶</a></dt>
+<dd><p>Top margin width. Valid for item types
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.type">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">constant</span></span><a class="headerlink" href="#Item.type" title="Link to this definition">¶</a></dt>
+<dd><p>type of the <a class="reference internal" href="#Item" title="Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a>. Can be
+<a class="reference internal" href="#Item.LINE" title="Item.LINE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.LINE</span></code></a>,
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a> etc</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.width">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">width</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.width" title="Link to this definition">¶</a></dt>
+<dd><p>Width for “rectangular” items (absolute difference between x and x2). Note that depending on
+what your object reference corner preference is set to, changing this property will result in different
+behaviour</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.x">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">x</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.x" title="Link to this definition">¶</a></dt>
+<dd><p>X coordinate</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.x2">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">x2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.x2" title="Link to this definition">¶</a></dt>
+<dd><p>Second X coordinate for “rectangular” items</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.y">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">y</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.y" title="Link to this definition">¶</a></dt>
+<dd><p>Y coordinate</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Item.y2">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">y2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Item.y2" title="Link to this definition">¶</a></dt>
+<dd><p>Second Y coordinate for “rectangular” items</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Item">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">page</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new <a class="reference internal" href="#Item" title="Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a>.
+The name and coordinates arguments are optional.
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> items
+are constructed with two rows and two columns by default. If
+you require only one row or column, use
+<a class="reference internal" href="#Item.DeleteRow" title="Item.DeleteRow"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DeleteRow</span></code></a> and
+<a class="reference internal" href="#Item.DeleteColumn" title="Item.DeleteColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DeleteColumn</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>page</strong> (<em>Page</em>) – <a class="reference internal" href="Page.html#Page" title="Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> to create item in</p></li>
+<li><p><strong>type</strong> (<em>constant</em>) – Item type. Can be
+<a class="reference internal" href="#Item.LINE" title="Item.LINE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.LINE</span></code></a>,
+<a class="reference internal" href="#Item.ARROW" title="Item.ARROW"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ARROW</span></code></a>,
+<a class="reference internal" href="#Item.RECTANGLE" title="Item.RECTANGLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.RECTANGLE</span></code></a>,
+<a class="reference internal" href="#Item.ELLIPSE" title="Item.ELLIPSE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.ELLIPSE</span></code></a>,
+<a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,
+<a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE" title="Item.IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a>,
+<a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>,
+<a class="reference internal" href="#Item.D3PLOT" title="Item.D3PLOT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a>,
+<a class="reference internal" href="#Item.PRIMER" title="Item.PRIMER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a>,
+<a class="reference internal" href="#Item.THIS" title="Item.THIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.THIS</span></code></a>,
+<a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.IMAGE_FILE" title="Item.IMAGE_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a>,
+<a class="reference internal" href="#Item.LIBRARY_IMAGE" title="Item.LIBRARY_IMAGE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.LIBRARY_IMAGE</span></code></a>,
+<a class="reference internal" href="#Item.LIBRARY_PROGRAM" title="Item.LIBRARY_PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.LIBRARY_PROGRAM</span></code></a>,
+<a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>,
+<a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a>,
+<a class="reference internal" href="#Item.SCRIPT" title="Item.SCRIPT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.SCRIPT</span></code></a>,
+<a class="reference internal" href="#Item.SCRIPT_FILE" title="Item.SCRIPT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.SCRIPT_FILE</span></code></a>,
+<a class="reference internal" href="#Item.NOTE" title="Item.NOTE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.NOTE</span></code></a> or
+<a class="reference internal" href="#Item.PLACEHOLDER" title="Item.PLACEHOLDER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PLACEHOLDER</span></code></a></p></li>
+<li><p><strong>name</strong> (<em>string</em>) – Optional. Name of item</p></li>
+<li><p><strong>x</strong> (<em>float</em>) – Optional. X coordinate</p></li>
+<li><p><strong>x2</strong> (<em>float</em>) – Optional. Second X coordinate for “rectangular” items</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – Optional. Y coordinate</p></li>
+<li><p><strong>y2</strong> (<em>float</em>) – Optional. Second Y coordinate for “rectangular” items</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Item object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Item</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To create a new blank Item object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">Item</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="static-methods">
+<h2>Static methods<a class="headerlink" href="#static-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Item.GetAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">page</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetAll" title="Link to this definition">¶</a></dt>
+<dd><p>Get all of the items on a page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>page</strong> (<em>Page</em>) – <a class="reference internal" href="Page.html#Page" title="Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> to get items from</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of Item objects</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get all of the items on page p:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">items</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">Item</span><span class="o">.</span><span class="n">GetAll</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetFromName">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetFromName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">page</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetFromName" title="Link to this definition">¶</a></dt>
+<dd><p>Get an Item from its name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>page</strong> (<em>Page</em>) – <a class="reference internal" href="Page.html#Page" title="Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> to get item from</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – Item name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Item object (or None if item cannot be found)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Item</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the item with name test on page p:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">item</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">Item</span><span class="o">.</span><span class="n">GetFromName</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="instance-methods">
+<h2>Instance methods<a class="headerlink" href="#instance-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Item.DeleteColumn">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">DeleteColumn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.DeleteColumn" title="Link to this definition">¶</a></dt>
+<dd><p>Delete a column from a table. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>column</strong> (<em>integer</em>) – The index of the column to delete. Note that indices start from 0</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete the second column from table item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">DeleteColumn</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.DeleteRow">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">DeleteRow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.DeleteRow" title="Link to this definition">¶</a></dt>
+<dd><p>Delete a row from a table. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>row</strong> (<em>integer</em>) – The
+index of the row to delete. Note that indices start from 0</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete the second row from table item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">DeleteRow</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.Generate">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">Generate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Item.Generate" title="Link to this definition">¶</a></dt>
+<dd><p>Generate an item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To generate item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">Generate</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetCellProperties">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetCellProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetCellProperties" title="Link to this definition">¶</a></dt>
+<dd><p>Get the properties of the specified cell. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row</strong> (<em>integer</em>) – The row
+index of the cell of interest. Note that indices start from 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column index of the cell of interest. Note that indices start from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">bottomBorderWidth<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Cell bottom border width. Can be 0.0, 0.1, 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0. Other values will
+result in no border</p>
+</dd>
+<dt class="field-even">colspan<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Number of columns this cell spans (for merged cells). 1 if not merged. Use columnMergeOrigin to find
+top-left cell</p>
+</dd>
+<dt class="field-odd">column<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The column index</p>
+</dd>
+<dt class="field-even">columnMergeOrigin<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) The column index of the top-left cell in this merge cell group (if cell not merged then ==
+column)</p>
+</dd>
+<dt class="field-odd">conditions<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Number of conditions assigned to this cell</p>
+</dd>
+<dt class="field-even">fillColour<span class="colon">:</span></dt>
+<dd class="field-even"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-odd">fontName<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-even">fontSize<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-odd">fontStyle<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) Cell height. Modifying this property will modify the height of all cells in the row</p>
+</dd>
+<dt class="field-odd">hyperlinkHTML<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Hyperlink destination for HTML</p>
+</dd>
+<dt class="field-even">hyperlinkPDF<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Hyperlink destination for PDF</p>
+</dd>
+<dt class="field-odd">hyperlinkReport<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Hyperlink destination for Report or page within Report</p>
+</dd>
+<dt class="field-even">justify<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Text justification for the item. Same rules as justify property of <a class="reference internal" href="#Item" title="Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a>
+Class</p>
+</dd>
+<dt class="field-odd">output<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) The output text from a Program or Library Program cell</p>
+</dd>
+<dt class="field-even">prefix<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Prefix text to appear before Library Program output</p>
+</dd>
+<dt class="field-odd">program<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Path and filename for a Program cell, or the filename (e.g. <em>title.js</em>) for a Library Program
+cell</p>
+</dd>
+<dt class="field-even">programArgs<span class="colon">:</span></dt>
+<dd class="field-even"><p>(List of strings) Program arguments</p>
+</dd>
+<dt class="field-odd">rightBorderWidth<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Cell right border width. Can be 0.0, 0.1, 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0. Other values will
+result in no border</p>
+</dd>
+<dt class="field-even">row<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) The cell row index</p>
+</dd>
+<dt class="field-odd">rowMergeOrigin<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The row index of the top-left cell in this merge cell group (if cell not merged then == row)</p>
+</dd>
+<dt class="field-even">rowSpan<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Number of rows this cell spans (for merged cells). == 1 if not merged. Use rowMergeOrigin to find top-left
+cell</p>
+</dd>
+<dt class="field-odd">suffix<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Suffix text to appear after Library Program output</p>
+</dd>
+<dt class="field-even">text<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) The cell text. For Program and Library Program cells, use the <strong>prefix</strong>, <strong>output</strong> and
+<strong>suffix</strong> properties</p>
+</dd>
+<dt class="field-odd">textColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">topBorderWidth<span class="colon">:</span></dt>
+<dd class="field-even"><p>(real) Cell top border width. Can be 0.0, 0.1, 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0. Other values will
+result in no border</p>
+</dd>
+<dt class="field-odd">type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Can be <a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,:py:const:<cite>Item.LIBRARY_PROGRAM &lt;Item.LIBRARY_PROGRAM&gt;</cite> or <a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a></p>
+</dd>
+<dt class="field-even">variable<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) REPORTER variable for library program output</p>
+</dd>
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Cell width. Modifying this property will modify the width of all cells in the column</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the properties of the top-left cell in a table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">GetCellProperties</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetColumnProperties">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetColumnProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetColumnProperties" title="Link to this definition">¶</a></dt>
+<dd><p>Get an autotable column properties. Valid for item type <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column</strong> (<em>integer</em>) – The index of the column of interest. Note that indices start from 0</p></li>
+<li><p><strong>header</strong> (<em>constant</em>) – An argument to signify to get the properties of the header or the generated rows. Can be <a class="reference internal" href="Reporter.html#Reporter.AUTO_TABLE_HEADER" title="Reporter.AUTO_TABLE_HEADER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.AUTO_TABLE_HEADER</span></code></a> or <a class="reference internal" href="Reporter.html#Reporter.AUTO_TABLE_ROWS" title="Reporter.AUTO_TABLE_ROWS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.AUTO_TABLE_ROWS</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">conditions<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Number of conditions assigned to this cell</p>
+</dd>
+<dt class="field-even">fillColour<span class="colon">:</span></dt>
+<dd class="field-even"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-odd">fontName<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-even">fontSize<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-odd">fontStyle<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font style. Same rules as fontStyle property of</p>
+</dd>
+<dt class="field-even">hyperlinkHTML<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Hyperlink destination for HTML</p>
+</dd>
+<dt class="field-odd">hyperlinkPDF<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Hyperlink destination for PDF</p>
+</dd>
+<dt class="field-even">hyperlinkReport<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Hyperlink destination for Report or page within Report</p>
+</dd>
+<dt class="field-odd">justify<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text justification for the item. Same rules as justify property of <a class="reference internal" href="#Item" title="Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a>
+Class</p>
+</dd>
+<dt class="field-even">program<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Path and filename for a Program cell, or the filename (e.g. <em>title.js</em>) for a Library Program
+cell</p>
+</dd>
+<dt class="field-odd">programArgs<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(List of strings) Program arguments</p>
+</dd>
+<dt class="field-even">text<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) The cell text. For Program and Library Program cells, use the <strong>prefix</strong>, <strong>output</strong> and
+<strong>suffix</strong> properties</p>
+</dd>
+<dt class="field-odd">textColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">type<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Can be <a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,:py:const:<cite>Item.LIBRARY_PROGRAM &lt;Item.LIBRARY_PROGRAM&gt;</cite> or <a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a></p>
+</dd>
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Cell width. Modifying this property will modify the width of all cells in the column</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Returns the column properties of the header of the first column:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">GetColumnProperties</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Reporter</span><span class="o">.</span><span class="n">AUTO_TABLE_HEADER</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetColumnWidth">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetColumnWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetColumnWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Get the width of a table column. Valid for item types <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>
+or <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>row</strong> (<em>integer</em>) – The index of the column of interest. Note that indices start from 0</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Integer. The width of the specified column</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the width of the first column in a table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">GetColumnWidth</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Get the conditional formatting data for an item. Valid for item types <a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>, <a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>, <a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a> or <a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a> (for <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a> and <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>, see
+GetCondition functions with additional arguments below)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> (<em>integer</em>) – The index of the condition to get. Note that indices start from 0. See <a class="reference internal" href="#Item.conditions" title="Item.conditions"><code class="xref py py-attr docutils literal notranslate"><span class="pre">conditions</span></code></a> for the total number of comditions</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">fillColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-even">fontName<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-odd">fontSize<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-even">fontStyle<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">justify<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text alignment for the item. See <a class="reference internal" href="Reporter.html#reporter-justification-constants"><span class="std std-ref">Justification</span></a>
+constants for details</p>
+</dd>
+<dt class="field-even">name<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Condition name</p>
+</dd>
+<dt class="field-odd">textColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">type<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) See <a class="reference internal" href="Reporter.html#reporter-condition-types-constants"><span class="std std-ref">Condition types</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">value<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) First condition value</p>
+</dd>
+<dt class="field-even">value2<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Second condition value (where relevant)</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the data for the 2nd condition in item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">GetCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetAutotableCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetAutotableCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetAutotableCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Get the conditional formatting data for an <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a>
+item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>integer</em>) – The index of the condition to get.
+Note that indices start from 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column to get the condition from. Note that indices start from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">fillColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-even">fontName<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-odd">fontSize<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-even">fontStyle<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">justify<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text alignment for the item. See <a class="reference internal" href="Reporter.html#reporter-justification-constants"><span class="std std-ref">Justification</span></a>
+constants for details</p>
+</dd>
+<dt class="field-even">name<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Condition name</p>
+</dd>
+<dt class="field-odd">textColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">type<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) See <a class="reference internal" href="Reporter.html#reporter-condition-types-constants"><span class="std std-ref">Condition types</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">value<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) First condition value</p>
+</dd>
+<dt class="field-even">value2<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Second condition value (where relevant)</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the data for the 2nd condition from the 3rd column in autotable item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">GetCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetTableCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetTableCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetTableCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Get the conditional formatting data for an <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>
+item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>integer</em>) – The index of the condition to get.
+Note that indices start from 0</p></li>
+<li><p><strong>row</strong> (<em>integer</em>) – The cell row to get the condition from. Note that indices start from 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The cell column to get the condition from. Note that indices start from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dict with properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">fillColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-even">fontName<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-odd">fontSize<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-even">fontStyle<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">justify<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text alignment for the item. See <a class="reference internal" href="Reporter.html#reporter-justification-constants"><span class="std std-ref">Justification</span></a>
+constants for details</p>
+</dd>
+<dt class="field-even">name<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Condition name</p>
+</dd>
+<dt class="field-odd">textColour<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">type<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) See <a class="reference internal" href="Reporter.html#reporter-condition-types-constants"><span class="std std-ref">Condition types</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">value<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) First condition value</p>
+</dd>
+<dt class="field-even">value2<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Second condition value (where relevant)</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the data for the 2nd condition from the 4th row, 3rd column in table item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">GetCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetGeneratedData">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetGeneratedData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetGeneratedData" title="Link to this definition">¶</a></dt>
+<dd><p>Get the text that appears in an autotable cell once generated. Valid for item type <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row_index</strong> (<em>integer</em>) – The index of the row of interest. Note that indices start from 0</p></li>
+<li><p><strong>column_index</strong> (<em>integer</em>) – The index of the column of interest. Note that indicies start from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String: the text displayed in the specified row and column</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Get the data from the first cell in the first row and column in an autotable</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">GetGeneratedData</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.GetRowHeight">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">GetRowHeight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.GetRowHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Get the height of a table row. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>row</strong> (<em>integer</em>) – The
+index of the row of interest. Note that indices start from 0</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>integer</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the height of the first row in a table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">GetRowHeight</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.InsertColumn">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">InsertColumn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.InsertColumn" title="Link to this definition">¶</a></dt>
+<dd><p>Insert a column into a table. Valid for item types <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>
+and <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>column</strong> (<em>integer</em>) – The index of the position where the inserted column will end up. Note that indices start from 0. If no
+argument is given, a column will be added to the bottom of the table</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To insert a column that will become the second column from the left of the table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">InsertColumn</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.InsertRow">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">InsertRow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.InsertRow" title="Link to this definition">¶</a></dt>
+<dd><p>Insert a row into a table. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>row</strong> (<em>integer</em>) – The
+index of the position where the inserted row will end up. Note that indices start from 0. If no argument is given, a row
+will be added to the bottom of the table</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To insert a row that will become the second row from the top of the table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">InsertRow</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.MergeCells">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">MergeCells</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topleftrow</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topleftcolumn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.MergeCells" title="Link to this definition">¶</a></dt>
+<dd><p>Merge specified cells in a table. Valid for item types <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>topleftrow</strong> (<em>integer</em>) – The row index of the top-left cell in the group of cells to be merged. Note that indices start from
+0</p></li>
+<li><p><strong>topleftcolumn</strong> (<em>integer</em>) – The column index of the top-left cell in the group of cells to be merged. Note that indices start from
+0</p></li>
+<li><p><strong>rows</strong> (<em>integer</em>) – The number of rows of cells to be merged (measured from the topLeftRow position)</p></li>
+<li><p><strong>columns</strong> (<em>integer</em>) – The number of columns of cells to be merged (measured from the topLeftColumn position)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To merge the cells in first row and the first two columns in the table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">MergeCells</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.RemoveCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">RemoveCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.RemoveCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Remove the specified condition for an item. Valid for item types <a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>, <a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>, <a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a> or <a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a> (for <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a> and <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>, see
+RemoveCondition functions with additional arguments below)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>condition</strong> (<em>integer</em>) – The index of the condition you wish to remove. Note that indices start at 0</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To remove the condition for the condition index 1 in item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">RemoveCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.RemoveAutotableCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">RemoveAutotableCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.RemoveAutotableCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Remove the specified condition for an <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a>
+item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition</strong> (<em>integer</em>) – The index of the condition you
+wish to remove. Note that indices start at 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column to remove the condition for. Note that indices start from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To remove the condition for condition index 1 in the third column in item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">RemoveAutotableCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.RemoveTableCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">RemoveTableCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.RemoveTableCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Remove the specified condition for an <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>
+item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition</strong> (<em>integer</em>) – The index of the condition you
+wish to remove. Note that indices start at 0</p></li>
+<li><p><strong>row</strong> (<em>integer</em>) – The row to remove the condition for. Note that indices start from 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column to remove the condition for. Note that indices start from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To remove the condition for condition index 1 in the fourth row, third column in item i:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">RemoveTableCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.SetCellProperties">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SetCellProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">properties</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.SetCellProperties" title="Link to this definition">¶</a></dt>
+<dd><p>Set the properties of the specified cell. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>properties</strong> (<em>dict</em>) – <p>An object
+containing the cell properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">bottomBorderWidth (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Cell bottom border width. Can be 0.0, 0.1, 0.5,
+0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0. Other values will result in no border</p>
+</dd>
+<dt class="field-even">fillColour (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-odd">fontName (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-even">fontSize (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-odd">fontStyle (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-even">hyperlinkHTML (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Hyperlink destination for HTML</p>
+</dd>
+<dt class="field-odd">hyperlinkPDF (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Hyperlink destination for PDF</p>
+</dd>
+<dt class="field-even">hyperlinkReport (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Hyperlink destination for Report or page within Report</p>
+</dd>
+<dt class="field-odd">justify (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text justification for the item. Same rules as justify property of <a class="reference internal" href="#Item" title="Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a>
+Class</p>
+</dd>
+<dt class="field-even">prefix (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Prefix text to appear before Library Program output</p>
+</dd>
+<dt class="field-odd">program (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Path and filename for a Program cell, or the filename (e.g. <em>title.js</em>) for a Library Program
+cell</p>
+</dd>
+<dt class="field-even">programArgs (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(List of strings) Program arguments</p>
+</dd>
+<dt class="field-odd">rightBorderWidth (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Cell right border width. Can be 0.0, 0.1, 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0. Other values will
+result in no border</p>
+</dd>
+<dt class="field-even">suffix (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Suffix text to appear after Library Program output</p>
+</dd>
+<dt class="field-odd">text (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) The cell text. For Program and Library Program cells, use the <strong>prefix</strong>, <strong>output</strong> and
+<strong>suffix</strong> properties</p>
+</dd>
+<dt class="field-even">textColour (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-odd">topBorderWidth (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(real) Cell top border width. Can be 0.0, 0.1, 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0. Other values will
+result in no border</p>
+</dd>
+<dt class="field-even">type (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Can be <a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,:py:const:<cite>Item.LIBRARY_PROGRAM &lt;Item.LIBRARY_PROGRAM&gt;</cite> or <a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a></p>
+</dd>
+<dt class="field-odd">variable (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) REPORTER variable for library program output</p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>row</strong> (<em>integer</em>) – The row index of the cell to be modified. Note that indices start from 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column index of the cell to be modified. Note that indices start from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the properties of the cell object to those of the object <em>cell_obj</em>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">SetCellProperties</span><span class="p">(</span><span class="n">cell_obj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.SetColumnProperties">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SetColumnProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">properties</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.SetColumnProperties" title="Link to this definition">¶</a></dt>
+<dd><p>Set the properties of an autotable column. Valid for item type <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>properties</strong> (<em>dict</em>) – <p>Set the properties of an autotable column. Valid for item type <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">fillColour (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-even">fontName (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-odd">fontSize (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-even">fontStyle (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font style. Same rules as fontStyle property of</p>
+</dd>
+<dt class="field-odd">hyperlinkHTML (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Hyperlink destination for HTML</p>
+</dd>
+<dt class="field-even">hyperlinkPDF (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Hyperlink destination for PDF</p>
+</dd>
+<dt class="field-odd">hyperlinkReport (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Hyperlink destination for Report or page within Report</p>
+</dd>
+<dt class="field-even">justify (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Text justification for the item. Same rules as justify property of <a class="reference internal" href="#Item" title="Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a>
+Class</p>
+</dd>
+<dt class="field-odd">program (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) Path and filename for a Program cell, or the filename (e.g. <em>title.js</em>) for a Library Program
+cell</p>
+</dd>
+<dt class="field-even">programArgs (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(List of strings) Program arguments</p>
+</dd>
+<dt class="field-odd">text (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) The cell text. For Program and Library Program cells, use the <strong>prefix</strong>, <strong>output</strong> and
+<strong>suffix</strong> properties</p>
+</dd>
+<dt class="field-even">textColour (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-odd">type (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Can be <a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a>,:py:const:<cite>Item.LIBRARY_PROGRAM &lt;Item.LIBRARY_PROGRAM&gt;</cite> or <a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a></p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The index of the column of interest. Note that indices start from 0</p></li>
+<li><p><strong>header</strong> (<em>constant</em>) – An argument to signify to set the properties of the header or the generated rows. Can be <a class="reference internal" href="Reporter.html#Reporter.AUTO_TABLE_HEADER" title="Reporter.AUTO_TABLE_HEADER"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.AUTO_TABLE_HEADER</span></code></a> or <a class="reference internal" href="Reporter.html#Reporter.AUTO_TABLE_ROWS" title="Reporter.AUTO_TABLE_ROWS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Reporter.AUTO_TABLE_ROWS</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Sets the column properties of the header of the first column with the properties of the object
+<em>column_obj</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">SetColumnProperties</span><span class="p">(</span><span class="n">column_obj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Reporter</span><span class="o">.</span><span class="n">AUTO_TABLE_HEADER</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.SetColumnWidth">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SetColumnWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.SetColumnWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Set the width of a table column. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column</strong> (<em>integer</em>) – The
+index of the column of interest. Note that indices start from 0</p></li>
+<li><p><strong>width</strong> (<em>float</em>) – The column width</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the width of the first column in a table to 10.0:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">SetColumnWidth</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.SetCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SetCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.SetCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Set the specified condition for an item. Valid for item types <a class="reference internal" href="#Item.TEXT_FILE" title="Item.TEXT_FILE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a>, <a class="reference internal" href="#Item.PROGRAM" title="Item.PROGRAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a>, <a class="reference internal" href="#Item.TEXT" title="Item.TEXT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a> or <a class="reference internal" href="#Item.TEXTBOX" title="Item.TEXTBOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a> (for <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a> and <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>, see
+SetCondition functions with additional arguments below)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition</strong> (<em>integer</em>) – The index of the condition you wish to set. Note that indices start at 0. If a condition already exists at
+the specified index, it will be replaced. To add a new condition, specify an index equal to the number of existing
+conditions</p></li>
+<li><p><strong>properties</strong> (<em>dict</em>) – <p>The index of the condition you wish to set. Note that indices start at 0. If a condition already exists at
+the specified index, it will be replaced. To add a new condition, specify an index equal to the number of existing
+conditions</p>
+<dl class="field-list simple">
+<dt class="field-odd">fillColour (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-even">fontName (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-odd">fontSize (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-even">fontStyle (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">justify (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text alignment for the item. See <a class="reference internal" href="Reporter.html#reporter-justification-constants"><span class="std std-ref">Justification</span></a>
+constants for details</p>
+</dd>
+<dt class="field-even">name<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Condition name</p>
+</dd>
+<dt class="field-odd">textColour (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">type (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) See <a class="reference internal" href="Reporter.html#reporter-condition-types-constants"><span class="std std-ref">Condition types</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">value (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) First condition value</p>
+</dd>
+<dt class="field-even">value2 (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Second condition value (where relevant)</p>
+</dd>
+</dl>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the conditions for the condition index 1 in item i to those of the object obj:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;example&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span> <span class="p">:</span> <span class="n">Reporter</span><span class="o">.</span><span class="n">CONDITION_EQUAL_TO</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span> <span class="p">:</span> <span class="s2">&quot;Test&quot;</span><span class="p">,</span> <span class="s2">&quot;textColour&quot;</span> <span class="p">:</span> <span class="n">Colour</span><span class="o">.</span><span class="n">Red</span><span class="p">()}</span>
+<span class="n">i</span><span class="o">.</span><span class="n">SetCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.SetAutotableCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SetAutotableCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.SetAutotableCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Set the specified condition for an <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a>
+item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition</strong> (<em>integer</em>) – The index of the condition you
+wish to set. Note that indices start at 0. If a condition already exists at the specified index, it will be replaced. To
+add a new condition, specify an index equal to the number of existing conditions</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column to set the condition for. Note that indices start from 0</p></li>
+<li><p><strong>properties</strong> (<em>dict</em>) – <p>The column to set the condition for. Note that indices start from 0</p>
+<dl class="field-list simple">
+<dt class="field-odd">fillColour (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-even">fontName (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-odd">fontSize (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-even">fontStyle (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">justify (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text alignment for the item. See <a class="reference internal" href="Reporter.html#reporter-justification-constants"><span class="std std-ref">Justification</span></a>
+constants for details</p>
+</dd>
+<dt class="field-even">name<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Condition name</p>
+</dd>
+<dt class="field-odd">textColour (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">type (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) See <a class="reference internal" href="Reporter.html#reporter-condition-types-constants"><span class="std std-ref">Condition types</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">value (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) First condition value</p>
+</dd>
+<dt class="field-even">value2 (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Second condition value (where relevant)</p>
+</dd>
+</dl>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the conditions for condition index 1 in the third column in item i to those of the object obj:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;example&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span> <span class="p">:</span> <span class="n">Reporter</span><span class="o">.</span><span class="n">CONDITION_EQUAL_TO</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span> <span class="p">:</span> <span class="s2">&quot;Test&quot;</span><span class="p">,</span> <span class="s2">&quot;textColour&quot;</span> <span class="p">:</span> <span class="n">Colour</span><span class="o">.</span><span class="n">Red</span><span class="p">()}</span>
+<span class="n">i</span><span class="o">.</span><span class="n">SetAutotableCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.SetTableCondition">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SetTableCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.SetTableCondition" title="Link to this definition">¶</a></dt>
+<dd><p>Set the specified condition for an <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a>
+item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition</strong> (<em>integer</em>) – The index of the condition you
+wish to set. Note that indices start at 0. If a condition already exists at the specified index, it will be replaced. To
+add a new condition, specify an index equal to the number of existing conditions</p></li>
+<li><p><strong>row</strong> (<em>integer</em>) – The row to set the condition for. Note that indices start from 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column to set the condition for. Note that indices start from 0</p></li>
+<li><p><strong>properties</strong> (<em>dict</em>) – <p>The column to set the condition for. Note that indices start from 0</p>
+<dl class="field-list simple">
+<dt class="field-odd">fillColour (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Fill colour</p>
+</dd>
+<dt class="field-even">fontName (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Font name (e.g. “Courier”)</p>
+</dd>
+<dt class="field-odd">fontSize (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Font size (between 6 and 72)</p>
+</dd>
+<dt class="field-even">fontStyle (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Font style. See <a class="reference internal" href="Reporter.html#reporter-text-style-constants"><span class="std std-ref">Text style</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">justify (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Text alignment for the item. See <a class="reference internal" href="Reporter.html#reporter-justification-constants"><span class="std std-ref">Justification</span></a>
+constants for details</p>
+</dd>
+<dt class="field-even">name<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Condition name</p>
+</dd>
+<dt class="field-odd">textColour (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(<code class="xref py py-class docutils literal notranslate"><span class="pre">Colour</span></code> object) Colour of text</p>
+</dd>
+<dt class="field-even">type (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) See <a class="reference internal" href="Reporter.html#reporter-condition-types-constants"><span class="std std-ref">Condition types</span></a> constants for
+details</p>
+</dd>
+<dt class="field-odd">value (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(string) First condition value</p>
+</dd>
+<dt class="field-even">value2 (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(string) Second condition value (where relevant)</p>
+</dd>
+</dl>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the conditions for condition index 1 in the fourth row, third column in item i to those of the object
+obj:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;example&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span> <span class="p">:</span>
+<span class="n">Reporter</span><span class="o">.</span><span class="n">CONDITION_EQUAL_TO</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span> <span class="p">:</span> <span class="s2">&quot;Test&quot;</span><span class="p">,</span> <span class="s2">&quot;textColour&quot;</span> <span class="p">:</span> <span class="n">Colour</span><span class="o">.</span><span class="n">Red</span><span class="p">()}</span> <span class="n">i</span><span class="o">.</span><span class="n">SetTableCondition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.SetRowHeight">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">SetRowHeight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.SetRowHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Set the height of a table row. Valid for item type <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row</strong> (<em>integer</em>) – The index of the row of interest. Note that indices start from 0</p></li>
+<li><p><strong>height</strong> (<em>float</em>) – The row height</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the height of the first row in a table to 10.0:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">SetRowHeight</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Item.UnmergeCells">
+<span class="sig-prename descclassname"><span class="pre">Item.</span></span><span class="sig-name descname"><span class="pre">UnmergeCells</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Item.UnmergeCells" title="Link to this definition">¶</a></dt>
+<dd><p>Unmerge the specified cell in a table. All cells merged to the specified cell will be unmerged. Valid for
+item types <a class="reference internal" href="#Item.TABLE" title="Item.TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a> and <a class="reference internal" href="#Item.AUTO_TABLE" title="Item.AUTO_TABLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row</strong> (<em>integer</em>) – The row index of the cell to be unmerged. Note that indices start from 0</p></li>
+<li><p><strong>column</strong> (<em>integer</em>) – The column index of the cell to be unmerged. Note that indices start from 0.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unmerge the top-left cell in a table:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span><span class="n">UnmergeCells</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.REPORTER functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.REPORTER.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.REPORTER.Image class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.REPORTER.Item class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#constants">Constants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Item.ARROW"><code class="docutils literal notranslate"><span class="pre">Item.ARROW</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.AUTO_TABLE"><code class="docutils literal notranslate"><span class="pre">Item.AUTO_TABLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.D3PLOT"><code class="docutils literal notranslate"><span class="pre">Item.D3PLOT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.ELLIPSE"><code class="docutils literal notranslate"><span class="pre">Item.ELLIPSE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.IMAGE"><code class="docutils literal notranslate"><span class="pre">Item.IMAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.IMAGE_FILE"><code class="docutils literal notranslate"><span class="pre">Item.IMAGE_FILE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.LIBRARY_IMAGE"><code class="docutils literal notranslate"><span class="pre">Item.LIBRARY_IMAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.LIBRARY_PROGRAM"><code class="docutils literal notranslate"><span class="pre">Item.LIBRARY_PROGRAM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.LINE"><code class="docutils literal notranslate"><span class="pre">Item.LINE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.NOTE"><code class="docutils literal notranslate"><span class="pre">Item.NOTE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.PLACEHOLDER"><code class="docutils literal notranslate"><span class="pre">Item.PLACEHOLDER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.PRIMER"><code class="docutils literal notranslate"><span class="pre">Item.PRIMER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.PROGRAM"><code class="docutils literal notranslate"><span class="pre">Item.PROGRAM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.RECTANGLE"><code class="docutils literal notranslate"><span class="pre">Item.RECTANGLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SCRIPT"><code class="docutils literal notranslate"><span class="pre">Item.SCRIPT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SCRIPT_FILE"><code class="docutils literal notranslate"><span class="pre">Item.SCRIPT_FILE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.TABLE"><code class="docutils literal notranslate"><span class="pre">Item.TABLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.TEXT"><code class="docutils literal notranslate"><span class="pre">Item.TEXT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.TEXTBOX"><code class="docutils literal notranslate"><span class="pre">Item.TEXTBOX</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.TEXT_FILE"><code class="docutils literal notranslate"><span class="pre">Item.TEXT_FILE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.THIS"><code class="docutils literal notranslate"><span class="pre">Item.THIS</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Item.active"><code class="docutils literal notranslate"><span class="pre">Item.active</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.autotableType"><code class="docutils literal notranslate"><span class="pre">Item.autotableType</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.bottomCrop"><code class="docutils literal notranslate"><span class="pre">Item.bottomCrop</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.bottomMargin"><code class="docutils literal notranslate"><span class="pre">Item.bottomMargin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.columns"><code class="docutils literal notranslate"><span class="pre">Item.columns</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.conditions"><code class="docutils literal notranslate"><span class="pre">Item.conditions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.embed"><code class="docutils literal notranslate"><span class="pre">Item.embed</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.file"><code class="docutils literal notranslate"><span class="pre">Item.file</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.filetype"><code class="docutils literal notranslate"><span class="pre">Item.filetype</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.fillColour"><code class="docutils literal notranslate"><span class="pre">Item.fillColour</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.fontName"><code class="docutils literal notranslate"><span class="pre">Item.fontName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.fontSize"><code class="docutils literal notranslate"><span class="pre">Item.fontSize</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.fontStyle"><code class="docutils literal notranslate"><span class="pre">Item.fontStyle</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.generatedRowHeight"><code class="docutils literal notranslate"><span class="pre">Item.generatedRowHeight</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.generating"><code class="docutils literal notranslate"><span class="pre">Item.generating</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.headerHeight"><code class="docutils literal notranslate"><span class="pre">Item.headerHeight</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.height"><code class="docutils literal notranslate"><span class="pre">Item.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.job"><code class="docutils literal notranslate"><span class="pre">Item.job</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.justify"><code class="docutils literal notranslate"><span class="pre">Item.justify</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.leftCrop"><code class="docutils literal notranslate"><span class="pre">Item.leftCrop</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.leftMargin"><code class="docutils literal notranslate"><span class="pre">Item.leftMargin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.lineColour"><code class="docutils literal notranslate"><span class="pre">Item.lineColour</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.lineStyle"><code class="docutils literal notranslate"><span class="pre">Item.lineStyle</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.lineWidth"><code class="docutils literal notranslate"><span class="pre">Item.lineWidth</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.name"><code class="docutils literal notranslate"><span class="pre">Item.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.resolution"><code class="docutils literal notranslate"><span class="pre">Item.resolution</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.rightCrop"><code class="docutils literal notranslate"><span class="pre">Item.rightCrop</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.rightMargin"><code class="docutils literal notranslate"><span class="pre">Item.rightMargin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.rows"><code class="docutils literal notranslate"><span class="pre">Item.rows</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.saveCSV"><code class="docutils literal notranslate"><span class="pre">Item.saveCSV</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.saveCSVFilename"><code class="docutils literal notranslate"><span class="pre">Item.saveCSVFilename</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.saveXlsx"><code class="docutils literal notranslate"><span class="pre">Item.saveXlsx</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.saveXlsxFilename"><code class="docutils literal notranslate"><span class="pre">Item.saveXlsxFilename</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.script"><code class="docutils literal notranslate"><span class="pre">Item.script</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.text"><code class="docutils literal notranslate"><span class="pre">Item.text</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.textColour"><code class="docutils literal notranslate"><span class="pre">Item.textColour</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.topCrop"><code class="docutils literal notranslate"><span class="pre">Item.topCrop</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.topMargin"><code class="docutils literal notranslate"><span class="pre">Item.topMargin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.type"><code class="docutils literal notranslate"><span class="pre">Item.type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.width"><code class="docutils literal notranslate"><span class="pre">Item.width</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.x"><code class="docutils literal notranslate"><span class="pre">Item.x</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.x2"><code class="docutils literal notranslate"><span class="pre">Item.x2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.y"><code class="docutils literal notranslate"><span class="pre">Item.y</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.y2"><code class="docutils literal notranslate"><span class="pre">Item.y2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#constructor">Constructor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Item"><code class="docutils literal notranslate"><span class="pre">Item()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#static-methods">Static methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetAll"><code class="docutils literal notranslate"><span class="pre">Item.GetAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetFromName"><code class="docutils literal notranslate"><span class="pre">Item.GetFromName()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instance-methods">Instance methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Item.DeleteColumn"><code class="docutils literal notranslate"><span class="pre">Item.DeleteColumn()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.DeleteRow"><code class="docutils literal notranslate"><span class="pre">Item.DeleteRow()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.Generate"><code class="docutils literal notranslate"><span class="pre">Item.Generate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetCellProperties"><code class="docutils literal notranslate"><span class="pre">Item.GetCellProperties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetColumnProperties"><code class="docutils literal notranslate"><span class="pre">Item.GetColumnProperties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetColumnWidth"><code class="docutils literal notranslate"><span class="pre">Item.GetColumnWidth()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetCondition"><code class="docutils literal notranslate"><span class="pre">Item.GetCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetAutotableCondition"><code class="docutils literal notranslate"><span class="pre">Item.GetAutotableCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetTableCondition"><code class="docutils literal notranslate"><span class="pre">Item.GetTableCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetGeneratedData"><code class="docutils literal notranslate"><span class="pre">Item.GetGeneratedData()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.GetRowHeight"><code class="docutils literal notranslate"><span class="pre">Item.GetRowHeight()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.InsertColumn"><code class="docutils literal notranslate"><span class="pre">Item.InsertColumn()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.InsertRow"><code class="docutils literal notranslate"><span class="pre">Item.InsertRow()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.MergeCells"><code class="docutils literal notranslate"><span class="pre">Item.MergeCells()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.RemoveCondition"><code class="docutils literal notranslate"><span class="pre">Item.RemoveCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.RemoveAutotableCondition"><code class="docutils literal notranslate"><span class="pre">Item.RemoveAutotableCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.RemoveTableCondition"><code class="docutils literal notranslate"><span class="pre">Item.RemoveTableCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SetCellProperties"><code class="docutils literal notranslate"><span class="pre">Item.SetCellProperties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SetColumnProperties"><code class="docutils literal notranslate"><span class="pre">Item.SetColumnProperties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SetColumnWidth"><code class="docutils literal notranslate"><span class="pre">Item.SetColumnWidth()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SetCondition"><code class="docutils literal notranslate"><span class="pre">Item.SetCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SetAutotableCondition"><code class="docutils literal notranslate"><span class="pre">Item.SetAutotableCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SetTableCondition"><code class="docutils literal notranslate"><span class="pre">Item.SetTableCondition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.SetRowHeight"><code class="docutils literal notranslate"><span class="pre">Item.SetRowHeight()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Item.UnmergeCells"><code class="docutils literal notranslate"><span class="pre">Item.UnmergeCells()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.REPORTER.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Page.html">Oasys.REPORTER.Page class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reporter.html">Oasys.REPORTER.Reporter class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Template.html">Oasys.REPORTER.Template class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.REPORTER.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variable.html">Oasys.REPORTER.Variable class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.REPORTER.Window class</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Options.html" title="Oasys.REPORTER.Options class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Image.html" title="Oasys.REPORTER.Image class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.REPORTER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.REPORTER.Item class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

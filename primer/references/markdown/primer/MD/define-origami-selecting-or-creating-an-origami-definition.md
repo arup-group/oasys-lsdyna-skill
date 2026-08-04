@@ -1,0 +1,16 @@
+﻿###  Define Origami:	Selecting or Creating an ORIGAMI Definition
+
+| Before you can fold anything you must have a current ORIGAMI definition. DEFINE\_ORIGAMI in the main folding screen above gives the Origami definition menu (above left). In this example there are no existing definitions, so it is necessary to CREATE... one:. | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_origami_1.gif) |
+| --- | --- |
+
+| An **ORIGAMI** definition can only exist in a single model, so the first phase of creation is to select a model, and then to define the Origami label and title. Any number of Origamis may exist within a model, but they must have unique labels. | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_origami_2.gif) |
+| --- | --- |
+| Once the basic data has been defined you are presented with the standard selection menu which will allow you to define the SETs and/or PARTs and/or ELEMENTs which constitute this Origami definition. These define the nodes and elements which are to be folded.<br> <ol> <ol> </ol> </ol> <br>Finally the "AIRBAG REFERENCE GEOMETRY", which is used as the starting point for folding, is set up automatically by PRIMER. If this does not exist for any nodes to be folded, then it is created at this stage by copying the *current* geometry of those nodes.<br> <ol> <ol> </ol> </ol> <br>The definition is now complete, and the Origami definition panel will now be fully populated as shown in the adjacent figure.<br> <br>You can now SELECT... which definition you want to fold.<br> <ol> <ol> </ol> </ol> <br>The other operations here, ADD.. , REMOVE.. , and so on are self-explanatory. Origami definitions can be edited at will by re-visiting this panel and manipulating them as required.<br> <br>Use DONE to return to the main folding menu in order to proceed with folding. | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_origami_3.gif) |
+
+The Origami definition is now a permanent part of your model, and will be written out after the \*END card in an Ansys LS-DYNA deck so that it can be re-read in future PRIMER runs. (Note that \*ORIGAMI is not a standard Ansys LS-DYNA keyword, and it is placed *after* the \*END card so that it will be ignored by the Ansys LS-DYNA analysis code.)
+
+It is possible to edit the \*ORIGAMI data in a file by hand - [Appendix C](c-origami-tree-file-example.md) describes the format of this data - but it is  ***strongly***  recommended that you do not attempt this as the data stored is quite complex: if you want to edit Origamis read them back into PRIMER and do the work there.
+
+Also you should be very careful not separate \*ORIGAMI definitions from their "parent" input files, because they contain references to coordinate systems, sets, elements and nodes that exist uniquely within those files. If you want to keep standard airbag files "on the shelf" make sure that they are complete with geometry and folding data kept together: PRIMER will merge airbags and structural models for you.
+
+[Previous](airbag-folding-summary.md)  |  [Next](local-system-defining-airbag-local-axes.md)

@@ -1,0 +1,5 @@
+Tutorials: How can I find the mass?
+Tutorials: How can I find the centre of gravity?
+Tutorials: How can I find the inertia tensor?
+Tutorials: How can I find the area of shell elements?
+Tutorials: How can I find the volume of solid elements?

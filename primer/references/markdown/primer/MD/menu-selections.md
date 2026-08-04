@@ -1,0 +1,8 @@
+﻿###  Menu Selections
+
+Menus of items are used when you need to make one or more selections from a (potentially) long list. Click on the row you want to select: clicking on a row that is already selected will have the effect of deselecting it.
+
+| **![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_2_6.gif)** | Where selecting more than 1 item would be valid you can "drag" (click, hold down and move) down the menu to select multiple items. Alternatively the &lt;click&gt; (start of range) .. &lt;shift&gt;&lt;click&gt; (end of range) method (cf Windows) may be used.<br> <br>When the list is too long to display in the window you can use the vertical scroll-bars to move up and down it. A mouse scroll wheel can also be used to move up and down in these panels. The filter button allows a subsetof the selected entities to be offered, e.g. only those parts of a particular material type. See<br>[Using Filter to Limit What Appears in the Menu](using-filter-to-limit-what-appears-in-the-menu.md#UsingFILTERtolimitwhatappearsinthemenu) for more information on filtering. The menus are refreshed automatically after creation, editing or deletion of data; alternatively the [R] button can be used to refresh the button.<br> <br>By default menus will expand horizontally when you move the mouse into them in order to show more of their contents. This is described in [Panel Behaviour](panel-behaviour-controlling-panel-placement-menu-expansion-and-action-when-picking.md#auto_expand). |
+| --- | --- |
+
+[Previous](radio-boxes.md)  |  [Next](shortcut-keys.md)

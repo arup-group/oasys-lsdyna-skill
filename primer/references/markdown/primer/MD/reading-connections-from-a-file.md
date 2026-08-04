@@ -1,0 +1,9 @@
+﻿###  Reading Connections from a File
+
+| When you go to read a connections file, if your model already contains connections PRIMER will ask you if you want to continue with the read or not (see figure on right). Press either Continue read to continue or Stop read to finish.<br> <br>If your model does not contain any connections the main read panel will be displayed. | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_1.gif) |
+| --- | --- |
+
+| The main read panel allows you to read mesh independent connections from a [PRIMER spotweld file](reading-the-file.md#primerspotweldfile), an [xml connection file](reading-the-file.md#connectionfile), a [Catia spotweld file](reading-the-file.md#catiaspotweldfile), a [UG file](reading-the-file.md#ug_file)or other type of file. PRIMER can also store a user defined script using PRIMER 's JavaScript functionality. The script can be written to read a particular file format and then is used through this panel to read connection data into PRIMER . See [Scripting](introduction.md) for information on PRIMER 's scripting ability.<br> <br>[Choosing part for beams/solids and filename](choosing-part-for-beamssolids-and-filename.md#choosingpart)<br> <br>[Choosing file format](choosing-file-format.md#choosefileformat)<br> <br>[Error handling](error-handling.md#errorhandling)<br> <br>[Options](options-0.md#options)<br> <br><br> <br>[Actually reading the file](reading-the-file.md#reading) | ![](../Storage/primer-22-1/primer_links/sect_6/connection/spotweld_read_box.gif) |
+| --- | --- |
+
+[Previous](listing-connections.md)  |  [Next](specifying-a-title.md)

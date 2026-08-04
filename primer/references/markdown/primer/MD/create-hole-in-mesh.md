@@ -1,0 +1,13 @@
+﻿###  Create Hole in Mesh
+
+| ![](../Storage/primer-22-1/primer_links/sect_6/meshing/create_hole.gif) <br>Create hole allows you to make a hole in an existing mesh without any geometry. There are various options to control the mesh and hole created.<br> <br>Element size allows you to change the size of elements that will be created. <br> Hole diameter changes the diameter of the hole created. <br>The number of elements that will be created around the hole can either be specified by using No. elem round hole or the size of the elements can be given instead by using the popup and changing to Elem size round hole . <br>The hole can be created with or without 'washer' elements around the hole. This can be turned on or off by using the checkbox. If it is on then the Washer diameter and No. washer elem can be used to control how the washer is created.<br> <br>The Set PID button can be used to assign part ids to the to the individual washer layers. If these washer parts are not set, then PRIMER will default back to using the same part as that of the surrounding hole elements for the washer layers.<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/meshing/washer_pid_panel.png)<br> <br>You can make a hole at a specific coordinate by using the Hole centre textbox or you can pick a point on a shell by using the Pick button. |
+| --- |
+
+| ![](../Storage/primer-22-1/primer_links/sect_6/meshing/hole_preview.gif) <br>Once you have selected the hole location PRIMER will draw a preview of the hole that will be created (here shown with 1 washer element and 6 elements around the hole). The elements which PRIMER proposes to remesh are also sketched. You can now update the hole properties if required and the preview will update. If the hole is made bigger then PRIMER will automatically select more elements to remesh. If you want to manually add or remove elements to the selection you can use Add shells and Remove shells .<br> <br>The Hole rotation can be used to change the orientation of the elements for the hole. Either use the + and - buttons or type in a new angle. <br> Feature line limit can be used to stop automatic selection of shells which are beyond a certain angle. e.g. in this example the shell selection on the left and right of the hole stops at the change in angle. |
+| --- |
+
+Its meaning is the same as [selection in object menus with feature lines](feature-line-picking.md#feature_angle).
+
+When you are happy with the hole properties pressing Apply will create a preview of the mesh that PRIMER will create. You can still change the hole properties and PRIMER will update the mesh interactively. To actually create the mesh press Confirm .
+
+[Previous](swage-mesh.md)  |  [Next](remove-hole-from-mesh.md)

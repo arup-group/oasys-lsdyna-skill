@@ -1,0 +1,17 @@
+﻿####  Assembly Creation and Editing
+
+| | Label and title | An assembly must have a label. Labels are "private" to this dummy, thus in a model with 2 dummies each may have assembly label 1 and they will not clash.<br> <br>A title is optional but is recommended. |<br>| --- | --- |<br>| Restraints and coord system | Assemblies may have optional restraints. These are used during "free drag" positioning to constrain movement.<br> <br>If a coordinate system is defined restraints are in that system, otherwise they are in the global system. |<br>| Part sets and parts | Any number of parts may be used in any permutation of explicit parts and part sets. It is legal to define a part more than once (eg in a set and explicitly): it will only be used once. |<br>| Node sets | Node sets may be added to the assembly. All nodes in these sets will move with the assembly. |<br>| Contact | You can choose to define a list of part sets that will be contacted during positioning.<br> <br>If part sets are defined then contact between them and the assembly will be calculated during positioning. This will slow down the positioning process considerably because of the extra work required to perform the contact calculations.<br> <br>Part sets for contact are assumed to remain stationary during positioning, and implicitly thus to be "fixed structure". If you define part sets on another assembly, and that assembly undergoes any significant movement during positioning then the contact may fail. |<br><br><br><br>![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_3.png) |
+| --- |
+
+To visualise what is in an assembly you can use the standard Only button functionality to show just its contents on the screen.
+ 
+(A significant difference between Dummy and Mechanism assemblies is that mechanism assemblies do not have any sense of hierarchy: there is no concept of a "root assembly" in a mechanism, nor is there a "tree" of connectivity. All assemblies have the same seniority, and the connections between assemblies can be completely arbitrary.)
+
+#####  Mechanism assemblies no longer "lock" their contents against deletion 
+ 
+Prior to release 10.2 of PRIMER usage of a Part, Part set or Node set by a mechanism assembly "locked" these against deletion. Several users requested that this logic be changed, so from release 10.2 (April 2011) onwards Parts, Part sets and Node sets used in assemblies can be deleted using [REMOVE, DELETE\_UNWANTED](delete-unwanted.md#641DELETEUNWANTED)at will.
+ 
+Therefore it is possible to remove the entire contents of a mechanism assembly via deletion. An empty assembly may become invalid if an attempt is made to position a mechanism that contains it, but this is checked prior to positioning and you will be warned if it is the case.
+ 
+Note that, despite their similarity,  ***Dummy***  assemblies  ***do***  still lock their contents against deletion. This is because Dummies and their associated positioning data (tree files) are usually built by specialists as separate models, and it is likely that an attempt by a user to delete their contents will be unintended.
+ [Previous](automake-automatic-creation-of-mechanisms.md)  |  [Next](connection-creation-and-editing.md)

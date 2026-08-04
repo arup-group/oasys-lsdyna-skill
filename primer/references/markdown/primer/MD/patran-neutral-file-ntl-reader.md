@@ -1,0 +1,11 @@
+﻿###  Patran Neutral File (.ntl) Reader
+
+The following modules from Patran "neutral" files up to Patran level 2.5 format are read. All others are ignored.
+
+| **Patran Module id** | **Data type** | **Stored as** |
+| --- | --- | --- |
+| 25 | Analysis title | Analysis title |
+| 1 | Nodes | Nodes |
+| 2 | Elements | Shape &lt;iv&gt; = 2 (bar), #nodes = 2<br> <ul> <li>&lt;config&gt; 0, 1, 2 become a beam element </li> <li>&lt;config&gt; 5 becomes extra nodes on rigid parts </li> <li>&lt;config&gt; 7 becomes a lumped mass </li> <li>&lt;config&gt; 8 becomes a spherical joint </li> <li>&lt;config&gt; 30 becomes a seatbelt element </li> <li>&lt;config&gt; 31 becomes a retractor </li> <li>&lt;config&gt; 32 becomes a slipring <p>The following configurations becomes springs/dampers, grounded if &lt;n1&gt; = &lt;n2&gt;: </p> </li> <li>&lt;config&gt; 6, 10 becomes a translational spring </li> <li>&lt;config&gt; 11 becomes a rotational spring </li> <li>&lt;config&gt; 20 becomes a translational damper </li> <li>&lt;config&gt; 21 becomes a rotational damper </li> </ul> <br>Shape &lt;iv&gt; = 2 (bar), #nodes &gt; 2<br> <ul> <li>If #nodes = 4 become revolute joints </li> <li>If #nodes = 6 become translational joints. </li> </ul> <br>Shape &lt;iv&gt; = 3 (tria):<br> <ul> <li>&lt;config&gt; 0, 3 become 3 noded shells (n3 = n4) </li> </ul> <br>Shape &lt;iv&gt; = 4 (quad):<br> <ul> <li>&lt;config&gt; 0, 3 become 4 noded shells </li> </ul> <br>Shape &lt;iv&gt; = 5 (tetra):<br> <ul> <li>&lt;config&gt; = 0, 4 become 4 noded solid tetrahedra (n4=n5=n6=n7=n8) </li> </ul> <br>Shape &lt;iv&gt; = 7 (wedge):<br> <ul> <li>&lt;config&gt; = 0, 4 become 6 noded solid wedges (n5=n6, n7=n8) </li> <li>&lt;config&gt; = 1 become 6 noded thick shells (n3=n4, n7=n8) </li> </ul> <br>Shape &lt;iv&gt; = 8 (hex):<br> <ul> <li>&lt;config&gt; = 0, 4 become 8 noded solid hexahedra </li> <li>&lt;config&gt; = 1 become 8 noded thick shells </li> </ul> <br>All other element types are ignored. |
+
+[Previous](abaqus-input-file-format.md)  |  [Next](radioss-fixed-file-format.md)

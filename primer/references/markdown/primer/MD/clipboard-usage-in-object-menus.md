@@ -1,0 +1,10 @@
+﻿###  Clipboard Usage in Object Menus
+
+| The Options button in all standard [Object Menus](selecting-entities-for-operations.md#selectentities) includes options to:<br>
+<ul style="font-size: 14.6667px;"> <li>Add the current selection to the clipboard</li> <li>Remove it from the clipboard</li> <li>Replace the clipboard contents with the currently selected objects</li>
+</ul>
+<br>This acts as an alternative way of populating the clipboard contents.<br> <br>![](../Storage/primer-22-1/clipboard-usage-in-object-menus/clipboard-usage-in-object-menus-2024-04-11-4.png) |  |
+| --- | --- |
+| The clipboard contents may also be used for selection in object menus, as this example illustrates.<br> <br>In all object menu contexts where:<br> <ul style="font-size: 14.6667px;"> <li>Multiple selection is legal<br><br>and<br><br></li> <li>The clipboard contains 1 or more items of the specified type</li> </ul> <br>Then a " Clipboard: nnnn &lt;item type&gt; " row will appear at the top of the menu selection.<br> <br>All items in the clipboard which match this context may be selected in a single click on this "Clipboard" row. Items in the clipboard which do not match the currently specified type are not included, e.g. SHELL object menu will only select shells in the clipboard.<br> <br>This provides a means of processing the selection in a range of different contexts.<br> <br>![](../Storage/primer-22-1/clipboard-usage-in-object-menus/clipboard-usage-in-object-menus-2024-04-11-2.png)<br> <br>Selection of **CLIPBOARD...** on the base object menu and then **M1 Clipboard** will select all objects on the clipboard.<br> <br>![](../Storage/primer-22-1/clipboard-usage-in-object-menus/clipboard-usage-in-object-menus-2024-04-11-3.png)![](../Storage/primer-22-1/clipboard-usage-in-object-menus/clipboard-usage-in-object-menus-2024-04-11-1.png) |  |
+
+ [Previous](clipboard-merge-into-model.md)  |  [Next](sub-model-creation.md)

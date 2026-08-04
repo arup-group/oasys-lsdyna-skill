@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.D3PLOT.Node class &#8212; Oasys.D3PLOT 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.D3PLOT.Options class" href="Options.html" />
+    <link rel="prev" title="Oasys.D3PLOT.Model class" href="Model.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Options.html" title="Oasys.D3PLOT.Options class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Model.html" title="Oasys.D3PLOT.Model class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.D3PLOT 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.D3PLOT.Node class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-d3plot-node-class">
+<h1>Oasys.D3PLOT.Node class<a class="headerlink" href="#oasys-d3plot-node-class" title="Link to this heading">¶</a></h1>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Node.data">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">array</span></span><a class="headerlink" href="#Node.data" title="Link to this definition">¶</a></dt>
+<dd><p>Component data for a node passed as an argument to <a class="reference internal" href="#Node.GetMultipleData" title="Node.GetMultipleData"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GetMultipleData</span></code></a>.
+Note that data will only exist for the instance of the node passed to <a class="reference internal" href="#Node.GetMultipleData" title="Node.GetMultipleData"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GetMultipleData</span></code></a>.
+i.e. it is a local property stored on the specific instance. It is not stored in the D3PLOT database</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.include">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">include</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.include" title="Link to this definition">¶</a></dt>
+<dd><p>The include file number in the model that the node is in</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.index">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.index" title="Link to this definition">¶</a></dt>
+<dd><p>The internal index for the node in D3PLOT (starting at 0)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.label">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.label" title="Link to this definition">¶</a></dt>
+<dd><p>The Ansys LS-DYNA label for the node</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.model">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Model</span></span><a class="headerlink" href="#Node.model" title="Link to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the node is in</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.type">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">constant</span></span><a class="headerlink" href="#Node.type" title="Link to this definition">¶</a></dt>
+<dd><p>The type for the node (will be <a class="reference internal" href="Type.html#Type.NODE" title="Type.NODE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Type.NODE</span></code></a>)</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="static-methods">
+<h2>Static methods<a class="headerlink" href="#static-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Node.BlankAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">BlankAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.BlankAll" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks all of the nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>window</strong> (<em>GraphicsWindow</em>) – <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a>) to blank the nodes in</p></li>
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all the nodes will be blanked in</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank all of the nodes in model m, in graphics window gw:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">BlankAll</span><span class="p">(</span><span class="n">gw</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.BlankFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">BlankFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.BlankFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks all of the nodes in the model flagged with a defined flag</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>window</strong> (<em>GraphicsWindow</em>) – <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a>) to blank the nodes in</p></li>
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the flagged nodes will be blanked in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) set on the nodes to blank</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank all of the nodes flagged with flag f in model m, in graphics window gw:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">BlankFlagged</span><span class="p">(</span><span class="n">gw</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.First">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">First</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.First" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the first node in the model (or None if there are no nodes in the model)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get first node in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the first node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">First</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.FlagAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">FlagAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.FlagAll" title="Link to this definition">¶</a></dt>
+<dd><p>Flags all of the nodes in the model with a defined flag</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all the nodes will be flagged in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) to set on the nodes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To flag all of the nodes with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">FlagAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetAll" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a list of Node objects or properties for all of the nodes in the model.
+If the optional property argument is not given then a list of Node objects is returned.
+If the property argument is given, that property value for each node is returned in the list
+instead of a Node object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all the nodes are in</p></li>
+<li><p><strong>property</strong> (<em>string</em>) – Optional. Name for property to get for all nodes in the model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of <code class="xref py py-class docutils literal notranslate"><span class="pre">Node</span></code> objects or properties</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get all of the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetAll</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To return a list containing the value of property ‘foo’ (for example ‘label’ for a node) for each node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Gets all of the nodes in the model flagged with a defined flag.
+If the optional property argument is not given then a list of Node objects is returned.
+If the property argument is given, that property value for each node is returned in the list
+instead of a Node object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the flagged nodes are in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) set on the nodes to get</p></li>
+<li><p><strong>property</strong> (<em>string</em>) – Optional. Name for property to get for all flagged nodes in the model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of <code class="xref py py-class docutils literal notranslate"><span class="pre">Node</span></code> objects or properties</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get all of the nodes flagged with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To return a list containing the value of property ‘foo’ (for example ‘label’ for a node) for all nodes flagged with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetFromID">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetFromID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetFromID" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Node object for node in model with label (or None if it does not exist)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get node in</p></li>
+<li><p><strong>label</strong> (<em>integer</em>) – The Ansys LS-DYNA label for the node in the model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the node in model m with label 1000:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetFromIndex">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetFromIndex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetFromIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Node object for node in model with index (or None if it does not exist)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get node in</p></li>
+<li><p><strong>index</strong> (<em>integer</em>) – The D3PLOT internal index in the model for node, starting at 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the 51st node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetFromIndex</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetMultipleData">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetMultipleData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">component</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetMultipleData" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the value for a data component for multiple nodes. For each node a local property called data will be created
+containing a number if a scalar component, or a list if a vector or tensor component (or None if the value cannot be calculated).
+The data is also returned as an object.
+<br/>
+Also see <a class="reference internal" href="#Node.GetData" title="Node.GetData"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GetData</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>component</strong> (<em>constant</em>) – <a class="reference internal" href="Component.html#component-all-constants"><span class="std std-ref">Component constant</span></a> to get data for</p></li>
+<li><p><strong>items</strong> (<em>list</em>) – List of <code class="xref py py-class docutils literal notranslate"><span class="pre">Node</span></code> objects to get the data for.
+All of the nodes must be in the same model</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – <p>Optional. Dictionary containing options for getting data. Can be any of:</p>
+<dl class="field-list simple">
+<dt class="field-odd">extra<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The extra data component number if component <a class="reference internal" href="Component.html#Component.SOX" title="Component.SOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.SOX</span></code></a> for solids,
+<a class="reference internal" href="Component.html#Component.BMX" title="Component.BMX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.BMX</span></code></a> for beams or
+<a class="reference internal" href="Component.html#Component.SHX" title="Component.SHX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.SHX</span></code></a> for shells and thick shells</p>
+</dd>
+<dt class="field-even">ip<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Integration point number to get the data at (ip &gt;= 1 or one of the constants
+<a class="reference internal" href="Constant.html#Constant.TOP" title="Constant.TOP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.TOP</span></code></a>, <a class="reference internal" href="Constant.html#Constant.MIDDLE" title="Constant.MIDDLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.MIDDLE</span></code></a> or
+<a class="reference internal" href="Constant.html#Constant.BOTTOM" title="Constant.BOTTOM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.BOTTOM</span></code></a>)</p>
+</dd>
+<dt class="field-odd">op<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) On plane integration point number for shells and thick shells (op &gt;= 1 [default])</p>
+</dd>
+<dt class="field-even">referenceFrame<span class="colon">:</span></dt>
+<dd class="field-even"><p>(constant) The frame of reference to return values in. Either <a class="reference internal" href="Constant.html#Constant.GLOBAL" title="Constant.GLOBAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.GLOBAL</span></code></a> (default),
+<a class="reference internal" href="Constant.html#Constant.LOCAL" title="Constant.LOCAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.LOCAL</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.CYLINDRICAL" title="Constant.CYLINDRICAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.CYLINDRICAL</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.USER_DEFINED" title="Constant.USER_DEFINED"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.USER_DEFINED</span></code></a> or
+<a class="reference internal" href="Constant.html#Constant.MATERIAL" title="Constant.MATERIAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.MATERIAL</span></code></a>.
+This is only necessary for directional components (eg X stress) and then only when something other than
+the default <a class="reference internal" href="Constant.html#Constant.GLOBAL" title="Constant.GLOBAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.GLOBAL</span></code></a> coordinate system is to be used</p>
+</dd>
+<dt class="field-odd">user<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The user-defined component number if component <a class="reference internal" href="Component.html#Component.UNOS" title="Component.UNOS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UNOS</span></code></a>,
+<a class="reference internal" href="Component.html#Component.UNOV" title="Component.UNOV"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UNOV</span></code></a>,
+<a class="reference internal" href="Component.html#Component.USSS" title="Component.USSS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.USSS</span></code></a>,
+<a class="reference internal" href="Component.html#Component.USST" title="Component.USST"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.USST</span></code></a>,
+<a class="reference internal" href="Component.html#Component.UBMS" title="Component.UBMS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UBMS</span></code></a> or
+<a class="reference internal" href="Component.html#Component.UBMV" title="Component.UBMV"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UBMV</span></code></a></p>
+</dd>
+</dl>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary containing the data. A property is created in the dictionary for each node with the label. The value of the property is a number if a scalar component or an array if a vector or tensor component (or None if the value cannot be calculated)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To calculate a component for nodes in list items and use the data property (note that in the example, the argument extra is optional):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetMultipleData</span><span class="p">(</span><span class="n">component</span><span class="p">,</span> <span class="n">items</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;extra&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">data</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+<p>To calculate a component for nodes in list items and use the return value (note that in the example, the argument extra is optional):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetMultipleData</span><span class="p">(</span><span class="n">component</span><span class="p">,</span> <span class="n">items</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;extra&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Message</span><span class="p">(</span><span class="s2">&quot;Label is </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Last">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Last</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Last" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the last node in the model (or None if there are no nodes in the model)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get last node in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the last node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Last</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Pick">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Pick</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Pick" title="Link to this definition">¶</a></dt>
+<dd><p>Allows the user to pick a node from the screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node object or None if cancelled</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To pick a node:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Pick</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Select">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Select" title="Link to this definition">¶</a></dt>
+<dd><p>Selects nodes using an object menu</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) to use when selecting nodes</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of nodes selected or None if menu cancelled</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To select nodes, flagging those selected with flag f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Select</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Total">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Total</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Total" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the total number of nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get total in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of nodes</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the number of nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Total</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnblankAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnblankAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnblankAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks all of the nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>window</strong> (<em>GraphicsWindow</em>) – <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a>) to unblank the nodes in</p></li>
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all the nodes will be unblanked in</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank all of the nodes in model m, in graphics window gw:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnblankAll</span><span class="p">(</span><span class="n">gw</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnblankFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnblankFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnblankFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks all of the nodes in the model flagged with a defined flag</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>window</strong> (<em>GraphicsWindow</em>) – <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a>) to unblank the nodes in</p></li>
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the flagged nodes will be unblanked in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) set on the nodes to unblank</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank all of the nodes flagged with flag f in model m, in graphics window gw:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnblankFlagged</span><span class="p">(</span><span class="n">gw</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnflagAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnflagAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnflagAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unsets a defined flag on all of the nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the defined flag for all nodes will be unset in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) to unset on the nodes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unset flag f on all of the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnflagAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="instance-methods">
+<h2>Instance methods<a class="headerlink" href="#instance-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Node.Acceleration">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Acceleration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Acceleration" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the acceleration for the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array containing the nodal acceleration [Ax, Ay, Az] (or None if the value cannot be calculated)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To return the acceleration of node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Acceleration</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">acc</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Blank">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Blank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Blank" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks the node in a graphics window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>window</strong> (<em>GraphicsWindow</em>) – <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a>) to blank the node in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank node n in graphics window g:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Blank</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Blanked">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Blanked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Blanked" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if the node is blanked in a graphics window or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>window</strong> (<em>GraphicsWindow</em>) – <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a>) in which to check if the node is blanked</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if blanked, False if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if node n is blanked in graphics window g:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">n</span><span class="o">.</span><span class="n">Blanked</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.ClearFlag">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">ClearFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.ClearFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Clears a flag on a node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) to clear on the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To clear flag f on node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Coordinates">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Coordinates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Coordinates" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the coordinates for the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array containing the nodal coordinates [Cx, Cy, Cz] (or None if the value cannot be calculated)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To return the coordinates of node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">coords</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Coordinates</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">coords</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Displacement">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Displacement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Displacement" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the displacement for the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array containing the nodal displacement [Dx, Dy, Dz] (or None if the value cannot be calculated)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To return the displacement of node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">disp</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Displacement</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">disp</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Elements">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Elements" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the elements using this node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>type</strong> (<em>constant</em>) – The type of elements. Either <a class="reference internal" href="Type.html#Type.BEAM" title="Type.BEAM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Type.BEAM</span></code></a>,
+<a class="reference internal" href="Type.html#Type.SHELL" title="Type.SHELL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Type.SHELL</span></code></a>, <a class="reference internal" href="Type.html#Type.SOLID" title="Type.SOLID"><code class="xref py py-const docutils literal notranslate"><span class="pre">Type.SOLID</span></code></a> or
+<a class="reference internal" href="Type.html#Type.TSHELL" title="Type.TSHELL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Type.TSHELL</span></code></a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array containing the elements or None if there are no elements</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To return the shell elements using node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">shells</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Elements</span><span class="p">(</span><span class="n">Oasys</span><span class="o">.</span><span class="n">D3PLOT</span><span class="o">.</span><span class="n">Type</span><span class="o">.</span><span class="n">SHELL</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Flagged">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Flagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Flagged" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if the node is flagged or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) to test on the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if flagged, False if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if node n has flag f set on it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">n</span><span class="o">.</span><span class="n">Flagged</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetData">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">component</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetData" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the value for a data component.
+<br/>
+Also see <a class="reference internal" href="#Node.GetMultipleData" title="Node.GetMultipleData"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GetMultipleData</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>component</strong> (<em>constant</em>) – <a class="reference internal" href="Component.html#component-all-constants"><span class="std std-ref">Component constant</span></a> to get data for</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – <p>Optional. Dictionary containing options for getting data. Can be any of:</p>
+<dl class="field-list simple">
+<dt class="field-odd">extra<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The extra data component number if component <a class="reference internal" href="Component.html#Component.SOX" title="Component.SOX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.SOX</span></code></a> for solids,
+<a class="reference internal" href="Component.html#Component.BMX" title="Component.BMX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.BMX</span></code></a> for beams or
+<a class="reference internal" href="Component.html#Component.SHX" title="Component.SHX"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.SHX</span></code></a> for shells and thick shells</p>
+</dd>
+<dt class="field-even">ip<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) Integration point number to get the data at (ip &gt;= 1 or one of the constants
+<a class="reference internal" href="Constant.html#Constant.TOP" title="Constant.TOP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.TOP</span></code></a>, <a class="reference internal" href="Constant.html#Constant.MIDDLE" title="Constant.MIDDLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.MIDDLE</span></code></a> or
+<a class="reference internal" href="Constant.html#Constant.BOTTOM" title="Constant.BOTTOM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.BOTTOM</span></code></a>). If the integration point is not defined it will use the
+integration point defined on the current GUI “data” panel, which defaults to the middle surface for shells, thick shells,
+and solids, and Mag All for beams, but may vary if changed by an interactive user. If consistent output from a script is
+required, independent of any prior interactive activity, an explicit integration point or surface should be defined</p>
+</dd>
+<dt class="field-odd">op<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) On plane integration point number for shells and thick shells (op &gt;= 1 [default])</p>
+</dd>
+<dt class="field-even">referenceFrame<span class="colon">:</span></dt>
+<dd class="field-even"><p>(constant) The frame of reference to return values in. Either <a class="reference internal" href="Constant.html#Constant.GLOBAL" title="Constant.GLOBAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.GLOBAL</span></code></a> (default),
+<a class="reference internal" href="Constant.html#Constant.LOCAL" title="Constant.LOCAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.LOCAL</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.CYLINDRICAL" title="Constant.CYLINDRICAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.CYLINDRICAL</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.USER_DEFINED" title="Constant.USER_DEFINED"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.USER_DEFINED</span></code></a> or
+<a class="reference internal" href="Constant.html#Constant.MATERIAL" title="Constant.MATERIAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.MATERIAL</span></code></a>.
+This is only necessary for directional components (eg X stress) and then only when something other than
+the default <a class="reference internal" href="Constant.html#Constant.GLOBAL" title="Constant.GLOBAL"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.GLOBAL</span></code></a> coordinate system is to be used</p>
+</dd>
+<dt class="field-odd">user<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) The user-defined component number if component <a class="reference internal" href="Component.html#Component.UNOS" title="Component.UNOS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UNOS</span></code></a>,
+<a class="reference internal" href="Component.html#Component.UNOV" title="Component.UNOV"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UNOV</span></code></a>,
+<a class="reference internal" href="Component.html#Component.USSS" title="Component.USSS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.USSS</span></code></a>,
+<a class="reference internal" href="Component.html#Component.USST" title="Component.USST"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.USST</span></code></a>,
+<a class="reference internal" href="Component.html#Component.UBMS" title="Component.UBMS"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UBMS</span></code></a> or
+<a class="reference internal" href="Component.html#Component.UBMV" title="Component.UBMV"><code class="xref py py-const docutils literal notranslate"><span class="pre">Component.UBMV</span></code></a></p>
+</dd>
+</dl>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Number if a scalar component, array if a vector or tensor component (or None if the value cannot be calculated because it’s not available in the model).&lt;br&gt; If requesting an invalid component it will throw an error (e.g. Component.AREA of a node).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float|array</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To calculate a component and check it has been calculated (note that in the example, the argument extra is optional):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">GetData</span><span class="p">(</span><span class="n">component</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;extra&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<span class="k">if</span> <span class="n">value</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Next">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Next" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the next node in the model (or None if there is not one)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the next node after node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Next</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Previous">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Previous</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Previous" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the previous node in the model (or None if there is not one)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the previous node before node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Previous</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.SetFlag">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">SetFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.SetFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Sets a flag on a node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag (see <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AllocateFlag</span></code></a>) to set on the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set flag f on node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">SetFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Unblank">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Unblank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Unblank" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks the node in a graphics window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>window</strong> (<em>GraphicsWindow</em>) – <a class="reference internal" href="GraphicsWindow.html#GraphicsWindow" title="GraphicsWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code></a>) to unblank the node in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank node n in graphics window g:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Unblank</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Velocity">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Velocity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Velocity" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the velocity for the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array containing the nodal velocity [Vx, Vy, Vz] (or None if the value cannot be calculated)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>array</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To return the velocity of node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">vel</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Velocity</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">vel</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.D3PLOT functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Beam.html">Oasys.D3PLOT.Beam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.D3PLOT.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Component.html">Oasys.D3PLOT.Component class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constant.html">Oasys.D3PLOT.Constant class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Oasys.D3PLOT.Contact class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GraphicsWindow.html">Oasys.D3PLOT.GraphicsWindow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Group.html">Oasys.D3PLOT.Group class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.D3PLOT.Image class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Include.html">Oasys.D3PLOT.Include class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Material.html">Oasys.D3PLOT.Material class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Measure.html">Oasys.D3PLOT.Measure class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Model.html">Oasys.D3PLOT.Model class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.D3PLOT.Node class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node.data"><code class="docutils literal notranslate"><span class="pre">Node.data</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.include"><code class="docutils literal notranslate"><span class="pre">Node.include</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.index"><code class="docutils literal notranslate"><span class="pre">Node.index</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.label"><code class="docutils literal notranslate"><span class="pre">Node.label</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.model"><code class="docutils literal notranslate"><span class="pre">Node.model</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.type"><code class="docutils literal notranslate"><span class="pre">Node.type</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#static-methods">Static methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node.BlankAll"><code class="docutils literal notranslate"><span class="pre">Node.BlankAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.BlankFlagged"><code class="docutils literal notranslate"><span class="pre">Node.BlankFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.First"><code class="docutils literal notranslate"><span class="pre">Node.First()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.FlagAll"><code class="docutils literal notranslate"><span class="pre">Node.FlagAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetAll"><code class="docutils literal notranslate"><span class="pre">Node.GetAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetFlagged"><code class="docutils literal notranslate"><span class="pre">Node.GetFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetFromID"><code class="docutils literal notranslate"><span class="pre">Node.GetFromID()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetFromIndex"><code class="docutils literal notranslate"><span class="pre">Node.GetFromIndex()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetMultipleData"><code class="docutils literal notranslate"><span class="pre">Node.GetMultipleData()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Last"><code class="docutils literal notranslate"><span class="pre">Node.Last()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Pick"><code class="docutils literal notranslate"><span class="pre">Node.Pick()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Select"><code class="docutils literal notranslate"><span class="pre">Node.Select()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Total"><code class="docutils literal notranslate"><span class="pre">Node.Total()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnblankAll"><code class="docutils literal notranslate"><span class="pre">Node.UnblankAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnblankFlagged"><code class="docutils literal notranslate"><span class="pre">Node.UnblankFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnflagAll"><code class="docutils literal notranslate"><span class="pre">Node.UnflagAll()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instance-methods">Instance methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Acceleration"><code class="docutils literal notranslate"><span class="pre">Node.Acceleration()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Blank"><code class="docutils literal notranslate"><span class="pre">Node.Blank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Blanked"><code class="docutils literal notranslate"><span class="pre">Node.Blanked()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.ClearFlag"><code class="docutils literal notranslate"><span class="pre">Node.ClearFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Coordinates"><code class="docutils literal notranslate"><span class="pre">Node.Coordinates()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Displacement"><code class="docutils literal notranslate"><span class="pre">Node.Displacement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Elements"><code class="docutils literal notranslate"><span class="pre">Node.Elements()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Flagged"><code class="docutils literal notranslate"><span class="pre">Node.Flagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetData"><code class="docutils literal notranslate"><span class="pre">Node.GetData()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Next"><code class="docutils literal notranslate"><span class="pre">Node.Next()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Previous"><code class="docutils literal notranslate"><span class="pre">Node.Previous()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.SetFlag"><code class="docutils literal notranslate"><span class="pre">Node.SetFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Unblank"><code class="docutils literal notranslate"><span class="pre">Node.Unblank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Velocity"><code class="docutils literal notranslate"><span class="pre">Node.Velocity()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.D3PLOT.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Page.html">Oasys.D3PLOT.Page class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part.html">Oasys.D3PLOT.Part class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Segment.html">Oasys.D3PLOT.Segment class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetBeam.html">Oasys.D3PLOT.SetBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetNode.html">Oasys.D3PLOT.SetNode class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetPart.html">Oasys.D3PLOT.SetPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetShell.html">Oasys.D3PLOT.SetShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetSolid.html">Oasys.D3PLOT.SetSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SetTshell.html">Oasys.D3PLOT.SetTshell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Shell.html">Oasys.D3PLOT.Shell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solid.html">Oasys.D3PLOT.Solid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tshell.html">Oasys.D3PLOT.Tshell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Type.html">Oasys.D3PLOT.Type class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.D3PLOT.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="View.html">Oasys.D3PLOT.View class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.D3PLOT.Window class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Workflow.html">Oasys.D3PLOT.Workflow class</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Options.html" title="Oasys.D3PLOT.Options class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Model.html" title="Oasys.D3PLOT.Model class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.D3PLOT 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.D3PLOT.Node class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

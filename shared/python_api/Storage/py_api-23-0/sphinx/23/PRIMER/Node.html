@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.PRIMER.Node class &#8212; Oasys.PRIMER 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.PRIMER.NodeSet class" href="NodeSet.html" />
+    <link rel="prev" title="Oasys.PRIMER.NodalRigidBody class" href="NodalRigidBody.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="NodeSet.html" title="Oasys.PRIMER.NodeSet class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="NodalRigidBody.html" title="Oasys.PRIMER.NodalRigidBody class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.PRIMER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.PRIMER.Node class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-primer-node-class">
+<h1>Oasys.PRIMER.Node class<a class="headerlink" href="#oasys-primer-node-class" title="Link to this heading">¶</a></h1>
+<section id="constants">
+<span id="node-all-constants"></span><h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Node.SCALAR">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">SCALAR</span></span><a class="headerlink" href="#Node.SCALAR" title="Link to this definition">¶</a></dt>
+<dd><p>Node is *NODE_SCALAR</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Node.SCALAR_VALUE">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">SCALAR_VALUE</span></span><a class="headerlink" href="#Node.SCALAR_VALUE" title="Link to this definition">¶</a></dt>
+<dd><p>Node is *NODE_SCALAR_VALUE</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Node.colour">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">colour</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Colour</span></span><a class="headerlink" href="#Node.colour" title="Link to this definition">¶</a></dt>
+<dd><p>The colour of the node</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.exists">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">boolean</span></span><a class="headerlink" href="#Node.exists" title="Link to this definition">¶</a></dt>
+<dd><p>true if node exists, false if referred to but not defined</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.include">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">include</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.include" title="Link to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file number that the node is in</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.label">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">label</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.label" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#Node" title="Node"><code class="xref py py-class docutils literal notranslate"><span class="pre">Node</span></code></a> number.
+Also see the <a class="reference internal" href="#Node.nid" title="Node.nid"><code class="xref py py-attr docutils literal notranslate"><span class="pre">nid</span></code></a> property which is an alternative name for this</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.model">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.model" title="Link to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> number that the node is in</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.ndof">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">ndof</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.ndof" title="Link to this definition">¶</a></dt>
+<dd><p>Number of degrees of freedom (SCALAR and SCALAR_VALUE only)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.nid">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">nid</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.nid" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#Node" title="Node"><code class="xref py py-class docutils literal notranslate"><span class="pre">Node</span></code></a> number.
+Also see the <a class="reference internal" href="#Node.label" title="Node.label"><code class="xref py py-attr docutils literal notranslate"><span class="pre">label</span></code></a> property which is an alternative name for this</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.rc">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">rc</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.rc" title="Link to this definition">¶</a></dt>
+<dd><p>Rotational constraint (0-7)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.scalar">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">scalar</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.scalar" title="Link to this definition">¶</a></dt>
+<dd><p>The type of the node. Can be false (*NODE), Node.SCALAR (*NODE_SCALAR) or Node.SCALAR_VALUE (*NODE_SCALAR_VALUE)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.tc">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">tc</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.tc" title="Link to this definition">¶</a></dt>
+<dd><p>Translational constraint (0-7)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.x">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">x</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Node.x" title="Link to this definition">¶</a></dt>
+<dd><p>X coordinate</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.x1">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">x1</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.x1" title="Link to this definition">¶</a></dt>
+<dd><p>Initial value of 1st degree of freedom (SCALAR_VALUE only)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.x2">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">x2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.x2" title="Link to this definition">¶</a></dt>
+<dd><p>Initial value of 2nd degree of freedom (SCALAR_VALUE only)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.x3">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">x3</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Node.x3" title="Link to this definition">¶</a></dt>
+<dd><p>Initial value of 3rd degree of freedom (SCALAR_VALUE only)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.y">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">y</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Node.y" title="Link to this definition">¶</a></dt>
+<dd><p>Y coordinate</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Node.z">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">z</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#Node.z" title="Link to this definition">¶</a></dt>
+<dd><p>Z coordinate</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Node">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new <a class="reference internal" href="#Node" title="Node"><code class="xref py py-class docutils literal notranslate"><span class="pre">Node</span></code></a> object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that node will be created in</p></li>
+<li><p><strong>nid</strong> (<em>integer</em>) – <a class="reference internal" href="#Node" title="Node"><code class="xref py py-class docutils literal notranslate"><span class="pre">Node</span></code></a> number</p></li>
+<li><p><strong>x</strong> (<em>float</em>) – X coordinate</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – Y coordinate</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – Z coordinate</p></li>
+<li><p><strong>tc</strong> (<em>integer</em>) – Optional. Translational constraint (0-7). If omitted tc will be set to 0</p></li>
+<li><p><strong>rc</strong> (<em>integer</em>) – Optional. Rotational constraint (0-7). If omitted rc will be set to 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To create a new node in model m with label 100, at coordinates (20, 40, 10)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="static-methods">
+<h2>Static methods<a class="headerlink" href="#static-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Node.BlankAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">BlankAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.BlankAll" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks all of the nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all nodes will be blanked in</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not.
+If omitted redraw is false. If you want to do several (un)blanks and only
+redraw after the last one then use false for all redraws apart from the last one.
+Alternatively you can redraw using <a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank all of the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">BlankAll</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.BlankFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">BlankFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.BlankFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks all of the flagged nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all the flagged nodes will be blanked in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on the nodes that you want to blank</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not.
+If omitted redraw is false. If you want to do several (un)blanks and only
+redraw after the last one then use false for all redraws apart from the last one.
+Alternatively you can redraw using <a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank all of the nodes in model m flagged with f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">BlankFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Create">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Create" title="Link to this definition">¶</a></dt>
+<dd><p>Starts an interactive editing panel to create a node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the node will be created in</p></li>
+<li><p><strong>modal</strong> (<em>boolean</em>) – Optional. If this window is modal (blocks the user from doing anything else in PRIMER
+until this window is dismissed). If omitted the window will be modal</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object (or None if not made)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To start creating a node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Create</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.First">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">First</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.First" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the first node in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get first node in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object (or None if there are no nodes in the model)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the first node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">First</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.FirstFreeLabel">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">FirstFreeLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.FirstFreeLabel" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the first free node label in the model.
+Also see <a class="reference internal" href="#Node.LastFreeLabel" title="Node.LastFreeLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.LastFreeLabel()</span></code></a>,
+<a class="reference internal" href="#Node.NextFreeLabel" title="Node.NextFreeLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.NextFreeLabel()</span></code></a> and
+<a class="reference internal" href="Model.html#Model.FirstFreeItemLabel" title="Model.FirstFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.FirstFreeItemLabel()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get first free node label in</p></li>
+<li><p><strong>layer</strong> (<em>Include number</em>) – Optional. <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file (0 for the main file) to search for labels in (Equivalent to
+<em>First free in layer</em> in editing panels). If omitted the whole model will be used (Equivalent to
+<em>First free</em> in editing panels)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node label</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the first free node label in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">FirstFreeLabel</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.FlagAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">FlagAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.FlagAll" title="Link to this definition">¶</a></dt>
+<dd><p>Flags all of the nodes in the model with a defined flag</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all nodes will be flagged in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag to set on the nodes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To flag all of the nodes with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">FlagAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetAll" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a list of Node objects or properties for all of the nodes in a model in PRIMER.
+If the optional property argument is not given then a list of Node objects is returned.
+If the property argument is given, that property value for each node is returned in the list
+instead of a Node object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get nodes from</p></li>
+<li><p><strong>property</strong> (<em>string</em>) – Optional. Name for property to get for all nodes in the model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of Node objects or properties</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To make a list of Node objects for all of the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetAll</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To return a list containing the value of property ‘foo’ (for example ‘x’ for a node) for each node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a list of Node objects for all of the flagged nodes in a model in PRIMER
+If the optional property argument is not given then a list of Node objects is returned.
+If the property argument is given, then that property value for each node is returned in the list
+instead of a Node object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get nodes from</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on the nodes that you want to retrieve</p></li>
+<li><p><strong>property</strong> (<em>string</em>) – Optional. Name for property to get for all flagged nodes in the model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of Node objects or properties</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To make a list of Node objects for all of the nodes in model m flagged with f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To return a list containing the value of property ‘foo’ (for example ‘x’ for a node) for all of the nodes in model m flagged with f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetFromID">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetFromID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetFromID" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Node object for a node ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to find the node in</p></li>
+<li><p><strong>number</strong> (<em>integer</em>) – number of the node you want the Node object for</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object (or None if node does not exist)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the Node object for node 100 in model m</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Last">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Last</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Last" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the last node in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get last node in</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object (or None if there are no nodes in the model)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the last node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Last</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.LastFreeLabel">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">LastFreeLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.LastFreeLabel" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the last free node label in the model.
+Also see <a class="reference internal" href="#Node.FirstFreeLabel" title="Node.FirstFreeLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.FirstFreeLabel()</span></code></a>,
+<a class="reference internal" href="#Node.NextFreeLabel" title="Node.NextFreeLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.NextFreeLabel()</span></code></a> and
+see <a class="reference internal" href="Model.html#Model.LastFreeItemLabel" title="Model.LastFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.LastFreeItemLabel()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get last free node label in</p></li>
+<li><p><strong>layer</strong> (<em>Include number</em>) – Optional. <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file (0 for the main file) to search for labels in (Equivalent to
+<em>Highest free in layer</em> in editing panels). If omitted the whole model will be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node label</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the last free node label in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">LastFreeLabel</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Merge">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Merge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Merge" title="Link to this definition">¶</a></dt>
+<dd><p>Attempts to merge nodes flagged with flag for a model in PRIMER.
+Merging nodes on *AIRBAG_SHELL_REFERENCE_GEOMETRY can be controlled by using
+<a class="reference internal" href="Options.html#Options.node_replace_asrg" title="Options.node_replace_asrg"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Options.node_replace_asrg</span></code></a>.
+Also see <a class="reference internal" href="Model.html#Model.MergeNodes" title="Model.MergeNodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.MergeNodes()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the nodes will be merged in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on nodes to nodes</p></li>
+<li><p><strong>dist</strong> (<em>float</em>) – Nodes closer than dist will be potentially merged</p></li>
+<li><p><strong>label</strong> (<em>integer</em>) – Optional. Label to keep after merge. If &gt; 0 then highest label kept.
+If &lt;= 0 then lowest kept.
+If omitted the lowest label will be kept</p></li>
+<li><p><strong>position</strong> (<em>integer</em>) – Optional. Position to merge at. If &gt; 0 then merged at highest label position.
+If &lt; 0 then merged at lowest label position.
+If 0 then merged at midpoint.
+If omitted the merge will be done at the lowest label</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of nodes merged</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To (try to) merge nodes in model m flagged with flag f, with a distance of 0.1:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Merge</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.NextFreeLabel">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">NextFreeLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.NextFreeLabel" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the next free (highest+1) node label in the model.
+Also see <a class="reference internal" href="#Node.FirstFreeLabel" title="Node.FirstFreeLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.FirstFreeLabel()</span></code></a>,
+<a class="reference internal" href="#Node.LastFreeLabel" title="Node.LastFreeLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.LastFreeLabel()</span></code></a> and
+<a class="reference internal" href="Model.html#Model.NextFreeItemLabel" title="Model.NextFreeItemLabel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.NextFreeItemLabel()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get next free node label in</p></li>
+<li><p><strong>layer</strong> (<em>Include number</em>) – Optional. <a class="reference internal" href="Include.html#Include" title="Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a> file (0 for the main file) to search for labels in (Equivalent to
+<em>Highest+1 in layer</em> in editing panels). If omitted the whole model will be used (Equivalent to
+<em>Highest+1</em> in editing panels)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node label</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the next free node label in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">NextFreeLabel</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Pick">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Pick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">button_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Pick" title="Link to this definition">¶</a></dt>
+<dd><p>Allows the user to pick a node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prompt</strong> (<em>string</em>) – Text to display as a prompt to the user</p></li>
+<li><p><strong>limit</strong> (<em>Model</em><em> or </em><em>Flag</em>) – Optional. If the argument is a <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> then only nodes from that model can be picked.
+If the argument is a <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Flag</span></code></a> then only nodes that
+are flagged with <em>limit</em> can be selected.
+If omitted, or None, any nodes from any model can be selected.
+from any model</p></li>
+<li><p><strong>modal</strong> (<em>boolean</em>) – Optional. If picking is modal (blocks the user from doing anything else in PRIMER
+until this window is dismissed). If omitted the pick will be modal</p></li>
+<li><p><strong>button_text</strong> (<em>string</em>) – Optional. By default the window with the prompt will have a button labelled ‘Cancel’
+which if pressed will cancel the pick and return None. If you want to change the
+text on the button use this argument. If omitted ‘Cancel’ will be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object (or None if not picked)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To pick a node from model m giving the prompt ‘Pick node from screen’:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Pick</span><span class="p">(</span><span class="s1">&#39;Pick node from screen&#39;</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.RenumberAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">RenumberAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.RenumberAll" title="Link to this definition">¶</a></dt>
+<dd><p>Renumbers all of the nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all nodes will be renumbered in</p></li>
+<li><p><strong>start</strong> (<em>integer</em>) – Start point for renumbering</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To renumber all of the nodes in model m, from 1000000:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">RenumberAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.RenumberFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">RenumberFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.RenumberFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Renumbers all of the flagged nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all the flagged nodes will be renumbered in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on the nodes that you want to renumber</p></li>
+<li><p><strong>start</strong> (<em>integer</em>) – Start point for renumbering</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To renumber all of the nodes in model m flagged with f, from 1000000:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">RenumberFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Select">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Select" title="Link to this definition">¶</a></dt>
+<dd><p>Allows the user to select nodes using standard PRIMER object menus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag to use when selecting nodes</p></li>
+<li><p><strong>prompt</strong> (<em>string</em>) – Text to display as a prompt to the user</p></li>
+<li><p><strong>limit</strong> (<em>Model</em><em> or </em><em>Flag</em>) – Optional. If the argument is a <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> then only nodes from that model can be selected.
+If the argument is a <a class="reference internal" href="global.html#AllocateFlag" title="AllocateFlag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Flag</span></code></a> then only nodes that
+are flagged with <em>limit</em> can be selected (<em>limit</em> should be different to <em>flag</em>).
+If omitted, or None, any nodes can be selected.
+from any model</p></li>
+<li><p><strong>modal</strong> (<em>boolean</em>) – Optional. If selection is modal (blocks the user from doing anything else in PRIMER
+until this window is dismissed). If omitted the selection will be modal</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Number of nodes selected or None if menu cancelled</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To select nodes from model m, flagging those selected with flag f, giving the prompt ‘Select nodes’:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Select</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="s1">&#39;Select nodes&#39;</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To select nodes, flagging those selected with flag f but limiting selection to nodes flagged with flag l, giving the prompt ‘Select nodes’:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Select</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="s1">&#39;Select nodes&#39;</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.SketchFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">SketchFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.SketchFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Sketches all of the flagged nodes in the model. The nodes will be sketched until you either call
+<a class="reference internal" href="#Node.Unsketch" title="Node.Unsketch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.Unsketch()</span></code></a>,
+<a class="reference internal" href="#Node.UnsketchFlagged" title="Node.UnsketchFlagged"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.UnsketchFlagged()</span></code></a>,
+<a class="reference internal" href="Model.html#Model.UnsketchAll" title="Model.UnsketchAll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.UnsketchAll()</span></code></a>,
+or delete the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all the flagged nodes will be sketched in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on the nodes that you want to sketch</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not after the nodes are sketched.
+If omitted redraw is true. If you want to sketch flagged nodes several times and only
+redraw after the last one then use false for redraw and call
+<a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To sketch all nodes flagged with flag in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">SketchFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">flag</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Total">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Total</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exists</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Total" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the total number of nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> to get total for</p></li>
+<li><p><strong>exists</strong> (<em>boolean</em>) – Optional. true if only existing nodes should be counted. If false or omitted
+referenced but undefined nodes will also be included in the total</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of nodes</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the total number of nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">Total</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnblankAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnblankAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnblankAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks all of the nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all nodes will be unblanked in</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not.
+If omitted redraw is false. If you want to do several (un)blanks and only
+redraw after the last one then use false for all redraws apart from the last one.
+Alternatively you can redraw using <a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank all of the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnblankAll</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnblankFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnblankFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnblankFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks all of the flagged nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the flagged nodes will be unblanked in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on the nodes that you want to unblank</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not.
+If omitted redraw is false. If you want to do several (un)blanks and only
+redraw after the last one then use false for all redraws apart from the last one.
+Alternatively you can redraw using <a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank all of the nodes in model m flagged with f:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnblankFlagged</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnflagAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnflagAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnflagAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unsets a defined flag on all of the nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that the defined flag for all nodes will be unset in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag to unset on the nodes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unset the flag f on all the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnflagAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnsketchAll">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnsketchAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnsketchAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unsketches all nodes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all nodes will be unblanked in</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not after the nodes are unsketched.
+If omitted redraw is true. If you want to unsketch several things and only
+redraw after the last one then use false for redraw and call
+<a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unsketch all nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnsketchAll</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.UnsketchFlagged">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">UnsketchFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.UnsketchFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Unsketches all flagged nodes in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>Model</em>) – <a class="reference internal" href="Model.html#Model" title="Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> that all nodes will be unsketched in</p></li>
+<li><p><strong>flag</strong> (<em>Flag</em>) – Flag set on the nodes that you want to unsketch</p></li>
+<li><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not after the nodes are unsketched.
+If omitted redraw is true. If you want to unsketch several things and only
+redraw after the last one then use false for redraw and call
+<a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unsketch all nodes flagged with flag in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Node</span><span class="o">.</span><span class="n">UnsketchAll</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">flag</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="instance-methods">
+<h2>Instance methods<a class="headerlink" href="#instance-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Node.AssociateComment">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">AssociateComment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.AssociateComment" title="Link to this definition">¶</a></dt>
+<dd><p>Associates a comment with a node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>comment</strong> (<em>Comment</em>) – <a class="reference internal" href="Comment.html#Comment" title="Comment"><code class="xref py py-class docutils literal notranslate"><span class="pre">Comment</span></code></a> that will be attached to the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To associate comment c to the node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">AssociateComment</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Blank">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Blank</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Blank" title="Link to this definition">¶</a></dt>
+<dd><p>Blanks the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To blank node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Blank</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Blanked">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Blanked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Blanked" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if the node is blanked or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if blanked, False if not</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if node n is blanked:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">n</span><span class="o">.</span><span class="n">Blanked</span><span class="p">():</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Browse">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Browse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Browse" title="Link to this definition">¶</a></dt>
+<dd><p>Starts an edit panel in Browse mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>modal</strong> (<em>boolean</em>) – Optional. If this window is modal (blocks the user from doing anything else in PRIMER
+until this window is dismissed). If omitted the window will be modal</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>no return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To Browse node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Browse</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.ClearFlag">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">ClearFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.ClearFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Clears a flag on the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag to clear on the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To clear flag f for node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Copy">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Copy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Copy" title="Link to this definition">¶</a></dt>
+<dd><p>Copies the node. The target include of the copied node can be set using <a class="reference internal" href="Options.html#Options.copy_target_include" title="Options.copy_target_include"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Options.copy_target_include</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>range</strong> (<em>boolean</em>) – Optional. If you want to keep the copied item in the range specified for the current include. Default value is false.
+To set current include, use <a class="reference internal" href="Include.html#Include.MakeCurrentLayer" title="Include.MakeCurrentLayer"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Include.MakeCurrentLayer()</span></code></a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To copy node n into node z:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.DetachComment">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">DetachComment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.DetachComment" title="Link to this definition">¶</a></dt>
+<dd><p>Detaches a comment from a node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>comment</strong> (<em>Comment</em>) – <a class="reference internal" href="Comment.html#Comment" title="Comment"><code class="xref py py-class docutils literal notranslate"><span class="pre">Comment</span></code></a> that will be detached from the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To detach comment c from the node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">DetachComment</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Edit">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Edit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Edit" title="Link to this definition">¶</a></dt>
+<dd><p>Starts an interactive editing panel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>modal</strong> (<em>boolean</em>) – Optional. If this window is modal (blocks the user from doing anything else in PRIMER
+until this window is dismissed). If omitted the window will be modal</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>no return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To Edit node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Edit</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.ExtractColour">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">ExtractColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.ExtractColour" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the <strong>actual</strong> colour used for node.
+<br/>
+By default in PRIMER many entities such as elements get their colour automatically from the part that they are in.
+PRIMER cycles through 13 default colours based on the label of the entity. In this case the node <a class="reference internal" href="#Node.colour" title="Node.colour"><code class="xref py py-attr docutils literal notranslate"><span class="pre">colour</span></code></a>
+property will return the value <a class="reference internal" href="Colour.html#Colour.PART" title="Colour.PART"><code class="xref py py-const docutils literal notranslate"><span class="pre">Colour.PART</span></code></a> instead of the actual colour.
+This method will return the actual colour which is used for drawing the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>colour value (integer)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To return the colour used for drawing node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">colour</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">ExtractColour</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Flagged">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Flagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Flagged" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if the node is flagged or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag to test on the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if flagged, False if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if node n has flag f set on it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">n</span><span class="o">.</span><span class="n">Flagged</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetAttachedShells">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetAttachedShells</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recursive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetAttachedShells" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the shells that are attached to the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>recursive</strong> (<em>boolean</em>) – Optional. If recursive is false then only the shells actually attached to the node will be
+returned (this could also be done by using the <a class="reference internal" href="#Node.Xrefs" title="Node.Xrefs"><code class="xref py py-class docutils literal notranslate"><span class="pre">Xrefs</span></code></a> class but this method
+is provided for convenience.
+If recursive is true then PRIMER will keep finding attached shells until no more can be found.
+If omitted recursive will be false</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of Shell objects (or None if there are no attached shells)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To find the shells attached to node n, growing the selection until no more shells can be found:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">shell_list</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">GetAttachedShells</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetComments">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetComments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetComments" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the comments associated to a node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of Comment objects (or None if there are no comments associated to the node)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the list of comments associated to the node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">comm_list</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">GetComments</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetFreeEdgeNodes">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetFreeEdgeNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetFreeEdgeNodes" title="Link to this definition">¶</a></dt>
+<dd><p>If the node is on a shell free edge and that edge forms a loop like the boundary of a hole,
+then GetFreeEdgeNodes returns all of the nodes on the hole/boundary in order.
+Note that a free edge is a shell edge which is only used by one shell, whereas edges in the middle of
+a shell part will have got more than one adjacent shell and are therefore not free edges. If every
+node on a boundary belongs to exactly two free edges, then this function returns the list as described.
+In more involved combinatorics of shells, for example multiple parts sharing nodes along their
+boundaries, there can be one, three or more free edges at a node, and this function should not
+be used.
+If you only need to know whether or not a node is on a free edge, you should find the shells attached
+to it by cross references with <a class="reference internal" href="Xrefs.html#Xrefs.GetItemID" title="Xrefs.GetItemID"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Xrefs.GetItemID</span></code></a> and see
+whether these shells have got other nodes in common as well. If nodes along an edge of a shell only
+appear in that one shell, this is a free edge.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of Node objects (or None if not on a shell free edge)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To find all the nodes on the hole/boundary that node n is on:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">node_list</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">GetFreeEdgeNodes</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetInitialVelocities">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetInitialVelocities</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetInitialVelocities" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the initial velocity of the node.
+You need to be sure the field nvels of the node is populate before to use GetInitialVelocities.
+To do so you can use :py:meth:` Model.PopNodeVels &lt;Model.PopulateInitialVelocities&gt;`</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List containing the 3 translational and 3 rotational velocity values</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the initial velocity of the node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">vel</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">GetInitialVelocities</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetParameter">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prop</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetParameter" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if a Node property is a parameter or not.
+Note that object properties that are parameters are normally returned as the integer or
+float parameter values as that is virtually always what the user would want. For this function to
+work the JavaScript interpreter must use the parameter name instead of the value. This can be done by setting
+the <a class="reference internal" href="Options.html#Options.property_parameter_names" title="Options.property_parameter_names"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Options.property_parameter_names</span></code></a> option to true
+before calling the function and then resetting it to false afterwards..
+This behaviour can also temporarily be switched by using the <a class="reference internal" href="#Node.ViewParameters" title="Node.ViewParameters"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.ViewParameters()</span></code></a>
+method and ‘method chaining’ (see the examples below)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prop</strong> (<em>string</em>) – node property to get parameter for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Parameter object if property is a parameter, None if not</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Parameter</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if Node property n.example is a parameter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Options</span><span class="o">.</span><span class="n">property_parameter_names</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">if</span> <span class="n">n</span><span class="o">.</span><span class="n">GetParameter</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">example</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="o">...</span>
+<span class="n">Oasys</span><span class="o">.</span><span class="n">PRIMER</span><span class="o">.</span><span class="n">Options</span><span class="o">.</span><span class="n">property_parameter_names</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>To check if Node property n.example is a parameter by using the GetParameter method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">n</span><span class="o">.</span><span class="n">ViewParameters</span><span class="p">()</span><span class="o">.</span><span class="n">GetParameter</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">example</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.GetReferenceGeometry">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">GetReferenceGeometry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.GetReferenceGeometry" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the airbag reference geometry of the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The reference geometry ID of the node (or 0 if it hasn’t got any)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the reference geometry of the node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">GetReferenceGeometry</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Keyword">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Keyword" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the keyword for this node (*NODE, *NODE_SCALAR or *NODE_SCALAR_VALUE).
+<strong>Note that a carriage return is not added</strong>.
+See also <a class="reference internal" href="#Node.KeywordCards" title="Node.KeywordCards"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.KeywordCards()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>string containing the keyword</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the keyword for node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">key</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Keyword</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.KeywordCards">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">KeywordCards</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.KeywordCards" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the keyword cards for the node.
+<strong>Note that a carriage return is not added</strong>.
+See also <a class="reference internal" href="#Node.Keyword" title="Node.Keyword"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.Keyword()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>string containing the cards</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the cards for node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cards</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">KeywordCards</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Next">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Next" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the next node in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node object (or None if there are no more nodes in the model)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the node in model m after node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Next</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.NodalMass">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">NodalMass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.NodalMass" title="Link to this definition">¶</a></dt>
+<dd><p>Get the mass of a node. This will be the sum of the
+structural element mass attached to the node plus any lumped mass.
+If called on the node of a PART_INERTIA or NRBC_INERTIA, this function will return
+the mass of the part/nrbc, as ‘nodal mass’ has no meaning in this context</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the mass for node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">NodalMass</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Previous">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Previous</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Previous" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the previous node in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node object (or None if there are no more nodes in the model)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the node in model m before node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Previous</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.SetFlag">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">SetFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.SetFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Sets a flag on the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>Flag</em>) – Flag to set on the node</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set flag f for node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">SetFlag</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Sketch">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Sketch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Sketch" title="Link to this definition">¶</a></dt>
+<dd><p>Sketches the node. The node will be sketched until you either call
+<a class="reference internal" href="#Node.Unsketch" title="Node.Unsketch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.Unsketch()</span></code></a>,
+<a class="reference internal" href="#Node.UnsketchAll" title="Node.UnsketchAll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.UnsketchAll()</span></code></a>,
+<a class="reference internal" href="Model.html#Model.UnsketchAll" title="Model.UnsketchAll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Model.UnsketchAll()</span></code></a>,
+or delete the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not after the node is sketched.
+If omitted redraw is true. If you want to sketch several nodes and only
+redraw after the last one then use false for redraw and call
+<a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To sketch node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Sketch</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Unblank">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Unblank</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Unblank" title="Link to this definition">¶</a></dt>
+<dd><p>Unblanks the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No return value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unblank node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Unblank</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Unsketch">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Unsketch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">redraw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Node.Unsketch" title="Link to this definition">¶</a></dt>
+<dd><p>Unsketches the node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>redraw</strong> (<em>boolean</em>) – Optional. If model should be redrawn or not after the node is unsketched.
+If omitted redraw is true. If you want to unsketch several nodes and only
+redraw after the last one then use false for redraw and call
+<a class="reference internal" href="View.html#View.Redraw" title="View.Redraw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">View.Redraw()</span></code></a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>No return value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unsketch node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">.</span><span class="n">Unsketch</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.ViewParameters">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">ViewParameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.ViewParameters" title="Link to this definition">¶</a></dt>
+<dd><p>Object properties that are parameters are normally returned as the integer or
+float parameter values as that is virtually always what the user would want. This function temporarily
+changes the behaviour so that if a property is a parameter the parameter name is returned instead.
+This can be used with ‘method chaining’ (see the example below) to make sure a property argument is correct</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if Node property n.example is a parameter by using the <a class="reference internal" href="#Node.GetParameter" title="Node.GetParameter"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Node.GetParameter()</span></code></a> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">n</span><span class="o">.</span><span class="n">ViewParameters</span><span class="p">()</span><span class="o">.</span><span class="n">GetParameter</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">example</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="o">..</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Node.Xrefs">
+<span class="sig-prename descclassname"><span class="pre">Node.</span></span><span class="sig-name descname"><span class="pre">Xrefs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Node.Xrefs" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the cross references for this node</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Xrefs object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Xrefs</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the cross references for node n:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">xrefs</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">Xrefs</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.PRIMER functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Accelerometer.html">Oasys.PRIMER.Accelerometer class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Airbag.html">Oasys.PRIMER.Airbag class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Attached.html">Oasys.PRIMER.Attached class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AxialForceBeam.html">Oasys.PRIMER.AxialForceBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Beam.html">Oasys.PRIMER.Beam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Belt.html">Oasys.PRIMER.Belt class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Box.html">Oasys.PRIMER.Box class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.PRIMER.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Comment.html">Oasys.PRIMER.Comment class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConnectionProperties.html">Oasys.PRIMER.ConnectionProperties class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConstructionStages.html">Oasys.PRIMER.ConstructionStages class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Oasys.PRIMER.Contact class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ContactGuidedCable.html">Oasys.PRIMER.ContactGuidedCable class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conx.html">Oasys.PRIMER.Conx class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CoordinateSystem.html">Oasys.PRIMER.CoordinateSystem class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CrossSection.html">Oasys.PRIMER.CrossSection class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Curve.html">Oasys.PRIMER.Curve class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingFrequencyRange.html">Oasys.PRIMER.DampingFrequencyRange class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartMass.html">Oasys.PRIMER.DampingPartMass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartStiffness.html">Oasys.PRIMER.DampingPartStiffness class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingPartStructural.html">Oasys.PRIMER.DampingPartStructural class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DampingRelative.html">Oasys.PRIMER.DampingRelative class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DeformableToRigid.html">Oasys.PRIMER.DeformableToRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Discrete.html">Oasys.PRIMER.Discrete class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DiscreteSphere.html">Oasys.PRIMER.DiscreteSphere class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dummy.html">Oasys.PRIMER.Dummy class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ElementDeath.html">Oasys.PRIMER.ElementDeath class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExtraNodes.html">Oasys.PRIMER.ExtraNodes class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqFRF.html">Oasys.PRIMER.FreqFRF class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqSSD.html">Oasys.PRIMER.FreqSSD class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FreqVibration.html">Oasys.PRIMER.FreqVibration class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeneralizedWeld.html">Oasys.PRIMER.GeneralizedWeld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeometrySurface.html">Oasys.PRIMER.GeometrySurface class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Group.html">Oasys.PRIMER.Group class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HexSpotweldAssembly.html">Oasys.PRIMER.HexSpotweldAssembly class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="History.html">Oasys.PRIMER.History class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hourglass.html">Oasys.PRIMER.Hourglass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DBrep.html">Oasys.PRIMER.IGA1DBrep class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DNurbsUVW.html">Oasys.PRIMER.IGA1DNurbsUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA1DNurbsXYZ.html">Oasys.PRIMER.IGA1DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DBasisTransformXYZ.html">Oasys.PRIMER.IGA2DBasisTransformXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DBrep.html">Oasys.PRIMER.IGA2DBrep class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DNurbsUVW.html">Oasys.PRIMER.IGA2DNurbsUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA2DNurbsXYZ.html">Oasys.PRIMER.IGA2DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA3DBasisTransformXYZ.html">Oasys.PRIMER.IGA3DBasisTransformXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGA3DNurbsXYZ.html">Oasys.PRIMER.IGA3DNurbsXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAEdgeUVW.html">Oasys.PRIMER.IGAEdgeUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAEdgeXYZ.html">Oasys.PRIMER.IGAEdgeXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAFaceUVW.html">Oasys.PRIMER.IGAFaceUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAFaceXYZ.html">Oasys.PRIMER.IGAFaceXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAIntegrationShellReduce.html">Oasys.PRIMER.IGAIntegrationShellReduce class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAIntegrationSolidReduce.html">Oasys.PRIMER.IGAIntegrationSolidReduce class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAMass.html">Oasys.PRIMER.IGAMass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAPointUVW.html">Oasys.PRIMER.IGAPointUVW class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAShell.html">Oasys.PRIMER.IGAShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGASolid.html">Oasys.PRIMER.IGASolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IGAVolumeXYZ.html">Oasys.PRIMER.IGAVolumeXYZ class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.PRIMER.Image class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Include.html">Oasys.PRIMER.Include class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntegrationBeam.html">Oasys.PRIMER.IntegrationBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntegrationShell.html">Oasys.PRIMER.IntegrationShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceComponent.html">Oasys.PRIMER.InterfaceComponent class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceLinkingEdge.html">Oasys.PRIMER.InterfaceLinkingEdge class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterfaceSpringback.html">Oasys.PRIMER.InterfaceSpringback class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Interpolation.html">Oasys.PRIMER.Interpolation class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InterpolationSpotweld.html">Oasys.PRIMER.InterpolationSpotweld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Joint.html">Oasys.PRIMER.Joint class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="JointStiffness.html">Oasys.PRIMER.JointStiffness class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Linear.html">Oasys.PRIMER.Linear class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBeam.html">Oasys.PRIMER.LoadBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBodyGeneralized.html">Oasys.PRIMER.LoadBodyGeneralized class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadGravity.html">Oasys.PRIMER.LoadGravity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadNode.html">Oasys.PRIMER.LoadNode class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadRemovePart.html">Oasys.PRIMER.LoadRemovePart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadRigidBody.html">Oasys.PRIMER.LoadRigidBody class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadShell.html">Oasys.PRIMER.LoadShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mass.html">Oasys.PRIMER.Mass class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MassPart.html">Oasys.PRIMER.MassPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Material.html">Oasys.PRIMER.Material class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mechanism.html">Oasys.PRIMER.Mechanism class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Model.html">Oasys.PRIMER.Model class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphBox.html">Oasys.PRIMER.MorphBox class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphFlow.html">Oasys.PRIMER.MorphFlow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MorphPoint.html">Oasys.PRIMER.MorphPoint class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodalForceGroup.html">Oasys.PRIMER.NodalForceGroup class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NodalRigidBody.html">Oasys.PRIMER.NodalRigidBody class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.PRIMER.Node class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#constants">Constants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node.SCALAR"><code class="docutils literal notranslate"><span class="pre">Node.SCALAR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.SCALAR_VALUE"><code class="docutils literal notranslate"><span class="pre">Node.SCALAR_VALUE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node.colour"><code class="docutils literal notranslate"><span class="pre">Node.colour</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.exists"><code class="docutils literal notranslate"><span class="pre">Node.exists</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.include"><code class="docutils literal notranslate"><span class="pre">Node.include</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.label"><code class="docutils literal notranslate"><span class="pre">Node.label</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.model"><code class="docutils literal notranslate"><span class="pre">Node.model</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.ndof"><code class="docutils literal notranslate"><span class="pre">Node.ndof</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.nid"><code class="docutils literal notranslate"><span class="pre">Node.nid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.rc"><code class="docutils literal notranslate"><span class="pre">Node.rc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.scalar"><code class="docutils literal notranslate"><span class="pre">Node.scalar</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.tc"><code class="docutils literal notranslate"><span class="pre">Node.tc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.x"><code class="docutils literal notranslate"><span class="pre">Node.x</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.x1"><code class="docutils literal notranslate"><span class="pre">Node.x1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.x2"><code class="docutils literal notranslate"><span class="pre">Node.x2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.x3"><code class="docutils literal notranslate"><span class="pre">Node.x3</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.y"><code class="docutils literal notranslate"><span class="pre">Node.y</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.z"><code class="docutils literal notranslate"><span class="pre">Node.z</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#constructor">Constructor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node"><code class="docutils literal notranslate"><span class="pre">Node()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#static-methods">Static methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node.BlankAll"><code class="docutils literal notranslate"><span class="pre">Node.BlankAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.BlankFlagged"><code class="docutils literal notranslate"><span class="pre">Node.BlankFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Create"><code class="docutils literal notranslate"><span class="pre">Node.Create()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.First"><code class="docutils literal notranslate"><span class="pre">Node.First()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.FirstFreeLabel"><code class="docutils literal notranslate"><span class="pre">Node.FirstFreeLabel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.FlagAll"><code class="docutils literal notranslate"><span class="pre">Node.FlagAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetAll"><code class="docutils literal notranslate"><span class="pre">Node.GetAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetFlagged"><code class="docutils literal notranslate"><span class="pre">Node.GetFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetFromID"><code class="docutils literal notranslate"><span class="pre">Node.GetFromID()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Last"><code class="docutils literal notranslate"><span class="pre">Node.Last()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.LastFreeLabel"><code class="docutils literal notranslate"><span class="pre">Node.LastFreeLabel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Merge"><code class="docutils literal notranslate"><span class="pre">Node.Merge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.NextFreeLabel"><code class="docutils literal notranslate"><span class="pre">Node.NextFreeLabel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Pick"><code class="docutils literal notranslate"><span class="pre">Node.Pick()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.RenumberAll"><code class="docutils literal notranslate"><span class="pre">Node.RenumberAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.RenumberFlagged"><code class="docutils literal notranslate"><span class="pre">Node.RenumberFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Select"><code class="docutils literal notranslate"><span class="pre">Node.Select()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.SketchFlagged"><code class="docutils literal notranslate"><span class="pre">Node.SketchFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Total"><code class="docutils literal notranslate"><span class="pre">Node.Total()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnblankAll"><code class="docutils literal notranslate"><span class="pre">Node.UnblankAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnblankFlagged"><code class="docutils literal notranslate"><span class="pre">Node.UnblankFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnflagAll"><code class="docutils literal notranslate"><span class="pre">Node.UnflagAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnsketchAll"><code class="docutils literal notranslate"><span class="pre">Node.UnsketchAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.UnsketchFlagged"><code class="docutils literal notranslate"><span class="pre">Node.UnsketchFlagged()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instance-methods">Instance methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Node.AssociateComment"><code class="docutils literal notranslate"><span class="pre">Node.AssociateComment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Blank"><code class="docutils literal notranslate"><span class="pre">Node.Blank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Blanked"><code class="docutils literal notranslate"><span class="pre">Node.Blanked()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Browse"><code class="docutils literal notranslate"><span class="pre">Node.Browse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.ClearFlag"><code class="docutils literal notranslate"><span class="pre">Node.ClearFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Copy"><code class="docutils literal notranslate"><span class="pre">Node.Copy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.DetachComment"><code class="docutils literal notranslate"><span class="pre">Node.DetachComment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Edit"><code class="docutils literal notranslate"><span class="pre">Node.Edit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.ExtractColour"><code class="docutils literal notranslate"><span class="pre">Node.ExtractColour()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Flagged"><code class="docutils literal notranslate"><span class="pre">Node.Flagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetAttachedShells"><code class="docutils literal notranslate"><span class="pre">Node.GetAttachedShells()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetComments"><code class="docutils literal notranslate"><span class="pre">Node.GetComments()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetFreeEdgeNodes"><code class="docutils literal notranslate"><span class="pre">Node.GetFreeEdgeNodes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetInitialVelocities"><code class="docutils literal notranslate"><span class="pre">Node.GetInitialVelocities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetParameter"><code class="docutils literal notranslate"><span class="pre">Node.GetParameter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.GetReferenceGeometry"><code class="docutils literal notranslate"><span class="pre">Node.GetReferenceGeometry()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Keyword"><code class="docutils literal notranslate"><span class="pre">Node.Keyword()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.KeywordCards"><code class="docutils literal notranslate"><span class="pre">Node.KeywordCards()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Next"><code class="docutils literal notranslate"><span class="pre">Node.Next()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.NodalMass"><code class="docutils literal notranslate"><span class="pre">Node.NodalMass()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Previous"><code class="docutils literal notranslate"><span class="pre">Node.Previous()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.SetFlag"><code class="docutils literal notranslate"><span class="pre">Node.SetFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Sketch"><code class="docutils literal notranslate"><span class="pre">Node.Sketch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Unblank"><code class="docutils literal notranslate"><span class="pre">Node.Unblank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Unsketch"><code class="docutils literal notranslate"><span class="pre">Node.Unsketch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.ViewParameters"><code class="docutils literal notranslate"><span class="pre">Node.ViewParameters()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Node.Xrefs"><code class="docutils literal notranslate"><span class="pre">Node.Xrefs()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="NodeSet.html">Oasys.PRIMER.NodeSet class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.PRIMER.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Parameter.html">Oasys.PRIMER.Parameter class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Part.html">Oasys.PRIMER.Part class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedAccelerometerRigid.html">Oasys.PRIMER.PrescribedAccelerometerRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedFinalGeometry.html">Oasys.PRIMER.PrescribedFinalGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedMotion.html">Oasys.PRIMER.PrescribedMotion class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PrescribedOrientationRigid.html">Oasys.PRIMER.PrescribedOrientationRigid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pretensioner.html">Oasys.PRIMER.Pretensioner class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ReferenceGeometry.html">Oasys.PRIMER.ReferenceGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Retractor.html">Oasys.PRIMER.Retractor class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RigidBodies.html">Oasys.PRIMER.RigidBodies class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rigidwall.html">Oasys.PRIMER.Rigidwall class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Seatbelt1D.html">Oasys.PRIMER.Seatbelt1D class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Seatbelt2D.html">Oasys.PRIMER.Seatbelt2D class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Section.html">Oasys.PRIMER.Section class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sensor.html">Oasys.PRIMER.Sensor class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorControl.html">Oasys.PRIMER.SensorControl class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorDefine.html">Oasys.PRIMER.SensorDefine class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SensorSwitch.html">Oasys.PRIMER.SensorSwitch class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Set.html">Oasys.PRIMER.Set class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Shell.html">Oasys.PRIMER.Shell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ShellReferenceGeometry.html">Oasys.PRIMER.ShellReferenceGeometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slipring.html">Oasys.PRIMER.Slipring class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solid.html">Oasys.PRIMER.Solid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spc.html">Oasys.PRIMER.Spc class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sph.html">Oasys.PRIMER.Sph class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spotweld.html">Oasys.PRIMER.Spotweld class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spr2.html">Oasys.PRIMER.Spr2 class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StagedConstructionPart.html">Oasys.PRIMER.StagedConstructionPart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainBeam.html">Oasys.PRIMER.StrainBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainShell.html">Oasys.PRIMER.StrainShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StrainSolid.html">Oasys.PRIMER.StrainSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressBeam.html">Oasys.PRIMER.StressBeam class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressSection.html">Oasys.PRIMER.StressSection class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressShell.html">Oasys.PRIMER.StressShell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StressSolid.html">Oasys.PRIMER.StressSolid class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Termination.html">Oasys.PRIMER.Termination class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TieBreak.html">Oasys.PRIMER.TieBreak class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html">Oasys.PRIMER.Transformation class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tshell.html">Oasys.PRIMER.Tshell class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.PRIMER.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Oasys.PRIMER.Vector class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Velocity.html">Oasys.PRIMER.Velocity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VelocityGeneration.html">Oasys.PRIMER.VelocityGeneration class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="View.html">Oasys.PRIMER.View class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.PRIMER.Window class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Workflow.html">Oasys.PRIMER.Workflow class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Xrefs.html">Oasys.PRIMER.Xrefs class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Control.html">Oasys.PRIMER Control dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Damping.html">Oasys.PRIMER Damping dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database.html">Oasys.PRIMER Database dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoadBody.html">Oasys.PRIMER LoadBody dictionary</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="NodeSet.html" title="Oasys.PRIMER.NodeSet class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="NodalRigidBody.html" title="Oasys.PRIMER.NodalRigidBody class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.PRIMER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.PRIMER.Node class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

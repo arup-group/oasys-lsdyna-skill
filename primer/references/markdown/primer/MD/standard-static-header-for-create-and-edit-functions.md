@@ -1,0 +1,15 @@
+﻿###  Standard "Static" Header for CREATE and EDIT Functions
+
+The Create/Edit panels for Keywords differ in detail, but share a common layout of the "static" functions at their top.
+
+| This example is taken from a Part editing panel, but the top buttons are the same in all cases. | ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_0_4.png) |
+| --- | --- |
+
+The standard buttons act as follows. Note that some have vary between "Create" and "Edit" modes, whereas others are common to "Both":
+
+| | **Abort\_item** | (Both) | Terminates the current operation, leaving the permanent definition unchanged (edit case) or undefined (create case). |<br>| --- | --- | --- |<br>| **Reset All      Restore Original** | (Create) <br> <br>(Edit) | Resets the definition to null, canceling any entries made so far. <br> <br>Restores the original, unedited definition (copied from the permanent definition), overwriting any changes made so far. |<br>| **Text edit** | (Both) | Writes a "mini keyword output" file of just this keyword, and opens the system standard text editor on this file. See [Text Edit](text-edit-editing-keyword-data-externally.md#text_edit_1)below for more information. <br><br>| This will also also display any "keyword comments" associated with this keyword as hover text when the mouse is hovered over the button. You can tell if any comments are present since the Text Edit button will be drawn in White on Light blue instead of the standard white on dark blue. | ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_0_4a.png) |<br>| --- | --- | |<br>| **Create item      Update item** | (Create) <br> <br>(Edit) | Creates a permanent entry from the scratch definition. <br> <br>Overwrites the "old" permanent definition with the revised entries from the scratch definition. |<br>| **Copy existing** | (Both) | Copies entries from an existing definition into this one, superseding any entries or changes made so far. |<br>| **Sketch** | (Both) | Sketches the currently defined scratch definition on top of the current graphics image. |<br>| **View Xrefs** | (Both) | Invokes [cross-reference viewer](xrefs-cross-references-viewer.md). |<br>| **Check Defn** | (Both) | Checks the current scratch definition for errors |<br>| Find/Only/ <br>Blank/Unblank | (Both) | Changeable between these four options by drop-down. In the Only case the view will display only the entity whose editing panel we are looking at. In the Find case it brings up the Find panel as in Tools -&gt; Find. | |
+| --- |
+
+Remember: All Create and Edit functions  ***always***  take place on a "scratch" copy of the current definition (if any). No changes are made to the permanent database until the CREATE or UPDATE buttons are used.
+
+[Previous](standard-keyword-top-level-menu-options.md)  |  [Next](the-generic-keyword-editing-panel.md)

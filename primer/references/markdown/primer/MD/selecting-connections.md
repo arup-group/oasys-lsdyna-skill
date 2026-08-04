@@ -1,0 +1,5 @@
+﻿####  Selecting Connections
+
+Connection rows on the table can be selected in a number of ways. The easiest way is by left mouse clicking on the row. A selected row will be highlighted blue. Multiple lines can be selected using the shift or ctrl key combined with the mouse. There are also buttons at the top of the table to aid you in selecting and viewing connections in the table. The Clear button clears all current selections. The Sel all button selects all connections currently displayed on the table. Select will bring up an object menu and allow you to select connections using that method (i.e. being able to use various filters to select connections). Show sel will display in the table only those connections currently selected. Show all will bring back and display the original connections on the table.
+
+[Previous](modifying-connection-data.md)  |  [Next](modifying-spotweld-line-data.md)

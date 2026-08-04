@@ -1,0 +1,16 @@
+﻿# Manage Model Workflows panel
+
+Tools → Workflows → Manage Model Workflows
+
+The Manage Model Workflows panel allows you to manage the Workflows that are already saved in your models. You can delete them, change the location where they are saved, or copy workflows from different models.
+
+![](../Storage/primer-22-1/manage-model-workflows-panel-2023-02-09-1.png)
+
+This panel can only be opened if you have a model opened in PRIMER. If you want to open the panel and more than one model is available, then you will be prompted to select the model for which you want to manage the Workflows. On the right-hand side of the panel, the Model Workflows box will list all the Workflows available in your selected model. It lists the name of the Workflow and the name of the file it is saved in, separated by a vertical bar |.
+
+You can select one or more Workflows by clicking on them. Once a Model Workflow is selected, you can either remove it from the model using the Remove button, or change the location of the workflow using the Save to post \*End or Save to .json buttons on top of the box. Saving or removing a Workflow to/from the post \*End data does not automatically update the post \*End data in the model keyword file. You have to manually update the model file using [MODEL &gt; WRITE](model-write.md) to write the Workflow data updates to the post \*End data. If you want to write the Workflow data to a .json file, click the Save to .json button which will open the file selector for you to select a location and name of the file. You can create a new file or add the selected Workflow to an existing Workflow file. If a Workflow is saved in the post \*End data, saving it to a json file in the same directory will remove the workflow from the post \*End data and write it to the .json file immediately. However, you will need to write out the model using [MODEL &gt; WRITE](model-write.md) to update the post \*End data.
+
+If you save a Workflow to a .json file in a different directory to the model directory, it will be written to the file, but the workflows will not be removed from its current location, i.e. the post \*End data or json file.
+
+If you want to copy workflows and their data from one model to another, you can use the Select model to import workflows button on the top left corner. This creates a model selector panel in which you must select the model from which you wish to import the Workflows. If the model has any Workflows saved to it, the Imported Workflows box will then show them. You can select one or more Workflows from the box. This will activate the Add &gt; button. Clicking Add &gt; will move the selected Workflows from the Imported box into the Model Workflow box. You must then select the Workflows in the Model Workflow box and decide if you want to save them to the post \*End data or a .json file. If you choose to save the workflows to a .json file, you must save the file in the same directory as the keyword master file. However, if you choose to save it to the post \*End data, you must write out the model using MODEL &gt; WRITE to update the keyword file with the new workflow data.
+[Previous](workflows-definition-creation-panel.md)  |  [Next](favourite-tools-keywords.md)

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Python API Oasys.REPORTER documentation &#8212; Oasys.REPORTER 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.REPORTER functions" href="global.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="global.html" title="Oasys.REPORTER functions"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Oasys.REPORTER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python API Oasys.REPORTER documentation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="python-api-oasys-reporter-documentation">
+<h1>Python API Oasys.REPORTER documentation<a class="headerlink" href="#python-api-oasys-reporter-documentation" title="Link to this heading">¶</a></h1>
+<p>The Oasys.REPORTER package allows Python scripts to control the Oasys LS-DYNA Environment
+software <a class="reference external" href="https://www.oasys-software.com/dyna/software/reporter/">REPORTER</a>.</p>
+<p>For full information and examples of the Python API visit: <a class="reference external" href="https://help.oasys-software.com/articles/py_api-22-1">https://help.oasys-software.com/articles/py_api-22-1</a></p>
+<section id="basic-information">
+<h2>Basic Information<a class="headerlink" href="#basic-information" title="Link to this heading">¶</a></h2>
+<p>The module uses gRPC to communicate with the REPORTER executable using the <a class="reference external" href="https://pypi.org/project/Oasys.gRPC/">Oasys.gRPC</a> module.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="connection-methods">
+<h2>Connection methods<a class="headerlink" href="#connection-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py function">
+<dt class="sig sig-object py" id="start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abspath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50053</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">license</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#start" title="Link to this definition">¶</a></dt>
+<dd><p>Start an instance of REPORTER on this machine.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>abspath</strong> (<em>string</em>) – The absolute pathname of the REPORTER executable</p></li>
+<li><p><strong>args</strong> (<em>list</em>) – Optional. Any extra arguments to pass onto REPORTER</p></li>
+<li><p><strong>port</strong> (<em>integer</em>) – Optional. The gRPC port number used to communicate with REPORTER</p></li>
+<li><p><strong>memory</strong> (<em>integer</em>) – Optional. The memory allocated for scripts in REPORTER</p></li>
+<li><p><strong>license</strong> (<em>string</em>) – Optional. The location of the license file or server for REPORTER</p></li>
+<li><p><strong>debug</strong> (<em>boolean</em>) – Optional. Output debugging messages</p></li>
+<li><p><strong>wait</strong> (<em>integer</em>) – Optional. Time to wait (in seconds) for REPORTER to start <br/> <em>Added in version 21.0.1</em></p></li>
+<li><p><strong>batch</strong> (<em>boolean</em>) – Optional. If REPORTER should be started in batch mode without any prompts <br/> <em>Added in version 22.0.1</em></p></li>
+<li><p><strong>prefix</strong> (<em>string</em>) – Optional. A prefix command used to run REPORTER (e.g. /opt/VirtualGL/bin/vglrun) <br/> <em>Added in version 22.0.1</em></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Connection object used to interact with REPORTER</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Connection</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To start REPORTER (installed at C:\Oasys 22\reporter22_x64.exe):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">Oasys.REPORTER</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">abspath</span><span class="o">=</span><span class="s2">&quot;C:</span><span class="se">\\</span><span class="s2">Oasys 22</span><span class="se">\\</span><span class="s2">reporter22_x64.exe&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="connect">
+<span class="sig-name descname"><span class="pre">connect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50053</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#connect" title="Link to this definition">¶</a></dt>
+<dd><p>Connect to an instance of REPORTER that is running.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>port</strong> (<em>integer</em>) – Optional. The gRPC port number used to communicate with REPORTER</p></li>
+<li><p><strong>memory</strong> (<em>integer</em>) – Optional. The memory allocated for scripts in REPORTER</p></li>
+<li><p><strong>hostname</strong> (<em>string</em>) – Optional. The hostname of the machine that REPORTER is running on</p></li>
+<li><p><strong>debug</strong> (<em>boolean</em>) – Optional. Output debugging messages</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Connection object used to interact with REPORTER</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Connection</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To connect to an instance of REPORTER that is listening for gRPC messages on port 50053:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">Oasys.REPORTER</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">50053</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="disconnect">
+<span class="sig-name descname"><span class="pre">disconnect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#disconnect" title="Link to this definition">¶</a></dt>
+<dd><p>Disconnect from the instance of REPORTER that we are connected to and leave REPORTER running.</p>
+<p><strong>Example</strong></p>
+<p>To disconnect from REPORTER:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="terminate">
+<span class="sig-name descname"><span class="pre">terminate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#terminate" title="Link to this definition">¶</a></dt>
+<dd><p>Terminate the instance of REPORTER that we are connected to, closing REPORTER.</p>
+<p><strong>Example</strong></p>
+<p>To terminate REPORTER:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Oasys</span><span class="o">.</span><span class="n">REPORTER</span><span class="o">.</span><span class="n">terminate</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="#">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.REPORTER functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.REPORTER.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image.html">Oasys.REPORTER.Image class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Item.html">Oasys.REPORTER.Item class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.REPORTER.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Page.html">Oasys.REPORTER.Page class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reporter.html">Oasys.REPORTER.Reporter class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Template.html">Oasys.REPORTER.Template class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.REPORTER.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variable.html">Oasys.REPORTER.Variable class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.REPORTER.Window class</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="global.html" title="Oasys.REPORTER functions"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Oasys.REPORTER 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python API Oasys.REPORTER documentation</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>

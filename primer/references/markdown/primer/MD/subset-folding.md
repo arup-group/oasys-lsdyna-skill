@@ -1,0 +1,12 @@
+﻿###  Subset Folding
+
+Subset folding can be used with thin, thick, version 8.0 tuck folds and align folds. It can make the process of making multiple folds considerably easier. Every time you do a fold a list of the nodes which are folded is saved. If you now want to do a new fold in which the nodes you want to fold are a subset of the previous fold (i.e. all the nodes were folded in the previous fold) instead of defining a set or layers you can just press the SUBSET FOLDING button and the nodes from the previous fold will be used as the input to this fold. The following figures illustrate the use of subset folding when creating thin folds.
+
+| a) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/Image79.gif) | b) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/Image78.gif) |
+| --- | --- | --- | --- |
+| c) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/Image77.gif) | d) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/Image82.gif) |
+| e) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/Image81.gif) | f) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/Image80.gif) |
+
+A new fold (fold 1) is created on the airbag folding from right to left. a) shows the airbag before the fold, b) shows the airbag after the fold. If a new fold (fold 2) is now created folding from left to right by default everything to the left of the fold point will be folded (c). At this point you could define a node set or use layers to select the upper layer of the airbag to fold. Instead you can press the SUBSET FOLDING button. Now the nodes which will be used for fold 2 are the nodes which were folded in the first fold (d). If this fold is completed and the folding process continued with subset folding then when the third fold is defined (e) the nodes are automatically selected and the fold direction swapped from forward to reverse. (f) shows the airbag after the third fold. If the folding process was continued and a fourth fold created using subset folding the fold direction would automatically swap over to be forward. This process can be used to very quickly create &gt;zig-zag= folds on an airbag. It is much quicker as no sets or layers need to be created when doing the folds. You can turn subset folding off at any time and continue folding by the normal methods.
+
+[Previous](translate-fold.md)  |  [Next](folder-options.md)

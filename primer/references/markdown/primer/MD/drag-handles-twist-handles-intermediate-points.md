@@ -1,0 +1,6 @@
+﻿#####  Drag Handles, Twist Handles, Intermediate Points
+
+| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_tab2_1.png)These control the visibility of the symbols added at path points when in Advanced editing mode. See the following for details:<br> <br><br>| The [Advanced Editor](the-advanced-editor-mode.md#advanced_main) | General description of the advanced editor |<br>| --- | --- |<br>| [Drag Handles](path-visualisation-tab-controlling-what-is-shown-during-advanced-path-editing.md#drag_handles) | Using drag handles (arrows) to move points |<br>| [Twist handles](path-visualisation-tab-controlling-what-is-shown-during-advanced-path-editing.md#twist_handles) | Using twist handles (cubes) to rotate points |<br>| [Intermediate points](path-visualisation-tab-controlling-what-is-shown-during-advanced-path-editing.md#intermediate_points) | Controlling intermediate point visibility | |
+| --- |
+
+[Previous](showing-path-segments.md)  |  [Next](transparency-max-handle-length-acute-break-angle.md)

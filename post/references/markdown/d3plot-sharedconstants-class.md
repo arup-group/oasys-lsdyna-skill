@@ -1,0 +1,100 @@
+﻿# SharedConstants
+
+Functions and constants relating to SharedConstants
+
+## SharedConstants constants
+
+### Constants for Dispose
+
+| **Name** | **Description** |
+| --- | --- |
+| DELETE | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Delete. Use [Constant.DELETE](d3plot-constant-class.md#Constant.DELETE) instead [deprecated] |
+| LEAVE | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Leave behind (eg don't delete). Use [Constant.LEAVE](d3plot-constant-class.md#Constant.LEAVE) instead [deprecated] |
+
+### Constants for General
+
+| **Name** | **Description** |
+| --- | --- |
+| ALL | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>All of a category. Use [Constant.ALL](d3plot-constant-class.md#Constant.ALL) instead [deprecated] |
+| GT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Greater than (&gt;). Use [Constant.GT](d3plot-constant-class.md#Constant.GT) instead [deprecated] |
+| GTEQ | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Greater than or equals (&gt;=). Use [Constant.GTEQ](d3plot-constant-class.md#Constant.GTEQ) instead [deprecated] |
+| LT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Less than (&lt;). Use [Constant.LT](d3plot-constant-class.md#Constant.LT) instead [deprecated] |
+| LTEQ | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Less than or equals (&lt;=). Use [Constant.LTEQ](d3plot-constant-class.md#Constant.LTEQ) instead [deprecated] |
+| MAX | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Maximum value. Use [Constant.MAX](d3plot-constant-class.md#Constant.MAX) instead [deprecated] |
+| MIN | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Minimum value. Use [Constant.MIN](d3plot-constant-class.md#Constant.MIN) instead [deprecated] |
+| OFF | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Switch off. Use [Constant.OFF](d3plot-constant-class.md#Constant.OFF) instead [deprecated] |
+| ON | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Switch on. Use [Constant.ON](d3plot-constant-class.md#Constant.ON) instead [deprecated] |
+| STATUS | This constant is deprecated in version 20.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Return status of something [deprecated] |
+
+### Constants for Item Type
+
+| **Name** | **Description** |
+| --- | --- |
+| BEAM | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Beams. Use [Type.BEAM](d3plot-type-class.md#Type.BEAM) instead [deprecated] |
+| BOLT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Bolts. Use [Type.BOLT](d3plot-type-class.md#Type.BOLT) instead [deprecated] |
+| BWLD | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Beam spotwelds. Use [Type.BWLD](d3plot-type-class.md#Type.BWLD) instead [deprecated] |
+| CONN | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>All connection types. Use [Type.CONX](d3plot-type-class.md#Type.CONX) instead [deprecated] |
+| CWLD | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*CONSTRAINED\_SPOTWELD spotwelds. Use [Type.CWLD](d3plot-type-class.md#Type.CWLD) instead [deprecated] |
+| DES | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Discrete Element Sphere. Use [Type.DES](d3plot-type-class.md#Type.DES) instead [deprecated] |
+| ELEM | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Generic elements. Use [Type.ELEMENT](d3plot-type-class.md#Type.ELEMENT) instead [deprecated] |
+| GWLD | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*CONSTRAINED\_GENERALIZED spotwelds. Use [Type.GWLD](d3plot-type-class.md#Type.GWLD) instead [deprecated] |
+| HSWA | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Hex spotweld assemblies. Use [Type.HSWA](d3plot-type-class.md#Type.HSWA) instead [deprecated] |
+| HWLD | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Hex (Solid) spotwelds. Use [Type.HWLD](d3plot-type-class.md#Type.HWLD) instead [deprecated] |
+| JOINT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Joints. Use [Type.JOINT](d3plot-type-class.md#Type.JOINT) instead [deprecated] |
+| MASS | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Lumped masses. Use [Type.MASS](d3plot-type-class.md#Type.MASS) instead [deprecated] |
+| MIG | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>MIG welds. Use [Type.MIG](d3plot-type-class.md#Type.MIG) instead [deprecated] |
+| NODE | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Nodes. Use [Type.NODE](d3plot-type-class.md#Type.NODE) instead [deprecated] |
+| NRB | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Nodal Rigid Bodies. Use [Type.NRB](d3plot-type-class.md#Type.NRB) instead [deprecated] |
+| PART | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Parts. Use [Type.PART](d3plot-type-class.md#Type.PART) instead [deprecated] |
+| PRET | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Pretensioners. Use [Type.PRETENSIONER](d3plot-type-class.md#Type.PRETENSIONER) instead [deprecated] |
+| RBOLT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Rigid bolts. Use [Type.RBOLT](d3plot-type-class.md#Type.RBOLT) instead [deprecated] |
+| RETR | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Retractors. Use [Type.RETRACTOR](d3plot-type-class.md#Type.RETRACTOR) instead [deprecated] |
+| SBELT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Seatbelt elements. Use [Type.SEATBELT](d3plot-type-class.md#Type.SEATBELT) instead [deprecated] |
+| SBENT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Seatbelt types generally. Use [Type.SBENT](d3plot-type-class.md#Type.SBENT) instead [deprecated] |
+| SECT | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>(Element) section definitions. Use [Type.SECTION](d3plot-type-class.md#Type.SECTION) instead [deprecated] |
+| SEGM | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Interface (contact, blast, etc) segment. Use [Type.SEGMENT](d3plot-type-class.md#Type.SEGMENT) instead [deprecated] |
+| SET\_BEAM | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*SET\_BEAM sets. Use [Type.SET_BEAM](d3plot-type-class.md#Type.SET_BEAM) instead [deprecated] |
+| SET\_DISCRETE | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*SET\_DISCRETE sets. Use [Type.SET_DISCRETE](d3plot-type-class.md#Type.SET_DISCRETE) instead [deprecated] |
+| SET\_NODE | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*SET\_NODE sets. Use [Type.SET_NODE](d3plot-type-class.md#Type.SET_NODE) instead [deprecated] |
+| SET\_PART | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*SET\_PART sets. Use [Type.SET_PART](d3plot-type-class.md#Type.SET_PART) instead [deprecated] |
+| SET\_SHELL | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*SET\_SHELL sets. Use [Type.SET_SHELL](d3plot-type-class.md#Type.SET_SHELL) instead [deprecated] |
+| SET\_SOLID | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*SET\_SOLID sets. Use [Type.SET_SOLID](d3plot-type-class.md#Type.SET_SOLID) instead [deprecated] |
+| SET\_TSHELL | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>\*SET\_TSHELL sets. Use [Type.SET_TSHELL](d3plot-type-class.md#Type.SET_TSHELL) instead [deprecated] |
+| SHELL | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Shells. Use [Type.SHELL](d3plot-type-class.md#Type.SHELL) instead [deprecated] |
+| SLIP | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Slip-rings. Use [Type.SLIPRING](d3plot-type-class.md#Type.SLIPRING) instead [deprecated] |
+| SOLID | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Solids. Use [Type.SOLID](d3plot-type-class.md#Type.SOLID) instead [deprecated] |
+| SPC | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Single Point Constraint. Use [Type.SPC](d3plot-type-class.md#Type.SPC) instead [deprecated] |
+| SPH | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Smoothed Particle Hydrodynamics. Use [Type.SPH](d3plot-type-class.md#Type.SPH) instead [deprecated] |
+| SPRING | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Springs (discrete elements). Use [Type.SPRING](d3plot-type-class.md#Type.SPRING) instead [deprecated] |
+| SURF | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Contact surfaces. Use [Type.CONTACT](d3plot-type-class.md#Type.CONTACT) instead [deprecated] |
+| TSHELL | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Thick shells. Use [Type.TSHELL](d3plot-type-class.md#Type.TSHELL) instead [deprecated] |
+| WALL | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Rigidwalls. Use [Type.RIGIDWALL](d3plot-type-class.md#Type.RIGIDWALL) instead [deprecated] |
+| WINDOW | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>D3PLOT window id. Use [Type.WINDOW](d3plot-type-class.md#Type.WINDOW) instead [deprecated] |
+| XSEC | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Database cross-sections. Use [Type.XSEC](d3plot-type-class.md#Type.XSEC) instead [deprecated] |
+
+### Constants for Surface
+
+| **Name** | **Description** |
+| --- | --- |
+| BOTTOM | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Bottom shell surface. Use [Constant.BOTTOM](d3plot-constant-class.md#Constant.BOTTOM) instead [deprecated] |
+| MIDDLE | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Middle shell surface. Use [Constant.MIDDLE](d3plot-constant-class.md#Constant.MIDDLE) instead [deprecated] |
+| TOP | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>Top shell surface. Use [Constant.TOP](d3plot-constant-class.md#Constant.TOP) instead [deprecated] |
+
+### Constants for Tensor Array Subscripts
+
+| **Name** | **Description** |
+| --- | --- |
+| XX | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>0 for tensors. Use [Constant.XX](d3plot-constant-class.md#Constant.XX) instead [deprecated] |
+| XY | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>3 for tensors (can also use YX as an alternative). Use [Constant.XY](d3plot-constant-class.md#Constant.XY) instead [deprecated] |
+| YY | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>1 for tensors. Use [Constant.YY](d3plot-constant-class.md#Constant.YY) instead [deprecated] |
+| YZ | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>4 for tensors (can also use ZY as an alternative). Use [Constant.YZ](d3plot-constant-class.md#Constant.YZ) instead [deprecated] |
+| ZX | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>5 for tensors (can also use XZ as an alternative). Use [Constant.ZX](d3plot-constant-class.md#Constant.ZX) instead [deprecated] |
+| ZZ | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>2 for tensors. Use [Constant.ZZ](d3plot-constant-class.md#Constant.ZZ) instead [deprecated] |
+
+### Constants for Vector Array Subscripts
+
+| **Name** | **Description** |
+| --- | --- |
+| X | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>0 for vectors. Use [Constant.X](d3plot-constant-class.md#Constant.X) instead [deprecated] |
+| Y | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>1 for vectors. Use [Constant.Y](d3plot-constant-class.md#Constant.Y) instead [deprecated] |
+| Z | This constant is deprecated in version 21.0. It is only provided to keep old scripts working. We strongly advise against using it in new scripts. Support may be removed in future versions.<br>2 for vectors. Use [Constant.Z](d3plot-constant-class.md#Constant.Z) instead [deprecated] |

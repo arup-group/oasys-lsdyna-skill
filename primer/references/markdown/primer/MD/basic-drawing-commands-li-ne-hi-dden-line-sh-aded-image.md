@@ -1,0 +1,14 @@
+﻿##  Basic Drawing Commands: LI(ne), HI(dden Line), SH(aded Image)
+
+PRIMER is capable of drawing basic model geometry in three modes: "LIne", "HIdden-line" and "SHaded".
+
+| ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_1_0.gif)<br> <br>"LINE" mode(  **LI**  ) draws all element borders with no hidden surface removal. However the back faces of 3D elements are removed when graphics are in 2D mode (but not in 3D mode).<br> <br>This figure shows an example of a line mode plot of a ball (made of solids) above a flat plate.<br> <br>Note that no hidden surface removal has been carried out. | ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_1_1.gif) |
+| --- | --- |
+
+| ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_1_2.gif)<br> <br><br><br>"Hidden-line" mode ( **HI** )also draws element borders, but this time with hidden surfaces removed. (Back face removal is implicit in this.)<br>This figure shows an example of a hidden-line plot, with the same model as above. <br>It is now obvious that the hidden surfaces and lines have been removed, and it is easy to tell that the ball lies above the plane.<br> <br>Hidden surface removal requires more computation than a simple line mode plot, so it will be slower to generate. Most displays with 3D graphics protocols have a hardware "Z-buffer" which makes this process faster, but even so complex images may take an appreciable time to draw. For this reason the dynamic viewing modes, which permit real-time manipulation of the view, have a facility to drop back to line mode (or even "free-edge" mode) while the image is being moved, reverting to the normal display mode when the motion is complete. See for a description of how to do this. | ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_1_3.gif) |
+| --- | --- |
+
+| ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_1_4.gif)<br> <br><br> <br>"Shaded" ( **SH** ) modealso performs hidden-surface removal, but this time the surfaces of 2D and 3D elements are shaded and lit in the appropriate colours.<br> <br>This figure shows an example of a shaded-image plot. [Lighting](lighting.md#lighting) and hidden-surface removal have both been applied, and the element borders have been overlaid on the resulting plot.<br> <br>As with hidden-line plots, 3D devices with hardware assistance will generally produce these images much faster than the software alone (2D) method, but (in either mode) computation time will be longer and the ability to drop back to line or free-edge mode during dynamic viewing also applies.<br> <br>Shaded, Line and Hidden plots may also be invoked with the shortcut keys S,L and H. | ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_1_5.gif) |
+| --- | --- |
+
+[Previous](visualisation-and-labelling.md)  |  [Next](display-options-controlling-plot-parameters.md)

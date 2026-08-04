@@ -1,0 +1,5 @@
+﻿####  The Ansys LS-DYNA Output Reader XML File
+
+The Ansys LS-DYNA output reader functionality relies on an XML file to interpret the errors, warnings, termination messages and other items printed in Ansys LS-DYNA produced output files. This XML file, DynaOutputReader.xml, should be located in the primer\_library\DynaOutputReader\ folder in either the OA\_ADMIN, OA\_INSTALL or HOME directory. It contains a list of all the errors, warnings and termination messages produced by Ansys LS-DYNA together with the corresponding PRIMER entity (or entities) to which they refer. If an error, warning or termination message is found which does not have an entity associated with it yet, the XML file can be edited in a text editor accordingly. Please contact Oasys Ltd Support if such a situation occurs so the XML file can be updated. Since the XML file is not bound to any particular version of PRIMER , new, improved versions can be distributed between software releases.
+
+[Previous](ls-dyna-results-panels.md)  |  [Next](batch-ls-dyna-output-check.md)

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oasys.THIS.Model class &#8212; Oasys.THIS 22.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=3e093b4c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9a686f1f" />
+    
+    <script src="_static/documentation_options.js?v=b18fcf5a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Oasys.THIS.Operate class" href="Operate.html" />
+    <link rel="prev" title="Oasys.THIS.LineWidth class" href="LineWidth.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Operate.html" title="Oasys.THIS.Operate class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="LineWidth.html" title="Oasys.THIS.LineWidth class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.THIS 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.THIS.Model class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="oasys-this-model-class">
+<h1>Oasys.THIS.Model class<a class="headerlink" href="#oasys-this-model-class" title="Link to this heading">¶</a></h1>
+<section id="constants">
+<span id="model-all-constants"></span><h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py data">
+<dt class="sig sig-object py" id="Model.ALL_FILES">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ALL_FILES</span></span><a class="headerlink" href="#Model.ALL_FILES" title="Link to this definition">¶</a></dt>
+<dd><p>Option to select all files (.thf, LSDA, ASCII, .ztf) when reading model in</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.ASCII">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ASCII</span></span><a class="headerlink" href="#Model.ASCII" title="Link to this definition">¶</a></dt>
+<dd><p>Option to select ASCII files when reading model in</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.LSDA">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">LSDA</span></span><a class="headerlink" href="#Model.LSDA" title="Link to this definition">¶</a></dt>
+<dd><p>Option to select LSDA/binout file when reading model in</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.THF">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">THF</span></span><a class="headerlink" href="#Model.THF" title="Link to this definition">¶</a></dt>
+<dd><p>Option to select .thf/d3thdt file when reading model in</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.XTF">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">XTF</span></span><a class="headerlink" href="#Model.XTF" title="Link to this definition">¶</a></dt>
+<dd><p>Option to select .xtf/xtfile file when reading model in</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="Model.ZTF">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ZTF</span></span><a class="headerlink" href="#Model.ZTF" title="Link to this definition">¶</a></dt>
+<dd><p>Option to select .ztf file when reading model in</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py property">
+<dt class="sig sig-object py" id="Model.dir">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.dir" title="Link to this definition">¶</a></dt>
+<dd><p>Directory containing the model file</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.file">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.file" title="Link to this definition">¶</a></dt>
+<dd><p>File selected when reading the model</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.id">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">integer</span></span><a class="headerlink" href="#Model.id" title="Link to this definition">¶</a></dt>
+<dd><p>Model ID</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Model.title">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read</span> <span class="pre">only</span></span></em><span class="sig-paren">)</span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">string</span></span><a class="headerlink" href="#Model.title" title="Link to this definition">¶</a></dt>
+<dd><p>Model title</p>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="static-methods">
+<h2>Static methods<a class="headerlink" href="#static-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model.Exists">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Exists" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if a model exists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_number</strong> (<em>integer</em>) – The number of the model you want to check the existence of</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the model exists, otherwise False</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if a model n exists</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exists</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetFromID">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetFromID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetFromID" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model object for a model ID or None if model does not exist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_number</strong> (<em>integer</em>) – number of the model you want the Model object for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object (or None if model does not exist)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the model n</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">GetFromID</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.HighestID">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">HighestID</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.HighestID" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the ID of the highest model currently being used</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ID of highest model currently being used</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the highest model ID</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">id</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">HighestID</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Read">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filetype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Read" title="Link to this definition">¶</a></dt>
+<dd><p>Reads in a new model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – Filename you want to read</p></li>
+<li><p><strong>filetype</strong> (<em>integer</em>) – Optional. Filetypes you want to read. Can be bitwise OR of Model.THF,
+Model.XTF, Model.LSDA, Model.ASCII, Model.ZTF and Model.ALL_FILES.
+If omitted all available files will be read</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Model object (or None if error)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Model</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To read in model /data/test/file.thf:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Read</span><span class="p">(</span><span class="s2">&quot;/data/test/file.thf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To read in model /data/test/file.thf only with .ztf files:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Read</span><span class="p">(</span><span class="s2">&quot;/data/test/file.thf&quot;</span><span class="p">,</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">ZTF</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To read in model /data/test/file.thf only with .thf, .ascii and .ztf files:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Read</span><span class="p">(</span><span class="s2">&quot;/data/test/file.thf&quot;</span><span class="p">,</span> <span class="n">Model</span><span class="o">.</span><span class="n">THF</span> <span class="o">|</span> <span class="n">Model</span><span class="o">.</span><span class="n">ASCII</span> <span class="o">|</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">ZTF</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Total">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Total</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Total" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the total number of models</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To find how many models there are in T/HIS:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="n">Oasys</span><span class="o">.</span><span class="n">THIS</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Total</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+<section id="instance-methods">
+<h2>Instance methods<a class="headerlink" href="#instance-methods" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><dl class="py method">
+<dt class="sig sig-object py" id="Model.ClearFlag">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">ClearFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.ClearFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Clears a defined flag on an internal (or external) item(s) of type of entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – The flag you want to clear</p></li>
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type that the defined flag will be cleared on</p></li>
+<li><p><strong>item</strong> (<em>integer</em>) – If +ive: The internal item number starting from 1. If -ive: The external item label</p></li>
+<li><p><strong>end</strong> (<em>integer</em>) – Optional. To unflag range of items, specify an optional end of range. Unflags items from item to range</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the flag is successfully cleared on the item, otherwise False</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To clear the flag f on the 6th node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To clear the flag f on the Node 13456 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="o">-</span><span class="mi">13456</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To clear the flag f on the first 10 nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To clear the flag f on nodes with labels 1000, 1001, 1002, …, 1009 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">ClearFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="o">-</span><span class="mi">1009</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Delete">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Delete" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes a model
+<br/> <strong>Do not use the Model object after calling this method</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the model sucessfully deleted, otherwise False</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To delete model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">deleted</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">Delete</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.FlagAll">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">FlagAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.FlagAll" title="Link to this definition">¶</a></dt>
+<dd><p>Sets a defined flag on all of items of type of entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – The flag you want to set</p></li>
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type that the defined flag will be set on</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the flag is successfully set on all the items, otherwise False</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the flag f on all the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">FlagAll</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Flagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Flagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Flagged" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if a defined flag is set on an internal (or external) item of type of entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – The flag you want to check</p></li>
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type to check</p></li>
+<li><p><strong>item</strong> (<em>integer</em>) – If +ive: The internal item number starting from 1. If -ive: The external item label</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the flag is set, False if the flag is not set</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check if flag f is set on the 6th node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Flagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To check if flag f is set on the Node 13456 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">Flagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="o">-</span><span class="mi">13456</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetDataFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetDataFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_pnt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetDataFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Gets curve objects for a data component for relevant items that are flagged with a specified flag in the model.
+<br/>
+Some data components are valid for different entity types (e.g. SXX). If the same flag is set on items of different entity types, data is returned for all relevant, flagged entity types.
+<br/>
+To return the same data for multiple items of the same type, it will be much faster if you flag all items you want data for, and do a single call to GetDataFlagged().
+<br/>
+The curves are ordered by type, then by the ascending internal index of the items. Use <a class="reference internal" href="Curve.html#Curve.label" title="Curve.label"><code class="xref py py-attr docutils literal notranslate"><span class="pre">curve</span> <span class="pre">properties</span></code></a> to identify which curve is which.
+<strong>If the data is not available in the model for a flagged item, or not available for the selected integration points or extra value, a curve is not returned.</strong>
+You can use <a class="reference internal" href="#Model.QueryDataPresent" title="Model.QueryDataPresent"><code class="xref py py-meth docutils literal notranslate"><span class="pre">QueryDataPresent()</span></code></a> to check if the data is available.
+<br/>
+<em>It is recommended that you check the number of curves returned.</em> This can be compared with the number of flagged entities,
+see <a class="reference internal" href="#Model.GetNumberFlagged" title="Model.GetNumberFlagged"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GetNumberFlagged()</span></code></a>.
+<br/>
+<strong>If the data is generally available in the model, but not for the specific flagged item, a “None curve” which contains no x-y data values is returned.</strong>
+For example, a specific shell may have fewer integration points than MAX_INT for all shells, a <a class="reference internal" href="Curve.html#Curve.is_null" title="Curve.is_null"><code class="xref py py-attr docutils literal notranslate"><span class="pre">&quot;null</span> <span class="pre">curve&quot;</span></code></a> would be returned for the higher integration points.
+<br/></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – The flag to use. For model data, use 0 to define a None “padding” argument</p></li>
+<li><p><strong>data_comp</strong> (<em>integer</em>) – The Data <code class="xref py py-class docutils literal notranslate"><span class="pre">Component</span></code> to extract</p></li>
+<li><p><strong>int_pnt</strong> (<em>dict</em>) – <p>Optional. The integration points to extract.
+<br/>
+This argument can be either an integer or an object.
+<br/>
+This argument is ignored when the entity type is not SOLID, SHELL, THICK_SHELL or BEAM.
+<br/>
+<br/>
+An <em>integer</em> specifies the integration point to extract:
+<br/>
+For SOLIDs: value between 0 for Average/Centre and 8. (Defaults to Average/Centre).
+<br/>
+For SHELLs and THICK_SHELLs: value between 1 and # integration points, or codes
+<a class="reference internal" href="Constant.html#Constant.TOP" title="Constant.TOP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.TOP</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.MIDDLE" title="Constant.MIDDLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.MIDDLE</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.BOTTOM" title="Constant.BOTTOM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.BOTTOM</span></code></a>.
+(Defaults to MIDDLE integration point).
+<br/>
+For integrated BEAMs: value between 1 and # integration points. (Defaults to integration point 1).
+<br/>
+<br/>
+Use 0 to define a None “padding” argument, then uses the default integration point</p>
+<dl class="field-list simple">
+<dt class="field-odd">ip<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Through thickness integration point as described above</p>
+</dd>
+<dt class="field-even">np (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) The nodes to extrapolate to. For SOLIDs, SHELLs and THICK_SHELLs: value between 1 and # nodes on the entity. (Defaults to none)</p>
+</dd>
+<dt class="field-odd">op (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) On plan integration point. For SHELLs and THICK_SHELLs: value between 0 for Average/Centre and 4. (Defaults to Average/Centre)</p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>extra</strong> (<em>integer</em>) – Optional. The extra component id for SOLIDs, SHELLs, THICK_SHELLs or BEAMs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of Curve objects</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get X direct stress for flagged SOLIDs, SHELLs and THICK_SHELLs with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cur_list</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetDataFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Component</span><span class="o">.</span><span class="n">SXX</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To get X direct stress at top integration point for flagged SHELLs and THICK_SHELLs with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cur_list</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetDataFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Component</span><span class="o">.</span><span class="n">SXX</span><span class="p">,</span> <span class="n">Constant</span><span class="o">.</span><span class="n">TOP</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To get X direct stress at top integration point, and on-plan integration point 3 for flagged SHELLs and THICK_SHELLs with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cur_list</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetDataFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Component</span><span class="o">.</span><span class="n">SXX</span><span class="p">,</span> <span class="p">{</span><span class="n">ip</span><span class="p">:</span><span class="n">Constant</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">op</span><span class="p">:</span><span class="mi">3</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>To get extra beam data 3 for flagged BEAMs with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cur_list</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetDataFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Component</span><span class="o">.</span><span class="n">BEX</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To get the total mass in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cur_list</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetDataFlagged</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Component</span><span class="o">.</span><span class="n">GMASS</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetInternalID">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetInternalID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetInternalID" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the internal ID of external item of type entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type of the item</p></li>
+<li><p><strong>item</strong> (<em>integer</em>) – The external item number</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Integer internal ID (starting from 1) with reference to the entity_type code. Returns integer internal ID of 0 if item cannot be found</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the internal ID of Airbag 300 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetInternalID</span><span class="p">(</span><span class="n">Entity</span><span class="o">.</span><span class="n">AIRBAG</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetLabel">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetLabel" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the external label of internal item of type entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type of the item</p></li>
+<li><p><strong>item</strong> (<em>integer</em>) – The internal item number starting from 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Integer external ID (or 0 if there is an error, or the internal ID if there are no external IDs)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the external ID of the 2nd airbag in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetLabel</span><span class="p">(</span><span class="n">Entity</span><span class="o">.</span><span class="n">AIRBAG</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetLabelFromName">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetLabelFromName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetLabelFromName" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the external label from the database history name name of type entity_type in the model.
+This is quicker if you use parent entity type codes (e.g. Entity.WELD rather than Entity.WELD_CONSTRAINED)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type of the item</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The name of the item. If only the first part of the name is given, it must be unambiguous</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Integer external ID of the first matching name (or 0 if there is an error)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the external label the of Contact named “Rear Bolt” in database history:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetLabelFromName</span><span class="p">(</span><span class="n">Entity</span><span class="o">.</span><span class="n">CONTACT</span><span class="p">,</span> <span class="s2">&quot;Rear Bolt&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetModelUnits">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetModelUnits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetModelUnits" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Model units of a particular model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String indicating the model unit system of the model</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the model units of model m</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">units</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetModelUnits</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetName">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetName" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the database history name of an internal (or external) item of type entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type of the item</p></li>
+<li><p><strong>item</strong> (<em>integer</em>) – If +ive: The internal item number starting from 1. If -ive: The external item label</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String containing the database history name (or None if not available)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the database history name of the 2nd airbag in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">Entity</span><span class="o">.</span><span class="n">AIRBAG</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To get the database history name of Airbag 300 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">Entity</span><span class="o">.</span><span class="n">AIRBAG</span><span class="p">,</span> <span class="o">-</span><span class="mi">300</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetNumberFlagged">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetNumberFlagged</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetNumberFlagged" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the number of entities flagged with a requested flag in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – The flag you want to check</p></li>
+<li><p><strong>entity_type</strong> (<em>integer</em>) – Optional. If specified, the <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type to look at. If not specified, all types are looked at</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Integer number</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the number of airbag parts flagged with flag f in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetNumberFlagged</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">AIRBAG_PART_DATA</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.GetNumberOf">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">GetNumberOf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.GetNumberOf" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the number of entities of a requested type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type that you want to know the number of</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Integer number</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To get the number of airbags in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">GetNumberOf</span><span class="p">(</span><span class="n">Entity</span><span class="o">.</span><span class="n">AIRBAG</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.QueryDataPresent">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">QueryDataPresent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_pnt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.QueryDataPresent" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if a data component data_comp for a given entity is present in a model’s database.
+For SOLIDs, SHELLs, THICK_SHELLs and BEAMs the integration point and extra component ID can also be checked.
+This will show if curves for any flagged items of this type will be returned for <a class="reference internal" href="#Model.GetDataFlagged" title="Model.GetDataFlagged"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GetDataFlagged()</span></code></a>.
+Note, it does not check if the data component is <em>valid</em>, for example a specific shell may have fewer integration points than MAX_INT for all shells,
+so curves returned for <a class="reference internal" href="#Model.GetDataFlagged" title="Model.GetDataFlagged"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GetDataFlagged()</span></code></a> may still be “None” with no x-y data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_comp</strong> (<em>integer</em>) – The Data <code class="xref py py-class docutils literal notranslate"><span class="pre">Component</span></code> to check</p></li>
+<li><p><strong>entity_type</strong> (<em>integer</em>) – Optional. The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type to check. This argument can only be omitted when checking for global model data</p></li>
+<li><p><strong>int_pnt</strong> (<em>dict</em>) – <p>Optional. The integration points to check.
+<br/>
+This argument can be either an integer or an object.
+<br/>
+This argument is ignored if the entity type is not SOLID, SHELL, THICK_SHELL or BEAM.
+<br/>
+<br/>
+An <em>integer</em> specifies the integration point to check:
+<br/>
+For SOLIDs: value between 0 for Average/Centre and 8. (Defaults to Average/Centre).
+<br/>
+For SHELLs and THICK_SHELLs: value between 1 and # integration points, or codes
+<a class="reference internal" href="Constant.html#Constant.TOP" title="Constant.TOP"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.TOP</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.MIDDLE" title="Constant.MIDDLE"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.MIDDLE</span></code></a>,
+<a class="reference internal" href="Constant.html#Constant.BOTTOM" title="Constant.BOTTOM"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.BOTTOM</span></code></a>.
+(Defaults to MIDDLE integration point).
+<br/>
+For integrated BEAMs: value between 1 and # integration points. (Defaults to integration point 1).
+<br/>
+<br/>
+Use 0 to define a None “padding” argument, then checks the default integration point</p>
+<dl class="field-list simple">
+<dt class="field-odd">ip<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) Through thickness integration point as described above</p>
+</dd>
+<dt class="field-even">np (optional)<span class="colon">:</span></dt>
+<dd class="field-even"><p>(integer) The nodes to extrapolate to. For SOLIDs, SHELLs and THICK_SHELLs: value between 1 and # nodes on the entity. (Defaults to none)</p>
+</dd>
+<dt class="field-odd">op (optional)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(integer) On plan integration point. For SHELLs and THICK_SHELLs: value between 0 for Average/Centre and 4. (Defaults to Average/Centre)</p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>extra</strong> (<em>integer</em>) – Optional. The extra component id for SOLIDs, SHELLs, THICK_SHELLs or BEAMs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if data is present, otherwise False</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To check for X direct stress data for SOLIDs in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">QueryDataPresent</span><span class="p">(</span><span class="n">Component</span><span class="o">.</span><span class="n">SXX</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">SOLID</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>To check for X direct stress data at integration point 5 for SHELLs in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">QueryDataPresent</span><span class="p">(</span><span class="n">Component</span><span class="o">.</span><span class="n">SXX</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">SHELL</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>To check for X direct stress data at both the top integration point, and also extrapolated to node 3 for SHELLs in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">QueryDataPresent</span><span class="p">(</span><span class="n">Component</span><span class="o">.</span><span class="n">SXX</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">SHELL</span><span class="p">,</span> <span class="p">{</span><span class="n">ip</span><span class="p">:</span><span class="n">Constant</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">np</span><span class="p">:</span><span class="mi">3</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>To check for extra 3 beam data for BEAMs in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">QueryDataPresent</span><span class="p">(</span><span class="n">Component</span><span class="o">.</span><span class="n">BEX</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">BEAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To check for total mass data in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">QueryDataPresent</span><span class="p">(</span><span class="n">Component</span><span class="o">.</span><span class="n">GMASS</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.SetFlag">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">SetFlag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Oasys.gRPC.defaultArg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.SetFlag" title="Link to this definition">¶</a></dt>
+<dd><p>Sets a defined flag on an internal (or external) item(s) of type of entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – The flag you want to set</p></li>
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type that the defined flag will be set on</p></li>
+<li><p><strong>item</strong> (<em>integer</em>) – If +ive: The internal item number starting from 1. If -ive: The external item label</p></li>
+<li><p><strong>end</strong> (<em>integer</em>) – Optional. To flag range of items, specify an optional end of range. Flags items from item to range</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the flag is successfully set on the item, otherwise False</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the flag f on the 6th node in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To set the flag f on the Node 13456 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="o">-</span><span class="mi">13456</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To set the flag f on the first 10 nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To set the flag f on nodes with labels 1000, 1001, 1002, …, 1009 in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetFlag</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="o">-</span><span class="mi">1009</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.SetModelUnits">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">SetModelUnits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unit_system</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.SetModelUnits" title="Link to this definition">¶</a></dt>
+<dd><p>Set the model units of a model to the units provided by the user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>unit_system</strong> (<em>String</em>) – The unit system you want to set the model units of model to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the Model units are set successfully else False</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To set the model units of model m to “U2”</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">SetModelUnits</span><span class="p">(</span><span class="s2">&quot;U2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.UnflagAll">
+<span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">UnflagAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.UnflagAll" title="Link to this definition">¶</a></dt>
+<dd><p>Unsets a defined flag flag on all of items of type of entity_type in the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flag</strong> (<em>Flag</em>) – The flag you want to unset</p></li>
+<li><p><strong>entity_type</strong> (<em>integer</em>) – The <code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code> type that the defined flag will be unset on</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the flag is successfully unset on all the items, otherwise False</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>To unset the flag f on all the nodes in model m:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">UnflagAll</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Entity</span><span class="o">.</span><span class="n">NODE</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="global.html">Oasys.THIS functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Colour.html">Oasys.THIS.Colour class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Component.html">Oasys.THIS.Component class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constant.html">Oasys.THIS.Constant class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Curve.html">Oasys.THIS.Curve class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Datum.html">Oasys.THIS.Datum class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Entity.html">Oasys.THIS.Entity class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Graph.html">Oasys.THIS.Graph class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Group.html">Oasys.THIS.Group class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LineStyle.html">Oasys.THIS.LineStyle class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LineWidth.html">Oasys.THIS.LineWidth class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Oasys.THIS.Model class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#constants">Constants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ALL_FILES"><code class="docutils literal notranslate"><span class="pre">Model.ALL_FILES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ASCII"><code class="docutils literal notranslate"><span class="pre">Model.ASCII</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.LSDA"><code class="docutils literal notranslate"><span class="pre">Model.LSDA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.THF"><code class="docutils literal notranslate"><span class="pre">Model.THF</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.XTF"><code class="docutils literal notranslate"><span class="pre">Model.XTF</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ZTF"><code class="docutils literal notranslate"><span class="pre">Model.ZTF</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.dir"><code class="docutils literal notranslate"><span class="pre">Model.dir</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.file"><code class="docutils literal notranslate"><span class="pre">Model.file</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.id"><code class="docutils literal notranslate"><span class="pre">Model.id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.title"><code class="docutils literal notranslate"><span class="pre">Model.title</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#static-methods">Static methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Exists"><code class="docutils literal notranslate"><span class="pre">Model.Exists()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetFromID"><code class="docutils literal notranslate"><span class="pre">Model.GetFromID()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.HighestID"><code class="docutils literal notranslate"><span class="pre">Model.HighestID()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Read"><code class="docutils literal notranslate"><span class="pre">Model.Read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Total"><code class="docutils literal notranslate"><span class="pre">Model.Total()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instance-methods">Instance methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Model.ClearFlag"><code class="docutils literal notranslate"><span class="pre">Model.ClearFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Delete"><code class="docutils literal notranslate"><span class="pre">Model.Delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.FlagAll"><code class="docutils literal notranslate"><span class="pre">Model.FlagAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.Flagged"><code class="docutils literal notranslate"><span class="pre">Model.Flagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetDataFlagged"><code class="docutils literal notranslate"><span class="pre">Model.GetDataFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetInternalID"><code class="docutils literal notranslate"><span class="pre">Model.GetInternalID()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetLabel"><code class="docutils literal notranslate"><span class="pre">Model.GetLabel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetLabelFromName"><code class="docutils literal notranslate"><span class="pre">Model.GetLabelFromName()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetModelUnits"><code class="docutils literal notranslate"><span class="pre">Model.GetModelUnits()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetName"><code class="docutils literal notranslate"><span class="pre">Model.GetName()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetNumberFlagged"><code class="docutils literal notranslate"><span class="pre">Model.GetNumberFlagged()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.GetNumberOf"><code class="docutils literal notranslate"><span class="pre">Model.GetNumberOf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.QueryDataPresent"><code class="docutils literal notranslate"><span class="pre">Model.QueryDataPresent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.SetFlag"><code class="docutils literal notranslate"><span class="pre">Model.SetFlag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.SetModelUnits"><code class="docutils literal notranslate"><span class="pre">Model.SetModelUnits()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Model.UnflagAll"><code class="docutils literal notranslate"><span class="pre">Model.UnflagAll()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Operate.html">Oasys.THIS.Operate class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options.html">Oasys.THIS.Options class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Page.html">Oasys.THIS.Page class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Read.html">Oasys.THIS.Read class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Symbol.html">Oasys.THIS.Symbol class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UnitSystem.html">Oasys.THIS.UnitSystem class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Units.html">Oasys.THIS.Units class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">Oasys.THIS.Utils class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Oasys.THIS.Window class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Workflow.html">Oasys.THIS.Workflow class</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Operate.html" title="Oasys.THIS.Operate class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="LineWidth.html" title="Oasys.THIS.LineWidth class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Oasys.THIS 22.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Oasys.THIS.Model class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Arup Digital Products Ltd.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+    </div>
+  </body>
+</html>
