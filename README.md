@@ -11,8 +11,9 @@ oasys-lsdyna-skill/
 ├── primer/
 │   ├── SKILL.md               ← Instructions for PRIMER-related requests.
 │   ├── dialogue_commands/
-|   |   ├── dialogue-command_structure.md
-|   |   └── main_menu_commands.md
+|   |   ├── dialogue-command-structure.md
+|   |   |── d3plot-dialogue-commands.md
+|   |   └── this-dialogue-commands.md
 |   ├── instructions/
 │   |   ├── primer-js.instructions.md    ← applied to *.js files
 │   |   ├── primer-py.instructions.md    ← applied to *.py files
