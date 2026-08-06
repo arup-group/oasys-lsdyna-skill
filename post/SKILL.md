@@ -107,15 +107,13 @@ Examples:
 
 # Dialogue Commands
 
-Dialogue commands provide an alternate way of performing the required task in D3PLOT, T/HIS or REPORTER.
-
 When the required operation cannot be achieved using a documented API class or method, use the dialogue commands.
 
 ## Command Structure
 
 The dialogue command structure is documented in the following reference:
 
-- `dialogue_commands/dialogue_command_structure.md`
+- `dialogue_commands/dialogue-command-structure.md`
 
 This is the authoritative reference for:
 
@@ -127,6 +125,20 @@ This is the authoritative reference for:
 - command path construction and execution context
 
 Correct Dialogue Command generation depends on understanding the command structure. Do not generate commands by matching command names alone. Always determine the required menu level and navigation path before generating command sequences.
+
+--- 
+
+## Command References
+
+For D3PLOT commands:
+
+- `dialogue_commands/d3plot-dialogue-commands.md`
+
+For T/HIS commands:
+
+- `dialogue_commands/this-dialogue-commands.md`
+
+--- 
 
 ## Dialogue Command Execution
 
