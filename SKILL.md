@@ -33,12 +33,13 @@ Use `post/` when the request involves:
 - Creating plots or summaries from result files
 - Generating reports from post-processing data
 
-Use `primer/references/keyword-manuals/` when LS-DYNA keyword manual lookup is required.
+Use `primer/references/keyword-manual/` when LS-DYNA keyword manual lookup is required.
 Use `shared/python_api` for python api setup and behaviour
 For Python API classes, methods, properties, arguments, and usage patterns, consult the appropriate tool reference:
-- D3PLOT: `../shared/python-api/d3plot.md`
-- T/HIS: `../shared/python-api/t-his.md`
-- REPORTER: `../shared/python-api/reporter.md`
+- PRIMER: `../shared/python-api/MD/primer.md`
+- D3PLOT: `../shared/python-api/MD/d3plot.md`
+- T/HIS: `../shared/python-api/MD/t-his.md`
+- REPORTER: `../shared/python-api/MD/reporter.md`
 For detailed API documentation, use:
 
 `https://help.oasys-software.com/articles/#!py_api-23-0/title/{tool}.html`

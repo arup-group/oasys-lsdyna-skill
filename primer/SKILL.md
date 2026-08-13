@@ -11,18 +11,26 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 ### JavaScript API
 - Scripts run **inside** PRIMER's embedded JS engine — fast, direct data access
 - All PRIMER classes are **global** — no import or require needed
-- Full class/method reference: `markdown/js-api/MD/primer-{lowercaseclassname}-class.md`
-- Global functions reference: `markdown/js-api/MD/primer-global-class.md`
+- Full class/method reference: `references/markdown/js-api/MD/primer-{lowercaseclassname}-class.md`
+- Global functions reference: `references/markdown/js-api/MD/primer-global-class.md`
 - IntelliSense type declarations: `intellisense/primer.d.ts`
 - GUI widgets (Form, Button, TextBox, etc.) are available from JS only
 
 ### Python API
 - Scripts run **outside** PRIMER via gRPC — slower per call, but can control PRIMER + D3PLOT + T/HIS + REPORTER from one script
 - Install: `pip install Oasys.PRIMER`
-- Connection overview: `shared/python_api/primer.md`
-- Python vs JS tradeoffs: `shared/python_api/preamble.md`
+- Connection overview: `shared/python_api/MD/primer.md`
+- Python vs JS tradeoffs: `shared/python_api/MD/preamble.md`
 - Class method signatures: fetch `https://help.oasys-software.com/sphinx/23/PRIMER/{ClassName}.html`
 - **GUI / Graphics classes are NOT available from Python**
+
+---
+
+### Dialogue Commands
+
+- Dialogue commands allow you to automate PRIMER GUI actions when an API call is not available
+- Read `dialogue_commands/dialogue-commands-structure.md` for the command structure
+- Read `dialogue_commands/main-menu-commands.md` for the full command list
 
 ---
 
@@ -30,14 +38,14 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 
 | Need | Where to look |
 |---|---|
-| JS class methods & properties | `markdown/js-api/MD/primer-{classname}-class.md` |
-| JS global functions | `markdown/js-api/MD/primer-global-class.md` |
+| JS class methods & properties | `references/markdown/js-api/MD/primer-{classname}-class.md` |
+| JS global functions | `references/markdown/js-api/MD/primer-global-class.md` |
 | JS type signatures | `intellisense/primer.d.ts` |
 | Python class methods | Fetch `https://help.oasys-software.com/sphinx/23/PRIMER/{ClassName}.html` |
-| Python connection/start patterns | `shared/python_api/primer.md` |
+| Python connection/start patterns | `shared/python_api/MD/primer.md` |
 | PRIMER tool features & workflows | `markdown/primer/MD/{topic}.md` |
-| LS-DYNA keyword lookup | `lsdyna/keywords.txt` — format: `*KEYWORD=vol,page` |
-| LS-DYNA keyword field detail | `lsdyna/LS-DYNA_Manual_Volume_{vol}_R16.pdf` at page number |
+| LS-DYNA keyword lookup | `references/keyword-manual/keywords.txt` — format: `*KEYWORD=vol,page` |
+| LS-DYNA keyword field detail | `references/keyword-manual/LS-DYNA_Manual_Volume_{vol}_R16.pdf` |
 
 ---
 
@@ -46,7 +54,7 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 1. **Save scripts to the project folder.** When creating a new script file, always save it to the workspace folder (the user's project folder).
 2. **Never invent method names.** Always verify against the MD files or `primer.d.ts` before using any API call.
 3. **Keyword lookup:** to answer questions about any `*KEYWORD`, first search `lsdyna/keywords.txt` for the volume and page, then reference the correct PDF.
-4. **Python None checks:** always check for `None` after `GetFromID()`, `First()`, or any entity lookup before using the result.
+4. **None checks:** always check for `None` after `GetFromID()`, `First()`, or any entity lookup before using the result.
 5. **Python gRPC is slow for loops** — prefer bulk operations (`GetAll()`, flagged operations) over per-entity calls in Python.
 6. **JS Flag pattern:** `AllocateFlag()` → use flag on entities → `ReturnFlag()`. Always return flags when done.
 7. **Python cleanup:** always wrap scripts in `try/finally` to call `Oasys.PRIMER.terminate(connection)` or `Oasys.PRIMER.disconnect(connection)`.
