@@ -3,7 +3,7 @@ agent: agent
 description: Read and inspect an existing LS-DYNA model in PRIMER — list parts, check mass, find entities
 ---
 
-Query an existing LS-DYNA model in Oasys PRIMER v22.1.
+Query an existing LS-DYNA model in Oasys PRIMER v23.0.
 
 **API:** {{API}} <!-- "JavaScript" or "Python" -->
 **Model file:** {{MODEL_FILE}}

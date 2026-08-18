@@ -3,7 +3,7 @@ agent: agent
 description: Batch-modify entities in an existing PRIMER model — rename, reassign, change properties
 ---
 
-Batch-edit entities in an existing LS-DYNA model using Oasys PRIMER v22.1.
+Batch-edit entities in an existing LS-DYNA model using Oasys PRIMER v23.0.
 
 **API:** {{API}} <!-- "JavaScript" or "Python" -->
 **Model file:** {{MODEL_FILE}}

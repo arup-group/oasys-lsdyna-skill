@@ -3,7 +3,7 @@ agent: agent
 description: Set up a complete crash test loadcase in PRIMER — barrier, contacts, control cards, output
 ---
 
-Set up a crash test loadcase in Oasys PRIMER v22.1.
+Set up a crash test loadcase in Oasys PRIMER v23.0.
 
 **API:** {{API}} <!-- "JavaScript" or "Python" -->
 **Model file:** {{MODEL_FILE}}

@@ -3,7 +3,7 @@ agent: agent
 description: Scaffold a new LS-DYNA model from scratch in PRIMER using the JS or Python API
 ---
 
-Build a new LS-DYNA model in Oasys PRIMER v22.1.
+Build a new LS-DYNA model in Oasys PRIMER v23.0.
 
 **API:** {{API}} <!-- "JavaScript" or "Python" -->
 **Model description:** {{MODEL_DESCRIPTION}}

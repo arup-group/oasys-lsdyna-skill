@@ -6,7 +6,7 @@ description: Build a PRIMER GUI tool using JavaScript widgets — Form, Button, 
 > **Note:** GUI / widget classes are only available in the **JavaScript API** (runs inside PRIMER).
 > They cannot be used from Python.
 
-Build a PRIMER GUI tool in JavaScript for Oasys PRIMER v22.1.
+Build a PRIMER GUI tool in JavaScript for Oasys PRIMER v23.0.
 
 **Tool name:** {{TOOL_NAME}}
 **Purpose:** {{TOOL_PURPOSE}}

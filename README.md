@@ -12,8 +12,7 @@ oasys-lsdyna-skill/
 │   ├── SKILL.md               ← Instructions for PRIMER-related requests.
 │   ├── dialogue_commands/
 |   |   ├── dialogue-command-structure.md
-|   |   |── d3plot-dialogue-commands.md
-|   |   └── this-dialogue-commands.md
+|   |   └── main-menu-commands.md
 |   ├── instructions/
 │   |   ├── primer-js.instructions.md    ← applied to *.js files
 │   |   ├── primer-py.instructions.md    ← applied to *.py files
@@ -30,7 +29,8 @@ oasys-lsdyna-skill/
 │   ├── SKILL.md               ← Instructions for POST-related requests
 │   ├── dialogue_commands/
 |   |   ├── dialogue-command_structure.md
-|   |   └── main_menu_commands.md
+|   |   ├── d3plot-dialogue-commands.md
+|   |   └── this-dialogue-commands.md
 |   ├── intellisense/
 │   |   ├── d3plot.d.ts
 │   |   ├── this.d.ts
