@@ -126,6 +126,19 @@ This is the authoritative reference for:
 
 Correct Dialogue Command generation depends on understanding the command structure. Do not generate commands by matching command names alone. Always determine the required menu level and navigation path before generating command sequences.
 
+Actions whose description contains "Toggle" or whose name ends with "_SWITCH"
+must be generated with an explicit ON or OFF state rather than the action name alone.
+ 
+Examples:
+ 
+FAILURE_LOGIC DS_DELETED_SWITCH ON
+FAILURE_LOGIC DS_DELETED_SWITCH OFF
+ 
+FAILURE_LOGIC FH_HATCHING_SWITCH ON
+FAILURE_LOGIC FH_HATCHING_SWITCH OFF
+
+Never output a command whose description indicates a state change without including the target state (ON/OFF or documented equivalent).
+
 --- 
 
 ## Dialogue Command References
