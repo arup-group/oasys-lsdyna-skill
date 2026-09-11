@@ -6,42 +6,54 @@ This repository contains Copilot skills for generating and debugging scripts for
 
 ```
 oasys-lsdyna-skill/                     
-├── SKILL.md                   ← Directs agent to PRIMER, POST or shared reference.
-|
+├── SKILL.md                   ← Routes requests to the relevant tool skill.
+│
 ├── primer/
 │   ├── SKILL.md               ← Instructions for PRIMER-related requests.
-│   ├── dialogue_commands/
-|   |   ├── dialogue-command-structure.md
-|   |   └── main-menu-commands.md
+│   ├── dialogue-commands/
+│   │   ├── dialogue-command-struture.md
+│   │   └── main-menu-commands.md
 |   ├── instructions/
 │   |   ├── primer-js.instructions.md    ← applied to *.js files
 │   |   ├── primer-py.instructions.md    ← applied to *.py files
 │   |   └── lsdyna-keywords.instructions.md  ← applied to *.k / *.key files
 │   ├── intellisense/
-│   |   └── primer.d.ts
-|   ├── prompts/
+│   │   └── primer.d.ts
+│   ├── prompts/
 │   ├── references/
-|   |   ├── keyword-manuals/
-│   |   ├── markdown/
-│   |   └── primer-pdf/
-|
-├── post/
-│   ├── SKILL.md               ← Instructions for POST-related requests
-│   ├── dialogue_commands/
-|   |   ├── dialogue-command_structure.md
-|   |   ├── d3plot-dialogue-commands.md
-|   |   └── this-dialogue-commands.md
-|   ├── intellisense/
-│   |   ├── d3plot.d.ts
-│   |   ├── this.d.ts
-│   |   └── reporter.d.ts
-│   ├── references/
-|   |     └── markdown
-|
-├── shared/                    
-|   └── python_api/              ← Shared Oasys Python API documentation.
+│   │   ├── features/
+│   │   ├── js-api/
+│   │   ├── keywords/
+│   │   └── primer-pdf/
+│
+├── d3plot/
+│   ├── dialogue-commands/
+│   │   ├── dialogue-command-structure.md
+│   │   └── d3plot-dialogue-commands.md
+│   ├── intellisense/
+│   │   └── d3plot.d.ts
+│   └── references/js-api/
+│
+├── this/
+│   ├── dialogue-commands/
+│   │   └── this-dialogue-commands.md
+│   ├── intellisense/
+│   │   └── this.d.ts
+│   └── references/js-api/
+│
+├── reporter/
+│   ├── intellisense/
+│   │   └── reporter.d.ts
+│   └── references/js-api/
+│
+└── shared/
+	├── python-api/              ← Shared Oasys Python API documentation.
+	└── references/
 ```
 
+
+The JavaScript API references are separated by tool. D3PLOT, T/HIS, and REPORTER
+references are kept in their own folders so each tool can be routed independently.
 ## How to use
 
 1. Download or clone this repository.
