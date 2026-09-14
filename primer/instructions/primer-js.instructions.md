@@ -88,7 +88,7 @@ m.Write("path/to/output.key");
 | Utils | `markdown/js-api/MD/primer-utils-class.md` |
 
 ## PRIMER Manual Topics
-PRIMER feature documentation lives in `markdown/primer/MD/`. Key topics:
+PRIMER feature documentation lives in `../references/features/`. Key topics:
 - `script-using-javascript-in-primer.md` — scripting overview
 - `brief-tutorial-on-javascript-in-primer.md` — tutorial
 - `crash-test-setup.md` — crash test setup

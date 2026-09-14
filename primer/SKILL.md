@@ -20,16 +20,16 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 ### JavaScript API
 - Scripts run **inside** PRIMER's embedded JS engine — fast, direct data access
 - All PRIMER classes are **global** — no import or require needed
-- Full class/method reference: `references/markdown/js-api/MD/primer-{lowercaseclassname}-class.md`
-- Global functions reference: `references/markdown/js-api/MD/primer-global-class.md`
+- Full class/method reference: `references/js-api/primer-{lowercaseclassname}-class.md`
+- Global functions reference: `references/js-api/primer-global-class.md`
 - IntelliSense type declarations: `intellisense/primer.d.ts`
 - GUI widgets (Form, Button, TextBox, etc.) are available from JS only
 
 ### Python API
 - Scripts run **outside** PRIMER via gRPC — slower per call, but can control PRIMER + D3PLOT + T/HIS + REPORTER from one script
 - Install: `pip install Oasys.PRIMER`
-- Connection overview: `shared/python_api/MD/primer.md`
-- Python vs JS tradeoffs: `shared/python_api/MD/preamble.md`
+- Connection overview: `../shared/python-api/primer.md`
+- Python vs JS tradeoffs: `../shared/python-api/preamble.md`
 - Class method signatures: fetch `https://help.oasys-software.com/sphinx/23/PRIMER/{ClassName}.html`
 - **GUI / Graphics classes are NOT available from Python**
 
@@ -38,8 +38,8 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 ### Dialogue Commands
 
 - Dialogue commands allow you to automate PRIMER GUI actions when an API call is not available
-- Read `dialogue_commands/dialogue-commands-structure.md` for the command structure
-- Read `dialogue_commands/main-menu-commands.md` for the full command list
+- Read `dialogue-commands/dialogue-command-struture.md` for the command structure
+- Read `dialogue-commands/main-menu-commands.md` for the full command list
 
 ---
 
@@ -47,14 +47,14 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 
 | Need | Where to look |
 |---|---|
-| JS class methods & properties | `references/markdown/js-api/MD/primer-{classname}-class.md` |
-| JS global functions | `references/markdown/js-api/MD/primer-global-class.md` |
+| JS class methods & properties | `references/js-api/primer-{classname}-class.md` |
+| JS global functions | `references/js-api/primer-global-class.md` |
 | JS type signatures | `intellisense/primer.d.ts` |
 | Python class methods | Fetch `https://help.oasys-software.com/sphinx/23/PRIMER/{ClassName}.html` |
-| Python connection/start patterns | `shared/python_api/MD/primer.md` |
-| PRIMER tool features & workflows | `markdown/primer/MD/{topic}.md` |
-| LS-DYNA keyword lookup | `references/keyword-manual/keywords.txt` — format: `*KEYWORD=vol,page` |
-| LS-DYNA keyword field detail | `references/keyword-manual/LS-DYNA_Manual_Volume_{vol}_R16.pdf` |
+| Python connection/start patterns | `../shared/python-api/primer.md` |
+| PRIMER tool features & workflows | `references/features/{topic}.md` |
+| LS-DYNA keyword lookup | `references/keywords/keywords.txt` — format: `*KEYWORD=vol,page` |
+| LS-DYNA keyword field detail | `references/keywords/LS-DYNA_Manual_Volume_{vol}_R16.pdf` |
 
 ---
 

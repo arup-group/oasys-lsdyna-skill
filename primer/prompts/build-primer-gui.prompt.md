@@ -40,8 +40,8 @@ Produce a complete, runnable JavaScript script that:
 - `markdown/js-api/MD/primer-widgetitem-class.md` — OptionMenu / List items
 - `markdown/js-api/MD/primer-graphics-class.md` — graphics/view operations
 - `markdown/js-api/MD/primer-global-class.md` — Message(), ErrorMessage(), AllocateFlag()
-- `markdown/primer/MD/how-to-build-a-gui.md` — PRIMER GUI builder guide
-- `markdown/primer/MD/the-javascript-gui-builder.md`
+- `../references/features/how-to-build-a-gui.md` — PRIMER GUI builder guide
+- `../references/features/the-javascript-gui-builder.md`
 
 ## Rules
 - Verify every widget method and property against `primer-widget-class.md` or `primer.d.ts`

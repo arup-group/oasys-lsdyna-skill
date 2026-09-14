@@ -34,11 +34,11 @@ Produce a complete, runnable script that sets up:
 7. **Gravity** — `LoadGravity` if required
 
 ## Reference files to consult
-- `markdown/primer/MD/crash-test-setup.md`
-- `markdown/primer/MD/contact-defining-contact-surfaces.md`
-- `markdown/primer/MD/initial-defining-initial-conditions.md`
-- `markdown/primer/MD/control-defining-analysis-control-cards.md`
-- `markdown/primer/MD/database-defining-database-options.md`
+- `../references/features/crash-test-setup.md`
+- `../references/features/contact-defining-contact-surfaces.md`
+- `../references/features/initial-defining-initial-conditions.md`
+- `../references/features/control-defining-analysis-control-cards.md`
+- `../references/features/database-defining-database-options.md`
 - JS classes: `primer-contact-class.md`, `primer-velocity-class.md`, `primer-loadgravity-class.md`
 - Python: fetch relevant class pages from `https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/`
 - Keyword fields: search `lsdyna/keywords.txt`

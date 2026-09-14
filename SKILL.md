@@ -1,75 +1,45 @@
 # Oasys LS-DYNA Scripting Skill
 
-This skill supports scripting workflows for Oasys LS-DYNA tools.
+Use this root skill to route requests to the relevant Oasys tool. Identify the
+target tool before writing or debugging a script.
 
-It is organised into two main tool-specific skills:
+## Tool routing
 
-- `primer/` for Oasys PRIMER scripting
-- `post/` for Oasys POST tools, including D3PLOT, T/HIS, and REPORTER
+- Use `primer/` for LS-DYNA model creation and editing, PRIMER JavaScript or
+	Python, GUI workflows, dialogue commands, and keyword decks.
+- Use `d3plot/` for result visualisation, states, deformation, contours, and
+	screenshots from D3PLOT result files.
+- Use `this/` for time histories, curves, force or displacement extraction,
+	and curve export.
+- Use `reporter/` for report templates, plots, tables, and report generation.
 
-Use the correct sub-skill based on the user's request. Do not mix PRIMER and POST APIs unless the user explicitly asks for an end-to-end workflow.
+Use the tool-specific API references before generating code:
 
-## Routing
+- PRIMER: `primer/references/js-api/` and `primer/intellisense/primer.d.ts`
+- D3PLOT: `d3plot/references/js-api/` and `d3plot/intellisense/d3plot.d.ts`
+- T/HIS: `this/references/js-api/` and `this/intellisense/this.d.ts`
+- REPORTER: `reporter/references/js-api/` and
+	`reporter/intellisense/reporter.d.ts`
+- Shared Python guidance: `shared/python-api/`
 
-Use `primer/` when the request involves:
-
-- Creating or modifying LS-DYNA keyword models
-- Building, editing, checking, or querying finite element models
-- Creating parts, nodes, elements, materials, sections, contacts, sets, loads, boundary conditions, or control cards
-- Setting up LS-DYNA loadcases
-- PRIMER JavaScript scripting
-- PRIMER Python scripting
-- PRIMER GUI or dialogue workflows
-- LS-DYNA keyword deck creation or editing4
-- Looking up LS-DYNA keyword fields for use in a PRIMER script
-
-Use `post/` when the request involves:
-
-- Reading or processing LS-DYNA result files
-- D3PLOT scripting
-- T/HIS scripting
-- REPORTER automation
-- Extracting curves, histories, forces, displacements, accelerations, or other result data
-- Creating plots or summaries from result files
-- Generating reports from post-processing data
-
-Use `primer/references/keyword-manual/` when LS-DYNA keyword manual lookup is required.
-Use `shared/python_api` for python api setup and behaviour
-For Python API classes, methods, properties, arguments, and usage patterns, consult the appropriate tool reference:
-- PRIMER: `../shared/python-api/MD/primer.md`
-- D3PLOT: `../shared/python-api/MD/d3plot.md`
-- T/HIS: `../shared/python-api/MD/t-his.md`
-- REPORTER: `../shared/python-api/MD/reporter.md`
-For detailed API documentation, use:
-
-`https://help.oasys-software.com/articles/#!py_api-23-0/title/{tool}.html`
-
-where `{tool}` is one of:
-- `primer`
-- `d3plot`
-- `t-his`
-- `reporter`
+PRIMER keyword references are in `primer/references/keywords/`. Dialogue
+command references are in each tool's `dialogue-commands/` directory.
 
 ## General rules
 
-- Always identify the target tool before generating a script.
 - Do not invent API classes, methods, properties, commands, or keyword fields.
-- Always consult the relevant local markdown API references before using an API call.
-- If the API reference does not contain the required method or command, state that clearly instead of guessing.
-- Keep PRIMER and POST scripts separate unless the user explicitly asks for a combined workflow.
+- Verify API usage against the relevant reference files and declaration file.
+- If the required API is not documented, say so instead of guessing.
+- Keep scripts for separate tools separate unless a combined workflow is
+	explicitly requested.
+- For a combined workflow, complete PRIMER model setup before post-processing.
 - Add the user's original prompt as a comment at the top of generated scripts.
-- Save generated scripts to the user's project/workspace root, not inside the skill/reference folders.
+- Save generated scripts in the user's project or workspace, not in this skill.
 - Prefer concise, runnable scripts with clear comments.
 
-## Debugging Capability
+## Debugging
 
-This skill can help debug PRIMER and POST scripts.
-
-When the user asks to debug a script, fix an error, investigate why a script is not working, or add diagnostics:
-
-1. Identify whether the script is for PRIMER, D3PLOT, T/HIS, REPORTER, Python API, JavaScript API, or Dialogue Commands.
-2. Check the relevant `SKILL.md`, instruction files, API markdown references, IntelliSense files, and shared Python API references.
-3. Add temporary debug output where useful.
-4. Preserve the original script intent.
-5. Explain the likely failure point and the fix.
-6. Prefer small targeted changes over rewriting the entire script unless the script structure is incorrect.
+When debugging, identify the target tool and API mode first. Check its skill
+guidance, instructions, local API references, declaration file, and shared
+Python guidance. Preserve the script's intent, explain the likely failure, and
+make the smallest targeted change that addresses it.
