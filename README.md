@@ -23,8 +23,7 @@ oasys-lsdyna-skill/
 │   ├── references/
 │   │   ├── features/
 │   │   ├── js-api/
-│   │   ├── keywords/
-│   │   └── primer-pdf/
+│   │   └── keywords/
 │
 ├── d3plot/
 │   ├── dialogue-commands/

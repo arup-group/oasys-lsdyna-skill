@@ -1,2 +1,0 @@
-Tutorials: How can I set up luggage retention test?
-Tutorials: How can I use luggage retention script?

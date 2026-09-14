@@ -1,2 +1,0 @@
-Tutorials: How can I remove holes in a mesh?
-Tutorials: How can I create holes in a mesh?

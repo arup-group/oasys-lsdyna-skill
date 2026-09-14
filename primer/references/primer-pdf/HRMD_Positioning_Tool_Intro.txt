@@ -1,2 +1,0 @@
-Tutorials: How can I set up HRMD Positioning tool?
-Tutorials: How can I use HRMD script?

@@ -1,2 +1,0 @@
-Tutorials: How can I create entities?
-Tutorials: How can I modify entities?
