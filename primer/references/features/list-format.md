@@ -6,6 +6,6 @@ $variables, XCOORD, YCOORD, ZCOORD
 FILENAME, xcoord\_value, ycoord\_value, zcoord\_value
  ####  Example 
  
-![Example list file](../Storage/primer-22-1/primer_links/sect_6/Pedestrian_run_builder/list_file.png)
+![Example list file](./Storage/primer-23/primer_links/sect_6/Pedestrian_run_builder/list_file.png)
  
 [Previous](how-to-use.md)  |  [Next](selecting-points.md)

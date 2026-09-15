@@ -10,7 +10,7 @@ If custom merge is selected, three extra buttons are shown at the bottom of the 
 * [BASIC MODEL DATA](custom-merging-basic-model-data.md#basic) The basic model data comprises entities which have labels and so can clash. E.g. shells, solids, nodes, loadcurves etc.
 * [OTHER MODEL DATA](custom-merging-other-model-data.md#other) The other model data comprises entities which do not have labels and so cannot clash. E.g. boundary cards, constrained cards.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_4_1_1.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_4_1_1.gif)
 
 If a button is red then there are problems with merging that type of data. For example in the figure above there are problems with the basic model data. The "other model data" button will always be green because there cannot be clashes as the entities have no labels. A summary or a detailed list of the problems for each category is available by using the popup on each button.
 

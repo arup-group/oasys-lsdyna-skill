@@ -11,14 +11,14 @@ This capability can be invoked via the penetration checker window accessed via:
 
 If contact is defined with exempt part set (SURFATYP = 6) crossed edges may be removed by moving elements to exempt part
 
-![](../Storage/primer-22-1/contact-penetration-fixing/contact-penetration-fixing-2024-10-18.png)
+![](./Storage/primer-23/contact-penetration-fixing/contact-penetration-fixing-2024-10-18.png)
 
-![](../Storage/primer-22-1/contact-penetration-fixing/contact-penetration-fixing-2024-10-18-1.png)
+![](./Storage/primer-23/contact-penetration-fixing/contact-penetration-fixing-2024-10-18-1.png)
 
 For treating solid bodies Move x-edge elems to exempt part may be called iteratively
 
 Parts can be protected from swap by inclusion in part set with a special name
 
-![](../Storage/primer-22-1/contact-penetration-fixing/contact-penetration-fixing-2024-10-18-2.png)
+![](./Storage/primer-23/contact-penetration-fixing/contact-penetration-fixing-2024-10-18-2.png)
 
 [Previous](contouring-panel-gaps-for-sliding-contact.md)  |  [Next](penetration-fixing-panel.md)

@@ -1,6 +1,6 @@
 ﻿The cut section properties (see [Properties: Computing Cut-Section Properties](properties-computing-cut-section-properties.md) for explanation on how these are computed) and a subset of the the ANSYS LS-DYNA keyword fields defining the plane geometry of all **\*DATABASE\_CROSS\_SECTIONs**referenced by a LOAD\_PATH can be exported to a CSV file using the **Export Properties** button.
 
-![](../Storage/primer-22-1/auto-create-cross-sections/load_path_csv.png)
+![](./Storage/primer-23/auto-create-cross-sections/load_path_csv.png)
 
 The keyword fields written out to the CSV file are:
 
@@ -54,6 +54,6 @@ The cut section properties written out to the CSV file are:
 
 This is a capture of the first few CSV columns exported from a LOAD\_PATH referencing five **\*DATABASE\_CROSS\_SECTIONs**showing the format:
 
-![](../Storage/primer-22-1/export-cross-section-properties-to-csv/load_path_csv_example.png)
+![](./Storage/primer-23/export-cross-section-properties-to-csv/load_path_csv_example.png)
 
 [Previous](auto-create-cross-sections.md)  |  [Next](write-a-ztf-file.md)

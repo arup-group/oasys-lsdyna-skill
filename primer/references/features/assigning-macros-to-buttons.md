@@ -10,7 +10,7 @@ Each macro that is found is assigned to a button in the macros panel. The text t
 
 The directory that PRIMER looks in for macro files can be changed in the oa\_pref files in $OA\_ADMIN, $OA\_INSTALL and $OA\_HOME by using the macro\_directory preference.
 
-![](../Storage/primer-22-1/primer_links/sect_6/macro/macro_dir_pref.gif)
+![](./Storage/primer-23/primer_links/sect_6/macro/macro_dir_pref.gif)
 
 For example if you change the macro\_directory preference in the oa\_pref file in the $OA\_INSTALL directory to /test/primer\_macros then PRIMER will look for macro files in the directories:
 

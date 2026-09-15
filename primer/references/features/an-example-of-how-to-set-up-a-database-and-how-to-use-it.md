@@ -173,19 +173,19 @@ In the material creation window for PRIMER a material which refers to a loadcurv
 
 To import a loadcurve for the stress strain curve use the right mouse button to bring up the **LCSS** popup box. Select **CREATE** from the menu and this will start the Loadcurve creation box.
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_1.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_1.gif)
 
 The loadcurve creation box allows a new curve to be created.
 
 The **IMPORT** button on the bottom right of the window allows a curve to be read in from a file or database. Press this button.
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_2.gif)
 
 The Import part of the loadcurve creation box allows a curve to be read from a database by pressing the **DATABASE** button.
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_3.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_3.gif)
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_4.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_4.gif)
 
 Pressing the DATABASE button in the loadcurve creation window starts the database selection window. Each button in the window corresponds to an entry in an oa\_database file. The first two buttons are from the **oa\_database** file in $OASYS. The last button is from the oa\_database file in $HOME.
 
@@ -193,7 +193,7 @@ Only 3 databases are shown as these are the only ones which refer to **LCUR** da
 
 Until a database is selected the APPLY button is inactive (greyed out).
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_5.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_5.gif)
 
 When a database file is selected it is highlighted and the APPLY button becomes RED allowing the user to select that database.
 
@@ -203,7 +203,7 @@ In our example we select a file from 'example material loadcurve database'.
 
 When APPLY in the database selection window is pressed, PRIMER reads the oa\_index file which is in that directory and creates a window with the entries from this file.
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_6.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_6.gif)
 
 In this example you can see that the 10 entries which were in the oa\_index file are all present in the window, each appearing on a row. If there were more then 10 entries in the oa\_index file a scroll bar would allow you to scroll through the entries. Eight fields were defined for each entry. The first (the filename) has not appeared in the window but is stored internally. The remaining seven field headers appear above each column in yellow. If the number of fields does not fit on the window a scroll bar will be displayed.
 
@@ -213,11 +213,11 @@ When a database entry is selected it is highlighted and the APPLY button becomes
 
 Here the HR15 steel is selected.
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_7.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_7.gif)
 
 If APPLY is pressed this will be imported into the loadcurve editor and plotted.
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_8.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_8.gif)
 
 The curve can be modified if required in the editor.
 
@@ -225,6 +225,6 @@ When a label has been given to the curve the CREATE\_CURVE button will be ungrey
 
 When this is done the **LCSS** field in the material editor is updated with a new loadcurve ID referencing the imported data.
 
-![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_9.gif)
+![](./Storage/primer-23/primer_links/sect_5/database/dbase_9.gif)
 
 [Previous](databases-importing-data-from-pre-defined-database-files.md)  |  [Next](contact-penetration-checking.md)

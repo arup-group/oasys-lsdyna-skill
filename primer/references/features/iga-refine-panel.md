@@ -5,13 +5,13 @@
 * Change the curve degree
 * Insert knot values
 
-![iga_refine_1](../Storage/primer-22-1/primer_links/sect_5/iga/iga_refine_1.JPG)
+![iga_refine_1](./Storage/primer-23/primer_links/sect_5/iga/iga_refine_1.JPG)
 
 #### Visualise knot grid
 
 The NURBS elements (or knot segments) can be visualised by enabling the Display Knot toggle button.
 
-![iga_refine_3](../Storage/primer-22-1/primer_links/sect_5/iga/iga_refine_3.JPG)
+![iga_refine_3](./Storage/primer-23/primer_links/sect_5/iga/iga_refine_3.JPG)
 
 #### View Interpolated elements
 
@@ -21,7 +21,7 @@ You can change NISR/NISS values and it will show Interpolated elements based on
 
 You can also enable the Trim option to view trimmed interpolated elements.
 
-![](../Storage/primer-22-1/primer_links/sect_5/iga/iga_refine_6.JPG)
+![](./Storage/primer-23/primer_links/sect_5/iga/iga_refine_6.JPG)
 
 #### Change the curve degree (p-refinement)
 
@@ -41,6 +41,6 @@ Feedback regarding how many new knots and coordinates will be added is given in 
 
 NOTE: Screen pick knot can only be done from one panel at a time.
 
-![iga_refine_4](../Storage/primer-22-1/primer_links/sect_5/iga/iga_refine_4.JPG)
+![iga_refine_4](./Storage/primer-23/primer_links/sect_5/iga/iga_refine_4.JPG)
 
 [Previous](iga.md)  |  [Next](sketching-trimming-loop.md)

@@ -1,6 +1,6 @@
 ﻿####  Controlling Include File Location for Newly Created Entities
  
-![](../Storage/primer-22-1/primer_links/sect_3/images/incl_10.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/incl_10.gif)
 
 A Green band highlights the **Current working layer** or **current include** .
 

@@ -2,7 +2,7 @@
 
 The default label is a node or element number, but a variable amount of information can be generated to form a "label" which can run to multiple lines, as this example shows:
 
-![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_4_2.gif)
+![](./Storage/primer-23/primer_links/sect_4/images/fig_4_4_2.gif)
 
 This figure shows an example of shells which have been labelled with:
 

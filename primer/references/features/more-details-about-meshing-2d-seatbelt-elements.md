@@ -23,7 +23,7 @@ Inside the Ansys LS-DYNA keyword reader the following happens when these element
 * During the analysis these rows of 1D belt elements carry the force in the seatbelt, although the details of how they work with the 2D shells are not known.
 * Examining the output during post-processing reveals how this decomposition from 2D belt items to their 1D equivalents has taken place.
 
-| The following image, showing (during post-processing) the shoulder slipring detail of a model containing a 2D seatbelt with 2 rows of "belt" shells demonstrates how this decomposition has taken place. The three sliprings and parallel rows of 1D belt elements superimposed on the shell mesh (green) are clearly visible.<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/expl_2d_a.png) |
+| The following image, showing (during post-processing) the shoulder slipring detail of a model containing a 2D seatbelt with 2 rows of "belt" shells demonstrates how this decomposition has taken place. The three sliprings and parallel rows of 1D belt elements superimposed on the shell mesh (green) are clearly visible.<br> <br>![](./Storage/primer-23/primer_links/sect_6/seatbelt/expl_2d_a.png) |
 | --- |
 
 #####  How 2D belts are meshed in PRIMER

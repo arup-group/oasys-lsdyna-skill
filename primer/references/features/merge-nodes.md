@@ -4,7 +4,7 @@ This operation will permit coincident (and/or close) nodes to be merged.
 
 The MERGE NODES function is accessed either through the Remove button on the top panel or through Volumes I & II -&gt; NODE -&gt; Merge .
 
-| Using Merge Nodes  <br>Merge applied to a selection of nodes or on a global plane, using user defined tolerance.<br> <ul> <li>retain lowest/highest node label </li> <li>merge at lowest/highest node or at average position </li> </ul> <br>PREVIEW MERGE will highlight the nodes to be merged. | ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_12_1.gif) |
+| Using Merge Nodes  <br>Merge applied to a selection of nodes or on a global plane, using user defined tolerance.<br> <ul> <li>retain lowest/highest node label </li> <li>merge at lowest/highest node or at average position </li> </ul> <br>PREVIEW MERGE will highlight the nodes to be merged. | ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_12_1.gif) |
 | --- | --- |
 
 ####  More cautious and Less cautious modes

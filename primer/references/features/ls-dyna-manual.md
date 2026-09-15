@@ -4,6 +4,6 @@ If the installation of the Oasys LS-DYNA Environment software has the $OA\_INST
 
 For example, to open the manual at the \*BOUNDARY\_PRESCRIBED\_MOTION page you could type 'bprmman':
 
-![](../Storage/primer-22-1/primer_links/sect_11/search8.png)
+![](./Storage/primer-23/primer_links/sect_11/search8.png)
 
 [Previous](keyword-menus.md)  |  [Next](model-entities.md)

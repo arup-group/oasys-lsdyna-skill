@@ -12,9 +12,9 @@ The figures below show the effect of recursive deletion. The entities selected b
 
 | DELETE\_RECURSIVE ON | DELETE\_RECURSIVE OFF |
 | --- | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_1_2a.png) | ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_1_2b.png) |
+| ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_1_2a.png) | ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_1_2b.png) |
 | The left figure shows that recursive deletion has found a number of elements, nodes etc. | Without recursion PRIMER finds the entities shown on the right(ie the part only). |
-| ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_1_2c.png) | ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_1_2d.png) |
+| ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_1_2c.png) | ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_1_2d.png) |
 | Following DELETE\_SEL the part and its associated data have been deleted on the left, since recursive deletion has picked up all the subordinate items. | On the right nothing has been deleted since the part is"locked" by its elements. |
 
 |  |

@@ -2,13 +2,13 @@
 
 PRIMER runs within a single window, owned by the window manager, which has several sub-windows inside it. A typical PRIMER session will look like this:
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_1.gif)
+![](./Storage/primer-23/primer_links/sect_2/images/fig_2_1.gif)
 
 The various sub-windows always exist within the master window, and may be moved and resized at will inside it. They will keep their relative size and position as the master window is changed in size and/or shape, and will reappear after the main window is de-iconised.
 
 The default layout of the main sub-windows is as follows:
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_1_2.gif)
+![](./Storage/primer-23/primer_links/sect_2/images/fig_2_1_2.gif)
 
 These windows cannot be dismissed. A brief description of their functions is:
 

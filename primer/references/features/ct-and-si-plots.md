@@ -2,7 +2,7 @@
 
 | CT (continuous tone) and SI (shaded image) plotting modes both display the same data, but the former is unlit whereas the latter is shaded.<br>
 <br>Both modes are used primarily to display data for 2D and 3D elements, so the underlying plotting mode is always "hidden surface with fill".<br>
-<br>Current data components available are: | ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_1b.gif) |
+<br>Current data components available are: | ![](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_1b.gif) |
 | --- | --- |
 
 | Timestep | Contours of timestep size in elements. |

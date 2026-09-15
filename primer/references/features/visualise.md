@@ -2,11 +2,11 @@
 
 The Visualise feature allows you to view label distribution within your model in a graphical form. It allows you to identify ranges of labels that are currently used, and also ranges of labels that are free. The panel that opens when clicking on Visualise will look like this:
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/visualise_1.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/visualise_1.gif)
 
 The entity types currently in the model are displayed as rows. Labels are shown along the top of the graphical area. The black lines/blocks represent label ranges that are currently used in the model. The white areas represent label ranges that are currently free. When moving the cursor over the graphical area, the black/white areas will be highlighted with a red border. The feedback section at the top of the panel will give you information about the highlighted area. In the following example, and area on the SOLID entity row highlighted shows that labels between 1529109 & 2000999 are not currently used for solid elements.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/visualise_2.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/visualise_2.gif)
 
 There are various options/actions that can be carried out on this panel:
 
@@ -34,7 +34,7 @@ Various interactive operations can be performed on currently used label ranges (
 
 A right mouse click on a black (used) block will give the following options:
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/visualise_3.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/visualise_3.gif)
 
 Blank - Blank the entities represented in the used block. 
  Unblank - Unblank the entities represented in the used block. 
@@ -49,7 +49,7 @@ Move to - Type in a starting label to renumber the entities in the used block to
  Replace Clipboard - Replace the entities currently on the clipboard with the entities represented by the used block. 
  Multi. Sel. - Set the panel in multiple select mode which allows you to select multiple blocks of used labels for an operation. While in this mode, you will be locked into operating on one row. To select multiple blocks, drag a selection box around the appropriate used blocks using the left mouse button:
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/visualise_4.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/visualise_4.gif)
 
 In the above image the selected area is highlighted as a blue box around label blocks on the SOLID row. A left mouse click drag renumber or a right mouse click to open the above options are now available to be applied to multiple selected blocks rather than just one. To quit out of multiple selection mode, click on Cancel Multi at the top of the panel.
 
@@ -61,7 +61,7 @@ When right mouse clicking on a currently free label range (white) there is an op
 
 By default the panel will open up in Entity mode, which means all the entity types currently in the model will each have a row in the table. The display can be changed to Include mode in the top left hand corner. In Include mode instead of one row per entity type you get one row per include:
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/visualise_5.bmp)
+![](./Storage/primer-23/primer_links/sect_3/images/visualise_5.bmp)
 
 The used blocks (black blocks) in Include mode represent used labels of any entity type within the include file specified on the row. All the same operations that are available in Entity mode are also available in Include mode (drag renumbering, right click Blank etc.).
 

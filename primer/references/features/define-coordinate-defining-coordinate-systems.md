@@ -13,27 +13,27 @@ Coordinate systems use unique labels and, although part of the \* DEFINE keyword
 * [Deletion](Editing%20a%20Model%20Database.html#delete)
 * [Visualisation](define-coordinate-defining-coordinate-systems.md#VisualisingCoordinatesystems)
 
-| This figure shows the main menufor the editing of co-ordinate systems.define-curvetable<br> <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_0.gif) |
+| This figure shows the main menufor the editing of co-ordinate systems.define-curvetable<br> <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_0.gif) |
 | --- | --- |
 
 ####  CREATE Making a coordinate definition
 
 This figure shows the basic CREATE/UPDATE COORDINATE\_SYSTEM panel.
 
-| There are three ways in Ansys LS-Dyna of defining a coordinate system: <br> <br> <br><br>| **DEFINE\_COORDINATE** | [_NODES](define-coordinate-defining-coordinate-systems.md#DEFINECOORDINATENODES) |<br>| --- | --- |<br>|  | [_SYSTEM](define-coordinate-defining-coordinate-systems.md#DEFINECOORDINATESYSTEM) |<br>|  | [_VECTORS](define-coordinate-defining-coordinate-systems.md#DEFINECOORDINATEVECTORS) |<br><br> <br>The popup menu gives these options:<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_1b.gif)<br> <br>The detailed layout of the panels and definition methods vary slightly as shown below. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_1a.gif) |
+| There are three ways in Ansys LS-Dyna of defining a coordinate system: <br> <br> <br><br>| **DEFINE\_COORDINATE** | [_NODES](define-coordinate-defining-coordinate-systems.md#DEFINECOORDINATENODES) |<br>| --- | --- |<br>|  | [_SYSTEM](define-coordinate-defining-coordinate-systems.md#DEFINECOORDINATESYSTEM) |<br>|  | [_VECTORS](define-coordinate-defining-coordinate-systems.md#DEFINECOORDINATEVECTORS) |<br><br> <br>The popup menu gives these options:<br> <br>![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_1b.gif)<br> <br>The detailed layout of the panels and definition methods vary slightly as shown below. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_1a.gif) |
 | --- | --- |
 
-| **DEFINE\_COORDINATE\_NODES** <br>Is defined by three nodes:<br> <br> * N1 : origin<br> * N2 : Gives local X axis from N1N2<br> * N3 : forms the local XY plane N1N2N3<br> <br> <br>Methods of defining the nodes: | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_1c.gif) |
+| **DEFINE\_COORDINATE\_NODES** <br>Is defined by three nodes:<br> <br> * N1 : origin<br> * N2 : Gives local X axis from N1N2<br> * N3 : forms the local XY plane N1N2N3<br> <br> <br>Methods of defining the nodes: | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_1c.gif) |
 | --- | --- |
 | **3 NODES** | Instead of defining each node separately, all nodes can be screen-picked together. Simply screen pick three nodes in the order:<ul> <li>N1 (origin) </li> <li>N2 (local X vector) </li> <li>N3 (lies on local XY plane) </li> </ul> |
 | &lt;Individually&gt; | Alternatively use the individual popup menus to select nodes, or simply type in their labels. |
 
-| **DEFINE\_COORDINATE\_SYSTEM** <br>Is defined by three points:<br> <br> * P1 : origin<br> * P2 : Gives local X axis from P1P2<br> * P3 : forms the local XY plane P1P2P3<br> <br> <br>Methods of defining the points: | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_1d.gif) |
+| **DEFINE\_COORDINATE\_SYSTEM** <br>Is defined by three points:<br> <br> * P1 : origin<br> * P2 : Gives local X axis from P1P2<br> * P3 : forms the local XY plane P1P2P3<br> <br> <br>Methods of defining the points: | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_1d.gif) |
 | --- | --- |
 | **3 NODES**  <br>(Only their coordinates are used) | Instead of defining each node separately, all nodes can be screen-picked together. Simply screen pick three nodes in the order:<ul> <li>N1 (origin) </li> <li>N2 (local X vector) </li> <li>N3 (lies on local XY plane) </li> </ul> |
 | &lt;Individually&gt; | Alternatively use the individual popup menus to select nodes, or simply type in their labels. <br>Or simply type in the coordinates explicitly. |
 
-| **DEFINE\_COORDINATE\_VECTORS** <br>Is defined by the origin and 2 points:<br> <br> * Or : origin<br> * P1 : Gives local X axis from OrP1<br> * P2 : forms the local XY plane OrP1P2<br> <br> <br>Methods of defining the points: | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_1e.gif) |
+| **DEFINE\_COORDINATE\_VECTORS** <br>Is defined by the origin and 2 points:<br> <br> * Or : origin<br> * P1 : Gives local X axis from OrP1<br> * P2 : forms the local XY plane OrP1P2<br> <br> <br>Methods of defining the points: | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_1e.gif) |
 | --- | --- |
 | **2 NODES**  <br>(Only their coordinates are used) | Instead of defining each node separately, both nodes can be screen-picked together. Simply screen pick three nodes in the order:<ul> <li>N1 (local X vector) </li> <li>N2 (lies on local XY plane) </li> </ul> |
 | &lt;Individually&gt; | Alternatively use the individual popup menus to select nodes, or simply type in their labels. <br>Or simply type in the coordinates explicitly. |
@@ -74,7 +74,7 @@ To change the label of an individual coordinate it may be simpler just to MODIFY
 
 | Visualising Coordinate systems |
 | --- |
-| Co-ordinate systems may be drawn by turning their display on in the ENT ity Viewing menu. <br><br> <br>They can also be drawn via the [**SKETCH**](define-transform.md#sketch)options above. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_3.gif) |
-| They may also be drawn in other contexts (for example contacts) if their display as "associated data" in the ENT ity Viewing box is selected. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_4.gif) |
+| Co-ordinate systems may be drawn by turning their display on in the ENT ity Viewing menu. <br><br> <br>They can also be drawn via the [**SKETCH**](define-transform.md#sketch)options above. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_3.gif) |
+| They may also be drawn in other contexts (for example contacts) if their display as "associated data" in the ENT ity Viewing box is selected. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_4.gif) |
 
 [Previous](define-contact-volume.md)  |  [Next](define-curvetable-defining-load-curves.md)

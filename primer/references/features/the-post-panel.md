@@ -1,6 +1,6 @@
 ﻿###  The POST Panel
 
-| Initial status  <br>For each model currently in the database PRIMER scans the directory containing the top (master) keyword file looking for results based on input filename, then for each model the initial status will be one of:<br> <br><br>| **Option** | **Status of model** | **Action performed** |<br>| --- | --- | --- |<br>| ![](../Storage/primer-22-1/primer_links/sect_3/images/post_3.png)<br> <br>![](../Storage/primer-22-1/primer_links/sect_3/images/post_4.png) | Found graphical post files<br> <br>Found time-history files | Launch D3PLOT with these results<br> <br>Launch T/HIS with these results |<br>| ![](../Storage/primer-22-1/primer_links/sect_3/images/post_5.png) | No sesults files found | You must browse for results before a post-processor can be launched. |<br><br> <br>In this example results have been found for the first model M1, but not for the second M2. No linked post-processor has been opened yet.<br> <br>(There is a corresponding Pre panel in D3PLOT and T/HIS, with similar layout and functionality.) | ![](../Storage/primer-22-1/primer_links/sect_3/images/post_2.png) |
+| Initial status  <br>For each model currently in the database PRIMER scans the directory containing the top (master) keyword file looking for results based on input filename, then for each model the initial status will be one of:<br> <br><br>| **Option** | **Status of model** | **Action performed** |<br>| --- | --- | --- |<br>| ![](./Storage/primer-23/primer_links/sect_3/images/post_3.png)<br> <br>![](./Storage/primer-23/primer_links/sect_3/images/post_4.png) | Found graphical post files<br> <br>Found time-history files | Launch D3PLOT with these results<br> <br>Launch T/HIS with these results |<br>| ![](./Storage/primer-23/primer_links/sect_3/images/post_5.png) | No sesults files found | You must browse for results before a post-processor can be launched. |<br><br> <br>In this example results have been found for the first model M1, but not for the second M2. No linked post-processor has been opened yet.<br> <br>(There is a corresponding Pre panel in D3PLOT and T/HIS, with similar layout and functionality.) | ![](./Storage/primer-23/primer_links/sect_3/images/post_2.png) |
 | --- | --- |
 
 ####  Filename search logic 
@@ -18,7 +18,7 @@ The first match, in the order above, in any category is treated as "results foun
 Once a child D3PLOT and/or T/HIS process has been started there is a shared memory link between those codes and this PRIMER session.
  
 Each process runs autonomously, and if you Disconnect D3PLOT or T/HIS they will continue to run in the normal way. Similarly if you disconnect or terminate those codes locally PRIMER will detect this, clean up the shared memory link and continue to run normally.
- ![](../Storage/primer-22-1/primer_links/sect_3/images/post_6.png) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/post_6.png) 
 ####  Effects of linking and unlinking models 
 In all cases: 
 * Linking or disconnecting a model does not affect that model's status in either programme, both D3PLOT and/or T/HIS and PRIMER will continue to run normally.

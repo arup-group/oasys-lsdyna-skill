@@ -1,6 +1,6 @@
 ﻿####  Calculation of Elastic Section Properties
 
-Note that X and Y axes here are the cut-section local (X,Y) plane, and the![](../Storage/primer-22-1/primer_links/sect_6/cutsect/cut_sec_elastic_prop.PNG) centroid position is given relative to the origin of the plane.
+Note that X and Y axes here are the cut-section local (X,Y) plane, and the![](./Storage/primer-23/primer_links/sect_6/cutsect/cut_sec_elastic_prop.PNG) centroid position is given relative to the origin of the plane.
 
 The following engineering properties are calculated:
  

@@ -16,43 +16,43 @@ The \* RIGIDWALL keyword in Ansys LS-DYNA supports the following sub-types:
 |  | \_CYLINDER |  |
 |  | \_SPHERE |  |
 
-| This figure shows the top-level RIGIDWALL menu. <br>All rigidwall sub-types may be edited both explicitly (via Create/Edit panels) and via the [generic Keyword editor](the-generic-keyword-editing-panel.md#keywordedit).<br> <br>Options have their standard meanings as defined in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). | ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_fig_0.gif) |
+| This figure shows the top-level RIGIDWALL menu. <br>All rigidwall sub-types may be edited both explicitly (via Create/Edit panels) and via the [generic Keyword editor](the-generic-keyword-editing-panel.md#keywordedit).<br> <br>Options have their standard meanings as defined in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). | ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_fig_0.gif) |
 | --- | --- |
 
 #### Create and Edit functionality
- ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_create.gif)
+ ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_create.gif)
  This figure shows the standard wall create/edit panel.
  
 Its detailed layout changes with wall type: this example shows \_GEOMETRIC\_FLAT, although \_PLANAR is the most commonly used option.
 
-| Selecting a different wall subtype  <br>The detailed layout of the panel above changes as the different wall sub-types are selected.<br> <br>In particular note that the \* RIGIDWALL\_GEOMETRIC types may only have the optional suffix \_MOTION ; whereas \* RIGIDWALL\_PLANAR may have a wider range of suffices. The Ansys LS-DYNA manual pages on the subject describe the various combinations of type and suffices available. | ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_select.gif) |
+| Selecting a different wall subtype  <br>The detailed layout of the panel above changes as the different wall sub-types are selected.<br> <br>In particular note that the \* RIGIDWALL\_GEOMETRIC types may only have the optional suffix \_MOTION ; whereas \* RIGIDWALL\_PLANAR may have a wider range of suffices. The Ansys LS-DYNA manual pages on the subject describe the various combinations of type and suffices available. | ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_select.gif) |
 | --- | --- |
 
-| DRAG: Using the mouse to drag a wall into position. | ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_drag_0.gif) |
+| DRAG: Using the mouse to drag a wall into position. | ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_drag_0.gif) |
 | --- | --- |
 | All rigidwall types can be dragged into position on the screen using the mouse. The mouse button determines the global axis along which it moves:<br> <ul> <li> <p align="left">X : Left mouse button </p> </li> <li> <p align="left">Y : Middle </p> </li> <li> <p align="left">Z : Right </p> </li> </ul> <br>END\_DRAG terminates the dragging operation. | **** |
 
-#### PLANE: For _GEOMETRIC_FLAT and _PLANAR wall types only **![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_plane_0.gif)**
+#### PLANE: For _GEOMETRIC_FLAT and _PLANAR wall types only **![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_plane_0.gif)**
 
-| For walls defined by a flat plane the standard "plane" editor may be used. <br>This allows graphical definition of the plane geometry via a range of methods. | ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_plane.gif) |
+| For walls defined by a flat plane the standard "plane" editor may be used. <br>This allows graphical definition of the plane geometry via a range of methods. | ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_plane.gif) |
 | --- | --- |
 
 ##### Rigidwall Keyword editing panel
  
 All rigidwall sub-types can also be processed using the [generic Keyword editor](the-generic-keyword-editing-panel.md#keywordedit) panel an example of which is shown below.
- ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_key1.gif)
+ ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_key1.gif)
 
 | **The Keyword editor "**  **AUTO \_suffix"**  **Displaying all**  **\_PLANAR**  **suffices simultaneously**  <br>Because there are so many suffices to the \_PLANAR rigidwall type, which may be used in many permutations, the **AUTO** suffix allows all such types to be displayed at the same time.<br> <br>When UPDATE saves the editor status walls will only have a given suffix appended if the data fields for it are non-zero. | **** |
 | --- | --- |
 
-| Visualising RIGIDWALLS  <br>All rigidwall types may be visualised in ENT ity Viewing, also by the SKETCH functions above. | ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_vis4.gif) |
+| Visualising RIGIDWALLS  <br>All rigidwall types may be visualised in ENT ity Viewing, also by the SKETCH functions above. | ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_vis4.gif) |
 | --- | --- |
 |  |
 
 When \_FLAT and \_PLANAR walls have infinite side lengths then a dimension of approximately three times the diagonal of a box enclosing the model is used for graphical purposes. (Drawing an infinite object on a finite computer screen requires some compromise!). If sets and nodes are turned on as "extra" objects in **VIS\_2**then the nodes constrained by the walls will be drawn as well.
- ![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_vis2.gif)
+ ![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_vis2.gif)
 
-![](../Storage/primer-22-1/primer_links/sect_5/rigidwall/wall_vis5.gif)
+![](./Storage/primer-23/primer_links/sect_5/rigidwall/wall_vis5.gif)
 
 #####  Note on scaling of finite RIGIDWALLS during ORIENT operations
 

@@ -12,6 +12,6 @@ Sub sections of a model can be added onto the clipboard and then saved as a new 
 
 When writing the clipboard contents to a new keyword file, you can access the writing options by clicking on the &gt;&gt;&gt; LS-DYNA output options button.
 
-![](../Storage/primer-22-1/saving-clipboard-entities-as-a-new-modelkeyword-file/saving-clipboard-entities-as-a-new-modelkeyword-file-2024-04-11.png)
+![](./Storage/primer-23/saving-clipboard-entities-as-a-new-modelkeyword-file/saving-clipboard-entities-as-a-new-modelkeyword-file-2024-04-11.png)
 
 [Previous](referencing-of-clipboard-items.md)  |  [Next](renumbering-of-clipboard-entities.md)

@@ -1,6 +1,6 @@
 ﻿####  Crossed and Distorted Element Plotting
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_distorted_button.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_crossed_button.gif) |
+| ![](./Storage/primer-23/primer_links/sect_6/airbag/airbag_distorted_button.gif) | ![](./Storage/primer-23/primer_links/sect_6/airbag/airbag_crossed_button.gif) |
 | --- | --- |
 
 By default when doing a fold, elements which are distorted in the folding process and elements which have penetrations or are crossed are highlighted on the origami. Just as with the fold nodes in the previous section, when any fold parameters are changed the display is automatically updated.

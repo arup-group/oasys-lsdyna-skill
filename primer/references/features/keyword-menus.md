@@ -2,7 +2,7 @@
 
 As well as Tools / Mesh Tools menus, menus that live under Keywords can also be searched for. For example if you want to open the \*ELEMENT\_SHELL keyword panel you could type 'eshk':
 
-![](../Storage/primer-22-1/primer_links/sect_11/search7.png)
+![](./Storage/primer-23/primer_links/sect_11/search7.png)
 
 Keyword menus are coloured green in the list to help differentiate them from Tools / Mesh Tools menus which are coloured blue.
 

@@ -84,7 +84,7 @@ The **DISPLAY** enviroment variable ( **$DISPLAY** ) is set in the **System Prop
 
 The example below is from a Windows NT 4 system, but other variants of Windows will be similar.
 
-| This is accessed by:<br> <br><br>| ![](../Storage/primer-22-1/primer_links/graphics/c_panel.gif) | =&gt; | ![](../Storage/primer-22-1/primer_links/graphics/system.gif) | =&gt; | ![](../Storage/primer-22-1/primer_links/graphics/environ.gif) |<br>| --- | --- | --- | --- | --- | |
+| This is accessed by:<br> <br><br>| ![](./Storage/primer-23/primer_links/graphics/c_panel.gif) | =&gt; | ![](./Storage/primer-23/primer_links/graphics/system.gif) | =&gt; | ![](./Storage/primer-23/primer_links/graphics/environ.gif) |<br>| --- | --- | --- | --- | --- | |
 | --- |
 
 In the **System Properties** panel select the **Environment** tab, as shown here.
@@ -104,7 +104,7 @@ Machine name(hostname) to IP address resolution is provided by a "Hosts" file (o
 
 This may be updated using a text editor (eg WordPad).
 
-| Or on the [Hummingbird Exceed ^TM^ ^^emulator](http://www.hummingbird.com/products/nc/exceed/index.html), which Oasys Ltd recommends, it may be maintained via a **Host Editor:**<br> <br><br>| ![](../Storage/primer-22-1/primer_links/graphics/exceed_1.gif) | =&gt; | ![](../Storage/primer-22-1/primer_links/graphics/exceed_2.gif) | =&gt; | ![](../Storage/primer-22-1/primer_links/graphics/exceed_3.gif) | =&gt; |<br>| --- | --- | --- | --- | --- | --- |<br><br> <br><br> ![](../Storage/primer-22-1/primer_links/graphics/exceed_4.gif) |
+| Or on the [Hummingbird Exceed ^TM^ ^^emulator](http://www.hummingbird.com/products/nc/exceed/index.html), which Oasys Ltd recommends, it may be maintained via a **Host Editor:**<br> <br><br>| ![](./Storage/primer-23/primer_links/graphics/exceed_1.gif) | =&gt; | ![](./Storage/primer-23/primer_links/graphics/exceed_2.gif) | =&gt; | ![](./Storage/primer-23/primer_links/graphics/exceed_3.gif) | =&gt; |<br>| --- | --- | --- | --- | --- | --- |<br><br> <br><br> ![](./Storage/primer-23/primer_links/graphics/exceed_4.gif) |
 | --- |
 
 The **+** and **-** buttons are used to add/remove entries in this panel

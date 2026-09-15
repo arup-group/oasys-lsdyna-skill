@@ -2,9 +2,9 @@
 
 **1. Select the desired structure and the PSID to be referenced by the** **\*DATABASE\_CROSS\_SECTIONs**
 
-![](../Storage/primer-22-1/auto-create-cross-sections/load_path_auto_create_step1.png)
+![](./Storage/primer-23/auto-create-cross-sections/load_path_auto_create_step1.png)
 
-To define the structure that will be used by PRIMER to position and scale the cross sections, you can use any of the methods below:![](../Storage/primer-22-1/auto-create-cross-sections/load_path_structure_selection.png)
+To define the structure that will be used by PRIMER to position and scale the cross sections, you can use any of the methods below:![](./Storage/primer-23/auto-create-cross-sections/load_path_structure_selection.png)
 
 - **Select**: select elements, parts or part sets through an object menu
 
@@ -18,7 +18,7 @@ The **Sketch** and **Show only** buttons can be used to easily visualise these s
 
 The **Elements to exclude from selection** tick boxes can be used to control which element types get included in the selection. Any exclusion of elements will be reflected in the displayed message, and the excluded elements will not be used by PRIMER when defining the geometry of the cross sections.
 
-The part set (PSID) that will be referenced by the **\*DATABASE\_CROSS\_SECTIONs** can be defined through one of the methods below:![](../Storage/primer-22-1/auto-create-cross-sections/load_path_auto_psid.png)
+The part set (PSID) that will be referenced by the **\*DATABASE\_CROSS\_SECTIONs** can be defined through one of the methods below:![](./Storage/primer-23/auto-create-cross-sections/load_path_auto_psid.png)
 
 - **Auto-create part set**: PRIMER will automatically create a new set that contains all parts referencing selected elements and intersected by at least one cross section. By default, the **Label** of this part set will be defined as the highest label in the current layer incremented by 1, but can be changed to something else.
 
@@ -26,15 +26,15 @@ The part set (PSID) that will be referenced by the **\*DATABASE\_CROSS\_SECTIONs
 
 **2. Define the pitch, position and dimensions of the cross sections:**
 
-![](../Storage/primer-22-1/auto-create-cross-sections/load_path_step2.png)
+![](./Storage/primer-23/auto-create-cross-sections/load_path_step2.png)
 
 * **Orientation**: Determines whether the normal vectors of the cross sections align with the path defined in step 3 or with one of the global axes.
 
-![](../Storage/primer-22-1/auto-create-cross-sections/load_path_orientation.png)
+![](./Storage/primer-23/auto-create-cross-sections/load_path_orientation.png)
 
 * **Pitch / Number of XSECs / Snap to grid**: The position and number of cross sections can be determined either by defining the pitch, the number of cross sections, or by snapping the cross sections to a global axis with a defined grid pitch.
 
-![](../Storage/primer-22-1/auto-create-cross-sections/load_path_position.png)
+![](./Storage/primer-23/auto-create-cross-sections/load_path_position.png)
 
 For the **Pitch** and **Number of XSECs** methods, the pitch is defined as the total sum of the path segment lengths enclosed by adjacent cross sections. The number of cross sections for the former method, and the pitch for the latter method are determined based on the full length of the path (sum of composite segments lengths). Note that the points of intersection of the cross sections with the path (not the centres of cross sections) are used as the basis of measurement of the pitch.
 
@@ -42,13 +42,13 @@ For the **Snap to grid** method, the point of intersection of the cross sections
 
 * **Start offset**: Distance between the path start node and the intersection of the path with the first cross section.
 
-![](../Storage/primer-22-1/auto-create-cross-sections/load_path_start_offset.png)
+![](./Storage/primer-23/auto-create-cross-sections/load_path_start_offset.png)
 
 * **Auto size / Fixed size**: Determines how the dimensions of the cross sections are computed. The **Auto size** mode can be used to automatically size the plane so to just encompass the cut elements, with an optional **% increase** and limited to a **Max size**. The **Only visible** option can be used to only consider the elements visible in the graphics when auto-sizing the planes. The **Fixed size** mode can be used to explicitly define the **L** and **M** lengths of the planes. Regardless of the selected mode, PRIMER will automatically centre the planes on the cut elements.
 
 **3. Define the path determining cross sections positioning:**
 
-**![](../Storage/primer-22-1/auto-create-cross-sections/load_path_step3.png)**
+**![](./Storage/primer-23/auto-create-cross-sections/load_path_step3.png)**
 
 For the cross section creation to work properly, the path should align with the structure selection from step 1.
 
@@ -56,7 +56,7 @@ To create the path click on **Pick nodes** and start picking nodes on the desire
 To remove the last node from selection, simply click on **Undo last** or the middle mouse button. 
 To clear the path and restart the picking process from scratch, click on **Reset path** and start picking again.
 
-![](../Storage/primer-22-1/auto-create-cross-sections/modify_path.png)
+![](./Storage/primer-23/auto-create-cross-sections/modify_path.png)
 
 To edit the path points, click on **Modify path** and then on any of the picked nodes in the graphics area. This will bring up a popup with a list of modify actions to choose from:
 
@@ -93,6 +93,6 @@ Constant Z → Z axis
 
 If the **Auto-Create** button is clicked for a LOAD\_PATH with a non empty list of \*DATABASE\_CROSS\_SECTION instances, then PRIMER will attempt to delete these instances from the model if they're not referenced by any other entity. If you wish to keep these in the model then turn on the **Keep old xsecs in model** option before going into "Auto-create" mode.
 
-![](../Storage/primer-22-1/export-cross-section-properties-to-csv/load_path_keep_old_xsec.png)
+![](./Storage/primer-23/export-cross-section-properties-to-csv/load_path_keep_old_xsec.png)
 
 [Previous](create-a-loadpath.md)  |  [Next](export-cross-section-properties-to-csv.md)

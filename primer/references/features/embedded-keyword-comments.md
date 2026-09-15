@@ -22,9 +22,9 @@ There are three sorts of comment lines here:
 
 PRIMER allows you to visualise and edit comments in two ways:
 
-| On a scalar editing panel  <br>The Text edit button will be shown in light blue, and hovering the cursor over that button will list comments for that keyword.<br> <br>This example shows the result for Part 5 above. | ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_1_9a.png) |
+| On a scalar editing panel  <br>The Text edit button will be shown in light blue, and hovering the cursor over that button will list comments for that keyword.<br> <br>This example shows the result for Part 5 above. | ![](./Storage/primer-23/primer_links/sect_5/5a/fig_5_1_9a.png) |
 | --- | --- |
-| On a Keyword editor row  <br>If the definition on a row contains comments then a light blue **C** will be shown on its row button, and hovering the cursor over that button will list them. | ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_1_9b.png) |
+| On a Keyword editor row  <br>If the definition on a row contains comments then a light blue **C** will be shown on its row button, and hovering the cursor over that button will list them. | ![](./Storage/primer-23/primer_links/sect_5/5a/fig_5_1_9b.png) |
 
 In both cases you can add, remove and edit comments with the external [text editor](text-edit-editing-keyword-data-externally.md#text_edit_1) by using the Text edit button. (In the keyword editor case this is one of the options in the right-click popup menu associated with the row button
 

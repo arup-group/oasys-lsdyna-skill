@@ -6,7 +6,7 @@ The luggage retention tool creates a plane for luggage masses to slide on and  p
 
 The following figure shows "Main input" panel of the tool:
 
-![luggage retention main panel](../Storage/primer-22-1/primer_links/sect_6/safety/luggage/main.png)
+![luggage retention main panel](./Storage/primer-23/primer_links/sect_6/safety/luggage/main.png)
 
 The following options are available on the main input panel:
 

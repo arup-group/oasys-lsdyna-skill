@@ -31,7 +31,7 @@ Loadcurves use unique labels and, although part of the \*DEFINE  ****    **** ke
 
 **NOTE: TABLE** and **CURVE**   **** definitions occupy the same labelling space, and are interchangeable in some contexts. Thus it is  ***not***  legal to have **TABLE#1** and **CURVE#1** .
 
-| This figure shows the main menufor the editing of curves. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). The COMPARE option is specific to curves, and is described [below](define-curvetable-defining-load-curves.md#curve_compare).<br> <br>The table and curve main menu panels are similar. | ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_lcurmenu.gif) |
+| This figure shows the main menufor the editing of curves. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). The COMPARE option is specific to curves, and is described [below](define-curvetable-defining-load-curves.md#curve_compare).<br> <br>The table and curve main menu panels are similar. | ![](./Storage/primer-23/primer_links/sect_5/define/xy_lcurmenu.gif) |
 | --- | --- |
 
 #####  CREATE Making a new loadcurve definition
@@ -42,22 +42,22 @@ CREATE
 UPDATE CURVE
 panel. 
 
-![](../Storage/primer-22-1/primer_links/sect_5/define/create_loadcurve.PNG) 
+![](./Storage/primer-23/primer_links/sect_5/define/create_loadcurve.PNG) 
 
-| The loadcurve editing panel layout is shown in this figure. <br>There are six main areas in the panel, each area grouping together buttons of similar function.<br><ol><li><a href="define-curvetable-defining-load-curves.md#createabort"><strong>Create/abort loadcurve</strong></a></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#displaybuttons">Loadcurve display buttons</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#options">*DEFINE_CURVE options</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#plot">Loadcurve plot</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#points">Loadcurve points</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#pointmodify">Loadcurve modification</a></b></li> </ol> | ![](../Storage/primer-22-1/curve_sections.PNG) |
+| The loadcurve editing panel layout is shown in this figure. <br>There are six main areas in the panel, each area grouping together buttons of similar function.<br><ol><li><a href="define-curvetable-defining-load-curves.md#createabort"><strong>Create/abort loadcurve</strong></a></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#displaybuttons">Loadcurve display buttons</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#options">*DEFINE_CURVE options</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#plot">Loadcurve plot</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#points">Loadcurve points</a></b></li> <li><b style="font-size: 11pt;"><a href="define-curvetable-defining-load-curves.md#pointmodify">Loadcurve modification</a></b></li> </ol> | ![](./Storage/primer-23/curve_sections.PNG) |
 | --- | --- |
 
-| **(1) Create/abort loadcurve**<br><br>![](../Storage/primer-22-1/primer_links/sect_5/define/curve_create_abort.PNG) |
+| **(1) Create/abort loadcurve**<br><br>![](./Storage/primer-23/primer_links/sect_5/define/curve_create_abort.PNG) |
 | --- |
 | CREATE <br>This will exit the current loadcurve creation, saving the curve in the database. This button will be inactive (greyed out) until a label ( **LCID**) is given for the loadcurve and there are at least two points in the curve. |
 | CANCEL<br><br>Aborts from the current loadcurve creation without saving any of the modifications. |
-| X\_REFS <br>If the loadcurve has any cross references in the database they are displayed in a dialogue window. If there are no cross references to this curve [ **no cross references found**] will be displayed.<br> ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_xref.gif) |
+| X\_REFS <br>If the loadcurve has any cross references in the database they are displayed in a dialogue window. If there are no cross references to this curve [ **no cross references found**] will be displayed.<br> ![](./Storage/primer-23/primer_links/sect_5/define/xy_xref.gif) |
 | RESET ALL <br>Resets the curve back to its initial state. Any points which have been added or modified are lost. |
 | COPY IN <br>Copies the data from an existing loadcurve into the loadcurve currently being created. Any points which have been added since starting the create will be lost. |
-| CHECK <br>Checks the loadcurve currently being created for any errors.<br> ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_check.gif) |
+| CHECK <br>Checks the loadcurve currently being created for any errors.<br> ![](./Storage/primer-23/primer_links/sect_5/define/xy_check.gif) |
 | SKETCH <br>Sketch is currently inoperative. |
 
-| **(2)**  **Loadcurve display buttons**   ****  **![](../Storage/primer-22-1/loadcurve_display_buttons.PNG)** |
+| **(2)**  **Loadcurve display buttons**   ****  **![](./Storage/primer-23/loadcurve_display_buttons.PNG)** |
 | --- |
 | **GRID, LINES & SYMBOLS**  <br>These buttons toggle whether the grid, the curve line and the curve symbols are drawn on the plot. |
 | **AUTOSCALE**  <br>Resets the scaling on the loadcurve plot so the curve just fits the screen and replots the loadcurve. |
@@ -70,37 +70,37 @@ panel.
 | **EDIT**  <br>When toggled on, this button can be used to drag, insert or delete points from the displayed curve(s). Right click on the button to change the option. In drag mode, left mouse click and hold on a point on the curve, then drag. In insert mode, left mouse click at a point on the curve where you wish to add a point. In delete mode, either left mouse click on a point on the curve to delete it, or left mouse click hold to drag a box around a number of points to delete them. |
 | **INC SCALE+OFFSET**  <br>By default when a curve is plotted on the screen the offsets ( **SFA, SFO** ) and scale factors ( **OFFA, OFFO** ) are not included. If this button is pressed then they are included in the plot. To ensure that the user is aware of this the **SFA, SFO, OFFA** and **OFFO** text boxes turn green (by default they are blue) and the curve line and symbols are plotted in green. Pressing the button again toggles the inclusion off.<br> <br>Loadcurve values are scaled after the offsets are applied.<br> <br>*Abcissa value = SFA* x *(Defined value + OFFA)*<br> <br>*Ordinate value = SFO* x *(Defined value + OFFO)* |
 
-| **(3) \*DEFINE\_CURVE options**<br> <br>**![](../Storage/primer-22-1/primer_links/sect_5/define/fig_curve_3.gif)** |
+| **(3) \*DEFINE\_CURVE options**<br> <br>**![](./Storage/primer-23/primer_links/sect_5/define/fig_curve_3.gif)** |
 | --- |
 | **LCID**  <br>Label for loadcurve. If there is no label then the label is shown as **&lt;none&gt;** and the box is red rather than the default blue. A new label can be typed in the box or the right mouse button pressed to get the standard label popup box. |
-| **SIDR**  <br>Sets whether the loadcurve will be used in a transient or dynamic relaxation analysis. Either type in the value or use the right mouse button to bring up a popup menu.<br> ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_sidr_pop.gif) |
+| **SIDR**  <br>Sets whether the loadcurve will be used in a transient or dynamic relaxation analysis. Either type in the value or use the right mouse button to bring up a popup menu.<br> ![](./Storage/primer-23/primer_links/sect_5/define/xy_sidr_pop.gif) |
 | **SFA, SFO, OFFA & OFFO**  <br>Scale factors and offsets for the loadcurve abcissa (x) and ordinate (y) values. |
-| **DATTYP**  <br>Sets the type of data in the loadcurve: generally this is set to zero. Either type in a value or use the right mouse button to bring up a popup menu.<br> ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_datt_pop.gif) |
+| **DATTYP**  <br>Sets the type of data in the loadcurve: generally this is set to zero. Either type in a value or use the right mouse button to bring up a popup menu.<br> ![](./Storage/primer-23/primer_links/sect_5/define/xy_datt_pop.gif) |
 
-| **(4)**  **Loadcurve plot** <br>The loadcurve currently being created or modified is plotted in the bottom left of the loadcurve panel.<br> <br>If the curve has no cross references then the units for the X and Y axes are shown as Unknown units. If there are cross references, the first reference that PRIMER finds is used and the units displayed on the X and Y axes. All the cross references for the curve can be displayed with the LIST\_XREFS button.<br> <br>The visibility of the curve lines, symbols and the grid is controlled by the GRID, LINES and SYMBOLS buttons.<br> <br>If the INC\_SCALE+OFFSET button is selected, the curve is drawn in green instead of the default yellow to inform the user that the scale factors and offsets are included in the plot.<br> <br>The plot can be updated at any time by pressing the  **PLOT**  button.<br> ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_curve_4.gif) |
+| **(4)**  **Loadcurve plot** <br>The loadcurve currently being created or modified is plotted in the bottom left of the loadcurve panel.<br> <br>If the curve has no cross references then the units for the X and Y axes are shown as Unknown units. If there are cross references, the first reference that PRIMER finds is used and the units displayed on the X and Y axes. All the cross references for the curve can be displayed with the LIST\_XREFS button.<br> <br>The visibility of the curve lines, symbols and the grid is controlled by the GRID, LINES and SYMBOLS buttons.<br> <br>If the INC\_SCALE+OFFSET button is selected, the curve is drawn in green instead of the default yellow to inform the user that the scale factors and offsets are included in the plot.<br> <br>The plot can be updated at any time by pressing the  **PLOT**  button.<br> ![](./Storage/primer-23/primer_links/sect_5/define/fig_curve_4.gif) |
 | --- |
 
-| **(5) Loadcurve points** <br>When a curve is created the user is forced into INS\_AFTER mode until a point is created. The user will not be able to change to another mode ( MODIFY, INS\_BEFORE or DELETE ) until this point is created.<br> <br>The **X** and **Y**   ****  **value** boxes for this initial point are blank and coloured green to indicate that a number is required. If a number is typed into one of the boxes the box turns blue.<br> <br>When numbers are present for X and Y the line for point 1 becomes blue and point 2 becomes green. As many points as necessary can be added using this method. | ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_points_1.gif) |
+| **(5) Loadcurve points** <br>When a curve is created the user is forced into INS\_AFTER mode until a point is created. The user will not be able to change to another mode ( MODIFY, INS\_BEFORE or DELETE ) until this point is created.<br> <br>The **X** and **Y**   ****  **value** boxes for this initial point are blank and coloured green to indicate that a number is required. If a number is typed into one of the boxes the box turns blue.<br> <br>When numbers are present for X and Y the line for point 1 becomes blue and point 2 becomes green. As many points as necessary can be added using this method. | ![](./Storage/primer-23/primer_links/sect_5/define/xy_points_1.gif) |
 | --- | --- |
-| When there is more than one point the current mode can be changed at any time by pressing the MODIFY, INS\_BEFORE or DELETE buttons. <br>Any incomplete points (i.e. if either the X or Y values [or both] are blank) will be deleted when changing mode. If the number of points in the loadcurve is greater than 10 a sliding bar appears by the side of the points. The mouse can be used to select which points are visible in the text box. Drag the bar up and down with the left mouse button to move between the points. Alternatively clicking on the up (or down) arrow with the left, middle or right mouse button, increases (or decreases) the points shown by 1, 10 or 100 respectively. The value of a point can be changed in any mode by clicking on the X or Y value box and typing in a number. | ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_points_2.gif) |
+| When there is more than one point the current mode can be changed at any time by pressing the MODIFY, INS\_BEFORE or DELETE buttons. <br>Any incomplete points (i.e. if either the X or Y values [or both] are blank) will be deleted when changing mode. If the number of points in the loadcurve is greater than 10 a sliding bar appears by the side of the points. The mouse can be used to select which points are visible in the text box. Drag the bar up and down with the left mouse button to move between the points. Alternatively clicking on the up (or down) arrow with the left, middle or right mouse button, increases (or decreases) the points shown by 1, 10 or 100 respectively. The value of a point can be changed in any mode by clicking on the X or Y value box and typing in a number. | ![](./Storage/primer-23/primer_links/sect_5/define/xy_points_2.gif) |
 
-| **(6) Loadcurve modification**<br> <br><br> <br><br>| **MODIFY** |<br>| --- |<br><br> <br>Selects modify mode for loadcurve point editing. In this mode only the values of the points can be changed. No points can be added or deleted.<br> <br>When in this mode the point buttons are greyed out so they cannot be selected.<br> <br>If a point is currently being edited in INS\_BEFORE or INS\_AFTER mode it is deleted before the modify mode is selected. | **![](../Storage/primer-22-1/primer_links/sect_5/define/xy_modify.gif)** |
+| **(6) Loadcurve modification**<br> <br><br> <br><br>| **MODIFY** |<br>| --- |<br><br> <br>Selects modify mode for loadcurve point editing. In this mode only the values of the points can be changed. No points can be added or deleted.<br> <br>When in this mode the point buttons are greyed out so they cannot be selected.<br> <br>If a point is currently being edited in INS\_BEFORE or INS\_AFTER mode it is deleted before the modify mode is selected. | **![](./Storage/primer-23/primer_links/sect_5/define/xy_modify.gif)** |
 | --- | --- |
 
  **** 
 
-| | **INS\_BEFORE & INS\_AFTER** |<br>| --- |<br><br><br>Select either INS\_BEFORE or INS\_AFTER mode for loadcurve point editing. This allows points to be added to the curve.<br> <br>When in these modes the point buttons turn green. If a point is selected by clicking with the mouse a new point is created either before or after (depending on which mode) the selected point. If a point is currently being added in this mode and another point is selected the current point is deleted and the new point added. | ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_insert.gif) |
+| | **INS\_BEFORE & INS\_AFTER** |<br>| --- |<br><br><br>Select either INS\_BEFORE or INS\_AFTER mode for loadcurve point editing. This allows points to be added to the curve.<br> <br>When in these modes the point buttons turn green. If a point is selected by clicking with the mouse a new point is created either before or after (depending on which mode) the selected point. If a point is currently being added in this mode and another point is selected the current point is deleted and the new point added. | ![](./Storage/primer-23/primer_links/sect_5/define/xy_insert.gif) |
 | --- | --- |
 | **INS\_BEFORE & INS\_AFTER** |
-| | **DELETE** |<br>| --- |<br><br><br>Selects delete mode for loadcurve point editing. In this mode points can be deleted as well as being able to change the values of the points.<br><br>When in this mode the point buttons turn red. If a point is selected by clicking with the mouse it is deleted. If a point is currently being edited in INS\_BEFORE or INS\_AFTER mode it is deleted before the delete mode is selected. | **![](../Storage/primer-22-1/primer_links/sect_5/define/xy_delete.gif)** |
+| | **DELETE** |<br>| --- |<br><br><br>Selects delete mode for loadcurve point editing. In this mode points can be deleted as well as being able to change the values of the points.<br><br>When in this mode the point buttons turn red. If a point is selected by clicking with the mouse it is deleted. If a point is currently being edited in INS\_BEFORE or INS\_AFTER mode it is deleted before the delete mode is selected. | **![](./Storage/primer-23/primer_links/sect_5/define/xy_delete.gif)** |
 | **DELETE** |
 | TOP & END  <br>Moves the slider automatically to the top or end of the points for the loadcurve |  |
 | **GOTO\_POINT**   <br>Moves the slider so that the point number which is typed in is visible. |  |
-| **IMPORT**<br> <br>Allows a loadcurve to be read from an external file or from a database in PRIMER . Pressing the  **IMPORT**  button brings up a new set of buttons instead of the loadcurve points.<br> <br>Two types of file can be read into the loadcurve editor. T/HIS curve files and raw x,y data. The formats of these files is given in [Appendix H](1-this-curve-file-format.md). The format of the file to import is selected by using the RADIO buttons. The filename can then either be typed in the file text box or selected by browsing using the ? button. T/HIS curve files can contain multiple curves in one file. In this case the curve number in the file to read should be given. If no number is given the first curve in the file will be read. For the XY data/CSV data option you can specify the number of lines to skip at the start of the file, and also the columns for the X and Y data, should they not be in column 1 and 2. | ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_import.gif)<br> <br><br> ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_import_2.gif) |
-| **EXPORT**   <br>Allows a loadcurve to be written to an external file from PRIMER . Pressing the  **EXPORT**  button brings up a new set of buttons instead of the loadcurve points.<br> <br>Two types of file can be written from the loadcurve editor. T/HIS curve files and CSV x,y data. The formats of the T/HIS curve data is given in [Appendix H](1-this-curve-file-format.md). The format of the file to import is selected by using the RADIO buttons. The filename can then either be typed in the file text box or selected by browsing using the ? button. | ![](../Storage/primer-22-1/primer_links/sect_5/define/xy_export.gif) |
+| **IMPORT**<br> <br>Allows a loadcurve to be read from an external file or from a database in PRIMER . Pressing the  **IMPORT**  button brings up a new set of buttons instead of the loadcurve points.<br> <br>Two types of file can be read into the loadcurve editor. T/HIS curve files and raw x,y data. The formats of these files is given in [Appendix H](1-this-curve-file-format.md). The format of the file to import is selected by using the RADIO buttons. The filename can then either be typed in the file text box or selected by browsing using the ? button. T/HIS curve files can contain multiple curves in one file. In this case the curve number in the file to read should be given. If no number is given the first curve in the file will be read. For the XY data/CSV data option you can specify the number of lines to skip at the start of the file, and also the columns for the X and Y data, should they not be in column 1 and 2. | ![](./Storage/primer-23/primer_links/sect_5/define/xy_import.gif)<br> <br><br> ![](./Storage/primer-23/primer_links/sect_5/define/xy_import_2.gif) |
+| **EXPORT**   <br>Allows a loadcurve to be written to an external file from PRIMER . Pressing the  **EXPORT**  button brings up a new set of buttons instead of the loadcurve points.<br> <br>Two types of file can be written from the loadcurve editor. T/HIS curve files and CSV x,y data. The formats of the T/HIS curve data is given in [Appendix H](1-this-curve-file-format.md). The format of the file to import is selected by using the RADIO buttons. The filename can then either be typed in the file text box or selected by browsing using the ? button. | ![](./Storage/primer-23/primer_links/sect_5/define/xy_export.gif) |
 | READ  <br>Reads the selected file into the loadcurve editor and plots the curve. Any modifications to the current curve will be lost when importing a file. |  |
 | CANCEL  <br>Aborts the import and returns to the normal loadcurve editor window. |  |
-| DATABASE  <br>The DATABASE button starts the loadcurve database function in PRIMER .<br> <br>A list of the available loadcurve databases will be shown on the screen. When one is selected a curve can be read from the database.<br> <br>For further details on databases see [Databases: Importing Data from Pre-Defined Database Files](databases-importing-data-from-pre-defined-database-files.md) and [Appendix A](i-primer-database-format.md). | ![](../Storage/primer-22-1/primer_links/sect_5/database/dbase_4.gif) |
+| DATABASE  <br>The DATABASE button starts the loadcurve database function in PRIMER .<br> <br>A list of the available loadcurve databases will be shown on the screen. When one is selected a curve can be read from the database.<br> <br>For further details on databases see [Databases: Importing Data from Pre-Defined Database Files](databases-importing-data-from-pre-defined-database-files.md) and [Appendix A](i-primer-database-format.md). | ![](./Storage/primer-23/primer_links/sect_5/database/dbase_4.gif) |
 
 #####  COPY Copy existing loadcurve(s) to make a new loadcurve(s).
 
@@ -141,17 +141,17 @@ T/HIS lets you send any load curve to the linked session of T/HIS, which lets yo
 
 It is also possible to send DEFINE\_CURVE\_FUNCTION curve definitions from PRIMER to T/HIS for evaluation, as long as the expression only depends on TIME and not any other values that can change during the run. If the curve is suitable, the T/HIS button will be active. The curve will be plotted from TIME = 0 until the termination time specified on the DATABASE\_CONTROL\_TERMINATION card and any parameters appearing in the expression will be preserved. The equation can be edited in T/HIS by right-clicking and seleting 'Edit equation', before being sent back to PRIMER to update the original deifinition, again by right-clicking and selecting 'Update curve in PRIMER'.
 
-![this_curve](../Storage/primer-22-1/primer_links/sect_5/define/curve_send_to_this.PNG)
+![this_curve](./Storage/primer-23/primer_links/sect_5/define/curve_send_to_this.PNG)
  
 ####  CURVE COMPARE
 
 From the main \*DEFINE\_CURVE panel, there is a COMPARE option. This is used to visually plot and compare multiple curves on one graph.
 
-![](../Storage/primer-22-1/primer_links/sect_5/define/curve_compare_1.png)
+![](./Storage/primer-23/primer_links/sect_5/define/curve_compare_1.png)
 
 After selecting the curves you wish to compare, the curve compare panel will open.
 
-![](../Storage/primer-22-1/curve_compare_v20.PNG)
+![](./Storage/primer-23/curve_compare_v20.PNG)
 
 The curve compare panel is similar to the normal curve edit panel, but there is a list of the selected curves on the left hand side. Selecting different curves in this list will display the data associated with that curve in the points list. You still have all the same options for editing the curve data on this panel.
 
@@ -161,7 +161,7 @@ The curve compare panel is similar to the normal curve edit panel, but there is 
 
 This figure shows the CREATE/UPDATE TABLE panel.
 
-![](../Storage/primer-22-1/tablev20.PNG)
+![](./Storage/primer-23/tablev20.PNG)
 
 The functionality of the table editing panel is similar to the panel for loadcurves. The following features are briefly described.
 
@@ -214,7 +214,7 @@ These definitions may be edited in the normal curve editor as follows:
 * Select CURVE\_FUNCTION in the options box of the curve editor
 * Enter rows of data.
 
-![](../Storage/primer-22-1/primer_links/sect_5/define/lc_func.png)
+![](./Storage/primer-23/primer_links/sect_5/define/lc_func.png)
 
 #####  *DEFINE_CURVE_SMOOTH
 
@@ -225,7 +225,7 @@ These definitions may be edited in the normal curve editor as follows:
 * Select \_SMOOTH in the options box of the curve editor
 * Enter the relevant parameters
 
-![](../Storage/primer-22-1/primer_links/sect_5/define/lc_smooth.gif).
+![](./Storage/primer-23/primer_links/sect_5/define/lc_smooth.gif).
 
 #####  *DEFINE_CURVE_TRIM
 

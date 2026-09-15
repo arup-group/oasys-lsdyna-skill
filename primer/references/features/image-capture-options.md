@@ -1,6 +1,6 @@
 ﻿####  Image Capture Options
 
- ![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_6_11_24.png)
+ ![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_6_11_24.png)
  
 The information on the cut-section properties panel can be captured both numerically and graphically as follows:
  

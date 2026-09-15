@@ -534,7 +534,7 @@ Free-standing \*COMMENT definitions are always written out immediately before th
 
 During keyword input any \*COMMENT card encountered will be parsed according to the rules currently in force, which are set in the [\[Model\], Read "Options"](options-controls-many-aspects-of-reading-ls-dyna-files.md#opts_star_comment) panel:
 
-![](../Storage/primer-22-1/primer_links/sect_5/comment/fig_2.png)
+![](./Storage/primer-23/primer_links/sect_5/comment/fig_2.png)
 
 The default in PRIMER is for comments to be singly anchored, as shown here, but this may be changed dynamically or set by preference
 
@@ -589,8 +589,8 @@ PRIMER 's check functions will warn you if the parent include file of a comment 
 
 | Creating and editing *COMMENTs interactively  <br>\*COMMENT definitions can be created, edited and deleted just like any other keyword in PRIMER |
 | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_5/comment/fig_1.png)<br> <br>This example shows a Single Anchored comment associated with PART 3. |
-| ![](../Storage/primer-22-1/primer_links/sect_5/comment/anchor.png) | Chooses whether this comment is associated with a [single keyword](comment.md#single_anchor) or a [block of keywords](comment.md#multiple_anchor). |
+| ![](./Storage/primer-23/primer_links/sect_5/comment/fig_1.png)<br> <br>This example shows a Single Anchored comment associated with PART 3. |
+| ![](./Storage/primer-23/primer_links/sect_5/comment/anchor.png) | Chooses whether this comment is associated with a [single keyword](comment.md#single_anchor) or a [block of keywords](comment.md#multiple_anchor). |
 | Define/Change... | Defines or changes the associated item(s). Making a new selection deletes the old one, ie the effect is not "add" but rather "replace". |
 | Detach | Detaches the comment from all associated keywords, making it free-standing. |
 | List | Lists the current associated items |
@@ -605,7 +605,7 @@ Obviously comments themselves can't be sketched! However it can be useful to kno
 
 \*COMMENT cards generally hold meta-data associated with the subsequent keyword(s) so it makes sense for this information to be readily available when a keyword is edited. Therefore the Text Edit button on an editing panel will be highlit if the keyword being edited has associated \*COMMENT cards, and hovering over that button will preview these in a popup window. Here is an example:
 
-![](../Storage/primer-22-1/primer_links/sect_5/comment/fig_3.png)
+![](./Storage/primer-23/primer_links/sect_5/comment/fig_3.png)
 
 This is in addition to the display of any embedded comments that may be present. See [Embedded Keyword Comments](embedded-keyword-comments.md#comments)for more information.
 

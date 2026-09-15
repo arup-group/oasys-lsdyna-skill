@@ -2,7 +2,7 @@
 
 PRIMER uses two right-handed coordinate space systems for viewing: "screen" space, and "model" space. This is illustrated in figure 10 .1(a):
 
-![](../Storage/primer-22-1/primer_links/sect_9/images/9_1a.gif)
+![](./Storage/primer-23/primer_links/sect_9/images/9_1a.gif)
 
 Initially the two space systems are coincident, ie the initial view on the model is a plan on XY looking down the Z axis. Transformations to the current view can be applied in either space system, with the result that the model coordinate system will rotate with respect to the (fixed) screen system.
 
@@ -10,7 +10,7 @@ The current model orientation, (ie the axis system in the right hand side of fig
 
 The object exists at a point in screen space, and is seen through a viewing "frustrum" as shown in figure 10 .1(b) below. The observer's (your) eye point is located at the vertex of a rectangular section frustrum, with the object some distance away in the -ve Z screen space system. The screen image is a 2D projection of what the eye sees: the sides of the frustrum clip the view to the left/right and bottom/top edges of the screen.
 
-![](../Storage/primer-22-1/primer_links/sect_9/images/9_1b.gif)
+![](./Storage/primer-23/primer_links/sect_9/images/9_1b.gif)
 
 It is important to note the following:
 

@@ -4,7 +4,7 @@ A floating window guides you through the process of creating the model.
 
 The top of the window highlights in blue the step in the process you are currently at. You can move back and forward through the steps by pressing the '&lt;-' and '-&gt; buttons.
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummy_and_seatsquash/fig_41_4.png)
+![](./Storage/primer-23/primer_links/sect_6/dummy_and_seatsquash/fig_41_4.png)
 
 The first stage is to select what type of analysis you want to setup. The options are:
 

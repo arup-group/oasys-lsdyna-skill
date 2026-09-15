@@ -5,29 +5,29 @@ Select the Other pop-up menu from **Tools** and then press the FORMING button to
 
 ####  Main panel
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/metalform/forming_ui.png)The main metal-forming panel is shown in the adjacent figure.<br> <br>The panel allows you to map the results from parts on the forming model, Parts on Source, onto parts on the crash model, Parts on Target.<br> <br>Target must be the crash model. <br> Source must be the forming model.<br> <br>The process to map the results from the forming model onto the crash model is:<br> <ul> <li>Read the crash model (target) and the forming model (source) into <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->. </li> <li>Type in the model numbers of the crash model into
+| ![](./Storage/primer-23/primer_links/sect_6/metalform/forming_ui.png)The main metal-forming panel is shown in the adjacent figure.<br> <br>The panel allows you to map the results from parts on the forming model, Parts on Source, onto parts on the crash model, Parts on Target.<br> <br>Target must be the crash model. <br> Source must be the forming model.<br> <br>The process to map the results from the forming model onto the crash model is:<br> <ul> <li>Read the crash model (target) and the forming model (source) into <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->. </li> <li>Type in the model numbers of the crash model into
 <span class="buttontext">Target&#160;</span>and the forming model into
 <span class="buttontext">Source&#160;</span>(e.g. 1 and 2). </li> <li>Pick, select or <span>type </span>the part in the crash model you want to modify using the object menu invoked from the&#160;<span class="buttontext">Parts on Target&#160;</span>button.</li> <li> Pick, select or type the equivalent part in the forming model using the object menu invoked from the&#160;<span class="buttontext">Parts on Source</span>&#160;button.</li> <li> Give 3 pairs of equivalent nodes in the&#160;<span class="buttontext">Target&#160;</span>and
 <span class="buttontext">Source </span>models for orientation - i.e. <span class="buttontext">Node 1 </span>in the&#160;<span class="buttontext">Target </span>model is equivalent to <span class="buttontext">Node 1 </span>in the&#160;<span class="buttontext">Source </span>model. Each triplet of nodes forms a right-handed coordinate system with its origin at <span class="buttontext">Node 1</span>. </li> <li>Select the data to be copied from source to target model </li> <li>Optionally use <span class="buttontext">Reflect in Y = 0 </span>to reflect the source model and its data prior to mapping. </li> <li>Press <span class="buttontext">APPLY </span>to map the results from the forming model to the crash model.</li> </ul> <br>The Interpolate thickness option interpolates the shell thicknesses at the nodes from the matched shells in the source model, allowing for an improved shell thickness mapping. This feature is active by default and can also be controlled using the preference primer\*forming\_shell\_thickness\_interpolation. If interpolation is disabled, the tool will revert to using the average thickness of the matched source model shells. |
 | --- |
 
-| Example  <br>The image below shows the thickness distribution from the forming analysis.<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/metalform/metalform_1.gif) <br>Thickness distribution in forming model |
+| Example  <br>The image below shows the thickness distribution from the forming analysis.<br> <br>![](./Storage/primer-23/primer_links/sect_6/metalform/metalform_1.gif) <br>Thickness distribution in forming model |
 | --- |
 
 The crash model has a uniform initial thickness and a different mesh to the forming model
 
-![](../Storage/primer-22-1/primer_links/sect_6/metalform/metalform_2.gif) 
+![](./Storage/primer-23/primer_links/sect_6/metalform/metalform_2.gif) 
 Mesh of crash model panel
 
-| To map the results from the forming model panel onto the crash model panel we give the model number, part and 3 nodes for each model.<br> <br>The Crash model details are given in<br>Target on the left side of the panel.<br> <br>The Forming model details are given in<br>Source on the right side of the panel. | ![](../Storage/primer-22-1/metal-forming/metal-forming-2025-04-14-1.png) |
+| To map the results from the forming model panel onto the crash model panel we give the model number, part and 3 nodes for each model.<br> <br>The Crash model details are given in<br>Target on the left side of the panel.<br> <br>The Forming model details are given in<br>Source on the right side of the panel. | ![](./Storage/primer-23/metal-forming/metal-forming-2025-04-14-1.png) |
 | --- | --- |
 
-| The figure below shows the locations of nodes 1, 2 and 3 in both models. These nodes **must** be at equivalent points on the panel. It is essential to make the 3 nodes as far apart as possible and not colinear so that PRIMER can map the results as accurately as possible. <br> <br> <br>![](../Storage/primer-22-1/primer_links/sect_6/metalform/metalform_4.gif) |
+| The figure below shows the locations of nodes 1, 2 and 3 in both models. These nodes **must** be at equivalent points on the panel. It is essential to make the 3 nodes as far apart as possible and not colinear so that PRIMER can map the results as accurately as possible. <br> <br> <br>![](./Storage/primer-23/primer_links/sect_6/metalform/metalform_4.gif) |
 | --- |
 
 When the APPLY button is pressed PRIMER takes the results from the forming model and maps them onto the crash model. For example plotting shell thickness gives:
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/metalform/metalform_7.gif) <br>Crash model | ![](../Storage/primer-22-1/primer_links/sect_6/metalform/metalform_6.gif) <br>Forming model |
+| ![](./Storage/primer-23/primer_links/sect_6/metalform/metalform_7.gif) <br>Crash model | ![](./Storage/primer-23/primer_links/sect_6/metalform/metalform_6.gif) <br>Forming model |
 | --- | --- |
 
 ####  How this process works.

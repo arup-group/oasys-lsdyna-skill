@@ -15,14 +15,14 @@ These can be edited through their own specific editing panel (see below).
 * [Check](define-transform.md#check)
 * [Renumber](define-transform.md#renumber)
 
-| This figure shows the main menufor the editing of death times definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_death_times_1.gif) |
+| This figure shows the main menufor the editing of death times definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_death_times_1.gif) |
 | --- | --- |
 
 ####  CREATE Making a new death times definition
  
 This shows the create/edit panel for death times. Clicking on the DEFINE\_DEATH\_TIMES\_... button will cycle through the \_NODES, \_SET and \_RIGID options. Once the desired option is chosen, the information for card 3 can be added/modified using the Add , Remove , Empty and View/Edit buttons at the bottom of the panel.
  
-![](../Storage/primer-22-1/primer_links/sect_5/define/fig_death_times_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/define/fig_death_times_2.gif)
 
 ####  COPY Copy existing death times(s) to make a new death times(s)
  

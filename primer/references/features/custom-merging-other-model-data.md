@@ -2,7 +2,7 @@
 
 "Other" means items that don't have labels, so which can never clash, but which may require manual control.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_4_1_8.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_4_1_8.gif)
 
 In this example there are \*AIRBAG\_INTERACTION, \*BOUNDARY and cards.
 

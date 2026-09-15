@@ -10,17 +10,17 @@ The main seatbelt control panel allows you to create and manipulate the other "s
 | ACCELEROMETERS | Attach to a rigid body and provide accelerations in the frame of reference of that body for post-processing. |
 | (There is nothing special about creating these elements from inside the seatbelt fitting panel, they may equally well be created from the normal ELEMENT keyword.) |
 
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7a.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7a.png)
 
 ####  Generic top level panel for all types
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7b.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7c.gif) |
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7b.gif) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7c.gif) |
 | --- | --- |
 | Top RETRACTOR panel | Top Pretensioner panel |
 
 All types have the same options and layout in their top panel, so only two examples are shown. In this example a retractor already exists, so the MODIFY and DELETE options are available, but no pretensioners have been defined yet, so only the CREATE and KEYWORD options are available.
 
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7d.gif) 
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7d.gif) 
 Creating a RETRACTOR
 
 This panel shows the process of creating a retractor, with some items still to be defined. The layout and controls are standard for all seatbelt-related types:
@@ -38,10 +38,10 @@ This panel shows the process of creating a retractor, with some items still to b
 | CREATE / UPDATE | Creates a new (create) or overwrites the existing (modify) definition. |
 | ABORT | Abandons this operation leaving any original definition unchanged. |
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7g.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7f.gif) |
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7g.gif) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7f.gif) |
 | --- | --- |
 | Create SENSORS | Create PRETENSIONERS |
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7e.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_7h.gif) |
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7e.gif) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_7h.gif) |
 | Create SLIPRINGS | Create ACCELEROMETERS |
 
 These figures show the create/modify panels for the remaining types. All follow the same standard layout, and use the same box colour and top options. With reference to the analysis code user manual the input required is self-explanatory.

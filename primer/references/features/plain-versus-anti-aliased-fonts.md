@@ -4,7 +4,7 @@ On some monitors, especially relatively low resolution ones, the anti-aliasing o
 
 Some users may prefer the cruder but sharper appearance of the original "core X11" legacy fonts, and these can be used by changing to Plain so long as you actually have these fonts loaded on your machine. On the CentOS 7 machine being used to create this manual page the equivalent "plain" font image of the above is:
 
-![](../Storage/primer-22-1/project-common-topics/linux_fonts/fonts_2.png)
+![](./Storage/primer-23/project-common-topics/linux_fonts/fonts_2.png)
 
 If you try this on your machine and it doesn't work then it means that you need to load the legacy font package(s), see below.
 

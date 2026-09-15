@@ -4,7 +4,7 @@ An oa\_index file contains information on how a database is formatted. One index
 
 The oa\_index file then describes this database and gives the filenames of all the entries in this database. For example the LCUR\* database 'Seismic loadcurve database' in the above database file points to the directory /disk/database/loadcurve/seismic. An oa\_index file must be present in this directory to describe how the database 'Seismic loadcurve database' is formatted and how many entries there are. This is summarised in figure A9.1.
 
-![](../Storage/primer-22-1/primer_links/appen_9/fig_a9.gif)
+![](./Storage/primer-23/primer_links/appen_9/fig_a9.gif)
 
 Any line in the file which begins with a $ (dollar) is treated as a comment. The first uncommented line in an oa\_index file **MUST** contain how many fields there are for each database. The next lines in the file then give the headings for each field.
 

@@ -4,6 +4,6 @@ A Visualisation Toolkit or vtk file can be read or written via the Utilities men
 
 These files contain a list of node data and topology describing how the nodes are connected. Currently only SOLID, BEAM, SHELL and THICK SHELL entity types are supported. Vtk files offer an alternative method of viewing models and can be read by other programs such as ParaView.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/vtk.png)
+![](./Storage/primer-23/primer_links/sect_3/images/vtk.png)
 
 [Previous](run-time-diagnostics.md)  |  [Next](model-check.md)

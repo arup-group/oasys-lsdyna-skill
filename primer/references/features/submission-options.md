@@ -1,6 +1,6 @@
 ﻿###  Submission Options
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_8.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_8.png)
 "Submission Options" define the Ansys LS-DYNA settings required to run the model on the specified machine.
 
 All the specified values in this section can be saved in a PRIMER JSON settings file under the bookmark label name given in the

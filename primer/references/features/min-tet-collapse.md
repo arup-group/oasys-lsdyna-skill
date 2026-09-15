@@ -6,8 +6,8 @@ For each node in a tetrahedron, the node's height above the base (the opposite f
 
 (The height of the node is defined as the shortest distance between that node and the plane described by the base.)
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/Min_tet_collapse_img.png)
+![](./Storage/primer-23/primer_links/sect_3/images/Min_tet_collapse_img.png)
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/Min_tet_collapse_eq.png)
+![](./Storage/primer-23/primer_links/sect_3/images/Min_tet_collapse_eq.png)
 
 [Previous](max-taper.md)  |  [Next](check-output.md)

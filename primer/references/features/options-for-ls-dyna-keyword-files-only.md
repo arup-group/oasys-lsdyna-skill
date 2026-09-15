@@ -1,6 +1,6 @@
 ﻿###  Options for Ansys LS-DYNA Keyword Files Only
 
- ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_2_1a.png) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_2_1a.png) 
 
 | Apply | Reads the file in the nomal way, and stores it in the database |
 | --- | --- |

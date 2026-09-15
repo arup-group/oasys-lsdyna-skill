@@ -2,7 +2,7 @@
 
 As explained above the limits on character label width from LS971 R7.1 onwards are 10 characters in regular format, and 20 characters in long format. However if you are planning to generate keyword decks for older versions of Ansys LS-DYNA you may wish to enforce the older 8 character limit in order to ensure compatibility.
 
-| Model, Renumber, Label Range will map the label control panel<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/5a/label_1.png) | ![](../Storage/primer-22-1/primer_links/sect_5/5a/label_4.png) |
+| Model, Renumber, Label Range will map the label control panel<br> <br>![](./Storage/primer-23/primer_links/sect_5/5a/label_1.png) | ![](./Storage/primer-23/primer_links/sect_5/5a/label_4.png) |
 | --- | --- |
 
 The "permitted size of character labels" is a per-model setting that is initialised automatically following inspection of an input deck. As with numeric labels PRIMER will prefer the regular file format of 10 characters width, but if the file is detected to be in long format then 20 will be set instead.

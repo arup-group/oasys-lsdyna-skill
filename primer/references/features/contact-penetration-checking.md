@@ -5,7 +5,7 @@
 
 Fixing contact penetrations can be sound in [Contact Penetration Fixing](contact-penetration-fixing.md)
 
-| In this example a model contains two parts:<br> <ul> <li>Part 1 (pink) is a single shell. </li> <li>Part 2 (green) is a block of solids </li> </ul> <br>A contact surface ( **AUTOMATIC SURFACE TO SURFACE** ) between the two parts is defined:<br> <ul> <li>Part 2 is the SURFA (tracked) side of a contact </li> <li>Part 1 is the SURFB (reference) side </li> </ul> <br>The two parts intersect by a small amount, as is clearly visible here. | ![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fig_6_10_0.gif) |
+| In this example a model contains two parts:<br> <ul> <li>Part 1 (pink) is a single shell. </li> <li>Part 2 (green) is a block of solids </li> </ul> <br>A contact surface ( **AUTOMATIC SURFACE TO SURFACE** ) between the two parts is defined:<br> <ul> <li>Part 2 is the SURFA (tracked) side of a contact </li> <li>Part 1 is the SURFB (reference) side </li> </ul> <br>The two parts intersect by a small amount, as is clearly visible here. | ![](./Storage/primer-23/primer_links/sect_5/pen_check/fig_6_10_0.gif) |
 | --- | --- |
 
 [Previous](an-example-of-how-to-set-up-a-database-and-how-to-use-it.md)  |  [Next](checking-a-sliding-contact.md)

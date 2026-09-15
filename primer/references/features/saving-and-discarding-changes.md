@@ -1,6 +1,6 @@
 ﻿####  Saving and Discarding Changes
 
- ![](../Storage/primer-22-1/primer_links/sect_5/5a/kwe_top.png) 
+ ![](./Storage/primer-23/primer_links/sect_5/5a/kwe_top.png) 
 Changes made to **Data rows** in the keyword editor update the current database definitions immediately, but these changes only become permanent if and when you UPDATE to end an editing session. However any new entries that you have [CREATED](creating-a-new-definition-in-the-entry-row.md#using_create)will remain in the database regardless of how you exit the editor.
  
 In more detail:

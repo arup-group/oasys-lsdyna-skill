@@ -14,12 +14,12 @@ However orientation vectors can also be used for translational springs/dampers o
  
 Orientation vectors use unique labels and, although part of the \* DEFINE  ****    **** keyword, their labels do not clash with other \* DEFINE\_xxx entities. For example it is legal to have (\*DEFINE\_)SD\_ORIENTATION **#1**  and (\* DEFINE\_)CURVE  **#1**.
 
-| This figure shows the main menufor the editing of orientation vector definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_sdov_1.gif) |
+| This figure shows the main menufor the editing of orientation vector definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_sdov_1.gif) |
 | --- | --- |
 
 | CREATE Making a new orientation vector definition |
 | --- |
-| This shows the create/edit panel for orientation vectors. <br>&lt; **IOP** &gt; defines the orientation vector definition method.<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/define/fig_sdov_3.gif)<br> <br>Methods #2 and #3 make the **NID1** and **NID2** boxes "live" for selection. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_sdov_2.gif) |
+| This shows the create/edit panel for orientation vectors. <br>&lt; **IOP** &gt; defines the orientation vector definition method.<br> <br>![](./Storage/primer-23/primer_links/sect_5/define/fig_sdov_3.gif)<br> <br>Methods #2 and #3 make the **NID1** and **NID2** boxes "live" for selection. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_sdov_2.gif) |
 
 ####  COPY Copy existing orientation vector(s) to make a new vector(s)
  
@@ -53,7 +53,7 @@ RENUMBER lets you change any or all orientation vector labels within a given mod
 
 | Visualising Orientation Vectors |
 | --- |
-| Orientation Vectors may be drawn by turning their display on in the ENTity Viewing menu. <br><br> <br>They can also be drawn via the [SKETCH](define-transform.md#sketch) options above. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_3.gif) |
-| They may also be drawn in other contexts (for example contacts) if their display as "associated data" in the ENTity Viewing box is selected. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_coord_4.gif) |
+| Orientation Vectors may be drawn by turning their display on in the ENTity Viewing menu. <br><br> <br>They can also be drawn via the [SKETCH](define-transform.md#sketch) options above. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_3.gif) |
+| They may also be drawn in other contexts (for example contacts) if their display as "associated data" in the ENTity Viewing box is selected. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_coord_4.gif) |
 
 [Previous](define-friction.md)  |  [Next](define-spotweld-failure-resultants.md)

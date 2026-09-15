@@ -1,6 +1,6 @@
 ﻿###  LIST_ERRORS: Listing Penetrations and Edges to Screen and File
-  **![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fig_6_10_7.gif)**  
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fig_6_10_7a.gif)
+  **![](./Storage/primer-23/primer_links/sect_5/pen_check/fig_6_10_7.gif)**  
+![](./Storage/primer-23/primer_links/sect_5/pen_check/fig_6_10_7a.gif)
 
 This example shows the listing of penetrations and crossed edges generated for the model above.
 

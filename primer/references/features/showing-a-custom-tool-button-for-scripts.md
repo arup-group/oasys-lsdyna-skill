@@ -15,6 +15,6 @@ primer\*custom\_tools\_script\_directory: C:\test\Arup\_scripts
 
 PRIMER will show buttons for the scripts in directory C:\test\Arup\_scripts and show buttons in the popup for each script found. The [name:](maintaining-a-library-of-javascripts.md#name)comment at the top of the script can be used to change the text shown on the button
 
-![](../Storage/primer-22-1/showing-a-custom-tool-button-for-scripts/showing-a-custom-tool-button-for-scripts-2025-05-30.png)
+![](./Storage/primer-23/showing-a-custom-tool-button-for-scripts/showing-a-custom-tool-button-for-scripts-2025-05-30.png)
 
 [Previous](maintaining-a-library-of-javascripts.md)  |  [Next](running-a-javascript-in-batch-mode.md)

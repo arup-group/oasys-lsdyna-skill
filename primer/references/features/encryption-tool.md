@@ -12,16 +12,16 @@ PRIMER cannot decrypt the encrypted data; however, it can use meta data specifie
 
 To use the tool, you first need to install GnuPG. GnuPG is external open-source software that will perform the encryption; you can visit [The GNU Privacy Guard (gnupg.org)](https://gnupg.org/)for more information about how to download GPG for your system.
 
-![Simply Easy Learning](../Storage/primer-22-1/primer_links/sect_6/encrypt/gpg.png)
+![Simply Easy Learning](./Storage/primer-23/primer_links/sect_6/encrypt/gpg.png)
 
 After you have installed the software, you can then access the tool by going to Tools &gt; Other &gt; Encrypt. You will be presented with a window asking you for your GPG executable. (If you are not asked then PRIMER has found the GPG executable automatically). Once your GPG executable has been found, the location will be stored in a preference so that in the future it will be found automatically so that you don't have to search for the GPG location on every run. You can edit this preference manually and it can be found in Options, Edit preferences, PRIMER, Encryption, gpg\_location. 
  
 After selecting your GPG executable, you'll be presented with either a window asking you to choose a model to encrypt or the main model encryption window if you only have one model loaded into PRIMER. 
 
-![](../Storage/primer-22-1/encryption-tool-2022-12-19.png)
+![](./Storage/primer-23/encryption-tool-2022-12-19.png)
 Use the \*KEYWORDs button to select the items you want to encrypt.
 
-![](../Storage/primer-22-1/encryption-tool-2022-12-19-1.png)
+![](./Storage/primer-23/encryption-tool-2022-12-19-1.png)
 
 After selecting your chosen keywords for encryption, you can press the encrypt button. The tool will create a copy of the original model with encrypted keywords.
 
@@ -49,11 +49,11 @@ Partial encryption only encrypts some of the data from the chosen keywords to be
 ##  
 
 ### 
-![](../Storage/primer-22-1/encryption-tool-2023-01-10.png) 
+![](./Storage/primer-23/encryption-tool-2023-01-10.png) 
 
 ###  Keys
 
-### ![](../Storage/primer-22-1/encryption-tool-2023-03-03.png) 
+### ![](./Storage/primer-23/encryption-tool-2023-03-03.png) 
 
 ###  
 
@@ -92,7 +92,7 @@ These keys ensure the encrypted models are compatible with the corresponding ver
 
 These options only apply when you partial encrypt keywords.
 
-### ![](../Storage/primer-22-1/encryption-tool-2022-12-19-3.png) 
+### ![](./Storage/primer-23/encryption-tool-2022-12-19-3.png) 
 
 ####  Append Info In Title 
 The density, Young's modulus, and Poisson's ratio will be written in the title of the material. PRIMER can use this information internally for functionality such as checking and mass calculation. 
@@ -103,7 +103,7 @@ The partial encryption start line can be specified in the options menu. This opt
 
 These options only apply to keywords that are fully encrypted
 
-###  ![](../Storage/primer-22-1/encryption-tool-2023-01-10-1.png)
+###  ![](./Storage/primer-23/encryption-tool-2023-01-10-1.png)
 
 ### Collective vs Individual
 
@@ -119,7 +119,7 @@ The Individual option separates each keyword into its own encryption block.
 
 Add the material type to the PGP blocks. This feature allows you to better identify PGP blocks in the future.
 
-![](../Storage/primer-22-1/encryption-tool-2023-01-10-2.png)
+![](./Storage/primer-23/encryption-tool-2023-01-10-2.png)
 
 #### Extra Data 
 Extra data is used for some of the enhanced functionalities within PRIMER such as model checking and mass calculations. This is done by creating meta data from the original material data. This option can be turned off or extra data can be deleted later at your convenience. The data is not processed by Ansys LS-DYNA and is only used by PRIMER. This extra data is enclosed within \*ENCRYPTED\_START and \*ENCRYPTED\_END after the \*END card. 
@@ -141,7 +141,7 @@ When the Comment checkbox is checked, the textbox beneath will become active and
 When one of the Vendor Options are enabled \*VENDOR\_BEGIN will be written into the PGP encrypted text at the start. Your vendor information will then be written and it will be finished with \*VENDOR\_END. 
 ####  Vendor Menu 
 
- ![Simply Easy Learning](../Storage/primer-22-1/primer_links/sect_6/encrypt/vendor_options.png)
+ ![Simply Easy Learning](./Storage/primer-23/primer_links/sect_6/encrypt/vendor_options.png)
 
 ####  Vendor Date 
 You can create an expiry date of your choosing and it will be added into the PGP encrypted text block. The default value is set to unchecked (not enabled). 

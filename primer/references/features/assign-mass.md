@@ -8,6 +8,6 @@ It is impossible to assign mass to nodes of a part which is defined with a \*PA
  
 Similarly in part mode, PRIMER will expect any \*ELEMENT\_MASS\_PART\_SET(ADD) definitions to be fully contained within the group,etc. \*ELEMENT\_MASS\_PART\_FINMASS definitions are analogous to \*ELEMENT\_MASS\_NODE\_SET in the node method and will be locked against change of mass.
  
-## ![](../Storage/primer-22-1/primer_links/sect_6/assign_mass/assign_mass_2.gif)
+## ![](./Storage/primer-23/primer_links/sect_6/assign_mass/assign_mass_2.gif)
 
 [Previous](folding-example.md)  |  [Next](basic-assign-mass-operation.md)

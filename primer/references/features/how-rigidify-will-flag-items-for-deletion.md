@@ -14,6 +14,6 @@ The user has control over the deletion panel and may choose to leave the offendi
 
 If Simplify and delete is selected, the elements will also be flagged for deletion.
 
-![](../Storage/primer-22-1/primer_links/sect_6/rigidify/rigidify_delete.gif)
+![](./Storage/primer-23/primer_links/sect_6/rigidify/rigidify_delete.gif)
 
 [Previous](how-rigidify-will-change-the-model.md)  |  [Next](main-input-seat-belt-anchorage.md)

@@ -1,6 +1,6 @@
 ﻿The IGA\_POINT\_UVW panel lets you pick points on IGA surfaces and create/modify required NODEs and edit SET\_IGA\_POINT\_UVW on the corresponding IGA\_FACE\_XYZ.
 
-![](../Storage/primer-22-1/primer_links/sect_5/iga/iga_point_uvw_1.JPG)
+![](./Storage/primer-23/primer_links/sect_5/iga/iga_point_uvw_1.JPG)
 
 There are three methods to create IGA\_POINT\_UVW:
 

@@ -20,6 +20,6 @@ The above functions may be activated for a single template by using the drop dow
 
 The Database item popups allow selection of an item across all templates. They also access the same category edit panel that is available from the database panel.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/template.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/template.gif)
 
 [Previous](templates.md)  |  [Next](multiple-build-from-template-panel.md)

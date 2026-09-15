@@ -6,7 +6,7 @@ The LSTC dummy conversion tool can be accessed through the Safety button from t
  
 This brings up the menu in a pop up window as shown below.
 
-![](../Storage/primer-22-1/Manual%20image%20-%20LSTC%20Conversion%20tool.jpg)
+![](./Storage/primer-23/Manual%20image%20-%20LSTC%20Conversion%20tool.jpg)
 
 **Select** Chooses the file you want to convert.
 

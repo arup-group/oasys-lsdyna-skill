@@ -10,7 +10,7 @@ You can add extra information to plots, control the display of classes of inform
 
 This panel controls the display of elements and nodes, (ie basic "structural" items); also their symbols, labels and local direction triads as well as the display of "other" items, such as constraints, contacts, rigidwalls, etc; and also their labels, symbols and other related displayable data.
 
-![](../Storage/primer-22-1/primer_links/sect_4/images/entities_panel.png)
+![](./Storage/primer-23/primer_links/sect_4/images/entities_panel.png)
 
 It must be stressed that these commands only permit or deny the display of *classes* of information, they do not control the visibility of individual items or models. However they do provide one means of accessing the "dynamic" labelling of items: see [Dynamic Labelling](dynamic-labelling.md#46DynamicLabelling).
 

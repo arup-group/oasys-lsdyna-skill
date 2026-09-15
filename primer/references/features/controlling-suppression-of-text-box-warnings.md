@@ -2,7 +2,7 @@
 
 The parent panel of assign mass has several warning options which the user can select or deselect as they wish:
 
-![](../Storage/primer-22-1/primer_links/sect_6/assign_mass/assm_10.gif)
+![](./Storage/primer-23/primer_links/sect_6/assign_mass/assm_10.gif)
 
 The selection boxes allow the user to suppress warnings and errors that they feel are unnecessary.
 

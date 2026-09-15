@@ -1,6 +1,6 @@
 ﻿####  Pre-out: Compress Tab
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_2i.png)Compression and binary output format provide ways of both speeding up output and also reducing file sizes.
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_3_2i.png)Compression and binary output format provide ways of both speeding up output and also reducing file sizes.
 * [Compression](compress-files.md#compress_files) uses the industry standard "ZLIB" library to compress files into .gz and .zip formats.
 * [Binary files](write-binary-format.md#write_binary) are proprietary to PRIMER and provide a way of storing data more efficiently, they also improve reading and writing speed
 

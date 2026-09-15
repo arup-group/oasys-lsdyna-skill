@@ -8,24 +8,24 @@
 Boundary conditions within Ansys LS-DYNA apply a range of restraints and other imposed conditions to models. 
 All \*BOUNDARY sub-keywords except \*BOUNDARY\_ELEMENT are editable within PRIMER. (Boundary elements do not logically belong here: really they merit their own section since they imply a totally different type of analysis.)
 
-| **\*BOUNDARY**cards can at present be edited only with the [generic "Keyword" editor](the-generic-keyword-editing-panel.md#keywordedit): no specific Create/Edit panels have been written yet. <br>All **\*BOUNDARY** keywords except **\_ELEMENT\_METHOD** may be edited in this way.<br> <br><br>| ![](../Storage/primer-22-1/primer_links/sect_5/boundary/fig_boundary.gif) |<br>| --- |<br><br> <br><br> <br>The other commands ( COPY, DELETE, ...) function in the standard manner described in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions).<br> <br><br>| ![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_home.gif) |<br>| --- |<br>| All of the boundary keywords are selected from the pop-up menu produced after Boundary is selected in the Keywords panel. | |
+| **\*BOUNDARY**cards can at present be edited only with the [generic "Keyword" editor](the-generic-keyword-editing-panel.md#keywordedit): no specific Create/Edit panels have been written yet. <br>All **\*BOUNDARY** keywords except **\_ELEMENT\_METHOD** may be edited in this way.<br> <br><br>| ![](./Storage/primer-23/primer_links/sect_5/boundary/fig_boundary.gif) |<br>| --- |<br><br> <br><br> <br>The other commands ( COPY, DELETE, ...) function in the standard manner described in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions).<br> <br><br>| ![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_home.gif) |<br>| --- |<br>| All of the boundary keywords are selected from the pop-up menu produced after Boundary is selected in the Keywords panel. | |
 | --- |
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_basic.png) |
+| ![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_basic.png) |
 | --- |
 | This shows an example of the [Keyword editor](the-generic-keyword-editing-panel.md#keywordedit) for **\*BOUNDARY\_SPC** . <br>There are two sub-keywords: **\_NODE** and **\_SET** , with different formats.<br> <br>The **\_SET** variant is being edited here. |
 
-| | Drawing *BOUNDARY Items <br>These definitions can be viewed using the ENT ity viewing &gt; BOUNDARY options. At present only the following keywords are fully visualised: |<br>| --- |<br><br> <br><br>| \*BOUNDARY\_SPCRestraints ("single point constraints") at nodes. |<br>| --- |<br>| Restraint codes are drawn as vectors in the relevant X, Y or Z directions, using the colour scheme: <br>X Red<br> <br>Y Green<br> <br>Z Blue<br> <br>The symbols used at vector ends are:<br> <br>Trans: Cross<br> <br>Rot'l: Square<br> <br>Both: Cross + Square | ![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_symbols.gif) |<br>| Symbols are drawn at every restrained node. |  | |
+| | Drawing *BOUNDARY Items <br>These definitions can be viewed using the ENT ity viewing &gt; BOUNDARY options. At present only the following keywords are fully visualised: |<br>| --- |<br><br> <br><br>| \*BOUNDARY\_SPCRestraints ("single point constraints") at nodes. |<br>| --- |<br>| Restraint codes are drawn as vectors in the relevant X, Y or Z directions, using the colour scheme: <br>X Red<br> <br>Y Green<br> <br>Z Blue<br> <br>The symbols used at vector ends are:<br> <br>Trans: Cross<br> <br>Rot'l: Square<br> <br>Both: Cross + Square | ![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_symbols.gif) |<br>| Symbols are drawn at every restrained node. |  | |
 | --- |
 
-| This example shows a node which has been fully restrained in all of X, Y and Z, both in translation and rotation. <br>Labels have been turned on for this, and they show that this node is restrained via node set 1111. | ![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_restr.gif) |
+| This example shows a node which has been fully restrained in all of X, Y and Z, both in translation and rotation. <br>Labels have been turned on for this, and they show that this node is restrained via node set 1111. | ![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_restr.gif) |
 | --- | --- |
 
 | \*BOUNDARY\_PRESCRIBED\_MOTION |  |
 | --- | --- |
-| This is visualised as<br><ul> <li> <p align="left">An arrow in the relevant direction, coloured (X=red, Y=green, Z=blue). For rotational motion an arrow circling the relevant vector is used. </p> </li> </ul><ul> <li> <p align="left">A description at the arrow head, eg &quot; <strong>VEL_T_Z </strong>&quot; for Z translational velocity. </p> </li> </ul> <br>This example shows:<br><ul> <li>Translational Acceleration in Y </li> <li>Translational Velocity in X </li> <li>Rotational Displacement in Z </li> </ul> | ![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_prmot.gif) |
+| This is visualised as<br><ul> <li> <p align="left">An arrow in the relevant direction, coloured (X=red, Y=green, Z=blue). For rotational motion an arrow circling the relevant vector is used. </p> </li> </ul><ul> <li> <p align="left">A description at the arrow head, eg &quot; <strong>VEL_T_Z </strong>&quot; for Z translational velocity. </p> </li> </ul> <br>This example shows:<br><ul> <li>Translational Acceleration in Y </li> <li>Translational Velocity in X </li> <li>Rotational Displacement in Z </li> </ul> | ![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_prmot.gif) |
 
-| All other*BOUNDARY sub-keywords: <br>Are visualised only in terms of the components that they reference: sets, elements, nodes, etc. Turn on the relevant items in ENTity viewing to see these.<br> <br>Turning on the relevant \*BOUNDARY sub-keyword labels will annotate them correctly. | ![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_extra.gif) |
+| All other*BOUNDARY sub-keywords: <br>Are visualised only in terms of the components that they reference: sets, elements, nodes, etc. Turn on the relevant items in ENTity viewing to see these.<br> <br>Turning on the relevant \*BOUNDARY sub-keyword labels will annotate them correctly. | ![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_extra.gif) |
 | --- | --- |
 
 ####  Labelling of *BOUNDARY items within PRIMER.
@@ -36,7 +36,7 @@ For internal consistency, for items not already labelled in the input model, and
 
 Where LS\_DYNA offers optional labels, (e.g. \*BOUNDARY\_SPC\_ID versus \*BOUNDARY\_SPC), the labelling option is invoked in the keyword editor by selecting option "ID" (see below).
 
-![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_key.gif)
+![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_key.gif)
 
 PRIMER's new labels; where generated:
 
@@ -49,7 +49,7 @@ PRIMER's new labels; where generated:
 
 Primer can animate prescribed motion as defined by \*BOUNDARY\_PRESCRIBED\_MOTION and \*BOUNDARY\_PRESCRIBED\_FINAL\_GEOMETRY cards. Any number of the aforementioned cards may be selected for animation.
 
-![](../Storage/primer-22-1/primer_links/sect_5/boundary/boundary_bpma.gif)
+![](./Storage/primer-23/primer_links/sect_5/boundary/boundary_bpma.gif)
 
 The following \*BOUNDARY\_PRESCRIBED\_MOTION options are currently supported:
 

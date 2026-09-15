@@ -3,7 +3,7 @@
 | Model POST
 <br>PRIMER can link with the D3PLOT and T/HIS post processors via shared memory, making it possible to exchange commands and data between the programmes.<br>
 <br>This makes "Pre" functionality available in post-processors, for example editing the original keyword definitions; and "Post" functionality becomes available in PRIMER , for example extracting deformed coordinates.<br>
-<br>In the case of D3PLOT graphics can be synchronised between the two codes, so that dynamic viewing, blanking, colours, cut-sections, etc are updated simultaneously at both ends. | ![](../Storage/primer-22-1/primer_links/sect_3/images/post_1.png) |
+<br>In the case of D3PLOT graphics can be synchronised between the two codes, so that dynamic viewing, blanking, colours, cut-sections, etc are updated simultaneously at both ends. | ![](./Storage/primer-23/primer_links/sect_3/images/post_1.png) |
 | --- | --- |
 
 By default no link takes place, but it can be opened in any of the following ways:

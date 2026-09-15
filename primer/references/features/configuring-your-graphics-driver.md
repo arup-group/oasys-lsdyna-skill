@@ -47,7 +47,7 @@ All the above should "just work", but if it doesn't please contact Oasys Ltd Su
 
 Select Manage 3D settings from the tree on the left hand side. The example below is from a Quadro FX card on a Windows 7 machine, but others should be very similar.
 
-![](../Storage/primer-22-1/primer_links/sect_9/images/tune_10.png)
+![](./Storage/primer-23/primer_links/sect_9/images/tune_10.png)
 
 * You must then decide whether you want to configure the graphics driver for all applications on your machine or just for a limited range of executables. 
  
@@ -66,7 +66,7 @@ Either of these settings turns off attempts in the driver to cache coordinate da
  
 In this example on an old Windows XP machine it is Quadro4 980 XGL
 
-![](../Storage/primer-22-1/primer_links/sect_9/images/tune_11.png)
+![](./Storage/primer-23/primer_links/sect_9/images/tune_11.png)
 
 * Select Performance & Quality Settings from the left hand menu
 * Select Catia for the Active profile

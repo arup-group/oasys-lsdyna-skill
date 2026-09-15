@@ -2,7 +2,7 @@
 
 this panel allows the user to modify the material type of a frame component (part), or decide whether to split frame elements on an individual part basis.
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_06.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_06.gif)
 
 The material options are as follows:
 

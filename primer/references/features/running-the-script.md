@@ -6,7 +6,7 @@ Running the script is controlled by the buttons at the top of the debugger windo
 
 To start the script press the Run button. Execution of the script will start. If you have not defined any breakpoints then the script will run until it finishes (unless there are some script errors or [exceptions](https://help.oasys-software.com/smart/project-common-topics/exceptions)). If there is a breakpoint then the debugger will stop execution of the script when it reaches it. If the script is running and you want to pause execution of the script at any time you can press Interrupt.
 
-![](../Storage/primer-22-1/project-common-topics/jade/interrupted.png)
+![](./Storage/primer-23/project-common-topics/jade/interrupted.png)
 
 The line that the debugger has paused the script on is shown by a green triangle. In the above example it is paused at line 114. The middle panel on the left shows the [call stack](https://help.oasys-software.com/smart/project-common-topics/the-call-stack/a/callStack). See the [call stack section](https://help.oasys-software.com/smart/project-common-topics/the-call-stack/a/callStack) for more details.
 

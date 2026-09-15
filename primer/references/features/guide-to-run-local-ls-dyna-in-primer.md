@@ -1,6 +1,6 @@
 ﻿###  Guide to Run 'Local' Ansys LS-DYNA in PRIMER
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_15.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_15.png)
 
 1. Read a Ansys LS-DYNA ready Model into PRIMER.
 2. Press "Submit" on the "Model functions" panel.
@@ -15,7 +15,7 @@ For example, MPI type values are: **IMPI or MSMPI or HPMPI** .
     * For example, for Ansys LS-DYNA version 10.1, the Windows MPP executable name to work with Intel MPI is going to be this filename: 
  **ls-dyna\_mpp\_s\_R101\_winx64\_ifort160\_impi.exe**
 
-    ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_16.png)
+    ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_16.png)
 9. Select MPI Executable Path (needed for MPP or HYBRID run only)
     * Make sure that the MPI path confirms to the MPI type.
     * For example on Windows the path to MPI executable for Intel MPI (IMPI) could be something like this: 

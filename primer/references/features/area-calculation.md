@@ -4,11 +4,11 @@ Once the data has been read the area can be calculated using the 'Calculate Area
 
 When complete the area plot will be displayed on screen, at the Z=0 plane. The calculated area value is shown in the table:
 
-![](../Storage/primer-22-1/area-calculation/area-calculation-2024-04-09.png)
+![](./Storage/primer-23/area-calculation/area-calculation-2024-04-09.png)
 
 And is also echoed to the command line:
 
-![](../Storage/primer-22-1/area-calculation/area-calculation-2024-04-09-1.png)
+![](./Storage/primer-23/area-calculation/area-calculation-2024-04-09-1.png)
 
 The number in the centre is the actual low HIC area as calculated in model units.
 

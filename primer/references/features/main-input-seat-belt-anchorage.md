@@ -6,7 +6,7 @@ ECE-R14 is one of the tests that provide the assurance of sufficient strength re
 
 The following figure shows the "Main input" panel of the SBA tool:
 
-![](../Storage/primer-22-1/main-input-seat-belt-anchorage/main-input-seat-belt-anchorage-2025-05-07.png)
+![](./Storage/primer-23/main-input-seat-belt-anchorage/main-input-seat-belt-anchorage-2025-05-07.png)
 
 The following options are available on the main input panel:
 

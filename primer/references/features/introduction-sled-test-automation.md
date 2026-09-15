@@ -8,7 +8,7 @@ The tool creates a rigid plate on which vehicle will be mounted and set up the a
 
 The following figure shows the main input panel of the tool:
 
-![sled main panel](../Storage/primer-22-1/primer_links/sect_6/safety/sled/main.png)
+![sled main panel](./Storage/primer-23/primer_links/sect_6/safety/sled/main.png)
 
 The following options are available on the main input panel:
 

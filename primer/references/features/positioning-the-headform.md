@@ -4,6 +4,6 @@ The figure below shows the main headform-positioning panel. This has been design
 
 If multiple headform definitions exist in the model the definition to be positioned must first be selected.
 
-![](../Storage/primer-22-1/primer_links/sect_6/fmh/fmh1.JPG)
+![](./Storage/primer-23/primer_links/sect_6/fmh/fmh1.JPG)
 
 [Previous](fmh-manual-setup.md)  |  [Next](setting-up-targets.md)

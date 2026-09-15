@@ -2,7 +2,7 @@
 
 The call stack shows which functions have been called in the script to get to the current point. It is the middle left window in JaDe.
 
-![](../Storage/primer-22-1/project-common-topics/jade/call_stack.png)
+![](./Storage/primer-23/project-common-topics/jade/call_stack.png)
 
 The top line shows the function that the script is currently paused at. The other lines show the calling functions in order. The above example can be read as:
 

@@ -8,7 +8,7 @@ Solid, Thick Shell or Shell parts may be coated with shells or 2d segments.
 
 The free edges of Shell parts may be coated with beams, element\_plotel or 1d segments.
 
-| ![](../Storage/primer-22-1/coat-entity-coating-entities-with-shells-or-segments-2022-09-28.png) | ![](../Storage/primer-22-1/coat-entity-coating-entities-with-shells-or-segments-2022-09-28-1.png) |
+| ![](./Storage/primer-23/coat-entity-coating-entities-with-shells-or-segments-2022-09-28.png) | ![](./Storage/primer-23/coat-entity-coating-entities-with-shells-or-segments-2022-09-28-1.png) |
 | --- | --- |
 
 [Previous](sub-model-creation.md)  |  [Next](coat-part.md)

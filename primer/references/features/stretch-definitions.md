@@ -1,6 +1,6 @@
 ﻿####  STRETCH Definitions
 
-![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_11.png)These allow you to define parts of the structure which are not part of the dummy, but which will be "stretched" by dummy assembly movement. Typical examples might be fabric spanning between two dummy assemblies, but not part of either, which needs to have its shape changed when the related assemblies move.
+![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_11.png)These allow you to define parts of the structure which are not part of the dummy, but which will be "stretched" by dummy assembly movement. Typical examples might be fabric spanning between two dummy assemblies, but not part of either, which needs to have its shape changed when the related assemblies move.
 
 At least one node must be defined at each "end" of a stretch, and at least one end needs to be on a dummy assembly. You also define parts, part sets or node sets of structure that will be "stretched".
 

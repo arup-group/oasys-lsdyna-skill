@@ -8,4 +8,4 @@ Target component file . On completion of build the connection FE will be created
 
 If you are using this method to make connections each time a model is built, you should **not** have the same connections stored as post-end data, although other connections may be.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_200a.gif)[Previous](single-build-from-command-line.md)  |  [Next](reading-files-using-a-model-database.md)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_200a.gif)[Previous](single-build-from-command-line.md)  |  [Next](reading-files-using-a-model-database.md)

@@ -1,6 +1,6 @@
 ﻿###  Correcting Crossed Edges
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/penfix_4.gif)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/penfix_4.gif)
 
 In the penetration fixing panel, select the CROSSED option. The panel will display all pre-selected crossed panels present in pairs as shown. Select the pair of crossed panels you wish to correct. PRIMER will highlight the 2 panels and show where the crossed edges exist and the fixing options will ungrey.
 
@@ -26,9 +26,9 @@ For some cases the Pick & propagate method may be suitable. This will apply if t
 
 Pick & propagate will detect the closed path of crossed edges and make the nodes selection.
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/penfix_5.gif)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/penfix_5.gif)
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/penfix_6.gif)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/penfix_6.gif)
 
 For closed loop cases a fully automatic fixing mode is available. Pick, propagate & fix will make the selection (as Pick & propagate above) and apply an iterative fixing function which attacks the wave front of the crossed edge until no nodes remain to move. Pressing this button disables all other fixing functionality and those buttons will remain greyed out until this one is unpressed.
 
@@ -42,12 +42,12 @@ It is available on the contact penetration check panel, if crossed edges are fou
 
 For each crossed pair of shells, the one with the lowest part label or the one with the lowest shell label is moved to a new part with same section. That part is added to the exempt set.
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fix_pen1.PNG)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/fix_pen1.PNG)
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fix_pen2.PNG)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/fix_pen2.PNG)
 
 The blue part is exempt from contact so the crossed edges disappear.
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fix_pen3.PNG)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/fix_pen3.PNG)
 
 [Previous](penetration-fixing-panel.md)  |  [Next](correcting-initial-penetrations.md)

@@ -1,6 +1,6 @@
 ﻿####  Force Del Using Forcible Deletion
 
-Deleting items whether they are "locked" or not. ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_2_1f.png) 
+Deleting items whether they are "locked" or not. ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_2_1f.png) 
 At a first glance forcible deletion, which deletes items even when they are "locked" by a reference from elsewhere, appears to be a simple solution to the problem of removing things which refuse to be deleted. However before using it you should understand what it does and how this can affect your model.
  
 If you select Force del rather than the normal Delete sel the following happens:

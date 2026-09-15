@@ -1,6 +1,6 @@
 ﻿#####  Defining the Initial Path
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_2f.png)This figure shows a typical belt path round a dummy as initially defined. It has three segments:<br>
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_2f.png)This figure shows a typical belt path round a dummy as initially defined. It has three segments:<br>
 <ol style="font-size: 14.6667px;"> <li>Retractor to upper right shoulder slipring.</li> <li>Upper right shoulder to left pelvis slipring.</li> <li>Left pelvis slipring to anchor point behind right pelvis.</li>
 </ol>
 <br>Note that:<br>

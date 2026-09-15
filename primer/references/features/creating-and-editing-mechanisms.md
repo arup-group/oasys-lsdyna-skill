@@ -8,7 +8,7 @@ Mechanism definitions contain [Assemblies](assembly-creation-and-editing.md#edit
 
 [Points](nan)are optional, and any number may be defined. They are coordinates in space, "tied to" and a property of their parent assembly, that may have restraints in any combination degrees of freedom. If a local coordinate system is defined for a point then any restraints act in that system. Points may also be used to drive movement.
 
-![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_2.png)
+![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_2.png)
 
 [Children](child-mechanisms.md#children)are optional. They may be other assemblies or [Dummy](dummies-positioning-occupants.md#dummies)definitions, and their motion is driven by their parent mechanism. Motion is transmitted in selected degrees of freedom from parent to child.
 

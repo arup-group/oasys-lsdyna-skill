@@ -1,6 +1,6 @@
 ﻿####  Creating Spotwelds
 
-![](../Storage/primer-22-1/creating-spotwelds/creating-spotwelds-2024-10-18.png)
+![](./Storage/primer-23/creating-spotwelds/creating-spotwelds-2024-10-18.png)
 
 Before any connections can be created the user should specify
 
@@ -29,28 +29,28 @@ PRIMER v15 added the ability to give different PIDs for beams/solids between eac
 
 First, the type of spotweld connection must be defined. Spotwelds can either be beams or solid elements.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_type.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/weld_type.gif)
 
 To create spotweld connections, PRIMER offers the following options. Note rivet creation is included here.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/elemtype_popup.png)
+![](./Storage/primer-23/primer_links/sect_6/connection/elemtype_popup.png)
 
-| The Beam and Hexa options allow you to create mesh independent spotwelds using a single beam, a single solid or multiple solids between panels. The image on the right shows examples of Beam, Hexa, 4 Hexa and 8 Hexa welds. | ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_types.png) |
+| The Beam and Hexa options allow you to create mesh independent spotwelds using a single beam, a single solid or multiple solids between panels. The image on the right shows examples of Beam, Hexa, 4 Hexa and 8 Hexa welds. | ![](./Storage/primer-23/primer_links/sect_6/connection/weld_types.png) |
 | --- | --- |
 
 If one of the solid Hexa element options is selected, the spotweld nugget diameter can be modified.
 
 For beam type, the value from the \*SECTION is displayed but cannot be edited.
 
-![](../Storage/primer-22-1/creating-spotwelds/creating-spotwelds-2024-10-18-2.png)
+![](./Storage/primer-23/creating-spotwelds/creating-spotwelds-2024-10-18-2.png)
 
-| The MIG (beam) option allows you to create a beam to represent a portion of a MIG weld. Typically many of these connections would represent a MIG weld seam. The beam is meshed in (shares a node with the shell) at one end (the blue part in the figure).The other end of the beam is projected onto the other panel and is mesh-independant (like the normal beam weld).<br> <br>Also see [converting MIG weld to beamless](using-the-assembly-method-to-specify-panels-the-connection-joins-together.md#beamless_mig). | ![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_weld.png) |
+| The MIG (beam) option allows you to create a beam to represent a portion of a MIG weld. Typically many of these connections would represent a MIG weld seam. The beam is meshed in (shares a node with the shell) at one end (the blue part in the figure).The other end of the beam is projected onto the other panel and is mesh-independant (like the normal beam weld).<br> <br>Also see [converting MIG weld to beamless](using-the-assembly-method-to-specify-panels-the-connection-joins-together.md#beamless_mig). | ![](./Storage/primer-23/primer_links/sect_6/connection/mig_weld.png) |
 | --- | --- |
 
 | Choosing a part for the spotweld elements  <br>PRIMER needs to know which part to put the spotweld elements into. If there is only one part in the model that is suitable (i.e. for beams if the part uses material \*MAT\_SPOTWELD and section type \*SECTION\_BEAM , or for solids if the part uses material \*MAT\_SPOTWELD ) then PRIMER will automatically select it. Otherwise you will have to select it. |
 | --- |
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_2a.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/weld_2a.gif)
 
 To select a part type in the part number, or you can use the standard popup functions (right click) to select or create the part. Generally, the part **must** use material type \*MAT\_SPOTWELD (material 100). It is possible to specify other valid material types by setting the following preference:
 
@@ -62,7 +62,7 @@ When using MAT\_100, if the spotwelds are defined as beam element, the part **mu
 
 Once the part has been selected or created the part number will be displayed in the box:
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_2b.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/weld_2b.gif)
 
 Note that when creating spotwelds, one part is used for all beams/solids created. After the connection has been created, you can modify the part to be different between layers on the [connections table](connection-table.md). So, for example for a 3T weld, the beam/solids between layer 1 and layer 2 can reference a different part to the solids between layer 2 and layer 3.
 
@@ -72,7 +72,7 @@ By default PRIMER uses a single part for all of the beams/solids created for a s
 
 In version 15 PRIMER added the ability to use a PID rule when creating the spotweld to set the PID for each layer of the weld. This is similar to the [connection rules](creating-spotwelds.md#spotweld_remeshing_connection_rule)used in [spotweld remeshing](creating-spotwelds.md#spotweld_remeshing). As well as specifying a default Part ID to use for the spotweld you can also specify a PID rule to use. In the image below the PID rule example\_fepid.js has been used.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/spotwelds_create_pid_rule.png)
+![](./Storage/primer-23/primer_links/sect_6/connection/spotwelds_create_pid_rule.png)
 
 A PID rule is a special JavaScript which PRIMER runs for each pair of layers when creating the spotweld. For example if a spotweld connects two panels together the rule will be run once, if it connects three panels together the rule will be run twice.
 
@@ -151,61 +151,61 @@ Once the PID rule is run and PIDs are assigned for the different layers they are
  
 ##### Using coordinates
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_4.gif) | Type the X, Y, Z coordinates into the box and press the APPLY button. The spotweld will be created if it is possible. If the weld cannot be made an error message in the dialogue box will give the reason why. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_4.gif) | Type the X, Y, Z coordinates into the box and press the APPLY button. The spotweld will be created if it is possible. If the weld cannot be made an error message in the dialogue box will give the reason why. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . |
 | --- | --- |
 
 ##### Using a screen point
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_101.gif) | Using the cursor, select a point on the screen at which you wish the spotweld to be created. The spotweld will be automatically created at the point selected. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_101.gif) | Using the cursor, select a point on the screen at which you wish the spotweld to be created. The spotweld will be automatically created at the point selected. |
 | --- | --- |
 
 #####  Using a connection
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_connect1.gif) | If quick create is turned on, you can just pick an existing connection from the screen. The spotweld will be created if it is possible. If the weld cannot be made an error message in the dialogue box will give the reason why. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_connect1.gif) | If quick create is turned on, you can just pick an existing connection from the screen. The spotweld will be created if it is possible. If the weld cannot be made an error message in the dialogue box will give the reason why. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . |
 | --- | --- |
 
 If a spotweld or bolt is already defined for the selected connection, you can substitute this existing element with the new spotweld by selecting the Delete old connection option
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_connect2.gif) | If quick create is turned off, you can type the connection number into the box or use the normal popup functions to select a connection. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_connect2.gif) | If quick create is turned off, you can type the connection number into the box or use the normal popup functions to select a connection. |
 | --- | --- |
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_connect3.gif) | Once the connection has been selected the spotweld can be created by pressing the APPLY button. You can undo the spotweld if it is not what you want by pressing UNDO CREATE. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_connect3.gif) | Once the connection has been selected the spotweld can be created by pressing the APPLY button. You can undo the spotweld if it is not what you want by pressing UNDO CREATE. |
 | --- | --- |
 
 #####  Using a node
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_5.gif) | If quick create is turned on you can just pick a node from the screen. The spotweld will be created if it is possible. If the weld cannot be made an error message in the dialogue box will give the reason why. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . If quick create is turned off you can type the node number into the box or use the normal popup functions to create or select a node. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_5.gif) | If quick create is turned on you can just pick a node from the screen. The spotweld will be created if it is possible. If the weld cannot be made an error message in the dialogue box will give the reason why. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . If quick create is turned off you can type the node number into the box or use the normal popup functions to create or select a node. |
 | --- | --- |
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_9.gif) | Once the node has been selected or created the spotweld can be created by pressing the APPLY button. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_9.gif) | Once the node has been selected or created the spotweld can be created by pressing the APPLY button. You can undo the spotweld if it is not what you want by pressing UNDO CREATE . |
 | --- | --- |
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_10.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/weld_10.gif)
 
 #####  Using a node set
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld11a.gif) | The "Replace \*Constrained" option is designed to replace with a spotweld every \*CONSTRAINED\_SPOTWELD or \*CONSTRAINED\_GENERALIZED\_WELD which has at least one node in the selected set. The spotweld will be created between panels selected for welding. NOTE - this may not be all the panels which the old weld joined if the original shell selection was incomplete. In this case the connection table will be invoked for these welds.<br> <br>The old option "weld every node in set" is still available. In this mode PRIMER will attempt to create a spotweld at every node in the set and dump to a node set any nodes where the weld could not be made. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld11a.gif) | The "Replace \*Constrained" option is designed to replace with a spotweld every \*CONSTRAINED\_SPOTWELD or \*CONSTRAINED\_GENERALIZED\_WELD which has at least one node in the selected set. The spotweld will be created between panels selected for welding. NOTE - this may not be all the panels which the old weld joined if the original shell selection was incomplete. In this case the connection table will be invoked for these welds.<br> <br>The old option "weld every node in set" is still available. In this mode PRIMER will attempt to create a spotweld at every node in the set and dump to a node set any nodes where the weld could not be made. |
 | --- | --- |
 
 #####  Using a line of welds
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_102.gif) | Using the cursor, select 2 or more points in order to create a line along which you wish to create spotwelds. For the MIG type spotwelds, this mode works in a different way. Here you select 2 nodes along a free edge/feature line. PRIMER will determine all the nodes along the free edge/feature line between the two nodes chosen. Clicking on Apply after this will create MIG spotwelds at all the nodes along the free edge/feature line between the 2 selected nodes. If you choose the same node twice for this operation, PRIMER will create MIG weld beams for every node around the free edge. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_102.gif) | Using the cursor, select 2 or more points in order to create a line along which you wish to create spotwelds. For the MIG type spotwelds, this mode works in a different way. Here you select 2 nodes along a free edge/feature line. PRIMER will determine all the nodes along the free edge/feature line between the two nodes chosen. Clicking on Apply after this will create MIG spotwelds at all the nodes along the free edge/feature line between the 2 selected nodes. If you choose the same node twice for this operation, PRIMER will create MIG weld beams for every node around the free edge. |
 | --- | --- |
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_103.gif) | By either clicking on the tab or using the available popup function, specify whether the quantity of spotwelds you require is determined by Number or by Pitch . If using number, type the number of spotwelds required along the line in the box. If pitch is required, type the desired distance between spotwelds in the box. Once completed, press the Apply button to create the spotwelds. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_103.gif) | By either clicking on the tab or using the available popup function, specify whether the quantity of spotwelds you require is determined by Number or by Pitch . If using number, type the number of spotwelds required along the line in the box. If pitch is required, type the desired distance between spotwelds in the box. Once completed, press the Apply button to create the spotwelds. |
 | --- | --- |
 
 #####  Using geometry points
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_105.gif) | Geometry points can be selected from any model in PRIMER . The coordinates of these points are used as the coordinates of the connections to be created. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/weld_105.gif) | Geometry points can be selected from any model in PRIMER . The coordinates of these points are used as the coordinates of the connections to be created. |
 | --- | --- |
 
-| Auto Welding  <br>![](../Storage/primer-22-1/primer_links/sect_6/connection/weld_104.gif) |
+| Auto Welding  <br>![](./Storage/primer-23/primer_links/sect_6/connection/weld_104.gif) |
 | --- |
 
 PRIMER has the ability to automatically weld panels together with the only input being the shells to weld and a few user defined parameters, for example:
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/autoweld08.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/autoweld08.gif)
 
 The selected shells are searched through, and any shells that are close together are flagged for the 2nd stage of the auto welding process. The second stage takes these shells and highlights any model free edges that belong to the shells - these are called **free edge runs** . Finally, each of these free edge runs are split into sub sections (at feature edges defined by a user defined angle **"sub break angle"** ) and spotwelded at a user defined pitch and distance from the edge. The weld run is centred so there is an equal amount of space at the beginning and end of the weld.
 
@@ -223,25 +223,25 @@ The user defined parameters are as follows:
 
 A master part or a master part set can be used to specify which panel(s) are used to determine the free edges. If specified, only free edges on the master part(s) are used to construct spotwelds. Without a master part/part set selected, all shells selected for connection are considered when determining free edges.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/autoweld09.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/autoweld09.gif)
 
 The following shows an example of sketching the positions, where the weld runs are shown as green lines (start position), red lines (end position) and black lines (min run lengths). Each possible position on each weld run is sketched as a square. Explanations of the parameters are also shown:
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/autoweld05.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/autoweld05.gif)
 
 Sketch weld positions will sketch all the potential weld points PRIMER has calculated to attempt to weld. A green line marks the start of a run, and a red marks the end.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/autoweld06.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/autoweld06.gif)
 
 The following shows an example of the automatic welding, the red dots are the successful 2-panel welds, and the green dots are the 3-panel welds. Even though there were weld runs (and therefore weld points) that were next to each other, the auto weld routine checks for proximity and will not weld any points that are too close to each other.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/autoweld07.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/autoweld07.gif)
 
 The next image shows the result of changing the minimum sub length to create welds on the two short sections at either edge of the magenta panel. On the first image, the sub length isn't enough to allow the sections to be welded, on the second image, the sub length has been reduced so the auto spotwelder allows these welds:
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/autoweld03.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/autoweld03.gif)
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/autoweld04.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/autoweld04.gif)
 
 Note: There are 2 oa\_pref options to control how tolerant the autoweld feature is when checking close welds. They are factors on the spotweld pitch and are used to calculate the distance to check for close welds on nearby seams.
 
@@ -251,15 +251,15 @@ e.g. distance to check = Pitch \* autoweld\_same\_seam\_proximity
 
 #####  Spotweld remeshing
 
-| Spotweld remeshing is used to remesh the panels that are welded so the spotweld is directly meshed into them. For example the following image shows a normal 4 solid nugget spotweld which is attached using a tied contact. | ![](../Storage/primer-22-1/primer_links/sect_6/connection/spotweld_remesh4.png) |
+| Spotweld remeshing is used to remesh the panels that are welded so the spotweld is directly meshed into them. For example the following image shows a normal 4 solid nugget spotweld which is attached using a tied contact. | ![](./Storage/primer-23/primer_links/sect_6/connection/spotweld_remesh4.png) |
 | --- | --- |
 
-| The image on the right shows the same spotweld connection but using the spotweld remeshing, creating a ring of elements around the weld to represent the heat affected zone. These elements are moved to a different part so the material properties can be different. | ![](../Storage/primer-22-1/primer_links/sect_6/connection/spotweld_remesh5.png) |
+| The image on the right shows the same spotweld connection but using the spotweld remeshing, creating a ring of elements around the weld to represent the heat affected zone. These elements are moved to a different part so the material properties can be different. | ![](./Storage/primer-23/primer_links/sect_6/connection/spotweld_remesh5.png) |
 | --- | --- |
 
 When creating spotwelds the remeshing is controlled in the Spotweld remeshing options panel.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/spotweld_remesh1.png)
+![](./Storage/primer-23/primer_links/sect_6/connection/spotweld_remesh1.png)
 
 PRIMER needs to know how much of the panel to remesh when creating the spotweld. The Diameter to remesh setting is used to control this. If set to zero then PRIMER will automatically choose which elements to remesh, otherwise give a diameter and PRIMER will select any elements that have a node inside that diameter to remesh. The default diameter (if setting is zero) is:
 
@@ -270,7 +270,7 @@ If the number of rings is zero then this is then (3 x spotweld diameter)
 The Number of rings setting controls how many rings of elements will be created around the spotweld to represent the heat affected zone. If set to zero no rings will be created. A maximum of 5 rings is allowed. In the image above no rings have been selected so the data for the 5 rings is greyed out. In the image below one ring has been selected so data can be given for that ring. 
 The Number of elem / ring setting can only be changed for beam spotwelds. When remeshing around beam spotwelds PRIMER will provide options to create 6, 8, 10, 12, 14, or 16 elements per ring. In the image above it is set to 6 so a hexagonal region will be created. In the image below we are creating a solid spotweld so the option is not available to change but it will indicate how many elements will be used per ring. In this case we are making a 4 solid nugget so the value is 8.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/spotweld_remesh2.png)
+![](./Storage/primer-23/primer_links/sect_6/connection/spotweld_remesh2.png)
 
 When remeshing the panel around the spotweld for solid spotwelds PRIMER creates shell elements 'on' the spotweld. For example for a single solid spotweld PRIMER will create a shell on the spotweld for each layer. For a 4 solid nugget PRIMER will create 4 shells for each layer. The part that these are created in is given by Weld PID . If it is zero then PRIMER will use the part ID from the panel being welded.
 
@@ -282,7 +282,7 @@ The method decribed above of specifying the number of rings to create and a PID 
 
 This can be done in PRIMER by using a connection rule when remeshing the spotweld. Instead of specifying a PID to use for each ring you instead specify a connection rule to use. In the image below the connection rule example\_by\_pid.js has been used.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/spotweld_remesh3.png)
+![](./Storage/primer-23/primer_links/sect_6/connection/spotweld_remesh3.png)
 
 A connection rule is a special JavaScript which PRIMER runs for each ring and each layer when remeshing the spotweld. For example if a spotweld connects 2 panels together and three rings have been defined the rule will be run 8 times. 
 For each layer (2 layers) the connection is run for each ring ( 3 rings) and also the central weld portion. So it is run 2 x ( 3 + 1) times.

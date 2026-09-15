@@ -3,7 +3,7 @@
 | The ZTF and group files are used by D3PLOT in order to visualise during post-processing information that is not available in the normal Ansys LS-DYNA results files. Only PRIMER can write these files.
 <br>The ZTF file contains information about nodal restraints, spotwelds, nodes on contacts, parts, sections, etc; which enables D3PLOT to draw and process extra information. This information is not available in the ptf, ctf or xtf files.<br>
 <br>Specific ZTF modules may be selected/deselected by clicking the ZTF optionsbutton.<br>
-<br>The binary Group file (.bin) is now superseded in D3PLOT, although it can still read it. Its output is preserved here for compatibility with older versions. | ![](../Storage/primer-22-1/primer_links/sect_3/images/ztf.png) |
+<br>The binary Group file (.bin) is now superseded in D3PLOT, although it can still read it. Its output is preserved here for compatibility with older versions. | ![](./Storage/primer-23/primer_links/sect_3/images/ztf.png) |
 | --- | --- |
 
 **Writing a ZTF file**

@@ -1,10 +1,10 @@
 ﻿###  Save P Saving the Current Attributes as a "Property"
 
-| Initially PRIMER has no properties saved, so the saving button will show Save P | ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_6_1a.png) |
+| Initially PRIMER has no properties saved, so the saving button will show Save P | ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_6_1a.png) |
 | --- | --- |
-| Once you click on it to save a property it will be updated to be SP i/j where<br> <br><br>| i | is the current property number |<br>| --- | --- |<br>| j | is the current total number of saved properties |<br><br> <br>You can still click on the renamed SP i/j to save further properties. | ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_6_1b.png) |
+| Once you click on it to save a property it will be updated to be SP i/j where<br> <br><br>| i | is the current property number |<br>| --- | --- |<br>| j | is the current total number of saved properties |<br><br> <br>You can still click on the renamed SP i/j to save further properties. | ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_6_1b.png) |
 
-Cycling through saved properties using ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_6_1c.png)and ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_6_1d.png)
+Cycling through saved properties using ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_6_1c.png)and ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_6_1d.png)
  
 Once you have saved one or more properties you can use the &lt;= and =&gt; buttons to cycle between them. Cycling left ( &lt;= ) reduces the property number, and right ( =&gt; ) increases it. It is possible to cycle backwards (left) to current property 0, which is explained below.
 

@@ -13,14 +13,14 @@ These can be edited through their own specific editing panel (see below).
 * [Check](define-transform.md#check)
 * [Renumber](define-transform.md#renumber)
 
-| This figure shows the main menufor the editing of friction definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_friction_1.gif) |
+| This figure shows the main menufor the editing of friction definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_friction_1.gif) |
 | --- | --- |
 
 ####  CREATE Making a new friction definition
  
 This shows the create/edit panel for friction. New friction data lines can be added by clicking on the Add a part pair friction data line button.
  
-![](../Storage/primer-22-1/primer_links/sect_5/define/fig_friction_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/define/fig_friction_2.gif)
 
 Export to CSV lets you export part pair friction details to a CSV file which can be used later to create multiple part pair friction data lines in the card using Import from CSV .
 

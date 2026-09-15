@@ -16,14 +16,14 @@ These can be edited through their own specific editing panel (see below).
 * [Check](define-transform.md#check)
 * [Renumber](define-transform.md#renumber)
 
-| This figure shows the main menufor the editing of hex spotweld assembly definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_spotweld_hex_1.gif) |
+| This figure shows the main menufor the editing of hex spotweld assembly definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_spotweld_hex_1.gif) |
 | --- | --- |
 
 ####  CREATE Making a new hex spotweld assembly definition
  
 This shows the create/edit panel for hex spotweld assemblies. The second row of the card will change depending on the value chosen for 'N'. 'N' can be set to 4, 8 or 16 from a drop down list for that button.
  
-![](../Storage/primer-22-1/primer_links/sect_5/define/fig_spotweld_hex_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/define/fig_spotweld_hex_2.gif)
 
 The Select SOLIDs button can be used to select multiple solids, which will then be added to the list in ascending order.
 

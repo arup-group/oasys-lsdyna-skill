@@ -1,7 +1,7 @@
 ﻿###  Switching between 3D and 2D Modes
 
 You can switch explicitly between 2D and 3D modes using the 3D Graphics and 2D Graphics buttons.
- ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_6_1.gif) 
+ ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_6_1.gif) 
 Some other graphics options also cause a switch.
 
 On a 3D graphics driver the default mode is 3D, but certain graphics operations will switch the mode back to 2D. These are:

@@ -6,6 +6,6 @@ Using the above button will only assign the macro to the shortcut key for this s
 
 The image below shows the preferences editor with the primer\*F1\_key open.
 
-![](../Storage/primer-22-1/primer_links/sect_6/macro/fkeys.gif)
+![](./Storage/primer-23/primer_links/sect_6/macro/fkeys.gif)
 
 [Previous](list-of-macro-commands.md)  |  [Next](assigning-macros-to-buttons.md)

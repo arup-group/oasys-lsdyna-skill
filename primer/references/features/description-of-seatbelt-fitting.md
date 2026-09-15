@@ -14,9 +14,9 @@ This figure shows a typical seatbelt definition using a traditional mixture of 1
 * At the belt end a direct connection to structure via a NRB if deformable, or extra nodes on rigid part if rigid.
 
 PRIMER would permit the whole belt to be made of 1D SEATBELT elements, but this would only be suitable for rigid dummies as these elements only give a "line" (zero width) contact with the dummy structure elements.
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_0a.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_0a.png)
 
-| All stretches of SHELL elements are terminated with nodal rigid bodies or, where a shell connects directly to a rigid part, by making the shell end nodes "extra" on that rigid part.<br> <br>This is to achieve SHELL to SEATBELT connections, as shown in this figure, and also to stabilise the end element if it connected directly to the structure.<br> <br>This leads to the end shell being artificially stiff in a transverse direction, but this is acceptable in this context. | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_0b.gif) |
+| All stretches of SHELL elements are terminated with nodal rigid bodies or, where a shell connects directly to a rigid part, by making the shell end nodes "extra" on that rigid part.<br> <br>This is to achieve SHELL to SEATBELT connections, as shown in this figure, and also to stabilise the end element if it connected directly to the structure.<br> <br>This leads to the end shell being artificially stiff in a transverse direction, but this is acceptable in this context. | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_0b.gif) |
 | --- | --- |
 
 [Previous](manual-versus-automatic-fitting.md)  |  [Next](four-noded-2d-seatbelt-shell-elements.md)

@@ -4,7 +4,7 @@ The Shoulder slipring panel is the first tab on the Explicit slipring panel. Thi
 
 The panel and an explanation of the required inputs are shown below:
 
-![](../Storage/primer-22-1/shoulder_panel_new_UI.png) ![](../Storage/primer-22-1/explicit_slipring_panel_fields.PNG)
+![](./Storage/primer-23/shoulder_panel_new_UI.png) ![](./Storage/primer-23/explicit_slipring_panel_fields.PNG)
 
 **Rotating Part set**must include all parts forming the shoulder slipring that are expected to be pulled during the fitting process.
 
@@ -20,7 +20,7 @@ The **Rotation axis**can be defined either as an explicit vector or by selectin
 
 This option allows effortless adjustment of the initial belt path within the slot of the slipring.
 
-![](../Storage/primer-22-1/shoulder_dring_adjusted.png)
+![](./Storage/primer-23/shoulder_dring_adjusted.png)
 
 The following describes the steps required to apply this:
 
@@ -37,7 +37,7 @@ If the **Rotate slip. during fitting** option is on (described below), the locat
 
 **2. Automatically pull the shoulder slipring into its correct position during the fitting process:**
 
-**![](../Storage/primer-22-1/explicit_slipring_pull.PNG)**
+**![](./Storage/primer-23/explicit_slipring_pull.PNG)**
 
 The following describes the steps required to apply this:
 
@@ -65,7 +65,7 @@ If the **Rotate slip. during fitting** option is on, the location of the two ini
 
 The explicit slipring panel can be used to create \*DATABASE\_CROSS\_SECTIONs on both sides of the explicit shoulder slipring using the **Create X-Section** tick box.
 
-![](../Storage/primer-22-1/shoulder-slipring-panel/shoulder_panel_new_UI_xsect.png)
+![](./Storage/primer-23/shoulder-slipring-panel/shoulder_panel_new_UI_xsect.png)
 
 The following describes the steps required to apply this:
 
@@ -76,5 +76,5 @@ Ticking the **C****reate X-Section** tick box will create two \*DATABASE\_CROS
 
 The image below shows the result of using the **C** **reate X-Section** in a meshed belt where the tool created two \*DATABASE\_CROSS\_SECTION cards with a distance of 200 on either side of the shoulder slipring:
 
-![](../Storage/primer-22-1/shoulder-slipring-panel/Picture2.png)
+![](./Storage/primer-23/shoulder-slipring-panel/Picture2.png)
 [Previous](explicit-slipring-panel.md)  |  [Next](pelvis-slipring-panel.md)

@@ -4,7 +4,7 @@ Once you have selected all the files you wish to read in, press the APPLY button
 
 You can skip this panel by pre-setting the build mode to SIMPLE BUILD or RIGOROUS BUILD by setting the radio button option.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_7a.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_7a.gif)
 
 PRIMER will now take you through a number of stages to help ensure the model is built correctly.
 
@@ -18,7 +18,7 @@ The second pass involves checking the (perhaps re-labelled) items of the include
 
 If you wish to be warned of any renumbering before it occurs, press the [WARN BEFORE RENUMBERING](applying-the-build.md#warnbeforerenum) button. If you wish PRIMER to renumber without notifying, press the [DO NOT WARN](applying-the-build.md#warnbeforerenum) tab. Then dialogue box will only be invoked in the event of a failure to renumber.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_7.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_7.gif)
 
 #####  Renumbering into Range
 
@@ -26,7 +26,7 @@ If you select the option [WARN BEFORE RENUMBERING](applying-the-build.md#warnbef
 
 If renumbering is achievable the options are APPLY RENUMBERING , SKIP\_MODEL or ABORT . Otherwise, they are: CONTINUE , SKIP\_MODEL or ABORT .
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_10.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_10.gif)
 
 If you select CONTINUE the operation will proceed as usual. If you select SKIP\_MODEL , the file that required renumbering will be skipped and PRIMER will continue to read all further files. If you select ABORT , PRIMER will stop the operation entirely.
 
@@ -36,7 +36,7 @@ Similarly, If renumbering is required because of a clash of labels, PRIMER will 
 
 If you select  ****  FIX\_CLASH PRIMER will fix the numbering problem as detailed in the pop-up window. If you select SKIP\_MODEL , the file that required renumbering will be skipped and PRIMER will continue to read all further files. If you select ABORT , PRIMER will stop the operation entirely.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_9.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_9.gif)
 
 Once the model build has been completed, PRIMER will search the model for references to missing items. These will arise typically, where a connection file spans several components, but a choice was made to build the model with a subset of those components. For example, a connection file containing a contact which includes a vehicle dummy, an airbag and a steering wheel, but with only the dummy and the steering wheel read in as components. The airbag parts are now latent items in the connection file and must be removed before the job can run in Ansys LS-Dyna.
 
@@ -46,11 +46,11 @@ If you select CONTINUE, the missing items will remain in the model and it will r
 
 If you select [FIX LATENT](applying-the-build.md#applyfix) PRIMER will run an auto-fix procedure to delete the offending items.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_11.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_11.gif)
 
 As the option 'move\_include\_to\_master' is set to ASK, you will get a 2nd information panel.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_12.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_12.gif)
 
 **** The deletion of latent items has modified the extra data file. If the option move modified include to master is taken, all the items of the file are moved up into the master file, and in the master file the keyout of the include file is itself suppressed. Thus the keyout of nthe master file alone is sufficient to represent the load case.
 

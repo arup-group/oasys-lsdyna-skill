@@ -9,6 +9,6 @@ To address these issues, the Workflows feature provides tools customised for spe
 
 The Workflows framework provides a simple structure to transfer data from PRIMER to the post-processing software. Browse the selection of already-available [Workflow Tools](https://help.oasys-software.com/smart/project-workflows/workflow-tools), or read more about the [Workflows menu in PRIMER](workflows-menu-in-primer.md).
 
-![](../Storage/primer-22-1/workflows-2023-02-10-1.png)
+![](./Storage/primer-23/workflows-2023-02-10-1.png)
 
 [Previous](multiple-tabs.md)  |  [Next](workflows-updates.md)

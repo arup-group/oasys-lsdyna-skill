@@ -1,6 +1,6 @@
 ﻿###  Recording a Macro
  
-![](../Storage/primer-22-1/primer_links/sect_6/macro/record.gif)To record a macro press the Record button at the top of the panel. Give a filename for the macro in the textbox or press the folder icon to select a new file location. Macro files in PRIMER should have the extension prm (**PR**imer **M**acro).
+![](./Storage/primer-23/primer_links/sect_6/macro/record.gif)To record a macro press the Record button at the top of the panel. Give a filename for the macro in the textbox or press the folder icon to select a new file location. Macro files in PRIMER should have the extension prm (**PR**imer **M**acro).
  
 Once a filename has been given the Start recording button will become active.
  

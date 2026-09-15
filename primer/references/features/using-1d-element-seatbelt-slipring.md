@@ -6,7 +6,7 @@ Since the elements were one dimensional they could only transmit axial force and
 
 Nevertheless 1d belt elements are still sometimes used, typically at the end of 2d shell element sections:
 
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_3.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_3.png)
 
 Here is a typical detail of a shell element belt (red) passing over the shoulder of a dummy and making the transition to 1d belt elements (black) via a nodal rigid body (blue).
 
@@ -15,9 +15,9 @@ Such a detail does a good job of transmitting force in the belt through the slip
 For this reason contemporary practice tends to relegate this sort of modelling method to static pull-out tests and other situations where details of contact between belt, dummy and structure are not significant.
 
 PRIMER still support this modelling method: you can choose to model regions of the belt using 1d elements in the Mesh stage; the appropriate sliprings and nodal rigid bodies will be used.
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_2.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_2.png)
 
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_4.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_4.png)
 
 **Orientation of 1D sliprings** - doesn't matter!
  

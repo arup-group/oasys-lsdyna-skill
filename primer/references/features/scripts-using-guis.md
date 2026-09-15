@@ -53,7 +53,7 @@ If the script does not call Exit then the script will continue to run in the bac
 
 ## Why the change has been made in version 21
 
-![](../Storage/primer-22-1/primer_links/sect_10/event_loops_20.png)
+![](./Storage/primer-23/primer_links/sect_10/event_loops_20.png)
 To explain why the change has been made, we need to look at how multiple scripts are run concurrently in PRIMER.
 JavaScript is used extensively by our clients to customise PRIMER and create their own workflows. It is also used by us to develop core tools/functionality in PRIMER.
 
@@ -71,7 +71,7 @@ The main "event loop" processes everything.
 For example, the diagram below now visualises the "event loop" if script "A" and script "B" are both started in version 21.
 If script "A" is closed, script "B" can continue to run as the "events" for it are all processed in the main event loop.
 
-![](../Storage/primer-22-1/primer_links/sect_10/event_loops_21.png)
+![](./Storage/primer-23/primer_links/sect_10/event_loops_21.png)
 
 For simple scripts, the only change that should be required is to make sure that the script exits when the main window is closed by calling Exit(). The Window onClose event can be used to do this.
 

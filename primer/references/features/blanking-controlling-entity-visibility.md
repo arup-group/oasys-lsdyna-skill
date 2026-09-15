@@ -1,6 +1,6 @@
 ﻿##  BLANKING Controlling Entity Visibility
 
-![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_5_0.png)
+![](./Storage/primer-23/primer_links/sect_4/images/fig_4_5_0.png)
 
 Blanking allows the user to cut down what is displayed by controlling whether individual items are marked as drawable or not.
 

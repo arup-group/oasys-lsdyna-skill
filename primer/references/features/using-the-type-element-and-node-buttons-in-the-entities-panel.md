@@ -1,6 +1,6 @@
 ﻿###  Using the "Type" Element and Node Buttons in the Entities Panel
 
-![](../Storage/primer-22-1/primer_links/sect_4/images/entities_panel.png)
+![](./Storage/primer-23/primer_links/sect_4/images/entities_panel.png)
 
 In [Controlling Entity Visibility and Labelling](controlling-entity-visibility-and-labelling.md#Entityvisibility), the use of the ENTity Viewing panel to control labelling on plots was described.
 
@@ -16,7 +16,7 @@ It is also possible to label nodes and elements "dynamically", which means "inst
 
 Alternatively, use [Quick Pick](quick-pick-function.md#quickpick), set the entity type to SOLID, SHELL, etc and the action to "Element Details".
 
-![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_6_1.gif)
+![](./Storage/primer-23/primer_links/sect_4/images/fig_4_6_1.gif)
 
 This figure shows a typical dynamic labelling box for shell elements.
 

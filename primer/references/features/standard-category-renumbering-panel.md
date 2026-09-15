@@ -2,7 +2,7 @@
 
 Wherever a RENUMBER option is available for an item category this will invoke the standard renumbering panel for that item
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_0_17.gif) |
+| ![](./Storage/primer-23/primer_links/sect_5/5a/fig_5_0_17.gif) |
 | --- |
 | This panel is the same as that described in [RENUMBER CONTENTS Renumbering the Item Labels within a Model](renumber-contents-renumbering-the-item-labels-within-a-model.md#371RENUMBERCONTENTS): refer there for usage details. |
 

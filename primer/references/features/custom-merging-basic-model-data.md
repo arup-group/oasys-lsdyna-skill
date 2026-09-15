@@ -1,6 +1,6 @@
 ﻿####  Custom Merging Basic Model Data
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_4_1_5.bmp)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_4_1_5.bmp)
 
 This figure shows the basic model data window. In this example there are problems with clashes in the types NODE, SHELL, SET\_PART, PART, MATERIAL, SECTION, HOURGLASS, CONTACT, DEFINE CURVE, GROUP and ASSIGN MASS . Clicking on the question mark maps a menu from which Only or Sketch all clashing items can be performed. Further pop-ups in this menu allow Blank , Unblank , Only , Sketch and Edit actions on individual items.
 
@@ -8,7 +8,7 @@ This figure shows the basic model data window. In this example there are problem
 
 Just as in the global parameters window, actions can be used to solve the clash problems.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_4_1_6.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_4_1_6.gif)
 
 The actions available to resolve these, in the CLASH &gt; popup menu, are, in more detail:
 
@@ -21,7 +21,7 @@ The actions available to resolve these, in the CLASH &gt; popup menu, are, in mo
 | 6 | On clash copy only M2 . | As 5. Except item will be taken from M2 |
 | 7 | No renumbering . | Nothing will be renumbered. This is only possible if there are no clashes. |
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_4_1_7.bmp)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_4_1_7.bmp)
 
 As appropriate actions are chosen for each type (or all types) the CLASH will be replaced by CLASH\_FIXED . This figure shows the same model after actions have been chosen to fix problems. The **action** column shows what has been done in each case.
 

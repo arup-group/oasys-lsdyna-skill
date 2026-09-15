@@ -1,6 +1,6 @@
 ﻿###  Configure and Run Ansys LS-DYNA on "Remote Machine"
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_18.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_18.png)
 
 1. Select "Remote Machine" bookmark and enter "Submit Directory" to run an Ansys LS-DYNA job on that machine. 
  **This directory path must have appropriate read/write/execute permissions** .
@@ -17,7 +17,7 @@ For example, MPI type values are: **IMPI or PMPI or HPMPI or OPENMPI** .
     * On Linux the path to 64-bit MPI executable for Intel MPI (IMPI) could be: 
  **/intel64/bin/mpirun**
 
-    ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_19.png)
+    ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_19.png)
 7. Select Submission type as "ONLINE"
 8. Enter the NCPU value.
 9. Enter the "Password" again to connect to the remote machine.

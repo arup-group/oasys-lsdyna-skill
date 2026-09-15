@@ -1,6 +1,6 @@
 ﻿Once the tabs structure is created, the relevant \*EM\_RANDLES keywords can be generated to model the battery internal Randles circuits, by providing the following:
 
-**Randles circuit core parameters:![](../Storage/primer-22-1/defining-the-randles-parameters/defining-the-randles-parameters-2024-10-08.png)**
+**Randles circuit core parameters:![](./Storage/primer-23/defining-the-randles-parameters/defining-the-randles-parameters-2024-10-08.png)**
 
 Defines the following Randles circuit parameters from cards 1 and 2 in the corresponding \*EM\_RANDLES keyword based on the selected modeling scale (\*EM\_RANDLES\_SOLID, \*EM\_RANDLES\_TSHELL, \*EM\_RANDLES\_BATMAC or \*EM\_RANDLES\_MESHLESS):
 
@@ -33,7 +33,7 @@ Once all values are provided, clicking on **Create**, will create an \*EM\_RANDL
 
 Additionally, if in Meshless connected to Macro structure mode, for each unit cell, two \*EM\_ISOPOTENTIAL instances will be generated containing the tab nodes overlapping with the cell (one for each tab) and the two \*EM\_ISOPOTENTIALs will be connected through an \*EM\_ISOPOTENTIAL\_CONNECT with CONTYPE = 5 and will reference the associated \*EM\_RANDLES\_MESHLESS entry.
 
-![](../Storage/primer-22-1/defining-the-randles-parameters/meshless_con_sketch.PNG)
+![](./Storage/primer-23/defining-the-randles-parameters/meshless_con_sketch.PNG)
 
 The *RDLTYPE*field in the generated \*EM\_ISOPOTENTIAL cards will take the following values:
 
@@ -52,5 +52,5 @@ If you wish to make any modifications to the Randles paramters once created, cli
 
 Once satisfied with the Randles parameters, you can move to the '5. Analysis' step by either clicking on the corresponding button at the top of the window, or using the **Next**button. You can also move back to a previous stage using the **Previous**button.
 
-![](../Storage/primer-22-1/defining-the-randles-parameters/defining-the-randles-parameters-2024-10-08-1.png)
+![](./Storage/primer-23/defining-the-randles-parameters/defining-the-randles-parameters-2024-10-08-1.png)
 [Previous](creating-the-tabs-structure.md)  |  [Next](creating-or-activating-analysis-keywords.md)

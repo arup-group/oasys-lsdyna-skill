@@ -8,7 +8,7 @@ In PRIMER V9.1 an on/off switch for blanking propagation was provided.
 
 In PRIMER V9.2 yet more control has been provided over how blanking propagates through the structure by allowing the user to set the Recursive Action value, which controls how blanking (but not any other form of selection) is propagated down a model hierarchy.
 
-| ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_5_1_1.gif) | " **No recursion** " means that only the selected items are blanked, with no propagation.
+| ![](./Storage/primer-23/primer_links/sect_4/images/fig_4_5_1_1.gif) | " **No recursion** " means that only the selected items are blanked, with no propagation.
 <br><br>" **Drawable only** " means that blanking propagates downwards, but only affects items that are currently drawable (ie their [Entity switch](controlling-entity-visibility-and-labelling.md#Entityvisibility) is on).
 <br><br>" **Unconditional** " propagates blanking unconditionally down through the model. |
 | --- | --- |

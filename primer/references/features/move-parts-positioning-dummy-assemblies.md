@@ -1,6 +1,6 @@
 ﻿###  Move Parts: Positioning Dummy Assemblies
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/position-panel-move-parts.png)The rest of this section describes the process of positioning the dummy assemblies, i.e.  ***with***  articulation of its limbs.
+![](./Storage/primer-23/primer_links/sect_6/dummies/position-panel-move-parts.png)The rest of this section describes the process of positioning the dummy assemblies, i.e.  ***with***  articulation of its limbs.
  
 When you enter the dummy positioner with the Move Parts command several operations are performed:
 

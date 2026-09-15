@@ -2,7 +2,7 @@
 
 This brings up the main menu in the right hand side toolbar shown below.
 
-![](../Storage/primer-22-1/overview/battery_menu.png)
+![](./Storage/primer-23/overview/battery_menu.png)
 
 **CREATE** Manages the creation of a new battery definition.
 
@@ -15,7 +15,7 @@ This brings up the main menu in the right hand side toolbar shown below.
 **COPY** Generates a copy of an existing definition.
 
 ### Creating a new battery definition
-![](../Storage/primer-22-1/overview/create_battery.png)
+![](./Storage/primer-23/overview/create_battery.png)
 You must first select the model in which the new definition will reside.
 
 Then you must give a label and title for this new definition, and press **Apply**.
@@ -24,7 +24,7 @@ Labels are arbitrary, but must be unique within a model.
 
 A floating window will then guide you through the process of creating the battery cell model. The buttons at the top of the window are highlighted to indicate the step in the process you are currently at.
 
-![](../Storage/primer-22-1/overview/new_batt_create_window.png)
+![](./Storage/primer-23/overview/new_batt_create_window.png)
 
 In order to create the battery cell model you need to go through the following process:
 
@@ -52,7 +52,7 @@ The tool provides a list of analysis keywords typically used for battery cell an
 
 **Modify** functions in the same way as **Create**, except that an initial definition will be present. Any modifications made to the battery definition will not be made permanent until the **Update Battery** button in the last step is clicked. At this point the local copy which has been updated is used to overwrite the version in the model.
 
-![](../Storage/primer-22-1/overview/overview-2024-10-08-1.png)
+![](./Storage/primer-23/overview/overview-2024-10-08-1.png)
 
 You can also exit the floating window at any point when creating a new definition or modifying an existing definition, and you will be prompted whether you want to save your latest changes or revert to the previous version of the battery definition. Note that the latter for creation means the new definition will not be created.
 

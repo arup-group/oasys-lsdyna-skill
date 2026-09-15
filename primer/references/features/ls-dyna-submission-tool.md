@@ -7,7 +7,7 @@
 This is to speed up the process of initialisation when checking models and visualising decomposition/load profiles.
 * This tool uses functionality that exists within the SHELL submission tool.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_1.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_1.png)
 
 ####  Purpose 
 

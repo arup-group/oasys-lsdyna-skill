@@ -6,11 +6,11 @@ Find modified also requires that we hold 2 copies of the model in memory which m
 
 Instead, we have an alternate function available off the  **** model drop-down on the include tree. Note - the Find modified button always runs the normal function.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/comp_disk.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/comp_disk.gif)
 
 You will be given the option of running the normal Find Modified or Compare Include .
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/mod_14.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/mod_14.gif)
 
 Additionally, Compare include may be run for an individual include (off the include drop-down).
 
@@ -20,20 +20,20 @@ The function involves intensive disk I/O and so if run on all the includes of a 
 
 For all models this function is very useful for interrogating an individual include to see the details of what has changed. With a non-built model you can use Compare include to detect which include files have changed, and then extract the details for the include of interest using compare to disk. Although they work in different ways, both processes should always report the same differences.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/incl_modified_detail.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/incl_modified_detail.gif)
 
 ####  Model modified red-lights includes that need to be written
 
 Model modified red-lights includes that have been modified or created. When an include has been deleted we need to red-light the parent.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/inc_delete_1.PNG)
+![](./Storage/primer-23/primer_links/sect_3/images/inc_delete_1.PNG)
 
 The process is recursive, red-lighting up to master file. aaa.key needs writing as ccc.key has been removed. Asssuming we write it to a new name, master file also requires writing.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/inc_delete_2.PNG)
+![](./Storage/primer-23/primer_links/sect_3/images/inc_delete_2.PNG)
 
 A helpful message is given on the details tree.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/inc_delete_3.PNG)
+![](./Storage/primer-23/primer_links/sect_3/images/inc_delete_3.PNG)
 
 [Previous](comparing-a-model-to-original-or-to-a-file.md)  |  [Next](options-for-comparing-models.md)

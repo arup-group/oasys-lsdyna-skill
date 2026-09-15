@@ -8,7 +8,7 @@ The following table illustrates the two different types of contour ramps just de
 
 This behaviour can be modified by enabling the 'Disable discrete contouring' option from any of the 'Settings' panels. If this option is specified, thirteen contour bands will be displayed even if the model contains fewer than thirteen distinct values unless a different number is specified in the [Levels...](levels-setting-the-contour-bands.md) panel.
 
-| ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_8.jpg) | ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_9.jpg) |
+| ![](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_8.jpg) | ![](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_9.jpg) |
 | --- | --- |
 
 ####  Contouring specific values in plots.
@@ -17,15 +17,15 @@ If required, a specific value of an entity can be contoured by specifying a narr
 
 As an example, consider the following model containing shell elements of four distinct thickness values. The contour ramp thus contains four colours, each representing a distinct shell thickness value.
 
-![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_10.jpg)
+![](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_10.jpg)
  
 In order to visualize only those shell elements which are 0.015 units thick, a narrow range of values encompassing the desired value to be contoured is specified in the " **Min value** " and " **Max value** " boxes of the Settings... panel as shown below.
  
-![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_11.jpg)
+![](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_11.jpg)
   
 Clicking the UPDATE button produces the following plot.
  
-![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_12.jpg)
+![](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_12.jpg)
  
 In the updated plot, shell elements with a thickness of 0.015 only are contoured as desired, while the remaining elements are drawn in the **wireframe** mode as per the options set in the Settings... panel.
  

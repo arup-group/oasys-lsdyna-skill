@@ -15,14 +15,14 @@ These can be edited through their own specific editing panel (see below).
 * [Check](define-transform.md#check)
 * [Renumber](define-transform.md#renumber)
 
-| This figure shows the main menufor the editing of connection properties definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_connection_properties_1.gif) |
+| This figure shows the main menufor the editing of connection properties definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_connection_properties_1.gif) |
 | --- | --- |
 
 ####  CREATE Making a new connection properties definition.
 
 This shows the create/edit panel for connection properties. New material data lines can be added by clicking on the Add another material data line button. The \_ADD option can be activatied by clicking on the \_ADD button. With the \_ADD option active, cards 2 and 3 are greyed out.
  
-![](../Storage/primer-22-1/primer_links/sect_5/define/fig_connection_properties_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/define/fig_connection_properties_2.gif)
 
 ####  COPY Copy existing connection properties(s) to make a new connection properties(s).
 

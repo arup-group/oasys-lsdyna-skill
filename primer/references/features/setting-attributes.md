@@ -2,7 +2,7 @@
 
 In each case the the option Settings in the Viewing menu  gives access to further options which allow you to modify the pre-defined settings (angular increments, time delays, etc).
 
-| ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_3_set.gif) |
+| ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_3_set.gif) |
 | --- |
 
 The attributes that can be set are:

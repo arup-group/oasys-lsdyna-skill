@@ -1,6 +1,6 @@
 ﻿###  The Default "Pick + Rectangular Drag" Mode
 
- ![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_9_1a.png) 
+ ![](./Storage/primer-23/primer_links/sect_2/images/fig_2_9_1a.png) 
 Picking works as follows:
  
 * Left-clicking on an item selects just that item and applies the current function.

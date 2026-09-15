@@ -3,7 +3,7 @@
 | You can copy ***n***existing models to ***n***new models starting at model ***i***.<br>
 <br>The process is simple, as shown in this figure:<br>
 <ul style="font-size: 14.6667px;"> <li>Select 1 or more input models (which must all exist).</li> <li>Select the first target model (which must not exist).</li> <li>Press&#160;<span class="buttontext">APPLY&#160;</span>to start the copy operation.</li>
-</ul> | ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_5.png) |
+</ul> | ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_5.png) |
 | --- | --- |
 
 The input models are copied in the order defined to new models starting at the target model id. New models are created in a contiguous sequence of free models: any existing ones are skipped over, not deleted.

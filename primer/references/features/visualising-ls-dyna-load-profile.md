@@ -12,25 +12,25 @@ A decomposition file "decomp\_parts.ses" which contains information on how the e
 
 The load profile is a high level overview of the balance across cpus. It will allow you to view cost information of different categories across all the processors.
 
-![load_profile](../Storage/primer-22-1/primer_links/sect_3/images/dyna_load_profile.PNG)
+![load_profile](./Storage/primer-23/primer_links/sect_3/images/dyna_load_profile.PNG)
 
 ####  Contact profile
 
 The contact profile will let you visualise contact distribution across cpus.
 
-![cont_profile](../Storage/primer-22-1/primer_links/sect_3/images/dyna_cont_profile.PNG)
+![cont_profile](./Storage/primer-23/primer_links/sect_3/images/dyna_cont_profile.PNG)
 
 ####  Message profile
 
 The most comprehensive data is found in the individual message files. It gives a detailed distribution of different entity types in your model.
 
-![mes_profile](../Storage/primer-22-1/primer_links/sect_3/images/dyna_mes_prof.PNG)
+![mes_profile](./Storage/primer-23/primer_links/sect_3/images/dyna_mes_prof.PNG)
 
 ####  Decomposition
 
 If a decomposition file "decomp\_parts.ses" exists, you can colour elements as per the ecomposition using Colour Elements . Press Create Assemblies to generate an assembly or group per cpu so that you can easily blank the different 'zones'. Press Show Assembly to load newly created assemblies/groups in part tree mode.
 
-![decomp_panel](../Storage/primer-22-1/primer_links/sect_3/images/dyna_decomp_panel.PNG)
+![decomp_panel](./Storage/primer-23/primer_links/sect_3/images/dyna_decomp_panel.PNG)
 
 ####  Graph controls
 
@@ -53,13 +53,13 @@ When hovering over the graph, the bar gets highlighted and following information
 * 3rd box: SHELLS (category type)
 * 4th box: 4.69153E+01 (cost information)
 
-![hover_text](../Storage/primer-22-1/primer_links/sect_3/images/load_prof_hover.PNG)
+![hover_text](./Storage/primer-23/primer_links/sect_3/images/load_prof_hover.PNG)
 
 #####  Pop-up options
 
 Move your mouse to bring cursor over graph bars and right mouse click to bring a pop-up panel which lets you perform various visibility operations on labelled entities, and sort the graph order by cost in ascending/descending orders.
 
-![prof_pop_up](../Storage/primer-22-1/primer_links/sect_3/images/load_pop_up.PNG)
+![prof_pop_up](./Storage/primer-23/primer_links/sect_3/images/load_pop_up.PNG)
 
 In the pop-up panel, Only, Only multiple are applicable for SHELL, SOLID, BEAM, and Elements (in mes profile) types. These options will let you blank everything except the current selection.
 
@@ -77,5 +77,5 @@ To view only a specific category, move your mouse in the graph to the desired ca
 
 To filter the graph by value, enter a value in the Filter Value textbox and all the categories which have cost below the specified value will not be shown in the graph.
 
-![graph_filter](../Storage/primer-22-1/primer_links/sect_3/images/prof_filter_value.PNG)
+![graph_filter](./Storage/primer-23/primer_links/sect_3/images/prof_filter_value.PNG)
 [Previous](batch-ls-dyna-output-check.md)  |  [Next](dashboard-check.md)

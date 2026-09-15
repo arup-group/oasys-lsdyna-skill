@@ -41,4 +41,4 @@ Highest free name will determine the highest index of selected files, increment 
 Note the original file names can be restored by simply pressing RENAME
 
 Once you have selected all files to write, press APPLY to start the write process.
- ![](../Storage/primer-22-1/primer_links/sect_3/images/include_file_02.jpg)[Previous](output-of-include-path-cards.md)  |  [Next](include-files-and-compression.md)
+ ![](./Storage/primer-23/primer_links/sect_3/images/include_file_02.jpg)[Previous](output-of-include-path-cards.md)  |  [Next](include-files-and-compression.md)

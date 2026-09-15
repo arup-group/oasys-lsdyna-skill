@@ -2,7 +2,7 @@
 
 PRIMER is run from the PRIMER button in the SHELL:
 
-![](../Storage/primer-22-1/starting-the-code/starting-the-code-2025-11-28-1.png)
+![](./Storage/primer-23/starting-the-code/starting-the-code-2025-11-28-1.png)
 
 Users who are running on a device without a window manager should use the PR option in the command-line SHELL. This will mean that the programme runs in command-line mode only, ie no graphics, which may be suitable for batch usage.
 

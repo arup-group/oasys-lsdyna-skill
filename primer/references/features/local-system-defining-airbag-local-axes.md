@@ -1,6 +1,6 @@
 ﻿###  LOCAL_SYSTEM: Defining Airbag Local Axes
 
-![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_local_axes.gif)In general it is easiest to fold a bag if it is oriented initially in the global X-Y plane. However, if it is already in a vehicle this is unlikely to be the case. The user can therefore move the bag to a more convenient folding position.
+![](./Storage/primer-23/primer_links/sect_6/airbag/airbag_local_axes.gif)In general it is easiest to fold a bag if it is oriented initially in the global X-Y plane. However, if it is already in a vehicle this is unlikely to be the case. The user can therefore move the bag to a more convenient folding position.
 This is done by pressing LOCAL\_SYSTEM which will invoke the menu shown on the right. The user should then define the local X-Y plane (referred to as the origami local system) by selecting three nodes:
  
 N1 defines the local axis origin;

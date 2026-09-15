@@ -34,7 +34,7 @@ The following table shows the Nastran keywords supported, and how they are trans
 
 1. NASTRAN RBE2 cards with only two fully constrained nodes are translated to Ansys LS-Dyna \*CONSTRAINED\_SPOTWELD by default. If these two nodes are not fully constrained, then it is convereted to Ansys LS-Dyna \*CONSTRAINED\_NODAL\_RIGID\_BODY . Now there is a new option "Convert all RBE2s to CONSTRAINED NRB" available while reading the NASTRAN input file, which allows all two noded NASTRAN RBE2 cards to be converted to LS\_Dyna \*CONSTRAINED\_NODAL\_RIGID\_BODY cards. For this option there is a preference primer\*convert\_rbe2\_cnrb: also, which is set FALSE by default.
 
-    ![](../Storage/primer-22-1/primer_links/appen_6/nas_trans_opt.gif)
+    ![](./Storage/primer-23/primer_links/appen_6/nas_trans_opt.gif)
 2. Continuation characters are fully supported by the NASTRAN input translator. Even those cards that span multiple lines but do not contain explicit continuation characters are now translated properly.
 3. Include files are fully supported by the input translator, and the include file structure is preserved in memory after the translation process is complete. Hence, if the model is written out in a format that supports include files, the resulting model will be written out across include its corresponding include files.
 4. Both SMALL and WIDE format cards are supported by the input translator.

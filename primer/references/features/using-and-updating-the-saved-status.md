@@ -1,6 +1,6 @@
 ﻿###  Using and Updating the "SAVED" Status
 
-![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_5.gif)When you enter  **ATTACHED**  the current visibility status is saved in a backup blanking table. All  **APPLY**  operations operate only on the current blanking table, leaving this backup unchanged.
+![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_5.gif)When you enter  **ATTACHED**  the current visibility status is saved in a backup blanking table. All  **APPLY**  operations operate only on the current blanking table, leaving this backup unchanged.
  
 The reason for this is simple: most usage of  **ATTACHED**  reveals too much information in the first pass, and it is necessary to go back and repeat the process with some **attached** categories switched off.
 

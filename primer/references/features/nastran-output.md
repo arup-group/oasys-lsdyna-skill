@@ -49,7 +49,7 @@ See special note on rigid parts.
 
 **Option panel for NASTRAN write**
 
-![](../Storage/primer-22-1/nastran-output/nastran-output-2023-10-25.png)
+![](./Storage/primer-23/nastran-output/nastran-output-2023-10-25.png)
 
 **Special note on rigid parts:**
 

@@ -1,6 +1,6 @@
 ﻿####  Main Translation Panel
 
-| ![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_04.gif)<br>Before any data is read, a SAP2000 defaults panel will appear on the screen. This panel allows some options to be set prior to the translation process:<br>
+| ![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_04.gif)<br>Before any data is read, a SAP2000 defaults panel will appear on the screen. This panel allows some options to be set prior to the translation process:<br>
 <br>DISMISS terminate the translation process, returning to the generic READ panel.<br> APPLY accept the defaults in the panel and proceed with the translation.<br> HELP will create a message box full of useful information about the function of this panel.<br>
 <br>Termination Time will set the final termination time of your transient Ansys LS-DYNA analysis. This value is also used to define loadcurve timing values.<br> End-Release Stiffness defines the stiffness of the discrete springs used represent pin releases at the end of frame elements. It is important the spring elements do not control the time step of the Ansys LS-DYNA analysis. If this occurs, the model may terminate due to numerical instabilities. To avoid allowing springs to dictate the time step of the model the stiffness should be small. However, this must be balanced against the need for the spring to keep the pinned nodes together. Refer to Ansys LS-DYNA User Manual for more data.<br> Beam Split defines the default number of beams into which a SAP2000 frame will be split if required - refer to the OPTIONS panel.<br> Proximity Check Dist defines a linear distance in the model units. If two nodes in the same rigid offset group are further apart than this distance a warning will be produced. This option is useful for checking the model.<br>
 <br>Output Data allows the Ansys LS-DYNA DATABASE keyword cards which control the output frequency of results to be created in PRIMER. Each individual card can be switched on and off (green highlight implies on). The output frequency can only be modified when the card is 'on', else it is greyed-out.<br>
@@ -36,7 +36,7 @@ Once the APPLY button from the [main panel](main-translation-panel.md#main_panel
 
 Stage one of the process reads all of the data from the SAP2000 ascii file and stores the majority of the data in the binary scratch files. Once stage one is completed a second window panel is created: SAP2000 OPTIONS - see figure below.
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_05.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_05.gif)
 
 This panel is split into three areas; the static top area ( CONTINUE - proceed with translation, and HELP ), a [frame options region](frame-translation-options.md#frame_translation)and a [loading options region](load-translation-options.md#load_translation).
 

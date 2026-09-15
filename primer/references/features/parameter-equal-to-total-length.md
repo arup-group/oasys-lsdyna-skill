@@ -18,7 +18,7 @@ To save having to define multiple names these parameters are given the name of t
 
 Parameter names may not exceed 9 characters in normal Ansys LS-DYNA format, or 19 characters in long format. Therefore the name of the total length parameter will be truncated if necessary when adding " **\_S *n***  " suffices in order to stay within these limits. For example if the total length parameter is " **beltlen** " then the parameter for segment #1 will be called " **beltle\_s1** " in normal format.
 
-| The following pairs of figures show alternative cases of no (seatbelt only) and 3 shell rows:<br> <br><br>| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_3d.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_3e.gif) |<br>| --- | --- |<br>| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_3f.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_3g.gif) |<br>| #rows =0: The seatbelt element only case | #rows =3: Three shells across width | |
+| The following pairs of figures show alternative cases of no (seatbelt only) and 3 shell rows:<br> <br><br>| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_3d.gif) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_3e.gif) |<br>| --- | --- |<br>| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_3f.gif) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_3g.gif) |<br>| #rows =0: The seatbelt element only case | #rows =3: Three shells across width | |
 | --- |
 
 [Previous](dimensions-setting-width-length-etc.md)  |  [Next](parameters-1-basic-control-of-the-form-finding-process-1.md)

@@ -6,7 +6,7 @@
 
 This panel contains further miscellaneous options which influence output.
 
- ![](../Storage/primer-22-1/primer_links/sect_3/images/output_check.JPG) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/output_check.JPG) 
 
 Write parameters as values applies only to input decks that contain \*PARAMETER cards. If selected then instead of writing out the parameter names ( &name ) the actual numeric values will be written instead. This can be useful when writing Ansys LS-DYNA keyword decks for import into 3rd party software that cannot handle parameters. However, latent and encrypted parameters are still written out as &name even when this option is selected (instead of the default value of '0') to avoid confusion with genuine values of '0' (this only applies for output formats that support parameters).
 

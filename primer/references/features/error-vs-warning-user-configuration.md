@@ -20,12 +20,12 @@ The **error tag** is the unique code which identifies the error and can be displ
 
 Define the oa\_pref setting: **primer\*error\_configuration\_file: /path/filename.**
 
-| ![](../Storage/primer-22-1/primer_links/sect_3/images/error_config.gif) | If the error file exists PRIMER will read it on start up and report this in the dialogue box. |
+| ![](./Storage/primer-23/primer_links/sect_3/images/error_config.gif) | If the error file exists PRIMER will read it on start up and report this in the dialogue box. |
 | --- | --- |
 
 The error config file may be edited in a text editor by pressing Open Error configuration File .
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/error_config_edit.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/error_config_edit.gif)
 
 Creation/edit of this file may now be managed using Configure error option on the error tree available when you click on an error message.
 
@@ -33,9 +33,9 @@ If you don't have a configuration file one will be created in your home area cal
 
 A message may be promoted from warning to error, demoted from error to warning or suppressed altogether by selecting PRO/DEMOTE or SUPPRESS
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/tree_configure.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/tree_configure.gif)
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/tree_configure2.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/tree_configure2.gif)
 
 When you [write](keyout-error-check.md#keyout_error_check) an error file (using list function at top of error tree or otherwise), the extra message is included and can be detected by the controller.
 

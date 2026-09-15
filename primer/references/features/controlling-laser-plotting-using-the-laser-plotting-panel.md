@@ -5,7 +5,7 @@ This figure shows the basic laser plotting panel.
 This is invoked by the Postscript/pdf command under Images-&gt;Write in the top menu box.
  
 It both controls and shows the status of the current laser file (if any).
- ![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_0.gif)
+ ![](./Storage/primer-23/primer_links/sect_8/images/fig_8_0.gif)
  
 ###  Plot button 
  
@@ -17,7 +17,7 @@ When multiple sub-images in a file are in use the next image to be written is sh
  
 Choosing the laser filename
  
-![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_2.gif)
+![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_2.gif)
  When no file is currently in use the File: entry box will be available. You can give any valid filename for the next laser file to be written, or let PRIMER choose one for you. You can also use the button to select a file via the standard file filter box.
  
 If the file already exists you will be queried to check that you genuinely want to overwrite it: you cannot append to existing laser files.
@@ -31,7 +31,7 @@ The default naming convention used by PRIMER for postscript laser files is po
 Any existing files are skipped when the next file in the sequence is computed.
  Defining a label and figure number for laser plots.
 
-![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_3.gif)
+![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_3.gif)
 By default laser files are not labelled and have no figure number, but you may add either or both of these. They are always put at the bottom of the page, along the short edge, regardless of the orientation used for plots.
  
 This figure shows the standard locations for title and figure number on laser plots.
@@ -42,11 +42,11 @@ The figure number may be any string (not just a number), and is preceded by the 
  
 This plot is written in "landscape" format, and reinforces the point that the title and figure number always go at the bottom of the paper, regardless of the orientation of the plot contents.
  
-![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_3a.gif)
+![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_3a.gif)
  
 ### Orientation Setting Landscape or Portrait plot orientation
  
-![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_4.gif)By default plots are in "Landscape" orientation, with the long side of the plot aligned with the long side of the paper, but you can choose "Portrait" format instead.
+![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_4.gif)By default plots are in "Landscape" orientation, with the long side of the plot aligned with the long side of the paper, but you can choose "Portrait" format instead.
 
 The figure below shows examples of both landscape and portrait format plots, showing how they are aligned on the paper.
  
@@ -58,13 +58,13 @@ Various pre-programmed permutations of &lt;#x&gt; x &lt;#y&gt; plots are availab
  
 Each individual plot on a page will be referred to from now as a "sub-image".
 
-| ![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_5a.gif) | ![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_5b.gif) |
+| ![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_5a.gif) | ![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_5b.gif) |
 | --- | --- |
 | LANDSCAPE | PORTRAIT |
 
 The figures below show examples of 3x3 Landscape and 2x4 Portrait multiple plots.
  
-![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_5c.gif)![](../Storage/primer-22-1/primer_links/sect_8/images/fig_8_1_5d.gif)
+![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_5c.gif)![](./Storage/primer-23/primer_links/sect_8/images/fig_8_1_5d.gif)
  
 #### Controlling the order in which multiple plots are drawn.
  

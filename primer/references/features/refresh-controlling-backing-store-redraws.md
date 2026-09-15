@@ -12,12 +12,12 @@ Hopefully you will not experience this, and it will simply work. But if any of t
 
 However that still may not cure the problem, in which case you will need to adjust the backing store refresh strategy using Options &gt; Refresh:
 
-| ![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_4_4_3.png) | At the simplest level you can turn expose event refreshes OFF, using the second level menu shown here.<br> <br>However that will leave your graphics image full of "holes", requiring you to give an explicit redraw command to repaint it, which is not a satisfactory solution. Nevertheless on very old, low-powered machines it may be the only thing that works.<br> <br>Hopefully that will not be necessary, and one of the solutions below will be effective. |
+| ![](./Storage/primer-23/primer_links/sect_2/images/fig_2_4_4_3.png) | At the simplest level you can turn expose event refreshes OFF, using the second level menu shown here.<br> <br>However that will leave your graphics image full of "holes", requiring you to give an explicit redraw command to repaint it, which is not a satisfactory solution. Nevertheless on very old, low-powered machines it may be the only thing that works.<br> <br>Hopefully that will not be necessary, and one of the solutions below will be effective. |
 | --- | --- |
 
 A better solution is usually to adjust the backing store display method using the Backing store &gt; sub-menu
 
-| ![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_4_4_4.gif) | Two methods of providing backing store are available:<br> <br>(1) Bitmap (Windows) or Pixmap (Linux/Unix).<br> <br>This is usually available on all machines, uses main memory, and is reasonably quick.<br> <br>(2) PBuffer (not Windows)<br> <br>This is available on newer machines, and uses memory on the graphics card itself so - if it works - it is effectively instant. |
+| ![](./Storage/primer-23/primer_links/sect_2/images/fig_2_4_4_4.gif) | Two methods of providing backing store are available:<br> <br>(1) Bitmap (Windows) or Pixmap (Linux/Unix).<br> <br>This is usually available on all machines, uses main memory, and is reasonably quick.<br> <br>(2) PBuffer (not Windows)<br> <br>This is available on newer machines, and uses memory on the graphics card itself so - if it works - it is effectively instant. |
 | --- | --- |
 
 If your machine is currently using the PBuffer method then try switching it to Bit/Pixmap to see if it improves. This seems to be particularly effective on Linux platforms, where OpenGL graphics drivers are notoriously bug-ridden.

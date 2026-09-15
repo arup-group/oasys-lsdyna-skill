@@ -24,7 +24,7 @@ Label format is a "per model" attribute, and each model in PRIMER can have diffe
  
 You can swap a model between "small", "i10" and "large" labels formats using the popup attached to the M *n*  buttons thus:
  
-![](../Storage/primer-22-1/primer_links/sect_5/5a/label_5.png)
+![](./Storage/primer-23/primer_links/sect_5/5a/label_5.png)
 
 | **Meanings of label attributes options** |
 | --- |
@@ -41,9 +41,9 @@ Therefore if single precision Ansys LS-DYNA is to be used for analysis the I10 
 However a further consideration is the format of the binary output files from Ansys LS-DYNA. Double precision files are vary large, so Ansys LS-DYNA has the option to convert them to single precision for output ( \*DATABASE\_FORMAT IBINARY field). Single precision output means that labels must lie in the range 1 to ~2e9, so if you plan to "run in double precision but write single" then stick to the I10 (32) option above to avoid problems when post-processing.
  
 #####  Advanced... method: using the Detailed label format panel
- ![](../Storage/primer-22-1/primer_links/sect_5/5a/label_2.png) The detailed label panel can also be mapped via Model &gt; Renumber, Label range
+ ![](./Storage/primer-23/primer_links/sect_5/5a/label_2.png) The detailed label panel can also be mapped via Model &gt; Renumber, Label range
  
-![](../Storage/primer-22-1/primer_links/sect_5/5a/label_1.png)
+![](./Storage/primer-23/primer_links/sect_5/5a/label_1.png)
 
 As explained above PRIMER works internally using 64 bit integers for labels, permitting the full ~9e18 range in all internal contexts, however it is useful to impose "soft" limits on labels if you are planning to use normal (small) output format. The Label Range panel allows you to set one of three modes on a per-model basis:
 
@@ -132,7 +132,7 @@ Therefore it is  ***strongly***  recommended that you stick to human-friendly nu
 | Large (long) input format | 999,999,999,999,999 | 15 | Limited by the use of 64 bit double. <br> **Permits use of Ansys LS-DYNA & JavaScript** |
 | Extended format | 999,999,999,999,999,999 | 18 | Limit dictated by use of 64 bit integer. <br> **Prohibits use of Ansys LS-DYNA & JavaScript** |
 
-| The table above explains where the settings on the Label Range panel come from, and it is recommended that users stick either to the 8, 10 or 15 significant figure modes. | ![](../Storage/primer-22-1/primer_links/sect_5/5a/label_3.png) |
+| The table above explains where the settings on the Label Range panel come from, and it is recommended that users stick either to the 8, 10 or 15 significant figure modes. | ![](./Storage/primer-23/primer_links/sect_5/5a/label_3.png) |
 | --- | --- |
 
 [Previous](include-file-selection-on-edit-panels.md)  |  [Next](character-labels.md)

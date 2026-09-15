@@ -1,6 +1,6 @@
 ﻿##  Quick Pick Function 
  
-![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_9_1.png)
+![](./Storage/primer-23/primer_links/sect_2/images/fig_2_9_1.png)
  
 This function allows a range of operations to be applied through Screen Picking. The function has two menus to make selections from, located above the graphics area; defining the action applied to selected entities, and the entity type to be selected.
  

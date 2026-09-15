@@ -4,7 +4,7 @@ At the pelvis the slipring lies between two sections of belt that are both curve
 
 The following example illustrates how this slipring may affect the belt path, and how it can be adjusted to correct this.
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_2g7.png) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_2g8.png) |
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_2g7.png) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_2g8.png) |
 | --- | --- |
 
 [Previous](slipring-case-1-b-post-type-at-shoulder-location.md)  |  [Next](slipring-case-3-meshed-type-at-pelvis-location.md)

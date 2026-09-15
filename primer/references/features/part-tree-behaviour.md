@@ -6,7 +6,7 @@ Clicking on the [-] button next to models / include files / assemblies will coll
 
 Right-clicking on an item or a selection of items produces a pop-up menu with the options shown on the right (not all of these options will be available for some selections).
 
-![](../Storage/primer-22-1/part-tree-behaviour/part-tree-behaviour-2024-03-13-1.png)
+![](./Storage/primer-23/part-tree-behaviour/part-tree-behaviour-2024-03-13-1.png)
 
 | Edit | Brings up the standard editing panel for that item |
 | --- | --- |

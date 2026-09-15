@@ -2,7 +2,7 @@
 
 The template provides an easy way to select a set of include files with which to build a model.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_4.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_4.gif)
 
 Templates provide a way of saving particular combinations of include files in order to allow you to easily read in a particular, frequently used, pattern of files without having to select each file from the database every time you build a model. Generally, there will be one database for a vehicle programme, and one template for each load case or variant.
 

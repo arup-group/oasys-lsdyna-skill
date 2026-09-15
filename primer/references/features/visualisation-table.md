@@ -25,13 +25,13 @@ The tool is also available from the "**Position Parts**" panel.
 The first image below shows the process to access the visualisation table and create and show the visualisation entities for an example HBM.
 
 The second image below shows how to visualise the dragging of the PRIMER assemblies for a HBM in the "Position parts" panel.
-![](../Storage/primer-22-1/vis_table1.PNG)
+![](./Storage/primer-23/vis_table1.PNG)
 
-![](../Storage/primer-22-1/vis_table2.PNG)
+![](./Storage/primer-23/vis_table2.PNG)
 
 ## Create HBM Visualisation entities file for D3PLOT 
 
-The HBM visualisation entities created by the HBM visualisation table can be viewed in a D3PLOT session using a "D3PLOT groups file (\*.vis)".![](../Storage/primer-22-1/vis_table3.png)
+The HBM visualisation entities created by the HBM visualisation table can be viewed in a D3PLOT session using a "D3PLOT groups file (\*.vis)".![](./Storage/primer-23/vis_table3.png)
 
 A model specific “D3PLOT groups file” can be created from the Visualisation table, using the buttons under "Create D3PLOT groups file" label.
 
@@ -49,13 +49,13 @@ This groups file can be loaded in to a D3PLOT session on the Ansys LS-DYNA resul
 
 The following image describes the workflow to create a D3PLOT groups file in PRIMER: (**Model Acknowledgements: GHBMC Elemance**)
 
-![](../Storage/primer-22-1/visualisation-table/vis_table4.png)
+![](./Storage/primer-23/visualisation-table/vis_table4.png)
 
 **To view the HBM Visualisation entities in D3PLOT:**
-![](../Storage/primer-22-1/load_vis_file_in_d3plot.PNG)
+![](./Storage/primer-23/load_vis_file_in_d3plot.PNG)
 In Groups menu in D3PLOT, you can see the list of HBM entities and perform various operations like Only, Sketch etc.
 
-![](../Storage/primer-22-1/visualisation-table/only_group.PNG)
+![](./Storage/primer-23/visualisation-table/only_group.PNG)
 
-![](../Storage/primer-22-1/visualisation-table-1.png)
+![](./Storage/primer-23/visualisation-table-1.png)
 [Previous](advanced-hbm-positioning-using-ansys-ls-dyna.md)  |  [Next](dummyhbm-and-seatsquash.md)

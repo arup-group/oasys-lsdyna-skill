@@ -1,13 +1,13 @@
 ﻿###  Options... Controlling Penetration Checking
 
- ![](../Storage/primer-22-1/primer_links/sect_5/pen_check/options_1.png)
+ ![](./Storage/primer-23/primer_links/sect_5/pen_check/options_1.png)
  
 **Treatment of duplicate shells**
  
 This option controls which shell is used to determine contact properties when a contact segment lies on two or more coincident shells.
  
 This requires a little explanation:
- ![](../Storage/primer-22-1/primer_links/sect_5/pen_check/options_2.png)
+ ![](./Storage/primer-23/primer_links/sect_5/pen_check/options_2.png)
  
 When LS-DYNA receives a list of elements, segments, parts or sets to define the geometry of a contact surface it uses them as follows:
 

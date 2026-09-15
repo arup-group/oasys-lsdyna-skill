@@ -2,7 +2,7 @@
 
 | In any scalar (single item) editing panel you can use the Text Edit button to generate a mini-keyword deck containing just this keyword. It is generated from the scratch data currently populating the editing panel, and will contain any comments embedded in the card. (It is also possible to edit multiple items using Text edit on the keyword editor, this is described in [Editing Multiple Items Using the Keyword Editor](editing-multiple-items-using-the-keyword-editor.md#te_multiple))<br>
 <br>Note also that there is a general Text Edit button in the Tools panel that can be used to edit any keyword, not just one in an editing panel or the keyword editor. This is described in [Text Edit](text-edit-external-editing-of-any-keyword.md)<br>
-<br>An example is given below for a PART, and the default output is split into three sections as annotated here | ![](../Storage/primer-22-1/primer_links/sect_5/5a/fig_5_1_2a.png) |
+<br>An example is given below for a PART, and the default output is split into three sections as annotated here | ![](./Storage/primer-23/primer_links/sect_5/5a/fig_5_1_2a.png) |
 | --- | --- |
 
 | **Section** | **File Contents (continuous text in an actual file)** |

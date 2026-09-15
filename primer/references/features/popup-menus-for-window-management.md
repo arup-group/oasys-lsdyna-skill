@@ -1,6 +1,6 @@
 ﻿###  Popup Menus for Window Managements
 
-| Clicking on the [-] button at the top left of a window invokes the popup menu for window management: | **![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_4_2.png)** |
+| Clicking on the [-] button at the top left of a window invokes the popup menu for window management: | **![](./Storage/primer-23/primer_links/sect_2/images/fig_2_4_2.png)** |
 | --- | --- |
 
 | MAXIMISE | expands the window to its full size (in the case of the dialogue and graphic areas this is taken as the entire PRIMER window, for other sub-windows the minimum size such that no scroll bars are required). |

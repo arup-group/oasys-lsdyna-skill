@@ -1,10 +1,10 @@
 ﻿##  PART COMPARE
 
-![](../Storage/primer-22-1/primer_links/sect_7/partcompare/comp0.gif)
+![](./Storage/primer-23/primer_links/sect_7/partcompare/comp0.gif)
 
 Part compare runs in one of two modes
 
-![](../Storage/primer-22-1/primer_links/sect_7/partcompare/comp1.gif)
+![](./Storage/primer-23/primer_links/sect_7/partcompare/comp1.gif)
 
 [Properties](display-of-different-properties.md#pcomp6) uses the functionality of the part table to make a comparison between the properties of parts. Any parts which do not match for all the criteria tested will be displayed on the table.
 

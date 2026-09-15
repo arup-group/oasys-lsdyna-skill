@@ -1,5 +1,5 @@
 ﻿| Length Parameter
-<br><br>![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_parameter_1.png) |
+<br><br>![](./Storage/primer-23/primer_links/sect_6/seatbelt/fopts_parameter_1.png) |
 | --- |
 
 An optional parameter to receive the overall belt length, and further optional parameters to receive the length of each segment.

@@ -5,7 +5,7 @@ To delete model entities use Delete .
 This option can be used to delete anything from entire models to individual items, using the standard PRIMER hierarchy.
 
 (Note, however, that deleting a complete model is much faster if the main MODEL&gt; DELETE command is used because no cross-checking for dependencies is required.)
-  **![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_1.png)**  
+  **![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_1.png)**  
 To delete entities:
 
 * Select items to be deleted.

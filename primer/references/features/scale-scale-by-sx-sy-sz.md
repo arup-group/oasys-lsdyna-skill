@@ -12,7 +12,7 @@ As before the image is drawn showing the new configuration, and you can accept, 
 Negative factors are allowed, see the notes above on  **REFLECT**  .
 
 ****
- ![](../Storage/primer-22-1/scale_scaleby.PNG)
+ ![](./Storage/primer-23/scale_scaleby.PNG)
  **** 
 
 ####  CENTRE Defining a central coordinate to scale about.

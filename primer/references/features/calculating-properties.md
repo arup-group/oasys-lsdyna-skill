@@ -1,6 +1,6 @@
 ﻿###  Calculating Properties
 
-![](../Storage/primer-22-1/primer_links/sect_6/massprops/mprop3.gif)
+![](./Storage/primer-23/primer_links/sect_6/massprops/mprop3.gif)
 
 In most cases, PRIMER will devolve the selection to the element level and sum the nodal masses derived from these elements as appropriate.
 
@@ -8,7 +8,7 @@ For a rigid element this will include the mass share of any deformable element d
 
 If a rigid part is selected, by default the mass of \*CONSTRAINED\_EXTRA\_NODES and elements of any parts constrained to this one by \*CONSTRAINED\_RIGID\_BODIES will be not be included in the calculation. These options can be switched ON.
 
-![](../Storage/primer-22-1/calculating-properties/calculating-properties-2023-06-23-1.png)
+![](./Storage/primer-23/calculating-properties/calculating-properties-2023-06-23-1.png)
 
 For deformable elements mass at nodes attached to rigid parts/nrbs will not be subtracted. Consequently for a part you may get a slightly higher mass from this function than the part table gives.
 
@@ -16,7 +16,7 @@ If you make a selection which does not devolve to elements (such as a constraine
 
 Options may be set to include lumped mass attached to the nodes of selected elements. These are off by default.
 
-![](../Storage/primer-22-1/calculating-properties/calculating-properties-2023-07-18-1.png)
+![](./Storage/primer-23/calculating-properties/calculating-properties-2023-07-18-1.png)
 
 For a deformable part the value of lumped mass is shared equally amongst all the parts that attach to the node, so the calculation will only include that share that applies to selected elements.
 

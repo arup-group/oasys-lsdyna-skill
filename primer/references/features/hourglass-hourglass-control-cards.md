@@ -10,20 +10,20 @@
 Hourglass cards are used in Ansys LS-DYNA to control the zero energy "hourglass modes" that occur with single integration point elements. 
 They are also used to specify bulk viscosity coefficients.
 
-| **HOURGLASS MAIN MENU** <br>This figure shows the main **HOURGLASS** menu.<br> <br>The functions currently available have their standard meanings (see [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)).<br> <br>Greyed out functions are not currently available: | ![](../Storage/primer-22-1/primer_links/sect_5/hourglass/hourglass_1.gif) |
+| **HOURGLASS MAIN MENU** <br>This figure shows the main **HOURGLASS** menu.<br> <br>The functions currently available have their standard meanings (see [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)).<br> <br>Greyed out functions are not currently available: | ![](./Storage/primer-23/primer_links/sect_5/hourglass/hourglass_1.gif) |
 | --- | --- |
 
 Once all of the data has been input on the airbag card, CREATE installs the hourglass card permanently in the model.
  
 #### CREATE Making a new hourglass definition
 
-![](../Storage/primer-22-1/primer_links/sect_5/hourglass/hourglass_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/hourglass/hourglass_2.gif)
 
 This figure shows the standard CREATE / EDIT panel for hourglass cards. Here CREATE has been used, so a blank hourglass creation panel is displayed.The static buttons in the top section of the panel have functions which are common to the other editing panels within PRIMER.
 
 The SET\_DEFAULTS button will put the **current default values**into the fields. These will be taken from the CONTROL\_HOURGLASS and the CONTROL\_BULK\_VISCOSITY settings. If the Ansys LS-DYNA default settings are active, after pressing the button the values are set thus:
 
-![](../Storage/primer-22-1/primer_links/sect_5/hourglass/hourglass_3.gif)
+![](./Storage/primer-23/primer_links/sect_5/hourglass/hourglass_3.gif)
 
 ####  COPY Copy existing hourglass card(s) to make a new card(s).
 

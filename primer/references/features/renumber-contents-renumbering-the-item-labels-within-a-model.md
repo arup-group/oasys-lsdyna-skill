@@ -3,7 +3,7 @@
 * Select a model.
 * Press RENUMBER CONTENTS to get the renumbering panel
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_7_1_1.bmp)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_7_1_1.bmp)
 
 This figure shows a typical panel, but the actual appearance will depend upon the contents of your model.
 
@@ -48,7 +48,7 @@ Also there are some commonly used global options:
 | The changes made in this box are volatile. <br>They are only permanently saved in this model when APPLY\_RENUMBERING is used. |
 | --- |
 
-| To renumber an individual category selectively  <br>![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_7_1_2.png) |
+| To renumber an individual category selectively  <br>![](./Storage/primer-23/primer_links/sect_3/images/fig_3_7_1_2.png) |
 | --- |
 
 By clicking on a keyword button in the left hand column of the renumber contents panel, eg the SOLID button, you can invoke the standard item renumbering panel for that category, as shown in the adjacent figure.
@@ -87,7 +87,7 @@ Note that latent items are displayed in the list, but will not be renumbered.
 
 ####  Freezing entity labels during renumbering
 
-| Entity labels that lie within a user-specified range can be 'locked' during renumbering. This can be done by selecting the appropriate options in the Renumbering tab in the Program Options panel. The Renumbering options panel can be reached by clicking on the Options button either in the generic renumbering panel or in the category renumbering panel. <br><br>Likewise entity labels that are used by DATABASE\_HISTORY cards can be 'locked' during renumbering. | ![Renumbering Options](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_7_1_3.gif) |
+| Entity labels that lie within a user-specified range can be 'locked' during renumbering. This can be done by selecting the appropriate options in the Renumbering tab in the Program Options panel. The Renumbering options panel can be reached by clicking on the Options button either in the generic renumbering panel or in the category renumbering panel. <br><br>Likewise entity labels that are used by DATABASE\_HISTORY cards can be 'locked' during renumbering. | ![Renumbering Options](./Storage/primer-23/primer_links/sect_3/images/fig_3_7_1_3.gif) |
 | --- | --- |
 
 [Previous](model-renumber-renumbering-models-andor-their-contents.md)  |  [Next](change-model-id.md)

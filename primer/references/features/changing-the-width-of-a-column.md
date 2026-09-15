@@ -2,7 +2,7 @@
 
 Columns can be made wider or narrower by clicking on the edge of a column header and dragging the mouse. The cursor symbol will change to a double-ended arrow when hovering over the appropriate area to access this feature and while you are dragging, e.g. below the user has clicked on the header between Part title and Part type and is dragging to the left.
 
-![](../Storage/primer-22-1/primer_links/sect_7/parttable/parttable5.png)
+![](./Storage/primer-23/primer_links/sect_7/parttable/parttable5.png)
 
 Alternatively, columns can be automatically resized to fit their content by double-clicking on the right-hand edge of the column header, i.e. when the cursor symbol appears as a double-ended arrow.
 

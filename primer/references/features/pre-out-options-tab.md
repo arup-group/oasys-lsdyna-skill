@@ -1,7 +1,7 @@
 ﻿####  Pre-out: Options Tab 
 
 Options controlling the layout and other attributes of the output file.
- ![](../Storage/primer-22-1/primer_links/sect_3/images/post_end_options.png) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/post_end_options.png) 
 The OUTPUT option gives a choice between writing keywords in alphabetical order or a more intuitive classic order e.g. sets are written together with their referencing objects.
  
 The Short matl name option (available from LS 970 onwards) will write all material cards in the form \*MAT\_NNN (\_option) rather than the full name.
@@ -26,7 +26,7 @@ The Xref comments option controls whether cross-references to items are written 
  
 The Post \*END data option controls whether data succeeding \*END are written to the output file. This option over-rules other options that control whether specific post \*END items are written (e.g., 'write out all connections' or 'suppress\_keyout\_geometry').
   
-##### Output style![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-1.png) 
+##### Output style![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-1.png) 
 
 Controlling how floating point numbers are formatted. 
  
@@ -100,12 +100,12 @@ This change was made for two main reasons:
 Coordinates are now read, stored and written using the full available field width, which is 16 columns wide for Small and I10 format and 20 columns for Large format. As a result the typical precision for coordinates written to a 16 wide field is from 11 to 15 significant figures depending on the presence of exponents and -ve signs. For a 20 wide field the default is to round the result to 15 sig figs although there is an option to write more values.
 
 This controllable via the [Model] Write, LS-DYNA output options, [Options tab], Output style, Detailed options... panel
-![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-3.png)
+![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-3.png)
 
-![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-5.png)
+![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-5.png)
 
 Humans find it hard to process too many digits of precision so the default for nodal coordinates in GUI panels is 10 significant figures, for example
-![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-7.png) ![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-6.png)
+![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-7.png) ![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-6.png)
 
 ##### 
 
@@ -117,7 +117,7 @@ Humans find it hard to process too many digits of precision so the default for n
 
 However output to file needs to be at the full available precision, for example:
 
-| ![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-8.png) | **\*NODE**<br><br>**$: nid cx cy cz tc rc**<br><br>**7.6666666666666671.24401693585629.089316397477040 0 0**<br> **** *(this example uses Small / I10 format using I8, 3E16, 2I8 format)* |
+| ![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-8.png) | **\*NODE**<br><br>**$: nid cx cy cz tc rc**<br><br>**7.6666666666666671.24401693585629.089316397477040 0 0**<br> **** *(this example uses Small / I10 format using I8, 3E16, 2I8 format)* |
 | --- | :--- |
 
 ###### **Clamp to zero.**
@@ -137,7 +137,7 @@ Because the process that must be gone through, even when simply reading and writ
 
 The transform / inverse transform operations each introduce small numerical errors at the 15th or 16th significant figure with the result that output coordinates tend to vary slightly compared to the original input. For non-zero values this difference is usually insignificant and it tends to get rounded away when output is truncated to fit into the output field. However values which were originally zero may now become something like 1e-15 which not only looks stupid but is a significant change to the input deck.
 
-Clamp to zero is designed to deal with this problem. ![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-10.png)
+Clamp to zero is designed to deal with this problem. ![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-10.png)
 
 | Trans Coord | Only processes nodal coordinates which have been subject to one of the three transformation keywords listed above. | Default = 1.0e-15 |
 | --- | --- | --- |
@@ -152,7 +152,7 @@ When **Rounded** or **Fast\_rounded** formats are used the least significant dig
 * For single precision floating point numbers, overwhelmingly the common case, this means that 8 digits are rounded to 7.
 * For double precision floating point numbers 16 digits are rounded to 15, however this is academic as most Ansys LS-DYNA card formats limit output to fewer values than this.
 
-###### Rounding of mid-way ("tied") values ![](../Storage/primer-22-1/pre-out-options-tab/pre-out-options-tab-2023-12-22-11.png) 
+###### Rounding of mid-way ("tied") values ![](./Storage/primer-23/pre-out-options-tab/pre-out-options-tab-2023-12-22-11.png) 
 
 Rounding is straightforward except for those rare cases when a value lies precisely between two values. For example 2.5: should this be rounded up to 3.0 or down to 2.0?
 

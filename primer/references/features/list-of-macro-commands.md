@@ -26,27 +26,27 @@ Click( *"name"* )
 
 | **Command** | **Description** |
 | --- | --- |
-| .Actions() | Equivalent to pressing the top left 'actions' button ![](../Storage/primer-22-1/primer_links/sect_6/macro/actions_icon.gif)for a window |
+| .Actions() | Equivalent to pressing the top left 'actions' button ![](./Storage/primer-23/primer_links/sect_6/macro/actions_icon.gif)for a window |
 | .[Left|Right|Up|Down]Arrow() | Equivalent to using arrow keys to scroll a list |
 | .Bitmap() | Equivalent to pressing the 'SAVE-&gt;BITMAP' button in the top left actions popup for a window |
 | .[|Ctrl|Shift]Button( "name" ) | Press, Ctrl Press or Shift Press on button *name* . |
 | .[|Ctrl|Shift]Button( "name" ) = [on|off] | Press, Ctrl Press or Shift Press on toggle button *name* . The state is set by using = on or = off . |
 | .[|Ctrl|Shift]Click( *"name"* ) | Click, Ctrl click or Shift click on item *name* in a table or tree. |
 | .Collapse( *"name"* ) | Collapse branch *name* in a tree. |
-| .Dismiss() | Dismiss a window. Equivalent to pressing the top right ![](../Storage/primer-22-1/primer_links/sect_6/macro/dismiss_icon.gif)button for a window |
+| .Dismiss() | Dismiss a window. Equivalent to pressing the top right ![](./Storage/primer-23/primer_links/sect_6/macro/dismiss_icon.gif)button for a window |
 | .[|End|Start]Drag *&lt;number&gt;* ( *&lt;x&gt;* , *&lt;y&gt;* ) | Drag at location *x* , *y* using mouse button *number.* |
 | .End() | Equivalent to pressing End key to go to the bottom of a list |
 | .Expand( *"name"* ) | Expand branch *name* in a tree. |
 | .Feedback( *"name"* ) = *"value"* | Perform feedback function on button *name* with *value* (e.g. when typing in parameter, show the list of matching parameters) |
-| .Help() | Show help for a window. <br>Equivalent to pressing the top right ![](../Storage/primer-22-1/primer_links/sect_6/macro/help_icon.gif)button for a window |
+| .Help() | Show help for a window. <br>Equivalent to pressing the top right ![](./Storage/primer-23/primer_links/sect_6/macro/help_icon.gif)button for a window |
 | .Home() | Equivalent to pressing Home key to go to the top of a list |
 | .Hover( *"name"* ) | Perform hover function on button *name* (e.g. when hovering over a button with a parameter, the parameter data is shown) |
 | .Lower() | Lower a window in the stacking order. |
-| .Maximise() | Maximise a window. Equivalent to pressing the top right ![](../Storage/primer-22-1/primer_links/sect_6/macro/maximise_icon.gif)button for a window |
-| .Minimise() | Minimise a window. Equivalent to pressing the top right ![](../Storage/primer-22-1/primer_links/sect_6/macro/iconise_icon.gif)button for a window |
+| .Maximise() | Maximise a window. Equivalent to pressing the top right ![](./Storage/primer-23/primer_links/sect_6/macro/maximise_icon.gif)button for a window |
+| .Minimise() | Minimise a window. Equivalent to pressing the top right ![](./Storage/primer-23/primer_links/sect_6/macro/iconise_icon.gif)button for a window |
 | .Page[Down|Up]() | Equivalent to pressing PageUp or PageDown to move up/down a page in a list |
 | .Pick *&lt;number&gt;* ( *&lt;x&gt;* , *&lt;y&gt;* ) | Pick at location *x* , *y* using mouse button *number.* |
-| .Picking() | Restart picking in a window. Equivalent to pressing the top left ![](../Storage/primer-22-1/primer_links/sect_6/macro/picking_icon.gif)button for a window |
+| .Picking() | Restart picking in a window. Equivalent to pressing the top left ![](./Storage/primer-23/primer_links/sect_6/macro/picking_icon.gif)button for a window |
 | .Popup( *"name"* ) | Map popup window for button *name* (equivalent to right clicking on button) |
 | .Radio( *"name"* ) = *"value"* | Set radio button *name* to *value* |
 | .Resize( *&lt;data&gt;* ) | Resize/move window |
@@ -73,7 +73,7 @@ Click( *"name"* )
 | MacroName( *"name"* ) | Name that will be shown for the macro on the button in the macro panel. This must be in the first 10 lines of the macro. |
 | MacroUTF8Encoded() | Indicates that the macro contains Unicode text for Pause or MacroVariable descriptions and is UTF-8 encoded. See the [Unicode](playing-a-macro.md#unicode)section for more details. This must be in the first 10 lines of the macro. |
 | MacroVariable( *"name"* , *"description"* , *"value"* ) | Adds a variable definition to the macro. See the [Variables](playing-a-macro.md#macroVariables)section for more details. These must be defined near the top of the file before the variable(s) are used. |
-| Pause( *"text"* ) | Temporarily suspend command file playback to allow user interaction. A window is mapped on the screen with "text" as a prompt. e.g. <br> ![](../Storage/primer-22-1/primer_links/sect_6/macro/pause_command.gif) <br>Press Resume to resume playback. |
+| Pause( *"text"* ) | Temporarily suspend command file playback to allow user interaction. A window is mapped on the screen with "text" as a prompt. e.g. <br> ![](./Storage/primer-23/primer_links/sect_6/macro/pause_command.gif) <br>Press Resume to resume playback. |
 | Promptln( *"message"* ) | Write message to the dialogue box. |
 | Promptln( *"message"* ) | Write message to the dialogue box, adding a new line |
 | SelectFile( *"filter"* ) = *"name"* | Select file *name* from the File selection window. |

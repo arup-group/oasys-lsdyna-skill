@@ -3,7 +3,7 @@
 | The example above describes how a single definition can be edited from a scalar PRIMER editing panel. It is also possible to Text edit multiple items by using the same function from the generic [Keyword Editor described](the-generic-keyword-editing-panel.md#keywordedit).<br>
 <br>This works in exactly the same way, and is subject to the same rules and limitations below, except that<br>
 <ul style="font-size: 14.6667px;"> <li>Multiple items can be exported to the external keyword file by selecting several rows for editing. In this example rows 2 to 14 inclusive will be exported for editing.<br><br></li> <li>Multiple items can be re-imported back into the model. Where labels in the external file match existing items in the&#160;PRIMER&#160;database then those items&#39; definitions will be replaced, where external labels do not match an existing definition then a new definition will be created. The number of items read in does not have to match the number exported.<br><br>Therefore it is possible to import multiple new entries into the model by this method, however the limitation that only those items of the current *Keyword will be considered still stands so, once again, this is not a generalised way of importing new model data.</li>
-</ul> | ![](../Storage/primer-22-1/primer_links/sect_5/5a/multi_te.png) |
+</ul> | ![](./Storage/primer-23/primer_links/sect_5/5a/multi_te.png) |
 | --- | --- |
 
 ##### Consequences of Text Edit being an autonomous process

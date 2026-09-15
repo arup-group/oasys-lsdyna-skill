@@ -2,11 +2,11 @@
 
 A contour of Quality Imperfection is shown below:
 
-![Quality Imperfection Contour](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_15.gif)
+![Quality Imperfection Contour](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_15.gif)
 
 The Settings... panel for Elem Qual is shown below:
 
-![Settings for Elem Qual](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_2_14_new.bmp)
+![Settings for Elem Qual](./Storage/primer-23/primer_links/sect_4/images/fig_4_2_14_new.bmp)
 
 Individual quality metrics such as aspect ratio can be contoured using appropriate radio buttons.
 

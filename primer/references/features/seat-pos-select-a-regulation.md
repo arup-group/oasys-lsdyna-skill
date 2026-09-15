@@ -2,7 +2,7 @@
 
 Select “Impact Type” and select a regulation to load the required seating position. The manufacturer's design position can be set in the next panel "Seat Model Input".
 
-![](../Storage/primer-22-1/seat-pos-select-a-regulation/seat-pos-select-a-regulation-2025-04-22-2.png)
+![](./Storage/primer-23/seat-pos-select-a-regulation/seat-pos-select-a-regulation-2025-04-22-2.png)
 
 ## List of Supported Regulations
 

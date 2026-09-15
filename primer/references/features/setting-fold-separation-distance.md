@@ -1,6 +1,6 @@
 ﻿####  Setting Fold Separation Distance
 
- ![](../Storage/primer-22-1/primer_links/sect_6/airbag/fold_sep.gif) 
+ ![](./Storage/primer-23/primer_links/sect_6/airbag/fold_sep.gif) 
 When a fold is current this sets the distance between layers, the thickness.
 
 If fold #0 is current, this sets instead the Default Thickness to be used for all folds in the airbag, which may be overridden for individual folds.

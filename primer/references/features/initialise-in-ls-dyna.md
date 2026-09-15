@@ -1,6 +1,6 @@
 ﻿####  Initialise in Ansys LS-DYNA
 
-![Initial Read Dyna view](../Storage/primer-22-1/primer_links/sect_3/images/read_dyna_initial.png)
+![Initial Read Dyna view](./Storage/primer-23/primer_links/sect_3/images/read_dyna_initial.png)
 
 You can choose to **Initialise** the PRIMER model in the session via the " **Initialise in Ansys LS-DYNA** " option under " **Ansys** **LS-DYNA Results** ". 
 The model initialisation in Ansys LS-DYNA happens via the [**"Ansys LS-DYNA submission" tool**](ls-dyna-submission-tool.md#need_for_submit)****tool in PRIMER by pressing the **Submit** button. 
@@ -35,7 +35,7 @@ This does consume a license and is perhaps appropriate for local submissions usi
 
 #####  Ansys LS-DYNA Submission Tool
 
-![LS-DYNA Submission Tool](../Storage/primer-22-1/primer_links/sect_3/images/dyna_submission_tool.png)
+![LS-DYNA Submission Tool](./Storage/primer-23/primer_links/sect_3/images/dyna_submission_tool.png)
 
 The Ansys LS-DYNA initialisation can only be done using the [**"Ansys LS-DYNA submission" tool**](ls-dyna-submission-tool.md#need_for_submit)****on the same (LOCAL) machine from where PRIMER is launched.
 
@@ -52,6 +52,6 @@ Ansys **LS-DYNA Job Monitor** panel.
 * After the Ansys LS-DYNA run has terminated, PRIMER automatically updates the "Read DYNA" panel with the output files.
 * The "Read DYNA" panel with output files, can also be mapped from the job monitor panel after the Ansys LS-DYNA job is terminated using the **Choose Action-&gt;Check Ansys LS-DYNA** Results menu button.
 
-![LS-DYNA monitor](../Storage/primer-22-1/primer_links/sect_3/images/dyna_submission_monitor.png)
+![LS-DYNA monitor](./Storage/primer-23/primer_links/sect_3/images/dyna_submission_monitor.png)
 
 [Previous](reading-ls-dyna-output-error-files.md)  |  [Next](read-existing-ls-dyna-results.md)

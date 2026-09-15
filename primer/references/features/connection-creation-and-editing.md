@@ -5,7 +5,7 @@ There are four types of connection available, the first three are demonstrated h
 The examples below show how the various assemblies of a seat mechanism have been joined together with connections.
 
 This seat has runners attached to the floor in which sliders travel fore and aft. The base is attached to the sliders by links, and the seat back to the base by a hinge at its base.
- ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/conn_base.jpg)
+ ![](./Storage/primer-23/primer_links/sect_6/mechanism/conn_base.jpg)
  
 #####  PIN joint 
  
@@ -22,7 +22,7 @@ The pin acts like a spherical joint, providing connectivity in Tx, Ty, Tz; but n
  
 In this example a pin joint has been used to connect the link between the sliding base of the a seat and the cushion frame.
  
-![](../Storage/primer-22-1/connection-creation-and-editing-2022-12-12-4.png) ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_pin.gif)
+![](./Storage/primer-23/connection-creation-and-editing-2022-12-12-4.png) ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_pin.gif)
  
 An optional \*CONSTRAINED\_JOINT\_STIFFNESS may be defined from which stop angles will be extracted to limit the extent of rotations about the three local axes of the pin, but the stiffness loadcurves on this card will be ignored and will not influence mechanism positioning. If such a definition is used side A is on assembly 1 and side B on assembly 2. (This option is primarily to support the conversion of Dummy trees to Mechanisms, but it can also be used more generally.)
 
@@ -35,7 +35,7 @@ A LINE joint connects two assemblies 1 and 2 along the line between points A and
 
 In this example a LINE joint has been used to model the sliding of the runners fore and aft in the guide rails attached to the floor.
  
-![](../Storage/primer-22-1/connection-creation-and-editing-2022-12-12-5.png) ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/conn_line.jpg)
+![](./Storage/primer-23/connection-creation-and-editing-2022-12-12-5.png) ![](./Storage/primer-23/primer_links/sect_6/mechanism/conn_line.jpg)
 
 **Optional assembly 3**
  
@@ -45,7 +45,7 @@ The most common usage of this would be when defining a roller between two assemb
  
 There is no "parent/child" relationship: all assemblies are equal, and any assembly can drive the motion of the other two.Motion is constrained to axis A-B, the separation shown here is artificial.
  
-![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_5a.png)
+![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_5a.png)
  
 Motion is constrained to:
  
@@ -82,19 +82,19 @@ A HINGE joint also connects two assemblies 1 and 2 along the line between points
 
 In this example a HINGE joint has been used to model the seat back to seat base connection, permitting only tilting backwards and forwards about the transverse axis.
  
-![](../Storage/primer-22-1/connection-creation-and-editing-2022-12-12-7.png) ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/conn_hinge.jpg)
+![](./Storage/primer-23/connection-creation-and-editing-2022-12-12-7.png) ![](./Storage/primer-23/primer_links/sect_6/mechanism/conn_hinge.jpg)
  
 Only rotation about the axis A-B is permitted, within the limits specified, translation along that axis being restrained.
  
 (A LINE joint with its permitted translation distances set to zero is exactly the same as a HINGE joint.)
 
-| COUPLER joint  <br>![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_6a.png)A COUPLER joint defines a linear equation<br> <br>c1\*(r1 or d1) + c2\*(r2 or d2) = 0 or<br> <br>c1\*(r1 or d1) + c2\*(r2 or d2) + c3\*(r3 or d3) = 0<br> <br>between rotation angles r1, r2, r3 (in radians) and/or slide distances d1, d2, d3 of two or three LINE and/or HINGE connections. For each of the connections the mode on the edit panel specifies whether it is translation or rotation in the linear equation. Only for line connections both options are available, whereas for hinge connection only rotation can be coupled. The coefficients c1, c2 and c3 are those defining the equation. In the most common case with only two connections the third connection should be left as 0 on the edit panel, and PRIMER will ignore the settings for the mode and coefficient. |
+| COUPLER joint  <br>![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_6a.png)A COUPLER joint defines a linear equation<br> <br>c1\*(r1 or d1) + c2\*(r2 or d2) = 0 or<br> <br>c1\*(r1 or d1) + c2\*(r2 or d2) + c3\*(r3 or d3) = 0<br> <br>between rotation angles r1, r2, r3 (in radians) and/or slide distances d1, d2, d3 of two or three LINE and/or HINGE connections. For each of the connections the mode on the edit panel specifies whether it is translation or rotation in the linear equation. Only for line connections both options are available, whereas for hinge connection only rotation can be coupled. The coefficients c1, c2 and c3 are those defining the equation. In the most common case with only two connections the third connection should be left as 0 on the edit panel, and PRIMER will ignore the settings for the mode and coefficient. |
 | --- |
 
-| **Example of coupler between rotation and rotation**<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_6b.png)Here the two gears are attached by hinge connections to the red base assembly, where the axes of the hinges are orthogonal to the plane of the red assembly. In the picture on the right the radius of the blue gear is three times the radius of the green gear. Therefore the rotation angle r1 of the green gear should always be three times the rotation angle r2 of the blue gear, but in opposite direction. This can be defined as a coupler with equation c1\*r1 + c2\*r2 = 0 by setting the coefficient c1 for the green gear axis to 1.0 and c2 for the blue gear axis to 3.0. For more general radii, the coefficients need to be proportional to the respective radii of the gears. Note that scaling all coupler coefficients by the same non-zero constant does not have any effect on the meaning of the coupler. |
+| **Example of coupler between rotation and rotation**<br> <br>![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_6b.png)Here the two gears are attached by hinge connections to the red base assembly, where the axes of the hinges are orthogonal to the plane of the red assembly. In the picture on the right the radius of the blue gear is three times the radius of the green gear. Therefore the rotation angle r1 of the green gear should always be three times the rotation angle r2 of the blue gear, but in opposite direction. This can be defined as a coupler with equation c1\*r1 + c2\*r2 = 0 by setting the coefficient c1 for the green gear axis to 1.0 and c2 for the blue gear axis to 3.0. For more general radii, the coefficients need to be proportional to the respective radii of the gears. Note that scaling all coupler coefficients by the same non-zero constant does not have any effect on the meaning of the coupler. |
 | --- |
 
-| **Example of coupler between rotation and translation**<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_6c.png)Here the green gear is again attached to the red base assembly by a hinge with axis orthogonal to the base. The blue rack can slide horizontally, which can be defined as a line connection between the blue and the red assemblies with horizontal axis and zero stop angles. As the gear rotates by the angle r1 in radians, the blue rack should translate by a distance d2 which the teeth of the gear move by its rotation. Since angles are measured in radians here, we have got d2 = R\*r1, where R is the radius of the green gear. This can be defined as a coupler wit h equation c1\*r1 + c2\*d2 = 0, where c1 = R and c2 = 1.0 or c2 = -1.0. The correct sign will depend on the orientations when defining the hinge and line connections. |
+| **Example of coupler between rotation and translation**<br> <br>![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_6c.png)Here the green gear is again attached to the red base assembly by a hinge with axis orthogonal to the base. The blue rack can slide horizontally, which can be defined as a line connection between the blue and the red assemblies with horizontal axis and zero stop angles. As the gear rotates by the angle r1 in radians, the blue rack should translate by a distance d2 which the teeth of the gear move by its rotation. Since angles are measured in radians here, we have got d2 = R\*r1, where R is the radius of the green gear. This can be defined as a coupler wit h equation c1\*r1 + c2\*d2 = 0, where c1 = R and c2 = 1.0 or c2 = -1.0. The correct sign will depend on the orientations when defining the hinge and line connections. |
 | --- |
 
 #####  Locking connections.

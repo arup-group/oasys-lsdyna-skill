@@ -15,7 +15,7 @@ There are two different methods of selecting drag handles:
 * Interactive : allows picking/dragging of just one handle/point at a time.
 * Selection : allows picking of multiple handles/points, either by area or one at a time. Clicking Drag allows the selection to then be dragged by the same vector. Specific handles/points can be deselected by right-click, the middle mouse button will undo the last pick (both only when Select is pressed). The whole selection can be cleared by clicking Reset .
 
- ![](../Storage/primer-22-1/primer_links/sect_6/mesh_morphing/mesh_morphing_morphing_tab.png)
+ ![](./Storage/primer-23/primer_links/sect_6/mesh_morphing/mesh_morphing_morphing_tab.png)
  
 PRIMER allows you to morph in any direction in either the global coordinate system or a user-defined local coordinate system (the methods of defining a local coordinate system are the same as when creating a morph box). However, you can limit the allowed directions of dragging with the following buttons:
 
@@ -52,6 +52,6 @@ Notes on morphing connections:
 * When remaking a HAZ weld, sections of the old mesh are deleted and new nodes and shells are created. If this HAZ weld is 'known' to a morph box, PRIMER will check if these new nodes lie within the morph box and, if so, will add them to the morph box. As above, if the morph box has been excessively deformed PRIMER may fail to calculate the parametric coordinates of these nodes. In this case, these nodes will not be added to the morph box and a warning message will be printed in the dialogue box.
 * If morphing interactively after running a PRIMER JavaScript, ensure that ApplyMorphing() is called for all relevant morph boxes after moving any morph points. Otherwise, connections (and their associated FE) may be prone to shifting unexpectedly.
 
-![](../Storage/primer-22-1/primer_links/sect_6/mesh_morphing/mesh_morphing_partial_connection_1.png) ![](../Storage/primer-22-1/primer_links/sect_6/mesh_morphing/mesh_morphing_partial_connection_2.png)
+![](./Storage/primer-23/primer_links/sect_6/mesh_morphing/mesh_morphing_partial_connection_1.png) ![](./Storage/primer-23/primer_links/sect_6/mesh_morphing/mesh_morphing_partial_connection_2.png)
 
 [Previous](create-tab.md)  |  [Next](utilities-tab-meshing.md)

@@ -1,6 +1,6 @@
 ﻿####  Read Existing Ansys LS-DYNA Results
 
-![Existing LS-DYNA Results](../Storage/primer-22-1/primer_links/sect_3/images/existing_dyna_results.png)
+![Existing LS-DYNA Results](./Storage/primer-23/primer_links/sect_3/images/existing_dyna_results.png)
 
 You can load **Existing** Ansys LS-DYNA results using the
 **Ansys** **LS-DYNA Results** drop down menu.

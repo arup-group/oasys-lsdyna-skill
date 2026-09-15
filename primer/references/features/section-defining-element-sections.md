@@ -14,7 +14,7 @@ The \*SECTION keyword in Ansys LS-DYNA are used to define the section propertie
  
 Sections of all types share a common numbering sequence (thus you cannot have \*SECTION\_SHELL  **#1*****and***\*SECTION\_SOLID  **#1**).
 
-| **This figure shows the main section create/edit panel.** <br>All functions have their standard meanings as described in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). | ![](../Storage/primer-22-1/primer_links/sect_5/section/fig_sect_0.gif) |
+| **This figure shows the main section create/edit panel.** <br>All functions have their standard meanings as described in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). | ![](./Storage/primer-23/primer_links/sect_5/section/fig_sect_0.gif) |
 | --- | --- |
 
 **CREATE** **: Making a new section definition**
@@ -23,10 +23,10 @@ Initially a new section has no **\_type**defined, and it is necessary to define
  
 Use the Type: popup menu, as shown in this figure to define an element type.
  
-![](../Storage/primer-22-1/primer_links/sect_5/section/fig_sect_1a.gif)
+![](./Storage/primer-23/primer_links/sect_5/section/fig_sect_1a.gif)
  Once the section type has been defined, the relevant keyword cards appear on the editing panel, organised as shown in the Ansys LS-DYNA manual.
 In this example the user has selected type \_BEAM , and filled in the basic data for a section.
- ![](../Storage/primer-22-1/primer_links/sect_5/section/fig_sect_1b.gif)
+ ![](./Storage/primer-23/primer_links/sect_5/section/fig_sect_1b.gif)
 
 ####  COPY Copy existing section(s) to make a new section(s).
 

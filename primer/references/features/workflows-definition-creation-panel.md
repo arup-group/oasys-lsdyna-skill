@@ -4,7 +4,7 @@ Tools → Workflows → Create Workflow Definition
 
 This panel allows you to create your own Workflow by creating a Workflow Definition, which will allow you to build your own bespoke tools. The Workflow Definition defines all the parameters of a Workflow: it describes what the Workflow does and points to scripts to run in PRIMER, D3PLOT or T/HIS.
 
-![](../Storage/primer-22-1/workflows-definition-creation-panel-2023-02-09.png)
+![](./Storage/primer-23/workflows-definition-creation-panel-2023-02-09.png)
 
 To create a new Workflow Definition, simply complete all the required fields in the menu and press Save at the top. A description of all the Workflow attributes is shown in the table below. You can import the data from an existing Workflow Definition using the Load button on the top left-hand side of the panel. This will populate all the fields with the data from the imported Workflow Definition. The Reset button clears all of the data from the textboxes and resets the panel.
 

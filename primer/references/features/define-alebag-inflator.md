@@ -15,14 +15,14 @@ These can be edited through their own specific editing panel (see below).
 * [Check](define-transform.md#check)
 * [Renumber](define-transform.md#renumber)
 
-| This figure shows the main menufor the editing of alebag inflator definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_alebag_inflator_1.gif) |
+| This figure shows the main menufor the editing of alebag inflator definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_alebag_inflator_1.gif) |
 | --- | --- |
 
 ####  CREATE Making a new alebag inflator definition
  
 This shows the create/edit panel for alebag inflators. New 'NGAS' or 'NORIF' rows can be added to this card by typing the required value into the NGAS or NORIF fields on the first line.
  
-![](../Storage/primer-22-1/primer_links/sect_5/define/fig_alebag_inflator_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/define/fig_alebag_inflator_2.gif)
 
 ####  COPY Copy existing alebag inflator(s) to make a new alebag inflator(s)
  

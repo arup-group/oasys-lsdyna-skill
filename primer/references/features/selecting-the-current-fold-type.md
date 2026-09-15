@@ -1,6 +1,6 @@
 ﻿####  Selecting the Current Fold Type
 
-The Fold Type popup button controls the current fold type, which will be one of![](../Storage/primer-22-1/primer_links/sect_6/airbag/fold_type_popup.gif)
+The Fold Type popup button controls the current fold type, which will be one of![](./Storage/primer-23/primer_links/sect_6/airbag/fold_type_popup.gif)
 
 * [Null fold](null-fold-set-attributes-but-don-t-fold-mesh.md#nullfold)
 * [Thin fold](thin-fold-perform-a-sharp-crease-fold.md#thinfold)

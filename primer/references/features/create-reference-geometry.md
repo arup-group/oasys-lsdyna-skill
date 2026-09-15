@@ -1,6 +1,6 @@
 ﻿####  Create Reference Geometry
 
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/refgeom_0.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/refgeom_0.png)
  
 When a belt has been meshed in whole or in part using pure shell (not seatbelt) elements using \*MAT\_FABRIC it is possible to create an \*AIRBAG\_REFERENCE\_GEOMETRY card giving the undistorted shape of these elements. This is turned on by ticking the box shown here.
  
@@ -10,21 +10,21 @@ Reference geometry can be important if form-finding has caused some local distor
  
 This model shows a "fully meshed" belt in which there is a continuous stretch of shell elements all the way from the retractor, through the shoulder D-ring and pelvis buckle down to the final anchorage point. The mesh has to negotiate some quite "bumpy" geometry en route, and one such area is shown enlarged here:
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/refgeom_1.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/refgeom_1.png)
  
 If we plot minimum element length in that region we see the following, which shows slight distortion of the elements and some variation from the nominal 3mm belt element length.
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/refgeom_2.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/refgeom_2.png)
  
 Another region where the belt element length varies, this time by design (by setting a local element length) is at the pelvis buckle
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/refgeom_3.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/refgeom_3.png)
  
 These distortions are not huge, but if the belt were unrolled and laid out flat it would show slight kinks, bumps and minor variations in width. If you are going to all the trouble of meshing it using explicit shell elements, and if you use \*MAT\_FABRIC for this purpose, then you can exploit the \*AIRBAG\_REFERENCE\_GEOMETRY card in Ansys LS-DYNA to restore the mesh to its correct shape during the initial part of the analysis. This card is intended for removing the distortions introduced into an airbag mesh when the fabric is folded, and belt fitting presents exactly the same problem.
  
 PRIMER allows you to view reference geometry by swapping "true" and "reference" coordinates using [Swap Nodal coords in the Display Options panel](display-options-controlling-plot-parameters.md#swap_coords). Using that capability for the belt above shows the following, from which it can be seen that the reference geometry straightens the belt and makes the mesh orthogonal.
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/refgeom_4.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/refgeom_4.png)
  
 #####  Example material and loadcurve properties for a typical fabric belt using reference geometry 
  

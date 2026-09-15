@@ -15,7 +15,7 @@ Sadly it is not possible to do all the above, but it  ***is***  possible to go s
 
 Here is a typical crash handler panel as captured on a Windows platform:
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_8_1.png)
+![](./Storage/primer-23/primer_links/sect_2/images/fig_2_8_1.png)
 
 You can control how the crash handler works using the preference primer\*error\_handler: *option*
 

@@ -26,15 +26,15 @@ If you send us these files it helps us to help you. Sometimes we can diagnose th
 
 ## The default process for handling a crash in an interactive session
 
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-12-2.png) This is not the default behaviour for users in Japan, see "[Special configuration in some geographies](emailing-crash-dumps-to-support.md#h2__782393160)" below.
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-12-2.png) This is not the default behaviour for users in Japan, see "[Special configuration in some geographies](emailing-crash-dumps-to-support.md#h2__782393160)" below.
 
 Following a crash, you will see this message (*t**his example shows PRIMER; the behaviour is the same for all Oasys LS-DYNA Environment products*).
 
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-1.png)
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-1.png)
 
 If you choose one of the Email options an email like the following will be created in your default email client. This example uses Microsoft Outlook but if different software is installed that will be used instead.
 
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-2.png)
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-2.png)
 
 Note that the dump file is attached automatically to the email, and it may also contain a Stack trace containing information about the stack frame.
 
@@ -46,14 +46,14 @@ The email will never be sent automatically. If you close the email without sendi
 
 All aspects of the crash handler can be configured via preferences stored in the oa\_pref file, but much the easiest way to do this is to use the interactive configuration GUI built into the software.
 
-| In all programmes other than Oasys SHELL, selecting Help → Crash handler will launch the configuration panel:<br><br>![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-4.png)<br><br><br><br>In Oasys SHELL, this is launched from Utilities → Crash Handling: | ![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-12.png) |
+| In all programmes other than Oasys SHELL, selecting Help → Crash handler will launch the configuration panel:<br><br>![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-4.png)<br><br><br><br>In Oasys SHELL, this is launched from Utilities → Crash Handling: | ![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-12.png) |
 | --- | --- |
 
 Taking each section of this panel in turn:
 
 ###  Action to be taken after a crash
  
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-5.png)
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-5.png)
 
 ###  For interactive usage:
 
@@ -69,7 +69,7 @@ The default if no explicit setting is defined is “Minidump file and exit”. T
 
 ### Preference files to update
 
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-6.png)
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-6.png)
 
 Preferences can be stored in oa\_pref files at three levels:
 
@@ -101,7 +101,7 @@ by unticking “All Oasys LS-DYNA Environment products” and ticking only thos
 
 ### Minidump files
 
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-8.png)
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-8.png)
 
 Minidump files contain debug information about the code when it crashed. They do not contain any information about the model and cannot be used to reverse-engineer models in any way. If you send them to Oasys Ltd Support they may be able to tell what caused the crash, but this is not guaranteed – sometimes they are very opaque. However, any information is useful when trying to debug crashes, so if you send them to us it helps us to help you.
 
@@ -111,7 +111,7 @@ If you do choose an alternative location, remember that it must be writeable by 
 
 ###  Feedback email details
  
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11.png)
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11.png)
 
 Firstly you need to decide whether or not you want to compose emails automatically.
 
@@ -141,7 +141,7 @@ The best approach is to the use the Test Email button to try the currently selec
 
 You can send the test email if you wish. If you want acknowledgement from Oasys Ltd that it has been received, please request this in the email body, otherwise it will be ignored.
 
-![](../Storage/primer-22-1/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-9.png)
+![](./Storage/primer-23/project-common-topics/emailing-crash-dumps-to-support/emailing-crash-dumps-to-support-2025-06-11-9.png)
 
 If you see this email but it takes about one minute to appear, and you are using the default “Best effort” method, this suggests that the default email client has failed to work. The delay is because this has a time-out period of about one minute and it will have fallen back to one of the Outlook or URL mailto: methods. You can tell which method by inspecting whether or not it has the file test\_attachment.txt attached: if it has then it has used Outlook, if not it has used URL mailto (the latter does not permit attachments). To avoid similar delays for users, please select the method it has actually used so that it will go directly to this.
 

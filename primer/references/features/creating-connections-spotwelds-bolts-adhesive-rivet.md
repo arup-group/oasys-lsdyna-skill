@@ -1,6 +1,6 @@
 ﻿####  Creating Connections: Spotwelds, Bolts, Adhesive, Rivet
 
-![](../Storage/primer-22-1/creating-connections-spotwelds-bolts-adhesive-rivet/creating-connections-spotwelds-bolts-adhesive-rivet-2025-04-15.png)
+![](./Storage/primer-23/creating-connections-spotwelds-bolts-adhesive-rivet/creating-connections-spotwelds-bolts-adhesive-rivet-2025-04-15.png)
 
 The connection creation panel allows you to select the creation option from - spotweld/rivet, bolt/joint, adhesive or spotweld lines/arcweld and to select the layer parts/elements to be connected.
 
@@ -20,7 +20,7 @@ Exclude rigid from selection is active the selection will ONLY be applied to def
 
 Select candidate elems/part allows you to select on the object menus
 
-![](../Storage/primer-22-1/creating-connections-spotwelds-bolts-adhesive-rivet/creating-connections-spotwelds-bolts-adhesive-rivet-2025-04-15-1.png)
+![](./Storage/primer-23/creating-connections-spotwelds-bolts-adhesive-rivet/creating-connections-spotwelds-bolts-adhesive-rivet-2025-04-15-1.png)
 
 When PRIMER creates a spotweld from a point you give it, it considers which elements near the point are selected for welding and tries to create a spotweld between these elements. If you do not want a certain panel to be welded, do not include it in the selection.
 
@@ -34,7 +34,7 @@ When creating any connection, a title can be added to the connection by typing t
 
 Note when connections are created all the various settings used during creation are stored with the connection entity. This means that when remaking the connection the saved settings are reused. This is new functionality added in v14 onwards. This can be turned off in the settings panel by unticking Save current settings with connection . When turned off, PRIMER will use the current program settings when remaking connections:
 
-![](../Storage/primer-22-1/creating-connections-spotwelds-bolts-adhesive-rivet/creating-connections-spotwelds-bolts-adhesive-rivet-2025-04-15-2.png)
+![](./Storage/primer-23/creating-connections-spotwelds-bolts-adhesive-rivet/creating-connections-spotwelds-bolts-adhesive-rivet-2025-04-15-2.png)
 
 The creation panel will now open in the appropriate mode.
 

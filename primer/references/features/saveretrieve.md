@@ -1,10 +1,10 @@
 ﻿###  Save/Retrieve
 
-![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_3.gif)Controls the saving and retrieving of cut-section definitions.
+![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_3.gif)Controls the saving and retrieving of cut-section definitions.
  
 Only one cut section can be active at any time, but any number of cut section definitions can be saved to disk for subsequent retrieval.
  
-![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_4.gif)To save a section:
+![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_4.gif)To save a section:
  
 * Open a file with File... (default "section.cut")
 * Store the file, giving the section a name.

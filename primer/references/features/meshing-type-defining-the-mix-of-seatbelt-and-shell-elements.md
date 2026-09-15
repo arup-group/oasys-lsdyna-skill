@@ -1,6 +1,6 @@
 ﻿####  Meshing Type: Defining the Mix of SEATBELT and SHELL Elements
 
-| Each segment of the belt between fixed ends or sliprings is divided into three spans:<br> <ul style="font-size: 14.6667px;"> <li>End 1 (E1)</li> <li>Centre (Ce)</li> <li>End (E2)</li> </ul> <br>From V14 onwards, using "new style" meshing, each span may be any of the eligible element types: 1d belt, 2d belt or shell. In the example on the right this segment is meshed from element types:<br> <br>[ **1d belt | shells | 2d belt**] | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/mesh_layout_1.png) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/ovn_1.png) |
+| Each segment of the belt between fixed ends or sliprings is divided into three spans:<br> <ul style="font-size: 14.6667px;"> <li>End 1 (E1)</li> <li>Centre (Ce)</li> <li>End (E2)</li> </ul> <br>From V14 onwards, using "new style" meshing, each span may be any of the eligible element types: 1d belt, 2d belt or shell. In the example on the right this segment is meshed from element types:<br> <br>[ **1d belt | shells | 2d belt**] | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/mesh_layout_1.png) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/ovn_1.png) |
 | --- | --- | --- |
 
 However there are some limitations imposed by the end conditions of the segment:
@@ -23,21 +23,21 @@ This array of buttons forms a matrix:
 | **End 2** | [ ] | [ ] | [ ] |
 | [End condition of next segment] |
 
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/ovn_1.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/ovn_1.png)
 
 For each span E1, Ce, E2 you need to select an element type. The colours and symbols of the buttons have the following meanings:
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/mesh_layout_2.png)If the background of the button is green that means that this selection is valid for that span of the belt.
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/mesh_layout_2.png)If the background of the button is green that means that this selection is valid for that span of the belt.
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/mesh_layout_3.png)If the background of the image is orange this means that there is an uncorrected error due to this selection. Hovering the mouse over an orange button will explain why that selection is invalid, for example element mismatch across a slipring.
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/mesh_layout_3.png)If the background of the image is orange this means that there is an uncorrected error due to this selection. Hovering the mouse over an orange button will explain why that selection is invalid, for example element mismatch across a slipring.
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/mesh_layout_4.png)An unselected option with a red X means that it would be an error to select this element type in this location. Again, hovering over the button will explain why this is the case.
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/mesh_layout_4.png)An unselected option with a red X means that it would be an error to select this element type in this location. Again, hovering over the button will explain why this is the case.
  
 The "status" button at the top left of this matrix shows the good / bad status of the belt as a whole, considering all of its segments.
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/mesh_layout_5.png)Means that the meshing definition does not contain any errors.
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/mesh_layout_5.png)Means that the meshing definition does not contain any errors.
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/mesh_layout_6.png)Means that there are one or more errors somewhere in the belt mesh definition, and hovering over this symbol will list all such errors. It will not be possible to generate the belt mesh while there are errors in the mesh.
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/mesh_layout_6.png)Means that there are one or more errors somewhere in the belt mesh definition, and hovering over this symbol will list all such errors. It will not be possible to generate the belt mesh while there are errors in the mesh.
  
 #####  Using the old style Mesh Type buttons
  
@@ -50,7 +50,7 @@ Each segment must be meshed with one of:
 | [Mixed Sb1/Sh](examples-of-each-type-of-mesh.md#mix_1) | A mixture of 1D SEATBELT and SHELL elements |
 | [Mixed SB2/Sh](examples-of-each-type-of-mesh.md#mix_2) | A mixture of 2D SEATBELT and SHELL elements. |
 
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/ovn_2.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/ovn_2.png)
  
 Historically 1D Seatbelt elements have been used to attach to retractors and in stretches through sliprings, and Shell elements have been used where contact with the dummy is required. This is Mixed Sb1/Sh mode.
 

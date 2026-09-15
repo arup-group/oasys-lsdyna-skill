@@ -1,6 +1,6 @@
 ﻿###  Playing a Macro
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/macro/play.gif)To play a macro press the Play button at the top of the panel. Give a filename for the macro in the File: textbox or press the folder icon to select a macro file (macro files in PRIMER should have the extension prm ( **PR** imer **M** acro) ). <br>Once a filename has been given the Play button will become active. |
+| ![](./Storage/primer-23/primer_links/sect_6/macro/play.gif)To play a macro press the Play button at the top of the panel. Give a filename for the macro in the File: textbox or press the folder icon to select a macro file (macro files in PRIMER should have the extension prm ( **PR** imer **M** acro) ). <br>Once a filename has been given the Play button will become active. |
 | --- |
 
 ####  Variables
@@ -76,7 +76,7 @@ Window("Orient").Window("CONFIRM ORIENT").Button("Accept")
 
 When you play a macro PRIMER scans the top of the macro to see if there are any MacroVariable() commands. If any are found then PRIMER shows a window with all of the variables. This allows you to change the variable values. Hovering over a variable name shows the description for each variable as hover text.
 
-![](../Storage/primer-22-1/primer_links/sect_6/macro/variables.gif)
+![](./Storage/primer-23/primer_links/sect_6/macro/variables.gif)
 
 When the correct variable values are chosen the macro can be run by pressing Apply .
 
@@ -101,7 +101,7 @@ There are some options that alter the way that macros are played back
 
 | Replay pick/drag commands: | If a macro file contains any pick or drag commands then by default when the macro is played back the picks or drags will be played back exactly as they were recorded (i.e. the same position of the pick/drag on the screen will be replayed). If the Replay pick/drag commands option is selected this is what will happen. <br>If the option is unselected then the pick/drag command will be skipped and the macro playback will pause to allow you to replace the pick with whatever you want. A window will be mapped on the screen. |
 | --- | --- |
-|  | ![](../Storage/primer-22-1/primer_links/sect_6/macro/playback_paused.gif)<br> <br>Once you have replaced the pick(s) or drag(s) then press Resume and the macro playback will restart. |
+|  | ![](./Storage/primer-23/primer_links/sect_6/macro/playback_paused.gif)<br> <br>Once you have replaced the pick(s) or drag(s) then press Resume and the macro playback will restart. |
 | Replay view for pick/drag | Whenever a pick or drag command is recorded PRIMER saves the current view in the graphics window to the macro with a [ViewMatrix](list-of-macro-commands.md#viewmatrix)command. If this option is selected then on playback the view will be restored before picking. If it is not selected then the command will be skipped and the view will not be updated. |
 | Ignore numbers in window titles | Ignore any numbers in window titles. See section on [making macros work with different models](playing-a-macro.md#makeportable)for more details. |
 | UTF-8 encoded macro file | Indicates that this macro contains Unicode text for Pause or MacroVariable commands and is UTF-8 encoded. If the macro contains a  [MacroUTF8Encoded()](list-of-macro-commands.md#UTF8Encoded) command this option will automatically be selected. |
@@ -119,7 +119,7 @@ It may be useful to pause playback of a macro so that the user can do certain op
 
 Pause("This is a pause example")
 
-| will map the window shown on the right and then pause playback of the macro. The user can then do whatever operations are necessary and then press Resume to continue playback of the macro | ![](../Storage/primer-22-1/primer_links/sect_6/macro/pause_command.gif) |
+| will map the window shown on the right and then pause playback of the macro. The user can then do whatever operations are necessary and then press Resume to continue playback of the macro | ![](./Storage/primer-23/primer_links/sect_6/macro/pause_command.gif) |
 | --- | --- |
 
 This method could also be used to replace a sequence of picks in a macro. e.g. if a macro was recorded to create a contact and some parts were picked for the SURFA side of the contact there would be commands like

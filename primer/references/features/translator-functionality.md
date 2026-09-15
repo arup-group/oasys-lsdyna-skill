@@ -27,7 +27,7 @@ SAP2000 COORDINATE SYSTEM = LS-DYNA \*DEFINE\_COORDINATE\_SYSTEM
 
 The following constraint types are recognised by the translator - the rest are ignored:
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_08.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_08.gif)
 
 Each constraint type will be translated into PRIMER as a nodal rigid body where all degrees of freedom are constrained together for all nodes in the constraint group irrespective of the constraint type. Alternatively, it is possible to turn off and ignore constraints of a specific type.
 
@@ -99,7 +99,7 @@ These rigid offsets are modelled in Ansys LS-DYNA as groups of rigid beam elemen
 
 The proximity check distance can be used as a model checking feature.
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_09a.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_09a.gif)
 
 If any two nodes in the same rigid offset are further apart than the specified distance a warning will be printed in the dialogue box.
 
@@ -107,19 +107,19 @@ Please refer to the section on [Rigid Links](translator-functionality.md#rigidli
 
 ######  End Releases
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_10.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_10.gif)
 
 End releases are used to 'release' a selection of degrees of freedom at the end of a frame element. Note that if the frame element has a rigid offset, the end release will occur at the point that the flexible region of the frame attaches to the rigid region (i.e. at the free end).
 
 The translation of end releases into Ansys LS-DYNA will vary according to which translation option is selected in the DEFAULTS panel.
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_11.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_11.gif)
 
 1. Simply ignore the end release definitions.
 2. Use the 'simple' definition of end releases. This is a fairly crude translation, but utilises the fact that the majority of end releases are simple pins; i.e. all rotational freedoms (rx, ry & rz) are released leaving the translational freedoms fixed (ux, uy & uz). The simple end release definition separates the released joint into two coexistent nodes. These two nodes are then connected by a single translational 
 spring with a stiffness defined on the DEFAULTS panel. 
 
- ![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_12.gif)
+ ![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_12.gif)
 
 The spring has no orientation vector and merely holds the two nodes together while allowing the two nodes to rotate freely relative to each other. This form of end release, while fast to translate and simple to understand, it does not read which freedoms have been released: it always assumes a pure pin.
 3. The 'complex' end release definition is by far the most correct method, but it can become very slow and difficult to implement. With this in mind, it should not be used where there are a huge number of end releases to be translated in the model. The end release itself is a combination of linear constraint equations, nodal restraints and oriented discrete springs. The following table outlines what is used where and when:
@@ -144,7 +144,7 @@ It is often desirable to split a frame element into a number of beam elements. W
 
 Frames can only be split into an even number of beams, and the mid node will always be equally spaced between the two end nodes even if different length end releases are specified for the frame.
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_13.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_13.gif)
 
 The geometry of the split frame is shown above. As shown in the figure beams are oriented in such a way that the 'end 2' node of a beam always occurs at the extreme end of the frame. This is because seismic beams only develop plasticity at end 2. Hence if a seismic beam is split, it can develop a plastic hinge at both ends. The necessity of having end 2 nodes at the extreme ends of the frame requires the local beam coordinate system to be swapped halfway along the frame. Note that the local 'z' axis (generally the strong axis) is maintained in the same direction whilst the local 'y' axis is modified.
 
@@ -153,7 +153,7 @@ Defining which beams are to be split is done on a component by [component basis]
 1. Split into 'nseg' (or nearest even number), as defined for the frame element in the SAP2000 ascii deck.
 2. Split into the default number of beams which is set on the SAP2000 [main panel](main-translation-panel.md#main_panel). 
 
- ![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_14.gif)
+ ![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_14.gif)
 3. Split into an arbitrary number of beam elements as defined on the [frame translations options pane](frame-translation-options.md#frame_translation)l.
 
 A fourth option 'no split' can be specified. If this option is selected the frame component will not be split.
@@ -290,7 +290,7 @@ If the frame element to which the load is applied has not been split, two point 
 
 If the frame element has been split then the loading arrangement attempts to ensure that the correct moment is achieved at the free ends of the frame. A point load and moment are applied to the mid-node of the frame which create the same end moment conditions as the original loading condition. Two additional point loads are used to balance up the total load on the frame.
 
-![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_15.gif)
+![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_15.gif)
 
 SAP2000 SPAN LOADING = LS-DYNA \*LOAD\_NODE\_POINT
 

@@ -12,7 +12,7 @@ In some cases, sending the checkpoint file and the input files to Oasys Ltd Sup
 Reading/writing of checkpoint files can be enabled using the " **write\_checkpoint\_files** " and " **show\_checkpoint\_files** " command-line options and/or preferences. 
 Also the folder path to write checkpoint files to can be set using the " **checkpoint\_dir** " command-line option and/or preference.
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_8.gif)
+![](./Storage/primer-23/primer_links/sect_2/images/fig_2_8.gif)
 
 If you rerun someone else's checkpoint file on a different computer you may find that it fails for either or both of the following two reasons:
 

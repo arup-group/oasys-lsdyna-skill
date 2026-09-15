@@ -4,7 +4,7 @@ You are free to edit oa\_pref files by hand, but there is an interactive "Prefer
 
 It is started by Options, Edit Prefs:
 
-![](../Storage/primer-22-1/primer_links/appen_13/app_v_5.gif)
+![](./Storage/primer-23/primer_links/appen_13/app_v_5.gif)
 
 The preferences editor reads an XML file that contains all possible preferences and their valid options, and allows you to change them at will. In this example the user is changing the background colour in PRIMER.
 
@@ -32,6 +32,6 @@ In either event, regardless of the data source, the updated option will be writt
 
 Because of the order of file reading ( [see above](oa-pref-naming-convention-and-locations.md#oa_naming)), and option read from the master $OASYS file, amended, and written to your local $HOME file will take precedence when you next run PRIMER.
 
-![](../Storage/primer-22-1/primer_links/appen_13/app_v_6.gif)
+![](./Storage/primer-23/primer_links/appen_13/app_v_6.gif)
 
 [Previous](oa-pref-file-syntax.md)  |  [Next](oa-pref-arguments-valid-for-primer.md)

@@ -2,7 +2,7 @@
 
 There are many different fields that can be shown. To add or remove a column press View... which will bring up the list of field types as shown below. The fields which are currently shown will have a tick symbol next to them
 
-![](../Storage/primer-22-1/primer_links/sect_7/parttable/parttable2.png)
+![](./Storage/primer-23/primer_links/sect_7/parttable/parttable2.png)
 
 ####  Changing the table columns
 

@@ -1,6 +1,6 @@
 ﻿### Ansys LS-DYNA Format (Labels, Compression, Mode)
 
-| PRIMER "remembers" the input format of every master and include file in a model, storing the following three attributes:<br> <ol style="font-size: 14.6667px;"> <li>The&#160;Ansys LS-DYNA field width format: &quot;small&quot;, &quot;i10&quot; or large.</li> <li>The compression status: uncompressed, .gz or .zip.</li> <li>The mode used for file encoding: ASCII or binary.</li> </ol> | ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_1d.png)<br><br>![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_1da.png) |
+| PRIMER "remembers" the input format of every master and include file in a model, storing the following three attributes:<br> <ol style="font-size: 14.6667px;"> <li>The&#160;Ansys LS-DYNA field width format: &quot;small&quot;, &quot;i10&quot; or large.</li> <li>The compression status: uncompressed, .gz or .zip.</li> <li>The mode used for file encoding: ASCII or binary.</li> </ol> | ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_3_1d.png)<br><br>![](./Storage/primer-23/primer_links/sect_3/images/fig_3_3_1da.png) |
 | --- | --- |
 
 Option #2 can change the output filename to .gz or .zip, and option #3 can change it to .kby. These filename changes affect the logic which detects whether or not an existing file of that name exists. For example if you choose to write "model.key" as a .zip binary file PRIMER must look to see if filename "model.kby.zip" exists on disk in order to test whether it will be overwritten.

@@ -4,7 +4,7 @@ This tool provides a way of updating a dummy tree to include seperate assemblies
 
 This will then allow you to position the fingers independently of the hands using the standard positioning tools. This means the fingers can be positioned around a steering wheel for example.
 
-![dummy_finger_positioning_window](../Storage/primer-22-1/primer_links/sect_6/dummy_finger_positioning/dummy_finger_positioning_window.JPG)
+![dummy_finger_positioning_window](./Storage/primer-23/primer_links/sect_6/dummy_finger_positioning/dummy_finger_positioning_window.JPG)
 
 The following options are available on the input panel:
 

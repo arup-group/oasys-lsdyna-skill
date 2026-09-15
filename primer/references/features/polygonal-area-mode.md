@@ -1,6 +1,6 @@
 ﻿###  "Polygonal Area" Mode
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_9_1b.png)
+![](./Storage/primer-23/primer_links/sect_2/images/fig_2_9_1b.png)
  
 Picking works as follows:
  

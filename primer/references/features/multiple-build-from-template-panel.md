@@ -8,4 +8,4 @@ Write. Activating this without build will mean that the model will be built (if 
 
 Keyout Master Only. This is the default for build from templates. In this mode, the implemention of bolt connections (when an [xml connection file](connection-file-as-component-of-build.md#buildcon) is included as part of the build recipe) is run without applying the setting *use\_parent\_layer\_for\_bolt* ( irrespective of how this is defined) with the consequence that all created bolt FE will appear in the master file itself, thus obviating the requirement to additionally save includes.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/template_build.gif)[Previous](editing-multiple-templates.md)  |  [Next](single-build-from-command-line.md)
+![](./Storage/primer-23/primer_links/sect_3/images/template_build.gif)[Previous](editing-multiple-templates.md)  |  [Next](single-build-from-command-line.md)

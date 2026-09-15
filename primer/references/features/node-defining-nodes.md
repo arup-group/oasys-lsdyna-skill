@@ -35,10 +35,10 @@ The following special operations may also be performed on nodes.
 | [Drag](node-defining-nodes.md#dragnodes) | Allows nodes to be dragged, morphing the model, using a range of geometrical and topological rules. |
 | [Duplicates](node-defining-nodes.md#duplicates) | When nodes have been multiply defined in different include files PRIMER merges them together using the same coincidence rules as Ansys LS-DYNA, creating "clone" definitions so that they are remembered. This option allows you to sketch and label these duplicated nodes. |
 
-| The nodes menuallows the creating, modification etc. of nodes in a keyword deck. <br>The functions currently available have their standard meanings. (See [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions))<br> <br><br> <br>[Generic keyword editing](the-generic-keyword-editing-panel.md#keywordedit) is also available. | ![](../Storage/primer-22-1/primer_links/sect_5/node/node_menu.gif) |
+| The nodes menuallows the creating, modification etc. of nodes in a keyword deck. <br>The functions currently available have their standard meanings. (See [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions))<br> <br><br> <br>[Generic keyword editing](the-generic-keyword-editing-panel.md#keywordedit) is also available. | ![](./Storage/primer-23/primer_links/sect_5/node/node_menu.gif) |
 | --- | --- |
 
-| CREATE Making new node(s) <br>There are eight possible ways of creating nodes. These are selected by right clciking below Method. The following options are available | ![](../Storage/primer-22-1/primer_links/sect_5/node/fig_node_method.gif) |
+| CREATE Making new node(s) <br>There are eight possible ways of creating nodes. These are selected by right clciking below Method. The following options are available | ![](./Storage/primer-23/primer_links/sect_5/node/fig_node_method.gif) |
 | --- | --- |
 
 ##### (1) Pick or type in coordinates
@@ -49,7 +49,7 @@ Picking a node from the screen will set the X, Y and Z fields for the node you a
 
 The node label can be changed by typing in a new value or using the popup. If needed translational and rotational restraints can be applied by typing the value into the TC and RC fields or by using the popups.
 
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_single.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_single.gif)
  
 ##### (2) Create between 2 nodes (line)
  
@@ -61,7 +61,7 @@ Any number of nodes can be created between the 2 end nodes. Either use the popup
 
 Once both end nodes have been defined the CREATE\_NODES button will become active and can be used to create the nodes. The display will then refresh for you to create another line of nodes. Once you have finished DISMISS will close the window.
 
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_line.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_line.gif)
  
 ##### (3) Create between 4 nodes (surf)
  
@@ -71,7 +71,7 @@ In this figure node 1 is the node currently highlighted for picking, and 4 nodes
 
 The nodes do not need to be on a plane. If the nodes are not then the nodes will be generated on a curved surface between the 4 nodes.
 
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_surf.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_surf.gif)
  
 ##### (4) Create between 3 nodes (circle)
  
@@ -79,31 +79,31 @@ Creating a node at the centre of a circle works in an identical way to creating 
  
 In this figure node 1 is the node currently highlighted for picking. The 3 nodes define a circle, and the node created will be at the centre of that circle.
  
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_circle.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_circle.gif)
 
 ##### (5) Create at the centre of a hole
  
 This method of creating a node only requires the user to select one node. This node must be on the free edge of a hole. PRIMER will determine the centre of the hole and create the node there when clicking on CREATE\_NODES.
  
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_hole.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_hole.gif)
 
 ##### (6) Create at geometry point
  
 This method of creating a node requires the user to screen pick one geometry point. An 'auto-create' option is also available that obviates the need for clicking on CREATE\_NODES.
  
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_gpnt.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_gpnt.gif)
 
 ##### (7) Create at selected geometry points
  
 Instead of creating nodes by picking one geometry point at a time, users may select multiple geometry points from a menu or off the screen. New nodes are then created at the location defined by all these geometry points. As in the case of the single geometry point method, an 'auto-create' option is available that obviates the need for clicking on CREATE\_NODES.
  
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_mgpnt.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_mgpnt.gif)
 
 ##### (8) Create along geometry curves
  
 Multiple geometry curves may be selected. PRIMER will then create the desired number of nodes spaced equidistantly along each of these geometry curves.
  
-![](../Storage/primer-22-1/primer_links/sect_5/node/node_gcur.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/node_gcur.gif)
  
 ##### Other node creation commands: 
 
@@ -168,10 +168,10 @@ MERGE allows you to merge coincident nodes (or nodes within a specific tolerance
  
 REPLACE works in an identical way to [MERGE](Merging%20nodes%20during%20model%20merge.html#mergenodes)but only allows you to replace a single node with another node.
 
-| 'quick picking' is enabled in the replace node panel so you can just click on the screen to select the 2 nodes. The node which you are currently picking is shown by the colours being inverted (i.e. in the figure on the right, node A is currently being picked). <br>Alternatively you can type in the node numbers or use the popup to select the nodes<br> <br>If Auto is selected then the node will be replaced as soon as both nodes are given. Alternatively press APPLY to replace the node. | ![](../Storage/primer-22-1/primer_links/sect_5/node/replace_node.gif) |
+| 'quick picking' is enabled in the replace node panel so you can just click on the screen to select the 2 nodes. The node which you are currently picking is shown by the colours being inverted (i.e. in the figure on the right, node A is currently being picked). <br>Alternatively you can type in the node numbers or use the popup to select the nodes<br> <br>If Auto is selected then the node will be replaced as soon as both nodes are given. Alternatively press APPLY to replace the node. | ![](./Storage/primer-23/primer_links/sect_5/node/replace_node.gif) |
 | --- | --- |
-| By default the label of the second node you pick (B) will be kept. You can change this by using the popup. You can choose to keep either label or the highest or lowest label. | ![](../Storage/primer-22-1/primer_links/sect_5/node/replace_node_label_popup.gif) |
-| By default the node will be replaced at the location of the second node you pick (B). This can be changed by using the popup. You can force the node location to be at the position of either node A or B, the average position, or the position of the node with the lowest or highest label. | ![](../Storage/primer-22-1/primer_links/sect_5/node/replace_node_location_popup.gif) |
+| By default the label of the second node you pick (B) will be kept. You can change this by using the popup. You can choose to keep either label or the highest or lowest label. | ![](./Storage/primer-23/primer_links/sect_5/node/replace_node_label_popup.gif) |
+| By default the node will be replaced at the location of the second node you pick (B). This can be changed by using the popup. You can force the node location to be at the position of either node A or B, the average position, or the position of the node with the lowest or highest label. | ![](./Storage/primer-23/primer_links/sect_5/node/replace_node_location_popup.gif) |
 
 DISMISS returns the user to the main PRIMER window
 
@@ -179,20 +179,20 @@ DISMISS returns the user to the main PRIMER window
 
 DRAG permits users to drag nodes based on certain constraints. The impact of such an operation on element quality can be viewed using the Quality button. Various individual quality metrics, as well as overall quality imperfection can be viewed using the Settings button.
 
-| Four methods are currently available for node dragging:<br><ul> <li>The <span class="buttontext">Attached shell planes </span>popup option facilitates dragging along the planes of attached shells. </li> <li>The <span class="buttontext">Local X, Y, Z </span>option permits dragging along local X, Y, Z axes or along local XY, YZ, ZX planes. Appropriate degrees of freedom can be defined using the attached <span class="buttontext">X </span>, <span class="buttontext">Y </span>, <span class="buttontext">Z </span>, <span class="buttontext">XY </span>, <span class="buttontext">YZ </span>, <span class="buttontext">ZX </span>option buttons. A local coordinate system can be defined using an element, a coordinate system or a set of three nodes. </li> <li>The <span class="buttontext">Global X, Y, Z </span>option, likewise, permits dragging along global X, Y, Z axes or along global XY, YZ, ZX planes. </li> <li>Selecting the <span class="buttontext">XYZ </span>degree of freedom will translate mouse motion into movement on the current screen coordinate plane. </li> <li>The <span class="buttontext">N1-&gt;N2 </span>option permits users to select a source node &#39;N1&#39; and destination node &#39;N2&#39;. After selection, N1 will shift to position of N2.</li> </ul> ![Node drag methods](../Storage/primer-22-1/primer_links/sect_5/node/node_drag_methods.gif)<br><br>![Node drag local coordinate options](../Storage/primer-22-1/primer_links/sect_5/node/node_drag_local.gif) | ![Node drag](../Storage/primer-22-1/primer_links/sect_5/node/node_drag_menu.gif) |
+| Four methods are currently available for node dragging:<br><ul> <li>The <span class="buttontext">Attached shell planes </span>popup option facilitates dragging along the planes of attached shells. </li> <li>The <span class="buttontext">Local X, Y, Z </span>option permits dragging along local X, Y, Z axes or along local XY, YZ, ZX planes. Appropriate degrees of freedom can be defined using the attached <span class="buttontext">X </span>, <span class="buttontext">Y </span>, <span class="buttontext">Z </span>, <span class="buttontext">XY </span>, <span class="buttontext">YZ </span>, <span class="buttontext">ZX </span>option buttons. A local coordinate system can be defined using an element, a coordinate system or a set of three nodes. </li> <li>The <span class="buttontext">Global X, Y, Z </span>option, likewise, permits dragging along global X, Y, Z axes or along global XY, YZ, ZX planes. </li> <li>Selecting the <span class="buttontext">XYZ </span>degree of freedom will translate mouse motion into movement on the current screen coordinate plane. </li> <li>The <span class="buttontext">N1-&gt;N2 </span>option permits users to select a source node &#39;N1&#39; and destination node &#39;N2&#39;. After selection, N1 will shift to position of N2.</li> </ul> ![Node drag methods](./Storage/primer-23/primer_links/sect_5/node/node_drag_methods.gif)<br><br>![Node drag local coordinate options](./Storage/primer-23/primer_links/sect_5/node/node_drag_local.gif) | ![Node drag](./Storage/primer-23/primer_links/sect_5/node/node_drag_menu.gif) |
 | --- | --- |
 
-| The Optimise button will instruct PRIMER to automatically reposition nodes for improved quality.<br> <br>Two optimisation modes are available - single and multi node. The latter permits selection of one or more elements. PRIMER will then reposition attached nodes so that overall quality of the selected elements is improved.<br> <br>Nodes that lie on a free edge or feature line can be restrained using an appropriate option.<br> <br>Movement of nodes that also lie on unselected elements can also be restricted using an option. | ![Optimise](../Storage/primer-22-1/primer_links/sect_5/node/node_optimise.gif) |
+| The Optimise button will instruct PRIMER to automatically reposition nodes for improved quality.<br> <br>Two optimisation modes are available - single and multi node. The latter permits selection of one or more elements. PRIMER will then reposition attached nodes so that overall quality of the selected elements is improved.<br> <br>Nodes that lie on a free edge or feature line can be restrained using an appropriate option.<br> <br>Movement of nodes that also lie on unselected elements can also be restricted using an option. | ![Optimise](./Storage/primer-23/primer_links/sect_5/node/node_optimise.gif) |
 | --- | --- |
 
-| DUPLICATES  <br>Sketching and labelling duplicate coincident nodes, sometimes used to "stitch" models together.<br>  Coincidence rules <br>Ansys LS-DYNA has special rules to handle the case that node label N is defined more than once in different include files. It merges multiple definitions of node N into a single definition so long as:<br><ul> <li>The restraint codes TC and RC are identical </li> <li>The nodal coordinates are coincident. </li> </ul> <br>The test for "coincidence" of two definitions NA and NB with the same label is as follows:<br> <br>xdist1 = max(1.0e-16, vector distance of node from origin) <br>xdist2 = vector distance between coords of NA and NB<br> <br>xdist2 / xdist1 &lt; 1.0e-8<br> <br>In addition if a \*NODE\_MERGE\_TOLERANCE card has been defined then the distance xdist2 must be greater than this tolerance value for the nodes to be considered "not coincident".<br> <br>PRIMER uses the same rules as Ansys LS-DYNA. | ![](../Storage/primer-22-1/primer_links/sect_5/node/dup_1.png) |
+| DUPLICATES  <br>Sketching and labelling duplicate coincident nodes, sometimes used to "stitch" models together.<br>  Coincidence rules <br>Ansys LS-DYNA has special rules to handle the case that node label N is defined more than once in different include files. It merges multiple definitions of node N into a single definition so long as:<br><ul> <li>The restraint codes TC and RC are identical </li> <li>The nodal coordinates are coincident. </li> </ul> <br>The test for "coincidence" of two definitions NA and NB with the same label is as follows:<br> <br>xdist1 = max(1.0e-16, vector distance of node from origin) <br>xdist2 = vector distance between coords of NA and NB<br> <br>xdist2 / xdist1 &lt; 1.0e-8<br> <br>In addition if a \*NODE\_MERGE\_TOLERANCE card has been defined then the distance xdist2 must be greater than this tolerance value for the nodes to be considered "not coincident".<br> <br>PRIMER uses the same rules as Ansys LS-DYNA. | ![](./Storage/primer-23/primer_links/sect_5/node/dup_1.png) |
 | --- | --- |
 | How coincident nodes are handled inside PRIMER  <br>PRIMER has the problem that nodes must be merged if coincident, but also that the duplicate definitions must be "remembered" so that they are written out again in the correct include files. It handles this by creating "clone" definitions of each node such that:<br><ul> <li>The first definition of node A that is found is the &quot;true&quot; definition, which is the normal definition of the node. <br> <br> </li> <li>Any subsequent duplicate definitions make &quot;<a href="clones.md#Clones">clones</a>&quot; of this node where: <br> <br>- A clone is simply a reference to the &quot;true&quot; definition <br>- It remembers the include file in which it exists. <br> <br> </li> <li>On keyword output the &quot;true&quot; definition of the node is repeated in every include file where there is a clone </li> </ul> <br>Coincident nodes are normally merged silently during keyword input, but it is possible to list nodes merged during this process by using the "[Save keyin log to file](options-controls-many-aspects-of-reading-ls-dyna-files.md#opts_save_keyin_log)" option. |
-| Visualising duplicate nodes <br>Since duplicate nodes are actually just references to the true node definition they do not appear as separate entities on plots, nor will you see them in menus that list nodes. However they can be sketched and labelled using this Duplicates option.<br> <br>Either Sketch all to show all of them, or select the subset of nodes to be seen from the menu of cloned nodes and Apply to draw them.<br> <br>By default only node symbols are shown, but Label Sketched will also turn on labels, which shows both node label and also the include file in which it resides. | ![](../Storage/primer-22-1/primer_links/sect_5/node/dup_2.png) |
+| Visualising duplicate nodes <br>Since duplicate nodes are actually just references to the true node definition they do not appear as separate entities on plots, nor will you see them in menus that list nodes. However they can be sketched and labelled using this Duplicates option.<br> <br>Either Sketch all to show all of them, or select the subset of nodes to be seen from the menu of cloned nodes and Apply to draw them.<br> <br>By default only node symbols are shown, but Label Sketched will also turn on labels, which shows both node label and also the include file in which it resides. | ![](./Storage/primer-23/primer_links/sect_5/node/dup_2.png) |
 
 #### Controlling the visibility and labelling of nodes
  
-![](../Storage/primer-22-1/primer_links/sect_5/node/fig_node_vis_1.gif)
+![](./Storage/primer-23/primer_links/sect_5/node/fig_node_vis_1.gif)
  
 Node visibility and labelling is controlled from the ENT ity Viewing menu.
  
@@ -209,7 +209,7 @@ Nodes do not have to be drawn explicitly in order to be labelled: for example se
 
 | Dynamic labelling and details of nodes |
 | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_5/node/fig_node_vis_4.gif) | As with elements, nodes have a special "pick to label and display details box" that is invoked by clicking on one of the <br> <br> <br><br>| ALL\_NODES | Buttons in ENTity Viewing (doesn't matter which) |<br>| --- | --- |<br>| ATTACHED |<br>| UNATTACHED |<br><br> <br>or from Quick Pick.<br> <br>You can control how nodes are labelled and drawn using:<br> <br>**Label with...**<br> <br> * Label : The node's label<br> * Model : Prefixes the Mnnn model id<br> * R. Part : The part id of any "parent" rigid part.<br> <br> <br>**Draw with...**<br> <br> * Att. elems : The elements attached to the node<br> * **Coordinates**    **** : The node's global coordinates. |
+| ![](./Storage/primer-23/primer_links/sect_5/node/fig_node_vis_4.gif) | As with elements, nodes have a special "pick to label and display details box" that is invoked by clicking on one of the <br> <br> <br><br>| ALL\_NODES | Buttons in ENTity Viewing (doesn't matter which) |<br>| --- | --- |<br>| ATTACHED |<br>| UNATTACHED |<br><br> <br>or from Quick Pick.<br> <br>You can control how nodes are labelled and drawn using:<br> <br>**Label with...**<br> <br> * Label : The node's label<br> * Model : Prefixes the Mnnn model id<br> * R. Part : The part id of any "parent" rigid part.<br> <br> <br>**Draw with...**<br> <br> * Att. elems : The elements attached to the node<br> * **Coordinates**    **** : The node's global coordinates. |
 
 ####  Rules for screen-picking nodes
 

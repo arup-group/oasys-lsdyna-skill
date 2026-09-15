@@ -6,6 +6,6 @@ JavaScripts need to be
 PRIMER
 , making the "write, test, modify, re-test" development cycle very quick and easy.
 
-![](../Storage/primer-22-1/using-javascript-in-primer/using-javascript-in-primer-2025-05-30.png)
+![](./Storage/primer-23/using-javascript-in-primer/using-javascript-in-primer-2025-05-30.png)
 
  [Previous](introduction.md)  |  [Next](compiling-and-running-a-script.md)

@@ -1,6 +1,6 @@
 ﻿####  Creating a New Definition in the Entry Row
 
-![](../Storage/primer-22-1/primer_links/sect_5/5a/kwe_12.png)
+![](./Storage/primer-23/primer_links/sect_5/5a/kwe_12.png)
 
 The green row at the top of the list of existing items is where data is inserted to create a new definition.
 
@@ -11,7 +11,7 @@ The green row at the top of the list of existing items is where data is inserted
  
 To change one or more keyword suffices right click on the field in the **Suffix** column (here [SPHERIC v]), and choose the revised suffices. (The image below has been truncated vertically.)
  
-![](../Storage/primer-22-1/primer_links/sect_5/5a/kwe_suffix.png)
+![](./Storage/primer-23/primer_links/sect_5/5a/kwe_suffix.png)
  
 In this example there are four columns of suffices to choose from, other keywords will be different. You can only tick one entry in each column since, obviously, entries within a column are mutually exclusive.
  
@@ -21,7 +21,7 @@ In most cases column suffices are independent but there are a few cases where ch
  
 If include files are present in the model then there will be an extra Incl column between Options... and Suffices , and each entry in the table will show its include file name.
  
-![](../Storage/primer-22-1/primer_links/sect_5/5a/kwe_incl_1.png)
+![](./Storage/primer-23/primer_links/sect_5/5a/kwe_incl_1.png)
  
 By clicking on the entry (here the Main file) a small sub-panel for selection of an alternative include file will be mapped.
  
@@ -44,7 +44,7 @@ The Create button will be one of three colours:
 
 #####  The popup options on the Create button
 
-| These options may be use to manipulate the **Entry row**as follows: | ![](../Storage/primer-22-1/primer_links/sect_5/5a/kwe_epopup.png) |
+| These options may be use to manipulate the **Entry row**as follows: | ![](./Storage/primer-23/primer_links/sect_5/5a/kwe_epopup.png) |
 | --- | --- |
 
 | Create... | Maps the standard Create/Edit panel for this item. When you exit from this the saved definition will be used to populate the **Entry row** . (This option will be greyed out if a create/edit function has not been written for the current data type.) |

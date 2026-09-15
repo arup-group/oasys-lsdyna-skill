@@ -14,7 +14,7 @@
 
 The name "airbag" is really a misnomer as they don't have to be used solely for vehicle airbags (which don't contain "air" anyway). They can, for example, be used to model the pressure inside tyres or indeed any structure where changes in volume may affect internal pressure. The term "control volume" is better, and is in fact used in formatted Ansys LS-DYNA input.
 
-![](../Storage/primer-22-1/primer_links/sect_5/airbag/airbag_menu.gif)
+![](./Storage/primer-23/primer_links/sect_5/airbag/airbag_menu.gif)
 
 Select the sub menu desired using the AIRBAG popups in the KEYWORD menu.
 
@@ -22,13 +22,13 @@ Select the sub menu desired using the AIRBAG popups in the KEYWORD menu.
 
 This figure shows the main AIRBAG menu as selected from the Keywords panel. The functions currently available have their standard meanings ([see Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)). Greyed out functions are not currently available:
 
-![](../Storage/primer-22-1/primer_links/sect_5/airbag/fig_abag_0b.gif)
+![](./Storage/primer-23/primer_links/sect_5/airbag/fig_abag_0b.gif)
 
 ####  CREATE Making a new airbag definition
 
 This figure shows the standard CREATE / EDIT panel for airbags. Here CREATE has been used, so a blank airbag creation panel is displayed.
 
-![](../Storage/primer-22-1/primer_links/sect_5/airbag/fig_abag_1a.gif)
+![](./Storage/primer-23/primer_links/sect_5/airbag/fig_abag_1a.gif)
 
 The static buttons in the top section of the panel have functions which are common to the other editing panels within PRIMER.
 
@@ -44,11 +44,11 @@ The data on the panel is as follows:
 
 To start creating an airbag you must first define the type. You can type in a standard keyword if known, or invoke the selection menu in this figure with the [...] button.
 
-![](../Storage/primer-22-1/primer_links/sect_5/airbag/fig_abag_1b.gif)
+![](./Storage/primer-23/primer_links/sect_5/airbag/fig_abag_1b.gif)
 
 Once the material type has been defined the keyword data will be displayed on the panel, as shown in figure below. Initially all values will be set to zero.
 
-![](../Storage/primer-22-1/primer_links/sect_5/airbag/fig_abag_1c.gif)
+![](./Storage/primer-23/primer_links/sect_5/airbag/fig_abag_1c.gif)
 
 The airbag data can then be typed into the relevant boxes. The expected data type is indicated on the grey button, which also shows the acronym for that data value:
 
@@ -72,7 +72,7 @@ This will create a new sub-window with detailed information about the data compo
 * Its current units type
 * Its current value.
 
-![](../Storage/primer-22-1/primer_links/sect_5/airbag/fig_abag_1d.gif)
+![](./Storage/primer-23/primer_links/sect_5/airbag/fig_abag_1d.gif)
 
 Once all of the data has been input on the airbag card, CREATE\_AIRBAG installs the airbag permanently in the model.
 
@@ -140,6 +140,6 @@ More information about this is given in the following sections:
 
 This is available through the standard keyword editing panel in [The Generic KEYWORD Editing Panel](the-generic-keyword-editing-panel.md#keywordedit).
 
-![](../Storage/primer-22-1/primer_links/sect_5/airbag/airbag_interaction.gif)
+![](./Storage/primer-23/primer_links/sect_5/airbag/airbag_interaction.gif)
 
 [Previous](editing-multiple-items-using-the-keyword-editor.md)  |  [Next](ale.md)

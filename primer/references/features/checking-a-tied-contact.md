@@ -14,9 +14,9 @@ The following contact types are treated as tied contacts in PRIMER:
 
 For tied contacts, penetration of the SURFA (tracked) node into the SURFB (reference) segment means the node is tied.
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/tied_contact.gif)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/tied_contact.gif)
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/checking%20a%20tied%20contact.JPG)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/checking%20a%20tied%20contact.JPG)
 
 When contouring tied contacts, the tied node is sketched and blue is used to denote the segment to which it ties.
 
@@ -28,13 +28,13 @@ sketch & only - allow user to visualize what is tied and/or untied on SURFB ( M 
 
 all tracked nodes/on free edge only - this option only applies if the SURFA side consists of nodes on shells. If set to on free edge only the reported count of untied nodes and sketch & only functions will only consider tracked nodes on shells on free edges.
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/pen_check/sketch_1a.gif)<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/pen_check/sketch_1.gif) | sketch applied to what is tied on the SURFB side |
+| ![](./Storage/primer-23/primer_links/sect_5/pen_check/sketch_1a.gif)<br> <br>![](./Storage/primer-23/primer_links/sect_5/pen_check/sketch_1.gif) | sketch applied to what is tied on the SURFB side |
 | --- | --- |
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/pen_check/sketch_2a.gif)<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/pen_check/sketch_2.gif) | sketch applied to what is untied on the SURFA side<br> <br>some nodes do not tie because this is a constrained contact and the nodal rigid body shown interfers with it, others because they are too far away from their segment |
+| ![](./Storage/primer-23/primer_links/sect_5/pen_check/sketch_2a.gif)<br> <br>![](./Storage/primer-23/primer_links/sect_5/pen_check/sketch_2.gif) | sketch applied to what is untied on the SURFA side<br> <br>some nodes do not tie because this is a constrained contact and the nodal rigid body shown interfers with it, others because they are too far away from their segment |
 | --- | --- |
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/pen_check/sketch_1a.gif)<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/pen_check/sketch_3.gif) | only applied to what is tied on the SURFB side |
+| ![](./Storage/primer-23/primer_links/sect_5/pen_check/sketch_1a.gif)<br> <br>![](./Storage/primer-23/primer_links/sect_5/pen_check/sketch_3.gif) | only applied to what is tied on the SURFB side |
 | --- | --- |
 
 -&gt;warnings.k - for tied contacts this function will write untied nodes to a node set, appropriately named, in include file *warnings.k.* Untied elements will also be written to a set.

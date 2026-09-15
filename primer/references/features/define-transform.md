@@ -11,7 +11,7 @@
 * [Check](define-transform.md#check)
 * [Renumber](define-transform.md#renumber)
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/define/trans.gif) | This figure shows the main menufor the editing of co-ordinate systems. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) |
+| ![](./Storage/primer-23/primer_links/sect_5/define/trans.gif) | This figure shows the main menufor the editing of co-ordinate systems. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) |
 | --- | --- |
 
 #### CREATE Making a transformation definition

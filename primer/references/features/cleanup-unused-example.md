@@ -2,7 +2,7 @@
 
 In the same way as for Delete you are presented with a list of items identified for removal, and you must confirm these. In the example above pressing Apply gives:
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_2_1a.png) | ![](../Storage/primer-22-1/primer_links/sect_6/remove/fig_6_4_2_1b.png) |
+| ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_2_1a.png) | ![](./Storage/primer-23/primer_links/sect_6/remove/fig_6_4_2_1b.png) |
 | --- | --- |
 | This figure shows the confirmation panel of items identified as unwanted. | This figure shows the resulting deletion echo. |
 

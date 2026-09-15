@@ -11,5 +11,5 @@ The PRIMER method uses the contact depenetrator in PRIMER to push the dummy into
 The Ansys LS-DYNA method will create an Ansys LS-DYNA import deck which will push the dummy into the seat. This should be run using Ansys LS-DYNA and the dynain file which it creates can be imported back into PRIMER to deform the seat.
 
 Select the option you want and press Next to start the process.
- ![](../Storage/primer-22-1/primer_links/sect_6/seatfoamcompression/squash.gif)
+ ![](./Storage/primer-23/primer_links/sect_6/seatfoamcompression/squash.gif)
 [Previous](undoing-a-seatquash-operation.md)  |  [Next](simple-squash-using-primer.md)

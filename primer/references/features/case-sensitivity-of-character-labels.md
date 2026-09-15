@@ -8,7 +8,7 @@ Therefore PRIMER adopts the following strategy regarding the case sensitivity of
 * In this default mode the label will be stored exactly as it is first encountered. So if the first occurrence is Body then this is how PRIMER will "remember" it and write it out subsequently, regardless of what other permutations of upper and lower case text is found in later occurrences of the word, and all such permutations of the word will map onto this single definition.
 * It is possible to change this default behaviour by selecting the "Case Sensitivity" option on the [Advanced labelling panel](long-keyword-format-and-large-labels.md#advanced_label). 
  
- ![](../Storage/primer-22-1/primer_links/sect_5/5a/label_6.png) 
+ ![](./Storage/primer-23/primer_links/sect_5/5a/label_6.png) 
 
 This option, which is programme-wide and not just for this model, may also be made the default by using the preference 
  
@@ -49,10 +49,10 @@ In this mode PRIMER will always treat character labels in a case-Insensitive fas
 
 This remains the case during keyword input, where no post-keyin checking is required because all variations on a name will have been merged into a single version (the first that was encountered).
 
-| Check for character label aliases | ![](../Storage/primer-22-1/primer_links/sect_5/5a/label_7.png) |
+| Check for character label aliases | ![](./Storage/primer-23/primer_links/sect_5/5a/label_7.png) |
 | --- | --- |
 | This command will run manually the check that is run automatically after keyword input, searching for any character labels that would be "aliases", ie the same word, if compared in a case-insensitive way.<br> <br>Here is an example of the result in a model in which the spellings ReD , REd , Red , RED , red and reD of the name "Red" have been used for \*PART .<br> <br>Using MERGE will "collapse" all these definitions onto a single definition. |
-| ![](../Storage/primer-22-1/primer_links/sect_5/5a/label_8.png) |
+| ![](./Storage/primer-23/primer_links/sect_5/5a/label_8.png) |
 | The rules used when merging "alias" character label names  <br>When merging character labels PRIMER will always prefer to use the spelling of the "installed" version of the name, which means the name used when the item was actually defined.<br> <br>This is best illustrated by example. Here are the keywords from the file that produced the warbing message above:<br> 
 ```
 *PART

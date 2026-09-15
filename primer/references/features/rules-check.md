@@ -1,6 +1,6 @@
 ﻿####  Rules Check
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_9_1b.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_9_1b.gif)
 
 The CHECK &gt; RULES function applies a set of custom checks which can be controlled through the oa\_pref file or by the OPTIONS panel.
 

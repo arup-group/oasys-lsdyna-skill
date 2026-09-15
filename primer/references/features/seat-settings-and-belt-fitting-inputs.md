@@ -1,6 +1,6 @@
 ﻿Click **Seat Settings and Belt Fitting Inputs** to open the setting panel and set maximum iterations for seat belt fitting, bolt angle tolerance, translate shoulder block in global axis, rotate lap block and more.
 
-![](../Storage/primer-22-1/seat-settings-and-belt-fitting-inputs-2023-03-02.png)
+![](./Storage/primer-23/seat-settings-and-belt-fitting-inputs-2023-03-02.png)
 
 The following options are available on the Seat Settings and Belt Fitting Inputs Panel:
 

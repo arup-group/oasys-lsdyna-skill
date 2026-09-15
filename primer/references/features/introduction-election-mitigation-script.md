@@ -4,7 +4,7 @@ The script calculates impact points on a vehicle model for the FMVSS226 specific
 
 The following figure shows "Input" panel of ejection mitigation script:
 
-![](../Storage/primer-22-1/primer_links/sect_6/ejection_mitigation/user-input.png)
+![](./Storage/primer-23/primer_links/sect_6/ejection_mitigation/user-input.png)
 
 The following options are available on the input panel:
 

@@ -9,6 +9,6 @@ There are a few options that can be set to alter how Quick Find works. These can
 * Set the maximum number of found items to display in the list
 * The size of the Search box on the top bar
 
- ![](../Storage/primer-22-1/primer_links/sect_11/search11.png)
+ ![](./Storage/primer-23/primer_links/sect_11/search11.png)
 
 [Previous](tutorials.md)  |  [Next](technical-topics-to-do-with-graphics.md)

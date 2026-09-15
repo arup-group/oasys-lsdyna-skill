@@ -1,6 +1,6 @@
 ﻿#####  Compress Files
 
-| If this option is used then the current output files (of whatever format: small, large, binary) are compressed using the Huffman coding in ZLIB into one of the following formats: <br><br><br><br><br>| ".gz" format | Industry standard "gzip" format as handled by g(un)zip etc |<br>| --- | --- |<br>| ".zip" format | Industry standard "zip" format as handled by Winzip etc | | ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_2j.png) |
+| If this option is used then the current output files (of whatever format: small, large, binary) are compressed using the Huffman coding in ZLIB into one of the following formats: <br><br><br><br><br>| ".gz" format | Industry standard "gzip" format as handled by g(un)zip etc |<br>| --- | --- |<br>| ".zip" format | Industry standard "zip" format as handled by Winzip etc | | ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_3_2j.png) |
 | --- | --- |
 
 The .gz and .zip files produced by PRIMER can be read by the standard Winzip, gzip, etc utilities; and PRIMER can read files created by those utilities provided that they use the default Huffman compression method.
@@ -21,7 +21,7 @@ The Huffman coding used by ZLIB works by looking for repetition of similar block
  
 Normal implementations of gzip and winzip use "default" compression, which is actually 6 in a range of 1 (least) to 9 (most), and while the time taken to compress a file rises linearly with "level" the amount of compression obtained tends to be some power less than one of the "level value. We could draw a graph something like this (values are notional):
  
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_2k.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_3_2k.png)
 
 **File size reduction**
  

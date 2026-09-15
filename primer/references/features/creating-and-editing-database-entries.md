@@ -20,11 +20,11 @@ The combination of category and sub-category must be unique. This is how a datab
 
 PRIMER now allows you to store multiple keyword files for each component. The current version will determine which keyword file is actually used. See [Version Control](version-control.md#version).
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_200.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_200.gif)
 
 #####  Component type
 
-| In addition to an Ansys LS-Dyna keyword file, the component may be described by a Nastran or Abaqus file (for which PRIMER supports a subset of keywords).<br> <br>Also an xml connection file may be loaded as a component of the build. These may be managed using the same version control as keyword files.<br> <br>On completion of the build a connection panel will be invoked to process the connection file(s). See [build with connections](connection-file-as-component-of-build.md#buildcon). | ![](../Storage/primer-22-1/primer_links/sect_3/images/component_types.gif) |
+| In addition to an Ansys LS-Dyna keyword file, the component may be described by a Nastran or Abaqus file (for which PRIMER supports a subset of keywords).<br> <br>Also an xml connection file may be loaded as a component of the build. These may be managed using the same version control as keyword files.<br> <br>On completion of the build a connection panel will be invoked to process the connection file(s). See [build with connections](connection-file-as-component-of-build.md#buildcon). | ![](./Storage/primer-23/primer_links/sect_3/images/component_types.gif) |
 | --- | --- |
 
 #####  Category
@@ -87,13 +87,13 @@ Enter the owner of the file here.
 
 #####  Orienting the include files
 
-| It is possible to orient include files during the model build process. This is achieved by generating \*INCLUDE\_TRANSFORM rather than plain \*INCLUDE. <br>The Orient create/edit feature is accessed through the Create/Edit tracked/reference Orients button on the category edit panel. | ![](../Storage/primer-22-1/primer_links/sect_3/images/tracked%20orient%20point.JPG) |
+| It is possible to orient include files during the model build process. This is achieved by generating \*INCLUDE\_TRANSFORM rather than plain \*INCLUDE. <br>The Orient create/edit feature is accessed through the Create/Edit tracked/reference Orients button on the category edit panel. | ![](./Storage/primer-23/primer_links/sect_3/images/tracked%20orient%20point.JPG) |
 | --- | --- |
-| The user creates each orient by adding a reference and a tracked point of matching name. The tracked points will always reside in the database, under the include file to which the orient is to be applied. The reference points may be stored either in the database or in the template as they apply for a particular load case. | ![](../Storage/primer-22-1/primer_links/sect_3/images/master%20orient%20point.JPG) |
+| The user creates each orient by adding a reference and a tracked point of matching name. The tracked points will always reside in the database, under the include file to which the orient is to be applied. The reference points may be stored either in the database or in the template as they apply for a particular load case. | ![](./Storage/primer-23/primer_links/sect_3/images/master%20orient%20point.JPG) |
 
 After you have created/edited orients you need to save the database or template. It is recommended that you then run the CHECK ORIENT function, which will sketch the orient as well as report its status.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/check%20orient.JPG)
+![](./Storage/primer-23/primer_links/sect_3/images/check%20orient.JPG)
 
 In the simplest orient case you need to define a reference point and its co-ordinate (or node id) and a tracked point of the same name and its co-ordinate. The build process will detect matching reference & tracked orient points, resolve any node ids into co-ordinates and calculate the necessary transform to bring the tracked point to the reference. A\*INCLUDE\_TRANSFORM will then be applied to the include file associated with the tracked orient.
 
@@ -107,6 +107,6 @@ Additionally information is required so that a contact can be created and the tr
 
 *Definition of orient points.* These may be defined as node id, node name (if \*DATABASE\_HISTORY\_NODE\_ID) or a co-ordinate. The node method has the advantage that if the component files get moved the orient points will still be in the correct position. If the node is defined by ID it must not be renumbered. This may required the node to be included in the [frozen range](creating-and-editing-database-entries.md#frozenids) if renumbering during model build is active. If using the co-ordinate method the orient data must be updated if component files are moved.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/orient_pic.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/orient_pic.gif)
 
 [Previous](editing-a-model-database.md)  |  [Next](version-control.md)

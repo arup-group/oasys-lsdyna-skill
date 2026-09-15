@@ -16,13 +16,13 @@ A "tree" file is made up of an extra set of keywords, and one such file for each
 
 The purposes of appending the "tree" section to the analysis input deck are to try to make sure that a dummy and its tree data don't get separated; that any renumbering which takes place is consistent in both dummy and tree file; and to permit adjustment of a dummy in a complete deck without having to go through the rigmarole of reading it in and repositioning it from scratch each time.
 
-![](../Storage/primer-22-1/primer_links/appen_2/fig_app_2a.gif)
+![](./Storage/primer-23/primer_links/appen_2/fig_app_2a.gif)
 
 This figure illustrates "tree" file usage by showing an exploded diagram of the arm assemblies in a typical dummy. The assemblies are "upper arm", "elbow", "lower arm", "wrist" and "hand"; and the joint stiffnesses between them are shown.
 
 It can be seen from the geometry of the connections that in this particular dummy, rotation can only take place about one axis at each joint, and that the coordinate systems of the joint stiffnesses are aligned to these. It is also clear that angular rotations must be limited, which is done by using "stop angles" in the joint stiffnesses.
 
-![](../Storage/primer-22-1/primer_links/appen_2/fig_app_2b.gif)
+![](./Storage/primer-23/primer_links/appen_2/fig_app_2b.gif)
 
 Here the connection between wrist and hand has been enlarged (still artificially separated) to show its organisation in more detail.
 
@@ -35,7 +35,7 @@ The two sides of the joint stiffness definition can be seen in terms of their co
 | (2) | Both coordinate systems are defined in terms of nodes attached to parts on their respective assemblies: either structural or extra nodes on rigid bodies. In this way the coordinate systems move with their parent parts. |
 | (3) | The node at the origin of the "parent" coordinate system on the wrist is the designated node about which the hand rotates. Again, not required but sensible. |
 
-![](../Storage/primer-22-1/primer_links/appen_2/fig_app_2c.gif)
+![](./Storage/primer-23/primer_links/appen_2/fig_app_2c.gif)
 
 Here the NOTATE option in VIS\_2 has been turned on to add to the joint stiffness graphics their loadcurves and stop angles. This shows that parameters have only been defined for rotation about local Z (Psi), that the "stop angles" are +/- 90 degrees, and that only damping is applied (so the initial angle between the coordinate systems generates no moment).
 
@@ -55,7 +55,7 @@ $ about node #3980, rotation restricted to Z (3) axis)
 
 From release 13 onwards the rule that "nodes used to define the coordinate system (used as the nodes in \*DEFINE\_COORDINATE\_SYSTEM\_NODES) on the parent side of a joint stiffness definition must be in the parent assembly" has been relaxed, and these nodes may also be in any assembly that is an ancestor of the child assembly. This change has been made since some dummies have been modelled in the following way:
 
-![](../Storage/primer-22-1/primer_links/appen_2/fig_app_2d.png)
+![](./Storage/primer-23/primer_links/appen_2/fig_app_2d.png)
 
 This method of modelling means that angles for the core Pelvis, Torso and Head assemblies are always reported as "relative to global" rather than "relative to parent". This can make setup easier for some models when comparing to test since measuring the angle of an assembly with respect to some global reference, typically vertical, is easier than measuring relative to some other assembly.
 

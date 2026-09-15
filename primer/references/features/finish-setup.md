@@ -4,7 +4,7 @@ Finally, if you selected a combined dummy/HBM positioning and seat squash analys
 
 You can then create the model(s) to run in Ansys LS-DYNA. This will output a dynain file containing the final coordinates which can then be imported back into the original model.
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummy_and_seatsquash/fig_41_9.png)
+![](./Storage/primer-23/primer_links/sect_6/dummy_and_seatsquash/fig_41_9.png)
 
 Once the model(s) have been created you will need to write them out from PRIMER and then run them in Ansys LS-DYNA. This should produce a DYNAIN file for each model containing the coordinates and initial stress information from the analysis.
 

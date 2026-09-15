@@ -4,6 +4,6 @@
 
 The themes offer different colour and contrast options for comfort and accessibility.
 
-![PRIMER menus in Light, Dark and Classic themes](../Storage/primer-22-1/project-common-topics/user_interface/primer_themes.png)
+![PRIMER menus in Light, Dark and Classic themes](./Storage/primer-23/project-common-topics/user_interface/primer_themes.png)
 
 [Previous](notation.md)  |  [Next](setting-the-theme.md)

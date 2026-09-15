@@ -1,7 +1,7 @@
 ﻿####  Rotate Angles: Explicit Rotation of Assemblies about their Connection Nodes
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/position-panel-rotate-mode.png) 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/positioning_panel.PNG)For each assembly a row showing the current joint angles is shown.
+![](./Storage/primer-23/primer_links/sect_6/dummies/position-panel-rotate-mode.png) 
+![](./Storage/primer-23/primer_links/sect_6/dummies/positioning_panel.PNG)For each assembly a row showing the current joint angles is shown.
  
 * White background indicates that the angles are in the main dummy axes system.
 * Green background indicates that the angles are in the local system of the [joint stiffness](assemblycreation-and-editing.md#jstf) connecting this assembly to its parent.
@@ -9,7 +9,7 @@
 
 Greyed out angles are locked against rotation by the &lt; [DoF code](assemblycreation-and-editing.md#dof_code)&gt; of the assembly.
  
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/positioning_panel2.PNG)
+![](./Storage/primer-23/primer_links/sect_6/dummies/positioning_panel2.PNG)
  
 In the Assembly list, the indications (R), (E) and (M) against the assembly names indicate the following:
 
@@ -36,24 +36,24 @@ Dragging with the mouse is the easiest method, but this is not applicable for me
 | Middle | Local Y (Theta) |
 | Right | Local Z (Psi) |
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_4.jpg)Dragging is only permitted about the axes implied by the [DoF Code](assemblycreation-and-editing.md#dof_code)specified on the parent assembly. In addition rotation will be limited to the stop angles specified on any [Joint Stiffness](assemblycreation-and-editing.md#jstf)definition for the joint. |
+| ![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_4.jpg)Dragging is only permitted about the axes implied by the [DoF Code](assemblycreation-and-editing.md#dof_code)specified on the parent assembly. In addition rotation will be limited to the stop angles specified on any [Joint Stiffness](assemblycreation-and-editing.md#jstf)definition for the joint. |
 | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_3.jpg)This image shows the arm after some movement, demonstrating how the assemblies below the upper arm in the hierarchy all move as a rigid combination, rotating about the (nearly) vertical axis at the right hand shoulder yoke joint. |
+| ![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_3.jpg)This image shows the arm after some movement, demonstrating how the assemblies below the upper arm in the hierarchy all move as a rigid combination, rotating about the (nearly) vertical axis at the right hand shoulder yoke joint. |
 
-| Assembly angles can also be set explicitly by typing angles into the appropriate row text entry box (red outline):<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/dummies/rotate_angles_input.png)<br> <br>Or the full editing panel for an assembly can be mapped by clicking on the "name" button (blue outline). The editing panel allows all the angle attributes of the assembly to be adjusted.<br> <br>Articulation of each degree of freedom is limited by stop angles that defined maximum +ve and -ve articulation in degrees. Two sets of angles are considered:<br><ul> <li>&quot;Hard&quot; stop angles (top two rows, designated <span class="buttontext">Stop -ve </span>and <span class="buttontext">Stop +ve </span>) </li> <li>&quot;Soft&quot; stop angles (lower two rows, designated <span class="buttontext">Soft -ve </span>and <span class="buttontext">Soft +ve </span>) </li> </ul> <br>If no soft stop angles are defined both -ve and +ve fields will be zero and grey as shown here for the Phi and Theta degrees of freedom, meaning that only the hard angles apply. | ![](../Storage/primer-22-1/primer_links/sect_6/dummies/position-panel-edit-assembly.png) |
+| Assembly angles can also be set explicitly by typing angles into the appropriate row text entry box (red outline):<br> <br>![](./Storage/primer-23/primer_links/sect_6/dummies/rotate_angles_input.png)<br> <br>Or the full editing panel for an assembly can be mapped by clicking on the "name" button (blue outline). The editing panel allows all the angle attributes of the assembly to be adjusted.<br> <br>Articulation of each degree of freedom is limited by stop angles that defined maximum +ve and -ve articulation in degrees. Two sets of angles are considered:<br><ul> <li>&quot;Hard&quot; stop angles (top two rows, designated <span class="buttontext">Stop -ve </span>and <span class="buttontext">Stop +ve </span>) </li> <li>&quot;Soft&quot; stop angles (lower two rows, designated <span class="buttontext">Soft -ve </span>and <span class="buttontext">Soft +ve </span>) </li> </ul> <br>If no soft stop angles are defined both -ve and +ve fields will be zero and grey as shown here for the Phi and Theta degrees of freedom, meaning that only the hard angles apply. | ![](./Storage/primer-23/primer_links/sect_6/dummies/position-panel-edit-assembly.png) |
 | --- | --- |
 
 ##### An example of Rotate Angles for circular connections (Model Acknowledgement: THUMS - Toyota Motor Corporation)
 
-![](../Storage/primer-22-1/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg1.png)![](../Storage/primer-22-1/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg2.png)In this example, **L Hand (16)** assembly has two parent assemblies **L Ulna (15)** and **Left Radius (36)** and hence these assemblies form [circular connections](assemblycreation-and-editing.md#circular_connections).
+![](./Storage/primer-23/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg1.png)![](./Storage/primer-23/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg2.png)In this example, **L Hand (16)** assembly has two parent assemblies **L Ulna (15)** and **Left Radius (36)** and hence these assemblies form [circular connections](assemblycreation-and-editing.md#circular_connections).
 
 As **L Hand** is connected to two parent assemblies, PRIMER indicates it with (M) in the Assembly list and it's parent assemblies **L Ulna** and **Left Radius** are indicated with (E), and the angles of all the three assemblies are shown with the grey background.
 
-![](../Storage/primer-22-1/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg3.png)
+![](./Storage/primer-23/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg3.png)
 
-| ![](../Storage/primer-22-1/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg4.png)**Initial Condition**<br><br>The assemblies can be rotated in **Rotate Angles** method either by dragging with mouse buttons or by giving the assembly angles explicitly in the respective angle textbox. But for [circular connections](assemblycreation-and-editing.md#circular_connections), the feature of dragging using a particular mouse button to rotate about a particular axis is not applicable. Instead, if you drag an assembly with any mouse button, PRIMER rotates that assembly about any axis as per your mouse movement.<br><br>This image shows the initial position of **L Hand**, **L Ulna** and**Left Radius** assemblies with the relative assembly angles as zero degrees.<br><br>![](../Storage/primer-22-1/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_initial_condition.PNG) |
+| ![](./Storage/primer-23/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg4.png)**Initial Condition**<br><br>The assemblies can be rotated in **Rotate Angles** method either by dragging with mouse buttons or by giving the assembly angles explicitly in the respective angle textbox. But for [circular connections](assemblycreation-and-editing.md#circular_connections), the feature of dragging using a particular mouse button to rotate about a particular axis is not applicable. Instead, if you drag an assembly with any mouse button, PRIMER rotates that assembly about any axis as per your mouse movement.<br><br>This image shows the initial position of **L Hand**, **L Ulna** and**Left Radius** assemblies with the relative assembly angles as zero degrees.<br><br>![](./Storage/primer-23/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_initial_condition.PNG) |
 | --- |
-| ![](../Storage/primer-22-1/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg6.png)<br><br>**Rotate L Hand Assembly**<br><br>Enter the assembly angle for **L Hand** assembly to the desired degree of rotation in the respective text box. This will rotate the **L Hand** assembly to the given angle (if it is within the stop angles limit) and its parent assemblies to the appropriate degrees.<br><br>In this example, **L Hand** assembly is only allowed to rotate about z axis. This image shows the assemblies after giving a certain amount of rotation to the **L Hand** assembly.<br><br>![](../Storage/primer-22-1/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg5.png) |
+| ![](./Storage/primer-23/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg6.png)<br><br>**Rotate L Hand Assembly**<br><br>Enter the assembly angle for **L Hand** assembly to the desired degree of rotation in the respective text box. This will rotate the **L Hand** assembly to the given angle (if it is within the stop angles limit) and its parent assemblies to the appropriate degrees.<br><br>In this example, **L Hand** assembly is only allowed to rotate about z axis. This image shows the assemblies after giving a certain amount of rotation to the **L Hand** assembly.<br><br>![](./Storage/primer-23/rotate-angles-explicit-rotation-of-assemblies-about-their-connection-nodes/circular_connections_rotation_eg5.png) |
 
 ##### "Hard" vs "Soft" stop angles
 
@@ -66,14 +66,14 @@ From PRIMER 12 onwards both "Hard" and "Soft" stop angles are supported, earlier
 
 Soft stop angles have been introduced at the request of users as a simple way of preventing initial penetrations during positioning. The following sequence of images uses the junction between the upper leg and lower torso of a typical dummy to illustrate the problem.
 
-| **Initial state**<br> <br>Here is the leg (red) and lower torso (green) in their neutral, unpositioned state.<br> <br>Rotation of the leg takes place about the pelvis spherical joint. | ![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_4a.png) |
+| **Initial state**<br> <br>Here is the leg (red) and lower torso (green) in their neutral, unpositioned state.<br> <br>Rotation of the leg takes place about the pelvis spherical joint. | ![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_4a.png) |
 | --- | --- |
-| **Positioned *without* Soft Stop angles**<br> <br>The \*CONSTRAINED\_JOINT\_STIFFNESS card used to define the local axis system and associated "hard" stop angles for the upper leg permits rotations about all axes, and also permits the leg to rotate up and down by an amount that can cause inter-penetration between leg and torso, as shown in this example.<br> <br>Of course in a Ansys LS-DYNA analysis there would be a contact surface between leg and torso which would generate forces resisting penetration, and the soft material itself would deform, so the "hard" stop angles are quite adequate.<br> <br>However positioning in PRIMER is totally rigid, and no compliance of the penetrating materials is considered. | ![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_4b.png) |
-| **Positioned *with* Soft Stop angles**<br> <br>Here additional soft stop angles have been defined, limiting the upwards angle of rotation of the leg to angle , which is set to prevent penetration.<br> <br>Since the soft stop angles are only on PRIMER 's dummy \*ASSEMBLY card, after \*END, they are not "seen" by Ansys LS-DYNA meaning that the normal hard angles are used as limits during the analysis. | ![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_4c.png) |
+| **Positioned *without* Soft Stop angles**<br> <br>The \*CONSTRAINED\_JOINT\_STIFFNESS card used to define the local axis system and associated "hard" stop angles for the upper leg permits rotations about all axes, and also permits the leg to rotate up and down by an amount that can cause inter-penetration between leg and torso, as shown in this example.<br> <br>Of course in a Ansys LS-DYNA analysis there would be a contact surface between leg and torso which would generate forces resisting penetration, and the soft material itself would deform, so the "hard" stop angles are quite adequate.<br> <br>However positioning in PRIMER is totally rigid, and no compliance of the penetrating materials is considered. | ![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_4b.png) |
+| **Positioned *with* Soft Stop angles**<br> <br>Here additional soft stop angles have been defined, limiting the upwards angle of rotation of the leg to angle , which is set to prevent penetration.<br> <br>Since the soft stop angles are only on PRIMER 's dummy \*ASSEMBLY card, after \*END, they are not "seen" by Ansys LS-DYNA meaning that the normal hard angles are used as limits during the analysis. | ![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_4c.png) |
 
 Documentation of the syntax used for soft stop angles can be found in the section on the [Dummy tree file *ASSEMBLY card in Appendix B.i](bi-dummy-tree-file-format.md#soft_angles)
  
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_5.jpg)This image shows the axes of explicit dragging more clearly.
+![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_5.jpg)This image shows the axes of explicit dragging more clearly.
  
 Here only the right hand is being dragged, and the display of \*Constrained Joint Stiffnesses has been turned on to show the local axis systems at the wrist to hand joint.
  
@@ -85,7 +85,7 @@ It can be seen from the divergence of the local X axes (coming out of the joint 
  
 The rotation of each axes of an assembly can be set using the Permit rot'n buttons in the panel displayed above. However, if the rotations for all assemblies need to be set, then the popups displayed below can be used. There is one under each axis button.
  
-![](../Storage/primer-22-1/permit_rotation_popup.PNG)
+![](./Storage/primer-23/permit_rotation_popup.PNG)
 
 #####  
 

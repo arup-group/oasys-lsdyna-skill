@@ -2,7 +2,7 @@
 
 The GUI Window objects are stored as properties on the global GUI object. The name of the property is whatever was defined in the properties window in the GUI builder.
 
-![](../Storage/primer-22-1/project-common-topics/js_gui_builder/window_name.png)
+![](./Storage/primer-23/project-common-topics/js_gui_builder/window_name.png)
 
 To display the Window called my\_window use the Show() method:
 

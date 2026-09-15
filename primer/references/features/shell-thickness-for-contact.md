@@ -1,6 +1,6 @@
 ﻿#####  Shell Thickness for Contact
 
-| Applying a factor to the thickness of structure shells in contact with the belt. (This is the same setting as that in [Parameters #2](PARAMETERS%20#2%20More%20about%20controlling%20the%20form-finding%20process..html#parameters2)above, duplicated here to make it easier to adjust during path creation and editing.) | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_sthick_1.png) |
+| Applying a factor to the thickness of structure shells in contact with the belt. (This is the same setting as that in [Parameters #2](PARAMETERS%20#2%20More%20about%20controlling%20the%20form-finding%20process..html#parameters2)above, duplicated here to make it easier to adjust during path creation and editing.) | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fopts_sthick_1.png) |
 | --- | --- |
 
 ##### Normally contact between the belt and any shell elements in the structure uses the same parameters as an Ansys LS-DYNA contact would use, that is the shell's true thickness, or the thickness on a \*PART\_CONTACT card if this is defined.

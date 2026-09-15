@@ -1,12 +1,12 @@
 ﻿###  Standard Linux "File Filter" Box
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/linux_select_file.png)
+![](./Storage/primer-23/primer_links/sect_2/images/linux_select_file.png)
 
 The files can be filtered according to file types by using the Files of type popup, in this case the pathname is **/u/mid/milest/test/CRUSH/** and the pattern is \*.k\*.
 
 The main window show a list of the directories within the present one and a list of files that match the "Files of type" selection.
 
-To go back up the directory tree you need to select the ![](../Storage/primer-22-1/primer_links/sect_2/images/menu_dirbut.gif)button, or you can click on the Look in popup to select any of the parent directories.
+To go back up the directory tree you need to select the ![](./Storage/primer-23/primer_links/sect_2/images/menu_dirbut.gif)button, or you can click on the Look in popup to select any of the parent directories.
 
 The File name box shows the current selection.
 

@@ -1,6 +1,6 @@
 ﻿####  Image Manipulation Options
 
- ![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_6_11_25.png)
+ ![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_6_11_25.png)
  
 #####  Recompute 
  

@@ -1,6 +1,6 @@
 ﻿####  Advanced Set Selection
 
-| The advanced set selection works with sets just like the basic set selection. The difference is that instead of using a single set (basic select), 3 sets are used.<br> <br>When a fold is performed there are three distinct regions of the fold.<br> <br>The Unfolded set .	The shells that will not move. i.e. they will be unaffected by the fold.<br> <br>The Foldline set .	The nodes which are actually on the fold line.<br> <br>The Folded set .	The shells that will be folded. i.e. the shells that will move during the fold. | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/adv_sets.gif) |
+| The advanced set selection works with sets just like the basic set selection. The difference is that instead of using a single set (basic select), 3 sets are used.<br> <br>When a fold is performed there are three distinct regions of the fold.<br> <br>The Unfolded set .	The shells that will not move. i.e. they will be unaffected by the fold.<br> <br>The Foldline set .	The nodes which are actually on the fold line.<br> <br>The Folded set .	The shells that will be folded. i.e. the shells that will move during the fold. | ![](./Storage/primer-23/primer_links/sect_6/airbag/adv_sets.gif) |
 | --- | --- |
 
 Each of these 3 sets can be selected individually. They can be completely different sets.

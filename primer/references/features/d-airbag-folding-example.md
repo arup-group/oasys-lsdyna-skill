@@ -1,6 +1,6 @@
 ﻿##  Appendix D: Airbag Folding Example
 
-| The following example is of a somewhat simplified geometry of an airbag. This is designed to provide a fairly complete demonstration of the capabilities to make a folded airbag. It is not designed to represent a realistic fold pattern or to represent accurate deployment of an airbag. In fact, there is no \*AIRBAG card in this model so it will not deploy.<br> <br>Figure A4.1 shows the starting geometry for this model. The units are in millimetres and the fabric is 0.25mm thick. The airbag is a simple drivers side (or pancake) airbag.<br> <br>For reference, the model is provided with the PRIMER manual in this appendix and is entitled "[airbag_folding_example.key](../Storage/primer-22-1/primer_links/appen_4/airbag_folding_example.key)".<br> <br>The first issue in folding this model is to create an ORIGAMI. This is done by selecting DEFINE\_ORIGAMI and then CREATE. When choosing the materials, it is important to select only the materials which are to be folded. In this case the whole model is wanted for folding so WHOLE MODEL can be used to select the entire model. SELECT the ORIGAMI and press SET\_FOLD to start folding the airbag.<br> <br><br> **![](../Storage/primer-22-1/primer_links/appen_4/fold_ex1.gif)** |
+| The following example is of a somewhat simplified geometry of an airbag. This is designed to provide a fairly complete demonstration of the capabilities to make a folded airbag. It is not designed to represent a realistic fold pattern or to represent accurate deployment of an airbag. In fact, there is no \*AIRBAG card in this model so it will not deploy.<br> <br>Figure A4.1 shows the starting geometry for this model. The units are in millimetres and the fabric is 0.25mm thick. The airbag is a simple drivers side (or pancake) airbag.<br> <br>For reference, the model is provided with the PRIMER manual in this appendix and is entitled "[airbag_folding_example.key](./Storage/primer-23/primer_links/appen_4/airbag_folding_example.key)".<br> <br>The first issue in folding this model is to create an ORIGAMI. This is done by selecting DEFINE\_ORIGAMI and then CREATE. When choosing the materials, it is important to select only the materials which are to be folded. In this case the whole model is wanted for folding so WHOLE MODEL can be used to select the entire model. SELECT the ORIGAMI and press SET\_FOLD to start folding the airbag.<br> <br><br> **![](./Storage/primer-23/primer_links/appen_4/fold_ex1.gif)** |
 | --- |
 
 The folding pattern consists of 9 folds. The folds are:
@@ -15,19 +15,19 @@ The folding pattern consists of 9 folds. The folds are:
 8. 90 thin fold along y-axis
 9. Spiral fold using a local coordinate system and layers
 
-| ![](../Storage/primer-22-1/primer_links/appen_4/ex2.gif) |
+| ![](./Storage/primer-23/primer_links/appen_4/ex2.gif) |
 | --- |
 
 The first fold is a tuck fold. The fold is in the x direction and in the xy plane (the default folding plane). The fold point is at 114.5 and the direction is from right to left. The fold point is defined by selecting a node using the FOLD\_POINT button. By default the folder chooses all of the airbag to the right of the fold line. As this is what we want this is OK. Figure A4.2 shows a side view of the airbag after the tuck fold. In this example the fold separation has been set very high (5.0mm) so you can see the tuck fold. In reality the separation would be much smaller (probably the same order as the fabric thickness).
 
 The second fold is defined in exactly the same way except that the direction is from left to right and the fold point is at -114.5. By default the folder chooses all of the airbag to the left of the fold line which is what is required.
 
-| ![](../Storage/primer-22-1/primer_links/appen_4/ex3.gif) |
+| ![](./Storage/primer-23/primer_links/appen_4/ex3.gif) |
 | --- |
 
 A side view after FOLD 2 is shown in Figure A4.3. As the two tuck folds interfere with each other the first tuck fold has been moved so that no penetrations occur. As the fold separation is very large this effect has been exagerated. In reality the amount would be much smaller.
 
-| ![](../Storage/primer-22-1/primer_links/appen_4/ex4.gif) |
+| ![](./Storage/primer-23/primer_links/appen_4/ex4.gif) |
 | --- |
 
 Folds 3 to 5 will show how you can use subset folding to quickly fold an airbag. Fold 3 is a thin fold. We want to fold it in the y direction soa 90 fold angle needs to be selected. Figure A4.4 shows the airbag after this fold has been done.
@@ -42,13 +42,13 @@ Subset folding is the easiest option to use. We can use this because all the nod
 
 The 5 ^th^fold is done in exactly the same way. As we are already using subset folding everything (including the fold direction) will be set correctly. Figure A4.5 shows the airbag after the first 5 folds.
 
-![](../Storage/primer-22-1/primer_links/appen_4/ex5.gif)
+![](./Storage/primer-23/primer_links/appen_4/ex5.gif)
 
 Fold 6 can also be done with subset folding. This is to show that subset folding is not just for thin folds. It also works for thick folds. We only want to fold this by 90 instead of 180. This is easily changed by using THICK FOLD OPTIONS and changing the angle. Apart from this complication the process is identical to folds 3 to 5.
 
 Fold 7 is an ALIGN fold. This is used if your nodes are not exactly where you want them to be. In this case we want to make adjacent nodes to the fold line a constant distance of 5mm from the fold line. This is done by setting the fold point as normal. As we were using subset folding in the previous folds we need to make sure that it is turned off as these folds are no longer a subset of the previous fold. To set the align fold options use ALIGN FOLD OPTIONS and make sure that the MAKE TRAMLINES option is set with a constant distance of 5mm.
  
-![](../Storage/primer-22-1/primer_links/appen_4/ex6.gif)
+![](./Storage/primer-23/primer_links/appen_4/ex6.gif)
  
 Fold 8 is a thin fold of 90. This presents no real problems and is similar to previous fold definitions. Figure A4.6 shows the airbag after the first 8 folds have been done.
  
@@ -56,7 +56,7 @@ The last fold is a spiral fold. This presents problems because the part of the a
  
 This allows us to define the plane for the spiral fold but if we try to fold this we will fold other parts of the airbag which are on the same side of the fold line. We need to either define a subset of the bag to fold or use layers to specify a range of the airbag to fold. In this case it is easier to define the UPPER LAYER so that anything above that local z coordinate is discarded when folding.
  
-![](../Storage/primer-22-1/primer_links/appen_4/ex7.gif)
+![](./Storage/primer-23/primer_links/appen_4/ex7.gif)
  
 Once the airbag has been folded it can be positioned to the desired location using the POSITION FOLDED BAG option. This example model has 4 orientations stored with the origami so that the airbag can be repositioned as needed. They can be modified or deleted easily or new orientations can be added just like folds. The 4 orientations that are stored are:-
 

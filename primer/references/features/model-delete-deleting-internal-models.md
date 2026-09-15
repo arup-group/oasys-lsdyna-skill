@@ -3,7 +3,7 @@
 | Entire models may be deleted from memory with the DELETE command (Models are only deleted from PRIMER, not from disk).<br>
 <br>Deletion is carried out as shown in this figure:<br>
 <ul style="font-size: 14.6667px;"> <li>Select 1 or more existing models;</li> <li>Hit&#160;<span class="buttontext">APPLY&#160;</span>.</li> <li>You will be forced to confirm that you want to do this before they are actually deleted.</li>
-</ul> | **![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_6.png)** |
+</ul> | **![](./Storage/primer-23/primer_links/sect_3/images/fig_3_6.png)** |
 | --- | --- |
 
 ## 

@@ -2,7 +2,7 @@
 
 The options in the top section of the Implicit Setup Tool window (shown below) affect all analysis types.
 
-![](../Storage/primer-22-1/primer_links/sect_6/implicit_setup/TopWindow.bmp)
+![](./Storage/primer-23/primer_links/sect_6/implicit_setup/TopWindow.bmp)
 
 Simplified / Advanced
 
@@ -10,11 +10,11 @@ These toggle buttons allow the user to switch between Simplified and Advanced mo
 
 Simplified
 
-![](../Storage/primer-22-1/primer_links/sect_6/implicit_setup/Simplified_StaticNonLinear.bmp)
+![](./Storage/primer-23/primer_links/sect_6/implicit_setup/Simplified_StaticNonLinear.bmp)
 
 Advanced
 
-![](../Storage/primer-22-1/primer_links/sect_6/implicit_setup/Advanced_StaticNonLinear.bmp)
+![](./Storage/primer-23/primer_links/sect_6/implicit_setup/Advanced_StaticNonLinear.bmp)
 
 Type of analysis
 
@@ -48,10 +48,10 @@ Click Apply to proceed to the pre-output summary. This button will only become a
 
 If Overwriting options is set to Case-by-Case and the current model already contains some keywords that the Implicit Setup Tool will output, the clashing keywords will be presented in the Pre-Existing Keywords window (shown below). To overwrite an existing keyword with the options from the Implicit Setup Tool tick the corresponding checkbox. The green tick and red cross buttons can be used to select and deselect all keywords respectively. Clicking Cancel will return to the main window with all previous options still selected.
 
-![](../Storage/primer-22-1/primer_links/sect_6/implicit_setup/WriteOut_PreExisting.bmp)
+![](./Storage/primer-23/primer_links/sect_6/implicit_setup/WriteOut_PreExisting.bmp)
 
 After clicking Continue in the Pre-Existing Keywords window, or if there are no clashing keywords to choose from, a summary of the keywords that will be added/changed or ignored (preserved) will be presented on the Output Overview window (shown below). Clicking Confirm will write the added/changed keywords to the current model. Clicking Back will return to the Pre-Existing Keywords window, and Cancel will return to the main window with all previous options still selected.
 
-![](../Storage/primer-22-1/primer_links/sect_6/implicit_setup/WriteOut_Confirm.bmp)
+![](./Storage/primer-23/primer_links/sect_6/implicit_setup/WriteOut_Confirm.bmp)
 
 [Previous](reasons-to-use-implicit-vs-explicit.md)  |  [Next](include-controlling-include-files.md)

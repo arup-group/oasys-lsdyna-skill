@@ -8,6 +8,6 @@ In order to select a standard file from the database to read into PRIMER, select
 
 **Using a template** : If there is a particular combination of Include files you frequently wish to read in together, you can save a [template](templates.md#templates) listing these include files (described later in this section). Click on LOAD TEMPLATE in order to open an existing template and the include files listed in the template will be automatically selected.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_6.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_6.gif)
 
 [Previous](viewing-the-model-database.md)  |  [Next](applying-the-build.md)

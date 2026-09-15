@@ -3,7 +3,7 @@
 | In PRIMER V14 the way in which belt elements are defined in each segment of the belt has been revised to make it more flexible.<br>
 <br>Prior to V14, the "old" method, only certain combinations of belt element types were permitted in each segment of the belt:<br>
 <ul> <li>1D seatbelt elements only</li> <li>2D seatbelt elements only</li> <li>Conventional shells only</li> <li>Mixed 1D seatbelt elements + shells</li> <li>Mixed 2D seatbelt elements + shells</li>
-</ul> | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/ovn_2.png)<br> <br>"Old" method | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/ovn_1.png)<br> <br>"New" method |
+</ul> | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/ovn_2.png)<br> <br>"Old" method | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/ovn_1.png)<br> <br>"New" method |
 | --- | --- | --- |
 
 From V14 onwards each segment of belt can be made up of any permutation of these element types, split into three spans:
@@ -34,9 +34,9 @@ However going from V14 to an earlier version, ie representing the belt in "old" 
  
 ##### General belt mesh controls
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_4b.png)Each chassis segment is meshed separately in turn so that the mix of SEATBELT and SHELL elements in each segment can be controlled independently: each segment may be all belts, all shells, or a specified mixture of the two.
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_4b.png)Each chassis segment is meshed separately in turn so that the mix of SEATBELT and SHELL elements in each segment can be controlled independently: each segment may be all belts, all shells, or a specified mixture of the two.
  
-You move between belt segments using the ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/belt_f.gif)(forwards) and ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/belt_b.gif)(backwards) buttons. A diagram of the current section is shown, and will also be sketched on the graphics image.
+You move between belt segments using the ![](./Storage/primer-23/primer_links/sect_6/seatbelt/belt_f.gif)(forwards) and ![](./Storage/primer-23/primer_links/sect_6/seatbelt/belt_b.gif)(backwards) buttons. A diagram of the current section is shown, and will also be sketched on the graphics image.
  
 Mesh type determines how this section of belt will be meshed. From V14 onwards you have the options of "New style" (arbitrary mixture of element types) and "Old style") restricted to 5 arrangements. You can switch between old and new modes using the [ O / N ] button.
  

@@ -1,6 +1,6 @@
 ﻿##  DUMMIES Positioning Occupants
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/dummy-panel.png)The Dummy/HBM positioning tool includes the following:
+![](./Storage/primer-23/primer_links/sect_6/dummies/dummy-panel.png)The Dummy/HBM positioning tool includes the following:
 * Dummy definitions may be created and edited interactively.
 * Positioning via a "free dragging" mode.
 * "Points" may be added to dummy assemblies to give further restraint and positioning options.

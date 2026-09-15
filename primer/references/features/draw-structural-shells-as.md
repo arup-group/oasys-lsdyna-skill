@@ -1,6 +1,6 @@
 ﻿#####  Draw Structural Shells As
 
-| How shell elements that make up the structure are drawn during belt fitting. | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fopts_draw_struct.png) |
+| How shell elements that make up the structure are drawn during belt fitting. | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fopts_draw_struct.png) |
 | --- | --- |
 
 ##### PRIMER normally draws shell elements as "thin" at the plane of their nodes, ignoring any thickness or offsets. This is done for speed, and it is satisfactory in most contexts.

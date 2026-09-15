@@ -4,15 +4,15 @@ The check option panel is now divided into pages for ease of use.
 
 Use the popup to go to the page you want.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/check%20options1.jpg)
+![](./Storage/primer-23/primer_links/sect_3/images/check%20options1.jpg)
 
- ![](../Storage/primer-22-1/primer_links/sect_3/images/check%20options2.jpg) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/check%20options2.jpg) 
 These are the options that control checks related to rigid entities
 
 Options for which zero is a valid entry will have an ON/OFF tick box to control whether the option is active.
 
 For others entry of zero (or blank) de-activates the option.
- ![](../Storage/primer-22-1/primer_links/sect_3/images/checkoptions_contact.JPG) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/checkoptions_contact.JPG) 
 These are the options that control checks related to contacts
 
 **Sliding contact** - by default the checks are **off** . If active, crossed edge checking is done. Additionally, penetrations may be reported if they fail one of 3 thresh-hold criteria.

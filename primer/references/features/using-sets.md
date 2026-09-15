@@ -1,6 +1,6 @@
 ﻿#### Using Sets
 
-#### ![](../Storage/primer-22-1/primer_links/sect_6/airbag/sets1.gif)
+#### ![](./Storage/primer-23/primer_links/sect_6/airbag/sets1.gif)
 
 A set is a collection of shells from the origami. If a set is defined then rather than folding the entire origami, just the shells in the set will be considered for folding. The set could contain a single shell from the origami or it could contain the whole origami.
 

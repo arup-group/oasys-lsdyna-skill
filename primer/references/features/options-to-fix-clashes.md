@@ -14,13 +14,13 @@ When there are parameters with the same name in both primary and secondary model
 | Determining the nature of clashes  <br>The two main problems with merging models together are items which have potential label clashes such as nodes, elements, parts etc. and items which are only allowed once in a model such as control and database cards, airbag reference geometry etc. |
 | --- |
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_4_3.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_4_3.gif)
 
 You can get a summary (above) or a detailed list (below) of the potential merge problems by using the popup on the PROBLEMS WITH CLASHES.... button.
 
 For example in the summary above you can see that there are clashes of nodes. The detailed list (below) tells you which node labels are clashing as well as the total number.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_4_4.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_4_4.gif)
 
 The problem with label clashes is easily solved by using either option 2 or option 3 above (or custom merge for greater control)
 
@@ -34,7 +34,7 @@ Other items in the model which do not have labels such as constrained cards and 
 
 Once you have chosen a method for merging the two models together which fixes any potential problems the PROBLEMS WITH MERGE... button in the main merge window will change message and turn green. The APPLY MERGE button will be ungreyed and the merge can proceed.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/merge_21update.jpg)
+![](./Storage/primer-23/primer_links/sect_3/images/merge_21update.jpg)
 
 This method is the easiest way to merge two models together. The original models will not be deleted after merging so if the outcome of the merge is not what you wanted you do not lose your original models. However, it is good practice to save your models before attempting to merge them together.
 

@@ -6,7 +6,7 @@ When saving the GUI a \*.js file is also written to demonstrate how to include t
 
 It is written to the same folder as the \*.jsi file and named &lt;jsi\_filename&gt;\_TEMPLATE.js, e.g. if the \*.jsi file is called demo.jsi, the \*.js file will be saved as demo\_TEMPLATE.js
 
-![](../Storage/primer-22-1/project-common-topics/js_gui_builder/filenames.png)
+![](./Storage/primer-23/project-common-topics/js_gui_builder/filenames.png)
 
 The following sections explain how you can reference the Windows, Widgets and WidgetItem objects within your script.
 

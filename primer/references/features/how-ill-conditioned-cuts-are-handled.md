@@ -1,6 +1,6 @@
 ﻿####  How Ill-Conditioned Cuts Are Handled
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_6_11_8a.png)It is normally the case that the cutting plane intersects elements cleanly, leaving no doubt about which elements are being cut. However where a mesh is rectilinear, and the cut plane is positioned exactly on a line of nodes, then a problem can arise as it is not clear whether the plane:<br>
+| ![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_6_11_8a.png)It is normally the case that the cutting plane intersects elements cleanly, leaving no doubt about which elements are being cut. However where a mesh is rectilinear, and the cut plane is positioned exactly on a line of nodes, then a problem can arise as it is not clear whether the plane:<br>
 <ol style="font-size: 14.6667px;"> <li>Lies in the gap between adjacent rows of elements, and doesn&#39;t cut anything<br>or<br></li> <li>Cuts elements both above and below the plane<br>or<br></li> <li>Only cuts elements on one side of the plane</li>
 </ol> |
 | --- |

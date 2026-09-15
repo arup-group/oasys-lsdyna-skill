@@ -4,6 +4,6 @@ The database/template build may be run in simple, rigorous or master only mode f
 
 Type BUILD on the command line to set the mode. Then HELP to get a description of the syntax.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/com_line_help.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/com_line_help.gif)
 
 [Previous](multiple-build-from-template-panel.md)  |  [Next](connection-file-as-component-of-build.md)

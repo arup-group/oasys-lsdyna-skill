@@ -2,7 +2,7 @@
 
 From PRIMER 9.3RC2 onwards Parameters, as in the Ansys LS-DYNA \*PARAMETER keyword, are fully supported in interactive editing panels.
 
-| <ul> <li> <b>Wherever Parameters have been used in the input deck these will be displayed in edit panels. </b> <br> <br>Parameters can be displayed either as they would appear in the keyword file, ie <span class="courierbold">&amp; <i>NAME </i>. </span>(Here <span class="courierbold">&amp;IHQ_1 </span>) <br> <br>Or their numeric values can be shown, underlined with dots to show that the field is parameterised. <br> </li> </ul> | **![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_10_1.png)** |
+| <ul> <li> <b>Wherever Parameters have been used in the input deck these will be displayed in edit panels. </b> <br> <br>Parameters can be displayed either as they would appear in the keyword file, ie <span class="courierbold">&amp; <i>NAME </i>. </span>(Here <span class="courierbold">&amp;IHQ_1 </span>) <br> <br>Or their numeric values can be shown, underlined with dots to show that the field is parameterised. <br> </li> </ul> | **![](./Storage/primer-23/primer_links/sect_2/images/fig_2_10_1.png)** |
 | --- | --- |
 
 * **Parameters may be typed into any editing panel data field.**  
@@ -16,7 +16,7 @@ This behaviour is triggered by typing the initial ampersand " **&** " into the d
  
 It is also possible to use wildcard syntax containing \* and ?. In that case the popup will show all parameters matching this pattern when \* is replaced with any character string and ? with any single character.
 
-| <ul> <li> <b>Hovering the cursor over a parameterised field gives further options. </b> <br> <br>If you hover the cursor over a field containing a parameter a popup box giving more details about its attributes will be mapped. You will also be able to <span class="buttontext">EDIT </span>the parameter by using the appropriate button in that box. <br> </li> </ul> | **![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_10_2.png)** |
+| <ul> <li> <b>Hovering the cursor over a parameterised field gives further options. </b> <br> <br>If you hover the cursor over a field containing a parameter a popup box giving more details about its attributes will be mapped. You will also be able to <span class="buttontext">EDIT </span>the parameter by using the appropriate button in that box. <br> </li> </ul> | **![](./Storage/primer-23/primer_links/sect_2/images/fig_2_10_2.png)** |
 | --- | --- |
 
 * **Parameters may be created, edited and deleted just like any other keyword item.**  

@@ -6,6 +6,6 @@
 
 3. From this CREATE COMPOSITE PLY panel it is possible to assign a material (MID) and a thickness (THICK) to the ply which will be created. The Contents button allows management of the Set of Shells which are part of the Ply. Below is a tool to assign angles to the elements of the Ply.
 
-![hey](../Storage/primer-22-1/primer_links/sect_6/composite/composite_9.png)
+![hey](./Storage/primer-23/primer_links/sect_6/composite/composite_9.png)
 
 [Previous](purpose-of-the-composite-layup.md)  |  [Next](ply-options.md)

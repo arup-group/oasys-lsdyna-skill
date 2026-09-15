@@ -1,6 +1,6 @@
 ﻿###  2.Fit: Creating a Belt "Path"
 
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/new_fit_panel1.PNG) 
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/new_fit_panel1.PNG) 
 
  The second stage of seatbelt definition requires you to "fit" the belt by: 
 * defining a crude "path" for the belt;

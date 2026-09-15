@@ -2,7 +2,7 @@
 
 If PRIMER fails to locate an include file during a [**MODEL &gt; READ**](model-read.md#32MODELREAD)operation, it will generate a popup panel that will permit users to manually locate the missing files.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/missing_inc_file.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/missing_inc_file.gif)
 
 The following options are available on the popup panel:
 
@@ -20,7 +20,7 @@ Missing or skipped include files (that is, files referenced by \*INCLUDE but not
 
 **[Model] Read, Options** has a Remember skipped include files option:
 
-![](../Storage/primer-22-1/browse-for-missing-include-files/browse-for-missing-include-files-2025-04-01.png)
+![](./Storage/primer-23/browse-for-missing-include-files/browse-for-missing-include-files-2025-04-01.png)
 
 The default is to remember skipped include files, but this can be controlled via the preference
 

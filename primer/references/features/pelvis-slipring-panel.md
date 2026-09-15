@@ -2,7 +2,7 @@
 
 The Pelvis slipring panel is the second tab of the Explicit slipring panel. This panel allows you to enter information about the explicit pelvis slipring which is needed to automatically adjust the initial path of the belt within the slot of the pelvis slipring and to pull an explicitly meshed slipring into its correct position during the fitting process. The panel and an explanation of the required inputs are shown below:
 
-![](../Storage/primer-22-1/pelvis_panel.png)
+![](./Storage/primer-23/pelvis_panel.png)
 
 The inputs in the panel are split into two parts, the Forward/Backwards rotation and the Sideways rotation. These are the two rotation directions as described in section 2 of this page. All panel inputs are described below in more detail:
 
@@ -10,7 +10,7 @@ The inputs in the panel are split into two parts, the Forward/Backwards rotation
 
 **Rotating Part set**must include all parts forming the pelvis slipring and buckle that are expected to move in the Forward/Backwards direction during the fitting process. It is recommended to select all parts that make up the pelvis buckle and stalk. For example, for the image below, the whole pelvis buckle needs to rotate around the pivot centre, therefore the whole buckle must be included in the part set.
 
-![](../Storage/primer-22-1/pelvis-slipring-panel/pelvis_sideways_parts.png)
+![](./Storage/primer-23/pelvis-slipring-panel/pelvis_sideways_parts.png)
 
 **Pivot centre**defines the centre of rotation of the pelvis slipring.
 
@@ -24,7 +24,7 @@ The **Rotation axis**can be defined either as an explicit vector or by selecti
 
 **Rotating Part set**must include all parts forming the pelvis slipring and buckle that are expected to move sideways during the fitting process. It is recommended to select a subset of the stalk and everything above it. For the example buckle below, the part set selected includes a subset of the stalk because only a subset of the stalk is required to rotate in a sideways direction towards the dummy/seat structure.
 
-![](../Storage/primer-22-1/pelvis-slipring-panel/pelvis_forwards_parts.png)
+![](./Storage/primer-23/pelvis-slipring-panel/pelvis_forwards_parts.png)
 
 **Stalk left node** and **Stalk r** **ight node**must be nodes at the outside of the buckle stalk, defining a straight line across the stalk. The Rotating Part set will be rotated around the line defined by the two nodes.
 
@@ -36,7 +36,7 @@ The **Rotation axis**can be defined either as an explicit vector or by selecti
 
 This option allows effortless adjustment of the initial belt path within the slot of the slipring.
 
-![](../Storage/primer-22-1/pelvis-slipring-panel/pelvis_adjust.png)
+![](./Storage/primer-23/pelvis-slipring-panel/pelvis_adjust.png)
 
 The following describes the steps required to apply this:
 
@@ -57,7 +57,7 @@ The Forward/Backward rotation revolves the entire pelvis buckle (**Rotating Part
 
 The Sideways rotation revolves a subset of the pelvis buckle (**Rotating Part set**) towards the seat/dummy along a line defined by two nodes (**Stalk left node** and **Stalk right node**), until any part of the buckle comes into contact with the structure. The rotation always moves towards the seat/dummy until contact is made. If contact is made, the tool will rotate the buckle back to the previous non-contact position. If the Forward/Backward rotation is also active, then after contact is made, the tool will switch to the Forward/Backward rotation and revert to the Sideways rotation once the number of fitting iterations for this rotation direction is reached. The image on the right depicts the intended rotational direction of the Sideways rotation.
 
-![](../Storage/primer-22-1/pelvis-slipring-panel/forward_rotation.png) ![](../Storage/primer-22-1/pelvis-slipring-panel/sideways_rotation.png)
+![](./Storage/primer-23/pelvis-slipring-panel/forward_rotation.png) ![](./Storage/primer-23/pelvis-slipring-panel/sideways_rotation.png)
 
 Forward\Backward rotation direction Sideways rotation rotation direction
 
@@ -93,5 +93,5 @@ Ticking the **C** **reate X-Section** box will create two \*DATABASE\_CROSS\_
 
 The image below illustrates the result of using the **C** **reate X-Section**in a meshed belt where the tool creates two \*DATABASE\_CROSS\_SECTION cards with a distance of 150 on either side of the pelvis slipring:
 
-![](../Storage/primer-22-1/pelvis-slipring-panel/belt_xsect_marked.png)
+![](./Storage/primer-23/pelvis-slipring-panel/belt_xsect_marked.png)
 [Previous](shoulder-slipring-panel.md)  |  [Next](mesh-meshing-the-fitted-chassis-mesh-with-structural-finite-elements.md)

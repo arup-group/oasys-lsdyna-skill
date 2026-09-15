@@ -5,9 +5,9 @@ Belt elements are fitted directly onto "structure" elements, (it is not necessar
 In PRIMER this may be any combination of SHELL , SOLID and THICK SHELL elements., the only limitation being that they must be in a single model. (If you have separate models, for instance #1 is a car and #2 a dummy, you will have to merge them before fitting a seatbelt.)
 
 Before fitting can take place you must SELECT an existing belt definition (implicitly containing structure) or CREATE a new one. Selecting Define from the main seatbelt menu as shown on the right brings up the menu shown below.
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_1a.png) 
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_1a.png) 
 
-| CREATE | Manages the creation of a new seatbelt definition. | ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_1b.png) |
+| CREATE | Manages the creation of a new seatbelt definition. | ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_1b.png) |
 | --- | --- | --- |
 | DELETE | Deletes existing definitions. |
 | LIST | Lists existing definitions and their contents. |
@@ -16,10 +16,10 @@ Before fitting can take place you must SELECT an existing belt definition (impli
 | REMOVE | Edits it by removing elements. |
 | DONE | Exits this panel to return to the main seatbelt menu. |
 
-| CREATE Creating a new belt definition.  <br>![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_1c.png)You must first select the model in which the new definition will reside.<br> <br>Then you must give a label and title for this new definition, and press APPLY .<br> <br>Labels are arbitrary, but must be unique within a model. |
+| CREATE Creating a new belt definition.  <br>![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_1c.png)You must first select the model in which the new definition will reside.<br> <br>Then you must give a label and title for this new definition, and press APPLY .<br> <br>Labels are arbitrary, but must be unique within a model. |
 | --- |
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_1d.gif)Then select the PARTS and/or SHELL , SOLID and THICK SHELL elements that will constitute the structure for this definition.<br> <br>PRIMER will create sets of these element types ( SET\_SHELL , etc) when you press APPLY .<br> <br>Then SELECT this new definition to make it current, and use DONE to return to the top seatbelt menu.<br> <br>The most efficient, and usually also the most convenient, method is to select whole PARTs. This means that the belt fitter can amalgamate the "structure" definition into a \*SET\_PART definition, which is convenient for contact and other definitions. However you can choose any mixture of individual elements, including subsets of a part if you wish. |
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_1d.gif)Then select the PARTS and/or SHELL , SOLID and THICK SHELL elements that will constitute the structure for this definition.<br> <br>PRIMER will create sets of these element types ( SET\_SHELL , etc) when you press APPLY .<br> <br>Then SELECT this new definition to make it current, and use DONE to return to the top seatbelt menu.<br> <br>The most efficient, and usually also the most convenient, method is to select whole PARTs. This means that the belt fitter can amalgamate the "structure" definition into a \*SET\_PART definition, which is convenient for contact and other definitions. However you can choose any mixture of individual elements, including subsets of a part if you wish. |
 | --- |
 
 #####  Efficient selection of structure elements

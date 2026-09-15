@@ -1,6 +1,6 @@
 ﻿##  SCRIPT Using JavaScript in PRIMER
 
- ![](../Storage/primer-22-1/script-using-javascript-in-primer-2023-03-03-1.png)
+ ![](./Storage/primer-23/script-using-javascript-in-primer-2023-03-03-1.png)
  
 Scripting is covered in later [section](introduction.md) of this manual, see:
 

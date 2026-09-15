@@ -6,7 +6,7 @@ The quad is first split along one of its diagonals such that it is made up of tw
 
 Due to the way in which the area of the quad is defined, the taper value can become negative for warped SHELLs. This area definition may also cause discrepencies between taper values provided by other pre-processor software.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/Max_taper_img.png)
+![](./Storage/primer-23/primer_links/sect_3/images/Max_taper_img.png)
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/Max_taper_eq.PNG)
+![](./Storage/primer-23/primer_links/sect_3/images/Max_taper_eq.PNG)
 [Previous](max-jacobian.md)  |  [Next](min-tet-collapse.md)

@@ -4,7 +4,7 @@ Tools → Workflows
 
 The Workflows menu allows easy access to all the available Workflows. In PRIMER, you can open the Workflows menu by selecting Tools → Workflows. The Available Workflows pane shows all the Workflows that can be selected. Selecting any of the Workflows will run the JavaScript defined in the pre\_process\_script value of the workflow definition. Running a Workflow will minimise the Workflows menu and open the script’s user interface. The Workflows menu will maximise again after closing the script.
 
-![](../Storage/primer-22-1/workflows_menu_primer.png)
+![](./Storage/primer-23/workflows_menu_primer.png)
 
 When the Workflows menu is initially opened, it shows all the available Workflows, but you can filter the Workflows by using the Filters tree. You can select multiple categories to filter the available Workflows displayed. Individual categories can be selected with single clicks; pressing the Ctrl and Shift keys while clicking on the tree will do a multi select.
 

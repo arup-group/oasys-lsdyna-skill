@@ -11,7 +11,7 @@ An **&lt;**  **undefined**  **&gt;** category is sometimes included. This is bec
 Here the user is filtering by SECTION , and because these are screen-pickable the Vis button in the filter menu is now active.
  
 In this context you can choose either to select an explicit row, as above, or to use Vis and to screen-pick a section from the current image.
- ![](../Storage/primer-22-1/primer_links/sect_2/selection/fig_6_2d2.png)
+ ![](./Storage/primer-23/primer_links/sect_2/selection/fig_6_2d2.png)
 
 |  |
 | --- |

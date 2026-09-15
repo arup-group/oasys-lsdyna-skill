@@ -1,7 +1,7 @@
 ﻿###  UPDATE... Controlling the View Updating Frequency
 
 | PRIMER has an UPDATE\_LEVEL setting which dictates how often the view is updated following commands that change it.<br>
-<br>The figure shows the UPDATE panel and its three settings. These have the following meanings: | ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_5_3.gif) |
+<br>The figure shows the UPDATE panel and its three settings. These have the following meanings: | ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_5_3.gif) |
 | --- | --- |
 
 UPDATE\_LEVEL = 1 **No updates**

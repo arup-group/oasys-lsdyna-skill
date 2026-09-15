@@ -1,6 +1,6 @@
 ﻿###  Automake: Creating Plies and Layups from _COMPOSITE Data in the Model
 
-![](../Storage/primer-22-1/primer_links/sect_6/composite/composite_19.png)
+![](./Storage/primer-23/primer_links/sect_6/composite/composite_19.png)
 
 Sometimes a model wll contain one or more of the following keywords:
 

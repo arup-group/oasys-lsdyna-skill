@@ -4,6 +4,6 @@
 
 The figures below show the differences between these.
 
-![](../Storage/primer-22-1/spotweld-length-adhesive-thickness-2022-12-14.png)
+![](./Storage/primer-23/spotweld-length-adhesive-thickness-2022-12-14.png)
 
 [Previous](search-distance.md)  |  [Next](edge-distance.md)

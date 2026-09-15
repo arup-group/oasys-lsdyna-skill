@@ -2,7 +2,7 @@
 
 You can check the status of all currently defined target points/positions by clicking on the Check all defined button. This will check each position in turn and then report the results to the screen in a table.
 
-![](../Storage/primer-22-1/primer_links/sect_6/fmh/check_panel.gif)
+![](./Storage/primer-23/primer_links/sect_6/fmh/check_panel.gif)
 
 The check panel reports a number of things:
 

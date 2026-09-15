@@ -2,7 +2,7 @@
 
 It is possible to summarise the contents of a model to the screen and/or to file with this option.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_8_1.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_8_1.png)
 
 You can select any or all of the following "**Output to:**" locations:
 

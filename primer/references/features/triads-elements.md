@@ -2,7 +2,7 @@
 
 It is possible to draw triads on elements that would depict the local material orientation. Alternatively, the local X direction can be drawn by toggling the appropriate button "On".
 
-![Triad](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_4_8.gif)
+![Triad](./Storage/primer-23/primer_links/sect_4/images/fig_4_4_8.gif)
 
 The following options are available for drawing element triads/local X direction and can be chosen using the popup:
 

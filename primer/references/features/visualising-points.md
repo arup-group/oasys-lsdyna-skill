@@ -1,6 +1,6 @@
 ﻿####  Visualising Points
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_edit_4.jpg)Points may be visualised by using the Sketch options both on the parent dummy panel and on their edit/create panels.
+![](./Storage/primer-23/primer_links/sect_6/dummies/fig_edit_4.jpg)Points may be visualised by using the Sketch options both on the parent dummy panel and on their edit/create panels.
 
 Here is a picture of the point in the example above: it is the dummy's H point, located in the centre of the pelvis. (This point is [created automatically](visualising-points.md#auto_h_point) if the dummy definition includes an H\_POINT card.)
 

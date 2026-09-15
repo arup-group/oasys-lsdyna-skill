@@ -6,7 +6,7 @@ The copy function is **not** available for translate by Contact Orient or for Tr
 
 The copy can be applied once or multiple times, the orient being incremented each time. The initial orient may be defined by a DRAG operation or explicitly. The copy function can be turned on at the top of the orient panel. The copy options can be opened by clicking on Options .
 
-![](../Storage/primer-22-1/copy-and-orient/copy-and-orient-2023-07-18-1.png)
+![](./Storage/primer-23/copy-and-orient/copy-and-orient-2023-07-18-1.png)
 
 When you select COPY ON the orient option are temporarily pre-configured as follows:
 
@@ -19,7 +19,7 @@ Move/copy welds with panel is available for user to set.
 
 When copy is deselected (or the orient panel dismissed) PRIMER will restore the settings to their previous value.
 
-![](../Storage/primer-22-1/copy-and-orient/copy-and-orient-2023-07-18.png)
+![](./Storage/primer-23/copy-and-orient/copy-and-orient-2023-07-18.png)
 
 **Labels for new items** By default the new items will be labelled starting with the highest current label + 1 for each item type. Alternately, the user may specify a pair of seed labels (this or the next available label will be used) or a pair of offsets. One label is for the more populous type of item (nodes, elements, node sets, nrbs), the other for all other types. In the offset case, PRIMER will check that all the offset labels are available.
 

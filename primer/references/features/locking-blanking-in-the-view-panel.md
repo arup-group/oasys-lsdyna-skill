@@ -2,7 +2,7 @@
 
 Blanking may also be "locked" to its current status via the following buttons in the View panel:
 
-| ![](../Storage/primer-22-1/primer_links/sect_4/images/fig_4_5_2_3.gif) | Lock "locks" the current blanking status so that keyboard short cut U(**nblank all** ) returns to the "locked" visibility status. The Lock button toggles on / off.
+| ![](./Storage/primer-23/primer_links/sect_4/images/fig_4_5_2_3.gif) | Lock "locks" the current blanking status so that keyboard short cut U(**nblank all** ) returns to the "locked" visibility status. The Lock button toggles on / off.
 <br><br> All is exactly the same as keyboard shortcut U(**nblank all** ) above
 <br><br> Rev is exactly the same as keyboard shortcut R(**everse all** ) above |
 | --- | --- |

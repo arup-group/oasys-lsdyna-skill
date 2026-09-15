@@ -20,14 +20,14 @@ However each time you press APPLY PRIMER does the following:
 
 This results in progressively more and more of the model being drawn until nothing attached to what is currently visible (which is not necessarily the whole model) remains to be unblanked and drawn.
  
-![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_1.gif)
+![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_1.gif)
 
 | The following six images demonstrate how ATTACHED makes progressively more and more of a model visible: |
 | --- |
-| (1) Just one part visible<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_1a.gif) | (2) Restraints, contact and spotweld to next part<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_1b.gif) |
+| (1) Just one part visible<br> <br>![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_1a.gif) | (2) Restraints, contact and spotweld to next part<br> <br>![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_1b.gif) |
 
-| (3) Nearest elements on next (red) part attached to spotweld.<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_1c.gif) | (4) (After a few APPLY operations) restraint set on red part.<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_1d.gif) |
+| (3) Nearest elements on next (red) part attached to spotweld.<br> <br>![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_1c.gif) | (4) (After a few APPLY operations) restraint set on red part.<br> <br>![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_1d.gif) |
 | --- | --- |
-| (5) (After more APPLYs) elements on the light blue part<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_1e.gif) | (6) More APPLYs: spotweld to & elements of dark blue part.<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/attached/fig_6_6_1f.gif) |
+| (5) (After more APPLYs) elements on the light blue part<br> <br>![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_1e.gif) | (6) More APPLYs: spotweld to & elements of dark blue part.<br> <br>![](./Storage/primer-23/primer_links/sect_6/attached/fig_6_6_1f.gif) |
 
 [Previous](attached-displaying-what-is-attached-to-things.md)  |  [Next](what-does-attached-to-actually-mean.md)

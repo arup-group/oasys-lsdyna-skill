@@ -4,7 +4,7 @@ The following panels appear if the **RIGOROUS** or **COMPONENT** build has been 
  
 #####  Summary Box
  
-##### ![](../Storage/primer-22-1/primer_links/sect_3/images/datab_13.gif)
+##### ![](./Storage/primer-23/primer_links/sect_3/images/datab_13.gif)
  
 Listed down the left hand side of the box are the names of all the keyword files that you asked to be read in. In order to show only those keyword files that have been renumbered (orange) or that show an error (red), click on the CONDENSE tab.
 
@@ -54,7 +54,7 @@ This category specifies whether the extra data files linked to the file were rea
 If, during the build process, latent items of an extra data file have been deleted (see [APPLY FIX](applying-the-build.md#applyfix)), the file contents will have been shifted to the master file and the include file itself suppressed. Such files will bear the warning " **^MOVED^** ".
  
 #####  Check Box 
- ![](../Storage/primer-22-1/primer_links/sect_3/images/datab_14.gif)
+ ![](./Storage/primer-23/primer_links/sect_3/images/datab_14.gif)
 
 This window contains the result of a number of predefined checks specified as [CHECK &gt; OPTIONS](options-setting-model-check-options.md#options).
 

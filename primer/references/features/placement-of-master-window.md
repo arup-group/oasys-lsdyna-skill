@@ -37,9 +37,9 @@ In order to decide which monitor to use the bounding box around the monitors on 
 * The outer red rectangle is the bounding box
 * The thin red lines show the sub-division into the 3x3 matrix
 
-![A line of three monitors](../Storage/primer-22-1/project-common-topics/placement-of-master-window/placement-of-master-window-2025-02-12.png)
+![A line of three monitors](./Storage/primer-23/project-common-topics/placement-of-master-window/placement-of-master-window-2025-02-12.png)
 
-![](../Storage/primer-22-1/project-common-topics/placement-of-master-window/placement-of-master-window-2025-02-12-1.png)
+![](./Storage/primer-23/project-common-topics/placement-of-master-window/placement-of-master-window-2025-02-12-1.png)
 
 In each case the monitor used is the one whose centroid is closest to the centre of the designated left / centre / right and top / middle / bottom sub-area. If a vertical or horizontal placement is not given (e.g. just LEFT or just TOP) then the centre dimension of the missing axis is used.
 
@@ -61,7 +61,7 @@ It will depend on the emulator, but typically they present a single virtual disp
 
 It is not unusual to have displays with different resolutions making up a desktop. For example a 15" laptop running at 3840 x 2200 and 250% scaling, with a 24" monitor running at 1920x1200 and 100% scaling next to it, will actually look something like this in pixel space:
 
-![](../Storage/primer-22-1/project-common-topics/placement-of-master-window/placement-of-master-window-2025-02-12-3.png)
+![](./Storage/primer-23/project-common-topics/placement-of-master-window/placement-of-master-window-2025-02-12-3.png)
 
 It is ***pixel*** space that matters, not the physical dimensions of the display. In the example above the laptop will be running at 240 dots per inch (DPI) whereas the monitor will be running at 96 DPI, so even though the 24" monitor is physically larger it has fewer pixels than the 15" laptop. Remember that the bounding box, the red outer rectangle in the images above, is based on pixel space and not physical space.
 [Previous](locking-preference-options.md)  |  [Next](emailing-crash-dumps-to-support.md)

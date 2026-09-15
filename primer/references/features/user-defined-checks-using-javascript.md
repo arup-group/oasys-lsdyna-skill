@@ -45,7 +45,7 @@ You can trigger a warning or an error by using the Warning() or Error() methods 
 
 These warnings and/or errors are shown in the tree just like normal warnings/errors. For example the output from the above check is shown below.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/user_item_error.png)
+![](./Storage/primer-23/primer_links/sect_3/images/user_item_error.png)
 
 ####  User defined custom check
 
@@ -64,13 +64,13 @@ if ( Math.abs((mass-1500)/1500) > 0.005)
 
 You can trigger a warnings and/or an error by using the static methods in the Check class Check.Error() and Check.Warning() . These errors are shown in a new branch of the error tree called CUSTOM\_CHECK . For example, the output from the above check is shown below.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/user_custom_error.png)
+![](./Storage/primer-23/primer_links/sect_3/images/user_custom_error.png)
 
-| The above example also shows that you can pass a detailed message as a second argument to the Warning() or Error() methods. Currently this is not available in the error tree. To see it you have to use the popup from the other check window and select Listing . | ![](../Storage/primer-22-1/primer_links/sect_3/images/user_custom_error_details1.png) |
+| The above example also shows that you can pass a detailed message as a second argument to the Warning() or Error() methods. Currently this is not available in the error tree. To see it you have to use the popup from the other check window and select Listing . | ![](./Storage/primer-23/primer_links/sect_3/images/user_custom_error_details1.png) |
 | --- | --- |
 
 The detailed message is then shown in the listing window.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/user_custom_error_details2.png)
+![](./Storage/primer-23/primer_links/sect_3/images/user_custom_error_details2.png)
 
 [Previous](blocking-checks-on-individual-items.md)  |  [Next](reading-ls-dyna-output-error-files.md)

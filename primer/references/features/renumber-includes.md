@@ -3,7 +3,7 @@
 * Select a model
 * Press Renumber Includes to get to the renumbering panel
 
-![Include Renumbering Table](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_7_6_3.bmp)
+![Include Renumbering Table](./Storage/primer-23/primer_links/sect_3/images/fig_3_7_6_3.bmp)
 
 New ranges can be specified for the master file, or for one or more include files using the appropriate text boxes. Two different sets of label ranges may be specified:
 
@@ -41,7 +41,7 @@ More control over the label ranges for specific entity types is available via th
 
 Clicking the Detailed button opens the Detailed entity ranges panel for the corresponding include file (or master file):
 
-![Detailed Renumbering Table](../Storage/primer-22-1/primer_links/sect_3/images/detailed_renumber_panel.gif)
+![Detailed Renumbering Table](./Storage/primer-23/primer_links/sect_3/images/detailed_renumber_panel.gif)
 
 Label ranges for specific entity types can be specified by clicking the entity name to enable entry of start and end labels. As for the general renumbering panel, the popup on In range? can also be used to renumber entities in the selected include file into range. On clicking Apply conflicts between any defined entity ranges and existing 'nodes/elements/node sets/constrained nodal rigid bodies' label ranges and 'general' label ranges are detected. If there are conflicts an option is given to either adjust the 'nodes/elements/node sets/constrained nodal rigid bodies' and 'general' ranges or modify the detailed entity ranges.
 

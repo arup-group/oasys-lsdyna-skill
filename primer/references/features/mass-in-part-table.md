@@ -14,9 +14,9 @@ Component mass is an attempt to describe the "engineering" mass of a part. This 
 
 *Note on masses on nodes of nodal rigid bodies* . Masses on nodes of nodal rigid bodies attached to a part will be included in the NRB mass column for the part. If the mass is on a node which does not directly attach to a part its mass will be shared amongst the nodes which do attach.
 
-| ![](../Storage/primer-22-1/primer_links/sect_7/parttable/mass_on_nrb.gif) |
+| ![](./Storage/primer-23/primer_links/sect_7/parttable/mass_on_nrb.gif) |
 | --- |
-| In this example NRBmass for Part 1 will include mass 2/3 of mass of MA1 and 2 quarter element shares. Mass for Part 2 will include 1/3 of mass of MA1 and all of mass MA2 and 1 quarter element share.<br> <br>If mass properties (CofG and Inertia) are activated in the table as above, they will include Lumped Mass and NRB mass.<br> <br><br> ![](../Storage/primer-22-1/primer_links/sect_7/parttable/mass_on_nrb_2.gif)<br> <br><br><br>If these columns are not displayed, the calculation will ignore the mass associated with the NRB and should give the same result as reported in the Ansys LS-Dyna otf (d3hsp) file. This treatment de-couples the NRB from the deformable parts.<br> <br><br> ![](../Storage/primer-22-1/primer_links/sect_7/parttable/mass_on_nrb_3.gif) |
+| In this example NRBmass for Part 1 will include mass 2/3 of mass of MA1 and 2 quarter element shares. Mass for Part 2 will include 1/3 of mass of MA1 and all of mass MA2 and 1 quarter element share.<br> <br>If mass properties (CofG and Inertia) are activated in the table as above, they will include Lumped Mass and NRB mass.<br> <br><br> ![](./Storage/primer-23/primer_links/sect_7/parttable/mass_on_nrb_2.gif)<br> <br><br><br>If these columns are not displayed, the calculation will ignore the mass associated with the NRB and should give the same result as reported in the Ansys LS-Dyna otf (d3hsp) file. This treatment de-couples the NRB from the deformable parts.<br> <br><br> ![](./Storage/primer-23/primer_links/sect_7/parttable/mass_on_nrb_3.gif) |
 
 Added mass is the timestep added mass on deformable parts that arises due the model mass scaling (DT2MS &lt; 0.0).The percentage added mass is the ratio of added mass to part mass.
 
@@ -42,6 +42,6 @@ If NRB mass/Lumped mass/Added mass columns are displayed, these masses will be i
 
 *Note on ELEMENT\_SHELL\_NURBS\_PATCH part* . For Cofg and inertia calculation tessellated tria mass is equally divided on tria vertices.
 
-![](../Storage/primer-22-1/primer_links/sect_7/parttable/cofg.gif)
+![](./Storage/primer-23/primer_links/sect_7/parttable/cofg.gif)
 
 [Previous](saving-part-table-information-to-file.md)  |  [Next](parameters-in-the-part-table.md)

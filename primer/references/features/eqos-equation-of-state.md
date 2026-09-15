@@ -12,22 +12,22 @@
 
 Equations of State are used to define material properties for special or typical fluids or null material types. Consequently, they are controlled in a similar fashion to the \* Material keywords.
 
-| This figure shows the main equation of stateediting panel. <br>TRANSFER opens the main window for the transfer data function ([TRANSFER DATA](transfer-data.md#TransferData) for more detail)<br> <br>The other functions currently available have their standard meanings. (See [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)). | ![](../Storage/primer-22-1/primer_links/sect_5/eos/fig_eos_1.gif) |
+| This figure shows the main equation of stateediting panel. <br>TRANSFER opens the main window for the transfer data function ([TRANSFER DATA](transfer-data.md#TransferData) for more detail)<br> <br>The other functions currently available have their standard meanings. (See [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)). | ![](./Storage/primer-23/primer_links/sect_5/eos/fig_eos_1.gif) |
 | --- | --- |
 
 #### CREATE Making a new equation of state definition
  
-![](../Storage/primer-22-1/primer_links/sect_5/eos/fig_eos_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/eos/fig_eos_2.gif)
 
 CREATE produces this blank equation of state creation panel, since no equation of state type has been defined yet.
 
-| Type:  <br>The equation of state type can be defined from this button.<br> <br>The [...] Shortcut button can be used to browse through a list of equation of state types as shown here.<br> <br>**Note on selecting an Equation of State:**<br> <br>An equation of state may be selected by one of two ways:<br><ul> <li>by invoking the browse [...] button and selecting the equation of state with the mouse from the list </li> <li>by typing in the equation of state name to the &quot;Type&quot; box, e.g. &quot;ideal_gas&quot; for &quot;* <span class="courierbold">EOS_IDEAL_GAS </span>&quot; </li> </ul> | ![](../Storage/primer-22-1/primer_links/sect_5/eos/fig_eos_3.gif) |
+| Type:  <br>The equation of state type can be defined from this button.<br> <br>The [...] Shortcut button can be used to browse through a list of equation of state types as shown here.<br> <br>**Note on selecting an Equation of State:**<br> <br>An equation of state may be selected by one of two ways:<br><ul> <li>by invoking the browse [...] button and selecting the equation of state with the mouse from the list </li> <li>by typing in the equation of state name to the &quot;Type&quot; box, e.g. &quot;ideal_gas&quot; for &quot;* <span class="courierbold">EOS_IDEAL_GAS </span>&quot; </li> </ul> | ![](./Storage/primer-23/primer_links/sect_5/eos/fig_eos_3.gif) |
 | --- | --- |
 
 #####  ROW/COL
 
 The data relevant to each equation of state type is displayed in row and column format identical to that of DYNA keyword.
- Once a equation of state type has been defined the panel will become populated with that equation of state's format. For example the type \* EOS\_LINEAR\_POLYNOMIAL has been chosen here: ![](../Storage/primer-22-1/primer_links/sect_5/eos/fig_eos_4.gif)
+ Once a equation of state type has been defined the panel will become populated with that equation of state's format. For example the type \* EOS\_LINEAR\_POLYNOMIAL has been chosen here: ![](./Storage/primer-23/primer_links/sect_5/eos/fig_eos_4.gif)
 
 The data can then be typed into the relevant boxes. The expected data type is indicated on the grey button, which also shows the acronym for that data value:
 
@@ -39,7 +39,7 @@ The data can then be typed into the relevant boxes. The expected data type is in
 
 Information about each individual data component can be requested by pressing the grey data component button. For example; to request information about data component ' **C1**' (1 ^st^row, 3 ^rd^column) press the grey button with the C1.
 
-| This will create a new window with detailed information about that data component showing:<ul> <li> <p align="left"> A one-line description of it; </p> </li> </ul><ul> <li> <p align="left">Its current units type </p> </li> </ul><ul> <li> <p align="left">Its current value. </p> </li> </ul> | ![](../Storage/primer-22-1/primer_links/sect_5/eos/fig_eos_5.gif) |
+| This will create a new window with detailed information about that data component showing:<ul> <li> <p align="left"> A one-line description of it; </p> </li> </ul><ul> <li> <p align="left">Its current units type </p> </li> </ul><ul> <li> <p align="left">Its current value. </p> </li> </ul> | ![](./Storage/primer-23/primer_links/sect_5/eos/fig_eos_5.gif) |
 | --- | --- |
 
 Once all of the data has been input , press CREATE\_EQOS to install the equation of state permanently in the model.

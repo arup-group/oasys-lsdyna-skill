@@ -4,7 +4,7 @@ The default search term associated with a menu item is the trail of menus/button
 
 In addition, some menus have alternative search terms associated with them. For example Measure Part to Part can also be found from the alternative text 'Distance Between Parts':
 
-![](../Storage/primer-22-1/primer_links/sect_11/search5.png)
+![](./Storage/primer-23/primer_links/sect_11/search5.png)
 
 This can be useful for cases where you don't know or can't remember under which menu some functionality lives.
 
@@ -16,6 +16,6 @@ Alternative text associated with a menu may also describe some of the features o
 
 In this case the alternative text 'Set Overlay Colour' is associated with this menu:
 
-![](../Storage/primer-22-1/primer_links/sect_11/search6.png)
+![](./Storage/primer-23/primer_links/sect_11/search6.png)
 
 [Previous](fuzzy-matching.md)  |  [Next](keyword-menus.md)

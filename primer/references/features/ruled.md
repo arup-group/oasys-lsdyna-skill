@@ -16,5 +16,5 @@ Give either the number of rows of shells to create or the size of shell element 
 
 The preview of the to be created mesh can be seen with the Preview Mesh button.
  
-![](../Storage/primer-22-1/ruled/Ruled%20Mesh%20menu.png)
+![](./Storage/primer-23/ruled/Ruled%20Mesh%20menu.png)
  [Previous](offset.md)  |  [Next](area.md)

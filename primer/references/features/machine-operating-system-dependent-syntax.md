@@ -1,6 +1,6 @@
 ﻿#####  Machine: Operating System Dependent Syntax
 
-| The filename syntax used can be one of Native , Unix or Windows :<br><br>| **Filename syntax** | **Typical result** |<br>| --- | --- |<br>| Unix (Linux) | /home/users/my\_model/INCL/a.key |<br>| Windows | C:\users\my\_model\INCL\a.key |<br>| Native | Detects the type of this machine and uses the relevant option above | | ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_2f.png) |
+| The filename syntax used can be one of Native , Unix or Windows :<br><br>| **Filename syntax** | **Typical result** |<br>| --- | --- |<br>| Unix (Linux) | /home/users/my\_model/INCL/a.key |<br>| Windows | C:\users\my\_model\INCL\a.key |<br>| Native | Detects the type of this machine and uses the relevant option above | | ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_3_2f.png) |
 | --- | --- |
 
 Users running in a cross-platform environment, typically Windows on the desktop and Linux on a remote cluster, may also wish to use PRIMER 's drive mapping options. These allow specific Windows drive letters A to Z to be mapped onto Unix-style pathnames, permitting "mixed" syntax to be used on both input and output.

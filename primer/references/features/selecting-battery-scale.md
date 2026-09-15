@@ -1,6 +1,6 @@
 ﻿The first step is to select the Randles circuits modeling scale.
 
-![](../Storage/primer-22-1/selecting-battery-scale/new_batt_create_window.png)
+![](./Storage/primer-23/selecting-battery-scale/new_batt_create_window.png)
 
 Ansys LS-DYNA offers 4 different solutions to model Randles circuits within a battery cell on different scales and level of detail, as below:
 

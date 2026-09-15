@@ -2,7 +2,7 @@
 
 These are circular symbols with four quadrants that are attached to nodes (shown below). If applied, they are drawn whenever the node is visible. They are drawn in the plane or the screen,so if you rotate a model will see them appear to rotate in space.
 
-![](../Storage/primer-22-1/primer_links/sect_6/targetmarker/markers.gif)
+![](./Storage/primer-23/primer_links/sect_6/targetmarker/markers.gif)
 
 These can be edited through their own specific editing panel (see below).
 
@@ -14,13 +14,13 @@ These can be edited through their own specific editing panel (see below).
 
 The following figure shows the main menufor the editing of target marker definitions.
 
-![](../Storage/primer-22-1/primer_links/sect_6/targetmarker/target_main.PNG)
+![](./Storage/primer-23/primer_links/sect_6/targetmarker/target_main.PNG)
 
 ####  CREATE Making a new target marker definition.
 
 The create panel will allow the user to select a set of nodes to create target markers on. Click "Pick NODE(s)" to interactively select NODE(s) to create target markers on (using this method will automatically create a node set for the selected nodes.). c1 and c2 are quadrant colours for the target marker. By default c1, c2 are set to black and yellow colour respectively. Radius controls marker size in either model or screen space units. To change between model and screen space display go to "Option-&gt; Program-&gt;Options-&gt;Category-&gt;Target Marker".
 
-![](../Storage/primer-22-1/primer_links/sect_6/targetmarker/target_panel.PNG)
+![](./Storage/primer-23/primer_links/sect_6/targetmarker/target_panel.PNG)
 
 ####  MODIFY Modifying the attributes of an existing target marker.
 
@@ -36,6 +36,6 @@ Target markers do not "own" anything, so the concept of recursive deletion does 
 
 SKETCH draws the target marker on top of the current graphics image.
 
-![](../Storage/primer-22-1/primer_links/sect_6/targetmarker/marker_sketch.PNG)
+![](./Storage/primer-23/primer_links/sect_6/targetmarker/marker_sketch.PNG)
 
 [Previous](metal-forming.md)  |  [Next](transfer-data.md)

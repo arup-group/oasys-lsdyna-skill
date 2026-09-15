@@ -4,4 +4,4 @@ The sections immediately below describe the [basic](basic-editor-mode.md#basic_e
 
 Ticking or unticking the [ ] Advanced button switches between them. Either mode can be used, and you can swap between them at will.
  
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_2g.png) ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/advanced_2e1_left.png)[Previous](editor-modes.md)  |  [Next](basic-editor-mode.md)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_2g.png) ![](./Storage/primer-23/primer_links/sect_6/seatbelt/advanced_2e1_left.png)[Previous](editor-modes.md)  |  [Next](basic-editor-mode.md)

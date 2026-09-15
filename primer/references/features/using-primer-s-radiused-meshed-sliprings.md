@@ -8,7 +8,7 @@ A first attempt at solving the problem of meshing continuously through a sliprin
 This image shows this process in action, including the notional cylinder at the slipring location (this is only shown during the belt fitting phase, it does not form part of the model.)
 
 The belt would be meshed with "pure" shell elements, typically using \*MAT\_FABRIC. Contact between belt and slipring would to be modelled explicitly.
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_8.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_8.png)
  
 There were several problems with this approach:
 
@@ -19,6 +19,6 @@ There were several problems with this approach:
 * The slipring provided a local zone of shorter elements, but transition from those to the normal belt element mesh size was not always satisfactory as shown here.
 
 Notwithstanding all the above this method could be made to work, but in version 18 it has been superseded by the more comprehensive "explicitly meshed" solution shown below.
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_9.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_9.png)
 
 [Previous](using-2d-element-seatbelt-slipring.md)  |  [Next](meshing-sliprings-explicitly.md)

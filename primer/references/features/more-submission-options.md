@@ -1,6 +1,6 @@
 ﻿###  More Submission Options
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_9.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_9.png)
 The panel is launched by pressing the
 **"More Options"**button on the main panel.
 

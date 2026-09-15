@@ -1,6 +1,6 @@
 ﻿The data from all 5 steps can be stored in a CSV file through the **Write** **CSV** button in the *Analysis panel*, and imported back in a future session using the **Read CSV** button in the *Geometry & Scale panel*. The file can be selected by either writing its path in the textbox or using the file selector, and clicking on **Read CSV** imports the data.
 
-![](../Storage/primer-22-1/storing-data-in-csv/storing-data-in-csv-2024-10-08.png)
+![](./Storage/primer-23/storing-data-in-csv/storing-data-in-csv-2024-10-08.png)
 
 The format for the CSV input is in the following order:
 
@@ -45,7 +45,7 @@ The format for the CSV input is in the following order:
 
 Below is an example of a csv file written for a Micro scale model.
 
-![](../Storage/primer-22-1/storing-data-in-csv/batteries_csv_new.png)
+![](./Storage/primer-23/storing-data-in-csv/batteries_csv_new.png)
 
 The CSV format is the same regardless of the selected scale mode or definition type (for the charge/discharge values for example) and includes all parameters from all 5 steps. Parameters that do not apply to the selected mode will either be set to their default or not contain any value.
 

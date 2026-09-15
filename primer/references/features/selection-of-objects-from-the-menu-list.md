@@ -20,4 +20,4 @@ Of the other buttons at the top of this panel:
 | [Key_In](area-pick-what-is-visible-when-area-or-polygon-picking.md#UsingKEYINtotypeinselections) | Maps a panel allowing you to key in label ranges directly |
 | Sk (etch) | Sketches what is currently selected. |
 
- ![](../Storage/primer-22-1/primer_links/sect_2/selection/fig_6_2b.png)[Previous](primary-selection-of-object-type.md)  |  [Next](hover-over-showing-what-will-be-selected.md)
+ ![](./Storage/primer-23/primer_links/sect_2/selection/fig_6_2b.png)[Previous](primary-selection-of-object-type.md)  |  [Next](hover-over-showing-what-will-be-selected.md)

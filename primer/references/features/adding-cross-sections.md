@@ -1,13 +1,13 @@
 ﻿#####  Adding Cross-Sections
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_2f10.png)It is possible to add a CROSS\_SECTION definition at any path point, including retractors, sliprings and ends. This does not affect the geometry of the path, but during the meshing stage a \*DATABASE\_CROSS\_SECTION definition will be created at that point. Its attributes will be:<br>
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_2f10.png)It is possible to add a CROSS\_SECTION definition at any path point, including retractors, sliprings and ends. This does not affect the geometry of the path, but during the meshing stage a \*DATABASE\_CROSS\_SECTION definition will be created at that point. Its attributes will be:<br>
 <ul style="font-size: 14.6667px;"> <li>It is required to have a label, therefore it will use the&#160;<span class="courierbold">_ID&#160;</span>suffix.<br><br></li> <li>The type of&#160;<span class="courierbold">*DATABASE_CROSS_SECTION&#160;</span>created depends on the type of belt elements it cuts.<br><br> <ul> <li>Cutting shells or 2D seatbelt elements creates a&#160;<span class="courierbold">_SET&#160;</span>definition in which&#160;<span class="courierbold">SSID&#160;</span>is a set of elements (2D belt elements are really shells), and&#160;<span class="courierbold">NSID&#160;</span>is a set of nodes at one end of those elements.<br><br></li> <li>Cutting 1D belt elements requires the&#160;<span class="courierbold">_PLANE&#160;</span>variant to be used since Ansys LS-DYNA does not contain the concept of a set of 1D belt elements, however the 1D seatbelt element has a part, therefore it can be placed in part set PSID.<br><br>The origin of the plane will be at the centreline of the belt half way through the &quot;next&quot; element beyond the path point. This location is chosen in order to give a well-conditioned intersection, as cutting elements exactly at mesh lines can cause problems.</li> </ul> </li>
 </ul> |
 | --- |
 
 The image here shows cross-sections near the pelvis slipring on a belt meshed with a mixture of 1D belt elements and shells. It can be seen that in the 1D region the sections are circular planes, normal to the direction of the belt; in the shell region they are defined by sets of shells and nodes.
 
-| Database cross-sections meshed on belts are automatically given titles of the form:<br> <br>[ISO standard prefix][Belt id] [Path point id] [Path point type if relevant] [Distance from that point].<br> <br>For example here is a menu of database cross-sections generated for the mesh in the picture above. | ![](../Storage/primer-22-1/adding-cross-sections/x_sect_titles.png) |
+| Database cross-sections meshed on belts are automatically given titles of the form:<br> <br>[ISO standard prefix][Belt id] [Path point id] [Path point type if relevant] [Distance from that point].<br> <br>For example here is a menu of database cross-sections generated for the mesh in the picture above. | ![](./Storage/primer-23/adding-cross-sections/x_sect_titles.png) |
 | --- | --- |
 
 ######  Special rules for cross-sections defined at end, fixed, retractor or slipring path points. 
@@ -39,7 +39,7 @@ In the example above an offset of 80mm from the pelvis slipring was set, and it 
  
 The offsets values can be defined in the **X-Sect Offsets** panel.
  
-![](../Storage/primer-22-1/adding-cross-sections/x_sect_main_menu.png) ![](../Storage/primer-22-1/adding-cross-sections/x-sect_menu.png)
+![](./Storage/primer-23/adding-cross-sections/x_sect_main_menu.png) ![](./Storage/primer-23/adding-cross-sections/x-sect_menu.png)
 
 New X-Sections created using this opion will automatically include a prefix in their titles (the ‘Automatic’ option in ‘Additional pre text’) , following these ISO standard prefixes:
 

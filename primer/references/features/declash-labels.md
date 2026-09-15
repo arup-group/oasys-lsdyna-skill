@@ -4,7 +4,7 @@ This function allows declash of element labels (so shells don't clash with solid
  
 If any clashes are found the fixing panel will be displayed. The user may select to DECLASH ALL or to address the individual types. Note this also considers clashes between elements and entity types other pre-processors may consider to be elements (an example of this is \*CONSTRAINED\_NODAL\_RIGID\_BODY).
  
-![](../Storage/primer-22-1/primer_links/sect_3/images/clashfixpanel.png)
+![](./Storage/primer-23/primer_links/sect_3/images/clashfixpanel.png)
  
 ####  Label declash option 
  

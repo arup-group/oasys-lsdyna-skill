@@ -1,6 +1,6 @@
 ﻿###  Penetration Fixing Panel
 
-![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fig_6_10_1a.gif)
+![](./Storage/primer-23/primer_links/sect_5/pen_check/fig_6_10_1a.gif)
 The pen check panel shown will provide data on the number of crossed edges and penetrations in the model. For more information on penetration checking, see section [Contact Penetration Checking](contact-penetration-checking.md).
 
 The penetration checker panel allows you to easily correct any crossed edges and initial penetrations in your model. This option can be accessed by pressing the fix button.

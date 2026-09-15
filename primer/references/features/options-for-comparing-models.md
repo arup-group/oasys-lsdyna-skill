@@ -2,7 +2,7 @@
 
 The Options button on the modified panel will give direct access to the appropriate program options panel.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/mod_13.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/mod_13.gif)
 
 ####  Comparing floating point values
 

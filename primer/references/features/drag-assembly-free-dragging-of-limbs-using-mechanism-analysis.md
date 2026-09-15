@@ -1,7 +1,7 @@
 ﻿####  Drag Assembly: Free Dragging of Limbs Using Mechanism Analysis
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/position-panel-drag-mode.png) 
-![](../Storage/primer-22-1/drag-assembly-free-dragging-of-limbs-using-mechanism-analysis/Drag_assembly_panel.PNG)In Drag Assembly mode the positioning panel changes.
+![](./Storage/primer-23/primer_links/sect_6/dummies/position-panel-drag-mode.png) 
+![](./Storage/primer-23/drag-assembly-free-dragging-of-limbs-using-mechanism-analysis/Drag_assembly_panel.PNG)In Drag Assembly mode the positioning panel changes.
  
 Each assembly is still shown as a row, but now:
  
@@ -27,11 +27,11 @@ The following sequence of images shows how this might be used in practice. In th
 
 The user has clicked on the lower torso with the left mouse button, so the whole dummy is selected for movement, and drags it progressively further forwards. This sequence would be carried out in a single operation, and for this dummy the drag occurs in near real-time on a modern desktop computer.
 
-| **![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_6.jpg)Initial condition**<br> <br>The user has clicked on the lower torso, which selects the whole dummy, and is about to drag from left to right |
+| **![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_6.jpg)Initial condition**<br> <br>The user has clicked on the lower torso, which selects the whole dummy, and is about to drag from left to right |
 | --- |
-| **![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_7.jpg)After about 100mm movement to the right**<br> <br>Notice that the hands and feet have remained fixed, the knees have moved up and the elbows have moved out.<br> <br>Because of their rotational restraints the head, torso and pelvis regions have remained upright. |
-| **![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_8.jpg)Final position**<br> <br>The elbows have moved up and outwards, and the knees have moved up. |
-| ![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_9.jpg)Here is the final position in an isometric view.<br> <br>Arm and leg movement is very obvious! |
+| **![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_7.jpg)After about 100mm movement to the right**<br> <br>Notice that the hands and feet have remained fixed, the knees have moved up and the elbows have moved out.<br> <br>Because of their rotational restraints the head, torso and pelvis regions have remained upright. |
+| **![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_8.jpg)Final position**<br> <br>The elbows have moved up and outwards, and the knees have moved up. |
+| ![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_9.jpg)Here is the final position in an isometric view.<br> <br>Arm and leg movement is very obvious! |
 
 #####  An example of Dragging child assemblies with more than one parent
 
@@ -47,10 +47,10 @@ Here the the dummy assembly connections are:
 
 So the assembly ' **right\_foot** ' has two parent assemblies - '**right\_lo\_leg**' and '**left\_foot**'.
 
-| **![1](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_13.jpg)Initial condition**<br> <br>The assemblies 'right\_foot' and 'left\_foot' are conjoined at the ankles.<br> <br>This means that 'right\_foot', 'right\_lo\_leg' and 'left\_foot' assemblies form [circular connections](assemblycreation-and-editing.md#circular_connections). From PRIMER V21.0, **Rotate Angles** can also be used to position the left and right legs independently. However, **Drag Assemblies** and **Move points** can be used to position these assemblies in all versions of PRIMER.<br> <br>Assemblies above the pelvis in this model are not affected, for example the assemblies making up the torso, arms and head each only have a single parent so they can be positioned using Rotate Angles or **Drag Assemblies** or **Move points** in PRIMER of any version. |
+| **![1](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_13.jpg)Initial condition**<br> <br>The assemblies 'right\_foot' and 'left\_foot' are conjoined at the ankles.<br> <br>This means that 'right\_foot', 'right\_lo\_leg' and 'left\_foot' assemblies form [circular connections](assemblycreation-and-editing.md#circular_connections). From PRIMER V21.0, **Rotate Angles** can also be used to position the left and right legs independently. However, **Drag Assemblies** and **Move points** can be used to position these assemblies in all versions of PRIMER.<br> <br>Assemblies above the pelvis in this model are not affected, for example the assemblies making up the torso, arms and head each only have a single parent so they can be positioned using Rotate Angles or **Drag Assemblies** or **Move points** in PRIMER of any version. |
 | --- |
-| **![1](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_14.jpg)Drag Right Foot with middle mouse button**<br> <br>If any of the feet are dragged then the other foot gets dragged too.<br> <br>Because of their rotational restraints the head, torso and pelvis regions have remained upright. |
-| **![1](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_15.jpg)Drag the Left Lower leg with the Right mouse button**<br> <br>The Right lower leg and the and left foot moves with the dragged assembly. |
+| **![1](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_14.jpg)Drag Right Foot with middle mouse button**<br> <br>If any of the feet are dragged then the other foot gets dragged too.<br> <br>Because of their rotational restraints the head, torso and pelvis regions have remained upright. |
+| **![1](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_15.jpg)Drag the Left Lower leg with the Right mouse button**<br> <br>The Right lower leg and the and left foot moves with the dragged assembly. |
 
 #####  The characteristics of Drag Assembly mode
 
@@ -64,10 +64,10 @@ However Ansys LS-DYNA requires node pairs at joints to be coincident to a very t
  
 In the example above the hands are fixed rigidly to the steering wheel, which prevents them from rotating and therefore forces the elbows out at an unrealistic angle.
 
-| An alternative way of modelling the connection of the hands to the wheel is to define a contact between them and to turn off the fixity. This allows the hands to rotate on the wheel in a more realistic fashion and gives an altogether better final shape.<br> <br>Contact for dummy positioning is not a "true" contact using the \*CONTACT card, but rather a simplified version defined on the [assembly editing panel](assemblycreation-and-editing.md#edit_contact) as a "list of part sets contacted during positioning". Here the part set includes the steering wheel, and a box has been used to limit contact to just the section of the wheel near the right hand. A similar contact has also been set up for the right hand.<br> <br>![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_9c.png) | ![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_9b.png) |
+| An alternative way of modelling the connection of the hands to the wheel is to define a contact between them and to turn off the fixity. This allows the hands to rotate on the wheel in a more realistic fashion and gives an altogether better final shape.<br> <br>Contact for dummy positioning is not a "true" contact using the \*CONTACT card, but rather a simplified version defined on the [assembly editing panel](assemblycreation-and-editing.md#edit_contact) as a "list of part sets contacted during positioning". Here the part set includes the steering wheel, and a box has been used to limit contact to just the section of the wheel near the right hand. A similar contact has also been set up for the right hand.<br> <br>![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_9c.png) | ![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_9b.png) |
 | --- | --- |
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_9a.png)Compare the result with the final image from the example above. The positions of the arms and hands are more natural as they have been able to rotate on the wheel.
+![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_9a.png)Compare the result with the final image from the example above. The positions of the arms and hands are more natural as they have been able to rotate on the wheel.
  
 The disadvantage is that movement is much slower because of the need to compute contact, making it much harder to drag the dummy interactively when contact is used since response is so slow. For this reason contacts can be turned on/off via their [C] buttons in the "cont" column of the positioning panel.
  

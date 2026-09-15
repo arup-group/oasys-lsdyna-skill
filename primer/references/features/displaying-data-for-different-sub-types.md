@@ -8,7 +8,7 @@ The example above has been modified so that:
 * The top entry (green) row has been given notional values
 * The second existing joint (blue row 2) has been given the \_ID suffix and an explicit label and title
 
-![](../Storage/primer-22-1/primer_links/sect_5/5a/kwe_5.png)
+![](./Storage/primer-23/primer_links/sect_5/5a/kwe_5.png)
  
 This presents several display problems:
 

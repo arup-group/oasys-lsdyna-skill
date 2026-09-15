@@ -10,7 +10,7 @@ Each row in the table represents one part. By default the rows are sorted by asc
 
 If a column is invalid for a part &lt;undefined&gt; is shown. For example, below, Gauge is not valid for solid parts.
 
-![](../Storage/primer-22-1/primer_links/sect_7/parttable/parttable1.gif)
+![](./Storage/primer-23/primer_links/sect_7/parttable/parttable1.gif)
 
 The part table will resize as required as the window size is changed.
 

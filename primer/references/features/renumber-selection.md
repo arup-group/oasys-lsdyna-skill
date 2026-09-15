@@ -6,7 +6,7 @@ If, however, such renumbering would cause a clash of labels, some additional act
 
 In START AT mode
 
-![](../Storage/primer-22-1/renumber-selection/renumber-selection-2023-11-29.png)
+![](./Storage/primer-23/renumber-selection/renumber-selection-2023-11-29.png)
 
 Options for **modifying labels of clashing unselected items**, to make sequential labels available for the selected items:
 
@@ -20,7 +20,7 @@ Options for renumbering selected items **without changing labels of unselected i
 
 In OFFSET mode
 
-![](../Storage/primer-22-1/renumber-selection/renumber-selection-2023-11-29-1.png)
+![](./Storage/primer-23/renumber-selection/renumber-selection-2023-11-29-1.png)
 
 * move the clashing (unselected) labels to above the highest label
 * offset the selected items as a block to the first found free space, interlacing as necessary
@@ -29,7 +29,7 @@ In OFFSET mode
 
 Items which are referenced by a keyword but do not actually exist in a model are called latent. The renumber-selection function has been designed to avoid renumbering the labels of latent items. These labels are therefore reserved, and renumbering/clash fixing will always work around them. In the "OFFSET" case, if the required label for an item (current+offset) already belongs to a latent item, the item will not be renumbered.
 
-![](../Storage/primer-22-1/renumber-selection/renumber-selection-2023-11-23-3.png)
+![](./Storage/primer-23/renumber-selection/renumber-selection-2023-11-23-3.png)
 
 id low:high will report the range into which the items will be relabelled. "low" may not be same as nominal "start at" if clashes were found.
 

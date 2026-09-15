@@ -1,6 +1,6 @@
 ﻿####  Translation
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/airbag/position_trans_vect.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/position_trans_n1n2.gif) |
+| ![](./Storage/primer-23/primer_links/sect_6/airbag/position_trans_vect.gif) | ![](./Storage/primer-23/primer_links/sect_6/airbag/position_trans_n1n2.gif) |
 | --- | --- |
 | Translation along a vector &lt;X&gt;,&lt;Y&gt;,&lt;Z&gt; | Translation along a vector from N1-&gt;N2 |
 

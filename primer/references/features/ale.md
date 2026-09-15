@@ -13,7 +13,7 @@ In the absence of an explicit label the "id" of \*ALE\_MULTI-MATERIAL\_GROUP car
 
 Therefore each row of &lt;sid&gt; &lt;idtype&gt; forms a new definition, and this definition has an internal label that is its order of occurrence in the input deck. Therefore when a model contains N definitions these will always have internal labels 1 to N, referred to as AMMGID on other cards. Here is an excerpt from the Ansys LS-DYNA user manual for this keyword that illustrates this:
 
-![](../Storage/primer-22-1/primer_links/sect_5/ale/ammg_1.png) 
+![](./Storage/primer-23/primer_links/sect_5/ale/ammg_1.png) 
 This is a real hostage to fortune since any reference to a card by "id" is vulnerable to anything which changes the order of input, for example changing include file order or deleting prior definitions.
 
 #####  Situation from Ansys LS-DYNA R13 onwards (approx mid 2021)

@@ -7,6 +7,6 @@
 <br>The Save settings to oa\_pref file button saves the various Pre-out options to the preferences. |  |
 | --- | --- |
 
-![](../Storage/primer-22-1/ls-dyna-output-pre-output-checks-and-output-options-2023-03-07.png)
+![](./Storage/primer-23/ls-dyna-output-pre-output-checks-and-output-options-2023-03-07.png)
 
 [Previous](ls-dyna-format-labels-compression-mode.md)  |  [Next](pre-out-general-tab.md)

@@ -1,7 +1,7 @@
 ﻿###  Configure and Connect a "Remote Machine"
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_17.png) 
- ![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_13.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_17.png) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_13.png)
 
 1. Press "Submit" on the "Model functions" panel.
 2. Select "Machine Type" as "Remote".

@@ -37,7 +37,7 @@ This file can be kept at one or all these locations:
 
 #####  JSON Setting Files
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_4.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_4.png)
 PRIMER saves the data entered in the Ansys LS-DYNA submission tool in a JSON settings file under given bookmark label names.
 
 The setting types for which the bookmarks names are given are:

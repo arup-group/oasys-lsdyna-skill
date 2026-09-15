@@ -12,19 +12,19 @@ To attach the inertia bar to the seat, you can either use the "Extra node set" o
 
 Centre of Gravity can be calculated by inputting your own coordinates, or CofG can be calculated on the fly using the seat structure part set selected in 'Seat Part Set for CofG'.
 
-![](../Storage/primer-22-1/inertia-constrains-contacts/inertia-constrains-contacts-2025-05-09.png)
+![](./Storage/primer-23/inertia-constrains-contacts/inertia-constrains-contacts-2025-05-09.png)
 
 ### Constrain the Vehicle
 
 Select "create \*BOUNDARY\_SPC card" option as shown below to constrain the vehicle by creating a \*BOUNDARY\_SPC card. Use "Node set for SPC" text box to provide a set id for \*BOUNDARY\_SPC card.
 
-![](../Storage/primer-22-1/constrain-the-vehicle-1-2022-07-29.png)
+![](./Storage/primer-23/constrain-the-vehicle-1-2022-07-29.png)
 
 ### Create Contact
 
 Select "create \*AUTO\_SINGLE\_SURFACE contact" option as shown below to create a \*CONTACT\_AUTOMATIC\_SINGLE\_SURFACE with an exempted part set on the SURFA side. Impactor parts will get added automatically to the exempted part set. Use "Exempted part set" option to add any other part sets in the exempted set.
 
-![](../Storage/primer-22-1/create-contact-1-2022-07-29.png)
+![](./Storage/primer-23/create-contact-1-2022-07-29.png)
 
 ### Create Set part
 

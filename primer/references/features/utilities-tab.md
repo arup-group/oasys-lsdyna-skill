@@ -2,7 +2,7 @@
 
 The utilities tab contains other additional functionality.
 
-![](../Storage/primer-22-1/utilities-tab/utilities-tab-2024-04-09.png)
+![](./Storage/primer-23/utilities-tab/utilities-tab-2024-04-09.png)
 
 ####  
 
@@ -10,7 +10,7 @@ The utilities tab contains other additional functionality.
 
 Often pedestrian impact engineers will run small localised models over a specific part of the bonnet, rather than rerun the full sweep of impact points. The 'Combine From File' button allows you to replace values from a full sweep with those from a sub-sweep; allowing you to calculate a predicted full sweep result.
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_26.png)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_26.png)
 
 Prior to combining, PRIMER will display the values being changed:
 
@@ -22,7 +22,7 @@ Blue = New.
 
 An existing value is changed when a new value is found to be within a given tolerance (default is 10 length units).
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_27.bmp)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_27.bmp)
 
 It is possible to write the combined data for future use using the 'Write Edited Blob' button.
 
@@ -84,6 +84,6 @@ The 'child' WAL is important as it can influence the calculation of the GTR/R127
 
 When input the child WAL is used to determine the boundary, not shrink wrapping, avoiding any 'unaccounted' for child area.
 
-![](../Storage/primer-22-1/utilities-tab/utilities-tab-2024-04-09-1.png)
+![](./Storage/primer-23/utilities-tab/utilities-tab-2024-04-09-1.png)
 
 [Previous](analysis-tab.md)  |  [Next](reading-additional-data.md)

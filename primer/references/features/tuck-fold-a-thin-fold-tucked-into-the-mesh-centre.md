@@ -1,19 +1,19 @@
 ﻿####  Tuck Fold	(A Thin Fold Tucked Into the Mesh Centre)
 
- ![](../Storage/primer-22-1/primer_links/sect_6/airbag/Image56.gif) 
+ ![](./Storage/primer-23/primer_links/sect_6/airbag/Image56.gif) 
 
 The tuck fold is also common in airbags. The material is folded inside the outer layers to form a "tuck". ("Up" and "Down" have no meaning here.)
 
-![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_tuck_fold_graphic.gif)
+![](./Storage/primer-23/primer_links/sect_6/airbag/airbag_tuck_fold_graphic.gif)
 
-| The adjacent figure shows the tuck fold creation panel.<br> <br>In version 8.0 a second tuck fold algorithm has been added. This is not meant to replace the version 7.1 tuck fold as there will be situations when the version 7.1 fold will perform better than the version 8.0 tuck fold. However the new version 8.0 tuck fold will perform much better in situations where two tuck folds interfere with each other. To illustrate the point the next two figures show an cross section through an airbag with 2 interfering tuck folds (one from each side of the bag) folded with the version 7.1 tuck fold and the version 8.0 tuck folds. | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/fold_tuck.gif) |
+| The adjacent figure shows the tuck fold creation panel.<br> <br>In version 8.0 a second tuck fold algorithm has been added. This is not meant to replace the version 7.1 tuck fold as there will be situations when the version 7.1 fold will perform better than the version 8.0 tuck fold. However the new version 8.0 tuck fold will perform much better in situations where two tuck folds interfere with each other. To illustrate the point the next two figures show an cross section through an airbag with 2 interfering tuck folds (one from each side of the bag) folded with the version 7.1 tuck fold and the version 8.0 tuck folds. | ![](./Storage/primer-23/primer_links/sect_6/airbag/fold_tuck.gif) |
 | --- | --- |
 
-![Two interfering tuck folds using the version 7.1 tuck fold algorithm](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_71_tuck_fold.gif)
+![Two interfering tuck folds using the version 7.1 tuck fold algorithm](./Storage/primer-23/primer_links/sect_6/airbag/airbag_71_tuck_fold.gif)
 
 Two interfering tuck folds using the version 7.1 tuck fold algorithm
 
-![Two interfering tuck folds using the version 8.0 tuck fold algorithm](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_80_tuck_fold.gif)
+![Two interfering tuck folds using the version 8.0 tuck fold algorithm](./Storage/primer-23/primer_links/sect_6/airbag/airbag_80_tuck_fold.gif)
 
 Two interfering tuck folds using the version 8.0 tuck fold algorithm
 
@@ -23,11 +23,11 @@ The default for tuck folds is to use the version 8.0 algorithm. If the fold cann
 
 The following two figures illustrate the use of these options for the version 7.1 algorithm, the left hand figure shows that problems can occur with penetrations when using tuck folds for multiple layers. If problems occur then selecting [&gt;&gt;] (double layer mode) may help resolve the problem (right hand figure). But, the double layered mode is only valid if the fold tip lies along a line of nodes. If it does not then the single layered mode should be used.
 
-![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_71_tuck_penetrations.gif)
+![](./Storage/primer-23/primer_links/sect_6/airbag/airbag_71_tuck_penetrations.gif)
 
 Penetrations at tip
 
-![](../Storage/primer-22-1/primer_links/sect_6/airbag/airbag_71_tuck_nopenetrations.gif)
+![](./Storage/primer-23/primer_links/sect_6/airbag/airbag_71_tuck_nopenetrations.gif)
 
 No Penetrations
 

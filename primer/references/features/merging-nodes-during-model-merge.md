@@ -8,6 +8,6 @@ The [merge nodes](merge-nodes.md#mergenodes) panel is started in a special mode
 * The position of the merged node will always be the position of the node in the primary model.
 
 For more details on merging nodes see the [merge nodes](merge-nodes.md#mergenodes) section of the manual.
- ![](../Storage/primer-22-1/primer_links/sect_3/images/Merging%20nodes%20during%20model%20merge.JPG) 
+ ![](./Storage/primer-23/primer_links/sect_3/images/Merging%20nodes%20during%20model%20merge.JPG) 
 
 [Previous](other-issues-in-custom-merge.md)  |  [Next](model-copy-copying-models-internally.md)

@@ -9,26 +9,26 @@ There are many different set types and each set type has its own numbering seque
  
 With the exception of SEGMENTS sets simply reference other structural items, and do not themselves constitute "structure". SEGMENTS are a special case which are dealt with separately below.
 
-| **This figure shows the c** **ommon top-level menu f****or all set types**  <br>On the right is shown the pop-up menu when SET is selected in the Keywords panel. The figure below shows a typical set main control panel, in this case for SET\_PART definitions, but all are the same.<br> <br>Commands have their standard meanings as described in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). | ![](../Storage/primer-22-1/primer_links/sect_5/set/fig_set_0a.gif) |  |
+| **This figure shows the c** **ommon top-level menu f****or all set types**  <br>On the right is shown the pop-up menu when SET is selected in the Keywords panel. The figure below shows a typical set main control panel, in this case for SET\_PART definitions, but all are the same.<br> <br>Commands have their standard meanings as described in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions). | ![](./Storage/primer-23/primer_links/sect_5/set/fig_set_0a.gif) |  |
 | --- | --- | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_5/set/set_2.png) |
+| ![](./Storage/primer-23/primer_links/sect_5/set/set_2.png) |
 
 #### CREATE Creating a new set
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/set/set_3.gif) | This figure shows the initial empty set creation panel.<br>Items, here **PARTs**, but the same applies to all valid set types, can be added to or removed from the set using:<br> <br><br>| ADD ... | Inserts items into the set. |<br>| --- | --- |<br>| REMOVE... | Removes them from the set. |<br>| EMPTY... | Completely empty the set of all its contents. |<br><br><br>Items are added or removed using the standard selection menu, as shown in figure below.<br> <br>The set can also be [converted to different formats](set-defining-sets.md#convert) by using the Convert to radio buttons. [GENERAL](set-defining-sets.md#general) sets have a different [editing panel](set-defining-sets.md#general). |
+| ![](./Storage/primer-23/primer_links/sect_5/set/set_3.gif) | This figure shows the initial empty set creation panel.<br>Items, here **PARTs**, but the same applies to all valid set types, can be added to or removed from the set using:<br> <br><br>| ADD ... | Inserts items into the set. |<br>| --- | --- |<br>| REMOVE... | Removes them from the set. |<br>| EMPTY... | Completely empty the set of all its contents. |<br><br><br>Items are added or removed using the standard selection menu, as shown in figure below.<br> <br>The set can also be [converted to different formats](set-defining-sets.md#convert) by using the Convert to radio buttons. [GENERAL](set-defining-sets.md#general) sets have a different [editing panel](set-defining-sets.md#general). |
 | --- | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_5/set/set_3.gif) | This figure shows the initial empty set creation panel.<br>Items, here **PARTs**, but the same applies to all valid set types, can be added to or removed from the set using:<br> <br><br>| ADD ... | Inserts items into the set. |<br>| --- | --- |<br>| REMOVE... | Removes them from the set. |<br>| EMPTY... | Completely empty the set of all its contents. |<br><br><br>Items are added or removed using the standard selection menu, as shown in figure below.<br> <br>The set can also be [converted to different formats](set-defining-sets.md#convert) by using the Convert to radio buttons. [GENERAL](set-defining-sets.md#general) sets have a different [editing panel](set-defining-sets.md#general). |
-| ![](../Storage/primer-22-1/primer_links/sect_5/set/set_4.gif) | In this example the user is selecting parts by material: they have selected two materials and ADD\_ITEMS will load the parts which reference these into the set.<br>Only items of the correct type, here parts, will be selected, therefore it is safe to select a super set of the objects required.<br> <br>For example to load all parts in a model into a set you could just select the whole model.<br> <br>It is legal to select items that are already in the set: they will not be duplicated as the addition operation performs a logical (inclusive) OR between the incoming items and the existing set contents.<br> <br>Item removal operates in exactly the same way, except in reverse. |
+| ![](./Storage/primer-23/primer_links/sect_5/set/set_3.gif) | This figure shows the initial empty set creation panel.<br>Items, here **PARTs**, but the same applies to all valid set types, can be added to or removed from the set using:<br> <br><br>| ADD ... | Inserts items into the set. |<br>| --- | --- |<br>| REMOVE... | Removes them from the set. |<br>| EMPTY... | Completely empty the set of all its contents. |<br><br><br>Items are added or removed using the standard selection menu, as shown in figure below.<br> <br>The set can also be [converted to different formats](set-defining-sets.md#convert) by using the Convert to radio buttons. [GENERAL](set-defining-sets.md#general) sets have a different [editing panel](set-defining-sets.md#general). |
+| ![](./Storage/primer-23/primer_links/sect_5/set/set_4.gif) | In this example the user is selecting parts by material: they have selected two materials and ADD\_ITEMS will load the parts which reference these into the set.<br>Only items of the correct type, here parts, will be selected, therefore it is safe to select a super set of the objects required.<br> <br>For example to load all parts in a model into a set you could just select the whole model.<br> <br>It is legal to select items that are already in the set: they will not be duplicated as the addition operation performs a logical (inclusive) OR between the incoming items and the existing set contents.<br> <br>Item removal operates in exactly the same way, except in reverse. |
 
 Once the set contains something you can use VIEW/EDIT to view the detailed contents of the set
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set_5.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set_5.gif)
 
 This example shows the VIEW/EDIT panel for a set of nodes.
  
 The popup options against each entry may be used to view details of that item, and different labels can be typed in to change the set's contents.
 
-| Defining "Latent" items in a set.  <br>If a "latent" (referenced, but not yet defined) item is included in a set, its colour in the editing table changes to blue text on a dark background to warn you, as shown here.<br> <br>Including latent items in sets is legal, although they will show as an error when the set is checked. You must deal with this before running the analysis: by deleting them explicitly from the set, or by performing a CLEANUP\_UNUSED operation on the model. | ![](../Storage/primer-22-1/primer_links/sect_5/set/fig_set_1d.gif) |
+| Defining "Latent" items in a set.  <br>If a "latent" (referenced, but not yet defined) item is included in a set, its colour in the editing table changes to blue text on a dark background to warn you, as shown here.<br> <br>Including latent items in sets is legal, although they will show as an error when the set is checked. You must deal with this before running the analysis: by deleting them explicitly from the set, or by performing a CLEANUP\_UNUSED operation on the model. | ![](./Storage/primer-23/primer_links/sect_5/set/fig_set_1d.gif) |
 | --- | --- |
 
 #####  Defining set type and default parameters
@@ -39,26 +39,26 @@ Sets may be of **\_LIST** (default), **\_COLUMN** , **\_GENERATE,**   [_GENERAL]
 
 In Ansys LS-DYNA 960 \_GENERAL sets have been introduced. These allow flexibility in how the set is defined. For example in a node set they can be used to add all nodes from part 10 and then remove all nodes inside box 1. As the way in which \_GENERAL sets are defined is very different a separate panel is used for creating/editing them. The figure below shows a set with several rows already defined in it. Any of the existing rows in the set can be edited by using the usual popups and object menus in PRIMER or by typing in new labels for the items.
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set_7.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set_7.gif)
 
-| There are also 4 main functions that allow the user to [insert](set-defining-sets.md#generalinsert), [edit](set-defining-sets.md#generaledit), [move](set-defining-sets.md#generalmove) or [delete](set-defining-sets.md#generaldelete) rows in the set. The modes are selected by using the Mode popup. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_mode_popup.gif) |
+| There are also 4 main functions that allow the user to [insert](set-defining-sets.md#generalinsert), [edit](set-defining-sets.md#generaledit), [move](set-defining-sets.md#generalmove) or [delete](set-defining-sets.md#generaldelete) rows in the set. The modes are selected by using the Mode popup. | ![](./Storage/primer-23/primer_links/sect_5/set/set_mode_popup.gif) |
 | --- | --- |
 
-| Inserting rows into a _GENERAL set   Example: inserting PARTS 4,5 and 6 to the set after row 4  <br>Make sure INSERT mode is selected by using the Mode popup. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_mode_popup.gif) |
+| Inserting rows into a _GENERAL set   Example: inserting PARTS 4,5 and 6 to the set after row 4  <br>Make sure INSERT mode is selected by using the Mode popup. | ![](./Storage/primer-23/primer_links/sect_5/set/set_mode_popup.gif) |
 | --- | --- |
-| Select PART from the Type popup. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_type_popup.gif) |
-| Choose after selected row from the Location popup | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_location_popup.gif) |
+| Select PART from the Type popup. | ![](./Storage/primer-23/primer_links/sect_5/set/set_type_popup.gif) |
+| Choose after selected row from the Location popup | ![](./Storage/primer-23/primer_links/sect_5/set/set_location_popup.gif) |
 
 We want to insert the parts after row 4 so select row 4.
  
-![](../Storage/primer-22-1/primer_links/sect_5/set/set_12.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set_12.gif)
 
-| Press the Select... button and select the parts to add by either picking them or using the object menu. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_13.gif) |
+| Press the Select... button and select the parts to add by either picking them or using the object menu. | ![](./Storage/primer-23/primer_links/sect_5/set/set_13.gif) |
 | --- | --- |
 
 Press Apply to add the parts to the set.
  
-![](../Storage/primer-22-1/primer_links/sect_5/set/set_14.png)
+![](./Storage/primer-23/primer_links/sect_5/set/set_14.png)
 The parts have been added on row 5. All of the higher rows have been shifted up by one.
  
 This method can be used to add a line (or more than one line if needed) to the set at:
@@ -74,12 +74,12 @@ This method can be used to add a line (or more than one line if needed) to the s
  
 Make sure EDIT mode is selected by using the Mode popup.
 
-| Select remove from selected row(s) from the Action popup. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_action_popup.gif) |
+| Select remove from selected row(s) from the Action popup. | ![](./Storage/primer-23/primer_links/sect_5/set/set_action_popup.gif) |
 | --- | --- |
 
 Select the rows that we want to edit (in this example; rows 3 and 4).
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set6.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set6.gif)
 
 When selecting more than one row they must be:
 
@@ -93,11 +93,11 @@ To select a range of rows:
 
 Press the Select... button and select the boxes to remove from the rows by either picking them or using the object menu.
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set7.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set7.gif)
 
 Press Apply to remove the boxes from the selected rows in the set.
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set8.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set8.gif)
 
 The boxes have been removed from the rows. As the entry now only requires one row (there are now only 4 boxes) the empty row is deleted and the higher rows have been shifted up by one.
 
@@ -109,10 +109,10 @@ This method can also be used to add extra items to an existing line instead of r
 
 Make sure MOVE mode is selected by using the Mode popup.
 
-| Select after row from the Location popup. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_move_popup.gif) |
+| Select after row from the Location popup. | ![](./Storage/primer-23/primer_links/sect_5/set/set_move_popup.gif) |
 | --- | --- |
-| Select the rows that we want to move (in this example; rows 4 and 5) and type in row 1 for the Location Row .<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/set/set9.gif)<br> <br>When selecting more than one row they must be adjacent rows. E.g. selecting rows 3 and 4 is OK, selecting rows 3 and 7 is not.<br> <br>To select a range of rows:<br><ul> <li>Select the first row by left clicking </li> <li>Move to the last row and shift, left click to select the range </li> </ul> |
-| Press Apply to move the rows in the set to be after row 1.<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/set/set10.gif) <br> The rows have been moved. |
+| Select the rows that we want to move (in this example; rows 4 and 5) and type in row 1 for the Location Row .<br> <br>![](./Storage/primer-23/primer_links/sect_5/set/set9.gif)<br> <br>When selecting more than one row they must be adjacent rows. E.g. selecting rows 3 and 4 is OK, selecting rows 3 and 7 is not.<br> <br>To select a range of rows:<br><ul> <li>Select the first row by left clicking </li> <li>Move to the last row and shift, left click to select the range </li> </ul> |
+| Press Apply to move the rows in the set to be after row 1.<br> <br>![](./Storage/primer-23/primer_links/sect_5/set/set10.gif) <br> The rows have been moved. |
 
 This method can be used to move a line (or more than one line if needed) to:
 
@@ -129,7 +129,7 @@ Make sure DELETE mode is selected by using the Mode popup.
  
 Select the rows that we want to delete (in this example; rows 2, 3 and 4).
  
-![](../Storage/primer-22-1/primer_links/sect_5/set/set11.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set11.gif)
  
 Any rows can be selected. They do not need to be adjacent.
  
@@ -140,7 +140,7 @@ To select a range of rows:
 
 Press Apply to delete the rows.
  
-![](../Storage/primer-22-1/primer_links/sect_5/set/set12.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set12.gif)
 The rows have been deleted.
 
 ####  _ADD option
@@ -155,7 +155,7 @@ A \*SET\_PART\_ADD definition may easily contain multiple references to an under
 
 For \*SET\_NODE\_ADD the \_ADVANCED option is available. This allows addition of other \*SET types. NODE, SHELL, BEAM, SOLID, SEGMENT, DISCRETE and THICK SHELL sets can all be added. The keyword format for this option is a set ID followed by a type. The types available are NODE (type 1), SHELL (type 2), BEAM (type 3), SOLID (type 4), SEGMENT (type 5), DISCRETE (type 6)and THICK SHELL (type 7). Pressing VIEW/EDIT allows creation and modification of these keywords.
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set_add.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set_add.gif)
 
 If a deck containing \*SET\_...\_ADD is written out in a format pre-dating LS971R2 (LS970v6763 for \*SET\_PART\_ADD), PRIMER will decompose the definition to a conventional \*SET\_... containing all underlying entities.
 
@@ -186,7 +186,7 @@ For example if a model contains three definitions of \*SET\_SHELL\_COLLECT all u
 
 ##### Creating a *SET_xxx_COLLECT definition
  
-##### ![](../Storage/primer-22-1/primer_links/sect_5/set/set_collect.gif)
+##### ![](./Storage/primer-23/primer_links/sect_5/set/set_collect.gif)
  
 For the first set in the collection:
 
@@ -208,7 +208,7 @@ There are no rules inside PRIMER about which include files the various sets "l
 
 ##### 
 
-##### Editing a *SET_xxx_COLLECT definition![](../Storage/primer-22-1/primer_links/sect_5/set/set_collect_2.png)
+##### Editing a *SET_xxx_COLLECT definition![](./Storage/primer-23/primer_links/sect_5/set/set_collect_2.png)
  
 Firstly you must decide whether you want to edit the "parent" set, or one of its "children".
  
@@ -223,7 +223,7 @@ PRIMER will not allow you to relabel a child set unless the new label is that o
 
 This will give it a new label, remove it from its parent, and turn it into a normal set. Note that is will not be referenced by anything else in the model as all existing references will be to its ex-parent.
 
-Editing a ***parent***\*SET\_xxx\_COLLECT definition![](../Storage/primer-22-1/primer_links/sect_5/set/set_collect_3.gif)
+Editing a ***parent***\*SET\_xxx\_COLLECT definition![](./Storage/primer-23/primer_links/sect_5/set/set_collect_3.gif)
  
 The only operations you can perform on the parent set are:
 
@@ -363,9 +363,9 @@ If a deck containing \*SET\_...\_INTERSECT is written out in a format pre-dating
 
 | SET_DEFAULTS Defining the default parameters for sets.  <br>Set types \_NODE, \_PART, \_SEGMENT and \_SHELL can all be used in contexts where additional information may be required to complete input. Examples are:<br><ul> <li>In * <span class="courierbold">CONTACT_TIEBREAK </span>definitions you can define tiebreak failure parameters for a whole set, or on a per node/per element basis. </li> </ul><ul> <li>In many other (see the Ansys LS-DYNA user manual) <strong>* <span class="courierbold">CONTACT_ </span> </strong>... definitions it is possible to vary friction across a surface by defining individual friction parameters for segments or shells. </li> </ul><ul> <li>In * <span class="courierbold">CONSTRAINED_TIE-BREAK </span> <strong> </strong>definitions individual failure parameters can be defined for each node. </li> </ul> <br>In all cases default parameters may be defined for the whole set by filling in the **DA1**  **...**  **DA4** fields in the VIEW/EDIT panel as shown below. |
 | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_5/set/fig_set_def_1.gif)<br> <br>These will apply to every set entry except where individual entries have been made in \_COLUMN mode. |
+| ![](./Storage/primer-23/primer_links/sect_5/set/fig_set_def_1.gif)<br> <br>These will apply to every set entry except where individual entries have been made in \_COLUMN mode. |
 
-| SET_OPTIONS Using the _LIST, _COLUMN _GENERATE, _GENERAL and _ADD sub-keywords to change set layout. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_convert.gif) |
+| SET_OPTIONS Using the _LIST, _COLUMN _GENERATE, _GENERAL and _ADD sub-keywords to change set layout. | ![](./Storage/primer-23/primer_links/sect_5/set/set_convert.gif) |
 | --- | --- |
 
 The simplest, default set layout is SET_LISTin which a simple list of constituent items is given 8 to a line, and in which no optional data is given for any item.
@@ -373,9 +373,9 @@ This example shows a typical \_LIST layout for 23 parts.
  
 Default attributes ( **DA1 .. 4**) can be given, but no individual values can be defined.
  
-![](../Storage/primer-22-1/primer_links/sect_5/set/fig_set_opt_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/fig_set_opt_2.gif)
 
-| Changing this definition to _COLUMNresults in the revised layout shown here. <br>It is now possible to give individual values for each item in the set.<br> <br><br> <br>When you change from \_LIST to \_COLUMN formats in PRIMER the code automatically fills in all the new row entries with zeros, ie the default. You can then overwrite any specific values as required. | ![](../Storage/primer-22-1/primer_links/sect_5/set/fig_set_opt_3.gif) |
+| Changing this definition to _COLUMNresults in the revised layout shown here. <br>It is now possible to give individual values for each item in the set.<br> <br><br> <br>When you change from \_LIST to \_COLUMN formats in PRIMER the code automatically fills in all the new row entries with zeros, ie the default. You can then overwrite any specific values as required. | ![](./Storage/primer-23/primer_links/sect_5/set/fig_set_opt_3.gif) |
 | --- | --- |
 
 The third method of defining sets is to use _GENERATE, in which item labels are given in [&lt;start&gt;&lt;end&gt;] pairs.
@@ -404,7 +404,7 @@ Segment sets are a special case for two reasons:
 
 As a consequence the layout and operation of the SET\_SEGMENT editing panel is slightly different to that of the others.
  
-![](../Storage/primer-22-1/primer_links/sect_5/set/fig_set_seg_1.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/fig_set_seg_1.gif)
  
 Each segment is defined in terms of 4 nodes (n3 = n4 for a triangle), and the extra item-specific data occupies columns 5 to 8.
  
@@ -422,19 +422,19 @@ SEG and DSEG rows are added in a different way. These are inserted by selecti
 
 We want to add a SEG row to the top of the SET\_SEGMENT\_GENERAL set shown below:
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set_segment_general_1.gif)
+![](./Storage/primer-23/primer_links/sect_5/set/set_segment_general_1.gif)
  
 Select mode INSERT , type SEG and location at start of set from the popups. 
  
- ![](../Storage/primer-22-1/primer_links/sect_5/set/set_seg_general2.png)
+ ![](./Storage/primer-23/primer_links/sect_5/set/set_seg_general2.png)
 
 As we have selected SEG the Segment nodes popups are made live to be able to select the 4 nodes on the segment (for a triangular segment N3 = N4). Once the nodes are selected press APPLY to insert the row.
 
-![](../Storage/primer-22-1/primer_links/sect_5/set/set_seg_general3.png)
+![](./Storage/primer-23/primer_links/sect_5/set/set_seg_general3.png)
 
 The row has been inserted at the top of the set.
 
-| Locking set contents against deletion  <br>When items are deleted in PRIMER it has historically been the case that membership of a set does not - by default - "lock" an item against being deleted. This can be controlled globally on the [deletion panel](deletion-rules.md#rules) via the Remove from sets switch.<br> <br>However there are a few cases where this logic can cause problems:<br><ul> <li>Sliprings using 2D seatbelt elements rely on the contents of node and shell sets to define their geometry and connectivity <br> </li> <li>Retractors using 2D seatbelt elements have a similar reliance <br> <br> </li> <li>Nodes and parts used in Dummy assemblies, where deletion of content is likely to be unintended. <br> <br>... and other cases may arise in the future. </li> </ul> <br>Therefore the concept of "locking" set contents against deletion on a "per set" basis has been added in PRIMER release 10.1. | ![](../Storage/primer-22-1/primer_links/sect_5/set/set_locked.gif) |
+| Locking set contents against deletion  <br>When items are deleted in PRIMER it has historically been the case that membership of a set does not - by default - "lock" an item against being deleted. This can be controlled globally on the [deletion panel](deletion-rules.md#rules) via the Remove from sets switch.<br> <br>However there are a few cases where this logic can cause problems:<br><ul> <li>Sliprings using 2D seatbelt elements rely on the contents of node and shell sets to define their geometry and connectivity <br> </li> <li>Retractors using 2D seatbelt elements have a similar reliance <br> <br> </li> <li>Nodes and parts used in Dummy assemblies, where deletion of content is likely to be unintended. <br> <br>... and other cases may arise in the future. </li> </ul> <br>Therefore the concept of "locking" set contents against deletion on a "per set" basis has been added in PRIMER release 10.1. | ![](./Storage/primer-23/primer_links/sect_5/set/set_locked.gif) |
 | --- | --- |
 | Contents locking has three possible settings:<br> <br><br>| Automatic <br> (default) | This is the default PRIMER behaviour that membership of a set does not lock contents against deletion  ***unless***  the set is referenced by something known to be sensitive to this problem. At present such items are:<ul> <li>*ELEMENT_SEATBELT_SLIPRING when the slipring is for 2D seatbelt elements </li> <li>*ELEMENT_SEATBELT_RETRACTOR when the retractor is for 2D seatbelt elements </li> </ul> <br>If either if thse types reference the set then its contents will be locked against deletion. This list of items may be added to in the future as the keyword format evolves. |<br>| --- | --- |<br>| Unlocked | This is the original PRIMER behaviour that membership of a set never locks contents against deletion, regardless of what references the set. |<br>| Locked | This is a new option, and if selected membership of a set always locks its contents against deletion |<br><br> <br>As stated above removal from sets during deletion also depends upon the Remove from sets switch being turned on.<br> <br>This setting is not "remembered" in the keyword output deck, so it will be lost when a model is deleted or a PRIMER session is terminated. It is hard to think of a situation in which the default Automatic setting will not be appropriate, and the use of this default is recommended, however the other two options are provided for completeness. |
 

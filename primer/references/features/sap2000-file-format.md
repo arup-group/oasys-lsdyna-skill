@@ -15,7 +15,7 @@ There are several items of note that the user should be aware of prior to use of
 1. The translator program creates several binary scratch files during the translation process. You should ensure that sufficient space is available on your disk. As a general guide you may expect to require 10 Mb of space for a complex model containing 10000 frame elements. These files will disappear as soon as the translation is completed.
 2. The speed of the translation is not impressive. Please be patient whilst frame elements are read into PRIMER, as these will most likely be the largest portion of your model. There is a running commentary in the DIALOGUE panel which will present the current status of the translation. If an excessive number of frame rigid offsets or end-releases are specified in the model this will considerably increase the amount of time required to complete the translation. 
 
- ![](../Storage/primer-22-1/primer_links/appen_6/sap2000/sap_fig_03.gif)
+ ![](./Storage/primer-23/primer_links/appen_6/sap2000/sap_fig_03.gif)
 3. The DIALOGUE panel will contain useful information about the status of the translation and what the translator is doing. It is advisable to enlarge the panel prior to beginning the translation process so that the data can be viewed more easily. Any warnings printed in this panel may be important, so please check anything printed.
 
 [Previous](radioss-block-format.md)  |  [Next](main-translation-panel.md)

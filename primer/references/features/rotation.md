@@ -1,6 +1,6 @@
 ﻿####  Rotation
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/airbag/position_rot_glob.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/position_rot_vect.gif) |
+| ![](./Storage/primer-23/primer_links/sect_6/airbag/position_rot_glob.gif) | ![](./Storage/primer-23/primer_links/sect_6/airbag/position_rot_vect.gif) |
 | --- | --- |
 | Rotation about a global axis | Rotation about a vector |
 

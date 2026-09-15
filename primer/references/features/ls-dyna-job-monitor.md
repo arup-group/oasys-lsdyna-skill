@@ -1,8 +1,8 @@
 ﻿###  Ansys LS-DYNA Job Monitor
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_11.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_11.png)
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_12.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_12.png)
 
 * PRIMER monitors the progress of the ONLINE Ansys LS-DYNA runs on a Local machine.
 * The progress of such jobs can be viewed in the 'Ansys LS-DYNA Jobs Monitor' panel.
@@ -11,7 +11,7 @@
 
 ####  Job Monitor Actions
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_14.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_14.png)
 The user can perform these actions on the running/completed jobs listed in the monitor.
 1. **Load Model** : Load the model file in PRIMER on which the Ansys LS-DYNA was run.
 2. **Add Sensor Switch** : Assign KILL switches on the currently running job. 

@@ -4,7 +4,7 @@ In most cases you will be drawing graphics on the display of the machine you are
 
 This need not be the case under X11, where networked graphics may also be used:
 
-| **The Main Processor**<br> <br>(CPU, etc) | *Sends graphics requests ....* | Over a network <br>![](../Storage/primer-22-1/primer_links/graphics/win_ma1.jpg) | *... to a second computer* | **The Graphics Card**<br> <br>Which has its own memory and, in the case of better cards, considerable "intelligence" for 3D graphics (lighting, shading, hidden surface removal, etc) |
+| **The Main Processor**<br> <br>(CPU, etc) | *Sends graphics requests ....* | Over a network <br>![](./Storage/primer-23/primer_links/graphics/win_ma1.jpg) | *... to a second computer* | **The Graphics Card**<br> <br>Which has its own memory and, in the case of better cards, considerable "intelligence" for 3D graphics (lighting, shading, hidden surface removal, etc) |
 | --- | --- | --- | --- | --- |
 
 | The network<br> <ul> <li> <p align="left">Is almost always some form of ethernet running TCP/IP ( <em> <strong>T </strong> </em>erminal <em> <strong>C </strong> </em>ontrol <em> <strong>P </strong> </em>rotocol / <em> <strong>I </strong> </em>nternet <em> <strong>P </strong> </em>rotocol) </p> </li> <li> <p align="left">But other mechanisms, for example &quot;DecNet&quot;, are possible. </p> </li> <li> <p align="left">May be of any speed, but obviously the faster the better. Recent machines will have 100 MBit/second (&quot;100 Base T&quot;) network ports. </p> </li> </ul> |

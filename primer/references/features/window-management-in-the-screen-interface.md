@@ -12,7 +12,7 @@ Moving, resizing and scrolling of windows is based on the conventions used in th
 
 This example shows a sub-window being resized:
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/fig_2_4_1.gif)
+![](./Storage/primer-23/primer_links/sect_2/images/fig_2_4_1.gif)
 
 The user has chosen to drag the bottom right corner out.
 

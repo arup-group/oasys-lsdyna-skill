@@ -6,7 +6,7 @@ When you come to mass the assembly, you may either define a subgroup which conta
 
 When you CALCULATE the assign mass, you will get the following warning:
 
-![](../Storage/primer-22-1/primer_links/sect_6/assign_mass/assm_hierarch.gif)
+![](./Storage/primer-23/primer_links/sect_6/assign_mass/assm_hierarch.gif)
 
 If we modify an Assign Mass group which contains elements which are used by a later (hierarchically higher) statement, a warning will be given and the user urged to apply the RECALC function. This will remake all the assign mass statement which have labels above the current one, thus accomodating the affect of modifying the mass of the lower group. In default mode, the elements will not be remassed. To maintain the integrity of the assign mass statements, it is recommended that the function be used in this way. However, some users have requested the ability to add mass to items already massed up. This may be done by setting the OVERMASS flag on both the overmassed and the overmassing assign mass statements.
 

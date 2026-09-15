@@ -2,7 +2,7 @@
 
 In the menu, select  **MODEL**   **-&gt; BUILD.**  The default is use last database loaded which will on its first call revert to select existing database .
 
-| ![](../Storage/primer-22-1/primer_links/sect_3/images/incl_3.png) | ![](../Storage/primer-22-1/primer_links/sect_3/images/build_opt_pop.gif) |
+| ![](./Storage/primer-23/primer_links/sect_3/images/incl_3.png) | ![](./Storage/primer-23/primer_links/sect_3/images/build_opt_pop.gif) |
 | --- | --- |
 
 NOTE: this procedure is to be distinguished from MODEL &gt; READ &gt; DATABASE (see section [MODEL &gt; READ](model-read.md#32MODELREAD)) in which each selected model is read into a separate file.
@@ -17,7 +17,7 @@ Build log file. All information written to the dialogue box may be saved to a se
 
 To create a new Database select the appropriate option and press APPLY . See [CREATE NEW DATABASE](creating-a-new-model-database.md#createnewdatab).
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_3.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_3.gif)
 
 Select an existing database by inputting the name and path in the input box or using the search facility or by selecting one of the databases listed in the Database Name list.
 

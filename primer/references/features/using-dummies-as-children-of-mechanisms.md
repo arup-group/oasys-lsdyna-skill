@@ -6,10 +6,10 @@ Clearly when part of the cockpit moves it is likely that the dummy will need to 
 
 In the example below the seat assembly has been defined as a mechanism, and the lower torso of the dummy has been connected to the motion of the seat cushion in degrees of freedom TX, Ty, Tz.
 
-| **![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_10.jpg)Initial state**<br> <br>User has clicked on the seat cushion and the whole mechanism (seat) plus connected dummy turn grey to denote that they are being dragged. |
+| **![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_10.jpg)Initial state**<br> <br>User has clicked on the seat cushion and the whole mechanism (seat) plus connected dummy turn grey to denote that they are being dragged. |
 | --- |
-| **![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_11.jpg)Intermediate state**<br> <br>The seat has moved forward and risen up on its links, taking the dummy with it. |
-| **![](../Storage/primer-22-1/primer_links/sect_6/dummies/fig_posn_12.jpg)Final (very uncomfortable!) position**<br> <br>In this example the seat has been moved forward and down to a ridiculous degree, but this demonstrates two things clearly:<br> <br>(1) The dummy motion has remained linked to that of the seat.<br> <br>(2) Connection between seat and dummy is in translation (TX, Ty, Tz) only with no rotational connection.<br> <br>This is made clear by the way that the seat cushion has tilted down but the pelvis, torso and head of the dummy have not rotated. |
+| **![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_11.jpg)Intermediate state**<br> <br>The seat has moved forward and risen up on its links, taking the dummy with it. |
+| **![](./Storage/primer-23/primer_links/sect_6/dummies/fig_posn_12.jpg)Final (very uncomfortable!) position**<br> <br>In this example the seat has been moved forward and down to a ridiculous degree, but this demonstrates two things clearly:<br> <br>(1) The dummy motion has remained linked to that of the seat.<br> <br>(2) Connection between seat and dummy is in translation (TX, Ty, Tz) only with no rotational connection.<br> <br>This is made clear by the way that the seat cushion has tilted down but the pelvis, torso and head of the dummy have not rotated. |
 
 The use of a dummy as a child of a mechanism is controlled entirely on the Mechanism panel, described in .
 

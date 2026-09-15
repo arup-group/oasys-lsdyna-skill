@@ -1,6 +1,6 @@
 ﻿###  Generating "Null Beams" on Crossed Edges
 
-**![](../Storage/primer-22-1/primer_links/sect_5/pen_check/fig_6_10_6.gif)**
+**![](./Storage/primer-23/primer_links/sect_5/pen_check/fig_6_10_6.gif)**
 
 Generally the presence of crossed edges will require some remeshing, and this task will be performed outside PRIMER.
 

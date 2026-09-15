@@ -10,9 +10,9 @@ Environment variables are set at the both at the operating system and user level
 
 ####  Windows systems
 
-| On Windows Vista / Windows 7:<br> <br><br>| ![](../Storage/primer-22-1/primer_links/appen_13/app_v_1.gif) | ==&gt; | Properties |<br>| --- | --- | --- |<br>|  | | <br>V |<br>|  |  | Advanced System setting |<br>|  |  | | <br>V |<br>|  |  | Environment variables | | ![](../Storage/primer-22-1/primer_links/appen_13/env.png) |
+| On Windows Vista / Windows 7:<br> <br><br>| ![](./Storage/primer-23/primer_links/appen_13/app_v_1.gif) | ==&gt; | Properties |<br>| --- | --- | --- |<br>|  | | <br>V |<br>|  |  | Advanced System setting |<br>|  |  | | <br>V |<br>|  |  | Environment variables | | ![](./Storage/primer-23/primer_links/appen_13/env.png) |
 | --- | --- |
-| On Windows XP / 2000<br> <br><br>| ![](../Storage/primer-22-1/primer_links/appen_13/app_v_1.gif) | ==&gt; | Properties |<br>| --- | --- | --- |<br>|  | | <br>V |<br>|  |  | Advanced |<br>|  |  | | <br>V |<br>|  |  | Environment | | ![](../Storage/primer-22-1/primer_links/appen_13/app_v_4.gif) |
+| On Windows XP / 2000<br> <br><br>| ![](./Storage/primer-23/primer_links/appen_13/app_v_1.gif) | ==&gt; | Properties |<br>| --- | --- | --- |<br>|  | | <br>V |<br>|  |  | Advanced |<br>|  |  | | <br>V |<br>|  |  | Environment | | ![](./Storage/primer-23/primer_links/appen_13/app_v_4.gif) |
 
 Then insert the relevant Variable and Value strings into the User or System settings as desired.
 

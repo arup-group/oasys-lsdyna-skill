@@ -2,7 +2,7 @@
 
 Access the model Database creation options by clicking BUILD under the MODEL tab. Then select the appropriate build option.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/build_opt_pop.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/build_opt_pop.gif)
 
 *Create database from directory*. If your files have been grouped under meaningful directory names (DUMMIES, BARRIERS, etc.) you can easily create a database with this option. You need only specify the start directory and PRIMER will locate all the ".key" files in sub-directories and create the database structure.
 
@@ -14,6 +14,6 @@ In both the above cases the new database should then be loaded by reverting to s
 
 In order to write out a postscript file to provide a print out of the Database, select the LASER tab and fill in the required categories.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/datab_199.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/datab_199.gif)
 
 [Previous](creating-and-managing-a-model-database.md)  |  [Next](editing-a-model-database.md)

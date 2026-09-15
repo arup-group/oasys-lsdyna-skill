@@ -7,6 +7,6 @@ A morph flow is a list of morph points, each with an assigned vector. When a des
 * a unique name used to identify it from the command line
 * information about variable ranges. This has been added for future development only and is not currently used.
 
- ![](../Storage/primer-22-1/primer_links/sect_6/mesh_morphing/mesh_morphing_variables.png)
+ ![](./Storage/primer-23/primer_links/sect_6/mesh_morphing/mesh_morphing_variables.png)
 
 [Previous](utilities-tab-meshing.md)  |  [Next](interactive-morph-flow-creation.md)

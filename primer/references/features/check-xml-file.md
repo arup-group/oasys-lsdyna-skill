@@ -1,6 +1,6 @@
 ﻿###  Check XML File
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/check_114.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/check_114.gif)
 
 The contents of the check tree may be saved to an xml file using Write xml on the check tree.
 

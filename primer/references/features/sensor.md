@@ -6,14 +6,14 @@ These can be edited through the generic [Keyword Editor](the-generic-keyword-edi
 
 **\*SENSOR\_CONTROL**
 
-![](../Storage/primer-22-1/primer_links/sect_5/sensor/fig_sens_1.gif)
+![](./Storage/primer-23/primer_links/sect_5/sensor/fig_sens_1.gif)
 
 **\*SENSOR\_DEFINE\_...**
 
-![](../Storage/primer-22-1/primer_links/sect_5/sensor/fig_sens_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/sensor/fig_sens_2.gif)
 
 **\*SENSOR\_SWITCH\_...**
 
-![](../Storage/primer-22-1/primer_links/sect_5/sensor/fig_sens_3.gif)
+![](./Storage/primer-23/primer_links/sect_5/sensor/fig_sens_3.gif)
 
 [Previous](section-defining-element-sections.md)  |  [Next](set-defining-sets.md)

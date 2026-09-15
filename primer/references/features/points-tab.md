@@ -2,7 +2,7 @@
 
 The points tab contains settings for editing the HIC data.
 
-![](../Storage/primer-22-1/points-tab/points-tab-2024-04-09.png)
+![](./Storage/primer-23/points-tab/points-tab-2024-04-09.png)
 
 ####  Point Shown Filter
 
@@ -12,7 +12,7 @@ Allows you to show and hide different types of input point based on the first le
 * A = Adult
 * B/W = Cyclist
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_17.bmp)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_17.bmp)
 
 Any subsequent calculations will only be for the displayed data.
 
@@ -28,7 +28,7 @@ The Edit Name option allows you to edit the name of a point. **Note: the tool do
 
 The Offset/Scale Point option allows you to offset or scale HIC points.
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_19.bmp)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_19.bmp)
 
 If the entry is between 0 and 5 it is applied as a scale factor. If the entry is greater than 5 or less than 0 it is applied as an offset.
 

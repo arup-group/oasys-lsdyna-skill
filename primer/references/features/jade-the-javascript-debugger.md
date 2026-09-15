@@ -2,7 +2,7 @@
 
 JaDe is included in D3PLOT, PRIMER and T/HIS to help debug and develop JavaScripts. It is started by selecting a script and pressing the Debug button in the JavaScript menu in any of the programs. The initial screen is shown below.
 
-![](../Storage/primer-22-1/project-common-topics/jade/initial_screen.png)
+![](./Storage/primer-23/project-common-topics/jade/initial_screen.png)
 
 It is fairly basic but hopefully has enough functionality for people to be able to find and fix problems in scripts.
 

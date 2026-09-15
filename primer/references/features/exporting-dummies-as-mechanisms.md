@@ -8,13 +8,13 @@ For example when positioning a dummy on a bicycle you will probably need to conn
 * 2x feet on pedals
 * 1x buttocks on seat
 
-![](../Storage/primer-22-1/bike+dummy.png)
+![](./Storage/primer-23/bike+dummy.png)
 
 If the motion of the legs is to drive the pedals around and the hands are to turn the steering the "dummy is a child of the mechanism" approach described in the previous section will not work. Rather the dummy and bicycle assemblies need to be siblings, equal in priority, and able to connect with one another in an arbitrary fashion.
 
 The =&gt; Mech button on the top-level assembly panel allows any dummy to be converted to a mechanism.
 
-![](../Storage/primer-22-1/dummy-panel-import-mech.png) ![](../Storage/primer-22-1/exporting-dummies-as-mechanisms-2022-12-12-2.png)
+![](./Storage/primer-23/dummy-panel-import-mech.png) ![](./Storage/primer-23/exporting-dummies-as-mechanisms-2022-12-12-2.png)
 
 The process works as follows:
 

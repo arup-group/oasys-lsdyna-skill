@@ -6,7 +6,7 @@
 <br>The mouse button during picking used is significant:<br>
 <ul style="font-size: 14.6667px;"> <li>LEFT mouse button selects</li> <li>MIDDLE button rejects the most recent selection</li> <li>RIGHT mouse button deselects (the picked items are removed from the list of currently selected items)</li>
 </ul>
-<br>Mouse button usage is described in more detail [below](rejectingapplying-items-that-have-been-screen-picked.md#Rejectingitemsthathavebeenscreenpicked). | ![](../Storage/primer-22-1/primer_links/sect_2/images/fig_6_2_screen_pick.png) |
+<br>Mouse button usage is described in more detail [below](rejectingapplying-items-that-have-been-screen-picked.md#Rejectingitemsthathavebeenscreenpicked). | ![](./Storage/primer-23/primer_links/sect_2/images/fig_6_2_screen_pick.png) |
 | --- | --- |
 
 Screen-picking is always "live" in the graphics window once you have selected an object category that is capable of being picked, it is not necessary to select Vis explicitly, and it can be accomplished in a range of ways:
@@ -32,13 +32,13 @@ Screen-picking is always "live" in the graphics window once you have selected an
 
 ####  Path Line picking
 
-![](../Storage/primer-22-1/primer_links/sect_2/fig_6_2_sp_pl.png)
+![](./Storage/primer-23/primer_links/sect_2/fig_6_2_sp_pl.png)
 
 This is a special mode in which user can keep picking Shell Nodes or Shell Elements and PRIMER will keep creating the shortest path between consecutive user picked entities with all path entities in between also selected.
 
 ##### Panel for Path Line Object Menu Selections
 
-| ![](../Storage/primer-22-1/primer_links/sect_2/fig_6_2_pl_menu.png) | **Add to/Remove Pick List** | Adds/Remove all the highlighted entities to/from the Pick List. |
+| ![](./Storage/primer-23/primer_links/sect_2/fig_6_2_pl_menu.png) | **Add to/Remove Pick List** | Adds/Remove all the highlighted entities to/from the Pick List. |
 | --- | --- | --- |
 | **Reject Last** | Rejects last selected entity and loses the last created path. |
 | **Reject All** | Rejects all selections in the current path. |
@@ -50,11 +50,11 @@ This is a special mode in which user can keep picking Shell Nodes or Shell Eleme
 
 PRIMER highlights entities joining the consecutive user picks via shortest path.
 
-![](../Storage/primer-22-1/primer_links/sect_2/images/path_line_picks.png)
+![](./Storage/primer-23/primer_links/sect_2/images/path_line_picks.png)
  
 ####  Path Area picking 
  
-![](../Storage/primer-22-1/primer_links/sect_2/fig_6_2_sp_pa.png)
+![](./Storage/primer-23/primer_links/sect_2/fig_6_2_sp_pa.png)
  
 This is a special mode in which user can keep picking Shell Nodes or Shell Elements and PRIMER will keep creating the shortest path between consecutive user picked entities with all path entities in between also selected .
 
@@ -62,7 +62,7 @@ User selections can be then used to create an enclosed polygon. The final select
 
 #####  Panel for Path Area Object Menu Selections
 
-| ![](../Storage/primer-22-1/primer_links/sect_2/fig_6_2_pa_menu.png) | **Add to Pick List/ Remove Pick List** | Adds/Remove all the highlighted entities to/from the Pick List. |
+| ![](./Storage/primer-23/primer_links/sect_2/fig_6_2_pa_menu.png) | **Add to Pick List/ Remove Pick List** | Adds/Remove all the highlighted entities to/from the Pick List. |
 | --- | --- | --- |
 | **Cycle Area** | PRIMER cycles through and highlights all the potential areas of entities that are either enclosed within the boundaries of polygon or are enclosed by boundary of polygon and free edges of Model. |
 | **Reject Last** | Rejects last selected entity and loses the last created path. |
@@ -74,26 +74,26 @@ User selections can be then used to create an enclosed polygon. The final select
 #####  Path Area Example
 
 PRIMER highlights entities joining the consecutive user picks via shortest path. Then closes polygon by calculating the shortest path between first and last user picks. And also highlights the entities within the polygon. 
- ![](../Storage/primer-22-1/primer_links/sect_2/images/path_area_picks.png)
+ ![](./Storage/primer-23/primer_links/sect_2/images/path_area_picks.png)
 
 ####  Free edge picking
 
-![](../Storage/primer-22-1/primer_links/sect_2/fig_6_2_sp_fe.png)
+![](./Storage/primer-23/primer_links/sect_2/fig_6_2_sp_fe.png)
 
 This is a special mode in which picking two nodes of an edge will result in the selection of all the nodes between them.
 
-| Selection of N64 as Node 1 <br> ![](../Storage/primer-22-1/primer_links/sect_2/images/free_edge_start.png) | Selection of N228 as Node 2 <br> ![](../Storage/primer-22-1/primer_links/sect_2/images/free_edge_end.png) |
+| Selection of N64 as Node 1 <br> ![](./Storage/primer-23/primer_links/sect_2/images/free_edge_start.png) | Selection of N228 as Node 2 <br> ![](./Storage/primer-23/primer_links/sect_2/images/free_edge_end.png) |
 | --- | --- |
 
 All the nodes on the free edge between N64 and N228 (shortest distance) are also selected.
 
 ####  Hole picking
 
-![](../Storage/primer-22-1/primer_links/sect_2/fig_6_2_sp_h.png)
+![](./Storage/primer-23/primer_links/sect_2/fig_6_2_sp_h.png)
 
 This is a special mode in which picking a node on the edge of a hole will result in the selection of all the nodes around the edge of the hole.
 
-| Selection of N394 on the edge of the hole <br> <br> ![](../Storage/primer-22-1/primer_links/sect_2/images/hole_start.png) | All nodes round hole selected <br> <br> ![](../Storage/primer-22-1/primer_links/sect_2/images/hole_end.png) |
+| Selection of N394 on the edge of the hole <br> <br> ![](./Storage/primer-23/primer_links/sect_2/images/hole_start.png) | All nodes round hole selected <br> <br> ![](./Storage/primer-23/primer_links/sect_2/images/hole_end.png) |
 | --- | --- |
 
 All the nodes on the edge of the hole are selected.

@@ -1,6 +1,6 @@
 ﻿###  PARAMETERS
 
- ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1.png) 
+ ![](./Storage/primer-23/primer_links/sect_5/parameter/param1.png) 
 The figure on the left is the \* PARAMETER main menu in PRIMER.
  
 From release 970 onwards Ansys LS-DYNA supports parameters. These are Integer or Real (floating point) values defined by name at the top of the input deck which can be used in any data field of the relevant type. From LS971 R6 LS-DYNA also offers character parameters.
@@ -77,7 +77,7 @@ From release 18.0 PRIMER corrected the handling of the \*PARAMETER\_DUPLICATION 
 | Creating a Parameter  <br>Parameters may be created in the following ways: |
 | --- |
 | (1) By typing a new parameter name into any text entry box in an editing panel |
-| This will map a creation panel populated with:<ul> <li>the parameter name </li> <li>the type (Integer or Real) as deduced from the context </li> <li>a sensible default value for this context. </li> </ul> <br>To create a character parameter type first create it in this way, and then change the given type (I or R) to C, and supply its name.<br> <br>When you start typing "&..." a popup box showing all existing parameters in the model matching the characters typed so far will be mapped, allowing you to select one directly. For example if you type " &B " all parameters starting with " B " will be shown, and as you type more characters the list will be refined. | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1b.png) |
+| This will map a creation panel populated with:<ul> <li>the parameter name </li> <li>the type (Integer or Real) as deduced from the context </li> <li>a sensible default value for this context. </li> </ul> <br>To create a character parameter type first create it in this way, and then change the given type (I or R) to C, and supply its name.<br> <br>When you start typing "&..." a popup box showing all existing parameters in the model matching the characters typed so far will be mapped, allowing you to select one directly. For example if you type " &B " all parameters starting with " B " will be shown, and as you type more characters the list will be refined. | ![](./Storage/primer-23/primer_links/sect_5/parameter/param1b.png) |
 
 #####  
  
@@ -97,17 +97,17 @@ Consider a model that contains parameters ALPHA, BAY, BAG, BACK, BODY ,B1, B10 a
 
 If you use wildcard syntax remember that parameters must start with a letter A-Z, and may only contain the characters A-Z, 0-9 and \_ (underscore). So if you have used wildcard syntax but have not found anything that matches in the popup list then the name you have, containing \* and/or ?, is not a valid parameter name and will be rejected unless you correct it.
 
-| Creating an "Implicit" parameter in &lt;...&gt;<br>As an alternative to the &name syntax above it is also possible to create an [implicit parameter](parameters.md#implicit_parameters) expression by writing the expression directly in &lt;...&gt;<br> <br>Implicit parameters are described in more detail [below](parameters.md#implicit_parameters), but briefly they behave like ordinary parameter expressions but don't have an explicit name. | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1bb.png) |
+| Creating an "Implicit" parameter in &lt;...&gt;<br>As an alternative to the &name syntax above it is also possible to create an [implicit parameter](parameters.md#implicit_parameters) expression by writing the expression directly in &lt;...&gt;<br> <br>Implicit parameters are described in more detail [below](parameters.md#implicit_parameters), but briefly they behave like ordinary parameter expressions but don't have an explicit name. | ![](./Storage/primer-23/primer_links/sect_5/parameter/param1bb.png) |
 | --- | --- |
 
 ##### (2) From the Create button in the main Parameter panel
 
-| This will map an empty creation panel (see below). | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1a.png) |
+| This will map an empty creation panel (see below). | ![](./Storage/primer-23/primer_links/sect_5/parameter/param1a.png) |
 | --- | --- |
 
 ##### (3) From the "Create new..." button on the Modify Parameter panel
 
-| As for (2) above this will map an empty creation panel. | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1c.png) |
+| As for (2) above this will map an empty creation panel. | ![](./Storage/primer-23/primer_links/sect_5/parameter/param1c.png) |
 | --- | --- |
 
 ##### The Create/Edit parameter panel
@@ -127,7 +127,7 @@ The panel allows you to edit all attributes of the parameter:
 alternatively
 * Whether or not it is a \_TYPE parameter, and the PRTYP argument if it is
 
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1d.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param1d.png)
 
 The value is simply typed into the "Value" box.
 
@@ -137,7 +137,7 @@ As with other editing panels this is a scratch definition, and the saved attribu
 
 In the \_EXPRESSION case the panel extends to provide editing rows to contain the expression.
 
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1f.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param1f.png)
 
 As many rows as necessary to define the expression may be used. PRIMER will reformat the expression over as many lines as necessary to make it fit the 80 column width of the Ansys LS-DYNA input deck.
 
@@ -268,7 +268,7 @@ From LS971 R7.1 parameters may also have a \_MUTABLE suffix, permitting their va
  
 ##### The policy used for the destination Include file of new parameters.
  
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1g.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param1g.png)
  
 There are three options:
 
@@ -285,7 +285,7 @@ In this mode the new parameter will "inherit" the include file of the item being
 
 The include file of any parameter may be changed at will using the standard "include" editing buttons just as for any other in PRIMER.
 
-| Using the _LOCAL option | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1h.png) |
+| Using the _LOCAL option | ![](./Storage/primer-23/primer_links/sect_5/parameter/param1h.png) |
 | --- | --- |
 
 | The suffix \_LOCAL was introduced in Ansys LS-DYNA 971R5 (early 2011) and it is defined in the Ansys LS-DYNA user manual as working as follows:<br><ul> <li>A conventional &quot;global&quot; parameter, plain or <span class="courierbold">_EXPRESSION </span>, is normally applicable throughout the whole model, including all include files, regardless of where or in which include file it is defined. <br> <br> </li> <li>A parameter with the <span class="courierbold">_LOCAL </span>suffix is only applicable in the include file in which it is defined. <br> <br> </li> <li>Multiple parameters of the same name, using different values, may exist in different include files in a deck so long as all definitions, or all but a global one, use the <span class="courierbold">_LOCAL </span>suffix. <br> <br> </li> <li>In a given include file file a parameter with the <span class="courierbold">_LOCAL </span>suffix defined in that file will &quot;mask&quot; all other parameters of the same name defined elsewhere in the deck, so that its local value is used. <br> <br> </li> <li>The <span class="courierbold">*PARAMETER_DUPLICATION </span>keyword defines how Ansys LS-DYNA will handle parameter <span class="courierbold">_LOCAL </span>and global name conflicts. <br> <br> </li> <li>The <span class="courierbold">_MUTABLE </span>suffix may or may not be applied at the &quot;local&quot; scope of a parameter if combined with <span class="courierbold">_LOCAL </span>. The Ansys LS-DYNA manual is silent on this point. </li> </ul> |
@@ -345,7 +345,7 @@ This won't matter if multiple include files contain the same (global) parameter 
 
 #####  Using the _MUTABLE option
 
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1j.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param1j.png)
 
 The \*PARAMETER\_MUTABLE suffix was added in LS971 R7.1 to provide an alternative way of handling multiple definitions of the same parameter.
 
@@ -434,14 +434,14 @@ PRIMER has to handle this problem without losing definitions or muddling them up
 
 If we use the simple input deck above as an example the PARAMETER editing panel will show the following:
 
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param7a.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param7a.png)
 
 Each definition of ID1 is stored separately, in the order in which they appeared in the input deck.
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param7b.png)<br> <br>Hovering over the parameter used to define the material label shows that it uses the version of parameter ID1 with the value of 1 | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param7c.png)<br> <br>Hovering over the parameter used to define the section label shows that it uses the version of parameter ID1 with the value of 10 |
+| ![](./Storage/primer-23/primer_links/sect_5/parameter/param7b.png)<br> <br>Hovering over the parameter used to define the material label shows that it uses the version of parameter ID1 with the value of 1 | ![](./Storage/primer-23/primer_links/sect_5/parameter/param7c.png)<br> <br>Hovering over the parameter used to define the section label shows that it uses the version of parameter ID1 with the value of 10 |
 | --- | --- |
 
-| When you start typing "&" into a data field to define a parameter you will be given a list of all possible candidates to choose from. | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param7d.png) |
+| When you start typing "&" into a data field to define a parameter you will be given a list of all possible candidates to choose from. | ![](./Storage/primer-23/primer_links/sect_5/parameter/param7d.png) |
 | --- | --- |
 
 | How PRIMER deals with Mutable parameters during keyword output <br>It will be clear from the discussion above that the order in which mutable parameters appear in the output deck, with respect to where they are referred to, will affect the value assigned to each reference. PRIMER does not always preserve the order of cards in an input deck since it sorts labelled items into ascending order, and moreover edits made during a PRIMER session may affect the order in which keywords are written.<br> <br>In order to solve this problem PRIMER writes out mutable parameters in the following way: |
@@ -508,7 +508,7 @@ filename
 | *PARAMETER_MUTABLEand*PARAMETER_DUPLICATION <br>It is possible to make "ordinary" (as in not explicitly \_MUTABLE) parameters effectively mutable by using the \*PARAMETER\_DUPLICATION card. It is described in more detail [below](parameters.md#duplication), but in summary:<br><ul> <li>You define a *PARAMETER_DUPLICATION card before any *PARAMETER cards. </li> <li>You set the DFLAG value on it to 2 or 4 to permit parameters to be multiply defined. </li> </ul> <br>In this situation a parameter of a given name can be re-defined with different (or the same) values any number of times in an input deck, and the "current" value when it is referred to will always be that of the most recently read definition.<br> <br>PRIMER supports this by treating such parameters internally as "quasi-mutable", and in most respects their behaviour is identical to explicitly \_MUTABLE parameters. |
 | So which should you use?<br><ul> <li>*PARAMETER_MUTABLE at least gives a visual indication that &quot;this parameter&#39;s value is likely to change in different locations&quot;. <br> <br> </li> <li>*PARAMETER_DUPLICATION is a per-model setting and to be effective (and legal) it must be read before any *PARAMETER cards, so the most sensible location for it is the master file. However multiply defined parameters are most likely to occur in include files and these tend to get reused between different models, so there is a chance that the duplication card may become de-coupled from the context in which it is used, or perhaps omitted altogether. </li> </ul> <br>Therefore it is almost certainly better to use explicitly \_MUTABLE parameters in preference to "ordinary multipy-defined parameters plus duplication card".<br> <br>From the discussion above it will also be clear that both methods open up several possibilities for errors, in particular when include files are re-ordered and re-used in different models. If you use either feature please take great care to ensure that you manage multiply-defined parameters properly. |
 
-| The *PARAMETER_DUPLICATION keyword | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param5a.png) |
+| The *PARAMETER_DUPLICATION keyword | ![](./Storage/primer-23/primer_links/sect_5/parameter/param5a.png) |
 | --- | --- |
 
 ##### How it works in Ansys LS-DYNA
@@ -534,7 +534,7 @@ In Ansys LS-DYNA a model must contain either zero or one \*PARAMETER\_DUPLICATI
 | --- |
 | **: In all cases of misordering of \*PARAMETER\_DUPLICATION:**<br><ol> <li> <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->treats the first *PARAMETER_DUPLICATION card it reads as the definitive version, applying its settings to all multiply-defined parameters in the model. This is true regardless of where it appears in the model, and whether or not it has the ordering errors described above. <br> <br> </li> <li>Subsequent *PARAMETER_DUPLICATION cards are &quot;read and remembered&quot; and will be written out during keyword output, but they have no influence on how parameters are read, interpreted or used within the model. <br> <br> </li> <li> <b> <i> <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->interprets parameters within the model as if that first *PARAMETER_DUPLICATION card had been read before any *PARAMETER cards, even if this was not actually the case during keyin. If necessary it performs a post-keyin rebuild of the model to correct instances where it has used the &quot;wrong&quot; value of a parameter. </i> </b> <br> <br> </li> <li>During keyword output <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->will always write out *PARAMETER_DUPLICATION in a given master/include file before any *PARAMETER cards within that file. </li> </ol> <br>All the points above are important, but #3 especially so. The thinking behind this logic is that PRIMER will try to help you to change what was an illegally ordered model, which would either be rejected or mis-read by LS-DYNA, into something legally ordered. The interpretation of parameters it uses during keyword input presumes that you will make these corrections. |
 
-| Editing *PARAMETER_DUPLICATION  <br>\*PARAMETER\_DUPLICATION can be created, edited and deleted using the Duplication option.<br> <br>As this example shows you choose whether or not to have a \*PARAMETER\_DUPLICATION card in each include file by using the Active tick box.<br> <br>In files where it is present you can set the dflag value accordingly, and different cards may have different dflag values.<br> <br>If multiple definitions exist the oldest (first) definition is the active one, since this is what Ansys LS-DYNA would use. Any subsequent definitions are remembered and will be written out in the appropriate include file, but will not affect how multiply-defined parameters are processed inside PRIMER .<br> <br>If you change the dflag value on the oldest (ie first ticked) definition in this editor and Update the card then parameter usage in the model will be scanned. If the new dflag setting would change which instance of a duplicate parameter would be used by Ansys LS-DYNA then the model is updated and rebuilt to reflect this change. The parameter editor itself will also be updated to show which version of a duplicate parameter is used and which other(s) are ignored. | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param5b.png) |
+| Editing *PARAMETER_DUPLICATION  <br>\*PARAMETER\_DUPLICATION can be created, edited and deleted using the Duplication option.<br> <br>As this example shows you choose whether or not to have a \*PARAMETER\_DUPLICATION card in each include file by using the Active tick box.<br> <br>In files where it is present you can set the dflag value accordingly, and different cards may have different dflag values.<br> <br>If multiple definitions exist the oldest (first) definition is the active one, since this is what Ansys LS-DYNA would use. Any subsequent definitions are remembered and will be written out in the appropriate include file, but will not affect how multiply-defined parameters are processed inside PRIMER .<br> <br>If you change the dflag value on the oldest (ie first ticked) definition in this editor and Update the card then parameter usage in the model will be scanned. If the new dflag setting would change which instance of a duplicate parameter would be used by Ansys LS-DYNA then the model is updated and rebuilt to reflect this change. The parameter editor itself will also be updated to show which version of a duplicate parameter is used and which other(s) are ignored. | ![](./Storage/primer-23/primer_links/sect_5/parameter/param5b.png) |
 | --- | --- |
 
 #####  *PARAMETER_DUPLICATION and error checking in PRIMER
@@ -568,7 +568,7 @@ From Ansys LS-DYNA 971 R6 onwards the character ("C") parameter type has been i
 
 Over time the possible use of character parameters in Ansys LS-DYNA has turned out to be wider. Support for other use of parameters will be added to future PRIMER versions as required.
 
-| Using the _TYPE option | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param1k.png) |
+| Using the _TYPE option | ![](./Storage/primer-23/primer_links/sect_5/parameter/param1k.png) |
 | --- | --- |
 | \*PARAMETER\_TYPE was introduced in LS971 R7.1 and is intended to provide LS-PREPOST with information about how a parameter will be used in the analysis.<br> <br>The \_TYPE suffix is incompatible with \_ EXPRESSION , \_LOCAL or \_MUTABLE suffices, and PRIMER will treat an attempt to combine these suffices as an error. |
 
@@ -577,7 +577,7 @@ Over time the possible use of character parameters in Ansys LS-DYNA has turned o
 
 The top level, shown here, lists all parameters in the model showing a summary of their attributes.
 
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param2a.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param2a.png)
 
 Changes made in this panel are applied to a scratch definition, and the permanent parameter definitions will not be updated until Update PARAMETERS is used. For more detailed editing, necessary when changing an EXPRESSION, use the Edit... button to map the detailed editing panel above.
 
@@ -596,17 +596,17 @@ You may edit the following at this level.
 | Value | The parameter value. For \_EXPRESSION parameters changing this value will replace the expression with a constant value. |
 | EXPR(ession) | Whether or not the parameter is an \_EXPRESSION type |
 | LOC(al) | Whether or not the parameter is \_LOCAL |
-| MUT(able) | Whether or not the parameter is \_MUTABLE .<br> <br>Ansys LS-DYNA requires the first of a series of \_MUTABLE parameters to use this suffix, but it is optional for the 2nd and subsequent ones. Therefore the 2nd and subsequent MUT boxes will always be "ticked" but may not be "selected" unless the original input deck used the \_MUTABLE suffix or the user has selected it explicitly. Consider the following example:<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param2f.png)<br> <br>Here parameter alpha has been defined twice:<br> <br><br>| 1st occurrence in the input deck: | \*PARAMETER\_MUTABLE | Explicitly \_MUTABLE, given the value 2.0 |<br>| --- | --- | --- |<br>| 2nd occurrence in the input deck: | \*PARAMETER | Implicitly \_MUTABLE, given the value 1.5 |<br><br> <br>In this example the 2nd definition "wins", and the value used for this parameter in the model will be 1.5, which is why the first definition is dark grey since it is remembered but not used.<br> <br>Also the MUT tick-box for the 2nd definition is "ticked but not selected", meaning that the \_MUTABLE suffix will not be used in the keyword output file, relying on the fact that Ansys LS-DYNA does not require this.<br> <br>When a PARAMETER\_DUPLICATION card accepting multiple definitions (setting 2 or 4) is present, PRIMER internally treats all parameters with multiple instances of the same name as mutable. If they are not explicitly defined as \_MUTABLE , they appear with a D symbol in the MUT column:<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param2g.png) |
+| MUT(able) | Whether or not the parameter is \_MUTABLE .<br> <br>Ansys LS-DYNA requires the first of a series of \_MUTABLE parameters to use this suffix, but it is optional for the 2nd and subsequent ones. Therefore the 2nd and subsequent MUT boxes will always be "ticked" but may not be "selected" unless the original input deck used the \_MUTABLE suffix or the user has selected it explicitly. Consider the following example:<br> <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param2f.png)<br> <br>Here parameter alpha has been defined twice:<br> <br><br>| 1st occurrence in the input deck: | \*PARAMETER\_MUTABLE | Explicitly \_MUTABLE, given the value 2.0 |<br>| --- | --- | --- |<br>| 2nd occurrence in the input deck: | \*PARAMETER | Implicitly \_MUTABLE, given the value 1.5 |<br><br> <br>In this example the 2nd definition "wins", and the value used for this parameter in the model will be 1.5, which is why the first definition is dark grey since it is remembered but not used.<br> <br>Also the MUT tick-box for the 2nd definition is "ticked but not selected", meaning that the \_MUTABLE suffix will not be used in the keyword output file, relying on the fact that Ansys LS-DYNA does not require this.<br> <br>When a PARAMETER\_DUPLICATION card accepting multiple definitions (setting 2 or 4) is present, PRIMER internally treats all parameters with multiple instances of the same name as mutable. If they are not explicitly defined as \_MUTABLE , they appear with a D symbol in the MUT column:<br> <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param2g.png) |
 | TYP (e) | Whether or not the parameter is \_TYPE<br> <br>The \_TYPE suffix cannot be used in conjunction with the other suffices above. |
 
-| Changing a Parameter's value  <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param2b.png) |
+| Changing a Parameter's value  <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param2b.png) |
 | --- |
 
 When a parameter's attributes are changed the revised values are shown on a green background. In this example L1 has been changed from 4.0 above to 10.5. In addition because the EXPRESSION in parameter ALPHA also refers to L1 it too has changed.
 
 Changes are "scratch", as explained above, and can be undone using the Reset button.
 
-| Dealing with errors caused by changes <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param2c.png) |
+| Dealing with errors caused by changes <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param2c.png) |
 | --- |
 
 Sometimes changes to one parameter will create errors in an EXPRESSION that uses them.
@@ -615,11 +615,11 @@ In this example the parameter ALPHA has been changed to include " 1.0 / L1 " and
 
 PRIMER can tolerate arithmetic errors in expressions, and substitutes a value of zero. However there is no guarantee that the analysis code will handle this and you will be warned if you attempt to update and save any errors.
 
-| Parameters that have clashing (duplicate) names  <br>The example below uses three nested files, all containing a \*PARAMETER definition called "alpha":<br><ol> <li>Master file, containing a global parameter called alpha, value 1.0, which includes ... </li> <li>Child include file, containing <span class="courierbold">_LOCAL </span>parameter called alpha, value 2.0, which includes ... </li> <li>Grandchild include file, containing another global parameter called alpha, value 3.0. </li> </ol> <br>So the definition in file 2, being \_LOCAL , does not conflict with the other definitions, but the two global definitions in files #1 and #3 are in conflict.<br> <br>Where name clashes are resolved by a \*PARAMETER\_DUPLICATION card then rows which will be ignored are shown on a dark grey background, and hovering over the name will explain why the parameter is being ignored. You will also see that it has no "Usage" or "Xrefs".<br> <br>In this example the \*PARAMETER\_DUPLICATION card has been set to "accept", so the younger of the two clashing global definitions called "alpha" is used, and the older is ignored.<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param2d.png) |
+| Parameters that have clashing (duplicate) names  <br>The example below uses three nested files, all containing a \*PARAMETER definition called "alpha":<br><ol> <li>Master file, containing a global parameter called alpha, value 1.0, which includes ... </li> <li>Child include file, containing <span class="courierbold">_LOCAL </span>parameter called alpha, value 2.0, which includes ... </li> <li>Grandchild include file, containing another global parameter called alpha, value 3.0. </li> </ol> <br>So the definition in file 2, being \_LOCAL , does not conflict with the other definitions, but the two global definitions in files #1 and #3 are in conflict.<br> <br>Where name clashes are resolved by a \*PARAMETER\_DUPLICATION card then rows which will be ignored are shown on a dark grey background, and hovering over the name will explain why the parameter is being ignored. You will also see that it has no "Usage" or "Xrefs".<br> <br>In this example the \*PARAMETER\_DUPLICATION card has been set to "accept", so the younger of the two clashing global definitions called "alpha" is used, and the older is ignored.<br> <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param2d.png) |
 | --- |
-| If there is no \*PARAMETER\_DUPLICATION card present, or its value of DFLAG is set to 3 (ignore and terminate with error) PRIMER will mark clashing parameter names on a red background, and hovering over the name will explain the cause.<br> <br>Here is the example above with the \*PARAMETER\_DUPLICATION card removed, which has two effects:<br><ul> <li>The effect is the same as &quot;ignore and error&quot;, so the first encountered global definition of &quot;alpha&quot; is used. </li> <li>The 2nd definition is both ignored, and also treated as an error. </li> </ul> <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param2e.png)<br> <br>Note that the above logic can be superseded by the use of the \_MUTABLE suffix on the \*PARAMETER keyword. This permits multiple parameters in the same scope to have the same name so long as the first definition has the \_MUTABLE suffix. The parameter can have multiple definitions, each with a different value, and usage on cards that reference the parameter depends on which value was "current" at the time of reading. See the section on [Using the MUTABLE option](parameters.md#mutable)for more information. |
+| If there is no \*PARAMETER\_DUPLICATION card present, or its value of DFLAG is set to 3 (ignore and terminate with error) PRIMER will mark clashing parameter names on a red background, and hovering over the name will explain the cause.<br> <br>Here is the example above with the \*PARAMETER\_DUPLICATION card removed, which has two effects:<br><ul> <li>The effect is the same as &quot;ignore and error&quot;, so the first encountered global definition of &quot;alpha&quot; is used. </li> <li>The 2nd definition is both ignored, and also treated as an error. </li> </ul> <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param2e.png)<br> <br>Note that the above logic can be superseded by the use of the \_MUTABLE suffix on the \*PARAMETER keyword. This permits multiple parameters in the same scope to have the same name so long as the first definition has the \_MUTABLE suffix. The parameter can have multiple definitions, each with a different value, and usage on cards that reference the parameter depends on which value was "current" at the time of reading. See the section on [Using the MUTABLE option](parameters.md#mutable)for more information. |
 
-| Filtering and sorting parameters  <br>By typing a wildcard pattern in the Filter box the panel only shows parameters whose name can be obtained from the pattern by replacing ? with any one character and \* with any (possibly empty) sequence of characters. For example, when typing a\* , all parameters with name starting with a are shown. When typing a string without ? or \*, only parameters matching the exact name appear on the panel.<br> <br>The parameters on the panel can be sorted by name, type (character, integer or real), value, \_EXPRESSION suffix, \_LOCAL suffix, \_MUTABLE suffix, \_TYPE suffix or include file by clicking the column header. When clicking the column header again, the list will be sorted in reversed order.<br> <br>The Clear sorting button resets the order of the parameters on the panel to their original order, which is the order in which the definitions have been read or they have been created.<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param_sort.png) |
+| Filtering and sorting parameters  <br>By typing a wildcard pattern in the Filter box the panel only shows parameters whose name can be obtained from the pattern by replacing ? with any one character and \* with any (possibly empty) sequence of characters. For example, when typing a\* , all parameters with name starting with a are shown. When typing a string without ? or \*, only parameters matching the exact name appear on the panel.<br> <br>The parameters on the panel can be sorted by name, type (character, integer or real), value, \_EXPRESSION suffix, \_LOCAL suffix, \_MUTABLE suffix, \_TYPE suffix or include file by clicking the column header. When clicking the column header again, the list will be sorted in reversed order.<br> <br>The Clear sorting button resets the order of the parameters on the panel to their original order, which is the order in which the definitions have been read or they have been created.<br> <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param_sort.png) |
 | --- |
 
 | Check  <br>This checks all parameter cards for errors. It is can also be accessed from the CHECK\_DEFN button in the Modify window. |
@@ -628,12 +628,12 @@ PRIMER can tolerate arithmetic errors in expressions, and substitutes a value of
 | List  <br>This provides a listing of all the parameters in the model and displays their numeric type, Value and what they are referenced by. The same listing can be accessed from USAGE\_ALL in the Modify window. |
 | --- |
 
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param_list.gif)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param_list.gif)
 
 | DELETE deleting parameters <br>Parameters may be deleted using the normal deletion logic in PRIMER . If they are referred to anywhere in the model, or within another PARAMETER\_EXPRESSION statement, they will be locked against deletion. |
 | --- |
 
-| Parameters in Editing Panels  <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3a.png) |
+| Parameters in Editing Panels  <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param3a.png) |
 | --- |
 
 From PRIMER 9.3RC2 onwards editing panels, including generic keyword editor ones, display parameters either by name or by value wherever they are used.
@@ -644,14 +644,14 @@ Hovering the mouse over such a parameterised field will display a popup box givi
 
 To edit this parameter use Edit...
 
-| **Using** ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3b.png) **to toggle Parameter display mode**<br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3c.png) |
+| **Using** ![](./Storage/primer-23/primer_links/sect_5/parameter/param3b.png) **to toggle Parameter display mode**<br>![](./Storage/primer-23/primer_links/sect_5/parameter/param3c.png) |
 | --- |
 
 An alternative to &NAME symtax is to show the value of the parameter, but underlined to emphasise that the value shown is parameterised. You can toggle between the two modes using the " P " button at the top right hand corner of any panel showing parameters.
 
 This image shows the panel above displayed in this alternative format. Hovering the mouse above an underlined field will map the parameter popup box as shown above, giving information about the parameter name.
 
-| Setting programme-wide parameter display mode <br>The "P" button on an editing panel only controls display for that panel.<br> <br>To set the default display mode for the whole programme use Options, Parameter Display and select:<br> <br><br>>  <br>> <br>> | HINT | Numeric values underlined with dots |<br>> | --- | --- |<br>> | SHOWN | Shown in &NAME format |<br>> <br>> | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3d.png) |
+| Setting programme-wide parameter display mode <br>The "P" button on an editing panel only controls display for that panel.<br> <br>To set the default display mode for the whole programme use Options, Parameter Display and select:<br> <br><br>>  <br>> <br>> | HINT | Numeric values underlined with dots |<br>> | --- | --- |<br>> | SHOWN | Shown in &NAME format |<br>> <br>> | ![](./Storage/primer-23/primer_links/sect_5/parameter/param3d.png) |
 | --- | --- |
 
 #####  Entering parameters in edit panel data fields.
@@ -677,7 +677,7 @@ The editing panel for the new parameter is then mapped, and you are invited to u
 
 To change a parameterised value to a plain number simply rub out the &NAME (or underlined) field, and type in a simple number. This will break the association between parameter and data field, even if the number you type in is the same as the parameter's value.
 
-| "Implicit" parameters  <br>Ansys LS-DYNA permits the following syntax in any data field: &lt; *expression* &gt;<br> <br>Where  *expression*  can be any parameter definition that would constitute a valid \*PARAMETER\_EXPRESSION. Here is an example on the \*DATABASE\_BINARY\_D3PLOT card where the timestep dt has been set to the termination time \* 0.01.<br> <br>![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3h.png)<br> <br>The rules for this in Ansys LS-DYNA are:<br><ul> <li>The format of the keyword line must be comma-separated. </li> <li>The expression must be valid and enclosed in &quot;&lt;&quot; ... &quot;&gt;&quot;. </li> <li>It must only refer to other parameters if they have previously been defined. </li> <li>The type (floating or integer) of the expression is not explicit. </li> </ul> <br>The effect of using this syntax is identical to defining a \*PARAMETER\_EXPRESSION   *name*  using this expression, and referring to it by & *name*  . |
+| "Implicit" parameters  <br>Ansys LS-DYNA permits the following syntax in any data field: &lt; *expression* &gt;<br> <br>Where  *expression*  can be any parameter definition that would constitute a valid \*PARAMETER\_EXPRESSION. Here is an example on the \*DATABASE\_BINARY\_D3PLOT card where the timestep dt has been set to the termination time \* 0.01.<br> <br>![](./Storage/primer-23/primer_links/sect_5/parameter/param3h.png)<br> <br>The rules for this in Ansys LS-DYNA are:<br><ul> <li>The format of the keyword line must be comma-separated. </li> <li>The expression must be valid and enclosed in &quot;&lt;&quot; ... &quot;&gt;&quot;. </li> <li>It must only refer to other parameters if they have previously been defined. </li> <li>The type (floating or integer) of the expression is not explicit. </li> </ul> <br>The effect of using this syntax is identical to defining a \*PARAMETER\_EXPRESSION   *name*  using this expression, and referring to it by & *name*  . |
 | --- |
 | How implicit parameters are handled inside PRIMER  <br>In the following discussion the shorthand &lt;...&gt; refers to a valid expression inside "&lt;" and "&gt;" characters, for example &lt;time + dt / 2.0&gt; .<br> <br>**During keyword input:**<br><ul> <li>When the <span class="courierbold">&lt; <i>... </i>&gt; </span>syntax is encountered <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->creates an internal <span class="courierbold">*PARAMETER_EXPRESSION </span>definition that uses this string, of type <b>real </b>. <br> <br> </li> <li>This internal definition is given a name <span class="courierbold">#P <i>nnn </i> </span>where <i>nnn </i>is a unique integer starting from 1, and it is marked as being &quot;implicit&quot;. This nomenclature is deliberately chosen to be an illegal parameter name in Ansys LS-DYNA in order to distinguish it from normal parameters inside <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->, and the differences between it and a normal parameter are described <a href="parameters.md#impl_diffs">below</a>. <br> <br> </li> <li>The data field is given the value of this expression, and is associated with the internal parameter. If the data field is in fact integer the nearest integer to the floating point (real) value will be used. <br> <br> </li> <li>If two of more &lt;...&gt; data fields use the same expression <!-- #BeginLibraryItem &quot;/Library/primer.lbi&quot; -->PRIMER <!-- #EndLibraryItem -->will amalgamate them into a single parameter definition. However if the contents of a data field are subsequently edited the revised parameter in that field will become unique and other fields which originally shared the common definition will be left unchanged. </li> </ul> <br>**When editing values interactively in editing panels.**<br><ul> <li>The expression <span class="courierbold">&lt;...&gt; </span>rather than a reference to the parameter ( <span class="courierbold">&amp; <i>name </i> </span>) is shown. <br> <br> </li> <li>The expression can be changed at will by simply typing in changes, alternatively by hovering over the expression the underlying parameter can be selected for editing. <br> <br> </li> <li>A new implicit expression can be created by replacing a number with an expression in <span class="courierbold">&lt;...&gt; </span> <br> <br> </li> <li>An implicit expression can be deleted by replacing it with an explicit number, or by a conventional <span class="courierbold">&amp; <i>name </i> </span>parameter reference. </li> </ul> <br>**During keyword output**<br><ul> <li>The expression <span class="courierbold">&lt;...&gt; </span>is output in the relevant data field, and the line is converted to comma-separated format. <br> <br> </li> <li>The internal implicit parameter definition itself ( <span class="courierbold">#P <i>nnn </i> </span>) is <i> <b>not </b> </i>written out to the keyword output file. </li> </ul> |
 
@@ -685,7 +685,7 @@ To change a parameterised value to a plain number simply rub out the &NAME (or u
  
 These internal parameters are not normally shown in the top level PARAMETER editing panel, and it is necessary to turn on Show implicit parameters for them to be visible, as shown below.
  
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3g.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/param3g.png)
  
 Certain attributes of these parameters cannot be changed: they are forced to be of type \_EXPRESSION , and cannot use \_LOCAL, \_MUTABLE or \_TYPE suffices. You will observe that these buttons are greyed out for the implicit parameters in the image above.
  
@@ -710,7 +710,7 @@ To avoid possible confusion it is recommended that you do not make explicit refe
  
 These internal parameters are not normally shown in the top level PARAMETER editing panel, and it is necessary to turn on Show LS\_OPT expressions for them to be visible, as shown below.
  
-![](../Storage/primer-22-1/primer_links/sect_5/parameter/ls_opt_1.png)
+![](./Storage/primer-23/primer_links/sect_5/parameter/ls_opt_1.png)
  
 Certain attributes of these parameters cannot be changed: they cannot use \_LOCAL, \_MUTABLE or \_TYPE suffices.
  
@@ -755,7 +755,7 @@ PRIMER deals with these conflicting requirements by setting a special internal f
 * In editing panels the true value is always displayed, but in red and underlined to designate it as a special parameter.
 * On keyword output the inverse transformation is applied to the true value, and the parameter &NAME written if they still match (to within a small tolerance).
 
-| A typical editing panel field looks like this: here parameter &X1 is the node's X coordinate. The parameter popup mapped in response to hovering over the panel shows the parameter's actual value and gives a warning message about the mis-match. | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3e.png) |
+| A typical editing panel field looks like this: here parameter &X1 is the node's X coordinate. The parameter popup mapped in response to hovering over the panel shows the parameter's actual value and gives a warning message about the mis-match. | ![](./Storage/primer-23/primer_links/sect_5/parameter/param3e.png) |
 | --- | --- |
 
 The effect of editing parameterised items used inside **\*INCLUDE\_TRANSFORM** files is as follows:
@@ -773,7 +773,7 @@ For large include files this may take a significant amount of time, and the "unt
 
 This is a complex problem, which only gets worse if the same include file is used multiple times in different \*INCLUDE\_TRANSFORM statements to create multiple instances of parameterised data fields! Please contact Oasys Ltd Support for help and advice if you are having problems with this.
 
-| Using parameters for the label fields of items!!! It is best not to do this at all, or use them only if you won't change their values interactively during a PRIMER session. | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param3f.png) |
+| Using parameters for the label fields of items!!! It is best not to do this at all, or use them only if you won't change their values interactively during a PRIMER session. | ![](./Storage/primer-23/primer_links/sect_5/parameter/param3f.png) |
 | --- | --- |
 
 It is  ***\*\*\*STRONGLY\*\*\****  recommended that you do  ***not***  use parameters to define the labels of widely used items. (ie the labels of nodes, elements, parts, etc).
@@ -843,7 +843,7 @@ Card 6 is only written if FORM on card 3 = 4.
 
 Therefore if FORM is defined by a parameter, and the material card is encountered before the parameter value is known, then PRIMER 's standard approach of inserting zero and then rebuilding the card later once the parameter's true value is known will not work, because card 6 will not have beeen read. The only solution to this problem is to scan the input deck for parameter values before reading it "properly", and this can be done via  [Options](options-controls-many-aspects-of-reading-ls-dyna-files.md#opts_main) on the  [Model Read](model-read.md#32MODELREAD) panel.
 
-| ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param6a.png) | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param6b.png) |
+| ![](./Storage/primer-23/primer_links/sect_5/parameter/param6a.png) | ![](./Storage/primer-23/primer_links/sect_5/parameter/param6b.png) |
 | --- | --- |
 
 Pre-reading parameters in this way will take a bit longer, but this pre-read is much faster than the "proper" read which follows - and it is infinitely preferable to having the deck read wrongly or failing to read altogether. For this reason it is recommended that you locate parameters at the top of the master file, or in an include file that is read before other include files.
@@ -897,9 +897,9 @@ PRIMER does not currently check for a parameter being referred to on a normal da
 
 | Re-ordering parameter definitions inside PRIMER  <br>Once inside PRIMER the order in which parameters are stored is irrelevant, since the code can access internal data in any order. However it contains logic to re-order parameters to deal with the problem of a \*PARAMETER\_EXPRESSION referring to another parameter that is defined after rather than before it. It can also check whether the order shown in the parameter editing table is in fact the order in which parameters will be output. |
 | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param4a.png) <br>In this example  **parm\_me**  is a parameter expression which refers to other parameters, and it has been moved up in the list so that it is "out of order", because it refers to parameters that are now below it, resulting in its " Move " button being coloured orange as shown here. This can be resolved as follows: |
-| ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param4b.png) | ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param4bb.png) | Auto Re-order all will attempt to resort the parameter list automatically to resolve any ordering conflicts. It moves all plain (non \_EXPRESSION ) parameters to the top of the list, and then tries to re-order any remaining \_EXPRESSION definitions so that they only refer to their predecessors. It also resorts the list so that the order in this panel is the same as the order in which parameters will be output and hence reread.<br> <br>Check order checks the order of parameters and reports any discrepancies but does not actually reorder anything. It gives options to list details of ordering problems and also to reorder if required. |
-| ![](../Storage/primer-22-1/primer_links/sect_5/parameter/param4c.png) | **Green** means that the order is OK | Move provides a manual alternative to the above. Click on this button, and then use the keyboard up or down arrow keys to move this row up or down.<br> <br>Once the ordering conflict has been resolved the button will go green if it is in a correct position that can be achieved during keyout, or blue if you have resolved the sequence error but the position you have moved it to will not be achieved during keyout. |
+| ![](./Storage/primer-23/primer_links/sect_5/parameter/param4a.png) <br>In this example  **parm\_me**  is a parameter expression which refers to other parameters, and it has been moved up in the list so that it is "out of order", because it refers to parameters that are now below it, resulting in its " Move " button being coloured orange as shown here. This can be resolved as follows: |
+| ![](./Storage/primer-23/primer_links/sect_5/parameter/param4b.png) | ![](./Storage/primer-23/primer_links/sect_5/parameter/param4bb.png) | Auto Re-order all will attempt to resort the parameter list automatically to resolve any ordering conflicts. It moves all plain (non \_EXPRESSION ) parameters to the top of the list, and then tries to re-order any remaining \_EXPRESSION definitions so that they only refer to their predecessors. It also resorts the list so that the order in this panel is the same as the order in which parameters will be output and hence reread.<br> <br>Check order checks the order of parameters and reports any discrepancies but does not actually reorder anything. It gives options to list details of ordering problems and also to reorder if required. |
+| ![](./Storage/primer-23/primer_links/sect_5/parameter/param4c.png) | **Green** means that the order is OK | Move provides a manual alternative to the above. Click on this button, and then use the keyboard up or down arrow keys to move this row up or down.<br> <br>Once the ordering conflict has been resolved the button will go green if it is in a correct position that can be achieved during keyout, or blue if you have resolved the sequence error but the position you have moved it to will not be achieved during keyout. |
 | **Blue** means it is not in keyout order, but is OK. |
 | **Orange** means it is out of order and is an error. |
 

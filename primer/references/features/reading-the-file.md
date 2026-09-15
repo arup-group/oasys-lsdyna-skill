@@ -6,7 +6,7 @@ Pressing APPLY will start reading the file. How the file is read is dependant on
  
 PRIMER will read the first 50 lines of the file and put a preview on the screen.
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_4.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_4.gif)
  
 #####  XML connection file
 
@@ -44,19 +44,19 @@ PRIMER will read the Master Connection File (MCF) automatically and go straight 
  
 If the file is a custom format, PRIMER will ask you a series of questions to determine the format of the file. Once the format has been determined you will be able to read the file.
 
-| Step 1: Fixed/Delimited  <br>The first step is to determine the format of the file. PRIMER will try to read 2 types of files:<br> <br>Files that have fields of fixed widths (these are like the fields in Ansys LS-DYNA keyword files that are generally 10 characters wide).<br> <br>Files that have fields that are separated by a specific character such as a comma. An example of a file like this would be a CSV file produced by a spreadsheet program.<br> <br>PRIMER shows a preview of the file at the bottom of the panel. You can use this to view the file and determine which of the 2 formats best describes the file.<br> <br>Once you have chosen the format that best describes your file press NEXT &gt; to go onto the [next step](reading-the-file.md#step2). CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_5.gif) |
+| Step 1: Fixed/Delimited  <br>The first step is to determine the format of the file. PRIMER will try to read 2 types of files:<br> <br>Files that have fields of fixed widths (these are like the fields in Ansys LS-DYNA keyword files that are generally 10 characters wide).<br> <br>Files that have fields that are separated by a specific character such as a comma. An example of a file like this would be a CSV file produced by a spreadsheet program.<br> <br>PRIMER shows a preview of the file at the bottom of the panel. You can use this to view the file and determine which of the 2 formats best describes the file.<br> <br>Once you have chosen the format that best describes your file press NEXT &gt; to go onto the [next step](reading-the-file.md#step2). CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_5.gif) |
 | --- | --- |
 
-| Step 2: Comment lines  <br>The second step is to determine if any lines in the file should be treated as comment lines and skipped. This is like comment lines in a Ansys LS-DYNA keyword file that can begin with a '$' character.<br> <br>Once you have chosen the comment setting press NEXT &gt; to go onto the [next step](reading-the-file.md#step3). To go back to the [previous step](reading-the-file.md#step1) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_6.gif) |
+| Step 2: Comment lines  <br>The second step is to determine if any lines in the file should be treated as comment lines and skipped. This is like comment lines in a Ansys LS-DYNA keyword file that can begin with a '$' character.<br> <br>Once you have chosen the comment setting press NEXT &gt; to go onto the [next step](reading-the-file.md#step3). To go back to the [previous step](reading-the-file.md#step1) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_6.gif) |
 | --- | --- |
 
-| Step 3: Skip strings and characters  <br>The third step is to determine if any lines in the file that contain specific strings or characters should be skipped.<br> <br>Once you have chosen the string and character settings press NEXT &gt; to go onto the [next step](reading-the-file.md#step4). To go back to the [previous step](reading-the-file.md#step2) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_7.gif) |
+| Step 3: Skip strings and characters  <br>The third step is to determine if any lines in the file that contain specific strings or characters should be skipped.<br> <br>Once you have chosen the string and character settings press NEXT &gt; to go onto the [next step](reading-the-file.md#step4). To go back to the [previous step](reading-the-file.md#step2) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_7.gif) |
 | --- | --- |
 
-| Step 4: Continuation lines  <br>The fourth step is to determine if spotweld data can continue onto a second line. It is strongly recommended that you have one line per spotweld. However, if spotweld data can continue on to a second line PRIMER will try to read it with these settings.<br> <br>Once you have chosen the continuation setting press NEXT &gt; to go onto the [next step](reading-the-file.md#step5). To go back to the [previous step](reading-the-file.md#step3) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_8.gif) |
+| Step 4: Continuation lines  <br>The fourth step is to determine if spotweld data can continue onto a second line. It is strongly recommended that you have one line per spotweld. However, if spotweld data can continue on to a second line PRIMER will try to read it with these settings.<br> <br>Once you have chosen the continuation setting press NEXT &gt; to go onto the [next step](reading-the-file.md#step5). To go back to the [previous step](reading-the-file.md#step3) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_8.gif) |
 | --- | --- |
 
-| Step 5: Choosing delimiters  <br>The fifth step is only done if you are reading a file in [delimited format](reading-the-file.md#step1). You need to tell PRIMER what character(s) to use as field delimiters. Additionally there is a switch to treat consecutive delimiters as one delimiter. This is most commonly used when the 'space' character is used as the field delimiter. If some of the fields are separated by more than one 'space' then PRIMER will treat it as a single 'space'.<br> <br>Once you have chosen the delimiter setting press NEXT &gt; to go onto the [next step](reading-the-file.md#choosefields). To go back to the [previous step](reading-the-file.md#step4) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_9.gif) |
+| Step 5: Choosing delimiters  <br>The fifth step is only done if you are reading a file in [delimited format](reading-the-file.md#step1). You need to tell PRIMER what character(s) to use as field delimiters. Additionally there is a switch to treat consecutive delimiters as one delimiter. This is most commonly used when the 'space' character is used as the field delimiter. If some of the fields are separated by more than one 'space' then PRIMER will treat it as a single 'space'.<br> <br>Once you have chosen the delimiter setting press NEXT &gt; to go onto the [next step](reading-the-file.md#choosefields). To go back to the [previous step](reading-the-file.md#step4) press &lt; PREV. CANCEL will return you to the [main screen](CONTROL%20%20Defining%20Analysis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Control%20Cards..html#mainpanel). | ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_9.gif) |
 | --- | --- |
 
 ###### Step 6: Choosing fields
@@ -65,7 +65,7 @@ The sixth step allows you to choose which fields are which. PRIMER shows a pre
  
 **Choosing field types**
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_10.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_10.gif)
  
 The image above shows the fields that PRIMER has read. If it is incorrect you can go back and change the settings as necessary. In this example the fields are:
 
@@ -81,36 +81,36 @@ The image above shows the fields that PRIMER has read. If it is incorrect you ca
 | 8 | 71-80 | Panel ID 1 |
 | 9 | 81-90 | Panel ID 2 |
 
-| Initially all the fields are &lt;UNSET&gt; . Use the popup to change the field to the required type. For example to change field 1 to 'skip this field':<br> <br><br>| ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_10a.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_11.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_12.gif) |<br>| --- | --- | --- |<br>| Field is initially unset | Use the popup and select Skip field | Field is now set to Skip field and coloured to show it is set | |
+| Initially all the fields are &lt;UNSET&gt; . Use the popup to change the field to the required type. For example to change field 1 to 'skip this field':<br> <br><br>| ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_10a.gif) | ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_11.gif) | ![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_12.gif) |<br>| --- | --- | --- |<br>| Field is initially unset | Use the popup and select Skip field | Field is now set to Skip field and coloured to show it is set | |
 | --- |
 
 Repeat this until all the fields have been set to the required values. You **MUST** define the X coord , Y coord , Z coord and Part ID s.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_4.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_4.gif)
  
 **Choosing field widths**
  
 In the example image below the fields are not just 10 columns wide. We need to change the column widths.
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_13.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_13.gif)
  
 Field 1 should be columns 1-5, not 1-10. To change this you can either type in the new column numbers in the blue boxes or you can drag the columns to the correct sizes. The yellow bars enable you to drag the columns by clicking on one of them with the mouse and dragging it to the left or right until it is in the correct place.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_14.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_14.gif)
 
 Repeat this process until all the fields are the correct width
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_19.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_19.gif)
  
 The [field types can then be chosen](reading-the-file.md#choosefieldtype)as necessary.
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_20.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_20.gif)
  
 ###### Step 7: Warnings and errors after reading the file
  
 After PRIMER has finished reading the spotweld file it will display a listing panel giving information on the welds it has not been able to create.
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/read_weld_21.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/read_weld_21.gif)
  
 PRIMER will also do a check of all the welds that it has created to see if any are [too close together](other-options-used-when-checkingcreating-connections.md#otheroptions) (the pitch between the welds is too small).
 

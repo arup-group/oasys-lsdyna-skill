@@ -9,7 +9,7 @@ For each part in the model all the fields given in the [standard headers above]
 * Non structural mass added to shell parts (LS 960 and greater only)
 * The total mass
 
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_write.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_write.gif)
  
 ### 
 

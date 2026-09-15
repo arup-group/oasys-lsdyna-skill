@@ -1,6 +1,6 @@
 ﻿##  CONNECTIONS
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/connection/tools_connection.png) | A connection is a new PRIMER entity introduced in version 9.3. It allows PRIMER to create/modify/delete **mesh independent** spotwelds, bolt connections and adhesive runs. Spotwelds consist of beams or hexahedral elements tied to the panels using a tied contact. Bolts are rigid connections between panels. Adhesives consist of runs of hexahedral elements tied to the panels using a tied contact. <br>The Connection panel is used for all aspects of managing connection data. |
+| ![](./Storage/primer-23/primer_links/sect_6/connection/tools_connection.png) | A connection is a new PRIMER entity introduced in version 9.3. It allows PRIMER to create/modify/delete **mesh independent** spotwelds, bolt connections and adhesive runs. Spotwelds consist of beams or hexahedral elements tied to the panels using a tied contact. Bolts are rigid connections between panels. Adhesives consist of runs of hexahedral elements tied to the panels using a tied contact. <br>The Connection panel is used for all aspects of managing connection data. |
 | --- | --- |
 
 The connection entity allows PRIMER to store all of the information that makes up the appropriate connection entity. That means that for example, it is possible at any time to change a beam spotweld into a solid spotweld or a bolt. As PRIMER knows what entities make up the connection it can delete the old entities and make new ones as required. 
@@ -19,11 +19,11 @@ The panel allows you to create, review, modify and delete connections. A 'connec
 
 The following options are available from the Connection panel.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/connection_options.PNG)
+![](./Storage/primer-23/primer_links/sect_6/connection/connection_options.PNG)
 
 There are several [options](connection-options.md#options) that control how connections work in PRIMER.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/connection_tied_cont_opts.PNG)
+![](./Storage/primer-23/primer_links/sect_6/connection/connection_tied_cont_opts.PNG)
 
 To achieve realized status a connection must be checked using the contact checker. Normally this is done automatically before the table is displayed. Furthermore, if anything is changed in the model the check will be fully recalculated. For very large models with multiple contact definitions this may be slow. The user may elect to postpone the connectivity check by using one of the less rigorous options. In the case of no (contact) check a simple geometric check is made, there is no guarantee that the weld will tie or even be present in a tied contact! Hence the connections will be displayed as blue - provisionally realized.
 

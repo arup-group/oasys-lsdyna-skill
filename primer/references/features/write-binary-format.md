@@ -2,7 +2,7 @@
 
 Binary format provides a way of both reducing file sizes and speeding up input and output. 
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_3_2l.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_3_2l.png)
 
 **Description of binary format files**
  

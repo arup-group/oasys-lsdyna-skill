@@ -2,7 +2,7 @@
 
 Selecting the WebGL command in the Images menu starts the WebGL menu.
 
-![](../Storage/primer-22-1/primer_links/sect_8/images/webgl_menu.png)
+![](./Storage/primer-23/primer_links/sect_8/images/webgl_menu.png)
 
 Give the name of the HTML file to write by either using the File textbox or using the Select button. 
 WebGL files can contain a large amount of data for big models so PRIMER tries to reduce the file size, compressing the coordinates by rounding them to a tolerance. This is given by the Coord tol textbox. In the above examples nodal coordinates will be rounded to 0.1 units. If your model is in metres rather than millimetres this value may need to be adjusted. Increasing the value will give smaller file sizes but may alter the visual appearance of the model.

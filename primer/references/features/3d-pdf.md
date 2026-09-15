@@ -2,7 +2,7 @@
 
 Three dimensional PDF files can be written by selecting 3D PDF from the Images option in the main menu. The following screen will be displayed.
 
-![](../Storage/primer-22-1/primer_links/sect_8/images/3DPDF.gif)
+![](./Storage/primer-23/primer_links/sect_8/images/3DPDF.gif)
 
 Input a file name in the File box or select a file using the file selector (folder icon). Select the parts to be exported to the 3D PDF file from the object menu and choose an orientation and paper size. Note, at present, only parts consisting of SOLID, SHELL, THICK SHELL or BEAM (true sections) elements will be exported.
 

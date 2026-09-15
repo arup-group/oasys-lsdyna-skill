@@ -26,23 +26,23 @@ CONTACT\_AUTOMATIC\_GENERAL tries to capture beam on beam, beam to shell edge an
 
 As PRIMER performs a one off calculation, it does not have to be as computationally efficient as Ansys LS-DYNA. PRIMER offers an enhanced method setting on the program options panel.
 
-![](../Storage/primer-22-1/notes-on-contact-penetration-checking-2022-09-28.png)
+![](./Storage/primer-23/notes-on-contact-penetration-checking-2022-09-28.png)
 
 Contact\_automatic\_general misses penetrations as the beams diverge.
 
-![](../Storage/primer-22-1/notes-on-contact-penetration-checking-2022-09-28-1.png)
+![](./Storage/primer-23/notes-on-contact-penetration-checking-2022-09-28-1.png)
 
 Enhanced beam on beam contact captures them.
 
-![](../Storage/primer-22-1/notes-on-contact-penetration-checking-2022-09-28-2.png)
+![](./Storage/primer-23/notes-on-contact-penetration-checking-2022-09-28-2.png)
 
 The same setting improves beam to shell contact, which the standard treatment only captures at the edge.
 
-![](../Storage/primer-22-1/notes-on-contact-penetration-checking-2022-09-28-3.png)
+![](./Storage/primer-23/notes-on-contact-penetration-checking-2022-09-28-3.png)
 
 Enhanced treatment captures beams that spear shells.
 
-![](../Storage/primer-22-1/notes-on-contact-penetration-checking-2022-09-28-4.png)
+![](./Storage/primer-23/notes-on-contact-penetration-checking-2022-09-28-4.png)
 
 > 
 > 

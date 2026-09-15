@@ -16,7 +16,7 @@ If the material, section and hourglass card for each part are kept unique , both
 
 The option Set MID on Part. Create Sect/Hgls if set will over-ride the other. The material on the part card will be set to match the (first found) material of the given name or the given material id if no name is specified. A section card will be created at the same id as the part and the gauge,etc will be updated with the given data. Similarly hourgalss cards will be created if the data is non-zero or one previously existed.
 
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_001.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_001.gif)
 
 The radio buttons enable/disable error trapping when reading the part number field. In the [example bill of materials](file-format.md#bomexample) file in the previous section the line
 
@@ -46,7 +46,7 @@ By default comment lines can begin with a $ or a #. Type the characters that you
  
 In the file preview any lines that will be treated as comments are shown in grey text instead of white text.
  
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_3.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_3.gif)
  
 #### Skipping specific lines
  
@@ -62,7 +62,7 @@ To go back to the previous step ( [comment lines](reading-a-bill-of-materials-f
  
 To go on to the next step ( [selecting delimiters](reading-a-bill-of-materials-file.md#bomdelimit)) press NEXT &gt;
  
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_5.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_5.gif)
  
 A line can be skipped that either contains a specific character or a specific string. Type the characters or strings into the blue boxes. Text is case sensitive.
  
@@ -70,7 +70,7 @@ In this example we have chosen to skip any lines that contain the string ' Bill
  
 In the file preview any lines that will be skipped because they contain specific strings or characters are shown in grey text instead of white text.
  
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_7.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_7.gif)
  
 #### Selecting delimiters
  
@@ -86,38 +86,38 @@ To go back to the previous step ( [skipping specific lines](reading-a-bill-of-m
  
 To go on to the next step ( [defining fields](reading-a-bill-of-materials-file.md#bomfields)) press NEXT &gt;
  
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_8.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_8.gif)
  
 #### Defining fields
  
 This panel enables you to choose which columns of the bill of materials to use and what the columns mean. A preview of the bill of materials is shown below.
  
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_9.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_9.gif)
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_10.gif) | The lines that are going to be skipped are shown in grey rather than white. The data is shown in columns to make it easier to read. If there are more than 10 columns a scrollbar is used to view the other columns. To be able to do anything useful PRIMER needs to know which columns you want to use and what those columns mean. This is done by using the Field popup buttons in each column. <br>The default action for each field is 'Skip field'. This can be changed by selecting any of the options from the popup. Once an action is selected the column will change colour and 'Skip field' will no longer be shown. <br>A field can be unset at any time. |
+| ![](./Storage/primer-23/primer_links/sect_6/bom/bom_10.gif) | The lines that are going to be skipped are shown in grey rather than white. The data is shown in columns to make it easier to read. If there are more than 10 columns a scrollbar is used to view the other columns. To be able to do anything useful PRIMER needs to know which columns you want to use and what those columns mean. This is done by using the Field popup buttons in each column. <br>The default action for each field is 'Skip field'. This can be changed by selecting any of the options from the popup. Once an action is selected the column will change colour and 'Skip field' will no longer be shown. <br>A field can be unset at any time. |
 | --- | --- |
 
 For example, if the field for column A is set to be 'PID' it will be coloured dark blue as shown below.
 
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_11.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_11.gif)
 
 At least the PID and one other field must be selected. The APPLY button will not be active until this is done. Once the button is active, APPLY will start reading the file and altering the selected fields.
 
 In the following example the CAD part no, Part description, PID, Material title and gauge have been selected.
 
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_13.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_13.gif)
 
 Only the selected fields will be altered using the bill of materials. In the above example the CAD part no, Part description, Material title and gauge will all be altered as they have been selected. If only the PID and gauge were selected then only the gauge would change.
 
 There are two options to select parts from BOM file to update (see below). 'All in file' option will allow you to update all the parts which have differing information to that in BOM file and 'Subset' will enable Select PART(s). The SKETCH will sketch just the parts that will be modified by clicking APPLY . Similarly the ONLY will display only the parts that will be modified by clicking APPLY .
 
-![sketch](../Storage/primer-22-1/primer_links/sect_6/bom/sketch.gif)
+![sketch](./Storage/primer-23/primer_links/sect_6/bom/sketch.gif)
  
 #### Listing output
  
 As the Bill of materials file is read messages are copied to a listing window.
  
-![](../Storage/primer-22-1/primer_links/sect_6/bom/bom_14.gif)
+![](./Storage/primer-23/primer_links/sect_6/bom/bom_14.gif)
  
 This gives information about what the bill of materials is changing. If needed it can be saved to file by pressing the SAVE -&gt; FILE button.
  [Previous](initial-screen.md)  |  [Next](writing-a-bill-of-materials-file.md)

@@ -65,7 +65,7 @@ However there are four well known problems with this calculation method:
 1. The rotation about the Y axis, theta Y, can only be obtained in the range +/-90 degrees from the arcsin() operation.
 2. At the special case of Theta Y very close to +/-90 degrees, ie Cy = 0, the calculation of the rotations about the other two axes is ill-conditioned. To see why, here is the [Rc] matrix above with Cy = 0: 
 
-    | ![](../Storage/primer-22-1/primer_links/sect_6/dummies/gimbal_lock_eqn.png) | ![](../Storage/primer-22-1/primer_links/sect_6/dummies/gimbal_lock.png) |
+    | ![](./Storage/primer-23/primer_links/sect_6/dummies/gimbal_lock_eqn.png) | ![](./Storage/primer-23/primer_links/sect_6/dummies/gimbal_lock.png) |
     | --- | --- |
     | Clearly the arctan() operations will be upon (0/0) for both theta X and theta Z, ie undefined.<br> <br>This situation is analagous to "gimbal lock" in a 3 axis gyro-compass: the special case when the outer (X, red) and inner (Z, green) gimbal axes become co-planar with the middle (Y, blue) axis. |
 3. If rotation has taken place about more than one axis then the angles returned from this calculation will not necessarily be the same as those input, although the result of multiplying through by them to achieve a new orientation will be correct.

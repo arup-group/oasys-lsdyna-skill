@@ -1,6 +1,6 @@
 ﻿###  Dragging the Cut-Section
  
-![](../Storage/primer-22-1/dragging-the-cut-section-2022-08-03.png)Once the cut-section has been defined it can be moved to a new position and orientation by dragging with the mouse.
+![](./Storage/primer-23/dragging-the-cut-section-2022-08-03.png)Once the cut-section has been defined it can be moved to a new position and orientation by dragging with the mouse.
  
 Drag (D key) Either clicking on the button, or using the D keyboard short-cut invokes this mode.
  
@@ -12,7 +12,7 @@ The Cut-section panel acquires control of the mouse (the cursor symbol changes t
 | Middle | Rx | Rotates the plane about its local XX axis |
 | Right | Ry | Rotates the plane about its local YY axis |
 
-| More drag options...<br> <br>This gives access to a more complex set of options for dragging the section. You need to choose:<br> <ul style="font-size: 14.6667px;"> <li>Drag mode: either translate or rotate</li> <li>Drag coordinate system: section local or global</li> </ul> <br>Mouse buttons then translate/rotate in/about axes:<br> <br>Left button : Tx / Rx<br>Mid button: Ty / Ry<br>Right button : Tz / Rz | ![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_12.gif) |
+| More drag options...<br> <br>This gives access to a more complex set of options for dragging the section. You need to choose:<br> <ul style="font-size: 14.6667px;"> <li>Drag mode: either translate or rotate</li> <li>Drag coordinate system: section local or global</li> </ul> <br>Mouse buttons then translate/rotate in/about axes:<br> <br>Left button : Tx / Rx<br>Mid button: Ty / Ry<br>Right button : Tz / Rz | ![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_12.gif) |
 | --- | --- |
 
 #### How mouse motion is interpreted when dragging 

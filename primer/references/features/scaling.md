@@ -1,6 +1,6 @@
 ﻿####  Scaling
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/airbag/postion_scale_glob.gif) | ![](../Storage/primer-22-1/primer_links/sect_6/airbag/postion_scale_n1n2n3gif.gif) |
+| ![](./Storage/primer-23/primer_links/sect_6/airbag/postion_scale_glob.gif) | ![](./Storage/primer-23/primer_links/sect_6/airbag/postion_scale_n1n2n3gif.gif) |
 | --- | --- |
 | Scaling using global axes | Scaling using local axes |
 

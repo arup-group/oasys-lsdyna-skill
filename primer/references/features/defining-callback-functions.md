@@ -4,7 +4,7 @@ Callback functions (onClick, onChange, etc.) can be assigned to the window and w
 
 For example to set the onClick property of a widget so it calls a function called pressed:
 
-![](../Storage/primer-22-1/project-common-topics/js_gui_builder/callback.png)
+![](./Storage/primer-23/project-common-topics/js_gui_builder/callback.png)
 
 This function then needs to be defined in your script:
 

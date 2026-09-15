@@ -1,6 +1,6 @@
 ﻿###  Options for Orient
 
-![](../Storage/primer-22-1/options-for-orient/options-for-orient-2023-11-22-3.png)
+![](./Storage/primer-23/options-for-orient/options-for-orient-2023-11-22-3.png)
 
 The Save Orient settings button saves the following options to the oa\_pref file.
 
@@ -28,6 +28,6 @@ Orient constraint with node. With this option orientation of a node(s) will move
 
 The following options apply for copy orient
 
-![](../Storage/primer-22-1/options-for-orient/options-for-orient-2023-11-22-2.png)
+![](./Storage/primer-23/options-for-orient/options-for-orient-2023-11-22-2.png)
 
 [Previous](orient-in-a-local-system.md)  |  [Next](translate-shifting-by-dx-dy-dz.md)

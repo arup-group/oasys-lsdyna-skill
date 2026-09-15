@@ -8,7 +8,7 @@ Next, select the manufacturer's design position for the various assemblies requi
 
 Specify the default initial positions for the seat back angle, seat base tilt, and head restraint height to be applied when the model is loaded.
 
-![](../Storage/primer-22-1/seat-pos-seat-model-input/seat-pos-seat-model-input-2025-04-22.png)
+![](./Storage/primer-23/seat-pos-seat-model-input/seat-pos-seat-model-input-2025-04-22.png)
 
 Once all the inputs are provided, Seat Part Set Input&gt;&gt; gets activated. Click it to proceed to the next panel.
 [Previous](seat-pos-select-a-regulation.md)  |  [Next](seat-pos-seat-part-node-set-input.md)

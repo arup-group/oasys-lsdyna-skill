@@ -7,7 +7,7 @@ Keeping this in mind, PRIMER now automatically greys out these fields if it dete
 Users can now edit multiple ply values at the same time by using the "ctrl" and "shift" buttons and clicking on the layer buttons. Now any value set on any of the selected plys is automatically copied over to all selected layers.
  
 This functionality is available on the PART, (T)SHELL and COMPOSITE\_LAYUP panels.
- ![](../Storage/primer-22-1/primer_links/sect_6/composite/composite_30.png)
+ ![](./Storage/primer-23/primer_links/sect_6/composite/composite_30.png)
 ### 
 
 [Previous](composites-graphics-options.md)  |  [Next](connections.md)

@@ -1,6 +1,6 @@
 ﻿####  Point Creation and Editing
 
- ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_7.gif)
+ ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_7.gif)
  A title will be generated automatically, but you can supersede this with your own.
 Points do not have labels
  

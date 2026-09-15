@@ -1,6 +1,6 @@
 ﻿####  Additional Options for Parts
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/mod_part.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/mod_part.gif)
 
 Additionally with this method part properties and geometries may be compared by using the part compare function, see
 
@@ -10,16 +10,16 @@ Geometries This function will run a contact type check to detect gaps (using def
 
 These options enable the user to readily identify parts which have been changed as result of change to another keyword, such as \*SECTION or \*NODE.
 
-| ![](../Storage/primer-22-1/primer_links/sect_3/images/mod_6.gif) | ![](../Storage/primer-22-1/primer_links/sect_3/images/mod_7.gif) |
+| ![](./Storage/primer-23/primer_links/sect_3/images/mod_6.gif) | ![](./Storage/primer-23/primer_links/sect_3/images/mod_7.gif) |
 | --- | --- |
 
 For parts with property differences, the Parts -&gt; table function will give a detailed description.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/mod_8.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/mod_8.gif)
 
 For parts with geometric differences, the Parts -&gt; geom function will invoke a display where the difference can be contoured. See
 . This must be dismissed to return to the tree viewer.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/mod_9.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/mod_9.gif)
 
 [Previous](comparing-one-model-to-another-model.md)  |  [Next](additional-options-for-connections.md)

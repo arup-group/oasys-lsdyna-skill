@@ -23,15 +23,15 @@ Boxes are used to bound the limits of other items, for example a contact may be 
  
 Boxes use unique labels and, although part of the **\* DEFINE**  keyword, their labels do not clash with other \* DEFINE\_xxx entities. For example it is legal to have **(\* DEFINE\_ ) BOX**     ****   **#1** and **(\* DEFINE\_ ) CURVE #1.**
 
-| This figure shows the main menu for the editing of box definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_box_0.gif) |
+| This figure shows the main menu for the editing of box definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/fig_box_0.gif) |
 | --- | --- |
 
-| CREATE Making a new box definition.  <br>This figure shows the basic CREATE / UPDATE  BOX panel.<br> <br><br>| **Methods of defining box coordinates:**<br> <br><br>| **Corner Nodes:** | The box can be defined in terms of corner nodes in the current target model. In this example the box does not use corner nodes: **&lt;none&gt;** is displayed in the button field. <br>A value for each node can either be typed in directly or chosen via the associated popup window (i.e. screen picking). |<br>| --- | --- |<br>| **PICK 2 NODES** | Instead of defining each node separately, both nodes can be screen-picked together. |<br>| **MIN / MAX COORDINATES** | The minimum and maximum X, Y and Z coordinates are displayed at the bottom of the basic editing panel. These numbers can be typed in directly if required. | | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_box_1a.gif) |<br>| --- | --- | |
+| CREATE Making a new box definition.  <br>This figure shows the basic CREATE / UPDATE  BOX panel.<br> <br><br>| **Methods of defining box coordinates:**<br> <br><br>| **Corner Nodes:** | The box can be defined in terms of corner nodes in the current target model. In this example the box does not use corner nodes: **&lt;none&gt;** is displayed in the button field. <br>A value for each node can either be typed in directly or chosen via the associated popup window (i.e. screen picking). |<br>| --- | --- |<br>| **PICK 2 NODES** | Instead of defining each node separately, both nodes can be screen-picked together. |<br>| **MIN / MAX COORDINATES** | The minimum and maximum X, Y and Z coordinates are displayed at the bottom of the basic editing panel. These numbers can be typed in directly if required. | | ![](./Storage/primer-23/primer_links/sect_5/define/fig_box_1a.gif) |<br>| --- | --- | |
 | --- |
 
 Note that the coordinates of a box are independent of the methods used to define them. For example using nodes, by either method above, only extracts the coordinates of the nodes, and they do not become part of the box definition.
 
-| *DEFINE_BOX options: _ADAPTIVE, _COARSEN, _DRAWBEAD, _SPH, _LOCAL  <br><br>| ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_box_opts.gif) | The various sub-types of box may be selected in the editor above.<br> <br>The data entry rows will change accordingly. This example shows the \_DRAWBEAD data. |<br>| --- | --- | |
+| *DEFINE_BOX options: _ADAPTIVE, _COARSEN, _DRAWBEAD, _SPH, _LOCAL  <br><br>| ![](./Storage/primer-23/primer_links/sect_5/define/fig_box_opts.gif) | The various sub-types of box may be selected in the editor above.<br> <br>The data entry rows will change accordingly. This example shows the \_DRAWBEAD data. |<br>| --- | --- | |
 | --- |
 
 The \_LOCAL option allows you to specify a local coordinate system to create the DEFINE\_BOX definition in. With this active, the max/min coord values will all apply in the local coordiante system rather than the global coordinate system. The local coordinate can be specified by typing in values defining the vectors of the local coordinate system, or by selecting 3 nodes.
@@ -40,7 +40,7 @@ DRAG "Dragging" a box size and shape interactively with the cursor.
 
 | Once a box has been given some initial dimensions the cursor can be used to modify the dimensions and position of the box. <br>When DRAG is selected the current box definition is sketched, and 27 "handles" are added to it (8 corners, 12 edges, 6 faces and 1 centre). Each can be picked with the cursor and used to drag the relevant dimension(s). |
 | --- |
-| ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_box_1c.gif) |
+| ![](./Storage/primer-23/primer_links/sect_5/define/fig_box_1c.gif) |
 
 | The dragging "handles" are: |
 | --- |
@@ -49,7 +49,7 @@ DRAG "Dragging" a box size and shape interactively with the cursor.
 | **HANDLE\_2** (12: 1 @ each box edge) | Any mouse button will allow an edge of the box to translated in the plane normal to the edge line. The coordinate box parallel to the edge will be locked out and turned red. |
 | **HANDLE\_3** (8: 1 @ each box vertex) | Any mouse button will allow the corner of a box to be moved in any of the three axis directions |
 
-| BOX\_&lt;options&gt; <br>The radio buttons allow the selection the options \_ADAPTIVE, \_COARSEN, \_DRAWBEAD and \_SPH . | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_box_1d.gif) |
+| BOX\_&lt;options&gt; <br>The radio buttons allow the selection the options \_ADAPTIVE, \_COARSEN, \_DRAWBEAD and \_SPH . | ![](./Storage/primer-23/primer_links/sect_5/define/fig_box_1d.gif) |
 | --- | --- |
 
 ####  COPY Copy existing box(es) to make a new box(es)
@@ -95,7 +95,7 @@ To change the label of an individual box it may be simpler just to [MODIFY](defi
 
 | Visualising Boxes |
 | --- |
-| Boxes may be drawn by turning their display on in the ENTity Viewing menu. <br><br> <br>They can also be drawn via the [SKETCH](define-transform.md#sketch) options above. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_box_3.gif) |
-| They may also be drawn in other contexts (for example contacts) if their display as "associated data" in the ENTity Viewing menu is selected. | ![](../Storage/primer-22-1/primer_links/sect_5/define/fig_box_4.gif) |
+| Boxes may be drawn by turning their display on in the ENTity Viewing menu. <br><br> <br>They can also be drawn via the [SKETCH](define-transform.md#sketch) options above. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_box_3.gif) |
+| They may also be drawn in other contexts (for example contacts) if their display as "associated data" in the ENTity Viewing menu is selected. | ![](./Storage/primer-23/primer_links/sect_5/define/fig_box_4.gif) |
 
 [Previous](define-alebag-inflator.md)  |  [Next](define-connection-properties.md)

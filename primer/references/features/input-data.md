@@ -22,9 +22,9 @@ Points are sorted into types based on the first letters of their name:
 
 Once read, PRIMER will display the data on screen. PRIMER calculates a perimeter that encloses all of the data points. The shape of the perimeter can be modified using the arrow buttons located in the calculation parameters section (the number is the maximum allowable length of perimeter section and can be modified by clicking the middle button).
 
-![](../Storage/primer-22-1/input-data/input-data-2024-04-09-2.png)
+![](./Storage/primer-23/input-data/input-data-2024-04-09-2.png)
 
-![](../Storage/primer-22-1/input-data/input-data-2024-04-09-1.png)
+![](./Storage/primer-23/input-data/input-data-2024-04-09-1.png)
 
 ****  .
 

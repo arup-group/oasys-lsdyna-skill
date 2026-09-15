@@ -4,13 +4,13 @@
 
 ## 
 
-![](../Storage/primer-22-1/primer_links/sect_5/define/spot_failure_resultants_menu.gif)
+![](./Storage/primer-23/primer_links/sect_5/define/spot_failure_resultants_menu.gif)
 
 This can be edited through the create and modify buttons shown above.
 
 There is only one occurance of the DEFINE\_SPOTWELD\_FAILURE\_RESULTANTS in each model. The following panel is used to edit the keyword:
 
-![](../Storage/primer-22-1/primer_links/sect_5/define/spot_failure_resultants.gif)
+![](./Storage/primer-23/primer_links/sect_5/define/spot_failure_resultants.gif)
 
 Enter the values in the relevant boxes, and hit the "+" button to add a row, or the "X" button to delete a row.
 

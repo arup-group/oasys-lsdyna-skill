@@ -14,7 +14,7 @@ A mechanism is positioned by any combination of these modes, and when it is sati
 
 Set colour by assembly temporarily changes the colours used in the graphics so that this mechanism's assemblies are drawn in the standard PRIMER colour sequence, and the rest of the model in light grey. This is automatically switched off when you leave mechanism positioning.
  
-![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_10.png)
+![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_10.png)
 
 Note that this example contains a Dummy model constrained to the parent seat mechanism. The Assembly names are indented to the right a little to emphasise that they are "children". The "(R)" against "Lower Torso" denotes that it is the Dummy's root assembly.
  
@@ -32,7 +32,7 @@ During Mechanism positioning the cursor is always active for picking and draggin
 
 The difference between these two dragging modes is illustrated using the steering and suspension example in the images below.
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_drag_2.png) | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_drag_1.png) |
+| ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_drag_2.png) | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_drag_1.png) |
 | --- | --- |
 | **Left mouse:** a virtual point is created at the projection of the mouse position onto the assembly, and motion is applied at that point.<br> <br>Therefore in this example motion up and down at the green point will swivel the wheel in the opposite way to similar motion at the yellow point.<br> <br>This intuitive since it is like grabbing and pushing the assembly at the cursor location, and means that both translational and rotational motion can be applied, but it does make the result more variable and - obviously - sensitive to the initial mouse location. | **Right mouse** : motion is always applied at the assembly C of G, regardless of the position of the mouse inside the assembly.<br> <br>Therefore something which swivels, such as a wheel, may move in a direction that is counter-intuitive given the current mouse location, as motion will always be the same regardless of where on the wheel the mouse is located.<br> <br>This is the pre V11.1 behaviour and in most mechanisms, where motion is constrained by connectivity, it gives a satisfactory result. It is retained to permit users to continue to use the "old" method. |
 

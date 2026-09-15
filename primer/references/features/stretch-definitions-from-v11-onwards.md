@@ -8,7 +8,7 @@ In the diagram here the blue and green blocks are mechanism assemblies, while th
 
 The structure being stretched does not have to be a simple spring, it can be of arbitrary complexity.
 
-![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_11a.png)
+![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_11a.png)
 
 #####  Defining a Stretch definition
 
@@ -26,7 +26,7 @@ In this case only nodes N1 and N2 are defined, and only linear displacement betw
 
 In this case all three nodes at an end must be defined, and should form a well-conditioned triad capable of forming a local coordinate system with its origin, the point of fixity, at the first node. For example at end 1 the three nodes N1, N3, and N5 must be defined:
 
-![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_11.png)
+![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_11.png)
 
 If encastre fixity is required at end 2 then nodes N2, N4, N6 must form a similar local system, with its origin at N2.
 
@@ -36,9 +36,9 @@ Stretching is interpolated from the relative movements of ends 1 and 2. Translat
 
 | **Examples of how end fixity affects stretched shape.** |
 | --- |
-| **Both ends pinned** | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_12a.png) | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_12b.png) |
-| **One end pinned, one end encastre** | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_12c.png) | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_12d.png) |
-| **Both ends encastre** | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_12e.png) | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_12f.png) |
+| **Both ends pinned** | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_12a.png) | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_12b.png) |
+| **One end pinned, one end encastre** | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_12c.png) | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_12d.png) |
+| **Both ends encastre** | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_12e.png) | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_12f.png) |
 
 ######  Defining the structure to be stretched.
 
@@ -67,7 +67,7 @@ Here is an example from a real model showing how an explicitly modelled spring a
 
 A Stretch definition with pinned ends has been made between the top of the shock absorber column and the top of the tower. The structure to be stretched is the spring (red) and its bracket (blue)
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_13a.png) | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_13b.png) | ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_13c.png) |
+| ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_13a.png) | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_13b.png) | ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_13c.png) |
 | --- | --- | --- |
 | Neutral position | Wheel moved up | Wheel pulled down |
 

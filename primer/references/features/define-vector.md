@@ -12,14 +12,14 @@ These can be edited through their own specific editing panel (see below) and usi
 * [Editing](define-transform.md#modify)
 * [Deletion](Editing%20a%20Model%20Database.html#delete)
 
-| This figure shows the main menufor the editing of vector definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](../Storage/primer-22-1/primer_links/sect_5/define/vect.gif) |
+| This figure shows the main menufor the editing of vector definitions. <br>All functions have their standard meanings as given in [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions) | ![](./Storage/primer-23/primer_links/sect_5/define/vect.gif) |
 | --- | --- |
 
 ####  CREATE Making a new vector definition
  
 This shows the create/edit panel for vectors.
  
-![Edit DEFINE_VECTOR definition](../Storage/primer-22-1/primer_links/sect_5/define/vect_edit.gif)
+![Edit DEFINE_VECTOR definition](./Storage/primer-23/primer_links/sect_5/define/vect_edit.gif)
 
 ####  COPY Copy existing vector(s) to make a new vector(s)
  

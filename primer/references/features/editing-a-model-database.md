@@ -1,6 +1,6 @@
 ﻿####  Editing a Model Database
 
-| ![](../Storage/primer-22-1/primer_links/sect_3/images/datab_6.gif) |
+| ![](./Storage/primer-23/primer_links/sect_3/images/datab_6.gif) |
 | --- |
 
 In order to add entries into the database, right click on an entry in the layer above where you wish to create the new entry that would serve as a appropriate category for the entry and select ADD NEW CHILD in the popup menu. A window will appear asking you to provide information about the new entry. See the [creating and editing database entries](creating-and-editing-database-entries.md#createeditchildren)section for information about the contents of this window.

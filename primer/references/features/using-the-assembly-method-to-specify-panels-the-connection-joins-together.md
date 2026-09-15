@@ -4,10 +4,10 @@ As an alternative to the standard method (connections refer to parts or groups o
 
 Changing the action for connections
 
-| The current action for the connections table is shown in the Action field. | ![](../Storage/primer-22-1/primer_links/sect_6/connection/connection_table11.gif) |
+| The current action for the connections table is shown in the Action field. | ![](./Storage/primer-23/primer_links/sect_6/connection/connection_table11.gif) |
 | --- | --- |
 
-| Right clicking on the button will show the possible actions (shown on the right). The available options are:<br> <ul> <li> <span class="buttontext">update connection data </span>. The connection is updated with the current values in the table. </li> <li> <span class="buttontext">update &amp; remake </span>. The connection is updated with the current values in the table and then remade. </li> <li> <span class="buttontext">update and remake with repos </span>. The same as above, but the connection entity is created at the average position of the nodes associated with the connection. </li> <li> <span class="buttontext">update and remake swap layers </span>. The same as &quot;update and remake&quot;, but the layer order is reversed. This is useful for material types where the orientation of a solid element within a spotweld is important. </li> <li> <span class="buttontext">sketch (with FE entities) </span>. The connection is sketched. </li> <li> <span class="buttontext">show connection and panels </span>. Everything apart from the selected connection(s) and associated panels will be blanked. </li> <li> <span class="buttontext">Show entire weld seam </span>. All connections that use the same layers are shown. </li> <li> <span class="buttontext">delete connection </span>. The connections are deleted. This gives the option to delete both the connection itself and the FE entities, or just the connection itself, leaving the FE entities unchanged. </li> <li> <span class="buttontext">empty (delete FE entities only) </span>. The FE entities that make the connection are deleted but the connection definition is left &#39;latent&#39; </li> <li> <span class="buttontext">update &amp; write to file </span>. The connection is updated with the current values in the table and then written to file </li> <li> <span class="buttontext">convert-&gt;beamless MIG weld. </span>Converts the connection to a beamless MIG weld. </li> <li> <span class="buttontext">merge spotwelds </span>. Merges spotwelds that are close to each other. For example two 2T welds can be converted to a 3T </li> <li> <span class="buttontext">select MIG line </span>. Select all MIG welds in a line with currently selected MIG welds. </li> </ul> <br>Additionally there are options for controlling which include file the connection entity and the FE entities are in. | ![](../Storage/primer-22-1/primer_links/sect_6/connection/connection_table12.gif) |
+| Right clicking on the button will show the possible actions (shown on the right). The available options are:<br> <ul> <li> <span class="buttontext">update connection data </span>. The connection is updated with the current values in the table. </li> <li> <span class="buttontext">update &amp; remake </span>. The connection is updated with the current values in the table and then remade. </li> <li> <span class="buttontext">update and remake with repos </span>. The same as above, but the connection entity is created at the average position of the nodes associated with the connection. </li> <li> <span class="buttontext">update and remake swap layers </span>. The same as &quot;update and remake&quot;, but the layer order is reversed. This is useful for material types where the orientation of a solid element within a spotweld is important. </li> <li> <span class="buttontext">sketch (with FE entities) </span>. The connection is sketched. </li> <li> <span class="buttontext">show connection and panels </span>. Everything apart from the selected connection(s) and associated panels will be blanked. </li> <li> <span class="buttontext">Show entire weld seam </span>. All connections that use the same layers are shown. </li> <li> <span class="buttontext">delete connection </span>. The connections are deleted. This gives the option to delete both the connection itself and the FE entities, or just the connection itself, leaving the FE entities unchanged. </li> <li> <span class="buttontext">empty (delete FE entities only) </span>. The FE entities that make the connection are deleted but the connection definition is left &#39;latent&#39; </li> <li> <span class="buttontext">update &amp; write to file </span>. The connection is updated with the current values in the table and then written to file </li> <li> <span class="buttontext">convert-&gt;beamless MIG weld. </span>Converts the connection to a beamless MIG weld. </li> <li> <span class="buttontext">merge spotwelds </span>. Merges spotwelds that are close to each other. For example two 2T welds can be converted to a 3T </li> <li> <span class="buttontext">select MIG line </span>. Select all MIG welds in a line with currently selected MIG welds. </li> </ul> <br>Additionally there are options for controlling which include file the connection entity and the FE entities are in. | ![](./Storage/primer-23/primer_links/sect_6/connection/connection_table12.gif) |
 | --- | --- |
 
 #####  Converting MIG weld to beamless
@@ -16,31 +16,31 @@ PRIMER supports a [MIG beam weld](creating-spotwelds.md#spotelemtype)which is me
 
 The function convert -&gt; beamless MIG weld can be applied to a selection of conventional beam MIG welds (their status may be REALIZED or INVALID).
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_1.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/mig_1.gif)
 
 You may create a new \_OFFSET contact, add nodes to node set of an existing one which is suitable (if any is found) or just dump the nodes to a set for sorting out later.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_contact_opt.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/mig_contact_opt.gif)
 
 If the nodes are found not to tie because they are too far away you can run INCREASE SFMT TO FIX which will thicken the SURFB side of the contact iteratively until all nodes are tied.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_sfmt.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/mig_sfmt.gif)
 
 The contact alone then provides connectivity between the panels.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_2.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/mig_2.gif)
 
 If PRIMER fails to tie all nodes, you will get the following error message.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_4.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/mig_4.gif)
 
 The connections that failed to convert are left with **NOT TIED** error and **invalid** status (denoted by orange colour).
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_5.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/mig_5.gif)
 
 You can use update & remake to reform these as conventional beam MIG welds. Alternately, you may be able to get them tie by adjusting parameters on the tied contact which control the search depth, such as MAXPAR. Such tuning is beyond the scope of this function.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/mig_6.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/mig_6.gif)
 
 #####  Merging spotwelds
 
@@ -52,9 +52,9 @@ The action merge spotwelds provides an alternate method to deletion for dealing 
 
 PRIMER will then attempt to make a weld at the average position which connects all the layers involved. If this is successful the old welds will be deleted, if it fails they should be left unchanged.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/merge_1.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/merge_1.gif)
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/merge_2.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/merge_2.gif)
 
 #####  Modifying the include (layer) of connections and their FE
 

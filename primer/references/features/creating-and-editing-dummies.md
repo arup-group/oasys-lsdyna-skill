@@ -1,6 +1,6 @@
 ﻿###  Creating and Editing Dummies
 
-![](../Storage/primer-22-1/primer_links/sect_6/dummies/modify_dummy_panel.PNG)Dummy definitions contain [Assemblies](assemblycreation-and-editing.md) and [Points](point-creation-and-editing.md).
+![](./Storage/primer-23/primer_links/sect_6/dummies/modify_dummy_panel.PNG)Dummy definitions contain [Assemblies](assemblycreation-and-editing.md) and [Points](point-creation-and-editing.md).
 
 [Assemblies](assemblycreation-and-editing.md) are collections of one or more parts, which may be any permutation of rigid or deformable, that make up body components (torso, head, limbs, etc.).
 

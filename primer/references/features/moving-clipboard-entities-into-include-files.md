@@ -2,7 +2,7 @@
 
 The clipboard provides a controllable way of moving items into include files or from one include to another.
 
-![](../Storage/primer-22-1/moving-clipboard-entities-into-include-files/moving-clipboard-entities-into-include-files-2024-04-11.png)
+![](./Storage/primer-23/moving-clipboard-entities-into-include-files/moving-clipboard-entities-into-include-files-2024-04-11.png)
 
 The panel above appears when the
 Move to include file button on the main clipboard panel is pressed. There are three possible options that allow the user control;

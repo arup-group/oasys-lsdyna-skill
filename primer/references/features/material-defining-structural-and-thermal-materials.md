@@ -24,12 +24,12 @@ The structural material editing functions allow all structural material types to
  
 PRIMER does not draw materials directly, but material labels may be appended to the graphics of structural items, see VIS\_1 ; and Parts, Elements, etc. may be selected by material for subsequent graphics operations such as SKETCH and BLANK
 
-| This figure shows the main structural material editing panel. <br>[IMPORT](material-defining-structural-and-thermal-materials.md#IMPORT)permits material definitions to be "imported" from databases of material definitions to populate undefined materials in a model.<br> <br>TRANSFER opens the main window for the transfer data function (see [TRANSFER DATA](transfer-data.md#TransferData) for more detail)<br> <br>[STRESS/STRAIN](material-defining-structural-and-thermal-materials.md#stress_strain) is used to visualise stress strain curves for a material.<br> <br>The other functions currently available have their standard meanings. (see [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)).<br> <br>Switch to thermal materials toggles the editing panel (for more detail on thermal materials [see below](material-defining-structural-and-thermal-materials.md#THERMALMATERIALS)). | ![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1.gif) |
+| This figure shows the main structural material editing panel. <br>[IMPORT](material-defining-structural-and-thermal-materials.md#IMPORT)permits material definitions to be "imported" from databases of material definitions to populate undefined materials in a model.<br> <br>TRANSFER opens the main window for the transfer data function (see [TRANSFER DATA](transfer-data.md#TransferData) for more detail)<br> <br>[STRESS/STRAIN](material-defining-structural-and-thermal-materials.md#stress_strain) is used to visualise stress strain curves for a material.<br> <br>The other functions currently available have their standard meanings. (see [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)).<br> <br>Switch to thermal materials toggles the editing panel (for more detail on thermal materials [see below](material-defining-structural-and-thermal-materials.md#THERMALMATERIALS)). | ![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1.gif) |
 | --- | --- |
 
 ##### CREATE Making a new material definition
  
-![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1a.gif)
+![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1a.gif)
 
 CREATE produces this blank material creation panel, since no material type has been defined yet.
 
@@ -39,10 +39,10 @@ Indicates the types of elements which are applicable to the currently defined ma
 
 This is a brand new material definition with no previous context, therefore **&lt;Any type&gt;** is shown. Had this material been created from a **PART** of known element type the relevant type would be shown here, and only materials valid for this element type would be selectable.
 
-| Type:  <br>The material type can be defined from this button.<br> <br>The [...] browse button can be used to browse through a list of material types as shown here.<br> <br>Each material is listed with its Ansys LS-dyna material number.<br> <br>**Note on selecting a Material:**<br> <br>A Material may be selected by one of three ways:<br><ul> <li>by invoking the shortcut button and selecting the material with the mouse from the list </li> <li>by typing in the material number to the &quot;Type&quot; box, e.g. &quot;1&quot; for * <span class="courierbold">MAT_ELASTIC </span> </li> <li>by typing in the material name to the &quot;Type&quot; box, e.g. &quot;rigid&quot; for &quot;* <span class="courierbold">MAT_RIGID </span>&quot; </li> </ul> | ![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1b.gif) |
+| Type:  <br>The material type can be defined from this button.<br> <br>The [...] browse button can be used to browse through a list of material types as shown here.<br> <br>Each material is listed with its Ansys LS-dyna material number.<br> <br>**Note on selecting a Material:**<br> <br>A Material may be selected by one of three ways:<br><ul> <li>by invoking the shortcut button and selecting the material with the mouse from the list </li> <li>by typing in the material number to the &quot;Type&quot; box, e.g. &quot;1&quot; for * <span class="courierbold">MAT_ELASTIC </span> </li> <li>by typing in the material name to the &quot;Type&quot; box, e.g. &quot;rigid&quot; for &quot;* <span class="courierbold">MAT_RIGID </span>&quot; </li> </ul> | ![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1b.gif) |
 | --- | --- |
 
-| Suffix:  <br>Underneath the material type you can define the suffix.<br> <br>There are two ways of selecting suffices:<br><ul> <li>by browsing with the [...] button </li> <li>by typing in the suffix name to the &quot;Suffix&quot; box, e.g. &quot;stochastic&quot; for the &quot;* <span class="courierbold">_STOCHASTIC </span>&quot; suffix </li> </ul> | ![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1c.gif) |
+| Suffix:  <br>Underneath the material type you can define the suffix.<br> <br>There are two ways of selecting suffices:<br><ul> <li>by browsing with the [...] button </li> <li>by typing in the suffix name to the &quot;Suffix&quot; box, e.g. &quot;stochastic&quot; for the &quot;* <span class="courierbold">_STOCHASTIC </span>&quot; suffix </li> </ul> | ![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1c.gif) |
 | --- | --- |
 
 ######  ROW/COL
@@ -51,7 +51,7 @@ The data relevant to each material type is displayed in row and column format id
  
 Once a material type has been defined the panel will become populated with that material's format. For example the type \* MAT\_PLASTIC\_KINEMATIC has been chosen here:
  
-![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1d.gif)
+![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1d.gif)
  
 The material data can then be typed into the relevant boxes. The expected data type is indicated on the grey button, which also shows the acronym for that data value:
 
@@ -63,20 +63,20 @@ The material data can then be typed into the relevant boxes. The expected data t
 
 Information about each individual data component can be requested by pressing the grey data component button. For example; to request information about data component ' **E** ' (1^st^row, 3^rd^column) press the grey button with the E.
 
-| This will create a new window with detailed information about that data component showing:<ul> <li> <p align="left">A one-line description of it; </p> </li> </ul><ul> <li> <p align="left">Its current units type </p> </li> </ul><ul> <li> <p align="left">Its current value</p> </li> </ul> | ![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1e.gif) |
+| This will create a new window with detailed information about that data component showing:<ul> <li> <p align="left">A one-line description of it; </p> </li> </ul><ul> <li> <p align="left">Its current units type </p> </li> </ul><ul> <li> <p align="left">Its current value</p> </li> </ul> | ![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1e.gif) |
 | --- | --- |
 
 ###### MAT_ADD_EROSION
  
 From Ansys LS-Dyna version 950 onwards any structural material type can have "erosion" properties defined for it. This provides a range of failure parameters that can be used to delete ("erode") the elements using the material.
  
-![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1f.gif)
+![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1f.gif)
 
 By default erosion properties are not defined for a material, and this option defaults to Inactive.
 
 If it is made Active then you can EDIT it:
 
-![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1g.gif)
+![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1g.gif)
 
 \*MAT\_ADD\_PORE\_AIR , \*MAT\_ADD\_PERMEABILITY , \*MAT\_ADD\_AIRBAG\_POROSITY and \*MAT\_ADD\_FATIGUE are also available to edit in the same way as \*MAT\_ADD\_EROSION.
 
@@ -95,19 +95,19 @@ Note: Import from database... in this context differs slightly from the same c
 
 * In the top panel it imports definitions for a range materials by matching up the names of the database definitions against those in the model.
 
-![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1h.gif)
+![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1h.gif)
 Here is an example of a database containing seven materials. The stored Material Name and the Ansys LS-Dyna **Material Model**type for each are listed.
 To import a material click on its **Name**or **Model**definition, either will do, and press APPLY . This will overwrite the definition in the current create/edit panel with the imported data (only the label is left unchanged).
 
-| **FILTER OFF/ON**  **Filtering the material list**  <br>By default the filter is **OFF** , and all materials in the database are shown. | **![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1i.gif)** |
+| **FILTER OFF/ON**  **Filtering the material list**  <br>By default the filter is **OFF** , and all materials in the database are shown. | **![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1i.gif)** |
 | --- | --- |
-| If the filter is **ON** then only those materials with names containing the character string given will be shown. <br>In this example "D" has been chosen, restricting the list to just two materials.<br> <br>The filter is case-sensitive: "D" and "d" are treated as distinct. | ![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1j.gif) |
+| If the filter is **ON** then only those materials with names containing the character string given will be shown. <br>In this example "D" has been chosen, restricting the list to just two materials.<br> <br>The filter is case-sensitive: "D" and "d" are treated as distinct. | ![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1j.gif) |
 
 **Sort Alphabetically** 
 By default materials appear in the order in which they are defined in the database.
  
 Turning **Sort Alphabetically**on sorts them alphabetically by name. The sort is not case-sensitive.
- **![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_1k.gif)**
+ **![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_1k.gif)**
 
 Once all of the data has been input on the material card, press CREATE\_MATERIAL to install the material permanently in the model.
 
@@ -152,7 +152,7 @@ At the top of the menu the current material database is displayed along with an 
  
 By default the menu contains a complete list of all the materials the model contains ( sorted by Material ID ), along with the Material Name and the current material status.
  
-![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_2.gif)
  
 #####  MATCH ALL NAMES
 
@@ -212,7 +212,7 @@ Then the following materials would be matched as follows
 | NEW STEEL H350 | STEEL H350 | (Database subset of material name) |
 | STEEL H | STEEL H350 - 1 | (Material name subset of database 1 ^st^match) |
 
-| | Manual Material Import In addition to automatically selecting a material from the database the user can manually select a material from the database by using the POPUP menu attached to the status button of each material. | ![](../Storage/primer-22-1/primer_links/sect_5/material/fig_matl_3.gif) |<br>| --- | --- |<br>|  | | **SELECT FROM DATABASE...** | This option will display a list of all the materials in the current material database. |<br>| --- | --- |<br>| **EDIT...** | This option will bring up the standard create (undefined material) or edit material panel. | | |
+| | Manual Material Import In addition to automatically selecting a material from the database the user can manually select a material from the database by using the POPUP menu attached to the status button of each material. | ![](./Storage/primer-23/primer_links/sect_5/material/fig_matl_3.gif) |<br>| --- | --- |<br>|  | | **SELECT FROM DATABASE...** | This option will display a list of all the materials in the current material database. |<br>| --- | --- |<br>| **EDIT...** | This option will bring up the standard create (undefined material) or edit material panel. | | |
 | --- |
 
 #####  SKETCH Sketch elements using a material on the current image.
@@ -239,7 +239,7 @@ To change the label of an individual material it may be simpler just to MODIFY i
 
 STRESS / STRAIN lets you visualise stress / strain curves for various material types. Select the materials you wish to visualise and click Apply . A panel will open displaying the stress/strain curve(s).
 
-![](../Storage/primer-22-1/primer_links/sect_5/material/stress_strain_1.png)
+![](./Storage/primer-23/primer_links/sect_5/material/stress_strain_1.png)
 
 If displaying information for more than one material, you can click through the materials displayed in a list on the right hand side of the panel.
 
@@ -254,12 +254,12 @@ The curves displayed are constructed from the appropriate material information. 
 | THERMAL MATERIALS  <br>The thermal material editing functions allow all thermal material types to be processed.<br> <br>This is done in exactly the same way as structural materials, save that:<br><ul> <li>The panels are somewhat simpler, reflecting the less complex nature of thermal materials. </li> <li>The concept of &quot;Erosion&quot; does not exist for thermal materials. </li> <li>There is no database &quot;Import&quot; capability for thermal materials. </li> </ul> <br>PRIMER does not draw thermal materials explicitly. Like structural materials they can be SKETCH ed by drawing the parts and elements that reference them. |
 | --- |
 
-| This is the main panel for thermal material editing. <br>The functions currently available have their standard meanings. (see [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)).<br> <br>(There is no IMPORT facility for thermal materials.) | ![](../Storage/primer-22-1/primer_links/sect_5/material/fig_tmat_1.gif) |
+| This is the main panel for thermal material editing. <br>The functions currently available have their standard meanings. (see [Standard Keyword Top Level Menu Options](standard-keyword-top-level-menu-options.md#501StandardKeywordtoplevelmenuoptions)).<br> <br>(There is no IMPORT facility for thermal materials.) | ![](./Storage/primer-23/primer_links/sect_5/material/fig_tmat_1.gif) |
 | --- | --- |
 
 This is a typical thermal material editingpanel. It functions in exactly the same way as structural materials.
 
-![](../Storage/primer-22-1/primer_links/sect_5/material/fig_tmat_2.gif)
+![](./Storage/primer-23/primer_links/sect_5/material/fig_tmat_2.gif)
 
 #### Visualisation of materials
  

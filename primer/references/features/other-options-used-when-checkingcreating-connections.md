@@ -4,7 +4,7 @@ Some other options are used in the spotwelder. These are found in the Settings..
 
 #####  Spotweld options
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections.png)
 
 The **Minimum distance between connections** allows PRIMER to check the pitch between connections. If a panel has 2 connections that are closer than the minimum distance an error will be given. This is very useful to checking for bad weld positions or possible manufacturing problems.
 
@@ -67,29 +67,29 @@ HAZ simple element replace is a simpler approach to part replace. It deletes all
 
 **Add nodes around spotweld to improve mesh quality:** When ‘Add nodes around spotweld to improve mesh quality’ option is turned ON PRIMER tries to improve the quality of the mesh produced around spotwelds by adding few new nodes around it.
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-31.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-31.png)
 
 The number of new nodes added per spotweld depends upon the local geometry and the type of spotweld remeshed. For example, in the image below, nodes marked in green and blue have been added by PRIMER using this option.
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-4.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-4.png)
 
 Prerequisites for using this option: Turn '**Always align flat edge**' and '**HAZ mesh reconstruct**' options present in connection creation panel to **ON** as, ‘Add nodes around spotweld to improve mesh quality’ option works along with them.
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-31-3.png) ![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-31-2.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-31-3.png) ![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-31-2.png)
 
 Various parameters are associated with this option.
 
 Second feature line angle (SFLA): Having a larger area for remeshing can help in producing a better-quality mesh. SFLA option along with two other feature line options in the spotweld connection creation panel (SRFL and HMRFL – described above) helps in achieving that. For example, the model in the image below has two feature lines: 2° (marked in black) and 20° (marked in blue).
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-1.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-1.png)
 
 If 2° is specified for SRFL and HMRFL options, then we will get small area for remeshing. (Area marked with yellow rectangle).
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-5.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-5.png)
 
 So, to get a larger area user can specify 20° for HMRFL option and 2° for SFLA option. By doing this we will get a larger area for remeshing (area marked in green rectangle) while also preserving the (black) 2° feature line.
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-6.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-6.png)
 
 To summarize, the feature line nearest the spotweld can be preserved by specifying an appropriate angle for the SRFL and SFLA options. (2° in this case).
 
@@ -99,20 +99,20 @@ Note: HMRFL should be greater than SRFL and SFLA. Also SRFL and SFLA should be i
 
 Max flange width to skip adding nodes: If distance specified here is less than the ‘d’ (flange width where spotweld is located.) then PRIMER will skip using this option for that spotweld. PRIMER calculates the flange width near each spotweld and if that is greater than the value specified here then it skips using this option for that spotweld. We recommend using ‘Add nodes around spotweld to improve mesh quality’ option for flanges which are less then 20mm wide. The default value is 25mm.
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-7.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-7.png)
 
 **Options for adding new nodes:**There are six options available by which the user can specify how many nodes and at what location around the spotweld they will be added. The below six images shows meshes produced for a 16mm flange for all these six options. Nodes marked in black blobs are the nodes which have been added while using that option. The default is ‘4 nodes both’ as it seems to produce reasonable results for various models.
 
-| 1) 4 nodes both:<br><br>![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-8.png) | 2) 4 nodes only edges:<br><br>![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-9.png) | 3) 4 nodes only middle:<br><br>![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-10.png) |
+| 1) 4 nodes both:<br><br>![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-8.png) | 2) 4 nodes only edges:<br><br>![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-9.png) | 3) 4 nodes only middle:<br><br>![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-10.png) |
 | --- | --- | --- |
-| 4**) 2 nodes both:**<br><br>**![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-11.png)** | **5) 2 nodes only edges:**<br><br>![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-12.png) | **6) 2 nodes only middle:**<br><br>![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2023-01-19-13.png) |
+| 4**) 2 nodes both:**<br><br>**![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-11.png)** | **5) 2 nodes only edges:**<br><br>![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-12.png) | **6) 2 nodes only middle:**<br><br>![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2023-01-19-13.png) |
 
 #####  Adhesive
 options
 
 ##### 
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2022-11-25-1.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2022-11-25-1.png)
 
 Some settings for adhesive are the same as for spotwelds as described above. Adhesive specific options are:
 
@@ -124,7 +124,7 @@ More information on adhesive settings can be found in the [adhesive creation sec
 
 #####  Labelling
 
-![](../Storage/primer-22-1/other-options-used-when-checkingcreating-connections-2022-11-25-2.png)
+![](./Storage/primer-23/other-options-used-when-checkingcreating-connections-2022-11-25-2.png)
 
 The label rule for new general items and label rule for new nodes/elems/nsets/nrbs allow you to set what labels are chosen for new entities that are created.
 

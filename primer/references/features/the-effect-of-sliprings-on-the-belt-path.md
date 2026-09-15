@@ -6,14 +6,14 @@ There are two distinct geometries of slipring that need to be considered if 2d s
 > **[B-Post](slipring-case-1-b-post-type-at-shoulder-location.md#slip_case_1)**  slipring-case-1-b-post-type-at-shoulder-location.md#slip_case_1(shoulder) location, where the slipring is constrained to rotate about the transverse axis defined by its fixing bolt.
 > 
 
- [!\[\](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_21.png)](slipring-case-1-b-post-type-at-shoulder-location.md#slip_case_1)
+ [!\[\](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_21.png)](slipring-case-1-b-post-type-at-shoulder-location.md#slip_case_1)
 
 >  
 > **[Free](slipring-case-2-free-type-at-pelvis-location.md#slip_case_2)** (typically, but not exclusively, pelvis) location, where the slipring is free to adopt the average orientation of the two belt segments meeting at that point. **Meshed** (radiused) sliprings are also effectively "free", in that their orientation is not constrained by adjacent path geometry.
 >  
 
 In both cases it is important that the belt path is oriented correctly so PRIMER has specific "B-Post" and "Free" versions of element-based (\*ELEMENT\_SEATBELT\_SLIPRING) in the belt fitter.
- [!\[\](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_22.png)](slipring-case-2-free-type-at-pelvis-location.md#slip_case_2)
+ [!\[\](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_22.png)](slipring-case-2-free-type-at-pelvis-location.md#slip_case_2)
  
 **Backwards compatibility of slipring type from pre-V12 decks.**
  

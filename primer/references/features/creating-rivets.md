@@ -1,6 +1,6 @@
 ﻿#### Creating Rivets
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/rivet_1.PNG)
+![](./Storage/primer-23/primer_links/sect_6/connection/rivet_1.PNG)
  
 Rivet connections may be created in the same way as spotwelds, i.e. screen pick, node pick, nodes in set, etc
  
@@ -10,6 +10,6 @@ Preferred defaults for C\_SPR2 card can be set by preference (default\_settings\
  
 Orientation of rivet is significant, so 'Reverse Last' option is offered.
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/rivet2.PNG)
+![](./Storage/primer-23/primer_links/sect_6/connection/rivet2.PNG)
 
 [Previous](creating-spotwelds.md)  |  [Next](creating-bolts.md)

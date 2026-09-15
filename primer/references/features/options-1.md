@@ -1,11 +1,11 @@
 ﻿####  Options
 
 Controlling calculation and plotting.
- ![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_6_11_23.png)
+ ![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_6_11_23.png)
 
 #####  
 
-| 2D and 1D section cut <br>![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_6_11_22.png)Controls how 2D (shell) and 1D (beam) sections are generated when the angle between element and cutting plane is not orthogonal.<br> <ul style="font-size: 14.6667px;"> <li> <span class="buttontext">Always 90 degrees&#160;</span>gives a cross-section that cuts the element at right angles to its in-plane axis, giving a &quot;safe&quot; shape for calculating section properties.<br><br></li> <li> <span class="buttontext">Use actual angle&#160;</span>calculates the actual area cut through the element, which can be useful if you need to visualise this correctly. However this is not recommended for section property calculations as it can result in over-estimates of area and hence capacity.</li> </ul> <br>The effects of these two options on shells and beams is illustrated above for [shells](cutting-through-2d-thin-shell-elements.md#cut_2d)and [beams](cutting-through-1d-beam-elements.md#cut_1d). |
+| 2D and 1D section cut <br>![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_6_11_22.png)Controls how 2D (shell) and 1D (beam) sections are generated when the angle between element and cutting plane is not orthogonal.<br> <ul style="font-size: 14.6667px;"> <li> <span class="buttontext">Always 90 degrees&#160;</span>gives a cross-section that cuts the element at right angles to its in-plane axis, giving a &quot;safe&quot; shape for calculating section properties.<br><br></li> <li> <span class="buttontext">Use actual angle&#160;</span>calculates the actual area cut through the element, which can be useful if you need to visualise this correctly. However this is not recommended for section property calculations as it can result in over-estimates of area and hence capacity.</li> </ul> <br>The effects of these two options on shells and beams is illustrated above for [shells](cutting-through-2d-thin-shell-elements.md#cut_2d)and [beams](cutting-through-1d-beam-elements.md#cut_1d). |
 | --- |
 
 #####  Yield stress (y) if not defined 

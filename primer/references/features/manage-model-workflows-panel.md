@@ -4,7 +4,7 @@ Tools → Workflows → Manage Model Workflows
 
 The Manage Model Workflows panel allows you to manage the Workflows that are already saved in your models. You can delete them, change the location where they are saved, or copy workflows from different models.
 
-![](../Storage/primer-22-1/manage-model-workflows-panel-2023-02-09-1.png)
+![](./Storage/primer-23/manage-model-workflows-panel-2023-02-09-1.png)
 
 This panel can only be opened if you have a model opened in PRIMER. If you want to open the panel and more than one model is available, then you will be prompted to select the model for which you want to manage the Workflows. On the right-hand side of the panel, the Model Workflows box will list all the Workflows available in your selected model. It lists the name of the Workflow and the name of the file it is saved in, separated by a vertical bar |.
 

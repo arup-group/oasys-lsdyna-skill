@@ -20,7 +20,7 @@ The View... panel has various sub-headings to make it easier to find and turn on
 
 [Settings saved](available-table-columns.md#table_column_settings_saved) - By default, all settings used during creation of a connection are saved with the connection entity. This means that when the connection is remade, the saved settings are used rather than the defaults. This panel gives you access to them on the table.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/connection_table21.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/connection_table21.gif)
 
 The columns can be made wider or smaller by dragging the sides of them in the header. The column order can be changed by dragging a column to a new position.
 

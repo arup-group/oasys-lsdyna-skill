@@ -2,7 +2,7 @@
 
 In addition to calculating the low HIC area % there are several other tools accessible from the analysis tab:
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_20.png)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_20.png)
 
 ####  Area Sensitivity Study (GTR Only)
 
@@ -18,11 +18,11 @@ The 'Sensitivity Button' allows you to input a HIC 'delta'. PRIMER will then:
 
 Once all input points have been analysed PRIMER will display a contour plot highlighting the areas which showed the greatest sensitivity to the given delta. These areas are those that will give the greatest improvement and should be prioritised in order to reduce low HIC % area.
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_21.bmp)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_21.bmp)
 
 Additionally, you can choose to exclude points from the calculation:
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_22.bmp)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_22.bmp)
 
 ####  Target % Area (GTR Only)
 
@@ -32,13 +32,13 @@ The 'Target % Area' button allows you to input the low HIC area % you are target
 
 The 'Band Sensitivity' button allows you to input a HIC value. PRIMER will check each impact point to check whether a point is close to changing band (GTR or ENCAP). The points will be ringed by the colour band they are close to. You have the option to identify points that are subject to improving, getting worse, or both.
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_23.png)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_23.png)
 
 ####  Target Score (NCAP Only)
 
 The target score button allows you to input a target NCAP score and the tool will calculate the minimum number of points to improve in order to achieve the target value (if possible).
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_24.bmp)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_24.bmp)
 
 Similar to Area Sensitivity, there is an option to exclude points from this calculation.
 
@@ -50,7 +50,7 @@ This tool calculates a contour plot of HIC:
 
 Allows you to mark on the contour plots areas of constant HIC:
 
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_iso_plot.png)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_iso_plot.png)
 
 ####  View Curve & D3PLOT
 
@@ -110,20 +110,20 @@ PRIMER is using the directory defined by the Path and looking for the file named
  
 This approach applies to both D3PLOT data as defined by the $d3plot\_file comment and the T-HIS curve data as defined by the $cur\_file comment. Below is a further example showing the logic that PRIMER takes.
  
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_31.png)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_31.png)
  
 Additionally, for D3PLOT, if PRIMER cannot find the data using the above logic, it will also check for files named 'd3plot' and 'filename.ptf', where filename is the base keyword filename as defined by the Path variable.
  
 If, using the logic above, PRIMER can successfully identify the curve and D3PLOT data it will be opened in T-HIS and D3PLOT respectively.
  
-![](../Storage/primer-22-1/primer_links/sect_6/pedestrian_markup/hic_area_32.png)
+![](./Storage/primer-23/primer_links/sect_6/pedestrian_markup/hic_area_32.png)
 
 **D3PLOT Display Options**
  
 The D3PLOT model display options allow you to toggle on/off model colouring and cut-sections. The colouring options allow different models to be coloured different colours. A constant x cut-section can be created at the point's x-coordinate or a constant y cut-section can be created at the point's y-coordinate.
 
-![](../Storage/primer-22-1/HIC_Tool_D3PLOT_Display_Options_Manual_v1.PNG)
-**![](../Storage/primer-22-1/HIC_Tool_D3PLOT_Display_Options_Manual_002_v1.PNG)**
+![](./Storage/primer-23/HIC_Tool_D3PLOT_Display_Options_Manual_v1.PNG)
+**![](./Storage/primer-23/HIC_Tool_D3PLOT_Display_Options_Manual_002_v1.PNG)**
  
 If the same model is in more than one window, you have control over which window the display options are changed for by using the drop down window options for the model.
  
@@ -139,7 +139,7 @@ The T-HIS curve colouring options you to control how the HIC curves are coloured
 * Regulation band: curves will be coloured based on the regulation band the HIC for the point lies in. The regulation and bands used are the same as the regulation and bands selected in the calculation tab in PRIMER and they can be changed in T-HIS by changing them in PRIMER.
 * User defined data (see below).
 
-![](../Storage/primer-22-1/HIC_Tool_THIS_Curve_Colouring_Options_Manual_001_v1.PNG)
+![](./Storage/primer-23/HIC_Tool_THIS_Curve_Colouring_Options_Manual_001_v1.PNG)
 
 It is possible to turn on/off contour bands by clicking the colours in the contour bar. The minimum and maximum value contoured can be changed and the colours can be reversed.
 
@@ -161,5 +161,5 @@ This comment can be followed by comma delimited text strings which are the headi
 
 For example:
 
-![](../Storage/primer-22-1/HIC_Tool_THIS_User_Data_Comps_Manual_001_v1.PNG)
+![](./Storage/primer-23/HIC_Tool_THIS_User_Data_Comps_Manual_001_v1.PNG)
 [Previous](points-tab.md)  |  [Next](utilities-tab.md)

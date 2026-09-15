@@ -2,7 +2,7 @@
 
 Select  **MODEL**   **-&gt; BUILD**  . Choose the  **Build from csv targeting file**  option.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/build_csv.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/build_csv.gif)
 
 A model and an impactor can be read using the appropriate text boxes or file selectors. Alternatively, an existing CSV file can be read in. A model and an impactor are automatically located. Selecting the  **Make**  button will merge these into the active model.
 
@@ -26,7 +26,7 @@ Orientation and depenetration options, root directory, output file name, reporte
 *Note on IHI positioning* . Rather than just positioning to a set vertical angle, PRIMER can now automatically position the IHI headform to the maximum vertical angle. The process is positioning the headform at zero vertical angle, rolling the headform down until the chin touches the trim, then rotating the headform back by a set back angle. The user needs to specify a shell set that represents the chin of the headform. The user can choose the method of head depenetration when rotating.
 
 With the default depenetration method 'X', the headform will roll off the target point as it would in reality.
- ![Depenetration_X](../Storage/primer-22-1/primer_links/sect_3/images/depen_x.gif) 
+ ![Depenetration_X](./Storage/primer-23/primer_links/sect_3/images/depen_x.gif) 
 Using the 'XZ' or 'XYZ' setting, PRIMER will attempt to move the headform back towards the target point after each rotation iteration.
 
 The back angle (Bangle) is set on the loadcase panel for IHI (see below). On this panel the user must also specify that the loadcase uses the auto-vertical method. When the auto-vertical method is used, the vertical angle specified (Vangle) is the maximum angle the headform will rotate to when carrying out the automatic process.
@@ -73,7 +73,7 @@ user-defined node set. All degrees of freedom will be restrained in the resultan
 
 Load-cases can be specified by selecting the  **Edit Load-case**  button
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/build_csv_tpoints.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/build_csv_tpoints.gif)
 
 It is recommended that users write the CSV file out before proceeding with the model build. A model save operation might also be necessary in certain cases.
 

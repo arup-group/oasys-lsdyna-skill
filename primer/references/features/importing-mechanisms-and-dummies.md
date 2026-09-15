@@ -9,7 +9,7 @@ The "import" process works differently by importing the mechanism or dummy defin
 
 To import a mechanism or assembly either create a new mechanism or edit an existing one and use the Import button:
 
-![](../Storage/primer-22-1/importing-mechanisms-and-dummies-2022-12-12.png) ![](../Storage/primer-22-1/importing-mechanisms-and-dummies-2022-12-12-1.png)
+![](./Storage/primer-23/importing-mechanisms-and-dummies-2022-12-12.png) ![](./Storage/primer-23/importing-mechanisms-and-dummies-2022-12-12-1.png)
 
 In this example a Dummy #1 is being added to existing Mechanism #1.
 

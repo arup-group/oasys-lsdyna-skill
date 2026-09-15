@@ -1,6 +1,6 @@
 ﻿##  Saved Properties
 
-| Saving and restoring the current view, colour, transparency and other attributes controlling the appearance of the image. | ![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_6_0.png) |
+| Saving and restoring the current view, colour, transparency and other attributes controlling the appearance of the image. | ![](./Storage/primer-23/primer_links/sect_9/images/fig_9_6_0.png) |
 | --- | --- |
 
 ## 

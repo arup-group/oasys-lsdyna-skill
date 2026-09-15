@@ -7,7 +7,7 @@ From the Menu, select Model , Read and use:
 * Scan all to look for all include files, including those "nested" as include files within include files.
 * Quick scan to look only for include files in the master file.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/model_read.png)
+![](./Storage/primer-23/primer_links/sect_3/images/model_read.png)
  
 This scans the input deck. "Scan" in this context means look only for include file information, but don't actually import any normal keyword data into a model.
  
@@ -23,7 +23,7 @@ Select the files you wish to read in (more than one include file can be read in 
 
 NOTE: When reading Include files into PRIMER it is important to ensure that you read them into the same Model in order to allow all the references across include files to operate successfully
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/incl_2.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/incl_2.gif)
 
 ####  Master Model is to be created
 
@@ -31,7 +31,7 @@ From the Main Menu, select MODEL  **-&gt;**  BUILD
 
 ####  Simple build from keyword files
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/build_from_files.png)
+![](./Storage/primer-23/primer_links/sect_3/images/build_from_files.png)
 
 If there are **no label clashes** between the include files, a simple build can be used.
 

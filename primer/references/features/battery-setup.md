@@ -4,5 +4,5 @@ The Ansys LS-DYNA Randles circuit model simulates the internal electrochemical 
 
 Below is an example of the thermal response during the discharge load (shown in D3PLOT) of a simple battery cell model generated through the tool.
 
-![](../Storage/primer-22-1/overview/MicrosoftTeams-image.png)![](../Storage/primer-22-1/overview/MicrosoftTeams-image%20(2).png)
+![](./Storage/primer-23/overview/MicrosoftTeams-image.png)![](./Storage/primer-23/overview/MicrosoftTeams-image%20(2).png)
 [Previous](some-limitations-of-attached-mainly-due-to-using-set-xxx.md)  |  [Next](overview.md)

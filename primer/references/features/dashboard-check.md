@@ -1,6 +1,6 @@
 ﻿###  Dashboard Check
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/dashboard1.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/dashboard1.gif)
 
 This function is accessed by the Dashboard Check button under the check tool. This will display the dashboard check panel which consists of a set of different check tools.
 
@@ -11,11 +11,11 @@ This function is accessed by the Dashboard Check button under the check tool. Th
 * Keyword Cull Check - Lists all the keywords/fields which will be culled by writing out the model in the current Ansys LS-DYNA output version.
 * JavaScript checks - an unlimited number of checking scripts which reside in /primer\_library/scripts/dashboard\_checks
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/dashboardcheck.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/dashboardcheck.gif)
 
 The required checks can be activated by pressing Check or to do the lot RUN\_ALL
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/dashboardcheck2.gif)
+![](./Storage/primer-23/primer_links/sect_3/images/dashboardcheck2.gif)
 
 Settings - will access the check options panel
 
@@ -64,7 +64,7 @@ It is now possible to compute the overall health of the model using results from
 
 User defined model health will be computed using the JavaScript and will appear on the dashboard panel below the overall results buttons.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/dash_model_health.png)
+![](./Storage/primer-23/primer_links/sect_3/images/dash_model_health.png)
 
 There are special JavaScript functions which can be accessed only from this file. These are listed below :
 

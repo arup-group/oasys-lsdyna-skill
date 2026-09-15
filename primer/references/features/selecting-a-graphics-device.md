@@ -7,7 +7,7 @@
 | --- | --- |
 | **On Unix / Linux** | When PRIMER starts it will normally be configured to use OpenGL graphics automatically. If, exceptionally, it is not you will see the device selection panel: |
 
-![](../Storage/primer-22-1/primer_links/sect_1/images/primer.gif)
+![](./Storage/primer-23/primer_links/sect_1/images/primer.gif)
 
 The actual devices available will depend on your machine type and the graphics options that have been installed. Most workstations will provide both X11 and OpenGL graphics, but older machines may have a more limited range of options.
 

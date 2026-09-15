@@ -1,6 +1,6 @@
 ﻿###  Finding Connected Panels
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/connected_3.gif)This panel allows you to find connections that are tied to panels. It also allows you to find panels tied to connections.
+![](./Storage/primer-23/primer_links/sect_6/connection/connected_3.gif)This panel allows you to find connections that are tied to panels. It also allows you to find panels tied to connections.
 There is also a [switch that alters which panels are displayed](finding-connected-panels.md#unblankpanels).
  
 When finding panels tied to connections ( panels from welds/bolts/adhesive ), select the connection and press Apply . PRIMER will blank the whole model then unblank the connection and all panels attached to it. In order to undo the blanking that PRIMER has just done, press the Reset blanking button.
@@ -19,21 +19,21 @@ For more on how the function works look at the following [example](An%20example%
 
 The following figure shows the front of a vehicle. It has been welded together using the PRIMER spotwelding ability. We want to find which panels are attached to the floorpan by spotwelds or bolt connections.
 
-![](../Storage/primer-22-1/primer_links/sect_6/connection/connected_1.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/connected_1.gif)
 
-| First, we select the panels we want to find connections attached to by either picking the panel from the screen or selecting the panel from the list. <br>Secondly, set/unset the Unblank panels switch.<br> <br>Press the Apply button.<br> <br>[Result if Unblank panels is set](finding-connected-panels.md#set). <br> [Result if Unblank panels is unset](finding-connected-panels.md#unset). | ![](../Storage/primer-22-1/primer_links/sect_6/connection/connected_3.gif) |
+| First, we select the panels we want to find connections attached to by either picking the panel from the screen or selecting the panel from the list. <br>Secondly, set/unset the Unblank panels switch.<br> <br>Press the Apply button.<br> <br>[Result if Unblank panels is set](finding-connected-panels.md#set). <br> [Result if Unblank panels is unset](finding-connected-panels.md#unset). | ![](./Storage/primer-23/primer_links/sect_6/connection/connected_3.gif) |
 | --- | --- |
 
 ##### Result if Unblank panels set
  
 If the switch is set PRIMER will blank the model, unblank the part you selected, find and unblank the connections attached to that part, and also find and unblank the panels that are attached by those connections.
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/connected_4.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/connected_4.gif)
  
 ##### Result if Unblank panels unset
  
 If the switch is unset PRIMER will blank the model, unblank the part you selected and find and unblank the connections attached to that part.
  
-![](../Storage/primer-22-1/primer_links/sect_6/connection/connected_5.gif)
+![](./Storage/primer-23/primer_links/sect_6/connection/connected_5.gif)
 
 [Previous](options-in-the-connections-table.md)  |  [Next](finding-unconnected-panels.md)

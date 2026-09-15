@@ -31,5 +31,5 @@ When extruding solids to create new solids:
 * Set Single face to extrude only the selected face.
 * Propagate will expand the selected face across the surface defined by the break angle.
 
- ![mesh_extrude](../Storage/primer-22-1/primer_links/sect_6/meshing/mesh_extrude_light.png)
+ ![mesh_extrude](./Storage/primer-23/primer_links/sect_6/meshing/mesh_extrude_light.png)
 [Previous](simple-meshing-operations.md)  |  [Next](offset.md)

@@ -14,7 +14,7 @@ In the examples above we have:
 
 Therefore column #3 may contain RPS or N3 , and column #4 may contain DAMP or N4 . This is handled as follows:
  
-![](../Storage/primer-22-1/primer_links/sect_5/5a/kwe_10.png)
+![](./Storage/primer-23/primer_links/sect_5/5a/kwe_10.png)
  
 The acronym header button shows the various entries, here RPS / N3 . In addition hovering the mouse over that button, as shown here, displays the details of that row/column contents by suffix type.
  

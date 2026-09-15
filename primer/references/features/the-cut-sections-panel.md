@@ -1,6 +1,6 @@
 ﻿###  The Cut Sections Panel
 
-![](../Storage/primer-22-1/the_cut_section_panel.png)The parts of this panel are summarised below. Click on one to jump to the more detailed description.
+![](./Storage/primer-23/the_cut_section_panel.png)The parts of this panel are summarised below. Click on one to jump to the more detailed description.
 
 | [Cutting switch](cutting-switch.md#cut_switch) | Normally OFF, in which case cut-sections are inactive. May be toggled on/off at any time. |
 | --- | --- |
@@ -22,6 +22,6 @@ From PRIMER V18 onwards the cut section panel can be undocked using to make it
 
 If you undock it then remember that the mouse can only be active for one operation at a time, so if you need to alternate between dragging a cut section and using the mouse in some other context, eg picking, it will be necessary to swap mouse activity back and forth using the mouse activity control buttons in the top left of the respective panels:
 
-![](../Storage/primer-22-1/primer_links/sect_6/cutsect/fig_1a.png)
+![](./Storage/primer-23/primer_links/sect_6/cutsect/fig_1a.png)
 
 [Previous](cut-sections.md)  |  [Next](cutting-switch.md)

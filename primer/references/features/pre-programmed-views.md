@@ -12,7 +12,7 @@ These views are also available from [shortcut keys](shortcut-keys.md#shortcut)1,
 > primer\*initial\_view\_orientation: &lt;  *view* &gt;
 >  
 
-| ../Storage/primer-22-1/primer_links/sect_9/pdfs/8_2_1b.pdf <br> ![](../Storage/primer-22-1/primer_links/sect_9/images/9_2_1b.gif) |
+| ./Storage/primer-23/primer_links/sect_9/pdfs/8_2_1b.pdf <br> ![](./Storage/primer-23/primer_links/sect_9/images/9_2_1b.gif) |
 | --- |
 
 These views only apply rotations, they do not affect scale or position.

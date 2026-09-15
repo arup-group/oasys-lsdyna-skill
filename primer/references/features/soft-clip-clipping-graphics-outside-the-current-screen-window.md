@@ -8,9 +8,9 @@ In this example the user has zoomed in on the neck and upper chest region of a s
  
 To see the missing elements you need to issue an explicit drawing command at the new scale to recalculate the clipping and send more elements to the 3D graphics driver.
  
-![](../Storage/primer-22-1/soft-clip-clipping-graphics-outside-the-current-screen-window/soft-clip-clipping-graphics-outside-the-current-screen-window-2024-04-30.png)
+![](./Storage/primer-23/soft-clip-clipping-graphics-outside-the-current-screen-window/soft-clip-clipping-graphics-outside-the-current-screen-window-2024-04-30.png)
 
-![](../Storage/primer-22-1/primer_links/sect_9/images/fig_9_6_2_2_header.gif)10 .9.2.2 SHOW\_PROJ Showing the viewing frustrum
+![](./Storage/primer-23/primer_links/sect_9/images/fig_9_6_2_2_header.gif)10 .9.2.2 SHOW\_PROJ Showing the viewing frustrum
  
 On 3D devices it is possible to show the current viewing "frustrum" at the bottom left corner of the plot by turning SHOW\_PROJ on.
  
@@ -22,5 +22,5 @@ The Z clipping plane locations are shown when SHOW\_PROJ is on, and this can b
  
 The default near and far plane positions are drawn in green, and the plane locations in blue. So you can visualise movement relative to initial locations.
  
-![](../Storage/primer-22-1/soft-clip-clipping-graphics-outside-the-current-screen-window/soft-clip-clipping-graphics-outside-the-current-screen-window-2024-04-30-1.png)
+![](./Storage/primer-23/soft-clip-clipping-graphics-outside-the-current-screen-window/soft-clip-clipping-graphics-outside-the-current-screen-window-2024-04-30-1.png)
  [Previous](3d-opts-further-3d-options.md)  |  [Next](using-the-z-clipping-planes.md)

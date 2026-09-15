@@ -2,13 +2,13 @@
 
 ####  Local Ansys LS-DYNA run
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_5.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_5.png)
 To carry out local submission, select "Local" from the "Machine Type" menu.
 
 The Model to run for Ansys LS-DYNA can be selected using the "..." button that maps the
 **"SUBMIT MODEL"**menu.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_20.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_20.png)
 The model file that will be submitted to Ansys LS-DYNA can be chosen from the menu next to the model selector button.
 
 * **"Write Model File"** : Re-writes the model files (master and includes) to the "Submit Directory" and runs Ansys LS-DYNA on this file. 
@@ -24,11 +24,11 @@ The
 PRIMER saves the older submission paths to be picked from the
 **"Recent files"**menu.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_21.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_21.png)
 
 ####  Remote Ansys LS-DYNA run
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_6.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_6.png)
 
 To carry out local submission, select "Remote" from the "Machine Type" menu.
 
@@ -49,12 +49,12 @@ PRIMER never saves this password, and the user must manually enter the Password 
 The Model to run for Ansys LS-DYNA can be selected using the "..." button that maps the
 **"SUBMIT MODEL"**menu.
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_22.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_22.png)
 The
 **"Submit Directory"**is the path where the Ansys LS-DYNA outputs are generated on the "Remote" machine.
 * For each "Remote" Ansys LS-DYNA submission, the submission paths are saved in the JSON settings files under the "Remote Machine Boomkarks" using **"Save Settings"** .
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_23.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_23.png)
 PRIMER always re-writes the model file for the "Remote" Ansys LS-DYNA submission.
 
 * To save time and increase the performance of the submission process, the model file is written in the "compressed" format locally and then the compressed file is transferred to the remote machine path specified in "Submit Directory".
@@ -63,7 +63,7 @@ PRIMER always re-writes the model file for the "Remote" Ansys LS-DYNA submission
 
 #####  Remote Machine Connection Options
 
-![](../Storage/primer-22-1/primer_links/sect_3/images/fig_3_18_7.png)
+![](./Storage/primer-23/primer_links/sect_3/images/fig_3_18_7.png)
 This panel is launched by pressing the
 **"Add/Edit Remote Machines"**button on the main panel and is used to Add/Edit/Remove connection settings for a remote machine.
 

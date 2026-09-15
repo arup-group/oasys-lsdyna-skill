@@ -1,6 +1,6 @@
 ﻿####  Basic Editor Mode
 
-| ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/define_path_panel.PNG)This shows the belt editor in its initial state with no points created.<br>
+| ![](./Storage/primer-23/primer_links/sect_6/seatbelt/define_path_panel.PNG)This shows the belt editor in its initial state with no points created.<br>
 <br>Points can be created as follows:<br>
 <ul style="font-size: 14.6667px;"> <li>Clicking on a node<br>or<br></li> <li>Typing in an (X,Y,Z) coordinate</li>
 </ul>
@@ -24,6 +24,6 @@ Here the user has mapped the Point Fixity and Projection popup to add some detai
 
 Projection: gives per-point control over how far the belt is "projected outwards" from this point, overriding the default value for the belt as a whole.
 
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/fig_7_2_3_2b2.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/fig_7_2_3_2b2.png)
 
 [Previous](basic-vs-advanced-editor-modes.md)  |  [Next](defining-the-initial-path.md)

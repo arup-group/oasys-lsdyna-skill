@@ -1,13 +1,13 @@
 ﻿####  Move Points: Movement Driven by Updated Point Positions
 
-![](../Storage/primer-22-1/primer_links/sect_6/mechanism/mode_3.gif)
+![](./Storage/primer-23/primer_links/sect_6/mechanism/mode_3.gif)
 
 An alternative to dragging with the mouse is to set new target positions for points. As described [above](nan)any number of points can be defined in an assembly, and used both to apply localised restraint and to drive movement.
  
 In this example a point has been created in the seat base, acting as a reference point for movement.
  
 It can be moved by any combination of the following three methods:
- ![](../Storage/primer-22-1/primer_links/sect_6/mechanism/fig_13.gif)
+ ![](./Storage/primer-23/primer_links/sect_6/mechanism/fig_13.gif)
 
 | Move to pos'n | Will move the point  ***to***  the new coordinate specified |
 | --- | --- |

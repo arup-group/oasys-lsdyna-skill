@@ -11,16 +11,16 @@ Their exact method of working is opaque but an approximate description is:
 * 2d sliprings work like a parallel line of 1d sliprings, 1 per mesh line.
 
 Ansys LS-DYNA aggregates the forces in the 1d belt elements and the shells such that you just see a single unified belt force. However the behaviour is very much parallel lines of 1d elements plus some in-plane stiffness from the shells.
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_5.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_5.png)
  
 Here is the same model as above, now meshed with a 2d slipring. The mesh is continuous through the slipring with a line of nodes coincident with the slipring nodes.
  
-![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_7.png)
+![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_7.png)
  
 Here is a detail of the slipring section of the belt showing how the 2d mesh is continuous in this region, allowing contact between belt and the rest of the vehicle to be modelled more realistically. The actual FE mesh of the D-Ring is omitted here, it would not be physically connected to the belt in any way.
  
 Some users are very happy with the performance of 2d belt elements during an analysis, others are not. See [More details about meshing 2D seatbelt elements](more-details-about-meshing-2d-seatbelt-elements.md#more_2d)for more details of how these 2d belt elements work and are handled in PRIMER
- ![](../Storage/primer-22-1/primer_links/sect_6/seatbelt/uslip_6.png)
+ ![](./Storage/primer-23/primer_links/sect_6/seatbelt/uslip_6.png)
  
 ######  Orientation of 2D sliprings - \*does\* matter. 
  

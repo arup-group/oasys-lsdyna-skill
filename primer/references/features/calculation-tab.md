@@ -2,7 +2,7 @@
 
 The calculation tab contains the choice of calculation method and associated settings:
 
-![](../Storage/primer-22-1/calculation-tab/calculation-tab-2024-04-09.png)![](../Storage/primer-22-1/calculation-tab/calculation-tab-2024-04-09-1.png)
+![](./Storage/primer-23/calculation-tab/calculation-tab-2024-04-09.png)![](./Storage/primer-23/calculation-tab/calculation-tab-2024-04-09-1.png)
 
 You must select whether to use a GTR area based calculation or NCAP based scoring.
 

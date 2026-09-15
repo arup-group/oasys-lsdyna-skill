@@ -12,5 +12,5 @@ For shells give the distance that the new shell should be offset from the existi
 For solids give how many solids should be created while offsetting and the distance to offset.
 
 For shells, to move the original shells rather than create new ones toggle the Offset and Copy button to Offset - no copy .
- ![](../Storage/primer-22-1/primer_links/sect_6/meshing/mesh_offset.gif)
+ ![](./Storage/primer-23/primer_links/sect_6/meshing/mesh_offset.gif)
 [Previous](extrude.md)  |  [Next](ruled.md)

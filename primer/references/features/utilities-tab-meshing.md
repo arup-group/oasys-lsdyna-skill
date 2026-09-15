@@ -4,5 +4,5 @@ The Utilities tab is used to reset or delete morph boxes. Clicking Reset after s
 
 Clicking Delete will delete the selected morph box(es) with a confirmation menu, in a similar way to the Remove tool.
 
-![](../Storage/primer-22-1/primer_links/sect_6/mesh_morphing/mesh_morphing_utilities.png)
+![](./Storage/primer-23/primer_links/sect_6/mesh_morphing/mesh_morphing_utilities.png)
 [Previous](morph-tab.md)  |  [Next](variables-tab.md)

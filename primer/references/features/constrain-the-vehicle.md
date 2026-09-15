@@ -8,6 +8,6 @@ Select "Create \*CONSTRAINED\_EXTRA\_NODE" option as shown below in red highligh
 
 Alternatively, "Create \*CONSTRAINED\_RIGID\_BODIES" option as shown below in red highlighted box (3) can be used to constrain the vehicle on a rigid plate. If this option is selected, use "Const. rigid body parts" to provide parts for the \*CONSTRAINED\_RIGID\_BODIES.
 
-![vehicle constraint panel](../Storage/primer-22-1/primer_links/sect_6/safety/luggage/contraint.png)
+![vehicle constraint panel](./Storage/primer-23/primer_links/sect_6/safety/luggage/contraint.png)
 
 [Previous](introduction-luggage-retention.md)  |  [Next](create-contact.md)
