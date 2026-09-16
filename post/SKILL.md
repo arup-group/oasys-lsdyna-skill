@@ -126,18 +126,27 @@ This is the authoritative reference for:
 
 Correct Dialogue Command generation depends on understanding the command structure. Do not generate commands by matching command names alone. Always determine the required menu level and navigation path before generating command sequences.
 
+Before using any command found by searching the dialogue command reference, check which menu row/table it is documented under (its parent command), not just that the keyword exists somewhere in the file. Many commands that look like top-level entries are actually nested one or more levels below the D3PLOT_MANAGER root and will fail with an "unknown word" error if invoked directly from the root. For example `FAILURE_LOGIC`, `TARGET_MARKERS`, `COLOUR_OF_ENTITIES`, `CUSTOMISE_GRAPHICS`, `PROPERTIES_FILE`, `TOPAZ_FILE` and `STL_FILE` are all sub-commands of the `UTILITIES` menu, not the manager root, so they must be reached via `UTILITIES` first (e.g. `/UTILITIES FAILURE_LOGIC ...`). Chained tokens on one line navigate down through each menu level in turn (e.g. `BP CT` = enter `BEAM_PLOTTING` then run `CT_CONTINUOUS`), so the required parent menu(s) can be prefixed on the same line as the sub-command.
+
 Actions whose description contains "Toggle" or whose name ends with "_SWITCH"
 must be generated with an explicit ON or OFF state rather than the action name alone.
- 
+ 
 Examples:
- 
-FAILURE_LOGIC DS_DELETED_SWITCH ON
-FAILURE_LOGIC DS_DELETED_SWITCH OFF
- 
-FAILURE_LOGIC FH_HATCHING_SWITCH ON
-FAILURE_LOGIC FH_HATCHING_SWITCH OFF
+ 
+UTILITIES FAILURE_LOGIC DS_DELETED_SWITCH ON
+UTILITIES FAILURE_LOGIC DS_DELETED_SWITCH OFF
+ 
+UTILITIES FAILURE_LOGIC FH_HATCHING_SWITCH ON
+UTILITIES FAILURE_LOGIC FH_HATCHING_SWITCH OFF
 
-Never output a command whose description indicates a state change without including the target state (ON/OFF or documented equivalent).
+Do not assume a command needs a trailing "GO" (or other terminating action) by analogy with sibling or similarly-named commands in the same menu. Some commands execute immediately when invoked, while others require an explicit terminating action documented in their own syntax block. Always check the specific command's own documented syntax for a listed terminating action (e.g. GO, APPLY) before including or omitting one.
+
+Examples:
+
+CT_CONTINUOUS_TONE           (executes immediately, no GO listed)
+SI_SHADED_IMAGE ... GO       (GO listed, required to execute)
+GREYSCALE ... GO             (GO listed, required to execute)
+CRITERION_PLOT ... GO        (GO listed, required to execute)
 
 --- 
 
@@ -193,6 +202,10 @@ Before generating any POST script:
 - Always identify the target POST tool before writing code.
 - Never invent POST commands, classes, methods, fields, or arguments. 
 - Always verify API usage against the relevant markdown reference files and the corresponding IntelliSense declaration file before generating code.
+- Before using a dialogue command, identify its parent menu from the reference table it is documented in and include any required parent menu name(s) in the command path (e.g. `UTILITIES FAILURE_LOGIC ...`). Do not assume a command is reachable directly from the manager root just because it was found via a keyword search.
+- If a reference markdown file's line is too long to read fully with the file-reading tool (rows collapsed onto one very long line), read the full raw text (e.g. via a small script) rather than proceeding on a truncated excerpt, since truncation can hide the parent menu context or later options in that row.
+- After a dialogue command produces a runtime error such as "unknown word", re-check the command's documented parent menu before retrying, rather than only re-checking its own syntax.
+- If a specific argument value's exact format is not fully documented (e.g. a colour token), state that the value is a best-effort match to the documented naming convention so the user can verify it against a live run.
 - Do not use PRIMER JavaScript APIs for pure POST workflows.
 - Do not use PRIMER GUI widgets for POST workflows.
 - Do not use PRIMER entity classes such as `Part`, `Node`, `Shell`, `Material`, or `Contact` unless the user is also asking for a separate PRIMER model modification script.
