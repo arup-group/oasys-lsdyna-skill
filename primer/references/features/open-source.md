@@ -1,1 +1,0 @@
-﻿[Previous](licences-used-in-software.md)  |  [Next](apple-public-source.md)

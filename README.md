@@ -21,7 +21,6 @@ oasys-lsdyna-skill/
 │   │   └── primer.d.ts
 │   ├── prompts/
 │   ├── references/
-│   │   ├── features/
 │   │   ├── js-api/
 │   │   └── keywords/
 │
