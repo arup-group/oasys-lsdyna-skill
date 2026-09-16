@@ -12,6 +12,6 @@ Click on any of the programs below to access their Python API documentation:
 
 **[REPORTER](../Storage/sphinx/22.1/REPORTER/index.html)**
 
-![](../Storage/py_api-22-1/title/python_logo.png)
+![](./Storage/py_api-23-0/title/python_logo.png)
 
 **Version 22.1, Copyright Arup Digital Products Ltd, 20258 Fitzroy Street | London | W1T 4BJLS-DYNA, LS-OPT and LS-PrePost are registered trademarks of ANSYS, Inc.**

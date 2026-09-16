@@ -16,7 +16,7 @@ C:\\path_to_your_executable\\primerXX_x64.exe' -grpc=50051
 
 * Start the program in the usual way, and then under **Options &gt; gRPC/Python** click on "**Start**":
 
-![](../Storage/py_api-22-1/grpc-connection/grpc-connection-2024-04-07.png)
+![](./Storage/py_api-23-0/grpc-connection/grpc-connection-2024-04-07.png)
 
 Note: 50051 is the default gRPC port for PRIMER, but a different port can be used.
 
@@ -24,4 +24,4 @@ In an analogous mode gRPC can be started for **D3PLOT** and **T/HIS** (the defau
 
 For **REPORTER** the start gRPC panel is under **Script &gt; gRPC/Python** (the default port number is 50053):
 
-![](../Storage/py_api-22-1/grpc-connection/grpc-connection-2024-04-07-1.png)
+![](./Storage/py_api-23-0/grpc-connection/grpc-connection-2024-04-07-1.png)
