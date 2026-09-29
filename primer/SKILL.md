@@ -43,26 +43,11 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 
 ---
 
-## API Reference Locations
-
-| Need | Where to look |
-|---|---|
-| JS class methods & properties | `references/js-api/primer-{classname}-class.md` |
-| JS global functions | `references/js-api/primer-global-class.md` |
-| JS type signatures | `intellisense/primer.d.ts` |
-| Python class methods | Fetch `https://help.oasys-software.com/sphinx/23/PRIMER/{ClassName}.html` |
-| Python connection/start patterns | `../shared/python-api/primer.md` |
-| PRIMER tool features & workflows | `references/features/{topic}.md` |
-| LS-DYNA keyword lookup | `references/keywords/keywords.txt` — format: `*KEYWORD=vol,page` |
-| LS-DYNA keyword field detail | `references/keywords/LS-DYNA_Manual_Volume_{vol}_R16.pdf` |
-
----
-
 ## Golden Rules
 
 1. **Save scripts to the project folder.** When creating a new script file, always save it to the workspace folder (the user's project folder).
 2. **Never invent method names.** Always verify against the MD files or `primer.d.ts` before using any API call.
-3. **Keyword lookup:** to answer questions about any `*KEYWORD`, first search `lsdyna/keywords.txt` for the volume and page, then reference the correct PDF.
+3. **Keyword lookup:** to answer questions about any `*KEYWORD`, first search `references/keywords/keywords.txt` for the volume and page, then reference the correct PDF.
 4. **None checks:** always check for `None` after `GetFromID()`, `First()`, or any entity lookup before using the result.
 5. **Python gRPC is slow for loops** — prefer bulk operations (`GetAll()`, flagged operations) over per-entity calls in Python.
 6. **JS Flag pattern:** `AllocateFlag()` → use flag on entities → `ReturnFlag()`. Always return flags when done.
@@ -86,4 +71,4 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 - Long format fields are 20 characters (use `+` suffix on keyword line)
 - Comments start with `$`
 - Deck ends with `*END`
-- To find any keyword: search `lsdyna/keywords.txt` for `*KEYWORD_NAME=vol,page`
+- To find any keyword: search `references/keywords/keywords.txt` for `*KEYWORD_NAME=vol,page`

@@ -27,10 +27,10 @@ Produce a complete, runnable script that:
 4. Cleans up the connection
 
 ## Reference files to consult
-- JS: `markdown/js-api/MD/primer-model-class.md`, `primer-part-class.md`, `primer-material-class.md`, `primer-section-class.md`
-- Python: fetch `https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/Model.html`, `Part.html`, etc.
-- For keyword field meanings: search `lsdyna/keywords.txt` for the relevant `*KEYWORD=vol,page`
-- PRIMER Xrefs class for cross-reference queries: `markdown/js-api/MD/primer-xrefs-class.md`
+- JS: `../references/js-api/primer-model-class.md`, `../references/js-api/primer-part-class.md`, `../references/js-api/primer-material-class.md`, `../references/js-api/primer-section-class.md`
+- Python: fetch `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/Model.html`, `Part.html`, etc.
+- For keyword field meanings: search `../references/keywords/keywords.txt` for the relevant `*KEYWORD=vol,page`
+- PRIMER Xrefs class for cross-reference queries: `../references/js-api/primer-xrefs-class.md`
 
 ## Rules
 - Always `None`-check entity lookups in Python

@@ -19,16 +19,16 @@ Add an LS-DYNA keyword to a PRIMER model using the PRIMER API.
 
 ## What to generate
 
-1. **Look up the keyword** — search `lsdyna/keywords.txt` for `{{KEYWORD}}=vol,page` and report the volume and page number
+1. **Look up the keyword** — search `../references/keywords/keywords.txt` for `{{KEYWORD}}=vol,page` and report the volume and page number
 2. **Describe the required fields** — list all mandatory cards and fields for this keyword
 3. **Generate the API call** — produce a code snippet using the correct PRIMER class and constructor/properties to create this keyword entity
 4. **Show the equivalent keyword deck** — show what the resulting `*.k` card looks like
 
 ## Reference files to consult
-- `lsdyna/keywords.txt` — find `*KEYWORD_NAME=vol,page`
-- `lsdyna/LS-DYNA_Manual_Volume_{vol}_R16.pdf` — read at the given page for field definitions
-- JS class: `markdown/js-api/MD/primer-{lowercaseclassname}-class.md`
-- Python class: fetch `https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/{ClassName}.html`
+- `../references/keywords/keywords.txt` — find `*KEYWORD_NAME=vol,page`
+- `../references/keywords/LS-DYNA_Manual_Volume_{vol}_R16.pdf` — read at the given page for field definitions
+- JS class: `../references/js-api/primer-{lowercaseclassname}-class.md`
+- Python class: fetch `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/{ClassName}.html`
 
 ## Rules
 - Always look up `keywords.txt` first — never guess field names or positions

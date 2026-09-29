@@ -22,11 +22,11 @@ applyTo: "**/*.k, **/*.key"
 ## Keyword Lookup Procedure
 To find a keyword's required cards and field definitions:
 
-1. Open `lsdyna/keywords.txt` and search for `*KEYWORD_NAME=vol,page`
+1. Open `../references/keywords/keywords.txt` and search for `*KEYWORD_NAME=vol,page`
    - `vol` = 1, 2, or 3 (maps to `LS-DYNA_Manual_Volume_I_R16.pdf`, `_II_`, or `_III_`)
    - `page` = page number in that PDF
 
-2. Reference `lsdyna/LS-DYNA_Manual_Volume_{vol}_R16.pdf` at that page
+2. Reference `../references/keywords/LS-DYNA_Manual_Volume_{vol}_R16.pdf` at that page
 
 **Example:** `*MAT_ELASTIC=2,73` → Volume II, page 73
 

@@ -27,9 +27,9 @@ Produce a complete, runnable script that:
 4. Writes the modified model to {{OUTPUT_FILE}} (or overwrites if not specified)
 
 ## Reference files to consult
-- JS: `markdown/js-api/MD/primer-part-class.md`, `primer-set-class.md`, `primer-node-class.md`, `primer-shell-class.md`, `primer-utils-class.md`
-- Python: fetch relevant class pages from `https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/`
-- For flagged bulk operations: see `AllocateFlag()` in `markdown/js-api/MD/primer-global-class.md`
+- JS: `../references/js-api/primer-part-class.md`, `../references/js-api/primer-set-class.md`, `../references/js-api/primer-node-class.md`, `../references/js-api/primer-shell-class.md`, `../references/js-api/primer-utils-class.md`
+- Python: fetch relevant class pages from `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/`
+- For flagged bulk operations: see `AllocateFlag()` in `../references/js-api/primer-global-class.md`
 
 ## Rules
 - Use flagged operations (`SetFlagged`, `BlankFlagged`, `DeleteFlagged`) for bulk work — much faster than per-entity calls

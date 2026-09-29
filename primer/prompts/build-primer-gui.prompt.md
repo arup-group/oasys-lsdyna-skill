@@ -35,13 +35,11 @@ Produce a complete, runnable JavaScript script that:
 5. Cleans up on **Cancel** or close
 
 ## Reference files to consult
-- `markdown/js-api/MD/primer-window-class.md` — Window and Form creation
-- `markdown/js-api/MD/primer-widget-class.md` — widget types and properties
-- `markdown/js-api/MD/primer-widgetitem-class.md` — OptionMenu / List items
-- `markdown/js-api/MD/primer-graphics-class.md` — graphics/view operations
-- `markdown/js-api/MD/primer-global-class.md` — Message(), ErrorMessage(), AllocateFlag()
-- `../references/features/how-to-build-a-gui.md` — PRIMER GUI builder guide
-- `../references/features/the-javascript-gui-builder.md`
+- `../references/js-api/primer-window-class.md` — Window and Form creation
+- `../references/js-api/primer-widget-class.md` — widget types and properties
+- `../references/js-api/primer-widgetitem-class.md` — OptionMenu / List items
+- `../references/js-api/primer-graphics-class.md` — graphics/view operations
+- `../references/js-api/primer-global-class.md` — Message(), ErrorMessage(), AllocateFlag()
 
 ## Rules
 - Verify every widget method and property against `primer-widget-class.md` or `primer.d.ts`

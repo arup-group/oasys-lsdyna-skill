@@ -2,7 +2,7 @@
 applyTo: "**/*.py"
 ---
 
-# PRIMER v22.1 Python API
+# PRIMER v23 Python API
 
 ## Installation
 ```
@@ -49,12 +49,12 @@ connection = Oasys.PRIMER.start(abspath=r"C:\path\to\primerXX_x64.exe", batch=Tr
 ## Finding Method Signatures
 Fetch the live Sphinx docs for any class:
 ```
-https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/{ClassName}.html
+https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/{ClassName}.html
 ```
 Examples:
-- `Model` → `https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/Model.html`
-- `Shell` → `https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/Shell.html`
-- Global functions → `https://help.oasys-software.com/resources/Storage/sphinx/22.1/PRIMER/global.html`
+- `Model` → `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/Model.html`
+- `Shell` → `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/Shell.html`
+- Global functions → `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/global.html`
 
 **Never invent or guess method names.**
 

@@ -2,7 +2,7 @@
 applyTo: "**/*.js"
 ---
 
-# PRIMER v22.1 JavaScript API
+# PRIMER v23 JavaScript API
 
 ## Runtime
 Scripts run **inside** PRIMER's embedded JavaScript engine (SpiderMonkey).
@@ -12,9 +12,9 @@ Scripts run **inside** PRIMER's embedded JavaScript engine (SpiderMonkey).
 
 ## Finding Method Signatures
 Before writing any API call:
-1. Read `markdown/js-api/MD/primer-{lowercaseclassname}-class.md` for the class
-2. Or check `intellisense/primer.d.ts` — full TypeScript declarations for all classes
-3. Global functions: `markdown/js-api/MD/primer-global-class.md`
+1. Read `../references/js-api/primer-{lowercaseclassname}-class.md` for the class
+2. Or check `../intellisense/primer.d.ts` — full TypeScript declarations for all classes
+3. Global functions: `../references/js-api/primer-global-class.md`
 
 **Never invent or guess method names.**
 
@@ -63,34 +63,26 @@ m.Write("path/to/output.key");
 ```
 
 ## GUI Widgets (JS only — not available in Python)
-- See `markdown/js-api/MD/primer-window-class.md` and `markdown/js-api/MD/primer-widget-class.md`
-- See `markdown/js-api/MD/primer-graphics-class.md` for graphical operations
+- See `../references/js-api/primer-window-class.md` and `../references/js-api/primer-widget-class.md`
+- See `../references/js-api/primer-graphics-class.md` for graphical operations
 - Key classes: `Window`, `Form`, `Button`, `TextBox`, `CheckBox`, `OptionMenu`, `List`
 
 ## Key Class Reference Files
 | Class | MD file |
 |---|---|
-| Model | `markdown/js-api/MD/primer-model-class.md` |
-| Part | `markdown/js-api/MD/primer-part-class.md` |
-| Node | `markdown/js-api/MD/primer-node-class.md` |
-| Shell | `markdown/js-api/MD/primer-shell-class.md` |
-| Solid | `markdown/js-api/MD/primer-solid-class.md` |
-| Material | `markdown/js-api/MD/primer-material-class.md` |
-| Section | `markdown/js-api/MD/primer-section-class.md` |
-| Contact | `markdown/js-api/MD/primer-contact-class.md` |
-| Set | `markdown/js-api/MD/primer-set-class.md` |
-| Spc | `markdown/js-api/MD/primer-spc-class.md` |
-| Curve | `markdown/js-api/MD/primer-curve-class.md` |
-| LoadNode | `markdown/js-api/MD/primer-loadnode-class.md` |
-| LoadGravity | `markdown/js-api/MD/primer-loadgravity-class.md` |
-| Parameter | `markdown/js-api/MD/primer-parameter-class.md` |
-| Include | `markdown/js-api/MD/primer-include-class.md` |
-| Utils | `markdown/js-api/MD/primer-utils-class.md` |
-
-## PRIMER Manual Topics
-PRIMER feature documentation lives in `../references/features/`. Key topics:
-- `script-using-javascript-in-primer.md` — scripting overview
-- `brief-tutorial-on-javascript-in-primer.md` — tutorial
-- `crash-test-setup.md` — crash test setup
-- `contact-defining-contact-surfaces.md` — contacts
-- `keyword-menus.md` — keyword editing
+| Model | `../references/js-api/primer-model-class.md` |
+| Part | `../references/js-api/primer-part-class.md` |
+| Node | `../references/js-api/primer-node-class.md` |
+| Shell | `../references/js-api/primer-shell-class.md` |
+| Solid | `../references/js-api/primer-solid-class.md` |
+| Material | `../references/js-api/primer-material-class.md` |
+| Section | `../references/js-api/primer-section-class.md` |
+| Contact | `../references/js-api/primer-contact-class.md` |
+| Set | `../references/js-api/primer-set-class.md` |
+| Spc | `../references/js-api/primer-spc-class.md` |
+| Curve | `../references/js-api/primer-curve-class.md` |
+| LoadNode | `../references/js-api/primer-loadnode-class.md` |
+| LoadGravity | `../references/js-api/primer-loadgravity-class.md` |
+| Parameter | `../references/js-api/primer-parameter-class.md` |
+| Include | `../references/js-api/primer-include-class.md` |
+| Utils | `../references/js-api/primer-utils-class.md` |

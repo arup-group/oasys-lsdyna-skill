@@ -17,6 +17,10 @@ Use D3PLOT for LS-DYNA result visualisation and state-based result processing.
 - Dialogue commands: `dialogue-commands/`
 - Shared Python guidance: `../shared/python-api/`
 
+For dialogue command requests, read
+`dialogue-commands/d3plot-dialogue-guidance.md` before consulting the command
+reference.
+
 Before generating code, verify every class, method, property, argument, and
 command against the local API references and declaration file. Do not guess
 undocumented API names.
