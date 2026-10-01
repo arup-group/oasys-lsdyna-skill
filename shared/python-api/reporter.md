@@ -96,9 +96,9 @@ Oasys.REPORTER.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [REPORTER Python API](./Storage/py_api-23-0/sphinx/23/REPORTER/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the [REPORTER Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/index.html) documentation, in the following pages:
 
-* [Connection methods](./Storage/py_api-23-0/sphinx/23/REPORTER/index.html) (to start and instance of REPORTER and to disconnect Python from it at the end)
-* [Template class](./Storage/py_api-23-0/sphinx/23/REPORTER/Template.html) (to create a template)
-* [REPORTER functions](./Storage/py_api-23-0/sphinx/23/REPORTER/global.html) (to print messages)
-* [Item class](./Storage/py_api-23-0/sphinx/23/REPORTER/Item.html) (to add items to a page of the template)
+* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/index.html) (to start and instance of REPORTER and to disconnect Python from it at the end)
+* [Template class](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/Template.html) (to create a template)
+* [REPORTER functions](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/global.html) (to print messages)
+* [Item class](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/Item.html) (to add items to a page of the template)

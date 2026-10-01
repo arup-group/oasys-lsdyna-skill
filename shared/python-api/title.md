@@ -6,13 +6,13 @@
 
 Click on any of the programs below to access their Python API documentation:
 
-**[PRIMER](./Storage/py_api-23-0/sphinx/23/PRIMER/index.html)**
+**[PRIMER](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/index.html)**
 
-**[D3PLOT](./Storage/py_api-23-0/sphinx/23/D3PLOT/index.html)**
+**[D3PLOT](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/index.html)**
 
-**[T/HIS](./Storage/py_api-23-0/sphinx/23/T-HIS/index.html)**
+**[T/HIS](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/index.html)**
 
-**[REPORTER](./Storage/py_api-23-0/sphinx/23/REPORTER/index.html)**
+**[REPORTER](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/index.html)**
 
 ![](./Storage/py_api-23-0/title/python_logo.png)
 

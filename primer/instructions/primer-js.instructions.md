@@ -12,7 +12,7 @@ Scripts run **inside** PRIMER's embedded JavaScript engine (SpiderMonkey).
 
 ## Finding Method Signatures
 Before writing any API call:
-1. Read `../references/js-api/primer-{lowercaseclassname}-class.md` for the class
+1. Replace `{lowercaseclassname}` with the verified PRIMER class name converted to lowercase, then read the resulting `../references/js-api/primer-{lowercaseclassname}-class.md` file (for example, `Part` → `primer-part-class.md`).
 2. Or check `../intellisense/primer.d.ts` — full TypeScript declarations for all classes
 3. Global functions: `../references/js-api/primer-global-class.md`
 

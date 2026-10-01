@@ -29,7 +29,7 @@ Produce a complete, runnable script that:
 
 ## Reference files to consult
 - JS: `../references/js-api/primer-model-class.md`, `../references/js-api/primer-part-class.md`, `../references/js-api/primer-node-class.md`, `../references/js-api/primer-shell-class.md`, `../references/js-api/primer-material-class.md`, `../references/js-api/primer-section-class.md`, `../references/js-api/primer-spc-class.md`, `../references/js-api/primer-curve-class.md`
-- Python: fetch `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/Model.html` etc.
+- Python: fetch `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Model.html` etc.
 - Keyword fields: search `../references/keywords/keywords.txt` for any `*KEYWORD=vol,page`
 
 ## Rules

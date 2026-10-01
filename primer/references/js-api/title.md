@@ -1,4 +1,4 @@
-﻿# **![](../Storage/js_api-23/title/title-2025-06-09.png)**
+﻿# **![](./Storage/js_api-23/title/title-2025-06-09.png)**
 
 # **Oasys LS-DYNA Environment JavaScript API reference manual**
 

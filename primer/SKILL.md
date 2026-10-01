@@ -20,7 +20,7 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 ### JavaScript API
 - Scripts run **inside** PRIMER's embedded JS engine — fast, direct data access
 - All PRIMER classes are **global** — no import or require needed
-- Full class/method reference: `references/js-api/primer-{lowercaseclassname}-class.md`
+- Full class/method reference: replace `{lowercaseclassname}` with the verified PRIMER class name converted to lowercase, then open `references/js-api/primer-{lowercaseclassname}-class.md` (for example, `Part` → `primer-part-class.md`).
 - Global functions reference: `references/js-api/primer-global-class.md`
 - IntelliSense type declarations: `intellisense/primer.d.ts`
 - GUI widgets (Form, Button, TextBox, etc.) are available from JS only
@@ -30,7 +30,9 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 - Install: `pip install Oasys.PRIMER`
 - Connection overview: `../shared/python-api/primer.md`
 - Python vs JS tradeoffs: `../shared/python-api/preamble.md`
-- Class method signatures: fetch `https://help.oasys-software.com/sphinx/23/PRIMER/{ClassName}.html`
+- Class method signatures: replace `{ClassName}` with the verified, case-sensitive PRIMER class name, construct the URL, and then fetch it:
+  `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/{ClassName}.html`
+  For example, class `Part` → `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Part.html`.
 - **GUI / Graphics classes are NOT available from Python**
 
 ---

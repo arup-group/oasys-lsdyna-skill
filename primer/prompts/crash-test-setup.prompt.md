@@ -35,7 +35,9 @@ Produce a complete, runnable script that sets up:
 
 ## Reference files to consult
 - JS classes: `../references/js-api/primer-contact-class.md`, `../references/js-api/primer-velocity-class.md`, `../references/js-api/primer-loadgravity-class.md`
-- Python: fetch relevant class pages from `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/`
+- Python class: replace `{ClassName}` with the verified, case-sensitive PRIMER class name, construct the URL, and then fetch it:
+  `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/{ClassName}.html`
+  For example, class `Part` → `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Part.html`.
 - Keyword fields: search `../references/keywords/keywords.txt`
 
 ## Rules

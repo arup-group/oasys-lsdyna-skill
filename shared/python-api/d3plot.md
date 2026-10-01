@@ -80,8 +80,8 @@ Oasys.D3PLOT.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [D3PLOT Python API](./Storage/py_api-23-0/sphinx/23/D3PLOT/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the [D3PLOT Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/index.html) documentation, in the following pages:
 
-* [Connection methods](./Storage/py_api-23-0/sphinx/23/D3PLOT/index.html) (to connect to an instance of D3PLOT and to disconnect Python from it at the end)
-* [Model class](./Storage/py_api-23-0/sphinx/23/D3PLOT/Model.html) (to get a model, and to set its state)
-* [Node class](./Storage/py_api-23-0/sphinx/23/D3PLOT/Node.html) (to obtain a node from an ID and to GetData)
+* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/index.html) (to connect to an instance of D3PLOT and to disconnect Python from it at the end)
+* [Model class](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/Model.html) (to get a model, and to set its state)
+* [Node class](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/Node.html) (to obtain a node from an ID and to GetData)

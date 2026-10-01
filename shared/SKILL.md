@@ -1,5 +1,5 @@
 ---
-name: oasys-shared
+name: shared
 description: >
   Use for shared Oasys Python API setup, gRPC connection patterns, and workflows
   that combine PRIMER, D3PLOT, T/HIS, or REPORTER.

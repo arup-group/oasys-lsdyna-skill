@@ -11,7 +11,7 @@
 * In that folder create a subfolder called "initialM"
 * In "initialM" create another subfolder called "450"
 * In "450" put the following file: [beam.key](./Storage/py_api-23-0/python_examples/Beam_optimization/beam.key)
-* Download and install Ansys LS-DYNA R13.1 SMP Double precision from the [Oasys website](https://www.oasys-software.com/dyna/downloads/ls-dyna-executables/)
+* Download and install Ansys LS-DYNA R13.1 SMP Double precision from the [Oasys website](https://dyna.oasys-software.com/download/ansys-ls-dyna-executables/)
 * If you don't have it already, install the following Python modules:
     * [Oasys.PRIMER](https://pypi.org/project/Oasys.PRIMER/): **pip install Oasys.PRIMER**
     * [Oasys.THIS](https://pypi.org/project/Oasys.THIS/): **pip install Oasys.THIS**

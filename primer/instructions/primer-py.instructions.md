@@ -47,14 +47,14 @@ connection = Oasys.PRIMER.start(abspath=r"C:\path\to\primerXX_x64.exe", batch=Tr
 ```
 
 ## Finding Method Signatures
-Fetch the live Sphinx docs for any class:
+Replace `{ClassName}` with the verified, case-sensitive PRIMER class name, construct the URL, and then fetch it:
 ```
-https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/{ClassName}.html
+https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/{ClassName}.html
 ```
 Examples:
-- `Model` → `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/Model.html`
-- `Shell` → `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/Shell.html`
-- Global functions → `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/global.html`
+- `Model` → `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Model.html`
+- `Shell` → `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Shell.html`
+- Global functions → `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/global.html`
 
 **Never invent or guess method names.**
 

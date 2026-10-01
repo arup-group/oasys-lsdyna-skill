@@ -83,8 +83,8 @@ Oasys.THIS.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [T/HIS Python API](./Storage/py_api-23-0/sphinx/23/T-HIS/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the [T/HIS Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/index.html) documentation, in the following pages:
 
-* [Connection methods](./Storage/py_api-23-0/sphinx/23/T-HIS/index.html) (to start an instance of T/HIS, and to disconnect Python from it at the end)
-* [Model class](./Storage/py_api-23-0/sphinx/23/T-HIS/Model.html) (to get the model that has an ID=1, to QueryDataPresent, and to GetDataFlagged)
-* [Functions](./Storage/py_api-23-0/sphinx/23/T-HIS/global.html) (to allocate a flag and to Plot/update graphs)
+* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/index.html) (to start an instance of T/HIS, and to disconnect Python from it at the end)
+* [Model class](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/Model.html) (to get the model that has an ID=1, to QueryDataPresent, and to GetDataFlagged)
+* [Functions](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/global.html) (to allocate a flag and to Plot/update graphs)

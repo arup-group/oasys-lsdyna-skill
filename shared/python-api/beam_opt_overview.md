@@ -22,7 +22,7 @@ The current configuration assumes that the input model is a rectangular prism co
 
 The environment variables shown in the template yield the locations of the executables for the PRIMER, T/HIS, and the Ansys LS-DYNA solver.
 This example was run with the following executables:
-* DYNARUNEXE = "... ls-dyna\_smp\_d\_R13.1\_138-g8429c8a10f\_winx64\_ifort190.exe" [https://www.oasys-software.com/dyna/downloads/ls-dyna-executables/](https://www.oasys-software.com/dyna/downloads/ls-dyna-executables/) (V13, SMP, Double)
+* DYNARUNEXE = "... ls-dyna\_smp\_d\_R13.1\_138-g8429c8a10f\_winx64\_ifort190.exe" [https://dyna.oasys-software.com/download/ansys-ls-dyna-executables/](https://dyna.oasys-software.com/download/ansys-ls-dyna-executables/) (V13, SMP, Double)
 * PRIMERCON = "... primerXX\_x64.exe"
 * THISCON = "... thisXX\_x64.exe"
 

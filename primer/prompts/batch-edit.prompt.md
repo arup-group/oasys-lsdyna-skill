@@ -28,7 +28,7 @@ Produce a complete, runnable script that:
 
 ## Reference files to consult
 - JS: `../references/js-api/primer-part-class.md`, `../references/js-api/primer-set-class.md`, `../references/js-api/primer-node-class.md`, `../references/js-api/primer-shell-class.md`, `../references/js-api/primer-utils-class.md`
-- Python: fetch relevant class pages from `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/`
+- Python: fetch relevant class pages from `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/`
 - For flagged bulk operations: see `AllocateFlag()` in `../references/js-api/primer-global-class.md`
 
 ## Rules

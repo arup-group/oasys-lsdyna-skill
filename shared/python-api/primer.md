@@ -99,11 +99,11 @@ Oasys.PRIMER.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [PRIMER Python API](./Storage/py_api-23-0/sphinx/23/PRIMER/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the [PRIMER Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/index.html) documentation, in the following pages:
 
-* [Connection methods](./Storage/py_api-23-0/sphinx/23/PRIMER/index.html) (to start an instance of PRIMER and to disconnect Python from it at the end)
-* [Model class](./Storage/py_api-23-0/sphinx/23/PRIMER/Model.html) (to create a model, and to update graphics)
-* [Functions](./Storage/py_api-23-0/sphinx/23/PRIMER/global.html) (to print a message)
-* [Node class](./Storage/py_api-23-0/sphinx/23/PRIMER/Node.html) (to create nodes)
-* [Shell class](./Storage/py_api-23-0/sphinx/23/PRIMER/Shell.html) (to create shells)
-* [View class](./Storage/py_api-23-0/sphinx/23/PRIMER/View.html) (to change the view and autoscale)
+* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/index.html) (to start an instance of PRIMER and to disconnect Python from it at the end)
+* [Model class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Model.html) (to create a model, and to update graphics)
+* [Functions](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/global.html) (to print a message)
+* [Node class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Node.html) (to create nodes)
+* [Shell class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Shell.html) (to create shells)
+* [View class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/View.html) (to change the view and autoscale)

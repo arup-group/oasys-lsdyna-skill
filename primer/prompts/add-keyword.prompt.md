@@ -25,10 +25,15 @@ Add an LS-DYNA keyword to a PRIMER model using the PRIMER API.
 4. **Show the equivalent keyword deck** — show what the resulting `*.k` card looks like
 
 ## Reference files to consult
-- `../references/keywords/keywords.txt` — find `*KEYWORD_NAME=vol,page`
-- `../references/keywords/LS-DYNA_Manual_Volume_{vol}_R16.pdf` — read at the given page for field definitions
-- JS class: `../references/js-api/primer-{lowercaseclassname}-class.md`
-- Python class: fetch `https://help.oasys-software.com/resources/Storage/sphinx/23/PRIMER/{ClassName}.html`
+- Keyword index: search `../references/keywords/keywords.txt` for `*KEYWORD_NAME=vol,page`.
+- Keyword manual: open the corresponding manual at `page`:
+  - `vol=1` → `../references/keywords/LS-DYNA_Manual_Volume_I_R16.pdf`
+  - `vol=2` → `../references/keywords/LS-DYNA_Manual_Volume_II_R16.pdf`
+  - `vol=3` → `../references/keywords/LS-DYNA_Manual_Volume_III_R16.pdf`
+- JavaScript class: replace `{lowercaseclassname}` with the verified PRIMER class name converted to lowercase, then open `../references/js-api/primer-{lowercaseclassname}-class.md`. For example, class `Part` → `../references/js-api/primer-part-class.md`.
+- Python class: replace `{ClassName}` with the verified, case-sensitive PRIMER class name, construct the URL, and then fetch it:
+  `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/{ClassName}.html`
+  For example, class `Part` → `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Part.html`.
 
 ## Rules
 - Always look up `keywords.txt` first — never guess field names or positions
