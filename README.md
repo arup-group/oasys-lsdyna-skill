@@ -8,7 +8,9 @@ Install the repository once as personal Copilot skills and use it from any proje
 
 ### 1. Clone the repository
 
+```powershell
 git clone git@github.com:arup-group/oasys-lsdyna-skill.git
+```
 
 Do not move or delete the cloned repository after installation because the personal Copilot skills directory will point to it.
 
