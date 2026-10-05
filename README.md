@@ -100,7 +100,7 @@ Write a PRIMER JavaScript script that lists all parts and their materials.
 ```
 
 ```text
-Write a D3PLOT cript that displays the last state at 0x deformation and exports the visible model to a GLB file.
+Write a D3PLOT script that displays the last state at 0x deformation and exports the visible model to a GLB file.
 ```
 
 ```text
