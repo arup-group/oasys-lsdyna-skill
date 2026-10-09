@@ -1,8 +1,8 @@
 ---
 name: oasys-lsdyna-skill
-description:
-	Use when a request involves scripting, automation, API usage, or dialogue
-	commands for Oasys PRIMER, D3PLOT, T/HIS, or REPORTER.
+description: >
+  Use when a request involves scripting, automation, API usage, or dialogue
+  commands for Oasys PRIMER, D3PLOT, T/HIS, or REPORTER.
 ---
 
 # Oasys LS-DYNA Scripting Skill
