@@ -25,6 +25,10 @@ Before generating code, verify every class, method, property, argument, and
 command against the local API references and declaration file. Do not guess
 undocumented API names.
 
+Use only documented D3PLOT APIs for D3PLOT stages. Do not substitute PRIMER,
+T/HIS, or REPORTER classes, methods, properties, constants, commands, or
+imports.
+
 Use D3PLOT for opening result files, states and time steps, animation, model
 deformation, contour plots, result measurements, and screenshots.
 

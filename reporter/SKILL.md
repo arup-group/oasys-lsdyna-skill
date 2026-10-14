@@ -19,6 +19,10 @@ Before generating code, verify every class, method, property, and argument
 against the local API references and declaration file. Do not guess
 undocumented API names.
 
+Use only documented REPORTER APIs for REPORTER stages. Do not substitute
+PRIMER, D3PLOT, or T/HIS classes, methods, properties, constants, commands, or
+imports.
+
 Use REPORTER for report templates, plots, images, tables, values, and standard
 result summaries. Identify whether plots or tables come from D3PLOT or T/HIS
 before inserting them into a report.

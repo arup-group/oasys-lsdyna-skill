@@ -26,4 +26,5 @@ For an end-to-end model and results workflow:
 
 Keep scripts for separate tools separate. Verify all Python API usage against
 the shared references and the relevant tool declarations. If an API or command
-is not documented, state that clearly instead of guessing.
+is not documented, state that clearly instead of guessing. Shared connection
+and lifecycle guidance does not make product-specific APIs interchangeable.

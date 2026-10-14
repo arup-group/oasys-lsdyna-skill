@@ -21,6 +21,10 @@ Before generating code, verify every class, method, property, argument, and
 command against the local API references and declaration file. Do not guess
 undocumented API names.
 
+Use only documented T/HIS APIs for T/HIS stages. Do not substitute PRIMER,
+D3PLOT, or REPORTER classes, methods, properties, constants, commands, or
+imports.
+
 Use T/HIS for history files, curves, nodal histories, contact forces, result
 extraction, plotting, and CSV or text export.
 

@@ -30,8 +30,14 @@ skill and keep each tool's script as a separate stage.
 - Verify API usage against the relevant reference files and declaration file.
 - If the required API is not documented, say so instead of guessing.
 - Add NULL checks where necessary to avoid runtime errors.
+- Treat the PRIMER, D3PLOT, T/HIS, and REPORTER APIs as separate namespaces.
+	Never use a class, method, property, constant, command, or import from one
+	tool as though it belongs to another tool.
+- For single-tool requests, use only that tool's API references, declarations,
+	dialogue commands, and documented module namespace.
 - Keep scripts for separate tools separate unless a combined workflow is
-	explicitly requested.
+	explicitly requested. In a combined workflow, use clearly labelled
+	tool-specific stages and keep API objects and calls within their owning stage.
 - For a combined workflow, complete PRIMER model setup before post-processing.
 - Add the user's original prompt as a comment at the top of generated scripts.
 - Save generated scripts in the user's project or workspace, not in this skill.

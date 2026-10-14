@@ -55,6 +55,7 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 6. **JS Flag pattern:** `AllocateFlag()` → use flag on entities → `ReturnFlag()`. Always return flags when done.
 7. **Python cleanup:** always wrap scripts in `try/finally` to call `Oasys.PRIMER.terminate(connection)` or `Oasys.PRIMER.disconnect(connection)`.
 8. **All keyword property acronyms are UPPERCASE** — `SetPropertyByName`/`GetPropertyByName` (and equivalent setters on any entity) use the LS-DYNA keyword field name in uppercase, e.g. `"RO"`, `"E"`, `"PR"`. This applies to every class (Material, Section, Contact, Curve, etc.). Never use lowercase.
+9. **API boundary:** use only documented PRIMER APIs for PRIMER stages. Do not substitute D3PLOT, T/HIS, or REPORTER classes, methods, properties, constants, commands, or imports.
 
 ---
 
