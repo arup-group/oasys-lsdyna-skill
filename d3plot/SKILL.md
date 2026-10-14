@@ -15,7 +15,22 @@ Use D3PLOT for LS-DYNA result visualisation and state-based result processing.
 - JavaScript API: `references/js-api/`
 - IntelliSense declarations: `intellisense/d3plot.d.ts`
 - Dialogue commands: `dialogue-commands/`
+- Runnable examples: `examples/`
 - Shared Python guidance: `../shared/python-api/`
+
+## Examples
+
+Before generating or editing a D3PLOT script, check `examples/` for a relevant example:
+
+- `examples/export_state_images.js` for iterating through states and exporting
+  one image per state.
+- `examples/show_final_state_von_mises_png.js` for selecting the final state,
+  displaying von Mises stress contours, setting a view, and exporting a PNG.
+
+Use examples as runnable patterns, but adapt result files, states, components,
+views, output paths, and image options. Verify copied API and dialogue-command
+usage against `references/js-api/`, `dialogue-commands/`, and
+`intellisense/d3plot.d.ts`; examples do not override those references.
 
 For dialogue command requests, read
 `dialogue-commands/d3plot-dialogue-guidance.md` before consulting the command

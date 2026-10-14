@@ -15,7 +15,21 @@ Use T/HIS for LS-DYNA time-history and curve processing.
 - JavaScript API: `references/js-api/`
 - IntelliSense declarations: `intellisense/this.d.ts`
 - Dialogue commands: `dialogue-commands/`
+- Runnable examples: `examples/`
 - Shared Python guidance: `../shared/python-api/`
+
+## Examples
+
+Before generating or editing a T/HIS script, check `examples/` for a relevant example:
+
+- `examples/plot_node_displacement.js` for extracting and plotting nodal
+  displacement from the currently loaded model.
+- `examples/three_graphs_energy_spotweld_part.js` for multiple graphs, global
+  and part energy curves, spotweld forces, datums, and input widgets.
+
+Use examples as runnable patterns, but adapt model-specific IDs, paths, units,
+components, and user inputs. Verify copied API usage against `references/js-api/`
+and `intellisense/this.d.ts`; examples do not override the API references.
 
 Before generating code, verify every class, method, property, argument, and
 command against the local API references and declaration file. Do not guess

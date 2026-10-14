@@ -13,7 +13,22 @@ Use REPORTER for automated report generation from LS-DYNA results.
 
 - JavaScript API: `references/js-api/`
 - IntelliSense declarations: `intellisense/reporter.d.ts`
+- Runnable examples: `examples/`
 - Shared Python guidance: `../shared/python-api/`
+
+## Examples
+
+Before generating or editing a REPORTER script, check `examples/` for a relevant example:
+
+- `examples/part_table_report.js` for creating a template, page, table, and
+  generated report containing part data.
+- `examples/reporter_batch_process.js` for processing a list of result files
+  with a template and writing reports to an output directory.
+
+Use examples as runnable patterns, but adapt template variables, result files,
+table data, paths, and output formats. Verify copied API usage against
+`references/js-api/` and `intellisense/reporter.d.ts`; examples do not override
+the API references.
 
 Before generating code, verify every class, method, property, and argument
 against the local API references and declaration file. Do not guess
