@@ -36,6 +36,8 @@ For dialogue command requests, read
 `dialogue-commands/d3plot-dialogue-guidance.md` before consulting the command
 reference.
 
+## Generation Rules
+
 Before generating code, verify every class, method, property, argument, and
 command against the local API references and declaration file. Do not guess
 undocumented API names.

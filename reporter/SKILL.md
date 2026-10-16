@@ -30,6 +30,9 @@ table data, paths, and output formats. Verify copied API usage against
 `references/js-api/` and `intellisense/reporter.d.ts`; examples do not override
 the API references.
 
+
+## Generation Rules
+
 Before generating code, verify every class, method, property, and argument
 against the local API references and declaration file. Do not guess
 undocumented API names.

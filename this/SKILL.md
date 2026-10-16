@@ -31,6 +31,8 @@ Use examples as runnable patterns, but adapt model-specific IDs, paths, units,
 components, and user inputs. Verify copied API usage against `references/js-api/`
 and `intellisense/this.d.ts`; examples do not override the API references.
 
+## Generation Rules
+
 Before generating code, verify every class, method, property, argument, and
 command against the local API references and declaration file. Do not guess
 undocumented API names.
