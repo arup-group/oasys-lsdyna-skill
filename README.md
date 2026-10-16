@@ -27,7 +27,7 @@ This creates the default personal skills directory at `C:\Users\<username>\.copi
 ### 3. Verify the installation
 
 ```powershell
-Get-ChildItem "$env:USERPROFILE\.copilot\skills\oasys-lsdyna-skills" -Filter SKILL.md -Recurse
+Get-ChildItem "$env:USERPROFILE\.copilot\skills\oasys-lsdyna-skill" -Filter SKILL.md -Recurse
 ```
 
 The output should include the root `SKILL.md` and the `SKILL.md` files under `primer`, `d3plot`, `this`, `reporter`, and `shared`. The skills is now ready to be used.
