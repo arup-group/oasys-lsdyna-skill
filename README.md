@@ -19,7 +19,7 @@ Do not move or delete the cloned repository after installation because the perso
 Run the following in PowerShell, replacing the placeholder with the cloned repository path:
 
 ```powershell
-$repository = '<path-to-cloned-repository>'; $skillsPath = "$env:USERPROFILE\.copilot\skills"; New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.copilot" | Out-Null; New-Item -ItemType Junction -Path $skillsPath -Target $repository
+register $repository=<path-to-cloned-repo>'; $skillsPath="$env:USERPROFILE\.copilot\skills"; $junctionPath=Join-Path $skillsPath "oasys-lsdyna-skill"; New-Item -ItemType Directory -Force -Path $skillsPath | Out-Null; New-Item -ItemType Junction -Path $junctionPath -Target $repository
 ```
 
 This creates the default personal skills directory at `C:\Users\<username>\.copilot\skills`. Copilot can then discover these skills from any workspace.
@@ -27,7 +27,7 @@ This creates the default personal skills directory at `C:\Users\<username>\.copi
 ### 3. Verify the installation
 
 ```powershell
-Get-ChildItem "$env:USERPROFILE\.copilot\skills" -Filter SKILL.md -Recurse
+Get-ChildItem "$env:USERPROFILE\.copilot\skills\oasys-lsdyna-skills" -Filter SKILL.md -Recurse
 ```
 
 The output should include the root `SKILL.md` and the `SKILL.md` files under `primer`, `d3plot`, `this`, `reporter`, and `shared`. The skills is now ready to be used.
