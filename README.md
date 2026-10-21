@@ -113,14 +113,9 @@ Write a REPORTER script that creates a report and inserts an image.
 
 ## Updating the Installed Skills
 
-Because the personal skills directory points to the cloned repository, update the installed skills by pulling the latest changes:
+To get the latest skill updates, do a `git pull` in the cloned skills repo.
 
-```powershell
-Set-Location '<path-to-cloned-repository>'
-git pull
-```
-
-No reinstallation or file copying is required. Start a new Copilot Chat session if the updated instructions are not immediately reflected.
+Because the personal Copilot skills folder points to that cloned repo, any updates are reflected automatically. No reinstallation or file copying is required. Start a new Copilot Chat session if the updated instructions are not immediately reflected.
 
 ## Repository Validation
 
