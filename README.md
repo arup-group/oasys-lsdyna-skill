@@ -19,7 +19,7 @@ Do not move or delete the cloned repository after installation because the perso
 Run the following in PowerShell, replacing the placeholder with the cloned repository path:
 
 ```powershell
-register $repository=<path-to-cloned-repo>'; $skillsPath="$env:USERPROFILE\.copilot\skills"; $junctionPath=Join-Path $skillsPath "oasys-lsdyna-skill"; New-Item -ItemType Directory -Force -Path $skillsPath | Out-Null; New-Item -ItemType Junction -Path $junctionPath -Target $repository
+ $repository = <path_to_cloned_repo>; $skillsPath = "$env:USERPROFILE\.copilot\skills\oasys-lsdyna-skill"; New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.copilot" | Out-Null; New-Item -ItemType Junction -Path $skillsPath -Target $repository
 ```
 
 This creates the default personal skills directory at `C:\Users\<username>\.copilot\skills`. Copilot can then discover these skills from any workspace.
