@@ -195,6 +195,55 @@ function Test-Frontmatter(
     }
 }
 
+# Returns $null when the URL resolves (redirects are followed, so 301/302/307/308 are not failures),
+# otherwise a description of the failure. Redirects are followed manually because Windows PowerShell 5.1
+# does not follow 308 and reports it as an error.
+function Test-ExternalUrl([string]$Url, [int]$MaxRedirects = 5) {
+    $current = $Url
+    for ($hop = 0; $hop -le $MaxRedirects; $hop++) {
+        $statusCode = 0
+        $location = $null
+        $errorMessage = $null
+        foreach ($method in @('HEAD', 'GET')) {
+            $response = $null
+            try {
+                $request = [Net.HttpWebRequest]::Create($current)
+                $request.Method = $method
+                $request.AllowAutoRedirect = $false
+                $request.Timeout = 20000
+                $request.UserAgent = 'Mozilla/5.0 (compatible; skills-repo-validator)'
+                $response = $request.GetResponse()
+            } catch [Net.WebException] {
+                $response = $_.Exception.Response
+                $errorMessage = $_.Exception.Message
+            } catch {
+                $errorMessage = $_.Exception.Message
+            }
+
+            if ($response) {
+                $statusCode = [int]$response.StatusCode
+                $location = $response.Headers['Location']
+                $response.Close()
+                $errorMessage = $null
+                if ($statusCode -lt 400) {
+                    break
+                }
+                $errorMessage = "HTTP $statusCode"
+            }
+        }
+
+        if ($statusCode -ge 300 -and $statusCode -lt 400 -and $location) {
+            $current = [Uri]::new([Uri]$current, $location).AbsoluteUri
+            continue
+        }
+        if ($statusCode -ge 200 -and $statusCode -lt 400) {
+            return $null
+        }
+        return $errorMessage
+    }
+    return "Too many redirects (more than $MaxRedirects)"
+}
+
 function Escape-MarkdownCell([string]$Value) {
     if ($null -eq $Value) {
         return ''
@@ -361,27 +410,15 @@ if ($CheckExternalLinks) {
         if ($hostName -match '(^|\.)example\.(com|net|org)$' -or $hostName -eq 'example.proxy.com') {
             continue
         }
-        try {
-            $response = Invoke-WebRequest -Uri $url -Method Head -UseBasicParsing -TimeoutSec 20
-            if ($response.StatusCode -ge 400) {
-                throw "HTTP $($response.StatusCode)"
-            }
-        } catch {
-            try {
-                $response = Invoke-WebRequest -Uri $url -Method Get -UseBasicParsing -TimeoutSec 20
-                if ($response.StatusCode -ge 400) {
-                    throw "HTTP $($response.StatusCode)"
-                }
-            } catch {
-                $failureMessage = $_.Exception.Message
-                foreach ($location in $externalUrls[$url]) {
-                    $externalFailures.Add([pscustomobject]@{
-                        Source = $location.Source
-                        Line = $location.Line
-                        Url = $url
-                        Error = $failureMessage
-                    })
-                }
+        $failureMessage = Test-ExternalUrl $url
+        if ($failureMessage) {
+            foreach ($location in $externalUrls[$url]) {
+                $externalFailures.Add([pscustomobject]@{
+                    Source = $location.Source
+                    Line = $location.Line
+                    Url = $url
+                    Error = $failureMessage
+                })
             }
         }
     }

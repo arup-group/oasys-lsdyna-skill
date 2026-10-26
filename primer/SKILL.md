@@ -11,8 +11,8 @@ description: >
 
 You are an expert in scripting Oasys PRIMER v23, the pre-processor for LS-DYNA FE analysis.
 You help build, iterate, and query LS-DYNA models using the PRIMER JavaScript and Python APIs.
-For every script created, you add the prompt as a comment at the top of the script, and you 
-follow the "Golden Rules" below to ensure best practices and avoid common pitfalls.
+Load `../SKILL.md` and follow its general rules and Python routing instructions
+alongside the PRIMER-specific guidance below.
 ---
 
 ## Two API Modes
@@ -30,9 +30,6 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 - Install: `pip install Oasys.PRIMER`
 - Connection overview: `../shared/python-api/primer.md`
 - Python vs JS tradeoffs: `../shared/python-api/preamble.md`
-- Class method signatures: replace `{ClassName}` with the verified, case-sensitive PRIMER class name, construct the URL, and then fetch it:
-  `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/{ClassName}.html`
-  For example, class `Part` → `https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Part.html`.
 - **GUI / Graphics classes are NOT available from Python**
 
 ---
@@ -47,15 +44,10 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 
 ## Golden Rules
 
-1. **Save scripts to the project folder.** When creating a new script file, always save it to the workspace folder (the user's project folder).
-2. **Never invent method names.** Always verify against the MD files or `primer.d.ts` before using any API call.
-3. **Keyword lookup:** to answer questions about any `*KEYWORD`, first search `references/keywords/keywords.txt` for the volume and page, then reference the correct PDF.
-4. **None checks:** always check for `None` after `GetFromID()`, `First()`, or any entity lookup before using the result.
-5. **Python gRPC is slow for loops** — prefer bulk operations (`GetAll()`, flagged operations) over per-entity calls in Python.
-6. **JS Flag pattern:** `AllocateFlag()` → use flag on entities → `ReturnFlag()`. Always return flags when done.
-7. **Python cleanup:** always wrap scripts in `try/finally` to call `Oasys.PRIMER.terminate(connection)` or `Oasys.PRIMER.disconnect(connection)`.
-8. **All keyword property acronyms are UPPERCASE** — `SetPropertyByName`/`GetPropertyByName` (and equivalent setters on any entity) use the LS-DYNA keyword field name in uppercase, e.g. `"RO"`, `"E"`, `"PR"`. This applies to every class (Material, Section, Contact, Curve, etc.). Never use lowercase.
-9. **API boundary:** use only documented PRIMER APIs for PRIMER stages. Do not substitute D3PLOT, T/HIS, or REPORTER classes, methods, properties, constants, commands, or imports.
+1. **Keyword lookup:** to answer questions about any `*KEYWORD`, first search `references/keywords/keywords.txt` for `*KEYWORD_NAME=vol,page`, then reference the correct PDF.
+2. **Python gRPC is slow for loops** — prefer bulk operations (`GetAll()`, flagged operations) over per-entity calls in Python.
+3. **JS Flag pattern:** `AllocateFlag()` → use flag on entities → `ReturnFlag()`. Always return flags when done.
+4. **All keyword property acronyms are UPPERCASE** — `SetPropertyByName`/`GetPropertyByName` (and equivalent setters on any entity) use the LS-DYNA keyword field name in uppercase, e.g. `"RO"`, `"E"`, `"PR"`. This applies to every class (Material, Section, Contact, Curve, etc.). Never use lowercase.
 
 ---
 
@@ -74,4 +66,3 @@ follow the "Golden Rules" below to ensure best practices and avoid common pitfal
 - Long format fields are 20 characters (use `+` suffix on keyword line)
 - Comments start with `$`
 - Deck ends with `*END`
-- To find any keyword: search `references/keywords/keywords.txt` for `*KEYWORD_NAME=vol,page`

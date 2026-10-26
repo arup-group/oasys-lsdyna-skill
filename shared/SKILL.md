@@ -1,30 +1,39 @@
 ---
 name: shared
 description: >
-  Use for shared Oasys Python API setup, gRPC connection patterns, and workflows
-  that combine PRIMER, D3PLOT, T/HIS, or REPORTER.
+  Use when writing or debugging Oasys Python scripts for PRIMER, D3PLOT,
+  T/HIS, or REPORTER, including package setup, gRPC connections,
+  lifecycle management, and official Sphinx Python API verification.
 ---
 
-# Shared Oasys Scripting Guidance
+# Shared Oasys Python API Guidance
 
 Consult `python-api/` for common Python API setup and behaviour, including
 connection, installation, modules, and cleanup guidance. Consult the tool's
-skill for its API classes and methods.
+skill for its API classes and methods. Load the root `../SKILL.md` for general
+rules, tool routing, and combined workflow sequencing.
 
-For a combined post-processing workflow, use the tools in this order unless the
-user requests a different sequence:
+## Connection lifecycle
 
-1. Use D3PLOT to open or visualise result data.
-2. Use T/HIS to extract histories or curves.
-3. Use REPORTER to generate a report from plots, tables, or extracted values.
+After connecting to or starting a tool, use `try/finally` to disconnect from
+the existing session or terminate the instance the script started. Verify the
+appropriate tool's lifecycle calls in its Python documentation.
 
-For an end-to-end model and results workflow:
+## Python API verification
 
-1. Use PRIMER to create or modify the model.
-2. Run the LS-DYNA solve.
-3. Use the appropriate post-processing skill for the results.
+Before writing or modifying a Python script, fetch and consult the official
+Sphinx Python API documentation for the appropriate tool and target release.
 
-Keep scripts for separate tools separate. Verify all Python API usage against
-the shared references and the relevant tool declarations. If an API or command
-is not documented, state that clearly instead of guessing. Shared connection
-and lifecycle guidance does not make product-specific APIs interchangeable.
+- PRIMER: https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/index.html
+- D3PLOT: https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/index.html
+- T/HIS: https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/index.html
+- REPORTER: https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/index.html
+
+Follow the relevant class and function links to verify constructors, methods,
+properties, constants, arguments, return values, and connection/lifecycle calls.
+Use documentation matching the requested release; do not silently substitute
+another version.
+
+If the Sphinx documentation cannot be accessed, report that Python API
+verification is blocked instead of inferring signatures from JavaScript
+references, declarations, or examples.

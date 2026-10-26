@@ -7,7 +7,7 @@ A skeleton Python script to start REPORTER (Installed at C:\install\_directory\r
 ```python
 import Oasys.REPORTER
 
-connection = Oasys.REPORTER.start(abspath="C:\\install_directory\\ReporterXX_x64.exe")
+connection = Oasys.REPORTER.start(abspath="C:\install_directory\ReporterXX_x64.exe")
 
 ...
 
@@ -18,7 +18,7 @@ By default REPORTER will use port 50053 to communicate with Python and will allo
 
 
 ```python
-connection = Oasys.REPORTER.start(abspath="C:\\install_directory\\ReporterXX_x64.exe", port=1234, memory=100)
+connection = Oasys.REPORTER.start(abspath="C:\install_directory\ReporterXX_x64.exe", port=1234, memory=100)
 ```
 
 
@@ -26,7 +26,7 @@ REPORTER can also be started in batch mode so that the main graphics window is n
 
 
 ```python
-connection = Oasys.REPORTER.start(abspath="C:\\install_directory\\ReporterXX_x64.exe", batch=True)
+connection = Oasys.REPORTER.start(abspath="C:\install_directory\ReporterXX_x64.exe", batch=True)
 ```
 
 
@@ -72,7 +72,7 @@ Debug("Finishing script: leaving the template open!");
 ```python
 import Oasys.REPORTER
 
-connection = Oasys.REPORTER.start(abspath="C:\\install_directory\\ReporterXX_x64.exe")
+connection = Oasys.REPORTER.start(abspath="C:\install_directory\ReporterXX_x64.exe")
 
 aTemplate = Oasys.REPORTER.Template()
 
@@ -96,9 +96,9 @@ Oasys.REPORTER.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [REPORTER Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the **REPORTER Python API** documentation, in the following pages:
 
-* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/index.html) (to start and instance of REPORTER and to disconnect Python from it at the end)
-* [Template class](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/Template.html) (to create a template)
-* [REPORTER functions](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/global.html) (to print messages)
-* [Item class](https://dyna-downloads.oasys-software.com/sphinx/23.0/REPORTER/Item.html) (to add items to a page of the template)
+* **Connection methods** (to start and instance of REPORTER and to disconnect Python from it at the end)
+* **Template class** (to create a template)
+* **REPORTER functions** (to print messages)
+* **Item class** (to add items to a page of the template)

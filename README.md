@@ -137,30 +137,31 @@ The example below migrates version 23.0 to 24.0. Substitute the applicable versi
 ### 1. Create an update branch
 
 ```powershell
-git switch main
+git checkout main
 git pull
-git switch -c update-oasys-24
+git checkout -b update-oasys-24
 ```
 
-### 2. Preview the migration (Dry Run)
 
-Run the version update script in preview mode:
+### 2. Apply the migration
 
-```powershell
-.\scripts\update-skill-version.ps1 -OldVersion 23.0 -NewVersion 24.0 -IncludeHtml
-```
-
-This generates `reports/version-23-0-to-24-0.md`, showing planned path renames, content updates, and broken references before applying the migration.
-
-### 3. Apply the migration
-
-Once the preview results have been reviewed, run the script again to apply the changes:
+Run the version update script to apply the migration:
 
 ```powershell
 .\scripts\update-skill-version.ps1 -OldVersion 23.0 -NewVersion 24.0 -IncludeHtml -Apply
 ```
 
-### 4. Synchronize release-derived files
+This writes the report `reports/version-23-0-to-24-0.md`. It should show:
+
+- **Mode**: `Applied`.
+- **Applied path renames**: the folder rename `shared/Storage/py_api-23-0` to `shared/Storage/py_api-24-0`.
+- **Applied content updates**: each file that was rewritten and its replacement count.
+- **Broken local references**: `None.`
+- **Remaining old path references**: `None.`
+
+Any entry under *Broken local references* or *Remaining old path references* must be fixed before continuing.
+
+### 3. Synchronize release-derived files
 
 Replace the contents in the following locations with files from latest release:
 
@@ -173,7 +174,7 @@ The files under `primer/references/keywords/` follow the supported LS-DYNA manua
 
 Do not replace repository-authored `SKILL.md`, instruction, README, or script files. Review and update them only when an API or workflow change requires it.
 
-### 5. Validate the completed migration
+### 4. Validate the completed migration
 
 Run the migration script again to detect remaining old-version references and broken local references in imported content:
 
@@ -181,15 +182,15 @@ Run the migration script again to detect remaining old-version references and br
 .\scripts\update-skill-version.ps1 -OldVersion 23.0 -NewVersion 24.0 -IncludeHtml -Apply
 ```
 
-The migration report must show zero broken local references and zero remaining old path references. Then run the independent repository validation:
+This overwrites `reports/version-23-0-to-24-0.md`. *Applied path renames* and *Applied content updates* should now show `None.`. The migration report must show zero broken local references and zero remaining old path references. Then run the independent repository validation:
 
 ```powershell
 .\scripts\test-skills-repo.ps1 -CheckExternalLinks
 ```
 
-This should show 0 warnings and issues.
+This writes `reports/skills-validation.md`, which should show `None.` under every heading. If any errors are reported, check for it and fix.
 
-### 6. Review and publish
+### 5. Review and publish
 
 ```powershell
 git status

@@ -22,25 +22,54 @@ target tool before writing or debugging a script.
 
 After routing, load the selected tool's `SKILL.md` and follow the references it
 identifies. For workflows spanning multiple tools, load each relevant tool
-skill and keep each tool's script as a separate stage.
+skill.
+
+For Python requests, also load `shared/SKILL.md` before writing or modifying
+code. Use the selected tool's skill for product-specific guidance and the
+shared skill for Python setup and official Sphinx Python API verification.
+
+## Combined workflows
+
+Only include stages needed for the user's request. For a combined
+post-processing workflow, use the tools in this order unless the user requests
+a different sequence:
+
+1. Use D3PLOT to open or visualise result data.
+2. Use T/HIS to extract histories or curves.
+3. Use REPORTER to generate a report from plots, tables, or extracted values.
+
+For an end-to-end model and results workflow:
+
+1. Use PRIMER to create or modify the model.
+2. Run the LS-DYNA solve.
+3. Use the appropriate post-processing skill for the results.
 
 ## General rules
 
-- Do not invent API classes, methods, properties, commands, or keyword fields.
-- Verify API usage against the relevant reference files and declaration file.
-- If the required API is not documented, say so instead of guessing.
-- Add NULL checks where necessary to avoid runtime errors.
+- Verify JavaScript classes, constructors, methods, properties, constants,
+  arguments, return values, and dialogue commands against the selected tool's
+  local API references, declarations, and command references. For Python,
+  follow `shared/SKILL.md`.
+- Do not invent APIs, commands, or keyword fields. If the required API or command
+  is not documented, say so instead of guessing.
+- Check for null/None after entity lookups such as `GetFromID()` or `First()`
+  before using the result.
+- Before generating or editing a script, check the selected tool's `examples/`
+  folder if present. Adapt IDs, paths, units, components, options, and user
+  inputs to the request. Examples do not override the API references; verify
+  copied calls using the appropriate JavaScript or Python documentation.
 - Treat the PRIMER, D3PLOT, T/HIS, and REPORTER APIs as separate namespaces.
 	Never use a class, method, property, constant, command, or import from one
-	tool as though it belongs to another tool.
+	tool when writing a script for another tool.
 - For single-tool requests, use only that tool's API references, declarations,
 	dialogue commands, and documented module namespace.
 - Keep scripts for separate tools separate unless a combined workflow is
 	explicitly requested. In a combined workflow, use clearly labelled
 	tool-specific stages and keep API objects and calls within their owning stage.
-- For a combined workflow, complete PRIMER model setup before post-processing.
 - Add the user's original prompt as a comment at the top of generated scripts.
 - Save generated scripts in the user's project or workspace, not in this skill.
+- When a given request cannot be achieved using available API's, use dialogue 
+commands instead.
 - Prefer concise, runnable scripts with clear comments.
 
 ## Debugging

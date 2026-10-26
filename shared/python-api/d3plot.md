@@ -7,7 +7,7 @@ A skeleton Python script to start D3PLOT (Installed at C:\install\_directory\d3p
 ```python
 import Oasys.D3PLOT
 
-connection = Oasys.D3PLOT.start(abspath="C:\\install_directory\\d3plotXX_x64.exe")
+connection = Oasys.D3PLOT.start(abspath="C:\install_directory\d3plotXX_x64.exe")
 
 ...
 
@@ -18,7 +18,7 @@ By default D3PLOT will use port 50054 to communicate with Python and will alloc
 
 
 ```python
-connection = Oasys.D3PLOT.start(abspath="C:\\install_directory\\d3plotXX_x64.exe", port=1234, memory=100)
+connection = Oasys.D3PLOT.start(abspath="C:\install_directory\d3plotXX_x64.exe", port=1234, memory=100)
 ```
 
 
@@ -26,7 +26,7 @@ D3PLOT can also be started in batch mode so that the main graphics window is not
 
 
 ```python
-connection = Oasys.D3PLOT.start(abspath="C:\\install_directory\\d3plotXX_x64.exe", batch=True)
+connection = Oasys.D3PLOT.start(abspath="C:\install_directory\d3plotXX_x64.exe", batch=True)
 ```
 
 
@@ -80,8 +80,8 @@ Oasys.D3PLOT.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [D3PLOT Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the **D3PLOT Python API** documentation, in the following pages:
 
-* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/index.html) (to connect to an instance of D3PLOT and to disconnect Python from it at the end)
-* [Model class](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/Model.html) (to get a model, and to set its state)
-* [Node class](https://dyna-downloads.oasys-software.com/sphinx/23.0/D3PLOT/Node.html) (to obtain a node from an ID and to GetData)
+* **Connection methods** (to connect to an instance of D3PLOT and to disconnect Python from it at the end)
+* **Model class** (to get a model, and to set its state)
+* **Node class** (to obtain a node from an ID and to GetData)

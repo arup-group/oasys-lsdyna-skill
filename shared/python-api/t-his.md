@@ -7,7 +7,7 @@ A skeleton Python script to start T/HIS (Installed at C:\install\_directory\this
 ```python
 import Oasys.THIS
 
-connection = Oasys.THIS.start(abspath="C:\\install_directory\\thisXX_x64.exe")
+connection = Oasys.THIS.start(abspath="C:\install_directory\thisXX_x64.exe")
 
 ...
 
@@ -18,7 +18,7 @@ By default T/HIS will use port 50052 to communicate with Python and will allocat
 
 
 ```python
-connection = Oasys.THIS.start(abspath="C:\\install_directory\\thisXX_x64.exe", port=1234, memory=100)
+connection = Oasys.THIS.start(abspath="C:\install_directory\thisXX_x64.exe", port=1234, memory=100)
 ```
 
 
@@ -26,7 +26,7 @@ T/HIS can also be started in batch mode so that the main graphics window is not 
 
 
 ```python
-connection = Oasys.THIS.start(abspath="C:\\install_directory\\thisXX_x64.exe", batch=True)
+connection = Oasys.THIS.start(abspath="C:\install_directory\thisXX_x64.exe", batch=True)
 ```
 
 
@@ -83,8 +83,8 @@ Oasys.THIS.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [T/HIS Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the **T/HIS Python API** documentation, in the following pages:
 
-* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/index.html) (to start an instance of T/HIS, and to disconnect Python from it at the end)
-* [Model class](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/Model.html) (to get the model that has an ID=1, to QueryDataPresent, and to GetDataFlagged)
-* [Functions](https://dyna-downloads.oasys-software.com/sphinx/23.0/T-HIS/global.html) (to allocate a flag and to Plot/update graphs)
+* **Connection methods** (to start an instance of T/HIS, and to disconnect Python from it at the end)
+* **Model class** (to get the model that has an ID=1, to QueryDataPresent, and to GetDataFlagged)
+* **T/HIS Functions** (to allocate a flag and to Plot/update graphs)

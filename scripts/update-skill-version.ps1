@@ -58,13 +58,6 @@ function Get-RelativePath([string]$Path) {
 
 function Get-RenameDestination([IO.FileSystemInfo]$Item) {
     $newName = $Item.Name.Replace($oldDash, $newDash)
-    if ($Item.PSIsContainer -and $Item.Parent.Name -eq 'sphinx') {
-        if ($Item.Name -eq $oldMajor) {
-            $newName = $newMajor
-        } elseif ($Item.Name -eq $OldVersion) {
-            $newName = $NewVersion
-        }
-    }
     if ($newName -eq $Item.Name) {
         return $null
     }
@@ -192,11 +185,11 @@ if ($Apply) {
 
 $literalRules = @(
     [pscustomobject]@{ Old = "py_api-$oldDash"; New = "py_api-$newDash" },
-    [pscustomobject]@{ Old = "/sphinx/$OldVersion/"; New = "/sphinx/$NewVersion/" },
-    [pscustomobject]@{ Old = "/sphinx/$oldMajor/"; New = "/sphinx/$newMajor/" },
-    [pscustomobject]@{ Old = "\sphinx\$OldVersion\"; New = "\sphinx\$NewVersion\" },
-    [pscustomobject]@{ Old = "\sphinx\$oldMajor\"; New = "\sphinx\$newMajor\" }
+    [pscustomobject]@{ Old = "/sphinx/$OldVersion/"; New = "/sphinx/$NewVersion/" }
 )
+
+# Major-only mentions such as "PRIMER v23" in headings and SKILL.md
+$majorPattern = "(?i)(\b(?:PRIMER|D3PLOT|REPORTER|T/HIS)\s+v)$([regex]::Escape($oldMajor))(?!\.?\d)"
 
 $contentChanges = [System.Collections.Generic.List[object]]::new()
 Get-RepositoryFiles | Where-Object {
@@ -222,6 +215,14 @@ Get-RepositoryFiles | Where-Object {
         $replacementCount += $productMatches
     }
 
+    if ($oldMajor -ne $newMajor) {
+        $majorMatches = ([regex]::Matches($updated, $majorPattern)).Count
+        if ($majorMatches) {
+            $updated = [regex]::Replace($updated, $majorPattern, "`${1}$newMajor")
+            $replacementCount += $majorMatches
+        }
+    }
+
     if ($replacementCount) {
         $contentChanges.Add([pscustomobject]@{
             Path = Get-RelativePath $file.FullName
@@ -236,13 +237,18 @@ Get-RepositoryFiles | Where-Object {
 $brokenLinks = Test-LocalReferences
 $stalePatterns = @(
     "py_api-$oldDash",
-    "/sphinx/$OldVersion/",
-    "/sphinx/$oldMajor/"
+    "/sphinx/$OldVersion/"
 )
 $staleReferences = [System.Collections.Generic.List[object]]::new()
-Get-RepositoryFiles | Where-Object {
-    $_.Extension.ToLowerInvariant() -in $textExtensions -and $_.FullName -ne $ReportPath
-} | ForEach-Object {
+# In a dry run nothing has been rewritten yet, so old references are the planned content updates, not leftovers.
+$staleScanFiles = if ($Apply) {
+    Get-RepositoryFiles | Where-Object {
+        $_.Extension.ToLowerInvariant() -in $textExtensions -and $_.FullName -ne $ReportPath
+    }
+} else {
+    @()
+}
+$staleScanFiles | ForEach-Object {
     $file = $_
     $lineNumber = 0
     Get-Content -LiteralPath $file.FullName | ForEach-Object {
@@ -256,6 +262,13 @@ Get-RepositoryFiles | Where-Object {
                     Pattern = $pattern
                 })
             }
+        }
+        if ($oldMajor -ne $newMajor -and $line -match $majorPattern) {
+            $staleReferences.Add([pscustomobject]@{
+                Source = Get-RelativePath $file.FullName
+                Line = $lineNumber
+                Pattern = "product v$oldMajor"
+            })
         }
     }
 }
@@ -274,21 +287,22 @@ $report.Add("- Root: ``$($RootPath.Replace('\', '/'))``")
 $report.Add("- Version: ``$OldVersion`` -> ``$NewVersion``")
 $report.Add("- Generated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss K')")
 $report.Add("- HTML validation: $(if ($IncludeHtml) { 'included' } else { 'not included' })")
-$report.Add("- Planned path renames: $($renamePlan.Count)")
-$report.Add("- Applied path renames: $($renamed.Count)")
-$report.Add("- Files with content updates: $($contentChanges.Count)")
-$report.Add("- Content replacements: $(($contentChanges | Measure-Object Replacements -Sum).Sum -as [int])")
+$outcome = if ($Apply) { 'Applied' } else { 'Planned' }
+$renameRows = if ($Apply) { $renamed } else { $renamePlan }
+$report.Add("- $outcome path renames: $(@($renameRows).Count)")
+$report.Add("- $outcome files with content updates: $($contentChanges.Count)")
+$report.Add("- $outcome content replacements: $(($contentChanges | Measure-Object Replacements -Sum).Sum -as [int])")
 $report.Add("- Local references checked: $linksChecked")
-$report.Add("- Broken local references: $($brokenLinks.Count)")
-$report.Add("- Remaining old path references: $($staleReferences.Count)")
+$report.Add("- Broken local references: $($brokenLinks.Count)$(if (-not $Apply) { ' (current state, before changes)' })")
+$report.Add("- Remaining old path references: $(if ($Apply) { $staleReferences.Count } else { 'not evaluated in dry run (see Planned content updates)' })")
 
 $report.Add('')
-$report.Add('## Path renames')
+$report.Add("## $outcome path renames")
 $report.Add('')
-if ($renamePlan.Count) {
+if (@($renameRows).Count) {
     $report.Add('| From | To |')
     $report.Add('|---|---|')
-    foreach ($item in $renamePlan) {
+    foreach ($item in $renameRows) {
         $report.Add("| ``$(Get-RelativePath $item.Source)`` | ``$(Get-RelativePath $item.Destination)`` |")
     }
 } else {
@@ -296,7 +310,7 @@ if ($renamePlan.Count) {
 }
 
 $report.Add('')
-$report.Add('## Content updates')
+$report.Add("## $outcome content updates")
 $report.Add('')
 if ($contentChanges.Count) {
     $report.Add('| File | Replacements |')
@@ -324,7 +338,9 @@ if ($brokenLinks.Count) {
 $report.Add('')
 $report.Add('## Remaining old path references')
 $report.Add('')
-if ($staleReferences.Count) {
+if (-not $Apply) {
+    $report.Add('Not evaluated in dry run. Files listed under Planned content updates will be rewritten when run with `-Apply`.')
+} elseif ($staleReferences.Count) {
     $report.Add('| Source | Line | Pattern |')
     $report.Add('|---|---:|---|')
     foreach ($item in $staleReferences) {
@@ -337,7 +353,7 @@ if ($staleReferences.Count) {
 [IO.File]::WriteAllLines($ReportPath, $report, $utf8NoBom)
 
 Write-Host "$mode complete. Report: $ReportPath"
-Write-Host "Renames: $($renamePlan.Count); changed files: $($contentChanges.Count); links checked: $linksChecked; broken: $($brokenLinks.Count); stale: $($staleReferences.Count)"
+Write-Host "Renames: $($renamePlan.Count); changed files: $($contentChanges.Count); links checked: $linksChecked; broken: $($brokenLinks.Count); stale: $(if ($Apply) { $staleReferences.Count } else { 'n/a (dry run)' })"
 
 if ($brokenLinks.Count -or ($Apply -and $staleReferences.Count)) {
     exit 1

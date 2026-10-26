@@ -7,7 +7,7 @@ A skeleton Python script to start PRIMER (Installed at C:\install\_directory\pri
 ```python
 import Oasys.PRIMER
 
-connection = Oasys.PRIMER.start(abspath="C:\\install_directory\\primerXX_x64.exe")
+connection = Oasys.PRIMER.start(abspath="C:\install_directory\primerXX_x64.exe")
 
 ...
 
@@ -18,7 +18,7 @@ By default PRIMER will use port 50051 to communicate with Python and will alloca
 
 
 ```python
-connection = Oasys.PRIMER.start(abspath="C:\\install_directory\\primerXX_x64.exe", port=1234, memory=100)
+connection = Oasys.PRIMER.start(abspath="C:\install_directory\primerXX_x64.exe", port=1234, memory=100)
 ```
 
 
@@ -26,7 +26,7 @@ PRIMER can also be started in batch mode so that the main graphics window is not
 
 
 ```python
-connection = Oasys.PRIMER.start(abspath="C:\\install_directory\\primerXX_x64.exe", batch=True)
+connection = Oasys.PRIMER.start(abspath="C:\install_directory\primerXX_x64.exe", batch=True)
 ```
 
 
@@ -74,7 +74,7 @@ View.Ac();
 ```python
 import Oasys.PRIMER
 
-connection = Oasys.PRIMER.start(abspath="C:\\install_directory\\primerXX_x64.exe")
+connection = Oasys.PRIMER.start(abspath="C:\install_directory\primerXX_x64.exe")
 
 m = Oasys.PRIMER.Model()
 
@@ -99,11 +99,11 @@ Oasys.PRIMER.disconnect(connection)
  |
 | --- | --- |
 
-All the classes and methods or functions used in the Python script above can be found in the [PRIMER Python API](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/index.html) documentation, in the following pages:
+All the classes and methods or functions used in the Python script above can be found in the **PRIMER Python API** documentation, in the following pages:
 
-* [Connection methods](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/index.html) (to start an instance of PRIMER and to disconnect Python from it at the end)
-* [Model class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Model.html) (to create a model, and to update graphics)
-* [Functions](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/global.html) (to print a message)
-* [Node class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Node.html) (to create nodes)
-* [Shell class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/Shell.html) (to create shells)
-* [View class](https://dyna-downloads.oasys-software.com/sphinx/23.0/PRIMER/View.html) (to change the view and autoscale)
+* **Connection methods** (to start an instance of PRIMER and to disconnect Python from it at the end)
+* **Model class** (to create a model, and to update graphics)
+* **Functions**(to print a message)
+* **Node class** (to create nodes)
+* **Shell class** (to create shells)
+* **View class** (to change the view and autoscale)

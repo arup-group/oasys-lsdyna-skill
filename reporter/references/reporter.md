@@ -1,1 +1,0 @@
-﻿## REPORTER manual

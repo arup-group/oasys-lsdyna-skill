@@ -1,17 +1,17 @@
-﻿* Download the following files and save them if your working directory:
-    * [beam.py](./Storage/py_api-23-0/python_examples/Beam_optimization/beam.py)
-    * [beamOPT.py](./Storage/py_api-23-0/python_examples/Beam_optimization/beamOPT.py)
-    * [dynaCon.py](./Storage/py_api-23-0/python_examples/Beam_optimization/dynaCon.py)
-    * [dynaRun.py](./Storage/py_api-23-0/python_examples/Beam_optimization/dynaRun.py)
-    * [getResults.py](./Storage/py_api-23-0/python_examples/Beam_optimization/getResults.py)
-    * [mainOPT.py](./Storage/py_api-23-0/python_examples/Beam_optimization/mainOPT.py)
-    * [optModel.py](./Storage/py_api-23-0/python_examples/Beam_optimization/optModel.py)
-    * [results.py](./Storage/py_api-23-0/python_examples/Beam_optimization/results.py)
-    * [.env](./Storage/py_api-23-0/python_examples/Beam_optimization/.env) (*Make sure the downloaded file has a dot at the start. If necessary, edit the file name to add it)*
+﻿* Download the following files and save them in your working directory:
+    * [beam.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/beam.py)
+    * [beamOPT.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/beamOPT.py)
+    * [dynaCon.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/dynaCon.py)
+    * [dynaRun.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/dynaRun.py)
+    * [getResults.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/getResults.py)
+    * [mainOPT.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/mainOPT.py)
+    * [optModel.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/optModel.py)
+    * [results.py](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/results.py)
+    * [.env](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/.env) (*Make sure the downloaded file has a dot at the start. If necessary, edit the file name to add it)*
 * In that folder create a subfolder called "initialM"
 * In "initialM" create another subfolder called "450"
-* In "450" put the following file: [beam.key](./Storage/py_api-23-0/python_examples/Beam_optimization/beam.key)
-* Download and install Ansys LS-DYNA R13.1 SMP Double precision from the [Oasys website](https://dyna.oasys-software.com/download/ansys-ls-dyna-executables/)
+* In "450" put the following file: [beam.key](https://dyna-downloads.oasys-software.com/python_examples/Beam_optimization/beam.key)
+* Download and install Ansys LS-DYNA R13.1 SMP Double precision from the [Oasys website](https://www.oasys-software.com/dyna/downloads/ls-dyna-executables/)
 * If you don't have it already, install the following Python modules:
     * [Oasys.PRIMER](https://pypi.org/project/Oasys.PRIMER/): **pip install Oasys.PRIMER**
     * [Oasys.THIS](https://pypi.org/project/Oasys.THIS/): **pip install Oasys.THIS**
