@@ -24,6 +24,10 @@ After routing, load the selected tool's `SKILL.md` and follow the references it
 identifies. For workflows spanning multiple tools, load each relevant tool
 skill.
 
+Requests about session files, FAST-TCF, command files, or other automation methods are
+answered from the `automation/` folder of the selected tool (`d3plot/automation/`
+or `this/automation/`). The tool's `SKILL.md` says which file to read.
+
 For Python requests, also load `shared/SKILL.md` before writing or modifying
 code. Use the selected tool's skill for product-specific guidance and the
 shared skill for Python setup and official Sphinx Python API verification.
@@ -66,11 +70,27 @@ For an end-to-end model and results workflow:
 - Keep scripts for separate tools separate unless a combined workflow is
 	explicitly requested. In a combined workflow, use clearly labelled
 	tool-specific stages and keep API objects and calls within their owning stage.
-- Add the user's original prompt as a comment at the top of generated scripts.
+- Add a brief summary of the user's prompt as a comment at the top of generated
+  scripts. It need not be an exact copy of the prompt.
 - Save generated scripts in the user's project or workspace, not in this skill.
 - When a given request cannot be achieved using available API's, use dialogue 
 commands instead.
 - Prefer concise, runnable scripts with clear comments.
+
+## Script generation style
+
+- Begin by briefly summarising the user's request in a comment at the top of the script.
+- Use only the details given in the prompt (IDs, ranges, counts, types). Put them
+  in the configuration block as named constants. Do not add extra user inputs,
+  prompts, GUI, options, or assumed values.
+- Do not ask the user for more input before generating the script when the
+  prompt is enough to write it. State any needed values that are missing in the
+  notes after the script instead.
+- Keep the code focused on the requested task: no extra validation, skipping
+  logic, or fallbacks beyond a null check on the model.
+- After the script, briefly note (1-3 lines) any essential information that
+  would be needed for a more specific solution, such as real part IDs, units,
+  or contact options. Also note what the script assumes.
 
 ## Debugging
 

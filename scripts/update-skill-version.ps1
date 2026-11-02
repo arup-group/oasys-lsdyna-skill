@@ -191,6 +191,9 @@ $literalRules = @(
 # Major-only mentions such as "PRIMER v23" in headings and SKILL.md
 $majorPattern = "(?i)(\b(?:PRIMER|D3PLOT|REPORTER|T/HIS)\s+v)$([regex]::Escape($oldMajor))(?!\.?\d)"
 
+# Versioned asset folders in links, e.g. Storage/d3plot-23-0/ and Storage/this-23-0/
+$storagePattern = "(Storage[/\\][A-Za-z0-9_]+[-_])$([regex]::Escape($oldDash))(?!\d)"
+
 $contentChanges = [System.Collections.Generic.List[object]]::new()
 Get-RepositoryFiles | Where-Object {
     $_.Extension.ToLowerInvariant() -in $textExtensions -and $_.FullName -ne $ReportPath
@@ -206,6 +209,12 @@ Get-RepositoryFiles | Where-Object {
             $updated = $updated.Replace($rule.Old, $rule.New)
             $replacementCount += $matches
         }
+    }
+
+    $storageMatches = ([regex]::Matches($updated, $storagePattern)).Count
+    if ($storageMatches) {
+        $updated = [regex]::Replace($updated, $storagePattern, "`${1}$newDash")
+        $replacementCount += $storageMatches
     }
 
     $productPattern = "(?i)(Oasys\s+(?:PRIMER|D3PLOT|REPORTER|T/HIS)\s+v)$([regex]::Escape($OldVersion))\b"
@@ -262,6 +271,13 @@ $staleScanFiles | ForEach-Object {
                     Pattern = $pattern
                 })
             }
+        }
+        if ($line -match $storagePattern) {
+            $staleReferences.Add([pscustomobject]@{
+                Source = Get-RelativePath $file.FullName
+                Line = $lineNumber
+                Pattern = "Storage/*-$oldDash"
+            })
         }
         if ($oldMajor -ne $newMajor -and $line -match $majorPattern) {
             $staleReferences.Add([pscustomobject]@{
