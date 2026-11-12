@@ -128,7 +128,8 @@ Run it from the repository root with external-link checking enabled:
 
 The script writes `reports/skills-validation.md` and reports local references, frontmatter, forbidden legacy links, URL placeholders, external HTTP links, empty files, and orphaned assets.
 
-## Updating for a New Oasys Release
+## Updating for a New Oasys Release 
+Note: Ensure that this is done only after the sphinx documentation is generated, else there will be External link failures reported in the generated migration report
 
 Use both scripts in `/scripts` when a new Oasys version is released. The migration script `scripts/update-skill-version.ps1` updates known versioned paths and references; it does not import new API content.
 
